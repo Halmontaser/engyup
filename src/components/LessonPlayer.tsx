@@ -1,0 +1,197 @@
+"use client";
+
+import { useState, useMemo, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  X,
+  Check,
+  ChevronRight,
+  RotateCcw,
+  Sparkles,
+  Trophy,
+  Heart,
+} from "lucide-react";
+import ActivityPlayer from "@/components/activities/ActivityPlayer";
+
+interface MediaEntry {
+  filename: string;
+  url: string;
+}
+
+interface ActivityMedia {
+  audio: MediaEntry[];
+  images: MediaEntry[];
+}
+
+interface LessonPlayerProps {
+  lesson: {
+    id: string;
+    title: string;
+    description: string;
+    lessonNumber: number;
+  };
+  activities: {
+    id: string;
+    type: string;
+    title: string;
+    instruction: string;
+    data: any;
+    media?: ActivityMedia;
+  }[];
+  backHref: string;
+}
+
+export default function LessonPlayer({
+  lesson,
+  activities,
+  backHref,
+}: LessonPlayerProps) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isEvaluated, setIsEvaluated] = useState(false);
+  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+  const [canContinue, setCanContinue] = useState(false);
+  
+  const total = activities.length;
+  const progress = total > 0 ? (currentIndex / total) * 100 : 0;
+  const isFinished = currentIndex >= total;
+
+  const currentActivity = activities[currentIndex];
+
+  const handleNext = () => {
+    setIsEvaluated(false);
+    setIsCorrect(null);
+    setCanContinue(false);
+    if (currentIndex < total - 1) {
+      setCurrentIndex(currentIndex + 1);
+    } else {
+      setCurrentIndex(total);
+    }
+  };
+
+  const handleComplete = (correct?: boolean) => {
+    setIsCorrect(correct ?? true);
+    setIsEvaluated(true);
+    setCanContinue(true);
+  };
+
+  const [triggerCheck, setTriggerCheck] = useState(0);
+
+  const handleCheck = () => {
+    // Trigger check in the child component
+    setTriggerCheck(prev => prev + 1);
+  };
+
+  if (isFinished) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen bg-white p-8">
+        <motion.div
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          className="text-center"
+        >
+          <div className="w-24 h-24 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl">
+            <Trophy size={48} className="text-white" />
+          </div>
+          <h1 className="text-4xl font-black mb-4">Lesson Complete!</h1>
+          <p className="text-xl text-slate-500 mb-8 font-medium">You dominated this lesson. +12 XP</p>
+          <div className="flex flex-col gap-3 w-full max-w-xs mx-auto">
+            <a href={backHref} className="btn-duo btn-duo-green w-full">Continue</a>
+            <button onClick={() => setCurrentIndex(0)} className="btn-ghost w-full">Review Lessons</button>
+          </div>
+        </motion.div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-white text-slate-900 font-sans">
+      {/* FIXED TOP HEADER */}
+      <header className="fixed-top-bar flex items-center justify-between gap-6 px-10">
+        <button 
+          onClick={() => window.location.href = backHref} 
+          className="text-slate-400 hover:text-slate-600 transition-colors"
+        >
+          <X size={28} strokeWidth={3} />
+        </button>
+
+        <div className="flex-1 max-w-2xl px-4">
+          <div className="progress-track bg-slate-100 h-4 rounded-full">
+            <motion.div 
+              className="progress-fill bg-green-500 h-full rounded-full" 
+              initial={{ width: 0 }}
+              animate={{ width: `${progress}%` }}
+              transition={{ type: "spring", stiffness: 50 }}
+            />
+          </div>
+        </div>
+
+        <div className="flex items-center gap-2 font-black text-rose-500 text-lg">
+          <Heart size={24} fill="currentColor" />
+          <span>5</span>
+        </div>
+      </header>
+
+      {/* MAIN LEARNING CANVAS */}
+      <main className="main-learning-canvas max-w-5xl mx-auto">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentIndex}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            className="w-full flex flex-col items-center"
+          >
+             <div className="w-full mb-10 text-center md:text-left">
+                <h2 className="text-3xl font-black mb-4 text-slate-800">
+                  {currentActivity.instruction || "Choose the correct option"}
+                </h2>
+             </div>
+
+             <div className="w-full">
+                <ActivityPlayer
+                  activity={currentActivity}
+                  media={currentActivity.media}
+                  onComplete={handleComplete}
+                  triggerCheck={triggerCheck}
+                />
+             </div>
+          </motion.div>
+        </AnimatePresence>
+      </main>
+
+      {/* FIXED BOTTOM ACTION BAR */}
+      <footer className={`fixed-bottom-bar transition-colors duration-300 ${
+        isEvaluated 
+          ? isCorrect === false ? "bg-red-100 border-red-200" : "bg-green-100 border-green-200"
+          : "bg-white"
+      }`}>
+        <div className="max-w-4xl w-full flex items-center justify-between">
+          <div className="hidden md:block">
+            {isEvaluated && (
+              <div className={`flex items-center gap-4 ${isCorrect === false ? "text-red-600" : "text-green-700"}`}>
+                <div className={`w-12 h-12 rounded-full flex items-center justify-center ${isCorrect === false ? "bg-red-200" : "bg-green-200"}`}>
+                   {isCorrect === false ? <X size={24} strokeWidth={4} /> : <Check size={24} strokeWidth={4} />}
+                </div>
+                <div>
+                  <h3 className="font-black text-xl leading-none">
+                    {isCorrect === false ? "Correct Solution:" : "Amazing Job!"}
+                  </h3>
+                  <p className="font-bold opacity-80 text-sm mt-1">
+                    {isCorrect === false ? "Check the lesson notes and try again." : "Keep up the momentum!"}
+                  </p>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <button
+            onClick={canContinue ? handleNext : handleCheck}
+            className={`btn-duo ${canContinue ? "btn-duo-green" : "btn-duo-gray"} min-w-[200px] h-14 md:h-16`}
+          >
+            {canContinue ? "Continue" : "Check"}
+          </button>
+        </div>
+      </footer>
+    </div>
+  );
+}

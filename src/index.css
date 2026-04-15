@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-hover: #f1f5f9;
+  --accent: #6366f1;
+  --accent-hover: #4f46e5;
+  --accent-light: #e0e7ff;
+  --accent-glow: rgba(99, 102, 241, 0.15);
+  --success: #10b981;
+  --success-light: #d1fae5;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --muted: #94a3b8;
+  --border: #e2e8f0;
+  --radius: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Premium card */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Progress bar */
+.progress-track {
+  height: 6px;
+  background: var(--border);
+  border-radius: 99px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #58cc02, #8ee000);
+  border-radius: 99px;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Duolingo-Style Buttons */
+.btn-duo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  border: none;
+  border-bottom: 4px solid rgba(0,0,0,0.2);
+  transition: all 0.1s;
+  cursor: pointer;
+  user-select: none;
+}
+.btn-duo:active {
+  transform: translateY(2px);
+  border-bottom-width: 2px;
+}
+.btn-duo-green {
+  background: #58cc02;
+  color: white;
+  border-bottom-color: #46a302;
+}
+.btn-duo-green:hover { background: #61e002; }
+.btn-duo-gray {
+  background: var(--border);
+  color: var(--muted);
+  border-bottom-color: #cbd5e1;
+}
+
+/* Ghost button */
+.btn-ghost {
+  background: transparent;
+  color: var(--muted);
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  transition: all 0.2s ease;
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+.btn-ghost:hover {
+  color: var(--foreground);
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+
+/* Fixed Layout */
+.fixed-top-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 50;
+  background: var(--background);
+  border-bottom: 2px solid var(--border);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+@media (min-width: 768px) {
+  .fixed-top-bar {
+    height: 80px;
+    padding: 0 2rem;
+  }
+}
+.fixed-bottom-bar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 50;
+  background: white;
+  border-top: 2px solid var(--border);
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+@media (min-width: 768px) {
+  .fixed-bottom-bar {
+    height: 120px;
+    padding: 0 2rem;
+  }
+}
+.main-learning-canvas {
+  margin-top: 64px;
+  margin-bottom: 90px;
+  min-height: calc(100vh - 154px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .main-learning-canvas {
+    margin-top: 80px;
+    margin-bottom: 120px;
+    min-height: calc(100vh - 200px);
+    padding: 2rem;
+  }
+}
+
+/* Activity badge */
+.activity-type-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 99px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+/* Hero gradient */
+.hero-gradient {
+  background: linear-gradient(135deg, var(--accent) 0%, #a855f7 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in { animation: fadeInUp 0.5s ease forwards; }
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg, var(--border) 25%, var(--card-hover) 50%, var(--border) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
