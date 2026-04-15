@@ -45,7 +45,6 @@ interface ActivityPlayerProps {
   };
   media?: ActivityMedia;
   onComplete?: (correct?: boolean) => void;
-  triggerCheck?: number;
 }
 
 export default function ActivityPlayer({ activity, media, onComplete, triggerCheck }: ActivityPlayerProps) {
@@ -59,47 +58,47 @@ export default function ActivityPlayer({ activity, media, onComplete, triggerChe
   const renderComponent = () => {
     switch (type) {
       case "flashcard":
-        return <FlashcardActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <FlashcardActivity data={data} media={m} onComplete={onComplete} />;
       case "mcq":
-        return <McqActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <McqActivity data={data} media={m} onComplete={onComplete} />;
       case "gap-fill":
-        return <GapFillActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <GapFillActivity data={data} media={m} onComplete={onComplete} />;
       case "true-false":
-        return <TrueFalseActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <TrueFalseActivity data={data} media={m} onComplete={onComplete} />;
       case "match-pairs":
-        return <MatchPairsActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <MatchPairsActivity data={data} media={m} onComplete={onComplete} />;
       case "word-order":
-        return <WordOrderActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <WordOrderActivity data={data} media={m} onComplete={onComplete} />;
       case "reading-passage":
         return <ReadingPassageActivity data={data} media={m} onComplete={onComplete} />;
       case "category-sort":
-        return <CategorySortActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <CategorySortActivity data={data} media={m} onComplete={onComplete} />;
       case "dialogue-read":
         return <DialogueReadActivity data={data} media={m} onComplete={onComplete} />;
       case "transform-sentence":
-        return <TransformSentenceActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <TransformSentenceActivity data={data} media={m} onComplete={onComplete} />;
       case "image-label":
-        return <ImageLabelActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <ImageLabelActivity data={data} media={m} onComplete={onComplete} />;
       case "guessing-game":
-        return <GuessingGameActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <GuessingGameActivity data={data} media={m} onComplete={onComplete} />;
       case "reading-sequence":
-        return <ReadingSequenceActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <ReadingSequenceActivity data={data} media={m} onComplete={onComplete} />;
       case "sentence-builder":
-        return <WordOrderActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <WordOrderActivity data={data} media={m} onComplete={onComplete} />;
       case "word-association":
-        return <MatchPairsActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <MatchPairsActivity data={data} media={m} onComplete={onComplete} />;
       case "pronunciation-practice":
-        return <PronunciationPracticeActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <PronunciationPracticeActivity data={data} media={m} onComplete={onComplete} />;
       case "listening-comprehension":
-        return <ListeningComprehensionActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <ListeningComprehensionActivity data={data} media={m} onComplete={onComplete} />;
       case "spelling-bee":
-        return <SpellingBeeActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <SpellingBeeActivity data={data} media={m} onComplete={onComplete} />;
       case "dictation":
-        return <DictationActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <DictationActivity data={data} media={m} onComplete={onComplete} />;
       case "conversation-sim":
-        return <ConversationSimActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <ConversationSimActivity data={data} media={m} onComplete={onComplete} />;
       case "picture-description":
-        return <PictureDescriptionActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <PictureDescriptionActivity data={data} media={m} onComplete={onComplete} />;
       default:
         return (
           <div className="p-8 bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-2xl flex items-start gap-4 mx-auto max-w-2xl w-full">
