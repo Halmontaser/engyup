@@ -4,7 +4,6 @@ import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 
 export default defineConfig(({ mode }) => {
-  // Load env file based on mode
   const env = loadEnv(mode, process.cwd(), '');
 
   return {
@@ -73,5 +72,14 @@ export default defineConfig(({ mode }) => {
     optimizeDeps: {
       include: ['react', 'react-dom', 'react-router-dom', '@supabase/supabase-js'],
     },
+
+    // Vercel-specific build settings
+    ...(mode === 'production' ? {
+      // Production build optimizations
+      build: {
+        cssCodeSplitting: true,
+        sourcemap: false,
+      },
+    } : {}),
   };
 });

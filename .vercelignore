@@ -1,0 +1,32 @@
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+
+# Development files
+.env.local
+.env.*.local
+
+# Development and testing files
+.DS_Store
+*.log
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+
+# Scripts and temporary files
+scripts/
+*.script
+
+# Media files (will be added separately later)
+public/media/
+
+# Cache
+.cache/
+.turbo/
+
+# Git
+.git/
