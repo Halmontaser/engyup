@@ -2,22 +2,39 @@ import express from 'express';
 import { getMediaForActivity } from './src/lib/mediaIndex.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { createServer } from 'vite';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 5173;
+const isDev = process.env.NODE_ENV !== 'production';
 
 // Middleware
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.urlencoded({ extended: true }));
 
-// CORS middleware for development
+// CORS configuration
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
+  const origin = req.headers.origin;
+  const allowedOrigins = [
+    'http://localhost:5173',
+    'http://localhost:3000',
+    'http://127.0.0.1:5173',
+    'http://127.0.0.1:3000',
+  ];
+
+  // In development, allow all origins for testing
+  if (isDev) {
+    res.header('Access-Control-Allow-Origin', '*');
+  } else if (origin && allowedOrigins.includes(origin)) {
+    res.header('Access-Control-Allow-Origin', origin);
+  }
+
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.header('Access-Control-Allow-Credentials', 'true');
 
   if (req.method === 'OPTIONS') {
     return res.sendStatus(200);
@@ -26,15 +43,36 @@ app.use((req, res, next) => {
   next();
 });
 
-// Health check
+// Request logging middleware (development only)
+if (isDev) {
+  app.use((req, res, next) => {
+    const timestamp = new Date().toISOString();
+    console.log(`[${timestamp}] ${req.method} ${req.path}`);
+    if (Object.keys(req.body).length > 0) {
+      console.log('Body:', JSON.stringify(req.body, null, 2));
+    }
+    next();
+  });
+}
+
+// Health check endpoint
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', timestamp: new Date().toISOString() });
+  res.json({
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+    environment: process.env.NODE_ENV || 'development',
+    version: '1.0.0',
+  });
 });
 
 // Media API - Get media for a specific activity
 app.get('/api/media/:activityId', (req, res) => {
   try {
     const { activityId } = req.params;
+
+    if (isDev) {
+      console.log(`Fetching media for activity: ${activityId}`);
+    }
 
     // Get media metadata from the index
     const media = getMediaForActivity(activityId);
@@ -67,20 +105,82 @@ app.get('/api/media/:activityId', (req, res) => {
     res.json(response);
   } catch (error) {
     console.error(`Error fetching media for activity ${req.params.activityId}:`, error);
-    res.status(500).json({ error: 'Failed to fetch media', audio: [], images: [] });
+    res.status(500).json({
+      error: 'Failed to fetch media',
+      message: error instanceof Error ? error.message : 'Unknown error',
+      audio: [],
+      images: [],
+    });
   }
 });
 
-// Serve Vite dist in production
-if (process.env.NODE_ENV === 'production') {
+// In development, serve the Vite dev server
+if (isDev) {
+  console.log('Starting in development mode...');
+
+  // Create Vite server in middleware mode
+  const vite = await createServer({
+    server: { middlewareMode: true },
+    appType: 'custom',
+  });
+
+  // Use vite's connect instance as middleware
+  app.use(vite.middlewares);
+
+  vite.httpServer?.on('listening', () => {
+    console.log(`Vite dev server is ready`);
+  });
+} else {
+  // In production, serve static files from dist
+  app.use(express.static(path.join(__dirname, 'dist')));
+
+  // SPA fallback
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist', 'index.html'));
   });
 }
 
+// Error handling middleware
+app.use((err: any, req: any, res: any, next: any) => {
+  console.error('Server error:', err);
+
+  if (isDev) {
+    res.status(500).json({
+      error: 'Internal Server Error',
+      message: err.message,
+      stack: err.stack,
+    });
+  } else {
+    res.status(500).json({
+      error: 'Internal Server Error',
+      message: 'Something went wrong. Please try again later.',
+    });
+  }
+});
+
 // Start server
-app.listen(PORT, () => {
+const server = app.listen(PORT, '0.0.0.0', () => {
+  console.log('\n=================================');
   console.log(`Server running on port ${PORT}`);
   console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
+  console.log(`Local URL: http://localhost:${PORT}`);
+  console.log(`Network URL: http://0.0.0.0:${PORT}`);
   console.log(`API endpoint: http://localhost:${PORT}/api/media/:activityId`);
+  console.log('=================================\n');
+});
+
+// Graceful shutdown
+process.on('SIGTERM', () => {
+  console.log('SIGTERM signal received: closing HTTP server');
+  server.close(() => {
+    console.log('HTTP server closed');
+  });
+});
+
+process.on('SIGINT', () => {
+  console.log('\nSIGINT signal received: closing HTTP server');
+  server.close(() => {
+    console.log('HTTP server closed');
+    process.exit(0);
+  });
 });
