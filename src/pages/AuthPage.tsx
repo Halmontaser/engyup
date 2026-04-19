@@ -44,18 +44,24 @@ export function AuthPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 flex items-center justify-center p-4 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-400/20 rounded-full blur-3xl animate-pulse-soft" />
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-cyan-400/20 rounded-full blur-3xl animate-pulse-soft" style={{ animationDelay: '1s' }} />
+      </div>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="w-full max-w-md"
       >
         <div className="text-center mb-8">
-          <img src="/logo.png" alt="Engy Up" className="h-24 w-auto mx-auto" />
-          <p className="text-slate-500 mt-6">Interactive English Learning Platform</p>
+          <img src="/logo.png" alt="Engy Up" className="h-28 w-auto mx-auto drop-shadow-2xl" />
+          <p className="text-slate-500 mt-6 font-medium">Interactive English Learning Platform</p>
         </div>
 
-        <div className="bg-white rounded-3xl border border-slate-200 shadow-xl p-8">
+        <div className="bg-white/80 backdrop-blur-xl rounded-3xl border border-slate-200/80 shadow-2xl p-8 relative overflow-hidden">
+          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-700 via-cyan-500 to-purple-500" />
           <div className="flex items-center gap-2 mb-8">
             <button
               onClick={() => setIsSignUp(false)}

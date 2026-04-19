@@ -62,27 +62,29 @@ export function Dashboard() {
 
       {/* Sidebar */}
       <aside className={cn(
-        "fixed inset-y-0 left-0 z-50 w-64 bg-white/95 backdrop-blur-xl border-r border-slate-200 flex flex-col transform transition-transform duration-300 ease-in-out md:relative md:translate-x-0 shadow-2xl md:shadow-none",
+        "fixed inset-y-0 left-0 z-50 w-72 bg-white/95 backdrop-blur-xl border-r border-slate-200 flex flex-col transform transition-transform duration-300 ease-in-out md:relative md:translate-x-0 shadow-2xl md:shadow-xl",
         isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
       )}>
-        <div className="p-6 border-b border-slate-200 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <img src="/logo.png" alt="Engy Up" className="h-14 w-auto drop-shadow-lg" />
+        <div className="p-8 border-b border-slate-200 flex items-center justify-between bg-gradient-to-br from-blue-50/50 to-cyan-50/50">
+          <div className="flex items-center gap-3">
+            <img src="/logo.png" alt="Engy Up" className="h-16 w-auto drop-shadow-lg" />
           </div>
           <button className="md:hidden text-slate-500 hover:bg-slate-100 p-2 rounded-lg" onClick={() => setIsMobileMenuOpen(false)}>
             <X className="w-5 h-5" />
           </button>
         </div>
 
-        <nav className="flex-1 p-4 space-y-1 overflow-y-auto">
+        <nav className="flex-1 p-6 space-y-2 overflow-y-auto">
           <SidebarItem icon={LayoutDashboard} label="Dashboard" active={activeTab === 'dashboard'} onClick={() => setActiveTab('dashboard')} />
           {/* <SidebarItem icon={Trophy} label="Leaderboard" active={activeTab === 'leaderboard'} onClick={() => setActiveTab('leaderboard')} /> */}
           <SidebarItem icon={SettingsIcon} label="Settings" active={activeTab === 'settings'} onClick={() => setActiveTab('settings')} />
         </nav>
 
-        <div className="p-4 border-t border-slate-200">
-          <button onClick={signOut} className="flex items-center gap-3 w-full p-3 text-slate-600 hover:bg-slate-50 rounded-xl transition-all">
-            <LogOut className="w-5 h-5" />
+        <div className="p-6 border-t border-slate-200 bg-gradient-to-t from-slate-50 to-transparent">
+          <button onClick={signOut} className="flex items-center gap-3 w-full p-4 text-slate-600 hover:bg-white hover:shadow-md rounded-2xl transition-all duration-300 group">
+            <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center group-hover:bg-red-50 group-hover:text-red-500 transition-colors">
+              <LogOut className="w-5 h-5" />
+            </div>
             <span className="font-medium">Sign Out</span>
           </button>
         </div>
@@ -90,27 +92,35 @@ export function Dashboard() {
 
       {/* Main Content */}
       <main className="flex-1 overflow-y-auto w-full">
-        <header className="bg-white border-b border-slate-200 p-4 md:p-6 flex items-center justify-between sticky top-0 z-10">
+        <header className="bg-white/80 backdrop-blur-xl border-b border-slate-200 p-4 md:p-6 flex items-center justify-between sticky top-0 z-10 shadow-sm">
           <div className="flex items-center gap-3">
-            <button className="md:hidden p-2 -ml-2 text-slate-600 hover:bg-slate-100 rounded-lg" onClick={() => setIsMobileMenuOpen(true)}>
+            <button className="md:hidden p-2 -ml-2 text-slate-600 hover:bg-slate-100 rounded-xl transition-colors" onClick={() => setIsMobileMenuOpen(true)}>
               <Menu className="w-6 h-6" />
             </button>
             <div>
-              <h2 className="text-xl md:text-2xl font-bold text-slate-900">
-                {activeTab === 'dashboard' ? `Welcome back, ${profile?.full_name?.split(' ')[0] || 'Learner'}!` : activeTab.charAt(0).toUpperCase() + activeTab.slice(1).replace('-', ' ')}
+              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">
+                {activeTab === 'dashboard' ? (
+                  <span>
+                    Welcome back, <span className="text-gradient">{profile?.full_name?.split(' ')[0] || 'Learner'}</span>!
+                  </span>
+                ) : (
+                  activeTab.charAt(0).toUpperCase() + activeTab.slice(1).replace('-', ' ')
+                )}
               </h2>
-              <div className="flex items-center gap-2 text-slate-500 text-xs md:text-sm mt-1">
-                <School className="w-3 h-3 md:w-4 md:h-4" />
-                <span>{activeTenant?.name || 'Engy Up English'}</span>
-                {activeRole && <span className="px-2 py-0.5 bg-blue-50 text-blue-700 rounded-full text-[10px] font-bold uppercase">{activeRole}</span>}
+              <div className="flex items-center gap-2 text-slate-500 text-xs md:text-sm mt-2">
+                <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center">
+                  <School className="w-3 h-3 md:w-4 md:h-4 text-blue-700" />
+                </div>
+                <span className="font-medium">{activeTenant?.name || 'Engy Up English'}</span>
+                {activeRole && <span className="px-3 py-1 bg-gradient-to-r from-blue-50 to-cyan-50 text-blue-700 rounded-full text-xs font-bold uppercase border border-blue-200 shadow-sm">{activeRole}</span>}
               </div>
             </div>
           </div>
-          <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-slate-200 overflow-hidden border-2 border-white shadow-sm shrink-0">
+          <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-slate-200 overflow-hidden border-3 border-white shadow-lg shadow-slate-200/50 shrink-0 cursor-pointer hover:shadow-xl transition-shadow">
             {profile?.avatar_url ? (
               <img src={profile.avatar_url} alt="Avatar" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
             ) : (
-              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-700 to-blue-600 text-white font-bold">
+              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-700 to-blue-600 text-white font-bold text-lg">
                 {profile?.full_name?.[0] || 'U'}
               </div>
             )}
@@ -148,30 +158,32 @@ export function Dashboard() {
                         key={course.id}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: i * 0.05 }}
-                        className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-2xl hover:border-blue-400 hover:shadow-blue-500/20 transition-all duration-300 group flex flex-col h-full"
+                        transition={{ delay: i * 0.05, duration: 0.4 }}
+                        whileHover={{ y: -8, scale: 1.02 }}
+                        className="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-2xl hover:border-blue-400 hover:shadow-blue-500/25 transition-all duration-500 group flex flex-col h-full"
                       >
-                        <div className="relative h-40 w-full overflow-hidden">
-                          <img 
-                            src={course.image_url || getCourseImage(course.title, course.course_code)} 
+                        <div className="relative h-48 w-full overflow-hidden">
+                          <img
+                            src={course.image_url || getCourseImage(course.title, course.course_code)}
                             alt={course.title}
-                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                           />
-                          <div className={`absolute top-0 right-0 m-3 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-white bg-gradient-to-r ${gradientColors[i % gradientColors.length]} shadow-lg`}>
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                          <div className={`absolute top-4 right-4 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-gradient-to-r ${gradientColors[i % gradientColors.length]} shadow-xl shadow-black/20 backdrop-blur-sm`}>
                             {course.course_code || 'English'}
                           </div>
                         </div>
                         <div className="p-6 flex flex-col flex-1">
-                          <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors line-clamp-1">{course.title}</h3>
+                          <h3 className="text-2xl font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors line-clamp-1">{course.title}</h3>
                           <p className="text-sm text-slate-500 mb-6 line-clamp-2 leading-relaxed flex-1">{course.description || 'Comprehensive English language curriculum designed for excellence.'}</p>
 
-                          <div className="flex items-center justify-between text-sm text-slate-500 mb-4">
-                            <span>{totalLessons} lessons</span>
-                            <span className="font-bold text-blue-700">{progressPercent}%</span>
+                          <div className="flex items-center justify-between text-sm mb-4">
+                            <span className="text-slate-600 font-medium">{totalLessons} lessons</span>
+                            <span className="font-bold text-blue-700 text-lg">{progressPercent}%</span>
                           </div>
 
-                          <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden mb-4">
-                            <div className="h-full bg-gradient-to-r from-blue-700 to-blue-600 rounded-full transition-all" style={{ width: `${progressPercent}%` }} />
+                          <div className="w-full h-3 bg-slate-100 rounded-full overflow-hidden mb-5 shadow-inner">
+                            <div className="h-full bg-gradient-to-r from-blue-700 to-blue-600 rounded-full transition-all duration-700 ease-out" style={{ width: `${progressPercent}%` }} />
                           </div>
 
                           {/* Show first incomplete lesson as quick-start */}
@@ -181,9 +193,11 @@ export function Dashboard() {
                                 const firstLesson = course.modules.flatMap((m: any) => m.lessons).find((l: any) => !progress[l.id]) || course.modules[0]?.lessons?.[0];
                                 if (firstLesson) handlePlayLesson(course.id, firstLesson.id);
                               }}
-                              className="w-full py-3 bg-gradient-to-r from-blue-700 to-blue-600 text-white font-bold rounded-xl hover:from-blue-800 hover:to-blue-700 transition-all duration-300 flex items-center justify-center gap-2 group-hover:shadow-lg group-hover:shadow-blue-500/30 hover:-translate-y-0.5"
+                              className="w-full py-4 bg-gradient-to-r from-blue-700 to-blue-600 text-white font-bold rounded-2xl hover:from-blue-800 hover:to-blue-700 transition-all duration-300 flex items-center justify-center gap-3 shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/35 hover:-translate-y-0.5 group-hover:scale-[1.02]"
                             >
-                              <Play className="w-4 h-4" />
+                              <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
+                                <Play className="w-4 h-4 fill-current" />
+                              </div>
                               {completedLessons > 0 ? 'Continue Learning' : 'Start Course'}
                             </button>
                           )}
@@ -234,12 +248,18 @@ function SidebarItem({ icon: Icon, label, active = false, onClick }: { icon: any
     <button
       onClick={onClick}
       className={cn(
-        "flex items-center gap-3 w-full p-3 rounded-xl font-medium transition-all duration-300 relative overflow-hidden",
-        active ? "bg-gradient-to-r from-blue-700 to-blue-600 text-white shadow-lg" : "text-slate-600 hover:bg-slate-50"
+        "flex items-center gap-3 w-full p-4 rounded-2xl font-semibold transition-all duration-300 relative overflow-hidden group",
+        active
+          ? "bg-gradient-to-r from-blue-700 to-blue-600 text-white shadow-xl shadow-blue-500/30"
+          : "text-slate-600 hover:bg-white hover:shadow-md"
       )}
     >
       {active && <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-600 opacity-100" />}
-      <Icon className="w-5 h-5 relative z-10" />
+      <div className={cn("w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 relative z-10",
+        active ? "bg-white/20" : "bg-slate-100 group-hover:bg-blue-50"
+      )}>
+        <Icon className="w-5 h-5" />
+      </div>
       <span className="relative z-10">{label}</span>
     </button>
   );
