@@ -3,23 +3,46 @@
 @tailwind utilities;
 
 :root {
+  /* Brand Colors - Based on Logo */
   --background: #f8fafc;
   --foreground: #0f172a;
   --card: #ffffff;
   --card-hover: #f1f5f9;
-  --accent: #6366f1;
-  --accent-hover: #4f46e5;
-  --accent-light: #e0e7ff;
-  --accent-glow: rgba(99, 102, 241, 0.15);
+
+  /* Primary Blue */
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --accent-light: #dbeafe;
+  --accent-glow: rgba(59, 130, 246, 0.15);
+
+  /* Cyan */
+  --cyan: #06b6d4;
+  --cyan-light: #cffafe;
+  --cyan-glow: rgba(6, 182, 212, 0.15);
+
+  /* Purple */
+  --purple: #a855f7;
+  --purple-light: #f3e8ff;
+  --purple-glow: rgba(168, 85, 247, 0.15);
+
+  /* Status Colors */
   --success: #10b981;
   --success-light: #d1fae5;
   --warning: #f59e0b;
   --danger: #ef4444;
   --muted: #94a3b8;
   --border: #e2e8f0;
+
+  /* Border Radius */
   --radius: 1rem;
   --radius-lg: 1.5rem;
   --radius-xl: 2rem;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #06b6d4 50%, #a855f7 100%);
+  --gradient-blue: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  --gradient-cyan: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+  --gradient-purple: linear-gradient(135deg, #a855f7 0%, #9333ea 100%);
 }
 
 * { box-sizing: border-box; }
@@ -184,7 +207,7 @@ body {
 
 /* Hero gradient */
 .hero-gradient {
-  background: linear-gradient(135deg, var(--accent) 0%, #a855f7 50%, #ec4899 100%);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

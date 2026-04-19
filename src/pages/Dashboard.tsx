@@ -54,7 +54,7 @@ export function Dashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 flex">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-purple-50 flex">
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 bg-slate-900/50 z-40 md:hidden" onClick={() => setIsMobileMenuOpen(false)} />
@@ -66,9 +66,8 @@ export function Dashboard() {
         isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
       )}>
         <div className="p-6 border-b border-slate-200 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center text-white font-bold shadow-lg">E</div>
-            <span className="font-bold text-xl text-slate-900">Engy Up</span>
+          <div className="flex items-center gap-2">
+            <img src="/logo.png" alt="Engy Up" className="h-12 w-auto" />
           </div>
           <button className="md:hidden text-slate-500 hover:bg-slate-100 p-2 rounded-lg" onClick={() => setIsMobileMenuOpen(false)}>
             <X className="w-5 h-5" />
@@ -140,8 +139,8 @@ export function Dashboard() {
                     const progressPercent = totalLessons > 0 ? Math.round((completedLessons / totalLessons) * 100) : 0;
 
                     const gradientColors = [
-                      'from-blue-500 to-cyan-500', 'from-cyan-500 to-teal-500', 'from-teal-500 to-emerald-500',
-                      'from-sky-500 to-blue-500', 'from-indigo-500 to-blue-500', 'from-blue-600 to-cyan-600',
+                      'from-brand-500 to-cyan-500', 'from-cyan-500 to-brand-600', 'from-brand-600 to-purple-600',
+                      'from-purple-600 to-brand-500', 'from-brand-400 to-cyan-400', 'from-cyan-600 to-brand-700',
                     ];
 
                     return (
@@ -150,7 +149,7 @@ export function Dashboard() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: i * 0.05 }}
-                        className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-xl hover:border-blue-300 transition-all group flex flex-col h-full"
+                        className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-2xl hover:border-blue-400 hover:shadow-blue-500/10 transition-all group flex flex-col h-full"
                       >
                         <div className="relative h-40 w-full overflow-hidden">
                           <img 
@@ -182,7 +181,7 @@ export function Dashboard() {
                                 const firstLesson = course.modules.flatMap((m: any) => m.lessons).find((l: any) => !progress[l.id]) || course.modules[0]?.lessons?.[0];
                                 if (firstLesson) handlePlayLesson(course.id, firstLesson.id);
                               }}
-                              className="w-full py-3 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-all flex items-center justify-center gap-2 group-hover:shadow-lg"
+                              className="w-full py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold rounded-xl hover:from-blue-700 hover:to-cyan-700 transition-all flex items-center justify-center gap-2 group-hover:shadow-lg group-hover:shadow-blue-500/30"
                             >
                               <Play className="w-4 h-4" />
                               {completedLessons > 0 ? 'Continue Learning' : 'Start Course'}

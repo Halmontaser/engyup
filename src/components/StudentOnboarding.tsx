@@ -44,7 +44,7 @@ export function StudentOnboarding({ onComplete }: StudentOnboardingProps) {
     <div className="max-w-lg mx-auto px-6 py-20">
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
         <div className="text-center mb-12">
-          <div className="w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl">
+          <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl shadow-blue-500/30">
             <GraduationCap className="w-10 h-10 text-white" />
           </div>
           <h1 className="text-3xl font-black text-slate-900 mb-2">Welcome to Engy Up!</h1>

@@ -33,9 +33,7 @@ export default function RootLayout({
         <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/80 border-b border-border">
           <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="/" className="flex items-center gap-3 group">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center text-white font-bold text-sm shadow-md">
-                E
-              </div>
+              <img src="/logo.png" alt="Engy Up" className="h-9 w-auto" />
               <span className="font-bold text-lg tracking-tight group-hover:text-blue-600 transition-colors">
                 Engy Up
               </span>

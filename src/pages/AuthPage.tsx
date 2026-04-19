@@ -44,31 +44,28 @@ export function AuthPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-purple-50 flex items-center justify-center p-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="w-full max-w-md"
       >
         <div className="text-center mb-8">
-          <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center text-white font-black text-2xl mx-auto mb-4 shadow-xl">
-            E
-          </div>
-          <h1 className="text-3xl font-black text-slate-900">Engy Up</h1>
-          <p className="text-slate-500 mt-2">Interactive English Learning Platform</p>
+          <img src="/logo.png" alt="Engy Up" className="h-24 w-auto mx-auto" />
+          <p className="text-slate-500 mt-6">Interactive English Learning Platform</p>
         </div>
 
         <div className="bg-white rounded-3xl border border-slate-200 shadow-xl p-8">
           <div className="flex items-center gap-2 mb-8">
             <button
               onClick={() => setIsSignUp(false)}
-              className={`flex-1 py-3 rounded-xl font-bold text-sm transition-all ${!isSignUp ? 'bg-blue-600 text-white shadow-lg' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}
+              className={`flex-1 py-3 rounded-xl font-bold text-sm transition-all ${!isSignUp ? 'bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-lg shadow-blue-500/30' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}
             >
               Sign In
             </button>
             <button
               onClick={() => setIsSignUp(true)}
-              className={`flex-1 py-3 rounded-xl font-bold text-sm transition-all ${isSignUp ? 'bg-blue-600 text-white shadow-lg' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}
+              className={`flex-1 py-3 rounded-xl font-bold text-sm transition-all ${isSignUp ? 'bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-lg shadow-blue-500/30' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}
             >
               Sign Up
             </button>
@@ -137,7 +134,7 @@ export function AuthPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-4 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-100 disabled:opacity-50 flex items-center justify-center gap-2"
+              className="w-full py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold rounded-xl hover:from-blue-700 hover:to-cyan-700 transition-all shadow-lg shadow-blue-500/30 disabled:opacity-50 flex items-center justify-center gap-2"
             >
               {loading && <Loader2 className="w-5 h-5 animate-spin" />}
               {isSignUp ? 'Create Account' : 'Sign In'}
