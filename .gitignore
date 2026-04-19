@@ -21,6 +21,9 @@ public/media/cs
 public/media/images
 # production
 /build
+/dist
+/.vercel
+/node_modules
 
 # misc
 .DS_Store
