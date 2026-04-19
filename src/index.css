@@ -388,3 +388,33 @@ html {
   background: var(--primary);
   color: white;
 }
+
+/* Mobile touch optimizations */
+@media (hover: none) and (pointer: coarse) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    -webkit-tap-highlight-color: rgba(30, 64, 175, 0.1);
+  }
+
+  .card:hover {
+    transform: none;
+  }
+}
+
+/* Safe area for notched devices */
+@supports (padding: max(0px)) {
+  .fixed-top-bar,
+  .fixed-bottom-bar,
+  header,
+  aside {
+    padding-left: max(env(safe-area-inset-left), 1rem);
+    padding-right: max(env(safe-area-inset-right), 1rem);
+  }
+}
