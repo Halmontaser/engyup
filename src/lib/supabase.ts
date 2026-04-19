@@ -1,23 +1,27 @@
 import { createClient } from '@supabase/supabase-js'
 
 const getSupabaseConfig = () => {
-  const meta = import.meta as any;
-  const env = meta.env || (typeof process !== 'undefined' ? process.env : {});
+  const env = (import.meta as any).env || {};
   
-  const url = env.VITE_SUPABASE_URL;
-  const key = env.VITE_SUPABASE_ANON_KEY || env.VITE_SUPABASE_KEY;
+  // Try both Vite-style and process-style (for define compatibility)
+  const url = env.VITE_SUPABASE_URL || (typeof process !== 'undefined' ? process.env.VITE_SUPABASE_URL : '');
+  const key = env.VITE_SUPABASE_ANON_KEY || (typeof process !== 'undefined' ? process.env.VITE_SUPABASE_ANON_KEY : '');
   
   const defaultUrl = 'https://msttsebafjgzllyabsid.supabase.co';
-  const defaultKey = '';
   
-  const finalUrl = (url && url.startsWith('http')) ? url : defaultUrl;
-  const finalKey = key || defaultKey;
+  const finalUrl = (url && url !== 'undefined' && url.startsWith('http')) ? url : defaultUrl;
+  const finalKey = (key && key !== 'undefined') ? key : null;
   
   return { finalUrl, finalKey };
 };
 
 const { finalUrl, finalKey } = getSupabaseConfig();
-export const supabase = createClient(finalUrl, finalKey);
+
+if (!finalKey) {
+  console.error('Supabase Key is missing! Please set VITE_SUPABASE_ANON_KEY in your environment.');
+}
+
+export const supabase = createClient(finalUrl, finalKey || 'MISSING_KEY');
 
 export type Profile = {
   id: string;
