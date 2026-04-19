@@ -44,7 +44,7 @@ export function AuthPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-purple-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 flex items-center justify-center p-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -59,13 +59,13 @@ export function AuthPage() {
           <div className="flex items-center gap-2 mb-8">
             <button
               onClick={() => setIsSignUp(false)}
-              className={`flex-1 py-3 rounded-xl font-bold text-sm transition-all ${!isSignUp ? 'bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-lg shadow-blue-500/30' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}
+              className={`flex-1 py-3 rounded-xl font-bold text-sm transition-all ${!isSignUp ? 'bg-gradient-to-r from-blue-700 to-blue-600 text-white shadow-lg shadow-blue-500/30' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}
             >
               Sign In
             </button>
             <button
               onClick={() => setIsSignUp(true)}
-              className={`flex-1 py-3 rounded-xl font-bold text-sm transition-all ${isSignUp ? 'bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-lg shadow-blue-500/30' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}
+              className={`flex-1 py-3 rounded-xl font-bold text-sm transition-all ${isSignUp ? 'bg-gradient-to-r from-blue-700 to-blue-600 text-white shadow-lg shadow-blue-500/30' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}
             >
               Sign Up
             </button>
@@ -88,13 +88,13 @@ export function AuthPage() {
                     value={fullName}
                     onChange={e => setFullName(e.target.value)}
                     required
-                    className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-xl font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-xl font-medium focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-all"
                   />
                 </div>
                 <select
                   value={role}
                   onChange={e => setRole(e.target.value)}
-                  className="w-full px-4 py-4 bg-slate-50 border border-slate-200 rounded-xl font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                  className="w-full px-4 py-4 bg-slate-50 border border-slate-200 rounded-xl font-medium focus:outline-none focus:ring-2 focus:ring-blue-700 transition-all"
                 >
                   <option value="student">Student</option>
                   <option value="teacher">Teacher</option>
@@ -111,7 +111,7 @@ export function AuthPage() {
                 value={email}
                 onChange={e => setEmail(e.target.value)}
                 required
-                className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-xl font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-xl font-medium focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-all"
               />
             </div>
 
@@ -124,7 +124,7 @@ export function AuthPage() {
                 onChange={e => setPassword(e.target.value)}
                 required
                 minLength={6}
-                className="w-full pl-12 pr-12 py-4 bg-slate-50 border border-slate-200 rounded-xl font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="w-full pl-12 pr-12 py-4 bg-slate-50 border border-slate-200 rounded-xl font-medium focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-all"
               />
               <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600">
                 {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
@@ -134,7 +134,7 @@ export function AuthPage() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold rounded-xl hover:from-blue-700 hover:to-cyan-700 transition-all shadow-lg shadow-blue-500/30 disabled:opacity-50 flex items-center justify-center gap-2"
+              className="w-full py-4 bg-gradient-to-r from-blue-700 to-blue-600 text-white font-bold rounded-xl hover:from-blue-800 hover:to-blue-700 transition-all shadow-lg shadow-blue-500/30 disabled:opacity-50 flex items-center justify-center gap-2"
             >
               {loading && <Loader2 className="w-5 h-5 animate-spin" />}
               {isSignUp ? 'Create Account' : 'Sign In'}

@@ -54,7 +54,7 @@ export function Dashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-purple-50 flex">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 flex" style={{ backgroundImage: 'radial-gradient(at 40% 20%, rgba(30, 64, 175, 0.08) 0px, transparent 50%), radial-gradient(at 80% 0%, rgba(14, 165, 233, 0.06) 0px, transparent 50%), radial-gradient(at 0% 50%, rgba(168, 85, 247, 0.04) 0px, transparent 50%)' }}>
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 bg-slate-900/50 z-40 md:hidden" onClick={() => setIsMobileMenuOpen(false)} />
@@ -62,12 +62,12 @@ export function Dashboard() {
 
       {/* Sidebar */}
       <aside className={cn(
-        "fixed inset-y-0 left-0 z-50 w-64 bg-white border-r border-slate-200 flex flex-col transform transition-transform duration-300 ease-in-out md:relative md:translate-x-0",
+        "fixed inset-y-0 left-0 z-50 w-64 bg-white/95 backdrop-blur-xl border-r border-slate-200 flex flex-col transform transition-transform duration-300 ease-in-out md:relative md:translate-x-0 shadow-2xl md:shadow-none",
         isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
       )}>
         <div className="p-6 border-b border-slate-200 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src="/logo.png" alt="Engy Up" className="h-12 w-auto" />
+            <img src="/logo.png" alt="Engy Up" className="h-14 w-auto drop-shadow-lg" />
           </div>
           <button className="md:hidden text-slate-500 hover:bg-slate-100 p-2 rounded-lg" onClick={() => setIsMobileMenuOpen(false)}>
             <X className="w-5 h-5" />
@@ -102,7 +102,7 @@ export function Dashboard() {
               <div className="flex items-center gap-2 text-slate-500 text-xs md:text-sm mt-1">
                 <School className="w-3 h-3 md:w-4 md:h-4" />
                 <span>{activeTenant?.name || 'Engy Up English'}</span>
-                {activeRole && <span className="px-2 py-0.5 bg-blue-50 text-blue-600 rounded-full text-[10px] font-bold uppercase">{activeRole}</span>}
+                {activeRole && <span className="px-2 py-0.5 bg-blue-50 text-blue-700 rounded-full text-[10px] font-bold uppercase">{activeRole}</span>}
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@ export function Dashboard() {
             {profile?.avatar_url ? (
               <img src={profile.avatar_url} alt="Avatar" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
             ) : (
-              <div className="w-full h-full flex items-center justify-center bg-blue-100 text-blue-600 font-bold">
+              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-700 to-blue-600 text-white font-bold">
                 {profile?.full_name?.[0] || 'U'}
               </div>
             )}
@@ -122,7 +122,7 @@ export function Dashboard() {
             <>
               {isLoadingCourses ? (
                 <div className="flex justify-center py-20">
-                  <Loader2 className="w-10 h-10 text-blue-600 animate-spin" />
+                  <Loader2 className="w-12 h-12 text-blue-700 animate-spin" />
                 </div>
               ) : courses.length === 0 ? (
                 <div className="text-center py-20">
@@ -139,8 +139,8 @@ export function Dashboard() {
                     const progressPercent = totalLessons > 0 ? Math.round((completedLessons / totalLessons) * 100) : 0;
 
                     const gradientColors = [
-                      'from-brand-500 to-cyan-500', 'from-cyan-500 to-brand-600', 'from-brand-600 to-purple-600',
-                      'from-purple-600 to-brand-500', 'from-brand-400 to-cyan-400', 'from-cyan-600 to-brand-700',
+                      'from-sky-500 to-cyan-500', 'from-cyan-500 to-sky-600', 'from-sky-600 to-purple-500',
+                      'from-purple-500 to-sky-500', 'from-sky-400 to-cyan-400', 'from-cyan-600 to-sky-700',
                     ];
 
                     return (
@@ -149,7 +149,7 @@ export function Dashboard() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: i * 0.05 }}
-                        className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-2xl hover:border-blue-400 hover:shadow-blue-500/10 transition-all group flex flex-col h-full"
+                        className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-2xl hover:border-blue-400 hover:shadow-blue-500/20 transition-all duration-300 group flex flex-col h-full"
                       >
                         <div className="relative h-40 w-full overflow-hidden">
                           <img 
@@ -162,16 +162,16 @@ export function Dashboard() {
                           </div>
                         </div>
                         <div className="p-6 flex flex-col flex-1">
-                          <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors line-clamp-1">{course.title}</h3>
+                          <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors line-clamp-1">{course.title}</h3>
                           <p className="text-sm text-slate-500 mb-6 line-clamp-2 leading-relaxed flex-1">{course.description || 'Comprehensive English language curriculum designed for excellence.'}</p>
 
                           <div className="flex items-center justify-between text-sm text-slate-500 mb-4">
                             <span>{totalLessons} lessons</span>
-                            <span className="font-bold text-blue-600">{progressPercent}%</span>
+                            <span className="font-bold text-blue-700">{progressPercent}%</span>
                           </div>
 
                           <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden mb-4">
-                            <div className="h-full bg-blue-600 rounded-full transition-all" style={{ width: `${progressPercent}%` }} />
+                            <div className="h-full bg-gradient-to-r from-blue-700 to-blue-600 rounded-full transition-all" style={{ width: `${progressPercent}%` }} />
                           </div>
 
                           {/* Show first incomplete lesson as quick-start */}
@@ -181,7 +181,7 @@ export function Dashboard() {
                                 const firstLesson = course.modules.flatMap((m: any) => m.lessons).find((l: any) => !progress[l.id]) || course.modules[0]?.lessons?.[0];
                                 if (firstLesson) handlePlayLesson(course.id, firstLesson.id);
                               }}
-                              className="w-full py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold rounded-xl hover:from-blue-700 hover:to-cyan-700 transition-all flex items-center justify-center gap-2 group-hover:shadow-lg group-hover:shadow-blue-500/30"
+                              className="w-full py-3 bg-gradient-to-r from-blue-700 to-blue-600 text-white font-bold rounded-xl hover:from-blue-800 hover:to-blue-700 transition-all duration-300 flex items-center justify-center gap-2 group-hover:shadow-lg group-hover:shadow-blue-500/30 hover:-translate-y-0.5"
                             >
                               <Play className="w-4 h-4" />
                               {completedLessons > 0 ? 'Continue Learning' : 'Start Course'}
@@ -234,12 +234,13 @@ function SidebarItem({ icon: Icon, label, active = false, onClick }: { icon: any
     <button
       onClick={onClick}
       className={cn(
-        "flex items-center gap-3 w-full p-3 rounded-xl font-medium transition-all",
-        active ? "bg-blue-50 text-blue-600" : "text-slate-600 hover:bg-slate-50"
+        "flex items-center gap-3 w-full p-3 rounded-xl font-medium transition-all duration-300 relative overflow-hidden",
+        active ? "bg-gradient-to-r from-blue-700 to-blue-600 text-white shadow-lg" : "text-slate-600 hover:bg-slate-50"
       )}
     >
-      <Icon className="w-5 h-5" />
-      <span>{label}</span>
+      {active && <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-blue-600 opacity-100" />}
+      <Icon className="w-5 h-5 relative z-10" />
+      <span className="relative z-10">{label}</span>
     </button>
   );
 }
