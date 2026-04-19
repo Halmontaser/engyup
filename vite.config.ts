@@ -54,6 +54,7 @@ export default defineConfig(({ mode }) => {
     build: {
       outDir: 'dist',
       sourcemap: mode === 'development',
+      copyPublicDir: false, // Media files are hosted on R2, don't copy public directory
       rollupOptions: {
         output: {
           manualChunks: {
@@ -65,20 +66,15 @@ export default defineConfig(({ mode }) => {
         },
       },
       chunkSizeWarningLimit: 1000, // Increase limit to 1MB
+      ...(mode === 'production' ? {
+        cssCodeSplitting: true,
+        sourcemap: false,
+      } : {}),
     },
 
     // Optimize dependencies
     optimizeDeps: {
       include: ['react', 'react-dom', 'react-router-dom', '@supabase/supabase-js'],
     },
-
-    // Vercel-specific build settings
-    ...(mode === 'production' ? {
-      // Production build optimizations
-      build: {
-        cssCodeSplitting: true,
-        sourcemap: false,
-      },
-    } : {}),
   };
 });

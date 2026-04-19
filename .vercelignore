@@ -1,0 +1,73 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Database files
+components.db
+*.db
+*.db-shm
+*.db-wal
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Media files (hosted on R2)
+public/media/
+
+# Build outputs
+dist/
+build/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist/
+
+# Scratch directories
+scratch/
+prompts/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Misc
+.DS_Store
+*.pem
+*.swo
+*.swp
+*.swn
+
+# Debug files
+debug*.log
+*.log
+
+# Scripts and data files
+*.js
+!vite.config.ts
+!eslint.config.mjs
+!postcss.config.mjs
+!tailwind.config.js
+!capacitor.config.ts
+!tsconfig.json
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!capacitor.config.ts
+!tailwind.config.js
+!postcss.config.mjs
+!eslint.config.mjs
+!vite.config.ts
+
+# Lock files (use package-lock.json)
+bun.lock
+yarn.lock
+pnpm-lock.yaml

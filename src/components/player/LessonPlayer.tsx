@@ -2,8 +2,9 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Check, ChevronRight, Trophy, Heart } from 'lucide-react';
+import { X, Check, ChevronRight, Trophy, Heart, ChevronLeft } from 'lucide-react';
 import ActivityPlayer from './ActivityPlayer';
+import LessonSidebar from './LessonSidebar';
 import { getMediaUrl } from "@/utils/assets";
 
 interface MediaEntry {
@@ -37,24 +38,32 @@ interface LessonPlayerProps {
   onLessonComplete?: () => void;
 }
 
-export default function LessonPlayer({ 
-  lesson, 
-  activities, 
-  onBack, 
+export default function LessonPlayer({
+  lesson,
+  activities,
+  onBack,
   backHref,
-  onLessonComplete 
+  onLessonComplete
 }: LessonPlayerProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isEvaluated, setIsEvaluated] = useState(false);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   const [canContinue, setCanContinue] = useState(false);
   const [triggerCheck, setTriggerCheck] = useState(0);
-  
+  const [sidebarExpanded, setSidebarExpanded] = useState(true);
+  const [completedActivities, setCompletedActivities] = useState<Set<string>>(new Set());
+
   const total = activities.length;
   const progress = total > 0 ? (currentIndex / total) * 100 : 0;
   const isFinished = currentIndex >= total;
 
   const currentActivity = activities[currentIndex];
+
+  // Enhanced activities with completion status
+  const enhancedActivities = activities.map(activity => ({
+    ...activity,
+    completed: completedActivities.has(activity.id),
+  }));
 
   const handleBack = () => {
     if (onBack) {
@@ -82,6 +91,25 @@ export default function LessonPlayer({
     setIsCorrect(correct ?? true);
     setIsEvaluated(true);
     setCanContinue(true);
+
+    // Mark current activity as completed if correct
+    if (correct !== false && currentActivity) {
+      setCompletedActivities(prev => new Set(prev).add(currentActivity.id));
+    }
+  };
+
+  const handleActivityClick = (index: number) => {
+    // Allow navigation to completed activities or the current activity
+    if (index <= currentIndex || enhancedActivities[index]?.completed) {
+      setCurrentIndex(index);
+      setIsEvaluated(false);
+      setIsCorrect(null);
+      setCanContinue(false);
+    }
+  };
+
+  const toggleSidebar = () => {
+    setSidebarExpanded(!sidebarExpanded);
   };
 
   const handleCheck = () => {
@@ -114,8 +142,8 @@ export default function LessonPlayer({
     <div className="min-h-screen bg-white text-slate-900 font-sans">
       {/* FIXED TOP HEADER */}
       <header className="fixed-top-bar flex items-center justify-between gap-4 md:gap-6 px-4 md:px-10">
-        <button 
-          onClick={handleBack} 
+        <button
+          onClick={handleBack}
           className="text-slate-400 hover:text-slate-600 transition-colors p-1"
         >
           <X size={24} className="md:w-7 md:h-7" strokeWidth={3} />
@@ -123,8 +151,8 @@ export default function LessonPlayer({
 
         <div className="flex-1 max-w-2xl px-4">
           <div className="progress-track bg-slate-100 h-4 rounded-full">
-            <motion.div 
-              className="progress-fill bg-green-500 h-full rounded-full" 
+            <motion.div
+              className="progress-fill bg-green-500 h-full rounded-full"
               initial={{ width: 0 }}
               animate={{ width: `${progress}%` }}
               transition={{ type: 'spring', stiffness: 50 }}
@@ -136,10 +164,29 @@ export default function LessonPlayer({
           <Heart size={24} fill="currentColor" />
           <span>5</span>
         </div>
+
+        {/* Desktop Sidebar Toggle */}
+        <button
+          onClick={toggleSidebar}
+          className="hidden md:flex items-center justify-center p-2 hover:bg-slate-100 rounded-lg transition-colors text-slate-600"
+        >
+          <ChevronLeft size={20} className={sidebarExpanded ? 'rotate-0' : 'rotate-180'} />
+        </button>
       </header>
 
+      {/* SIDEBAR */}
+      <LessonSidebar
+        activities={enhancedActivities}
+        currentIndex={currentIndex}
+        onActivityClick={handleActivityClick}
+        isExpanded={sidebarExpanded}
+        onToggle={toggleSidebar}
+      />
+
       {/* MAIN LEARNING CANVAS */}
-      <main className="main-learning-canvas max-w-5xl mx-auto">
+      <main className={`main-learning-canvas max-w-5xl mx-auto transition-all duration-300 ${
+        sidebarExpanded ? 'md:ml-[280px]' : ''
+      }`}>
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
@@ -149,6 +196,9 @@ export default function LessonPlayer({
             className="w-full flex flex-col items-center"
           >
               <div className="w-full mb-6 md:mb-10 text-center md:text-left">
+                <div className="text-xs font-bold text-blue-600 uppercase tracking-widest mb-1">
+                  Lesson {lesson.lessonNumber}: {lesson.title}
+                </div>
                 <h2 className="text-2xl md:text-3xl font-black mb-2 md:mb-4 text-slate-800 leading-tight">
                   {currentActivity.instruction || 'Choose the correct option'}
                 </h2>

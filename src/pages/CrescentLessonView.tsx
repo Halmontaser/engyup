@@ -5,6 +5,15 @@ import { useAuth } from '@/context/AuthContext';
 import LessonPlayer from '@/components/player/LessonPlayer';
 import { Loader2 } from 'lucide-react';
 
+// Format activity type to readable unit name
+function formatUnitName(type: string): string {
+  if (!type) return 'Activities';
+  return type
+    .split(/[_\s-]+/)
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ');
+}
+
 export function CrescentLessonView() {
   const { courseId, lessonId } = useParams<{ courseId: string; lessonId: string }>();
   const { user, setProgress } = useAuth();
@@ -45,15 +54,50 @@ export function CrescentLessonView() {
         .order('order_index', { ascending: true });
 
       if (activitiesData) {
-        setActivities(activitiesData.map(a => ({
+        // Group activities by type to create units
+        const unitGroups = activitiesData.reduce((groups: Record<string, any[]>, a) => {
+          const type = a.activity_type || 'Other';
+          if (!groups[type]) {
+            groups[type] = [];
+          }
+          groups[type].push(a);
+          return groups;
+        }, {});
+
+        // Create units with descriptive names
+        const unitNames: Record<string, string> = {
+          'flashcard': 'Vocabulary Review',
+          'mcq': 'Multiple Choice',
+          'true_false': 'True or False',
+          'gap_fill': 'Fill in the Blanks',
+          'matching': 'Match the Pairs',
+          'word_order': 'Sentence Building',
+          'dictation': 'Listening Practice',
+          'reading': 'Reading Comprehension',
+          'conversation': 'Conversation Practice',
+          'pronunciation': 'Speaking Practice',
+          'image_label': 'Image Recognition',
+          'guessing': 'Guess the Word',
+          'spelling': 'Spelling Practice',
+          'picture_description': 'Picture Description',
+          'sequence': 'Reading Sequence',
+          'transform': 'Sentence Transformation',
+          'category_sort': 'Category Sorting',
+        };
+
+        // Map each activity to its unit
+        const activitiesWithUnits = activitiesData.map(a => ({
           id: a.activity_id,
           type: a.activity_type,
           title: a.title || '',
           instruction: a.instruction || a.title || 'Complete this activity',
           data: a.content,
           compensates: a.compensates || null,
+          unit: unitNames[a.activity_type] || formatUnitName(a.activity_type),
           media: { audio: [], images: [] }, // Media will be resolved from content URLs
-        })));
+        }));
+
+        setActivities(activitiesWithUnits);
       }
     } catch (err) {
       console.error('Error fetching lesson data:', err);
