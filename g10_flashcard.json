@@ -1,0 +1,14 @@
+[
+  {
+    "id": "g10-gen-g10-u1-1.1-flashcard-1",
+    "data": "{\"items\": [{\"word\": \"scene\", \"definition\": \"A view or picture of a place, event, or activity.\", \"example\": \"The picture shows a busy street scene.\", \"image\": \"520\", \"partOfSpeech\": \"noun\"}, {\"word\": \"cafe\", \"definition\": \"A small restaurant where you can buy drinks and simple meals.\", \"example\": \"A man is reading a newspaper at the cafe.\", \"image\": \"520\", \"partOfSpeech\": \"noun\"}, {\"word\": \"litter bin\", \"definition\": \"A container in a public place for people to put their rubbish in.\", \"example\": \"Please put your empty bottle in the litter bin.\", \"image\": \"520\", \"partOfSpeech\": \"noun\"}, {\"word\": \"pavement\", \"definition\": \"A flat part at the side of a road for people to walk on.\", \"example\": \"The girls are walking on the pavement.\", \"image\": \"520\", \"partOfSpeech\": \"noun\"}, {\"word\": \"traffic lights\", \"definition\": \"A set of red, yellow, and green lights that control traffic.\", \"example\": \"The cars stopped at the traffic lights.\", \"image\": \"526\", \"partOfSpeech\": \"noun\"}, {\"word\": \"bakery\", \"definition\": \"A place where bread and cakes are made and sold.\", \"example\": \"You can see a bakery in the picture.\", \"image\": \"520\", \"partOfSpeech\": \"noun\"}]}"
+  },
+  {
+    "id": "g10-gen-g10-u1-1.10-flashcard-1",
+    "data": "{\"items\": [{\"word\": \"come round\", \"definition\": \"to visit someone in their home\", \"example\": \"If I finish my homework, I'll come round to your house later.\", \"partOfSpeech\": \"verb\", \"image\": \"gen-g10-u1-1.10-img-1\"}]}"
+  },
+  {
+    "id": "g10-gen-g10-u1-1.11-flashcard-1",
+    "data": "{\"items\": [{\"word\": \"decide\", \"definition\": \"to make a choice about something\", \"example\": \"He decided to go to the take-away.\", \"partOfSpeech\": \"verb\", \"audio\": \"decide.mp3\"}, {\"word\": \"hungry\", \"definition\": \"feeling that you want to eat something\", \"example\": \"Yousif was hungry.\", \"partOfSpeech\": \"adjective\", \"audio\": \"hungry.mp3\"}, {\"word\": \"kitchen\", \"definition\": \"a room where food is cooked\", \"example\": \"He went into the kitchen.\", \"partOfSpeech\": \"noun\", \"audio\": \"kitchen.mp3\"}, {\"word\": \"sandwich\", \"definition\": \"two pieces of bread with meat, cheese, or other filling between them\", \"example\": \"He made himself a sandwich.\", \"partOfSpeech\": \"noun\", \"audio\": \"sandwich.mp3\"}, {\"word\": \"take-away\", \"definition\": \"a restaurant that cooks and sells food that you take away and eat somewhere else\", \"example\": \"He decided to go to the take-away.\", \"partOfSpeech\": \"noun\", \"audio\": \"take-away.mp3\"}, {\"word\": \"burger\", \"definition\": \"a flat, round piece of ground meat that is cooked and eaten in a bread roll\", \"example\": \"He got a burger.\", \"partOfSpeech\": \"noun\", \"audio\": \"burger.mp3\"}]}"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "activityId": "g8-gen-g8-u2-2.7-pronunciation-practice-6",
+    "type": "pronunciation-practice",
+    "audioItems": [
+      {
+        "text": "Would you like to come?",
+        "fileName": "g8_u2_l2.7_pro_6_p0.mp3"
+      },
+      {
+        "text": "I'd love to.",
+        "fileName": "g8_u2_l2.7_pro_6_p1.mp3"
+      },
+      {
+        "text": "What time?",
+        "fileName": "g8_u2_l2.7_pro_6_p2.mp3"
+      },
+      {
+        "text": "Next to the Post Office.",
+        "fileName": "g8_u2_l2.7_pro_6_p3.mp3"
+      }
+    ]
+  }
+]

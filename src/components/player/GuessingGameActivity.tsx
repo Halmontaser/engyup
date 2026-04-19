@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { HelpCircle, Eye, ChevronRight, Lightbulb } from "lucide-react";
 
 import { ActivityMedia } from "./ActivityPlayer";
+import { getMediaUrl } from "@/utils/assets";
 
 export default function GuessingGameActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
   const puzzles: {

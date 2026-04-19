@@ -43,27 +43,20 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const fetchEnrollments = async (userId: string, tenantId: string) => {
     try {
-      const { data: { session } } = await supabase.auth.getSession();
-      if (!session) return;
+      const [enrollRes, progressRes] = await Promise.all([
+        supabase.from('enrollments').select('course_id').eq('user_id', userId).eq('tenant_id', tenantId),
+        supabase.from('user_progress').select('lesson_id, status').eq('user_id', userId)
+      ]);
 
-      const response = await fetch(`/api/my-enrollments?tenantId=${tenantId}`, {
-        headers: {
-          'Authorization': `Bearer ${session.access_token}`
-        }
-      });
+      const enrollMap: Record<string, boolean> = {};
+      (enrollRes.data || []).forEach((e: any) => enrollMap[e.course_id] = true);
+      setEnrollments(enrollMap);
 
-      const data = await response.json();
-      if (data.success) {
-        const enrollMap: Record<string, boolean> = {};
-        data.enrollments.forEach((id: string) => enrollMap[id] = true);
-        setEnrollments(enrollMap);
-
-        const progressMap: Record<string, boolean> = {};
-        data.progress.forEach((p: any) => progressMap[p.lesson_id] = p.status === 'completed');
-        setProgress(progressMap);
-      }
+      const progressMap: Record<string, boolean> = {};
+      (progressRes.data || []).forEach((p: any) => progressMap[p.lesson_id] = p.status === 'completed');
+      setProgress(progressMap);
     } catch (err) {
-      console.error('Error fetching enrollments via API:', err);
+      console.error('Error fetching enrollments via Supabase:', err);
     }
   };
 

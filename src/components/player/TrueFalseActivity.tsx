@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { Check, X, ChevronRight, HelpCircle } from "lucide-react";
 
 import { ActivityMedia } from "./ActivityPlayer";
+import { getMediaUrl } from "@/utils/assets";
 
 export default function TrueFalseActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
   const statements = data.statements || [];

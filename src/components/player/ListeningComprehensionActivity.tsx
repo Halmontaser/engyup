@@ -11,6 +11,7 @@ import {
   Headphones,
 } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
+import { getMediaUrl } from "@/utils/assets";
 
 interface Option {
   text: string;
@@ -57,7 +58,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
 
     if (passageAudio) {
       setIsSpeaking(true);
-      const audio = new Audio(passageAudio.url);
+      const audio = new Audio(getMediaUrl(passageAudio.url));
       audioRef.current = audio;
       audio.onended = () => setIsSpeaking(false);
       audio.onerror = () => {
@@ -179,10 +180,16 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
             {passageImage && (
               <div className="mb-8 mx-auto max-w-[320px] rounded-2xl overflow-hidden border border-[var(--border)] shadow-md">
                 <img
-                  src={passageImage.url}
+                  src={getMediaUrl(passageImage.url)}
                   alt="Listening passage illustration"
                   className="w-full h-auto object-contain"
                   onError={(e) => {
+/* eslint-disable-next-line */
+
+/* eslint-disable-next-line */
+
+/* eslint-disable-next-line */
+
                     (e.target as HTMLImageElement).style.display = "none";
                   }}
                 />

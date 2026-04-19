@@ -20,6 +20,7 @@ import PictureDescriptionActivity from './PictureDescriptionActivity';
 import { AlertCircle, Info } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ErrorBoundary } from '../ErrorBoundary';
+import { getMediaUrl } from "@/utils/assets";
 
 export interface ActivityMediaEntry {
   filename: string;
@@ -43,9 +44,10 @@ interface ActivityPlayerProps {
   };
   media?: ActivityMedia;
   onComplete?: (correct?: boolean) => void;
+  triggerCheck?: number;
 }
 
-export default function ActivityPlayer({ activity, media, onComplete }: ActivityPlayerProps) {
+export default function ActivityPlayer({ activity, media, onComplete, triggerCheck }: ActivityPlayerProps) {
   if (!activity || !activity.data) {
     return <div className="p-4 text-slate-400">No activity data provided.</div>;
   }
@@ -56,47 +58,47 @@ export default function ActivityPlayer({ activity, media, onComplete }: Activity
   const renderComponent = () => {
     switch (type) {
       case 'flashcard':
-        return <FlashcardActivity data={data} media={m} onComplete={onComplete} />;
+        return <FlashcardActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
       case 'mcq':
-        return <McqActivity data={data} media={m} onComplete={onComplete} />;
+        return <McqActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
       case 'gap-fill':
-        return <GapFillActivity data={data} media={m} onComplete={onComplete} />;
+        return <GapFillActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
       case 'true-false':
-        return <TrueFalseActivity data={data} media={m} onComplete={onComplete} />;
+        return <TrueFalseActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
       case 'match-pairs':
-        return <MatchPairsActivity data={data} media={m} onComplete={onComplete} />;
+        return <MatchPairsActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
       case 'word-order':
-        return <WordOrderActivity data={data} media={m} onComplete={onComplete} />;
+        return <WordOrderActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
       case 'reading-passage':
         return <ReadingPassageActivity data={data} media={m} onComplete={onComplete} />;
       case 'category-sort':
-        return <CategorySortActivity data={data} media={m} onComplete={onComplete} />;
+        return <CategorySortActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
       case 'dialogue-read':
         return <DialogueReadActivity data={data} media={m} onComplete={onComplete} />;
       case 'transform-sentence':
-        return <TransformSentenceActivity data={data} media={m} onComplete={onComplete} />;
+        return <TransformSentenceActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
       case 'image-label':
-        return <ImageLabelActivity data={data} media={m} onComplete={onComplete} />;
+        return <ImageLabelActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
       case 'guessing-game':
-        return <GuessingGameActivity data={data} media={m} onComplete={onComplete} />;
+        return <GuessingGameActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
       case 'reading-sequence':
-        return <ReadingSequenceActivity data={data} media={m} onComplete={onComplete} />;
+        return <ReadingSequenceActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
       case 'sentence-builder':
-        return <WordOrderActivity data={data} media={m} onComplete={onComplete} />;
+        return <WordOrderActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
       case 'word-association':
-        return <MatchPairsActivity data={data} media={m} onComplete={onComplete} />;
+        return <MatchPairsActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
       case 'pronunciation-practice':
-        return <PronunciationPracticeActivity data={data} media={m} onComplete={onComplete} />;
+        return <PronunciationPracticeActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
       case 'listening-comprehension':
-        return <ListeningComprehensionActivity data={data} media={m} onComplete={onComplete} />;
+        return <ListeningComprehensionActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
       case 'spelling-bee':
-        return <SpellingBeeActivity data={data} media={m} onComplete={onComplete} />;
+        return <SpellingBeeActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
       case 'dictation':
-        return <DictationActivity data={data} media={m} onComplete={onComplete} />;
+        return <DictationActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
       case 'conversation-sim':
-        return <ConversationSimActivity data={data} media={m} onComplete={onComplete} />;
+        return <ConversationSimActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
       case 'picture-description':
-        return <PictureDescriptionActivity data={data} media={m} onComplete={onComplete} />;
+        return <PictureDescriptionActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
       default:
         return (
           <div className="p-8 bg-amber-50 border border-amber-200 rounded-2xl flex items-start gap-4 mx-auto max-w-2xl w-full">

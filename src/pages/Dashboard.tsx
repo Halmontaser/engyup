@@ -8,7 +8,7 @@ import {
   ChevronDown, Loader2, Trophy, CheckCircle, Play
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { cn } from '@/lib/utils';
+import { cn, getCourseImage } from '@/lib/utils';
 
 export function Dashboard() {
   const { profile, activeTenant, memberships, setActiveTenant, signOut, progress, enrollments } = useAuth();
@@ -152,12 +152,21 @@ export function Dashboard() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: i * 0.05 }}
-                        className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-lg hover:border-indigo-200 transition-all group"
+                        className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-xl hover:border-indigo-300 transition-all group flex flex-col h-full"
                       >
-                        <div className={`h-3 bg-gradient-to-r ${gradientColors[i % gradientColors.length]}`} />
-                        <div className="p-6">
-                          <h3 className="text-lg font-bold text-slate-900 mb-1">{course.title}</h3>
-                          <p className="text-sm text-slate-500 mb-4 line-clamp-2">{course.description || 'English Language Course'}</p>
+                        <div className="relative h-40 w-full overflow-hidden">
+                          <img 
+                            src={course.image_url || getCourseImage(course.title, course.course_code)} 
+                            alt={course.title}
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                          />
+                          <div className={`absolute top-0 right-0 m-3 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-white bg-gradient-to-r ${gradientColors[i % gradientColors.length]} shadow-lg`}>
+                            {course.course_code || 'English'}
+                          </div>
+                        </div>
+                        <div className="p-6 flex flex-col flex-1">
+                          <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors line-clamp-1">{course.title}</h3>
+                          <p className="text-sm text-slate-500 mb-6 line-clamp-2 leading-relaxed flex-1">{course.description || 'Comprehensive English language curriculum designed for excellence.'}</p>
 
                           <div className="flex items-center justify-between text-sm text-slate-500 mb-4">
                             <span>{totalLessons} lessons</span>

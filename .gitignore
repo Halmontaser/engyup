@@ -21,7 +21,6 @@ public/media/cs
 public/media/images
 # production
 /build
-/dist
 
 # misc
 .DS_Store
@@ -57,4 +56,3 @@ next-env.d.ts
 .roo
 .trae
 .windsurf
-.env*.local

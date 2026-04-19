@@ -3,6 +3,7 @@ import { useState, useEffect, useMemo, useCallback } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Check, HelpCircle, ChevronRight, ChevronLeft, RotateCcw } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
+import { getMediaUrl } from "@/utils/assets";
 
 interface Props {
   data: any;

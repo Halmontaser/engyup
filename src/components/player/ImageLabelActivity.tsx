@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { MapPin, Check, Eye } from "lucide-react";
 
 import { ActivityMedia } from "./ActivityPlayer";
+import { getMediaUrl } from "@/utils/assets";
 
 export default function ImageLabelActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
   const imageSrc = data.image?.src || "";

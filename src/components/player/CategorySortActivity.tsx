@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { Check, X, RotateCcw } from "lucide-react";
 
 import { ActivityMedia } from "./ActivityPlayer";
+import { getMediaUrl } from "@/utils/assets";
 
 export default function CategorySortActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
   const categories: { name: string; items: string[] }[] = data.categories || [];

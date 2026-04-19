@@ -1,7 +1,10 @@
+"use client";
+
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Check, ChevronRight, Trophy, Heart } from 'lucide-react';
 import ActivityPlayer from './ActivityPlayer';
+import { getMediaUrl } from "@/utils/assets";
 
 interface MediaEntry {
   filename: string;
@@ -29,11 +32,18 @@ interface LessonPlayerProps {
     media?: ActivityMedia;
     compensates?: string | null;
   }[];
-  onBack: () => void;
+  onBack?: () => void;
+  backHref?: string;
   onLessonComplete?: () => void;
 }
 
-export default function LessonPlayer({ lesson, activities, onBack, onLessonComplete }: LessonPlayerProps) {
+export default function LessonPlayer({ 
+  lesson, 
+  activities, 
+  onBack, 
+  backHref,
+  onLessonComplete 
+}: LessonPlayerProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isEvaluated, setIsEvaluated] = useState(false);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
@@ -45,6 +55,16 @@ export default function LessonPlayer({ lesson, activities, onBack, onLessonCompl
   const isFinished = currentIndex >= total;
 
   const currentActivity = activities[currentIndex];
+
+  const handleBack = () => {
+    if (onBack) {
+      onBack();
+    } else if (backHref) {
+      window.location.href = backHref;
+    } else {
+      window.history.back();
+    }
+  };
 
   const handleNext = () => {
     setIsEvaluated(false);
@@ -82,7 +102,7 @@ export default function LessonPlayer({ lesson, activities, onBack, onLessonCompl
           <h1 className="text-4xl font-black mb-4">Lesson Complete!</h1>
           <p className="text-xl text-slate-500 mb-8 font-medium">You dominated this lesson. +12 XP</p>
           <div className="flex flex-col gap-3 w-full max-w-xs mx-auto">
-            <button onClick={onBack} className="btn-duo btn-duo-green w-full">Continue</button>
+            <button onClick={handleBack} className="btn-duo btn-duo-green w-full">Continue</button>
             <button onClick={() => setCurrentIndex(0)} className="btn-ghost w-full">Review Lessons</button>
           </div>
         </motion.div>
@@ -94,8 +114,11 @@ export default function LessonPlayer({ lesson, activities, onBack, onLessonCompl
     <div className="min-h-screen bg-white text-slate-900 font-sans">
       {/* FIXED TOP HEADER */}
       <header className="fixed-top-bar flex items-center justify-between gap-4 md:gap-6 px-4 md:px-10">
-        <button onClick={onBack} className="text-slate-400 hover:text-slate-600 transition-colors p-1">
-          <X size={24} md:size={28} strokeWidth={3} />
+        <button 
+          onClick={handleBack} 
+          className="text-slate-400 hover:text-slate-600 transition-colors p-1"
+        >
+          <X size={24} className="md:w-7 md:h-7" strokeWidth={3} />
         </button>
 
         <div className="flex-1 max-w-2xl px-4">
@@ -126,7 +149,7 @@ export default function LessonPlayer({ lesson, activities, onBack, onLessonCompl
             className="w-full flex flex-col items-center"
           >
               <div className="w-full mb-6 md:mb-10 text-center md:text-left">
-                <h2 className="text-xl md:text-3xl font-black mb-2 md:mb-4 text-slate-800 leading-tight">
+                <h2 className="text-2xl md:text-3xl font-black mb-2 md:mb-4 text-slate-800 leading-tight">
                   {currentActivity.instruction || 'Choose the correct option'}
                 </h2>
               </div>
@@ -149,19 +172,20 @@ export default function LessonPlayer({ lesson, activities, onBack, onLessonCompl
           ? isCorrect === false ? 'bg-red-100 border-red-200' : 'bg-green-100 border-green-200'
           : 'bg-white'
       }`}>
-        <div className="max-w-4xl w-full flex items-center justify-between">
-          <div className="hidden md:block">
+        <div className="max-w-4xl w-full flex items-center justify-between gap-3 md:gap-4">
+          <div className="flex-1 min-w-0">
             {isEvaluated && (
-              <div className={`flex items-center gap-4 ${isCorrect === false ? 'text-red-600' : 'text-green-700'}`}>
-                <div className={`w-12 h-12 rounded-full flex items-center justify-center ${isCorrect === false ? 'bg-red-200' : 'bg-green-200'}`}>
-                   {isCorrect === false ? <X size={24} strokeWidth={4} /> : <Check size={24} strokeWidth={4} />}
+              <div className={`flex items-center gap-2 md:gap-4 ${isCorrect === false ? 'text-red-600' : 'text-green-700'}`}>
+                <div className={`w-10 h-10 md:w-12 md:h-12 flex-shrink-0 rounded-full flex items-center justify-center ${isCorrect === false ? 'bg-red-200' : 'bg-green-200'}`}>
+                   {isCorrect === false ? <X size={20} className="md:hidden" strokeWidth={4} /> : <Check size={20} className="md:hidden" strokeWidth={4} />}
+                   {isCorrect === false ? <X size={24} className="hidden md:block" strokeWidth={4} /> : <Check size={24} className="hidden md:block" strokeWidth={4} />}
                 </div>
-                <div>
-                  <h3 className="font-black text-xl leading-none">
-                    {isCorrect === false ? 'Correct Solution:' : 'Amazing Job!'}
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-black text-base md:text-xl leading-none">
+                    {isCorrect === false ? 'Incorrect' : 'Amazing Job!'}
                   </h3>
-                  <p className="font-bold opacity-80 text-sm mt-1">
-                    {isCorrect === false ? 'Check the lesson notes and try again.' : 'Keep up the momentum!'}
+                  <p className="font-bold opacity-80 text-[11px] md:text-sm mt-0.5 md:mt-1 truncate">
+                    {isCorrect === false ? 'Check lesson notes.' : 'Keep up the momentum!'}
                   </p>
                 </div>
               </div>
@@ -170,7 +194,7 @@ export default function LessonPlayer({ lesson, activities, onBack, onLessonCompl
 
           <button
             onClick={canContinue ? handleNext : handleCheck}
-            className={`btn-duo ${canContinue ? 'btn-duo-green' : 'btn-duo-gray'} min-w-[200px] h-14 md:h-16`}
+            className={`btn-duo flex-shrink-0 ${canContinue ? 'btn-duo-green' : 'btn-duo-gray'} min-w-[120px] md:min-w-[200px] h-12 md:h-16 text-sm md:text-lg`}
           >
             {canContinue ? 'Continue' : 'Check'}
           </button>

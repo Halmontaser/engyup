@@ -24,20 +24,32 @@ class EventService {
     if (!session) return null;
 
     try {
-      const response = await fetch('/api/events', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${session.access_token}`
-        },
-        body: JSON.stringify(params)
-      });
+      const verbMap: Record<string, string> = {
+        'lesson_started': 'start',
+        'lesson_completed': 'end',
+        'quiz_passed': 'score',
+        'quiz_failed': 'score'
+      };
 
-      if (!response.ok) {
-        throw new Error(`Event dispatch failed: ${response.statusText}`);
+      const { data, error } = await supabase.from('xapi_statements').insert([{
+        user_id: session.user.id,
+        tenant_id: params.tenantId,
+        verb: verbMap[params.eventType] || 'store',
+        activity_id: params.entityId || 'unknown',
+        activity_type: params.entityType,
+        score: params.score,
+        metadata: { ...params.metadata, event_type: params.eventType, course_id: params.courseId },
+        is_public: false,
+      }]).select().single();
+
+      if (error) throw error;
+      
+      // Award XP for lesson completion directly if possible (assuming RLS allows, or drop it if handled by trigger)
+      if (params.eventType === 'lesson_completed') {
+        await supabase.rpc('award_xp', { p_user_id: session.user.id, p_xp: 12 }).catch(() => {});
       }
 
-      return await response.json();
+      return { success: true, event: data };
     } catch (err) {
       console.error('Event Service Error:', err);
       return null;

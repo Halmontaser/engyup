@@ -10,6 +10,7 @@ import {
   PenLine,
 } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
+import { getMediaUrl } from "@/utils/assets";
 
 interface DictationSentence {
   expectedText: string;
@@ -46,7 +47,7 @@ export default function DictationActivity({ data, media, onComplete }: { data: a
     }
     if (currentAudio?.url) {
       setIsSpeaking(true);
-      const audio = new Audio(currentAudio.url);
+      const audio = new Audio(getMediaUrl(currentAudio.url));
       audioRef.current = audio;
       if (rate && rate < 0.8) audio.playbackRate = rate / 0.85; // slow mode
       audio.onended = () => setIsSpeaking(false);

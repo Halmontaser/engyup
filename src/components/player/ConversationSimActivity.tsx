@@ -11,6 +11,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
+import { getMediaUrl } from "@/utils/assets";
 
 interface StudentOption {
   text: string;

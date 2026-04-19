@@ -3,6 +3,7 @@ import { useState, useMemo, useEffect } from "react";
 import { motion } from "motion/react";
 import { Check, X, RotateCcw } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
+import { getMediaUrl } from "@/utils/assets";
 
 export default function MatchPairsActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
   const pairs = data.pairs || [];

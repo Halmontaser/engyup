@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { Volume2, ChevronRight, ChevronLeft, Mic, BookOpen, Sparkles, RotateCcw, Info } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
 import { Tooltip } from "@/components/ui/Tooltip";
+import { getMediaUrl } from "@/utils/assets";
 
 // Constants
 const SPEECH_RATE = 0.8;
@@ -51,7 +52,7 @@ export default function PronunciationPracticeActivity({ data, media, onComplete,
 
     if (url) {
       setIsSpeaking(true);
-      const audio = new Audio(url);
+      const audio = new Audio(getMediaUrl(url));
       audioRef.current = audio;
       audio.onended = () => {
         if (isMountedRef.current) setIsSpeaking(false);
@@ -216,7 +217,7 @@ export default function PronunciationPracticeActivity({ data, media, onComplete,
           <div className="p-10 md:p-14 text-center">
             {currentImage && (
               <div className="mb-6 mx-auto max-w-[180px] max-h-[140px] rounded-2xl overflow-hidden bg-[var(--background)]">
-                <img src={currentImage.url} alt={current?.word} className="w-full h-full object-contain" />
+                <img src={getMediaUrl(currentImage.url)} alt={current?.word} className="w-full h-full object-contain" loading="lazy" />
               </div>
             )}
             {current?.phonetic && (

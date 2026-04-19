@@ -11,6 +11,7 @@ import {
   Check,
 } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
+import { getMediaUrl } from "@/utils/assets";
 
 export default function PictureDescriptionActivity({
   data,
@@ -99,10 +100,16 @@ export default function PictureDescriptionActivity({
           <div className="aspect-[4/3] bg-gradient-to-br from-[var(--accent-light)] to-purple-100 dark:to-purple-950/30 flex items-center justify-center relative">
             {media.images.length > 0 ? (
               <img
-                src={media.images[0].url}
+                src={getMediaUrl(media.images[0].url)}
                 alt="Activity image"
                 className="w-full h-full object-cover"
                 onError={(e) => {
+/* eslint-disable-next-line */
+
+/* eslint-disable-next-line */
+
+/* eslint-disable-next-line */
+
                   (e.target as HTMLImageElement).style.display = "none";
                   (
                     e.target as HTMLImageElement
@@ -111,10 +118,16 @@ export default function PictureDescriptionActivity({
               />
             ) : image && /\.(png|jpg|jpeg|webp|svg|gif)$/i.test(image) ? (
               <img
-                src={`/images/${image}`}
+                src={getMediaUrl(`/images/${image}`)}
                 alt="Activity image"
                 className="w-full h-full object-cover"
                 onError={(e) => {
+/* eslint-disable-next-line */
+
+/* eslint-disable-next-line */
+
+/* eslint-disable-next-line */
+
                   (e.target as HTMLImageElement).style.display = "none";
                   (
                     e.target as HTMLImageElement

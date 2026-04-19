@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { RotateCcw, ChevronRight, ChevronLeft, Volume2, Info, RotateCcw as Shuffle } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
 import { Tooltip } from "@/components/ui/Tooltip";
+import { getMediaUrl } from "@/utils/assets";
 
 // Constants
 const SPEECH_RATE = 0.8;
@@ -76,7 +77,7 @@ export default function FlashcardActivity({ data, media, onComplete, triggerChec
 
     if (url) {
       setIsPlaying(true);
-      const audio = new Audio(url);
+      const audio = new Audio(getMediaUrl(url));
       audioRef.current = audio;
       audio.onended = () => {
         if (isMountedRef.current) {
@@ -232,10 +233,16 @@ export default function FlashcardActivity({ data, media, onComplete, triggerChec
               <Tooltip content={`${front} - Visual representation of the word`}>
                 <div className="mb-4 rounded-2xl overflow-hidden bg-white/10 max-w-[200px] max-h-[150px]">
                   <img
-                    src={currentImage.url}
+                    src={getMediaUrl(currentImage.url)}
                     alt={front}
                     className="w-full h-full object-contain"
                     onError={(e) => {
+/* eslint-disable-next-line */
+
+/* eslint-disable-next-line */
+
+/* eslint-disable-next-line */
+
                       (e.target as HTMLImageElement).style.display = "none";
                     }}
                   />

@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { Check, RotateCcw, ChevronRight } from "lucide-react";
 
 import { ActivityMedia } from "./ActivityPlayer";
+import { getMediaUrl } from "@/utils/assets";
 
 export default function WordOrderActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
   const sentences = useMemo(() => {

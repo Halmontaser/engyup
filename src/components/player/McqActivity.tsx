@@ -3,6 +3,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { CheckCircle2, XCircle, ChevronRight, HelpCircle } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
+import { getMediaUrl } from "@/utils/assets";
 
 export default function McqActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
   const questions = data.questions || [];
@@ -87,10 +88,10 @@ export default function McqActivity({ data, media, onComplete }: { data: any; me
                 {imgSrc && (
                   <div className="mb-6 flex justify-center">
                     <img 
-                      src={imgSrc} 
+                      src={getMediaUrl(imgSrc)} 
                       alt="Question reference" 
                       className="max-h-64 rounded-2xl object-contain bg-slate-50 border border-slate-100" 
-                    />
+                    loading="lazy" />
                   </div>
                 )}
                 {audioSrc && (
@@ -136,10 +137,10 @@ export default function McqActivity({ data, media, onComplete }: { data: any; me
                   <div className="flex flex-col gap-3 w-full mr-4">
                     {optImg && (
                       <img 
-                        src={optImg.startsWith('http') ? optImg : `/images/${optImg}`} 
+                        src={getMediaUrl(optImg.startsWith('http') ? optImg : `/images/${optImg}`)} 
                         alt={`Option ${i + 1}`} 
                         className="max-h-32 rounded-lg object-contain bg-white border border-slate-100" 
-                      />
+                      loading="lazy" />
                     )}
                     {optAudio && (
                       <audio controls src={optAudio.startsWith('http') ? optAudio : `/audio/${optAudio}`} className="w-full max-w-[200px]" />

@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { MessageCircle, ChevronRight, Volume2 } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
+import { getMediaUrl } from "@/utils/assets";
 
 export default function DialogueReadActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
   const lines: { speaker: string; text: string }[] = data.lines || data.dialogue || [];
@@ -31,7 +32,7 @@ export default function DialogueReadActivity({ data, media, onComplete }: { data
     if (!audioEntry) return;
 
     setPlayingIdx(index);
-    const audio = new Audio(audioEntry.url);
+    const audio = new Audio(getMediaUrl(audioEntry.url));
     audio.onended = () => setPlayingIdx(null);
     audio.onerror = () => setPlayingIdx(null);
     audio.play().catch(() => setPlayingIdx(null));

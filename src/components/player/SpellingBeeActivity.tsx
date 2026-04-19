@@ -11,6 +11,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
+import { getMediaUrl } from "@/utils/assets";
 
 interface SpellingWord {
   word: string;
@@ -87,7 +88,7 @@ export default function SpellingBeeActivity({ data, media, onComplete }: { data:
     }
     if (currentAudio?.url) {
       setIsSpeaking(true);
-      const audio = new Audio(currentAudio.url);
+      const audio = new Audio(getMediaUrl(currentAudio.url));
       audioRef.current = audio;
       audio.onended = () => setIsSpeaking(false);
       audio.onerror = () => {

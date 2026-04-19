@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { Check, ArrowUpDown, RotateCcw } from "lucide-react";
 
 import { ActivityMedia } from "./ActivityPlayer";
+import { getMediaUrl } from "@/utils/assets";
 
 export default function ReadingSequenceActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
   const correctOrder: string[] = data.items || data.steps || data.events || [];

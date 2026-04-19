@@ -3,6 +3,7 @@ import { useState } from "react";
 import { BookOpen, ChevronDown, ChevronUp } from "lucide-react";
 
 import { ActivityMedia } from "./ActivityPlayer";
+import { getMediaUrl } from "@/utils/assets";
 
 export default function ReadingPassageActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
   const passage = data.passage || data.text || "";
