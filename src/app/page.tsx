@@ -21,7 +21,7 @@ export default function HomePage() {
         <div className="flex items-center justify-center gap-3 mb-6">
           <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight">
             Welcome to{" "}
-            <span className="hero-gradient">Crescent</span>
+            <span className="hero-gradient">Engy Up</span>
           </h1>
           <Tooltip content="Click to explore English lessons">
             <Lightbulb className="text-amber-500 size-6 animate-pulse" />
@@ -57,12 +57,12 @@ export default function HomePage() {
             const gradeInfo = getGradeLevel(grade.grade_number);
 
             const gradientColors = [
-              "from-indigo-500 to-purple-600",
               "from-blue-500 to-cyan-500",
-              "from-emerald-500 to-teal-500",
-              "from-amber-500 to-orange-500",
-              "from-pink-500 to-rose-500",
-              "from-violet-500 to-fuchsia-500",
+              "from-cyan-500 to-teal-500",
+              "from-teal-500 to-emerald-500",
+              "from-sky-500 to-blue-500",
+              "from-indigo-500 to-blue-500",
+              "from-blue-600 to-cyan-600",
             ];
 
             return (

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '@/context/AuthContext';
 import { supabase } from '@/lib/supabase';
 import {
-  LayoutDashboard, BookOpen, Users, Settings as SettingsIcon,
+  LayoutDashboard, Users, Settings as SettingsIcon,
   LogOut, GraduationCap, ChevronRight, School, Menu, X,
   ChevronDown, Loader2, Trophy, CheckCircle, Play
 } from 'lucide-react';
@@ -13,7 +13,7 @@ import { cn, getCourseImage } from '@/lib/utils';
 export function Dashboard() {
   const { profile, activeTenant, memberships, setActiveTenant, signOut, progress, enrollments } = useAuth();
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState<'dashboard' | 'courses' | 'my-courses' | 'leaderboard' | 'settings'>('dashboard');
+  const [activeTab, setActiveTab] = useState<'dashboard' | 'leaderboard' | 'settings'>('dashboard');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isTenantMenuOpen, setIsTenantMenuOpen] = useState(false);
   const activeRole = memberships.find(m => m.tenant_id === activeTenant?.id)?.role;
@@ -67,8 +67,8 @@ export function Dashboard() {
       )}>
         <div className="p-6 border-b border-slate-200 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-xl flex items-center justify-center text-white font-bold shadow-lg">C</div>
-            <span className="font-bold text-xl text-slate-900">Crescent</span>
+            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center text-white font-bold shadow-lg">E</div>
+            <span className="font-bold text-xl text-slate-900">Engy Up</span>
           </div>
           <button className="md:hidden text-slate-500 hover:bg-slate-100 p-2 rounded-lg" onClick={() => setIsMobileMenuOpen(false)}>
             <X className="w-5 h-5" />
@@ -77,8 +77,6 @@ export function Dashboard() {
 
         <nav className="flex-1 p-4 space-y-1 overflow-y-auto">
           <SidebarItem icon={LayoutDashboard} label="Dashboard" active={activeTab === 'dashboard'} onClick={() => setActiveTab('dashboard')} />
-          <SidebarItem icon={BookOpen} label="All Courses" active={activeTab === 'courses'} onClick={() => setActiveTab('courses')} />
-          <SidebarItem icon={GraduationCap} label="My Courses" active={activeTab === 'my-courses'} onClick={() => setActiveTab('my-courses')} />
           {/* <SidebarItem icon={Trophy} label="Leaderboard" active={activeTab === 'leaderboard'} onClick={() => setActiveTab('leaderboard')} /> */}
           <SidebarItem icon={SettingsIcon} label="Settings" active={activeTab === 'settings'} onClick={() => setActiveTab('settings')} />
         </nav>
@@ -104,8 +102,8 @@ export function Dashboard() {
               </h2>
               <div className="flex items-center gap-2 text-slate-500 text-xs md:text-sm mt-1">
                 <School className="w-3 h-3 md:w-4 md:h-4" />
-                <span>{activeTenant?.name || 'Crescent English'}</span>
-                {activeRole && <span className="px-2 py-0.5 bg-indigo-50 text-indigo-600 rounded-full text-[10px] font-bold uppercase">{activeRole}</span>}
+                <span>{activeTenant?.name || 'Engy Up English'}</span>
+                {activeRole && <span className="px-2 py-0.5 bg-blue-50 text-blue-600 rounded-full text-[10px] font-bold uppercase">{activeRole}</span>}
               </div>
             </div>
           </div>
@@ -113,7 +111,7 @@ export function Dashboard() {
             {profile?.avatar_url ? (
               <img src={profile.avatar_url} alt="Avatar" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
             ) : (
-              <div className="w-full h-full flex items-center justify-center bg-indigo-100 text-indigo-600 font-bold">
+              <div className="w-full h-full flex items-center justify-center bg-blue-100 text-blue-600 font-bold">
                 {profile?.full_name?.[0] || 'U'}
               </div>
             )}
@@ -121,11 +119,11 @@ export function Dashboard() {
         </header>
 
         <div className="p-4 md:p-8 max-w-7xl mx-auto space-y-6 md:space-y-8">
-          {(activeTab === 'dashboard' || activeTab === 'courses' || activeTab === 'my-courses') && (
+          {activeTab === 'dashboard' && (
             <>
               {isLoadingCourses ? (
                 <div className="flex justify-center py-20">
-                  <Loader2 className="w-10 h-10 text-indigo-600 animate-spin" />
+                  <Loader2 className="w-10 h-10 text-blue-600 animate-spin" />
                 </div>
               ) : courses.length === 0 ? (
                 <div className="text-center py-20">
@@ -142,8 +140,8 @@ export function Dashboard() {
                     const progressPercent = totalLessons > 0 ? Math.round((completedLessons / totalLessons) * 100) : 0;
 
                     const gradientColors = [
-                      'from-indigo-500 to-purple-600', 'from-blue-500 to-cyan-500', 'from-emerald-500 to-teal-500',
-                      'from-amber-500 to-orange-500', 'from-pink-500 to-rose-500', 'from-violet-500 to-fuchsia-500',
+                      'from-blue-500 to-cyan-500', 'from-cyan-500 to-teal-500', 'from-teal-500 to-emerald-500',
+                      'from-sky-500 to-blue-500', 'from-indigo-500 to-blue-500', 'from-blue-600 to-cyan-600',
                     ];
 
                     return (
@@ -152,7 +150,7 @@ export function Dashboard() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: i * 0.05 }}
-                        className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-xl hover:border-indigo-300 transition-all group flex flex-col h-full"
+                        className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-xl hover:border-blue-300 transition-all group flex flex-col h-full"
                       >
                         <div className="relative h-40 w-full overflow-hidden">
                           <img 
@@ -165,16 +163,16 @@ export function Dashboard() {
                           </div>
                         </div>
                         <div className="p-6 flex flex-col flex-1">
-                          <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors line-clamp-1">{course.title}</h3>
+                          <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors line-clamp-1">{course.title}</h3>
                           <p className="text-sm text-slate-500 mb-6 line-clamp-2 leading-relaxed flex-1">{course.description || 'Comprehensive English language curriculum designed for excellence.'}</p>
 
                           <div className="flex items-center justify-between text-sm text-slate-500 mb-4">
                             <span>{totalLessons} lessons</span>
-                            <span className="font-bold text-indigo-600">{progressPercent}%</span>
+                            <span className="font-bold text-blue-600">{progressPercent}%</span>
                           </div>
 
                           <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden mb-4">
-                            <div className="h-full bg-indigo-600 rounded-full transition-all" style={{ width: `${progressPercent}%` }} />
+                            <div className="h-full bg-blue-600 rounded-full transition-all" style={{ width: `${progressPercent}%` }} />
                           </div>
 
                           {/* Show first incomplete lesson as quick-start */}
@@ -184,7 +182,7 @@ export function Dashboard() {
                                 const firstLesson = course.modules.flatMap((m: any) => m.lessons).find((l: any) => !progress[l.id]) || course.modules[0]?.lessons?.[0];
                                 if (firstLesson) handlePlayLesson(course.id, firstLesson.id);
                               }}
-                              className="w-full py-3 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition-all flex items-center justify-center gap-2 group-hover:shadow-lg"
+                              className="w-full py-3 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-all flex items-center justify-center gap-2 group-hover:shadow-lg"
                             >
                               <Play className="w-4 h-4" />
                               {completedLessons > 0 ? 'Continue Learning' : 'Start Course'}
@@ -238,7 +236,7 @@ function SidebarItem({ icon: Icon, label, active = false, onClick }: { icon: any
       onClick={onClick}
       className={cn(
         "flex items-center gap-3 w-full p-3 rounded-xl font-medium transition-all",
-        active ? "bg-indigo-50 text-indigo-600" : "text-slate-600 hover:bg-slate-50"
+        active ? "bg-blue-50 text-blue-600" : "text-slate-600 hover:bg-slate-50"
       )}
     >
       <Icon className="w-5 h-5" />

@@ -44,10 +44,10 @@ export function StudentOnboarding({ onComplete }: StudentOnboardingProps) {
     <div className="max-w-lg mx-auto px-6 py-20">
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
         <div className="text-center mb-12">
-          <div className="w-20 h-20 bg-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl">
+          <div className="w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl">
             <GraduationCap className="w-10 h-10 text-white" />
           </div>
-          <h1 className="text-3xl font-black text-slate-900 mb-2">Welcome to Crescent!</h1>
+          <h1 className="text-3xl font-black text-slate-900 mb-2">Welcome to Engy Up!</h1>
           <p className="text-slate-500">Select your grade to get started with personalized English lessons.</p>
         </div>
 
@@ -58,7 +58,7 @@ export function StudentOnboarding({ onComplete }: StudentOnboardingProps) {
               onClick={() => setGrade(g.value)}
               className={`w-full p-5 rounded-2xl border-2 text-left font-bold text-lg transition-all flex items-center justify-between ${
                 grade === g.value
-                  ? 'bg-indigo-50 border-indigo-500 text-indigo-700 shadow-lg'
+                  ? 'bg-blue-50 border-blue-500 text-blue-700 shadow-lg'
                   : 'bg-white border-slate-200 text-slate-700 hover:border-slate-300 hover:bg-slate-50'
               }`}
             >
@@ -71,7 +71,7 @@ export function StudentOnboarding({ onComplete }: StudentOnboardingProps) {
         <button
           onClick={handleSave}
           disabled={!grade || saving}
-          className="w-full mt-8 py-4 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-100 disabled:opacity-50 flex items-center justify-center gap-2"
+          className="w-full mt-8 py-4 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-100 disabled:opacity-50 flex items-center justify-center gap-2"
         >
           {saving && <Loader2 className="w-5 h-5 animate-spin" />}
           Continue
