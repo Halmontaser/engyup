@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useEffect, useState, useRef } from 'react';
 import { User, Session } from '@supabase/supabase-js';
 import { supabase, Profile, Membership, Tenant } from '../lib/supabase';
+import { canEditActivities as canEditActivitiesUtil } from '../lib/permissions';
 
 interface AuthContextType {
   user: User | null;
@@ -17,6 +18,7 @@ interface AuthContextType {
   signOut: () => Promise<void>;
   refreshData: () => Promise<void>;
   fetchEnrollments: (userId: string, tenantId: string) => Promise<void>;
+  canEditActivities: boolean;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -31,6 +33,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [progress, setProgress] = useState<Record<string, boolean>>({});
   const [loading, setLoading] = useState(true);
   const fetchingRef = useRef(false);
+  const canEditActivitiesValue = canEditActivitiesUtil(memberships);
 
   const refreshData = async () => {
     if (user) {
@@ -194,10 +197,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   return (
-    <AuthContext.Provider value={{ 
-      user, session, profile, memberships, activeTenant, setActiveTenant, 
+    <AuthContext.Provider value={{
+      user, session, profile, memberships, activeTenant, setActiveTenant,
       enrollments, setEnrollments, progress, setProgress, fetchEnrollments,
-      loading, signOut, refreshData 
+      loading, signOut, refreshData, canEditActivities: canEditActivitiesValue
     }}>
       {children}
     </AuthContext.Provider>

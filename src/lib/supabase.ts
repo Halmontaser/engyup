@@ -2,16 +2,16 @@ import { createClient } from '@supabase/supabase-js'
 
 const getSupabaseConfig = () => {
   const env = (import.meta as any).env || {};
-  
+
   // Try both Vite-style and process-style (for define compatibility)
   const url = env.VITE_SUPABASE_URL || (typeof process !== 'undefined' ? process.env.VITE_SUPABASE_URL : '');
   const key = env.VITE_SUPABASE_ANON_KEY || (typeof process !== 'undefined' ? process.env.VITE_SUPABASE_ANON_KEY : '');
-  
+
   const defaultUrl = 'https://msttsebafjgzllyabsid.supabase.co';
-  
+
   const finalUrl = (url && url !== 'undefined' && url.startsWith('http')) ? url : defaultUrl;
   const finalKey = (key && key !== 'undefined') ? key : null;
-  
+
   return { finalUrl, finalKey };
 };
 

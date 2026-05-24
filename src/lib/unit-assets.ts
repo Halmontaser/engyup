@@ -3,6 +3,8 @@
  * If no image is found, returns a high-quality placeholder.
  */
 
+import { getMediaUrl } from '@/utils/assets';
+
 const TITLE_TO_IMAGE_MAP: Record<string, string> = {
   // Intro & Welcome
   "Hello!": "/media/units/intro.png",
@@ -78,10 +80,10 @@ export function getUnitImage(title: string): string {
   // Normalize title for mapping
   for (const [key, value] of Object.entries(TITLE_TO_IMAGE_MAP)) {
     if (title.toLowerCase().includes(key.toLowerCase())) {
-      return value;
+      return getMediaUrl(value);
     }
   }
 
   // Stylish default placeholder
-  return "/media/units/default-unit.png";
+  return getMediaUrl("/media/units/default-unit.svg");
 }

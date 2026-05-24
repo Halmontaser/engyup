@@ -63,13 +63,26 @@ export const NotificationSystem: React.FC = () => {
   const fetchNotifications = async () => {
     if (!user || !activeTenant) return;
 
-    const { data, error } = await supabase
+    let { data, error } = await supabase
       .from('notifications')
       .select('*')
       .eq('user_id', user.id)
       .eq('tenant_id', activeTenant.id)
       .order('created_at', { ascending: false })
       .limit(50);
+
+    // Fallback: If no tenant-specific notifications, try getting any notifications for this user
+    if (!error && (!data || data.length === 0)) {
+       const res = await supabase
+        .from('notifications')
+        .select('*')
+        .eq('user_id', user.id)
+        .order('created_at', { ascending: false })
+        .limit(50);
+       data = res.data;
+       error = res.error;
+    }
+
 
     if (error) {
       console.error('Error fetching notifications:', error);

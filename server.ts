@@ -4,6 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { createClient } from '@supabase/supabase-js';
 import dotenv from 'dotenv';
+import { getActivityById, updateActivity, deleteActivity, getAllActivities, createActivity } from './src/lib/db.js';
 
 dotenv.config({ path: '.env.local' });
 dotenv.config();
@@ -136,6 +137,70 @@ async function startServer() {
       res.json({ success: true, leaderboard: data || [] });
     } catch (err: any) {
       res.status(500).json({ error: err.message });
+    }
+  });
+
+  // ADMIN API ROUTES
+
+  // Get all activities
+  app.get('/admin/api/activities', (req, res) => {
+    try {
+      const activities = getAllActivities();
+      res.json({ success: true, activities });
+    } catch (error: any) {
+      res.status(500).json({ success: false, error: 'Failed to fetch activities' });
+    }
+  });
+
+  // Get single activity
+  app.get('/admin/api/activities/:id', (req, res) => {
+    try {
+      const activity = getActivityById(req.params.id);
+      if (!activity) {
+        return res.status(404).json({ success: false, error: 'Activity not found' });
+      }
+      res.json({ success: true, activity });
+    } catch (error: any) {
+      res.status(500).json({ success: false, error: 'Failed to fetch activity' });
+    }
+  });
+
+  // Create activity
+  app.post('/admin/api/activities', (req, res) => {
+    try {
+      const activity = createActivity(req.body);
+      res.status(201).json({ success: true, activity });
+    } catch (error: any) {
+      console.error('Error creating activity:', error);
+      res.status(500).json({ success: false, error: 'Failed to create activity' });
+    }
+  });
+
+  // Update activity
+  app.patch('/admin/api/activities/:id', (req, res) => {
+    try {
+      const updatedActivity = updateActivity(req.params.id, req.body);
+      if (!updatedActivity) {
+        return res.status(400).json({ success: false, error: 'No changes made' });
+      }
+      res.json({ success: true, activity: updatedActivity });
+    } catch (error: any) {
+      console.error('Error updating activity:', error);
+      res.status(500).json({ success: false, error: 'Failed to update activity' });
+    }
+  });
+
+  // Delete activity
+  app.delete('/admin/api/activities/:id', (req, res) => {
+    try {
+      const deleted = deleteActivity(req.params.id);
+      if (!deleted) {
+        return res.status(404).json({ success: false, error: 'Activity not found' });
+      }
+      res.json({ success: true, message: 'Activity deleted successfully' });
+    } catch (error: any) {
+      console.error('Error deleting activity:', error);
+      res.status(500).json({ success: false, error: 'Failed to delete activity' });
     }
   });
 

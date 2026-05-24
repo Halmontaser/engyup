@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Engy Up</string>
+    <string name="title_activity_main">Engy Up</string>
+    <string name="package_name">com.engyup.app</string>
+    <string name="custom_url_scheme">com.engyup.app</string>
+</resources>

@@ -1,5 +1,5 @@
 // Client-side authentication utilities for admin access
-// Uses localStorage instead of sessionStorage for better persistence
+// Supports both password-based and role-based (Supabase) authentication
 
 export function isAdmin(): boolean {
   const adminPassword = process.env.NEXT_PUBLIC_ADMIN_PASSWORD;

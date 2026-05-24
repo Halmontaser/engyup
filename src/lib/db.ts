@@ -99,9 +99,9 @@ export interface Activity {
   difficulty: string | null;
   book_type: string | null;
   book_page: string | null;
+  compensates: string | null;
   data: string; // JSON string
   sort_order: number;
-  compensates?: string | null;
 }
 
 export function getLesson(lessonId: string): Lesson | undefined {
@@ -138,14 +138,15 @@ export interface CreateActivityInput {
   difficulty?: string;
   book_type?: string;
   book_page?: string;
+  compensates?: string;
   data: any;
   sort_order?: number;
 }
 
 export function createActivity(input: CreateActivityInput): Activity {
   const stmt = getDb().prepare(`
-    INSERT INTO activities (lesson_id, type, title, instruction, difficulty, book_type, book_page, data, sort_order, created_at)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))
+    INSERT INTO activities (lesson_id, type, title, instruction, difficulty, book_type, book_page, compensates, data, sort_order, created_at)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))
   `);
   const result = stmt.run(
     input.lesson_id,
@@ -155,6 +156,7 @@ export function createActivity(input: CreateActivityInput): Activity {
     input.difficulty || null,
     input.book_type || null,
     input.book_page || null,
+    input.compensates || null,
     JSON.stringify(input.data),
     input.sort_order || 0
   );
@@ -168,6 +170,9 @@ export function updateActivity(id: string, input: Partial<CreateActivityInput>):
   if (input.title !== undefined) { fields.push("title = ?"); values.push(input.title); }
   if (input.instruction !== undefined) { fields.push("instruction = ?"); values.push(input.instruction); }
   if (input.difficulty !== undefined) { fields.push("difficulty = ?"); values.push(input.difficulty); }
+  if (input.book_type !== undefined) { fields.push("book_type = ?"); values.push(input.book_type); }
+  if (input.book_page !== undefined) { fields.push("book_page = ?"); values.push(input.book_page); }
+  if (input.compensates !== undefined) { fields.push("compensates = ?"); values.push(input.compensates); }
   if (input.data !== undefined) { fields.push("data = ?"); values.push(JSON.stringify(input.data)); }
   if (input.sort_order !== undefined) { fields.push("sort_order = ?"); values.push(input.sort_order); }
 

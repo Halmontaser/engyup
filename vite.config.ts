@@ -54,7 +54,7 @@ export default defineConfig(({ mode }) => {
     build: {
       outDir: 'dist',
       sourcemap: mode === 'development',
-      copyPublicDir: false, // Media files are hosted on R2, don't copy public directory
+      copyPublicDir: true, // Ensure public assets like images are included in the build
       rollupOptions: {
         output: {
           manualChunks: {

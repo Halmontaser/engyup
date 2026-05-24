@@ -2,10 +2,11 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Check, ChevronRight, Trophy, Heart, ChevronLeft } from 'lucide-react';
+import { X, Check, ChevronRight, Trophy, Heart, ChevronLeft, Edit } from 'lucide-react';
 import ActivityPlayer from './ActivityPlayer';
 import LessonSidebar from './LessonSidebar';
 import { getMediaUrl } from "@/utils/assets";
+import { useAuth } from "@/context/AuthContext";
 
 interface MediaEntry {
   filename: string;
@@ -52,6 +53,7 @@ export default function LessonPlayer({
   const [triggerCheck, setTriggerCheck] = useState(0);
   const [sidebarExpanded, setSidebarExpanded] = useState(true);
   const [completedActivities, setCompletedActivities] = useState<Set<string>>(new Set());
+  const { canEditActivities } = useAuth();
 
   const total = activities.length;
   const progress = total > 0 ? (currentIndex / total) * 100 : 0;
@@ -116,6 +118,12 @@ export default function LessonPlayer({
     setTriggerCheck(prev => prev + 1);
   };
 
+  const handleEditActivity = () => {
+    if (currentActivity) {
+      window.location.href = `/admin/activities/${currentActivity.id}`;
+    }
+  };
+
   if (isFinished) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-white p-8">
@@ -165,6 +173,17 @@ export default function LessonPlayer({
           <span>5</span>
         </div>
 
+        {canEditActivities && (
+          <button
+            onClick={handleEditActivity}
+            className="flex items-center gap-2 px-4 py-2 bg-indigo-100 hover:bg-indigo-200 text-indigo-600 rounded-xl font-medium transition-all"
+            title="Edit this activity"
+          >
+            <Edit size={16} />
+            <span className="hidden sm:inline">Edit</span>
+          </button>
+        )}
+
         {/* Desktop Sidebar Toggle */}
         <button
           onClick={toggleSidebar}
@@ -181,6 +200,10 @@ export default function LessonPlayer({
         onActivityClick={handleActivityClick}
         isExpanded={sidebarExpanded}
         onToggle={toggleSidebar}
+        canEdit={canEditActivities}
+        onEditActivity={(activityId) => {
+          window.location.href = `/admin/activities/${activityId}`;
+        }}
       />
 
       {/* MAIN LEARNING CANVAS */}

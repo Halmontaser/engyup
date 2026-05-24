@@ -1,9 +1,8 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { motion } from "motion/react";
 import { BookOpen, CheckCircle2, Loader2, Lock, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Tooltip } from "./Tooltip";
@@ -48,11 +47,10 @@ export const UnitCard: React.FC<UnitCardProps> = ({
       >
         {/* Top: Image Section */}
         <div className="relative aspect-[16/10] overflow-hidden bg-muted/30">
-          <Image
+          <img
             src={imageSrc}
             alt={title}
-            fill
-            className="object-cover transition-transform duration-700 group-hover:scale-110"
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
           
           {/* Unit Badge (Glassmorphism) */}

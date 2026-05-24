@@ -657,3 +657,74 @@ export function getActivityIcon(type: string): string {
   const schema = getFormSchema(type);
   return schema?.icon || 'HelpCircle';
 }
+
+// Activity metadata fields (database columns) - shared by all activity types
+const metadataFields: FormField[] = [
+  {
+    name: 'title',
+    label: 'Activity Title',
+    type: 'text',
+    required: true,
+    placeholder: 'Enter activity title...'
+  },
+  {
+    name: 'instruction',
+    label: 'Instruction',
+    type: 'textarea',
+    placeholder: 'Enter instruction for students...',
+  },
+  {
+    name: 'difficulty',
+    label: 'Difficulty',
+    type: 'select',
+    options: [
+      { label: 'Easy', value: 'Easy' },
+      { label: 'Medium', value: 'Medium' },
+      { label: 'Hard', value: 'Hard' }
+    ]
+  },
+  {
+    name: 'book_type',
+    label: 'Book Type',
+    type: 'select',
+    options: [
+      { label: 'Student Book', value: 'student' },
+      { label: 'Workbook', value: 'workbook' },
+      { label: 'Activity Book', value: 'activity' },
+      { label: 'Teacher Guide', value: 'teacher' },
+      { label: 'Other', value: 'other' }
+    ]
+  },
+  {
+    name: 'book_page',
+    label: 'Book Page',
+    type: 'text',
+    placeholder: 'e.g., Page 45'
+  },
+  {
+    name: 'compensates',
+    label: 'Compensates',
+    type: 'textarea',
+    placeholder: 'Describe what this activity compensates for...'
+  },
+  {
+    name: 'sort_order',
+    label: 'Sort Order',
+    type: 'number',
+    placeholder: '0'
+  }
+];
+
+// Get complete schema including metadata fields for a specific activity type
+export function getCompleteSchema(type: string): ActivityFormSchema | undefined {
+  const schema = getFormSchema(type);
+  if (!schema) return undefined;
+
+  return {
+    ...schema,
+    fields: [
+      ...metadataFields,
+      ...schema.fields
+    ]
+  };
+}

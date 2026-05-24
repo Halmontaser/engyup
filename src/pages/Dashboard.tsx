@@ -10,6 +10,8 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn, getCourseImage } from '@/lib/utils';
+import { Settings } from '@/components/Settings';
+import { NotificationSystem } from '@/components/NotificationSystem';
 
 export function Dashboard() {
   const { profile, activeTenant, memberships, setActiveTenant, signOut, progress, enrollments } = useAuth();
@@ -35,14 +37,15 @@ export function Dashboard() {
         .eq('tenant_id', activeTenant!.id)
         .order('created_at', { ascending: true });
       
-      // Student filtering: Only show current grade courses
-      const grade = profile?.grade;
-      const filtered = (data || []).filter(c => {
-        if (!grade) return true; // Show all if no grade set
-        return c.title.includes(`Grade ${grade}`) || c.course_code === `G${grade}`;
-      });
-
+      // Filter courses to show only those containing "Grade " as requested
+      const filtered = (data || []).filter(c => 
+        c.title.toLowerCase().includes('grade') || 
+        c.course_code?.toLowerCase().startsWith('g')
+      );
       setCourses(filtered);
+
+
+
     } catch (err) {
       console.error('Error fetching courses:', err);
     } finally {
@@ -137,14 +140,17 @@ export function Dashboard() {
               <span className="text-sm">All Grades</span>
             </button>
           </div>
-          <div className="w-9 h-9 md:w-10 md:h-10 lg:w-12 lg:h-12 rounded-full bg-slate-200 overflow-hidden border-2 md:border-3 border-white shadow-lg shadow-slate-200/50 shrink-0 cursor-pointer hover:shadow-xl transition-shadow ml-2 md:ml-0">
-            {profile?.avatar_url ? (
-              <img src={profile.avatar_url} alt="Avatar" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
-            ) : (
-              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-700 to-blue-600 text-white font-bold text-sm md:text-lg">
-                {profile?.full_name?.[0] || 'U'}
-              </div>
-            )}
+          <div className="flex items-center gap-3">
+            <NotificationSystem />
+            <div className="w-9 h-9 md:w-10 md:h-10 lg:w-12 lg:h-12 rounded-full bg-slate-200 overflow-hidden border-2 md:border-3 border-white shadow-lg shadow-slate-200/50 shrink-0 cursor-pointer hover:shadow-xl transition-shadow ml-2 md:ml-0">
+              {profile?.avatar_url ? (
+                <img src={profile.avatar_url} alt="Avatar" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-700 to-blue-600 text-white font-bold text-sm md:text-lg">
+                  {profile?.full_name?.[0] || 'U'}
+                </div>
+              )}
+            </div>
           </div>
         </header>
 
@@ -257,25 +263,7 @@ export function Dashboard() {
             </div>
           )}
 
-          {activeTab === 'settings' && (
-            <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8">
-              <h3 className="text-xl font-bold text-slate-900 mb-4">Settings</h3>
-              <div className="space-y-4">
-                <div>
-                  <label className="text-sm font-bold text-slate-600">Full Name</label>
-                  <p className="text-slate-900">{profile?.full_name || 'Not set'}</p>
-                </div>
-                <div>
-                  <label className="text-sm font-bold text-slate-600">Grade</label>
-                  <p className="text-slate-900">{profile?.grade || 'Not set'}</p>
-                </div>
-                <div>
-                  <label className="text-sm font-bold text-slate-600">Role</label>
-                  <p className="text-slate-900 capitalize">{activeRole || 'student'}</p>
-                </div>
-              </div>
-            </div>
-          )}
+          {activeTab === 'settings' && <Settings />}
         </div>
       </main>
     </div>

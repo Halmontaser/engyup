@@ -15,7 +15,7 @@ import {
   ArrowLeft,
 } from "lucide-react";
 import { Activity, getActivityById, updateActivity, getLesson } from "@/lib/db";
-import { activityFormSchemas, getFormSchema } from "@/lib/activitySchemas";
+import { activityFormSchemas, getFormSchema, getCompleteSchema, activityTypeLabels } from "@/lib/activitySchemas";
 import DynamicForm from "@/components/admin/DynamicForm";
 import MediaUploader from "@/components/admin/MediaUploader";
 import { ActivityMedia } from "@/components/player/ActivityPlayer";
@@ -32,10 +32,6 @@ export default function ActivityEditorPage() {
   const [isPreview, setIsPreview] = useState(false);
   const [formData, setFormData] = useState<any>({});
   const [activityType, setActivityType] = useState("");
-  const [title, setTitle] = useState("");
-  const [instruction, setInstruction] = useState("");
-  const [difficulty, setDifficulty] = useState<string | null>(null);
-  const [sortOrder, setSortOrder] = useState(0);
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
   const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
 
@@ -55,12 +51,19 @@ export default function ActivityEditorPage() {
 
       // Parse activity data
       const parsedData = typeof data.data === "string" ? JSON.parse(data.data) : data.data;
-      setFormData(parsedData);
       setActivityType(data.type);
-      setTitle(data.title);
-      setInstruction(data.instruction);
-      setDifficulty(data.difficulty);
-      setSortOrder(data.sort_order || 0);
+
+      // Combine metadata with activity data
+      setFormData({
+        title: data.title,
+        instruction: data.instruction,
+        difficulty: data.difficulty,
+        book_type: data.book_type,
+        book_page: data.book_page,
+        compensates: data.compensates,
+        sort_order: data.sort_order || 0,
+        data: parsedData
+      });
     } catch (error) {
       console.error("Failed to load activity:", error);
       setMessage({ type: "error", text: "Failed to load activity" });
@@ -78,11 +81,14 @@ export default function ActivityEditorPage() {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          title,
-          instruction,
-          difficulty,
-          data: formData,
-          sort_order: sortOrder,
+          title: formData.title,
+          instruction: formData.instruction,
+          difficulty: formData.difficulty,
+          book_type: formData.book_type,
+          book_page: formData.book_page,
+          compensates: formData.compensates,
+          sort_order: formData.sort_order,
+          data: formData.data,
         }),
       });
 
@@ -122,7 +128,7 @@ export default function ActivityEditorPage() {
     }
   };
 
-  const schema = activityType ? getFormSchema(activityType) : null;
+  const schema = activityType ? getCompleteSchema(activityType) : null;
 
   if (isLoading) {
     return (
@@ -240,7 +246,7 @@ export default function ActivityEditorPage() {
                   Delete Activity?
                 </h2>
                 <p className="text-slate-600 dark:text-slate-400">
-                  Are you sure you want to delete "{activity.title}"? This action cannot be undone.
+                  Are you sure you want to delete "{activity.title || 'this activity'}"? This action cannot be undone.
                 </p>
               </div>
               <div className="flex gap-3">
@@ -264,116 +270,38 @@ export default function ActivityEditorPage() {
 
       {/* Editor Mode */}
       {!isPreview && schema && (
-        <div className="grid gap-6 lg:grid-cols-2">
-          {/* Activity Settings */}
-          <div className="space-y-4">
-            <h2 className="text-xl font-bold text-slate-800 dark:text-slate-200">
-              Activity Settings
-            </h2>
-            <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-6 space-y-4">
-              {/* Title */}
-              <div>
-                <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
-                  Title *
-                </label>
-                <input
-                  type="text"
-                  value={title}
-                  onChange={(e) => setTitle(e.target.value)}
-                  placeholder="Enter activity title..."
-                  className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all"
-                />
-              </div>
-
-              {/* Instruction */}
-              <div>
-                <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
-                  Instruction
-                </label>
-                <textarea
-                  value={instruction}
-                  onChange={(e) => setInstruction(e.target.value)}
-                  placeholder="Enter instruction for students..."
-                  rows={3}
-                  className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all resize-none"
-                />
-              </div>
-
-              {/* Type (read-only) */}
-              <div>
-                <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
-                  Activity Type
-                </label>
-                <div className="flex items-center gap-3 px-4 py-3 bg-slate-100 dark:bg-slate-800 rounded-xl">
-                  <span className="text-2xl">{getActivityIconEmoji(activity.type)}</span>
-                  <span className="font-medium text-slate-700 dark:text-slate-300">
-                    {schema.label}
-                  </span>
-                </div>
-              </div>
-
-              {/* Difficulty */}
-              <div>
-                <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
-                  Difficulty
-                </label>
-                <div className="flex gap-2">
-                  {["Easy", "Medium", "Hard"].map((level) => (
-                    <button
-                      key={level}
-                      type="button"
-                      onClick={() => setDifficulty(difficulty === level ? null : level)}
-                      className={`flex-1 px-4 py-2.5 rounded-xl font-medium transition-all ${
-                        difficulty === level
-                          ? "bg-indigo-100 dark:bg-indigo-950/30 text-indigo-600 dark:text-indigo-400 border border-indigo-500"
-                          : "bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:border-slate-300 dark:hover:border-slate-600"
-                      }`}
-                    >
-                      {level}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              {/* Sort Order */}
-              <div>
-                <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
-                  Sort Order
-                </label>
-                <input
-                  type="number"
-                  value={sortOrder}
-                  onChange={(e) => setSortOrder(Number(e.target.value))}
-                  min="0"
-                  className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all"
-                />
-              </div>
-            </div>
-
-            {/* Media Upload */}
+        <div className="space-y-6">
+          {/* Activity Type Header */}
+          <div className="flex items-center gap-4 px-6 py-4 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-950/20 dark:to-purple-950/20 rounded-2xl border border-indigo-200 dark:border-indigo-800">
+            <span className="text-4xl">{getActivityIconEmoji(activity.type)}</span>
             <div>
-              <h2 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-4">
-                Media Upload
+              <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-200">
+                {schema.label}
               </h2>
-              <MediaUploader
-                accept="both"
-                className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-6"
-              />
+              <p className="text-slate-600 dark:text-slate-400 text-sm">
+                {activityTypeLabels[activity.type] || activity.type} activity
+              </p>
             </div>
           </div>
 
-          {/* Dynamic Form */}
+          {/* Form */}
+          <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-6">
+            <DynamicForm
+              fields={schema.fields}
+              data={formData}
+              onChange={setFormData}
+            />
+          </div>
+
+          {/* Media Upload */}
           <div>
             <h2 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-4">
-              {schema.label} Data
+              Media Upload
             </h2>
-            <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-6">
-              <DynamicForm
-                fields={schema.fields}
-                data={formData}
-                onChange={setFormData}
-              />
-            </div>
+            <MediaUploader
+              accept="both"
+              className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-6"
+            />
           </div>
         </div>
       )}
@@ -387,9 +315,9 @@ export default function ActivityEditorPage() {
           <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8">
             <div className="text-center mb-6 p-4 bg-indigo-50 dark:bg-indigo-950/20 rounded-xl">
               <h3 className="text-xl font-bold text-indigo-600 dark:text-indigo-400">
-                {title}
+                {formData.title}
               </h3>
-              <p className="text-slate-600 dark:text-slate-400 mt-2">{instruction}</p>
+              <p className="text-slate-600 dark:text-slate-400 mt-2">{formData.instruction}</p>
             </div>
             {/* Actual ActivityPlayer would go here for true preview */}
             <div className="text-center py-12 text-slate-400">

@@ -184,24 +184,38 @@ export const Settings: React.FC = () => {
         if (membership) {
           const { data: parentMemberships } = await supabase
             .from('memberships')
-            .select(`
-              user_id,
-              profiles:user_id (
-                full_name,
-                custom_id
-              )
-            `)
+            .select('user_id, profiles!inner(full_name, custom_id)')
             .eq('tenant_id', membership.tenant_id)
             .eq('role', 'parent');
 
-          if (parentMemberships) {
-            setParents(parentMemberships.map((m: any) => ({
-              id: m.user_id,
-              name: m.profiles.full_name,
-              customId: m.profiles.custom_id
-            })));
+          let items: any[] = parentMemberships || [];
+
+          // Fallback: If no parents in current tenant, try finding any parents
+          if (items.length === 0) {
+            const { data: allParents } = await supabase
+              .from('profiles')
+              .select('id, full_name, custom_id')
+              .eq('role', 'parent')
+              .limit(50);
+            
+            if (allParents) {
+               items = allParents.map(p => ({ user_id: p.id, profiles: p }));
+            }
+          }
+
+          if (items.length > 0) {
+            setParents(items.map((m: any) => {
+              const p = Array.isArray(m.profiles) ? m.profiles[0] : m.profiles;
+              return {
+                id: m.user_id,
+                name: p?.full_name || 'Unknown',
+                customId: p?.custom_id || ''
+              };
+            }));
           }
         }
+
+
       } catch (err) {
         console.error('Error fetching parents:', err);
       } finally {

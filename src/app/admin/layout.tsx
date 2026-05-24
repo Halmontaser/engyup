@@ -6,6 +6,8 @@ import { usePathname } from "next/navigation";
 import { LayoutDashboard, BookOpen, FileText, LogOut, Menu, ChevronLeft, Home, PlusCircle, Loader2 } from "lucide-react";
 import { isAdmin, clearAdminAuth, hasAdminPassword } from "@/lib/auth";
 import { useRouter } from "next/navigation";
+import { useAuth } from "@/context/AuthContext";
+import { canEditActivities } from "@/lib/permissions";
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -13,11 +15,14 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   const [isChecking, setIsChecking] = useState(true);
   const router = useRouter();
   const pathname = usePathname();
+  const { memberships } = useAuth();
 
   useEffect(() => {
     // Check authentication on mount
     setIsChecking(true);
-    const authed = isAdmin();
+    const hasPasswordAuth = isAdmin();
+    const hasRoleAuth = canEditActivities(memberships);
+    const authed = hasPasswordAuth || hasRoleAuth;
     setIsAuthenticated(authed);
     setIsChecking(false);
 
@@ -25,7 +30,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     if (!authed && pathname !== '/admin/login') {
       router.push('/admin/login');
     }
-  }, [pathname, router]);
+  }, [pathname, router, memberships]);
 
   const handleLogout = () => {
     clearAdminAuth();
@@ -57,29 +62,6 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     return (
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
         {children}
-      </div>
-    );
-  }
-
-  // If no admin password is configured
-  if (!hasAdminPassword()) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950">
-        <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-lg max-w-md">
-          <h1 className="text-2xl font-bold mb-6 text-center text-red-600 dark:text-red-400">
-            Configuration Required
-          </h1>
-          <p className="text-slate-600 dark:text-slate-400 text-center mb-6">
-            Please set the <code className="bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">NEXT_PUBLIC_ADMIN_PASSWORD</code> environment variable to access the admin panel.
-          </p>
-          <button
-            onClick={() => router.push('/')}
-            className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-slate-800 hover:bg-slate-900 dark:bg-slate-700 dark:hover:bg-slate-600 text-white rounded-xl font-medium transition"
-          >
-            <Home size={20} />
-            Back to Home
-          </button>
-        </div>
       </div>
     );
   }

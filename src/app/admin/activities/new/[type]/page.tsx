@@ -12,7 +12,7 @@ import {
   AlertCircle,
 } from "lucide-react";
 import { createActivity, getLessonsForUnit, Lesson } from "@/lib/db";
-import { activityFormSchemas, getFormSchema, activityTypeLabels } from "@/lib/activitySchemas";
+import { activityFormSchemas, getFormSchema, getCompleteSchema, activityTypeLabels } from "@/lib/activitySchemas";
 import DynamicForm from "@/components/admin/DynamicForm";
 import MediaUploader from "@/components/admin/MediaUploader";
 
@@ -26,9 +26,6 @@ export default function NewActivityPage() {
   const [isPreview, setIsPreview] = useState(false);
   const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
   const [formData, setFormData] = useState<any>({});
-  const [title, setTitle] = useState("");
-  const [instruction, setInstruction] = useState("");
-  const [difficulty, setDifficulty] = useState<string | null>(null);
   const [lessonId, setLessonId] = useState("");
   const [lessons, setLessons] = useState<Lesson[]>([]);
   const [gradeNumber, setGradeNumber] = useState<number | null>(null);
@@ -71,11 +68,14 @@ export default function NewActivityPage() {
       const newActivity = await createActivity({
         lesson_id: lessonId,
         type: activityType,
-        title,
-        instruction,
-        difficulty: difficulty || undefined,
-        data: formData,
-        sort_order: lessons.length,
+        title: formData.title,
+        instruction: formData.instruction,
+        difficulty: formData.difficulty || undefined,
+        book_type: formData.book_type || undefined,
+        book_page: formData.book_page || undefined,
+        compensates: formData.compensates || undefined,
+        data: formData.data,
+        sort_order: formData.sort_order || 0,
       });
 
       setMessage({ type: "success", text: "Activity created successfully!" });
@@ -92,7 +92,7 @@ export default function NewActivityPage() {
     }
   };
 
-  const schema = activityType ? getFormSchema(activityType) : null;
+  const schema = activityType ? getCompleteSchema(activityType) : null;
 
   if (!schema) {
     return (
@@ -160,121 +160,57 @@ export default function NewActivityPage() {
 
       {/* Editor Mode */}
       {!isPreview && (
-        <div className="grid gap-6 lg:grid-cols-2">
-          {/* Activity Settings */}
-          <div className="space-y-4">
-            <h2 className="text-xl font-bold text-slate-800 dark:text-slate-200">
-              Activity Settings
-            </h2>
-            <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-6 space-y-4">
-              {/* Title */}
-              <div>
-                <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
-                  Title *
-                </label>
-                <input
-                  type="text"
-                  value={title}
-                  onChange={(e) => setTitle(e.target.value)}
-                  placeholder="Enter activity title..."
-                  className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all"
-                />
-              </div>
-
-              {/* Instruction */}
-              <div>
-                <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
-                  Instruction
-                </label>
-                <textarea
-                  value={instruction}
-                  onChange={(e) => setInstruction(e.target.value)}
-                  placeholder="Enter instruction for students..."
-                  rows={3}
-                  className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all resize-none"
-                />
-              </div>
-
-              {/* Type (read-only) */}
-              <div>
-                <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
-                  Activity Type
-                </label>
-                <div className="flex items-center gap-3 px-4 py-3 bg-slate-100 dark:bg-slate-800 rounded-xl">
-                  <span className="text-2xl">{getActivityIconEmoji(activityType)}</span>
-                  <span className="font-medium text-slate-700 dark:text-slate-300">
-                    {schema.label}
-                  </span>
-                </div>
-              </div>
-
-              {/* Lesson Selection */}
-              <div>
-                <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
-                  Lesson *
-                </label>
-                <select
-                  value={lessonId}
-                  onChange={(e) => setLessonId(e.target.value)}
-                  className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all appearance-none cursor-pointer"
-                >
-                  <option value="">-- Select a lesson --</option>
-                  {lessons.map((lesson) => (
-                    <option key={lesson.id} value={lesson.id}>
-                      Grade {lesson.unit_id}/Unit {lesson.unit_id} - Lesson {lesson.lesson_number}: {lesson.title}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              {/* Difficulty */}
-              <div>
-                <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
-                  Difficulty
-                </label>
-                <div className="flex gap-2">
-                  {["Easy", "Medium", "Hard"].map((level) => (
-                    <button
-                      key={level}
-                      type="button"
-                      onClick={() => setDifficulty(difficulty === level ? null : level)}
-                      className={`flex-1 px-4 py-2.5 rounded-xl font-medium transition-all ${
-                        difficulty === level
-                          ? "bg-indigo-100 dark:bg-indigo-950/30 text-indigo-600 dark:text-indigo-400 border border-indigo-500"
-                          : "bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:border-slate-300 dark:hover:border-slate-600"
-                      }`}
-                    >
-                      {level}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Media Upload */}
+        <div className="space-y-6">
+          {/* Activity Type Header */}
+          <div className="flex items-center gap-4 px-6 py-4 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-950/20 dark:to-purple-950/20 rounded-2xl border border-indigo-200 dark:border-indigo-800">
+            <span className="text-4xl">{getActivityIconEmoji(activityType)}</span>
             <div>
-              <h2 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-4">
-                Media Upload
+              <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-200">
+                New {schema.label}
               </h2>
-              <MediaUploader
-                accept="both"
-                className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-6"
-              />
+              <p className="text-slate-600 dark:text-slate-400 text-sm">
+                {activityTypeLabels[activityType] || activityType} activity
+              </p>
             </div>
           </div>
 
-          {/* Dynamic Form */}
+          {/* Lesson Selection */}
+          <div>
+            <label className="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">
+              Lesson *
+            </label>
+            <select
+              value={lessonId}
+              onChange={(e) => setLessonId(e.target.value)}
+              className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all appearance-none cursor-pointer"
+            >
+              <option value="">-- Select a lesson --</option>
+              {lessons.map((lesson) => (
+                <option key={lesson.id} value={lesson.id}>
+                  Grade {lesson.unit_id}/Unit {lesson.unit_id} - Lesson {lesson.lesson_number}: {lesson.title}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Form */}
+          <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-6">
+            <DynamicForm
+              fields={schema.fields}
+              data={formData}
+              onChange={setFormData}
+            />
+          </div>
+
+          {/* Media Upload */}
           <div>
             <h2 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-4">
-              {schema.label} Data
+              Media Upload
             </h2>
-            <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-6">
-              <DynamicForm
-                fields={schema.fields}
-                data={formData}
-                onChange={setFormData}
-              />
-            </div>
+            <MediaUploader
+              accept="both"
+              className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-6"
+            />
           </div>
         </div>
       )}
@@ -288,10 +224,10 @@ export default function NewActivityPage() {
           <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-8">
             <div className="text-center mb-6 p-4 bg-indigo-50 dark:bg-indigo-950/20 rounded-xl">
               <h3 className="text-xl font-bold text-indigo-600 dark:text-indigo-400">
-                {title || "Untitled Activity"}
+                {formData.title || "Untitled Activity"}
               </h3>
               <p className="text-slate-600 dark:text-slate-400 mt-2">
-                {instruction || "No instruction provided"}
+                {formData.instruction || "No instruction provided"}
               </p>
             </div>
             <div className="text-center py-12 text-slate-400">
@@ -317,9 +253,9 @@ export default function NewActivityPage() {
           </button>
           <button
             onClick={handleSave}
-            disabled={isSaving || !title || !lessonId}
+            disabled={isSaving || !formData.title || !lessonId}
             className={`flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg transition-all ${
-              isSaving || !title || !lessonId
+              isSaving || !formData.title || !lessonId
                 ? "opacity-50 cursor-not-allowed"
                 : "bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white shadow-lg hover:shadow-xl"
             }`}

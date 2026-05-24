@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ChevronLeft, ChevronRight, Check, ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Check, ChevronDown, ChevronUp, Edit } from 'lucide-react';
 
 export interface Activity {
   id: string;
@@ -25,6 +25,8 @@ interface LessonSidebarProps {
   onActivityClick: (index: number) => void;
   isExpanded?: boolean;
   onToggle?: () => void;
+  canEdit?: boolean;
+  onEditActivity?: (activityId: string) => void;
 }
 
 // Group activities by unit
@@ -63,6 +65,8 @@ export default function LessonSidebar({
   onActivityClick,
   isExpanded = true,
   onToggle,
+  canEdit = false,
+  onEditActivity,
 }: LessonSidebarProps) {
   const [localExpanded, setLocalExpanded] = useState(isExpanded);
   const [expandedUnits, setExpandedUnits] = useState<Set<string>>(new Set());
@@ -256,6 +260,20 @@ export default function LessonSidebar({
                                   </p>
                                 </div>
 
+                                {/* Edit Button */}
+                                {canEdit && onEditActivity && (
+                                  <button
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      onEditActivity(activity.id);
+                                    }}
+                                    className="p-1 hover:bg-indigo-100 rounded-lg transition-colors ml-1"
+                                    title="Edit activity"
+                                  >
+                                    <Edit size={12} className="text-indigo-600" />
+                                  </button>
+                                )}
+
                                 {/* Active Indicator */}
                                 {isActive && (
                                   <motion.div
@@ -394,6 +412,18 @@ export default function LessonSidebar({
                                   }`}>
                                     {activity.instruction || activity.title}
                                   </p>
+                                  {canEdit && onEditActivity && (
+                                    <button
+                                      onClick={(e) => {
+                                        e.stopPropagation();
+                                        onEditActivity(activity.id);
+                                      }}
+                                      className="p-1 hover:bg-indigo-100 rounded-lg transition-colors ml-auto"
+                                      title="Edit activity"
+                                    >
+                                      <Edit size={10} className="text-indigo-600" />
+                                    </button>
+                                  )}
                                 </div>
                               </motion.button>
                             );
