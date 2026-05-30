@@ -18,7 +18,7 @@ import DictationActivity from './DictationActivity';
 import ConversationSimActivity from './ConversationSimActivity';
 import PictureDescriptionActivity from './PictureDescriptionActivity';
 import { useState, useEffect, useRef } from 'react';
-import { AlertCircle, MessageSquare, X, Save, VolumeX, SkipForward } from 'lucide-react';
+import { AlertCircle, MessageSquare, X, Save, VolumeX, SkipForward, BookOpen, Gift } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ErrorBoundary } from '../ErrorBoundary';
 import { getMediaUrl } from "@/utils/assets";
@@ -44,6 +44,8 @@ interface ActivityPlayerProps {
     type: string;
     data: any;
     compensates?: string | null;
+    book_type?: string | null;
+    book_page?: string | null;
   };
   media?: ActivityMedia;
   onComplete?: (correct?: boolean) => void;
@@ -54,6 +56,7 @@ export default function ActivityPlayer({ activity, media, onComplete, showContro
   const [showNote, setShowNote] = useState(false);
   const [noteText, setNoteText] = useState('');
   const [saved, setSaved] = useState(false);
+  const [showCompensates, setShowCompensates] = useState(false);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   const noteKey = activity?.id ? `activity-note-${activity.id}` : null;
@@ -159,6 +162,25 @@ export default function ActivityPlayer({ activity, media, onComplete, showContro
       {/* Floating control bar — stop voice / skip (only on first activity) */}
       {showControls && (
         <div className="fixed top-4 right-4 z-50 flex items-center gap-1.5">
+          {(activity.book_type || activity.book_page) && (
+            <button
+              className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-blue-300 hover:bg-blue-50 text-slate-600 hover:text-blue-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
+              title="Book reference"
+            >
+              <BookOpen size={14} />
+              <span>{[activity.book_type?.toUpperCase(), activity.book_page ? `p.${activity.book_page}` : ''].filter(Boolean).join(' ')}</span>
+            </button>
+          )}
+          {activity.compensates && (
+            <button
+              onClick={() => setShowCompensates(!showCompensates)}
+              className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-emerald-300 hover:bg-emerald-50 text-slate-600 hover:text-emerald-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
+              title="Show compensates"
+            >
+              <Gift size={14} />
+              <span className="hidden sm:inline">Compensates</span>
+            </button>
+          )}
           <button
             onClick={stopAllAudio}
             className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-amber-300 hover:bg-amber-50 text-slate-600 hover:text-amber-700 rounded-xl text-xs font-semibold shadow-sm transition-all"

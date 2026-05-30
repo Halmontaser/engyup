@@ -80,6 +80,8 @@ function transformUnitJsonToHierarchy(data: UnitJsonData, unitId: string): Cours
           data: activity.content,
           media: buildActivityMedia(activity),
           compensates: activity.compensates || null,
+          book_type: activity.book_type || null,
+          book_page: activity.book_page || null,
           order_index: activity.order_index ?? 0,
           completed: false,
         }));
@@ -223,18 +225,20 @@ export function buildActivityMediaFromContent(content: any): ActivityMedia {
   const pairs = data.pairs || [];
   if (Array.isArray(pairs)) {
     pairs.forEach((p: any, idx: number) => {
-      if (p.leftImage && typeof p.leftImage === 'string') {
+      const leftImg = p.leftImage || p.imgUrl;
+      const rightImg = p.rightImage || p.imgUrl;
+      if (leftImg && typeof leftImg === 'string') {
         images.push({
-          filename: p.leftImage.split('/').pop() || '',
-          url: p.leftImage,
+          filename: leftImg.split('/').pop() || '',
+          url: leftImg,
           prompt: p.left || '',
         } as ActivityMediaEntry);
         (images[images.length - 1] as any).idx = idx;
       }
-      if (p.rightImage && typeof p.rightImage === 'string') {
+      if (rightImg && typeof rightImg === 'string') {
         images.push({
-          filename: p.rightImage.split('/').pop() || '',
-          url: p.rightImage,
+          filename: rightImg.split('/').pop() || '',
+          url: rightImg,
           prompt: p.right || '',
         } as ActivityMediaEntry);
         (images[images.length - 1] as any).idx = idx;

@@ -76,6 +76,10 @@ export default function McqActivity({ data, media, onComplete }: Props) {
     if (isComplex) isCorrect = currentQ.options[index].isCorrect;
     else isCorrect = currentQ.options[index] === currentQ.answer;
     if (isCorrect) setScore(score + 1);
+    // Trigger footer on last question
+    if (currentIndex === questions.length - 1 && onComplete) {
+      onComplete(isCorrect);
+    }
   };
 
   const handleNext = () => {

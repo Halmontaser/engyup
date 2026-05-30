@@ -16,15 +16,16 @@ export default function MatchPairsActivity({ data, media, onComplete }: Props) {
   const pairs = data.pairs || [];
 
   // Create shuffled columns independently
+  // Supports both leftImage/rightImage (schema) and imgUrl (legacy data)
   const leftItems = useMemo(
-    () => pairs.map((p: any, i: number) => ({ text: p.left, pairIndex: i, image: p.leftImage, audio: p.leftAudio })),
+    () => pairs.map((p: any, i: number) => ({ text: p.left, pairIndex: i, image: p.leftImage || p.imgUrl, audio: p.leftAudio })),
     [pairs]
   );
 
-  const [rightItems, setRightItems] = useState(pairs.map((p: any, i: number) => ({ text: p.right, pairIndex: i, image: p.rightImage, audio: p.rightAudio })));
+  const [rightItems, setRightItems] = useState(pairs.map((p: any, i: number) => ({ text: p.right, pairIndex: i, image: p.rightImage || p.imgUrl, audio: p.rightAudio })));
 
   useEffect(() => {
-    const items = pairs.map((p: any, i: number) => ({ text: p.right, pairIndex: i, image: p.rightImage, audio: p.rightAudio }));
+    const items = pairs.map((p: any, i: number) => ({ text: p.right, pairIndex: i, image: p.rightImage || p.imgUrl, audio: p.rightAudio }));
     const shuffled = [...items];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -147,6 +148,7 @@ export default function MatchPairsActivity({ data, media, onComplete }: Props) {
           <div className="space-y-3">
             {leftItems.map((item: any, i: number) => {
               if (!item) return null;
+              if (!item.image && !item.text && !item.audio) return null;
               const isMatched = matched.has(item.pairIndex);
               const isSelected = selectedLeft === i;
               const isWrong = wrongPair?.left === i;
@@ -210,6 +212,7 @@ export default function MatchPairsActivity({ data, media, onComplete }: Props) {
           <div className="space-y-3">
             {rightItems.map((item: any, i: number) => {
               if (!item) return null;
+              if (!item.image && !item.text && !item.audio) return null;
               const isMatched = matched.has(item.pairIndex);
               const isSelected = selectedRight === i;
               const isWrong = wrongPair?.right === i;

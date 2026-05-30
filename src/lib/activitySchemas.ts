@@ -188,6 +188,7 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
           { name: 'right', label: 'Right Label', type: 'text', placeholder: 'Text label (shown below image/audio)' },
           { name: 'leftImage', label: 'Left Image', type: 'text', placeholder: '/media/... or URL' },
           { name: 'rightImage', label: 'Right Image', type: 'text', placeholder: '/media/... or URL' },
+          { name: 'imgUrl', label: 'Image URL (shared)', type: 'text', placeholder: '/media/... or URL (legacy)' },
           { name: 'leftAudio', label: 'Left Audio', type: 'text', placeholder: '/media/... or URL' },
           { name: 'rightAudio', label: 'Right Audio', type: 'text', placeholder: '/media/... or URL' }
         ]
