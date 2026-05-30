@@ -1,20 +1,25 @@
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion } from "motion/react";
-import { Check, X, RotateCcw } from "lucide-react";
+import { Check, X, RotateCcw, Volume2 } from "lucide-react";
 
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
+import { STOP_AUDIO_EVENT } from "@/utils/audio";
 
-export default function CategorySortActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
+interface Props {
+  data: any;
+  media: ActivityMedia;
+  onComplete?: (correct?: boolean) => void;
+}
+
+export default function CategorySortActivity({ data, media, onComplete }: Props) {
   const categories: { name: string; items: string[] }[] = data.categories || [];
 
-  // Build a flat pool of items
   const allItems = categories.flatMap((cat) =>
     (cat.items || []).map((item: string) => ({ text: item, category: cat.name }))
   );
 
-  // Shuffle items
   const [pool, setPool] = useState(() => {
     const shuffled = [...allItems];
     for (let i = shuffled.length - 1; i > 0; i--) {
@@ -29,9 +34,38 @@ export default function CategorySortActivity({ data, media, onComplete }: { data
   );
   const [results, setResults] = useState<Record<string, boolean>>({});
   const [isChecked, setIsChecked] = useState(false);
+  const [playingAudio, setPlayingAudio] = useState<string | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Stop audio on global stop-audio event
+  useEffect(() => {
+    const handler = () => {
+      audioRef.current?.pause();
+      speechSynthesis.cancel();
+      setIsSpeaking(false);
+    };
+    window.addEventListener(STOP_AUDIO_EVENT, handler);
+    return () => window.removeEventListener(STOP_AUDIO_EVENT, handler);
+  }, []);
 
   if (categories.length === 0)
     return <div className="text-muted">No categories found.</div>;
+
+  // Media: category-level images
+  const categoryImage = media.images.length > 0 ? media.images[0] : null;
+  const categoryImageUrl = categoryImage?.url || data.imageUrl || data.image;
+
+  const handlePlayAudio = (text: string) => {
+    if (audioRef.current) { audioRef.current.pause(); audioRef.current = null; }
+    if ("speechSynthesis" in window) {
+      setPlayingAudio(text);
+      const u = new SpeechSynthesisUtterance(text);
+      u.rate = 0.85; u.lang = "en-US";
+      u.onend = () => setPlayingAudio(null);
+      u.onerror = () => setPlayingAudio(null);
+      speechSynthesis.cancel(); speechSynthesis.speak(u);
+    }
+  };
 
   const handleDrop = (item: string, targetCategory: string) => {
     if (isChecked) return;
@@ -49,9 +83,7 @@ export default function CategorySortActivity({ data, media, onComplete }: { data
       [category]: prev[category].filter((i) => i !== item),
     }));
     const original = allItems.find((a) => a.text === item);
-    if (original) {
-      setPool((prev) => [...prev, original]);
-    }
+    if (original) setPool((prev) => [...prev, original]);
   };
 
   const handleCheck = () => {
@@ -59,15 +91,11 @@ export default function CategorySortActivity({ data, media, onComplete }: { data
     const res: Record<string, boolean> = {};
     for (const cat of categories) {
       for (const item of buckets[cat.name]) {
-        const correct = (cat.items || []).includes(item);
-        res[item] = correct;
+        res[item] = (cat.items || []).includes(item);
       }
     }
     setResults(res);
-    // Call onComplete when user checks answers
-    if (onComplete) {
-      onComplete();
-    }
+    if (onComplete) onComplete(true);
   };
 
   const handleReset = () => {
@@ -101,6 +129,19 @@ export default function CategorySortActivity({ data, media, onComplete }: { data
         </button>
       </div>
 
+      {/* Category image */}
+      {categoryImageUrl && (
+        <div className="mb-6 flex justify-center">
+          <img
+            src={getMediaUrl(categoryImageUrl)}
+            alt="Category reference"
+            className="max-h-48 rounded-2xl object-contain bg-slate-50 border border-slate-100"
+            loading="lazy"
+            onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+          />
+        </div>
+      )}
+
       {/* Item pool */}
       {pool.length > 0 && (
         <div className="flex flex-wrap gap-3 mb-8 p-6 bg-[var(--card)] border border-[var(--border)] rounded-2xl">
@@ -108,9 +149,15 @@ export default function CategorySortActivity({ data, media, onComplete }: { data
             <motion.span
               key={`pool-${item.text}`}
               layout
-              className="px-4 py-2.5 bg-[var(--accent-light)] text-[var(--accent)] rounded-xl font-medium text-sm cursor-pointer hover:shadow-md transition-shadow"
+              className="px-4 py-2.5 bg-[var(--accent-light)] text-[var(--accent)] rounded-xl font-medium text-sm cursor-pointer hover:shadow-md transition-shadow flex items-center gap-2"
             >
               {item.text}
+              <button
+                onClick={(e) => { e.stopPropagation(); handlePlayAudio(item.text); }}
+                className={`p-0.5 rounded-full transition-all ${playingAudio === item.text ? "text-blue-500" : "text-muted/50 hover:text-blue-500"}`}
+              >
+                <Volume2 size={12} className={playingAudio === item.text ? "animate-pulse" : ""} />
+              </button>
             </motion.span>
           ))}
         </div>
@@ -147,7 +194,6 @@ export default function CategorySortActivity({ data, media, onComplete }: { data
               ))}
             </div>
 
-            {/* Drop target hint */}
             {!isChecked && pool.length > 0 && (
               <div className="mt-3 flex flex-wrap gap-1.5 opacity-0 hover:opacity-100 transition-opacity duration-300">
                 {pool.map((item, j) => (

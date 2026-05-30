@@ -1,14 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Lock, Shield, AlertCircle, ArrowLeft, Eye, EyeOff } from "lucide-react";
 import { setAdminAuth, hasAdminPassword } from "@/lib/auth";
 
 export default function AdminLoginPage() {
-  const router = useRouter();
-  const searchParams = useSearchParams();
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const redirect = searchParams.get("redirect") || "/admin";
 
   const [password, setPassword] = useState("");
@@ -22,10 +22,10 @@ export default function AdminLoginPage() {
       // Check local storage
       const stored = localStorage.getItem('admin_auth');
       if (stored) {
-        router.push(redirect);
+        navigate(redirect);
       }
     }
-  }, [router, redirect]);
+  }, [navigate, redirect]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -38,7 +38,7 @@ export default function AdminLoginPage() {
     const success = setAdminAuth(password);
 
     if (success) {
-      router.push(redirect);
+      navigate(redirect);
     } else {
       setError("Invalid password");
       setIsLoading(false);
@@ -54,7 +54,7 @@ export default function AdminLoginPage() {
       >
         {/* Back button */}
         <button
-          onClick={() => router.push("/")}
+          onClick={() => navigate("/")}
           className="mb-6 flex items-center gap-2 text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors"
         >
           <ArrowLeft size={18} />

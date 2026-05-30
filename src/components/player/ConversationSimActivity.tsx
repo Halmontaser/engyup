@@ -26,7 +26,13 @@ interface Turn {
   studentOptions?: StudentOption[];
 }
 
-export default function ConversationSimActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
+interface Props {
+  data: any;
+  media: ActivityMedia;
+  onComplete?: (correct?: boolean) => void;
+}
+
+export default function ConversationSimActivity({ data, media, onComplete }: Props) {
   const scenario: string = data.scenario || "";
   const turns: Turn[] = data.turns || [];
 
@@ -161,7 +167,7 @@ export default function ConversationSimActivity({ data, media, onComplete }: { d
               </button>
               {onComplete && (
                 <button
-                  onClick={onComplete}
+                  onClick={() => onComplete?.(true)}
                   className="btn-accent flex items-center gap-2"
                 >
                   Finish Activity <ChevronRight size={18} />
@@ -174,9 +180,26 @@ export default function ConversationSimActivity({ data, media, onComplete }: { d
     );
   }
 
+  // ── Scene image ──
+  const sceneImage = media.images.length > 0 ? media.images[0] : null;
+  const sceneImageUrl = sceneImage?.url || (data as any).imageUrl;
+
   // ── CONVERSATION UI ──
   return (
     <div className="max-w-2xl mx-auto w-full">
+      {/* Scene Image */}
+      {sceneImageUrl && (
+        <div className="mb-6 rounded-2xl overflow-hidden border border-[var(--border)]">
+          <img
+            src={getMediaUrl(sceneImageUrl)}
+            alt="Conversation scene"
+            className="w-full h-auto max-h-64 object-cover"
+            loading="lazy"
+            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+          />
+        </div>
+      )}
+
       {/* Scenario */}
       {scenario && (
         <div className="mb-6 p-4 bg-[var(--accent-light)] border border-[var(--accent)]/20 rounded-2xl">

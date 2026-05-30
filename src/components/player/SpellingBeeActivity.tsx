@@ -1,5 +1,5 @@
 
-import { useState, useCallback, useRef } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import {
   Volume2,
@@ -12,15 +12,23 @@ import {
 } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
+import { STOP_AUDIO_EVENT } from "@/utils/audio";
 
 interface SpellingWord {
   word: string;
   hint?: string;
   scrambled: string[];
   audio?: string;
+  imageUrl?: string;
 }
 
-export default function SpellingBeeActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
+interface Props {
+  data: any;
+  media: ActivityMedia;
+  onComplete?: (correct?: boolean) => void;
+}
+
+export default function SpellingBeeActivity({ data, media, onComplete }: Props) {
   const words: SpellingWord[] = data.words || [];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selected, setSelected] = useState<number[]>([]);
@@ -31,11 +39,28 @@ export default function SpellingBeeActivity({ data, media, onComplete }: { data:
   const [isSpeaking, setIsSpeaking] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
+  // Stop audio on global stop-audio event
+  useEffect(() => {
+    const handler = () => {
+      audioRef.current?.pause();
+      speechSynthesis.cancel();
+      setIsSpeaking(false);
+    };
+    window.addEventListener(STOP_AUDIO_EVENT, handler);
+    return () => window.removeEventListener(STOP_AUDIO_EVENT, handler);
+  }, []);
+
   if (words.length === 0)
     return <div className="text-muted p-4">No words to spell.</div>;
 
   const current = words[currentIndex];
   const scrambledLetters = current.scrambled || current.word.split("").sort(() => Math.random() - 0.5);
+
+  // Media
+  const wordImage = media.images.find((img: any) => img.idx === currentIndex) || media.images[currentIndex];
+  const wordAudio = media.audio.find((a: any) => a.idx === currentIndex) || media.audio[currentIndex];
+  const imageUrl = wordImage?.url || current.imageUrl || (data as any).imageUrl;
+  const audioUrl = wordAudio?.url || current.audio;
 
   const builtWord = selected.map((i) => scrambledLetters[i]).join("");
   const availableIndices = scrambledLetters
@@ -71,11 +96,11 @@ export default function SpellingBeeActivity({ data, media, onComplete }: { data:
     if (currentIndex < words.length - 1) {
       setCurrentIndex(currentIndex + 1);
     } else if (onComplete) {
-      onComplete();
+      onComplete(true);
     }
   };
 
-  // Media lookup
+  // Media lookup for audio
   const wordAudios = media.audio.filter((a) => a.audioType === "word");
   const currentAudio = wordAudios.find(
     (a) => a.text?.toLowerCase() === current.word.toLowerCase()
@@ -86,30 +111,29 @@ export default function SpellingBeeActivity({ data, media, onComplete }: { data:
       audioRef.current.pause();
       audioRef.current = null;
     }
-    if (currentAudio?.url) {
+    if (currentAudio?.url || audioUrl) {
       setIsSpeaking(true);
-      const audio = new Audio(getMediaUrl(currentAudio.url));
+      const audio = new Audio(getMediaUrl(currentAudio?.url || audioUrl));
       audioRef.current = audio;
       audio.onended = () => setIsSpeaking(false);
       audio.onerror = () => {
         setIsSpeaking(false);
-        if ("speechSynthesis" in window) {
-          const u = new SpeechSynthesisUtterance(current.word);
-          u.rate = 0.75; u.lang = "en-US";
-          u.onend = () => setIsSpeaking(false);
-          speechSynthesis.cancel(); speechSynthesis.speak(u);
-        }
+        fallbackSpeak();
       };
-      audio.play().catch(() => setIsSpeaking(false));
-    } else if ("speechSynthesis" in window) {
+      audio.play().catch(() => { setIsSpeaking(false); fallbackSpeak(); });
+    } else {
+      fallbackSpeak();
+    }
+  };
+
+  const fallbackSpeak = () => {
+    if ("speechSynthesis" in window) {
       setIsSpeaking(true);
-      const utterance = new SpeechSynthesisUtterance(current.word);
-      utterance.rate = 0.75;
-      utterance.lang = "en-US";
-      utterance.onend = () => setIsSpeaking(false);
-      utterance.onerror = () => setIsSpeaking(false);
-      speechSynthesis.cancel();
-      speechSynthesis.speak(utterance);
+      const u = new SpeechSynthesisUtterance(current.word);
+      u.rate = 0.75; u.lang = "en-US";
+      u.onend = () => setIsSpeaking(false);
+      u.onerror = () => setIsSpeaking(false);
+      speechSynthesis.cancel(); speechSynthesis.speak(u);
     }
   };
 
@@ -139,6 +163,19 @@ export default function SpellingBeeActivity({ data, media, onComplete }: { data:
           className="bg-[var(--card)] rounded-3xl border border-[var(--border)] overflow-hidden"
         >
           <div className="p-8 md:p-12">
+            {/* Word Image */}
+            {imageUrl && (
+              <div className="mb-6 flex justify-center">
+                <img
+                  src={getMediaUrl(imageUrl)}
+                  alt="Word reference"
+                  className="max-h-40 rounded-2xl object-contain bg-slate-50 border border-slate-100"
+                  loading="lazy"
+                  onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+                />
+              </div>
+            )}
+
             {/* Listen Button */}
             <div className="text-center mb-8">
               <button
@@ -171,7 +208,7 @@ export default function SpellingBeeActivity({ data, media, onComplete }: { data:
                     animate={{ opacity: 1 }}
                     className="text-sm text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/20 px-4 py-2 rounded-xl inline-block"
                   >
-                    💡 {current.hint}
+                    {current.hint}
                   </motion.div>
                 )}
               </div>

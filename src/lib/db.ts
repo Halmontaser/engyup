@@ -1,62 +1,27 @@
-import Database from "better-sqlite3";
-import path from "path";
+// Supabase-based database functions
+// All data is stored in Supabase now - no more SQLite
+import { supabase } from './supabase';
+import type { CourseHierarchy, ModuleNode, LessonNode, ActivityNode } from '../types/courseHierarchy';
+import { buildActivityMediaFromContent } from './unitData';
 
-let db: Database.Database | null = null;
-
-function getDb(): Database.Database {
-  if (!db) {
-    const dbPath = path.join(process.cwd(), "components.db");
-    db = new Database(dbPath);
-  }
-  return db;
-}
-
-/* ─── Grade ─── */
 export interface Grade {
-  id: number;
+  id: string;
   grade_number: number;
   label: string;
 }
 
-export function getGrades(): Grade[] {
-  return getDb()
-    .prepare("SELECT id, grade_number, label FROM grades ORDER BY grade_number")
-    .all() as Grade[];
-}
-
-/* ─── Unit ─── */
 export interface Unit {
-  id: number;
-  grade_id: number;
+  id: string;
+  grade_id: string;
   unit_number: number;
   title: string;
   total_lessons: number;
   lesson_count: number;
 }
 
-export function getUnitsForGrade(gradeNumber: number): Unit[] {
-  return getDb()
-    .prepare(
-      `SELECT u.*, 
-              (SELECT COUNT(*) FROM lessons l WHERE l.unit_id = u.id) AS lesson_count
-       FROM units u 
-       JOIN grades g ON u.grade_id = g.id 
-       WHERE g.grade_number = ? 
-       ORDER BY u.unit_number`
-    )
-    .all(gradeNumber) as Unit[];
-}
-
-export function getGradeByNumber(gradeNumber: number): Grade | undefined {
-  return getDb()
-    .prepare("SELECT id, grade_number, label FROM grades WHERE grade_number = ?")
-    .get(gradeNumber) as Grade | undefined;
-}
-
-/* ─── Lesson ─── */
 export interface Lesson {
   id: string;
-  unit_id: number;
+  unit_id: string;
   lesson_number: number;
   title: string;
   description: string;
@@ -67,29 +32,6 @@ export interface Lesson {
   passing_score: number;
 }
 
-export function getLessonsForUnit(gradeNumber: number, unitNumber: number): Lesson[] {
-  return getDb()
-    .prepare(
-      `SELECT l.* FROM lessons l
-       JOIN units u ON l.unit_id = u.id
-       JOIN grades g ON u.grade_id = g.id
-       WHERE g.grade_number = ? AND u.unit_number = ?
-       ORDER BY l.lesson_number`
-    )
-    .all(gradeNumber, unitNumber) as Lesson[];
-}
-
-export function getUnitByNumbers(gradeNumber: number, unitNumber: number): Unit | undefined {
-  return getDb()
-    .prepare(
-      `SELECT u.* FROM units u
-       JOIN grades g ON u.grade_id = g.id
-       WHERE g.grade_number = ? AND u.unit_number = ?`
-    )
-    .get(gradeNumber, unitNumber) as Unit | undefined;
-}
-
-/* ─── Activity ─── */
 export interface Activity {
   id: string;
   lesson_id: string;
@@ -100,114 +42,258 @@ export interface Activity {
   book_type: string | null;
   book_page: string | null;
   compensates: string | null;
-  data: string; // JSON string
-  sort_order: number;
-}
-
-export function getLesson(lessonId: string): Lesson | undefined {
-  return getDb()
-    .prepare("SELECT * FROM lessons WHERE id = ?")
-    .get(lessonId) as Lesson | undefined;
-}
-
-export function getActivitiesForLesson(lessonId: string): Activity[] {
-  return getDb()
-    .prepare(
-      `SELECT id, lesson_id, type, title, instruction, difficulty, book_type, book_page, data, sort_order
-       FROM activities 
-       WHERE lesson_id = ? 
-       ORDER BY sort_order`
-    )
-    .all(lessonId) as Activity[];
-}
-
-/* ─── Stats ─── */
-export function getActivityCountForLesson(lessonId: string): number {
-  const row = getDb()
-    .prepare("SELECT COUNT(*) as count FROM activities WHERE lesson_id = ?")
-    .get(lessonId) as { count: number };
-  return row.count;
-}
-
-/* ─── Activity CRUD ─── */
-export interface CreateActivityInput {
-  lesson_id: string;
-  type: string;
-  title: string;
-  instruction: string;
-  difficulty?: string;
-  book_type?: string;
-  book_page?: string;
-  compensates?: string;
   data: any;
-  sort_order?: number;
+  sort_order: number;
+  is_required: boolean;
+  xp_reward: number;
+  time_estimate_minutes: number | null;
 }
 
-export function createActivity(input: CreateActivityInput): Activity {
-  const stmt = getDb().prepare(`
-    INSERT INTO activities (lesson_id, type, title, instruction, difficulty, book_type, book_page, compensates, data, sort_order, created_at)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))
-  `);
-  const result = stmt.run(
-    input.lesson_id,
-    input.type,
-    input.title,
-    input.instruction,
-    input.difficulty || null,
-    input.book_type || null,
-    input.book_page || null,
-    input.compensates || null,
-    JSON.stringify(input.data),
-    input.sort_order || 0
-  );
-  return getActivityById(String(result.lastInsertRowid))!;
+export async function getLessonsForUnit(gradeNumber: number, unitNumber: number): Promise<Lesson[]> {
+  const { data, error } = await supabase
+    .from('lessons')
+    .select('*')
+    .order('title', { ascending: true });
+
+  if (error || !data) return [];
+  
+  return data.map((l: any) => ({
+    id: l.id,
+    unit_id: l.module_id || '',
+    lesson_number: l.order_index || 0,
+    title: l.title || '',
+    description: l.description || '',
+    objectives: l.objectives || null,
+    language_focus: l.language_focus || null,
+    vocabulary: l.vocabulary || null,
+    cover_image_src: l.cover_image_src || null,
+    passing_score: l.passing_score || 70,
+  }));
 }
 
-export function updateActivity(id: string, input: Partial<CreateActivityInput>): Activity | null {
-  const fields: string[] = [];
-  const values: any[] = [];
+export async function getLesson(id: string): Promise<Lesson | null> {
+  const { data, error } = await supabase
+    .from('lessons')
+    .select('*')
+    .eq('id', id)
+    .single();
 
-  if (input.title !== undefined) { fields.push("title = ?"); values.push(input.title); }
-  if (input.instruction !== undefined) { fields.push("instruction = ?"); values.push(input.instruction); }
-  if (input.difficulty !== undefined) { fields.push("difficulty = ?"); values.push(input.difficulty); }
-  if (input.book_type !== undefined) { fields.push("book_type = ?"); values.push(input.book_type); }
-  if (input.book_page !== undefined) { fields.push("book_page = ?"); values.push(input.book_page); }
-  if (input.compensates !== undefined) { fields.push("compensates = ?"); values.push(input.compensates); }
-  if (input.data !== undefined) { fields.push("data = ?"); values.push(JSON.stringify(input.data)); }
-  if (input.sort_order !== undefined) { fields.push("sort_order = ?"); values.push(input.sort_order); }
-
-  if (fields.length === 0) return null;
-
-  values.push(id);
-  const stmt = getDb().prepare(`UPDATE activities SET ${fields.join(", ")} WHERE id = ?`);
-  stmt.run(...values);
-  return getActivityById(id);
+  if (error || !data) return null;
+  return {
+    id: data.id,
+    unit_id: data.module_id || '',
+    lesson_number: data.order_index || 0,
+    title: data.title || '',
+    description: data.description || '',
+    objectives: data.objectives || null,
+    language_focus: data.language_focus || null,
+    vocabulary: data.vocabulary || null,
+    cover_image_src: data.cover_image_src || null,
+    passing_score: data.passing_score || 70,
+  };
 }
 
-export function deleteActivity(id: string): boolean {
-  const result = getDb().prepare("DELETE FROM activities WHERE id = ?").run(id);
-  return result.changes > 0;
+export async function createActivity(activity: Omit<Activity, 'id'>): Promise<Activity> {
+  const { data, error } = await supabase
+    .from('activities')
+    .insert([{
+      lesson_id: activity.lesson_id,
+      activity_type: activity.type,
+      title: activity.title,
+      instruction: activity.instruction,
+      difficulty: activity.difficulty,
+      book_type: activity.book_type,
+      book_page: activity.book_page,
+      compensates: activity.compensates,
+      content: activity.data,
+      order_index: activity.sort_order,
+      is_required: activity.is_required ?? true,
+      xp_reward: activity.xp_reward ?? 10,
+      time_estimate_minutes: activity.time_estimate_minutes ?? null,
+    }])
+    .select('*')
+    .single();
+
+  if (error) throw error;
+  return {
+    id: data.activity_id,
+    lesson_id: data.lesson_id,
+    type: data.activity_type,
+    title: data.title || '',
+    instruction: data.instruction || '',
+    difficulty: data.difficulty || null,
+    book_type: data.book_type || null,
+    book_page: data.book_page || null,
+    compensates: data.compensates || null,
+    data: data.content,
+    sort_order: data.order_index || 0,
+    is_required: data.is_required ?? true,
+    xp_reward: data.xp_reward ?? 10,
+    time_estimate_minutes: data.time_estimate_minutes ?? null,
+  };
 }
 
-export function getActivityById(id: string): Activity | undefined {
-  return getDb().prepare("SELECT * FROM activities WHERE id = ?").get(id) as Activity | undefined;
+export async function updateActivity(id: string, updates: Partial<Activity>): Promise<Activity> {
+  const supabaseUpdates: any = {};
+  if (updates.lesson_id !== undefined) supabaseUpdates.lesson_id = updates.lesson_id;
+  if (updates.type !== undefined) supabaseUpdates.activity_type = updates.type;
+  if (updates.title !== undefined) supabaseUpdates.title = updates.title;
+  if (updates.instruction !== undefined) supabaseUpdates.instruction = updates.instruction;
+  if (updates.difficulty !== undefined) supabaseUpdates.difficulty = updates.difficulty;
+  if (updates.book_type !== undefined) supabaseUpdates.book_type = updates.book_type;
+  if (updates.book_page !== undefined) supabaseUpdates.book_page = updates.book_page;
+  if (updates.compensates !== undefined) supabaseUpdates.compensates = updates.compensates;
+  if (updates.data !== undefined) supabaseUpdates.content = updates.data;
+  if (updates.sort_order !== undefined) supabaseUpdates.order_index = updates.sort_order;
+  if (updates.is_required !== undefined) supabaseUpdates.is_required = updates.is_required;
+  if (updates.xp_reward !== undefined) supabaseUpdates.xp_reward = updates.xp_reward;
+  if (updates.time_estimate_minutes !== undefined) supabaseUpdates.time_estimate_minutes = updates.time_estimate_minutes;
+
+  const { data, error } = await supabase
+    .from('activities')
+    .update(supabaseUpdates)
+    .eq('activity_id', id)
+    .select('*')
+    .single();
+
+  if (error) throw error;
+  return {
+    id: data.activity_id,
+    lesson_id: data.lesson_id,
+    type: data.activity_type,
+    title: data.title || '',
+    instruction: data.instruction || '',
+    difficulty: data.difficulty || null,
+    book_type: data.book_type || null,
+    book_page: data.book_page || null,
+    compensates: data.compensates || null,
+    data: data.content,
+    sort_order: data.order_index || 0,
+    is_required: data.is_required ?? true,
+    xp_reward: data.xp_reward ?? 10,
+    time_estimate_minutes: data.time_estimate_minutes ?? null,
+  };
 }
 
-export function getAllActivities(): Activity[] {
-  return getDb()
-    .prepare(`
-      SELECT a.* FROM activities a
-      ORDER BY a.created_at DESC
+export async function getActivityById(id: string): Promise<Activity | null> {
+  const { data, error } = await supabase
+    .from('activities')
+    .select('*')
+    .eq('activity_id', id)
+    .single();
+
+  if (error || !data) return null;
+  return {
+    id: data.activity_id,
+    lesson_id: data.lesson_id,
+    type: data.activity_type,
+    title: data.title || '',
+    instruction: data.instruction || '',
+    difficulty: data.difficulty || null,
+    book_type: data.book_type || null,
+    book_page: data.book_page || null,
+    compensates: data.compensates || null,
+    data: data.content,
+    sort_order: data.order_index || 0,
+    is_required: data.is_required ?? true,
+    xp_reward: data.xp_reward ?? 10,
+    time_estimate_minutes: data.time_estimate_minutes ?? null,
+  };
+}
+
+export async function getCourseHierarchyWithProgress(
+  courseId: string,
+  userId: string
+): Promise<CourseHierarchy | null> {
+  // Fetch the full hierarchy: course -> modules -> lessons -> activities
+  const { data: courseData, error: courseError } = await supabase
+    .from('courses')
+    .select(`
+      id, title,
+      modules(
+        id, title, order_index,
+        lessons(
+          id, title, order_index, description,
+          activities(activity_id, lesson_id, activity_type, title, instruction, content, compensates, order_index, difficulty, book_type, book_page, is_required, xp_reward, time_estimate_minutes)
+        )
+      )
     `)
-    .all() as Activity[];
-}
+    .eq('id', courseId)
+    .single();
 
-export function getActivitiesByLesson(lessonId: string): Activity[] {
-  return getDb()
-    .prepare(`
-      SELECT * FROM activities
-      WHERE lesson_id = ?
-      ORDER BY sort_order ASC
-    `)
-    .all(lessonId) as Activity[];
+  if (courseError || !courseData) return null;
+
+  // Fetch user progress in parallel
+  const [lessonProgressRes, activityProgressRes] = await Promise.all([
+    supabase.from('user_progress').select('lesson_id, status').eq('user_id', userId),
+    supabase.from('activity_progress').select('activity_id, status').eq('user_id', userId),
+  ]);
+
+  const lessonProgressMap = new Map<string, boolean>();
+  (lessonProgressRes.data || []).forEach((p: any) => {
+    lessonProgressMap.set(p.lesson_id, p.status === 'completed');
+  });
+
+  const activityProgressMap = new Map<string, boolean>();
+  (activityProgressRes.data || []).forEach((p: any) => {
+    activityProgressMap.set(p.activity_id, p.status === 'completed');
+  });
+
+  // Build the hierarchy with progress
+  const modules: ModuleNode[] = (courseData.modules || [])
+    .sort((a: any, b: any) => (a.order_index ?? 0) - (b.order_index ?? 0))
+    .map((mod: any) => {
+      const lessons: LessonNode[] = (mod.lessons || [])
+        .sort((a: any, b: any) => (a.order_index ?? 0) - (b.order_index ?? 0))
+        .map((lesson: any) => {
+          const activities: ActivityNode[] = (lesson.activities || [])
+            .sort((a: any, b: any) => (a.order_index ?? 0) - (b.order_index ?? 0))
+            .map((a: any) => ({
+              id: a.activity_id,
+              lesson_id: a.lesson_id,
+              type: a.activity_type || 'other',
+              title: a.title || '',
+              instruction: a.instruction || '',
+              data: a.content,
+              media: buildActivityMediaFromContent(a.content),
+              compensates: a.compensates || null,
+              order_index: a.order_index ?? 0,
+              completed: activityProgressMap.get(a.activity_id) ?? false,
+              difficulty: a.difficulty || null,
+              book_type: a.book_type || null,
+              book_page: a.book_page || null,
+              is_required: a.is_required ?? true,
+              xp_reward: a.xp_reward ?? 10,
+              time_estimate_minutes: a.time_estimate_minutes ?? null,
+            }));
+
+          const lessonCompleted = lessonProgressMap.get(lesson.id) ?? false;
+
+          return {
+            id: lesson.id,
+            module_id: mod.id,
+            title: lesson.title || '',
+            order_index: lesson.order_index ?? 0,
+            description: lesson.description || '',
+            activities,
+            completed: lessonCompleted || (activities.length > 0 && activities.every(a => a.completed)),
+          };
+        });
+
+      const moduleCompleted = lessons.length > 0 && lessons.every(l => l.completed);
+
+      return {
+        id: mod.id,
+        title: mod.title || '',
+        order_index: mod.order_index ?? 0,
+        lessons,
+        completed: moduleCompleted,
+      };
+    });
+
+  return {
+    id: courseData.id,
+    title: courseData.title || '',
+    modules,
+  };
 }

@@ -1,5 +1,5 @@
 
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import {
   Volume2,
@@ -11,14 +11,22 @@ import {
 } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
+import { STOP_AUDIO_EVENT } from "@/utils/audio";
 
 interface DictationSentence {
   expectedText: string;
   hints?: string[];
   difficulty?: string;
+  imageUrl?: string;
 }
 
-export default function DictationActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
+interface Props {
+  data: any;
+  media: ActivityMedia;
+  onComplete?: (correct?: boolean) => void;
+}
+
+export default function DictationActivity({ data, media, onComplete }: Props) {
   const sentences: DictationSentence[] = data.sentences || [];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userInput, setUserInput] = useState("");
@@ -27,6 +35,17 @@ export default function DictationActivity({ data, media, onComplete }: { data: a
   const [showHints, setShowHints] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Stop audio on global stop-audio event
+  useEffect(() => {
+    const handler = () => {
+      audioRef.current?.pause();
+      speechSynthesis.cancel();
+      setIsSpeaking(false);
+    };
+    window.addEventListener(STOP_AUDIO_EVENT, handler);
+    return () => window.removeEventListener(STOP_AUDIO_EVENT, handler);
+  }, []);
   const [showDiff, setShowDiff] = useState(false);
 
   if (sentences.length === 0)
@@ -34,11 +53,13 @@ export default function DictationActivity({ data, media, onComplete }: { data: a
 
   const current = sentences[currentIndex];
 
-  // Media lookup: match audio by sentence text or by index
+  // Media lookup
+  const sentenceImage = media.images.find((img: any) => img.idx === currentIndex) || media.images[currentIndex];
   const sentenceAudios = media.audio.filter((a) => a.audioType === "sentence" || a.audioType === "dictation");
   const currentAudio = sentenceAudios.find(
     (a) => a.text?.toLowerCase() === current.expectedText.toLowerCase()
   ) || sentenceAudios[currentIndex] || (media.audio[currentIndex]);
+  const imageUrl = sentenceImage?.url || current.imageUrl;
 
   const handlePlayAudio = (rate?: number) => {
     if (audioRef.current) {
@@ -49,27 +70,26 @@ export default function DictationActivity({ data, media, onComplete }: { data: a
       setIsSpeaking(true);
       const audio = new Audio(getMediaUrl(currentAudio.url));
       audioRef.current = audio;
-      if (rate && rate < 0.8) audio.playbackRate = rate / 0.85; // slow mode
+      if (rate && rate < 0.8) audio.playbackRate = rate / 0.85;
       audio.onended = () => setIsSpeaking(false);
       audio.onerror = () => {
         setIsSpeaking(false);
-        if ("speechSynthesis" in window) {
-          const u = new SpeechSynthesisUtterance(current.expectedText);
-          u.rate = rate || 0.85; u.lang = "en-US";
-          u.onend = () => setIsSpeaking(false);
-          speechSynthesis.cancel(); speechSynthesis.speak(u);
-        }
+        fallbackSpeak(rate);
       };
-      audio.play().catch(() => setIsSpeaking(false));
-    } else if ("speechSynthesis" in window) {
+      audio.play().catch(() => { setIsSpeaking(false); fallbackSpeak(rate); });
+    } else {
+      fallbackSpeak(rate);
+    }
+  };
+
+  const fallbackSpeak = (rate?: number) => {
+    if ("speechSynthesis" in window) {
       setIsSpeaking(true);
-      const utterance = new SpeechSynthesisUtterance(current.expectedText);
-      utterance.rate = rate || 0.85;
-      utterance.lang = "en-US";
-      utterance.onend = () => setIsSpeaking(false);
-      utterance.onerror = () => setIsSpeaking(false);
-      speechSynthesis.cancel();
-      speechSynthesis.speak(utterance);
+      const u = new SpeechSynthesisUtterance(current.expectedText);
+      u.rate = rate || 0.85; u.lang = "en-US";
+      u.onend = () => setIsSpeaking(false);
+      u.onerror = () => setIsSpeaking(false);
+      speechSynthesis.cancel(); speechSynthesis.speak(u);
     }
   };
 
@@ -85,7 +105,6 @@ export default function DictationActivity({ data, media, onComplete }: { data: a
     const expected = normalizeText(current.expectedText);
     const actual = normalizeText(userInput);
     if (expected === actual) return 100;
-
     const expectedWords = expected.split(" ");
     const actualWords = actual.split(" ");
     let matchCount = 0;
@@ -109,7 +128,7 @@ export default function DictationActivity({ data, media, onComplete }: { data: a
     if (currentIndex < sentences.length - 1) {
       setCurrentIndex(currentIndex + 1);
     } else if (onComplete) {
-      onComplete();
+      onComplete(true);
     }
   };
 
@@ -117,17 +136,14 @@ export default function DictationActivity({ data, media, onComplete }: { data: a
   const isPerfect = accuracy === 100;
   const isClose = accuracy >= 80 && !isPerfect;
 
-  // ── Word-level diff ──
   const renderDiff = () => {
     const expectedWords = current.expectedText.split(" ");
     const actualWords = userInput.trim().split(" ");
-
     return (
       <div className="flex flex-wrap gap-1 mt-4">
         {expectedWords.map((word, i) => {
           const actual = actualWords[i] || "";
-          const match =
-            normalizeText(word) === normalizeText(actual);
+          const match = normalizeText(word) === normalizeText(actual);
           return (
             <span
               key={i}
@@ -175,6 +191,19 @@ export default function DictationActivity({ data, media, onComplete }: { data: a
           className="bg-[var(--card)] rounded-3xl border border-[var(--border)] overflow-hidden"
         >
           <div className="p-8 md:p-12">
+            {/* Image */}
+            {imageUrl && (
+              <div className="mb-6 flex justify-center">
+                <img
+                  src={getMediaUrl(imageUrl)}
+                  alt="Dictation reference"
+                  className="max-h-40 rounded-2xl object-contain bg-slate-50 border border-slate-100"
+                  loading="lazy"
+                  onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+                />
+              </div>
+            )}
+
             {/* Play Audio Section */}
             <div className="text-center mb-8">
               <div className="flex items-center justify-center gap-3 flex-wrap">
@@ -203,7 +232,6 @@ export default function DictationActivity({ data, media, onComplete }: { data: a
                 </button>
               </div>
 
-              {/* Difficulty badge */}
               {current.difficulty && (
                 <div className="mt-3">
                   <span className="activity-type-badge">
@@ -321,7 +349,7 @@ export default function DictationActivity({ data, media, onComplete }: { data: a
                           key={i}
                           className="text-sm p-3 bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-xl text-amber-700 dark:text-amber-400"
                         >
-                          💡 {hint}
+                          {hint}
                         </div>
                       ))}
                     </motion.div>

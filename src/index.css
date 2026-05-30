@@ -418,3 +418,320 @@ html {
     padding-right: max(env(safe-area-inset-right), 1rem);
   }
 }
+
+/* ==================== LESSON PLAYER HEADER ==================== */
+.lesson-player-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0 1rem;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+@media (min-width: 768px) {
+  .lesson-player-header {
+    height: 72px;
+    padding: 0 1.5rem;
+  }
+}
+
+/* ==================== LESSON FEEDBACK BAR ==================== */
+.lesson-feedback-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  min-height: 80px;
+}
+@media (min-width: 768px) {
+  .lesson-feedback-bar {
+    min-height: 100px;
+    padding: 1.25rem 2rem;
+  }
+}
+
+.lesson-feedback-correct {
+  background: linear-gradient(180deg, rgba(209, 250, 229, 0.95) 0%, rgba(167, 243, 208, 0.98) 100%);
+  backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.lesson-feedback-incorrect {
+  background: linear-gradient(180deg, rgba(254, 226, 226, 0.95) 0%, rgba(254, 202, 202, 0.98) 100%);
+  backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(248, 113, 113, 0.3);
+}
+
+.lesson-continue-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  border-radius: 1rem;
+  border: none;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.15s ease;
+  cursor: pointer;
+  user-select: none;
+}
+.lesson-continue-btn:active {
+  transform: translateY(2px);
+  border-bottom-width: 2px;
+}
+.lesson-continue-btn-success {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border-bottom-color: #047857;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+}
+.lesson-continue-btn-success:hover {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.45);
+}
+.lesson-continue-btn-retry {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+  border-bottom-color: #b91c1c;
+  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.35);
+}
+.lesson-continue-btn-retry:hover {
+  background: linear-gradient(135deg, #f87171 0%, #ef4444 100%);
+}
+
+.lesson-complete-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  border: none;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #1e40af 0%, #0ea5e9 100%);
+  color: white;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-shadow: 0 4px 14px rgba(30, 64, 175, 0.35);
+}
+.lesson-complete-btn-primary:hover {
+  box-shadow: 0 6px 20px rgba(30, 64, 175, 0.45);
+}
+.lesson-complete-btn-primary:active {
+  transform: translateY(2px);
+  border-bottom-width: 2px;
+}
+
+.lesson-progress-fill {
+  background: linear-gradient(90deg, #1e40af 0%, #0ea5e9 50%, #06b6d4 100%);
+  position: relative;
+  overflow: hidden;
+}
+.lesson-progress-fill::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  animation: shimmer 2s infinite;
+}
+
+/* ==================== LESSON PLAYER ==================== */
+.lesson-player-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0 1rem;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+@media (min-width: 768px) {
+  .lesson-player-header {
+    height: 72px;
+    padding: 0 1.5rem;
+  }
+}
+
+.lesson-feedback-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  min-height: 80px;
+}
+@media (min-width: 768px) {
+  .lesson-feedback-bar {
+    min-height: 100px;
+    padding: 1.25rem 2rem;
+  }
+}
+
+.lesson-feedback-correct {
+  background: linear-gradient(180deg, rgba(209, 250, 229, 0.95) 0%, rgba(167, 243, 208, 0.98) 100%);
+  backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.lesson-feedback-incorrect {
+  background: linear-gradient(180deg, rgba(254, 226, 226, 0.95) 0%, rgba(254, 202, 202, 0.98) 100%);
+  backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(248, 113, 113, 0.3);
+}
+
+.lesson-continue-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  border-radius: 1rem;
+  border: none;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.15s ease;
+  cursor: pointer;
+  user-select: none;
+}
+.lesson-continue-btn:active {
+  transform: translateY(2px);
+  border-bottom-width: 2px;
+}
+.lesson-continue-btn-success {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border-bottom-color: #047857;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+}
+.lesson-continue-btn-success:hover {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.45);
+}
+.lesson-continue-btn-retry {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+  border-bottom-color: #b91c1c;
+  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.35);
+}
+.lesson-continue-btn-retry:hover {
+  background: linear-gradient(135deg, #f87171 0%, #ef4444 100%);
+}
+
+.lesson-complete-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  border: none;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #1e40af 0%, #0ea5e9 100%);
+  color: white;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-shadow: 0 4px 14px rgba(30, 64, 175, 0.35);
+}
+.lesson-complete-btn-primary:hover {
+  box-shadow: 0 6px 20px rgba(30, 64, 175, 0.45);
+}
+.lesson-complete-btn-primary:active {
+  transform: translateY(2px);
+  border-bottom-width: 2px;
+}
+
+.lesson-progress-fill {
+  background: linear-gradient(90deg, #1e40af 0%, #0ea5e9 50%, #06b6d4 100%);
+  position: relative;
+  overflow: hidden;
+}
+.lesson-progress-fill::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  animation: shimmer 2s infinite;
+}
+
+/* Viewport-contained lesson layout */
+.lesson-viewport {
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.lesson-main-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 80px 1rem 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .lesson-main-content {
+    padding: 88px 2rem 110px;
+  }
+}
+
+/* Sidebar scrollable area */
+.sidebar-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.3) transparent;
+}
+.sidebar-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 99px;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
+
+
+

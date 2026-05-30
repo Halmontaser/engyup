@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
+import { STOP_AUDIO_EVENT } from "@/utils/audio";
 
 interface Option {
   text: string;
@@ -27,10 +28,9 @@ interface Props {
   data: any;
   media: ActivityMedia;
   onComplete?: (correct?: boolean) => void;
-  triggerCheck?: number;
 }
 
-export default function ListeningComprehensionActivity({ data, media, onComplete, triggerCheck }: Props) {
+export default function ListeningComprehensionActivity({ data, media, onComplete }: Props) {
   const transcript: string = data.transcript || "";
   const questions: Question[] = data.questions || [];
 
@@ -46,9 +46,22 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
   );
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
+  // Stop audio on global stop-audio event
+  useEffect(() => {
+    const handler = () => {
+      audioRef.current?.pause();
+      speechSynthesis.cancel();
+      setIsSpeaking(false);
+    };
+    window.addEventListener(STOP_AUDIO_EVENT, handler);
+    return () => window.removeEventListener(STOP_AUDIO_EVENT, handler);
+  }, []);
+
   // ── Media: pick the first audio as the main passage audio ──
   const passageAudio = media.audio.length > 0 ? media.audio[0] : null;
   const passageImage = media.images.length > 0 ? media.images[0] : null;
+  // Fallback: check imageUrl on activity data
+  const passageImageUrl = passageImage?.url || (data as any).imageUrl;
 
   const handlePlayAudio = useCallback(() => {
     if (audioRef.current) {
@@ -132,27 +145,6 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
     }
   }, [onComplete]);
 
-  // Handle external triggerCheck from LessonPlayer footer
-  useEffect(() => {
-    if (triggerCheck && triggerCheck > 0) {
-      if (phase === "listen") {
-        if (questions.length > 0) {
-          setPhase("quiz");
-        } else {
-          handleFinishOnly();
-        }
-      } else if (phase === "quiz") {
-        if (isChecked) {
-          handleNext();
-        } else if (selected !== null) {
-          handleCheck();
-        }
-      } else if (phase === "results") {
-        handleFinishOnly();
-      }
-    }
-  }, [triggerCheck, phase, questions.length, isChecked, selected]);
-
   // ── LISTEN PHASE ──
   if (phase === "listen") {
     return (
@@ -177,10 +169,10 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
             </p>
 
             {/* Image for the listening passage */}
-            {passageImage && (
+            {passageImageUrl && (
               <div className="mb-8 mx-auto max-w-[320px] rounded-2xl overflow-hidden border border-[var(--border)] shadow-md">
                 <img
-                  src={getMediaUrl(passageImage.url)}
+                  src={getMediaUrl(passageImageUrl)}
                   alt="Listening passage illustration"
                   className="w-full h-auto object-contain"
                   onError={(e) => {

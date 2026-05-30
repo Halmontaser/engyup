@@ -1,56 +1,56 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { LayoutDashboard, BookOpen, FileText, LogOut, Menu, ChevronLeft, Home, PlusCircle, Loader2 } from "lucide-react";
-import { isAdmin, clearAdminAuth, hasAdminPassword } from "@/lib/auth";
-import { useRouter } from "next/navigation";
+import { Link, useLocation, useNavigate, Outlet } from "react-router-dom";
+import { LayoutDashboard, BookOpen, FileText, LogOut, Menu, ChevronLeft, Loader2 } from "lucide-react";
+import { isAdmin, clearAdminAuth } from "@/lib/auth";
 import { useAuth } from "@/context/AuthContext";
 import { canEditActivities } from "@/lib/permissions";
 
-export default function AdminLayout({ children }: { children: React.ReactNode }) {
+export default function AdminLayout({ children }: { children?: React.ReactNode }) {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isChecking, setIsChecking] = useState(true);
-  const router = useRouter();
-  const pathname = usePathname();
-  const { memberships } = useAuth();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const pathname = location.pathname;
+  const { memberships, profile, loading } = useAuth();
 
   useEffect(() => {
-    // Check authentication on mount
-    setIsChecking(true);
+    if (loading) return;
+
+    // Check authentication
     const hasPasswordAuth = isAdmin();
-    const hasRoleAuth = canEditActivities(memberships);
+    const hasRoleAuth = canEditActivities(memberships, profile);
     const authed = hasPasswordAuth || hasRoleAuth;
     setIsAuthenticated(authed);
     setIsChecking(false);
 
     // If not authenticated and not on login page, redirect to login
     if (!authed && pathname !== '/admin/login') {
-      router.push('/admin/login');
+      navigate('/admin/login');
     }
-  }, [pathname, router, memberships]);
+  }, [pathname, navigate, memberships, profile, loading]);
 
   const handleLogout = () => {
     clearAdminAuth();
     // Remove cookie
     document.cookie = 'admin_auth=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
-    router.push('/admin/login');
+    navigate('/admin/login');
   };
 
   const navigation = [
-    { name: 'Dashboard', href: '/admin', icon: LayoutDashboard },
-    { name: 'Lessons', href: '/admin/lessons', icon: BookOpen },
-    { name: 'Activities', href: '/admin/activities', icon: FileText },
+    { name: 'Dashboard', to: '/admin', icon: LayoutDashboard },
+    { name: 'Lessons', to: '/admin/lessons', icon: BookOpen },
+    { name: 'Activities', to: '/admin/activities', icon: FileText },
   ];
 
   // Loading state
-  if (isChecking) {
+  if (loading || isChecking) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950">
         <div className="text-center">
-          <Loader2 className="mx-auto mb-4 animate-spin" size={40} />
+          <Loader2 className="mx-auto mb-4 animate-spin text-indigo-600" size={40} />
           <p className="text-slate-600 dark:text-slate-400">Checking authentication...</p>
         </div>
       </div>
@@ -61,14 +61,14 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   if (pathname === '/admin/login') {
     return (
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
-        {children}
+        {children || <Outlet />}
       </div>
     );
   }
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex">
-      <aside className={`fixed left-0 top-0 h-full bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 transition-all z-50 ${sidebarOpen ? 'w-64 translate-x-0' : 'w-64 -translate-x-64'}`}>
+      <aside className={`fixed left-0 top-0 h-full bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 transition-all z-50 w-64 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0`}>
         <div className="p-6 border-b border-slate-200 dark:border-slate-800">
           <h1 className="text-xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
             Admin Panel
@@ -78,9 +78,9 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           {navigation.map((item) => (
             <Link
               key={item.name}
-              href={item.href}
+              to={item.to}
               className={`flex items-center gap-3 px-3 py-2.5 rounded-xl mb-1.5 font-medium transition-all ${
-                pathname === item.href || (item.href !== '/admin' && pathname.startsWith(item.href))
+                pathname === item.to || (item.to !== '/admin' && pathname.startsWith(item.to))
                   ? 'bg-indigo-50 dark:bg-indigo-950/30 text-indigo-600 dark:text-indigo-400'
                   : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
               }`}
@@ -111,7 +111,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
 
       {/* Main content */}
       <main className={`flex-1 transition-all ${sidebarOpen ? 'ml-64' : 'ml-0'} lg:ml-64`}>
-        <div className="p-6 lg:p-8">{children}</div>
+        <div className="p-6 lg:p-8">{children || <Outlet />}</div>
       </main>
     </div>
   );

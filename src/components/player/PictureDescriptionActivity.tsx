@@ -13,16 +13,14 @@ import {
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 
-export default function PictureDescriptionActivity({
-  data,
-  media,
-  onComplete,
-}: {
+interface Props {
   data: any;
   media: ActivityMedia;
-  onComplete?: () => void;
-}) {
-  const image: string = data.image || "";
+  onComplete?: (correct?: boolean) => void;
+}
+
+export default function PictureDescriptionActivity({ data, media, onComplete }: Props) {
+  const image: string = data.imageUrl || data.image || "";
   const promptQuestions: string[] = data.promptQuestions || [];
   const sampleAnswers: string[] = data.sampleAnswers || [];
   const keywords: string[] = data.keywords || [];
@@ -103,6 +101,7 @@ export default function PictureDescriptionActivity({
                 src={getMediaUrl(media.images[0].url)}
                 alt="Activity image"
                 className="w-full h-full object-cover"
+                loading="lazy"
                 onError={(e) => {
 /* eslint-disable-next-line */
 
@@ -118,9 +117,10 @@ export default function PictureDescriptionActivity({
               />
             ) : image && /\.(png|jpg|jpeg|webp|svg|gif)$/i.test(image) ? (
               <img
-                src={getMediaUrl(`/images/${image}`)}
+                src={getMediaUrl(image)}
                 alt="Activity image"
                 className="w-full h-full object-cover"
+                loading="lazy"
                 onError={(e) => {
 /* eslint-disable-next-line */
 
@@ -248,7 +248,7 @@ export default function PictureDescriptionActivity({
               </button>
               {answeredCount >= promptQuestions.length && onComplete && (
                 <button
-                  onClick={onComplete}
+                  onClick={() => onComplete?.(true)}
                   className="btn-accent flex items-center gap-2 text-sm"
                 >
                   Finish Activity <ChevronRight size={16} />

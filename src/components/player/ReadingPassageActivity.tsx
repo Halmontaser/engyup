@@ -5,7 +5,13 @@ import { BookOpen, ChevronDown, ChevronUp } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 
-export default function ReadingPassageActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
+interface Props {
+  data: any;
+  media: ActivityMedia;
+  onComplete?: (correct?: boolean) => void;
+}
+
+export default function ReadingPassageActivity({ data, media, onComplete }: Props) {
   const passage = data.passage || data.text || "";
   const title = data.title || "";
   const highlightWords: string[] = data.highlightWords || [];
@@ -98,7 +104,7 @@ export default function ReadingPassageActivity({ data, media, onComplete }: { da
               {questions.length > 0 && onComplete && (
                 <div className="mt-6 flex justify-end">
                   <button
-                    onClick={onComplete}
+                    onClick={() => onComplete?.(true)}
                     className="btn-accent"
                   >
                     Finish Reading

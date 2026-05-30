@@ -1,12 +1,19 @@
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { HelpCircle, Eye, ChevronRight, Lightbulb } from "lucide-react";
+import { HelpCircle, Eye, ChevronRight, Lightbulb, Volume2 } from "lucide-react";
 
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
+import { STOP_AUDIO_EVENT } from "@/utils/audio";
 
-export default function GuessingGameActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
+interface Props {
+  data: any;
+  media: ActivityMedia;
+  onComplete?: (correct?: boolean) => void;
+}
+
+export default function GuessingGameActivity({ data, media, onComplete }: Props) {
   const puzzles: {
     clues: string[];
     answer: string;
@@ -20,11 +27,55 @@ export default function GuessingGameActivity({ data, media, onComplete }: { data
   const [isRevealed, setIsRevealed] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [score, setScore] = useState(0);
+  const [isSpeaking, setIsSpeaking] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Stop audio on global stop-audio event
+  useEffect(() => {
+    const handler = () => {
+      audioRef.current?.pause();
+      speechSynthesis.cancel();
+      setIsSpeaking(false);
+    };
+    window.addEventListener(STOP_AUDIO_EVENT, handler);
+    return () => window.removeEventListener(STOP_AUDIO_EVENT, handler);
+  }, []);
 
   if (puzzles.length === 0)
     return <div className="text-muted">No puzzles found.</div>;
 
   const current = puzzles[currentIndex];
+
+  // Media
+  const puzzleImage = media.images.find((img: any) => img.idx === currentIndex) || media.images[currentIndex];
+  const puzzleAudio = media.audio.find((a: any) => a.idx === currentIndex) || media.audio[currentIndex];
+  const imageUrl = puzzleImage?.url || current.image?.src || data.imageUrl;
+  const audioUrl = puzzleAudio?.url;
+
+  const handlePlayAudio = (text: string) => {
+    if (audioRef.current) { audioRef.current.pause(); audioRef.current = null; }
+    if (audioUrl) {
+      setIsSpeaking(true);
+      const audio = new Audio(getMediaUrl(audioUrl));
+      audioRef.current = audio;
+      audio.onended = () => setIsSpeaking(false);
+      audio.onerror = () => { setIsSpeaking(false); fallbackSpeak(text); };
+      audio.play().catch(() => { setIsSpeaking(false); fallbackSpeak(text); });
+    } else {
+      fallbackSpeak(text);
+    }
+  };
+
+  const fallbackSpeak = (text: string) => {
+    if ("speechSynthesis" in window) {
+      setIsSpeaking(true);
+      const u = new SpeechSynthesisUtterance(text);
+      u.rate = 0.85; u.lang = "en-US";
+      u.onend = () => setIsSpeaking(false);
+      u.onerror = () => setIsSpeaking(false);
+      speechSynthesis.cancel(); speechSynthesis.speak(u);
+    }
+  };
 
   const handleRevealClue = () => {
     if (revealedClues < current.clues.length) {
@@ -34,8 +85,7 @@ export default function GuessingGameActivity({ data, media, onComplete }: { data
 
   const handleGuess = () => {
     setIsRevealed(true);
-    const correct =
-      guess.trim().toLowerCase() === current.answer.toLowerCase();
+    const correct = guess.trim().toLowerCase() === current.answer.toLowerCase();
     setIsCorrect(correct);
     if (correct) setScore(score + 1);
   };
@@ -48,7 +98,7 @@ export default function GuessingGameActivity({ data, media, onComplete }: { data
     if (currentIndex < puzzles.length - 1) {
       setCurrentIndex(currentIndex + 1);
     } else if (onComplete) {
-      onComplete();
+      onComplete(true);
     }
   };
 
@@ -76,6 +126,33 @@ export default function GuessingGameActivity({ data, media, onComplete }: { data
             <HelpCircle size={32} />
           </div>
           <h3 className="text-lg font-bold text-muted">What am I?</h3>
+        </div>
+
+        {/* Image */}
+        {imageUrl && (
+          <div className="mb-6 flex justify-center">
+            <img
+              src={getMediaUrl(imageUrl)}
+              alt="Puzzle hint"
+              className="max-h-48 rounded-2xl object-contain bg-slate-50 border border-slate-100"
+              loading="lazy"
+              onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+            />
+          </div>
+        )}
+
+        {/* Audio */}
+        <div className="mb-6 flex justify-center">
+          <button
+            onClick={() => handlePlayAudio(current.clues[0] || current.answer)}
+            disabled={isSpeaking}
+            className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm transition-all ${
+              isSpeaking ? "bg-purple-500 text-white shadow-lg" : "bg-purple-50 text-purple-600 hover:bg-purple-100"
+            }`}
+          >
+            <Volume2 size={18} className={isSpeaking ? "animate-pulse" : ""} />
+            {isSpeaking ? "Playing..." : "Listen to clue"}
+          </button>
         </div>
 
         {/* Clues */}
@@ -149,7 +226,7 @@ export default function GuessingGameActivity({ data, media, onComplete }: { data
                     : "bg-red-50 border-red-200 dark:bg-red-950/30 dark:border-red-800"
                 }`}
               >
-                <div className="text-3xl mb-2">{isCorrect ? "ًںژ‰" : "ًں¤”"}</div>
+                <div className="text-3xl mb-2">{isCorrect ? "🎉" : "😅"}</div>
                 <h4 className="text-xl font-bold mb-1">
                   {isCorrect ? "Correct!" : "Not quite!"}
                 </h4>
@@ -164,7 +241,6 @@ export default function GuessingGameActivity({ data, media, onComplete }: { data
               <div className="mt-6 flex justify-end">
                 <button
                   onClick={handleNext}
-                  disabled={currentIndex === puzzles.length - 1}
                   className="btn-accent flex items-center gap-2"
                 >
                   {currentIndex === puzzles.length - 1

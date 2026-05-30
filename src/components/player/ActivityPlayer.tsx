@@ -17,10 +17,12 @@ import SpellingBeeActivity from './SpellingBeeActivity';
 import DictationActivity from './DictationActivity';
 import ConversationSimActivity from './ConversationSimActivity';
 import PictureDescriptionActivity from './PictureDescriptionActivity';
-import { AlertCircle, Info } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
+import { AlertCircle, MessageSquare, X, Save, VolumeX, SkipForward } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ErrorBoundary } from '../ErrorBoundary';
 import { getMediaUrl } from "@/utils/assets";
+import { stopAllAudio } from "@/utils/audio";
 
 export interface ActivityMediaEntry {
   filename: string;
@@ -28,6 +30,7 @@ export interface ActivityMediaEntry {
   text?: string;
   audioType?: string;
   prompt?: string;
+  idx?: number;
 }
 
 export interface ActivityMedia {
@@ -44,10 +47,39 @@ interface ActivityPlayerProps {
   };
   media?: ActivityMedia;
   onComplete?: (correct?: boolean) => void;
-  triggerCheck?: number;
+  showControls?: boolean;
 }
 
-export default function ActivityPlayer({ activity, media, onComplete, triggerCheck }: ActivityPlayerProps) {
+export default function ActivityPlayer({ activity, media, onComplete, showControls }: ActivityPlayerProps) {
+  const [showNote, setShowNote] = useState(false);
+  const [noteText, setNoteText] = useState('');
+  const [saved, setSaved] = useState(false);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+  const noteKey = activity?.id ? `activity-note-${activity.id}` : null;
+
+  useEffect(() => {
+    if (noteKey) {
+      const existing = localStorage.getItem(noteKey);
+      if (existing) setNoteText(existing);
+      else setNoteText('');
+    }
+  }, [noteKey]);
+
+  useEffect(() => {
+    if (showNote && textareaRef.current) {
+      textareaRef.current.focus();
+    }
+  }, [showNote]);
+
+  const handleSave = () => {
+    if (noteKey) {
+      localStorage.setItem(noteKey, noteText);
+      setSaved(true);
+      setTimeout(() => setSaved(false), 2000);
+    }
+  };
+
   if (!activity || !activity.data) {
     return <div className="p-4 text-slate-400">No activity data provided.</div>;
   }
@@ -58,47 +90,47 @@ export default function ActivityPlayer({ activity, media, onComplete, triggerChe
   const renderComponent = () => {
     switch (type) {
       case 'flashcard':
-        return <FlashcardActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <FlashcardActivity data={data} media={m} onComplete={onComplete} />;
       case 'mcq':
-        return <McqActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <McqActivity data={data} media={m} onComplete={onComplete} />;
       case 'gap-fill':
-        return <GapFillActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <GapFillActivity data={data} media={m} onComplete={onComplete} />;
       case 'true-false':
-        return <TrueFalseActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <TrueFalseActivity data={data} media={m} onComplete={onComplete} />;
       case 'match-pairs':
-        return <MatchPairsActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <MatchPairsActivity data={data} media={m} onComplete={onComplete} />;
       case 'word-order':
-        return <WordOrderActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <WordOrderActivity data={data} media={m} onComplete={onComplete} />;
       case 'reading-passage':
         return <ReadingPassageActivity data={data} media={m} onComplete={onComplete} />;
       case 'category-sort':
-        return <CategorySortActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <CategorySortActivity data={data} media={m} onComplete={onComplete} />;
       case 'dialogue-read':
         return <DialogueReadActivity data={data} media={m} onComplete={onComplete} />;
       case 'transform-sentence':
-        return <TransformSentenceActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <TransformSentenceActivity data={data} media={m} onComplete={onComplete} />;
       case 'image-label':
-        return <ImageLabelActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <ImageLabelActivity data={data} media={m} onComplete={onComplete} />;
       case 'guessing-game':
-        return <GuessingGameActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <GuessingGameActivity data={data} media={m} onComplete={onComplete} />;
       case 'reading-sequence':
-        return <ReadingSequenceActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <ReadingSequenceActivity data={data} media={m} onComplete={onComplete} />;
       case 'sentence-builder':
-        return <WordOrderActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <WordOrderActivity data={data} media={m} onComplete={onComplete} />;
       case 'word-association':
-        return <MatchPairsActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <MatchPairsActivity data={data} media={m} onComplete={onComplete} />;
       case 'pronunciation-practice':
-        return <PronunciationPracticeActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <PronunciationPracticeActivity data={data} media={m} onComplete={onComplete} />;
       case 'listening-comprehension':
-        return <ListeningComprehensionActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <ListeningComprehensionActivity data={data} media={m} onComplete={onComplete} />;
       case 'spelling-bee':
-        return <SpellingBeeActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <SpellingBeeActivity data={data} media={m} onComplete={onComplete} />;
       case 'dictation':
-        return <DictationActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <DictationActivity data={data} media={m} onComplete={onComplete} />;
       case 'conversation-sim':
-        return <ConversationSimActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <ConversationSimActivity data={data} media={m} onComplete={onComplete} />;
       case 'picture-description':
-        return <PictureDescriptionActivity data={data} media={m} onComplete={onComplete} triggerCheck={triggerCheck} />;
+        return <PictureDescriptionActivity data={data} media={m} onComplete={onComplete} />;
       default:
         return (
           <div className="p-8 bg-amber-50 border border-amber-200 rounded-2xl flex items-start gap-4 mx-auto max-w-2xl w-full">
@@ -123,6 +155,86 @@ export default function ActivityPlayer({ activity, media, onComplete, triggerChe
   return (
     <div className="relative">
       <ErrorBoundary key={activity.id || type}>{renderComponent()}</ErrorBoundary>
+
+      {/* Floating control bar — stop voice / skip (only on first activity) */}
+      {showControls && (
+        <div className="fixed top-4 right-4 z-50 flex items-center gap-1.5">
+          <button
+            onClick={stopAllAudio}
+            className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-amber-300 hover:bg-amber-50 text-slate-600 hover:text-amber-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
+            title="Stop voice / audio"
+          >
+            <VolumeX size={14} />
+            <span className="hidden sm:inline">Stop Voice</span>
+          </button>
+          {onComplete && (
+            <button
+              onClick={() => onComplete(true)}
+              className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-indigo-300 hover:bg-indigo-50 text-slate-600 hover:text-indigo-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
+              title="Skip this activity"
+            >
+              <SkipForward size={14} />
+              <span className="hidden sm:inline">Skip</span>
+            </button>
+          )}
+        </div>
+      )}
+
+      {/* Floating Note Button */}
+      <button
+        onClick={() => setShowNote(!showNote)}
+        className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-200 flex items-center justify-center transition-all hover:scale-105"
+        title="Add note"
+      >
+        {showNote ? <X size={20} /> : <MessageSquare size={20} />}
+        {noteKey && localStorage.getItem(noteKey) && !showNote && (
+          <span className="absolute -top-1 -right-1 w-3 h-3 bg-emerald-400 rounded-full border-2 border-white" />
+        )}
+      </button>
+
+      {/* Note Panel */}
+      <AnimatePresence>
+        {showNote && (
+          <motion.div
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 20, scale: 0.95 }}
+            transition={{ duration: 0.2 }}
+            className="fixed bottom-20 right-6 z-50 w-80 bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden"
+          >
+            <div className="flex items-center justify-between px-4 py-3 bg-slate-50 border-b border-slate-200">
+              <h4 className="font-bold text-slate-700 text-sm">My Notes</h4>
+              {saved && (
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="text-xs text-emerald-600 font-medium"
+                >
+                  Saved!
+                </motion.span>
+              )}
+            </div>
+            <div className="p-4">
+              <textarea
+                ref={textareaRef}
+                value={noteText}
+                onChange={(e) => setNoteText(e.target.value)}
+                placeholder="Write your notes about this activity..."
+                className="w-full h-32 text-sm text-slate-700 bg-slate-50 rounded-xl border border-slate-200 p-3 resize-none focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
+              />
+              <div className="flex justify-end mt-3">
+                <button
+                  onClick={handleSave}
+                  className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors"
+                >
+                  <Save size={14} />
+                  Save
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

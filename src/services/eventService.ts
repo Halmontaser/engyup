@@ -46,7 +46,8 @@ class EventService {
       
       // Award XP for lesson completion directly if possible (assuming RLS allows, or drop it if handled by trigger)
       if (params.eventType === 'lesson_completed') {
-        await supabase.rpc('award_xp', { p_user_id: session.user.id, p_xp: 12 }).catch(() => {});
+        const { error: rpcError } = await supabase.rpc('award_xp', { p_user_id: session.user.id, p_xp: 12 });
+        if (rpcError) console.warn('XP award failed:', rpcError);
       }
 
       return { success: true, event: data };

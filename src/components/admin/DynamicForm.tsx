@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Plus,
@@ -13,6 +13,9 @@ import {
   AlertCircle,
   Info,
   Check,
+  GripVertical,
+  Copy,
+  ChevronRight,
 } from "lucide-react";
 import type { FormField } from "@/lib/activitySchemas";
 
@@ -20,6 +23,8 @@ interface DynamicFormProps {
   fields: FormField[];
   data: any;
   onChange: (data: any) => void;
+  /** Names of fields whose values live under data.data instead of at top level */
+  dataFieldNames?: string[];
   className?: string;
 }
 
@@ -31,21 +36,40 @@ interface FormFieldProps {
   depth?: number;
 }
 
-export default function DynamicForm({ fields, data, onChange, className = "" }: DynamicFormProps) {
+export default function DynamicForm({ fields, data, onChange, dataFieldNames, className = "" }: DynamicFormProps) {
   const handleChange = (fieldName: string, value: any) => {
-    onChange({
-      ...data,
-      [fieldName]: value,
-    });
+    // If this field name is in dataFieldNames, nest it under data.data
+    if (dataFieldNames && dataFieldNames.includes(fieldName)) {
+      onChange({
+        ...data,
+        data: {
+          ...(data.data || {}),
+          [fieldName]: value,
+        },
+      });
+    } else {
+      onChange({
+        ...data,
+        [fieldName]: value,
+      });
+    }
+  };
+
+  // Get the value for a field - check data.data for activity-specific fields
+  const getFieldValue = (fieldName: string) => {
+    if (dataFieldNames && dataFieldNames.includes(fieldName)) {
+      return data?.data?.[fieldName];
+    }
+    return data?.[fieldName];
   };
 
   return (
     <div className={`space-y-6 ${className}`}>
-      {fields.map((field, index) => (
+      {fields.map((field) => (
         <FormFieldComponent
           key={field.name}
           field={field}
-          value={data[field.name]}
+          value={getFieldValue(field.name)}
           onChange={(value) => handleChange(field.name, value)}
           depth={0}
         />
@@ -56,6 +80,26 @@ export default function DynamicForm({ fields, data, onChange, className = "" }: 
 
 function FormFieldComponent({ field, value, onChange, path = "", depth = 0 }: FormFieldProps) {
   const currentPath = path ? `${path}.${field.name}` : field.name;
+  const [collapsed, setCollapsed] = useState<Record<number, boolean>>({});
+
+  const toggleCollapse = (index: number) => {
+    setCollapsed(prev => ({ ...prev, [index]: !prev[index] }));
+  };
+
+  const moveItem = useCallback((arr: any[], fromIndex: number, toIndex: number) => {
+    if (toIndex < 0 || toIndex >= arr.length) return arr;
+    const newArr = [...arr];
+    const [moved] = newArr.splice(fromIndex, 1);
+    newArr.splice(toIndex, 0, moved);
+    return newArr;
+  }, []);
+
+  const duplicateItem = useCallback((arr: any[], index: number) => {
+    const newArr = [...arr];
+    const clone = JSON.parse(JSON.stringify(newArr[index]));
+    newArr.splice(index + 1, 0, clone);
+    return newArr;
+  }, []);
 
   const renderField = () => {
     switch (field.type) {
@@ -67,7 +111,7 @@ function FormFieldComponent({ field, value, onChange, path = "", depth = 0 }: Fo
             onChange={(e) => onChange(e.target.value)}
             placeholder={field.placeholder}
             required={field.required}
-            className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all"
+            className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all text-slate-800 dark:text-slate-200"
           />
         );
 
@@ -79,7 +123,7 @@ function FormFieldComponent({ field, value, onChange, path = "", depth = 0 }: Fo
             placeholder={field.placeholder}
             required={field.required}
             rows={4}
-            className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all resize-none"
+            className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all resize-none text-slate-800 dark:text-slate-200"
           />
         );
 
@@ -91,7 +135,7 @@ function FormFieldComponent({ field, value, onChange, path = "", depth = 0 }: Fo
             onChange={(e) => onChange(e.target.value ? Number(e.target.value) : null)}
             placeholder={field.placeholder}
             required={field.required}
-            className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all"
+            className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all text-slate-800 dark:text-slate-200"
           />
         );
 
@@ -101,7 +145,7 @@ function FormFieldComponent({ field, value, onChange, path = "", depth = 0 }: Fo
             value={value ?? ""}
             onChange={(e) => onChange(e.target.value)}
             required={field.required}
-            className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all cursor-pointer"
+            className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all cursor-pointer text-slate-800 dark:text-slate-200"
           >
             {!value && !field.required && (
               <option value="">-- Select an option --</option>
@@ -154,7 +198,7 @@ function FormFieldComponent({ field, value, onChange, path = "", depth = 0 }: Fo
                 onChange={(e) => onChange(e.target.value)}
                 placeholder={field.placeholder || "Enter media URL..."}
                 required={field.required}
-                className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all"
+                className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all text-slate-800 dark:text-slate-200"
               />
             </div>
             <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
@@ -177,14 +221,17 @@ function FormFieldComponent({ field, value, onChange, path = "", depth = 0 }: Fo
         return (
           <div className="space-y-4">
             <div className="flex items-center justify-between">
-              <label className={`text-sm font-semibold ${field.required ? "text-foreground" : "text-slate-600 dark:text-slate-400"}`}>
+              <label className={`text-sm font-semibold ${field.required ? "text-slate-800 dark:text-slate-200" : "text-slate-600 dark:text-slate-400"}`}>
                 {field.label}
                 {field.required && <span className="text-red-500 ml-1">*</span>}
+                <span className="ml-2 text-xs font-normal text-slate-400 dark:text-slate-500">
+                  ({arrayValue.length} {arrayValue.length === 1 ? "item" : "items"})
+                </span>
               </label>
               <button
                 type="button"
                 onClick={() => {
-                  const newItem = {};
+                  const newItem: any = {};
                   // Initialize nested fields with empty values
                   if (field.fields) {
                     field.fields.forEach((f) => {
@@ -210,63 +257,140 @@ function FormFieldComponent({ field, value, onChange, path = "", depth = 0 }: Fo
 
             <div className="space-y-3">
               <AnimatePresence mode="popLayout">
-                {arrayValue.map((item, index) => (
-                  <motion.div
-                    key={`${currentPath}.${index}`}
-                    layout
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, scale: 0.95 }}
-                    className={`relative bg-white dark:bg-slate-900 rounded-2xl border ${
-                      depth > 0 ? "border-slate-200 dark:border-slate-700" : "border-slate-300 dark:border-slate-600 shadow-sm"
-                    }`}
-                  >
-                    {/* Header */}
-                    <div className="flex items-center justify-between px-4 py-3 border-b border-slate-200 dark:border-slate-700">
-                      <span className="text-sm font-semibold text-slate-600 dark:text-slate-400">
-                        {field.arrayConfig?.itemLabel || "Item"} {index + 1}
-                      </span>
-                      <button
-                        type="button"
-                        onClick={() => {
-                          const newValue = arrayValue.filter((_, i) => i !== index);
-                          if (newValue.length >= minItems) {
-                            onChange(newValue);
-                          }
-                        }}
-                        disabled={arrayValue.length <= minItems}
-                        className={`p-1.5 rounded-lg transition-all ${
-                          arrayValue.length <= minItems
-                            ? "opacity-30 cursor-not-allowed"
-                            : "text-red-500 hover:bg-red-50 dark:hover:bg-red-950/20"
-                        }`}
-                      >
-                        <Trash2 size={16} />
-                      </button>
-                    </div>
+                {arrayValue.map((item, index) => {
+                  const isCollapsed = collapsed[index] || false;
+                  // Generate a preview label for collapsed items
+                  const previewLabel = item
+                    ? (item.question || item.word || item.text || item.statement || item.name || item.prompt || item.answer || item.speaker || item.left || item.expectedText || "")
+                    : "";
 
-                    {/* Nested fields */}
-                    {field.fields && (
-                      <div className="p-4 space-y-4">
-                        {field.fields.map((nestedField) => (
-                          <FormFieldComponent
-                            key={nestedField.name}
-                            field={nestedField}
-                            value={item?.[nestedField.name]}
-                            onChange={(val) => {
-                              const newValue = arrayValue.map((v, i) =>
-                                i === index ? { ...v, [nestedField.name]: val } : v
-                              );
-                              onChange(newValue);
+                  return (
+                    <motion.div
+                      key={`${currentPath}.${index}`}
+                      layout
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, scale: 0.95 }}
+                      className={`relative bg-white dark:bg-slate-900 rounded-2xl border ${
+                        depth > 0 ? "border-slate-200 dark:border-slate-700" : "border-slate-300 dark:border-slate-600 shadow-sm"
+                      }`}
+                    >
+                      {/* Header */}
+                      <div className="flex items-center justify-between px-4 py-3 border-b border-slate-200 dark:border-slate-700">
+                        <div className="flex items-center gap-2 min-w-0">
+                          <button
+                            type="button"
+                            onClick={() => toggleCollapse(index)}
+                            className="p-1 rounded hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                          >
+                            <ChevronRight
+                              size={14}
+                              className={`text-slate-400 transition-transform ${!isCollapsed ? "rotate-90" : ""}`}
+                            />
+                          </button>
+                          <span className="text-sm font-semibold text-slate-600 dark:text-slate-400">
+                            {field.arrayConfig?.itemLabel || "Item"} {index + 1}
+                          </span>
+                          {isCollapsed && previewLabel && (
+                            <span className="text-xs text-slate-400 dark:text-slate-500 truncate max-w-[200px]">
+                              — {previewLabel}
+                            </span>
+                          )}
+                        </div>
+                        <div className="flex items-center gap-1 shrink-0">
+                          {/* Move up */}
+                          <button
+                            type="button"
+                            onClick={() => onChange(moveItem(arrayValue, index, index - 1))}
+                            disabled={index === 0}
+                            className={`p-1.5 rounded-lg transition-all ${
+                              index === 0
+                                ? "opacity-20 cursor-not-allowed"
+                                : "text-slate-400 hover:text-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800"
+                            }`}
+                            title="Move up"
+                          >
+                            <ChevronUp size={14} />
+                          </button>
+                          {/* Move down */}
+                          <button
+                            type="button"
+                            onClick={() => onChange(moveItem(arrayValue, index, index + 1))}
+                            disabled={index === arrayValue.length - 1}
+                            className={`p-1.5 rounded-lg transition-all ${
+                              index === arrayValue.length - 1
+                                ? "opacity-20 cursor-not-allowed"
+                                : "text-slate-400 hover:text-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800"
+                            }`}
+                            title="Move down"
+                          >
+                            <ChevronDown size={14} />
+                          </button>
+                          {/* Duplicate */}
+                          <button
+                            type="button"
+                            onClick={() => {
+                              if (!maxItems || arrayValue.length < maxItems) {
+                                onChange(duplicateItem(arrayValue, index));
+                              }
                             }}
-                            path={`${currentPath}.${index}`}
-                            depth={depth + 1}
-                          />
-                        ))}
+                            disabled={maxItems ? arrayValue.length >= maxItems : false}
+                            className="p-1.5 rounded-lg text-slate-400 hover:text-indigo-500 hover:bg-indigo-50 dark:hover:bg-indigo-950/20 transition-all"
+                            title="Duplicate"
+                          >
+                            <Copy size={14} />
+                          </button>
+                          {/* Delete */}
+                          <button
+                            type="button"
+                            onClick={() => {
+                              const newValue = arrayValue.filter((_, i) => i !== index);
+                              if (newValue.length >= minItems) {
+                                onChange(newValue);
+                                // Clean up collapsed state
+                                setCollapsed(prev => {
+                                  const next = { ...prev };
+                                  delete next[index];
+                                  return next;
+                                });
+                              }
+                            }}
+                            disabled={arrayValue.length <= minItems}
+                            className={`p-1.5 rounded-lg transition-all ${
+                              arrayValue.length <= minItems
+                                ? "opacity-30 cursor-not-allowed"
+                                : "text-red-500 hover:bg-red-50 dark:hover:bg-red-950/20"
+                            }`}
+                            title="Delete"
+                          >
+                            <Trash2 size={14} />
+                          </button>
+                        </div>
                       </div>
-                    )}
-                  </motion.div>
-                ))}
+
+                      {/* Nested fields - collapsible */}
+                      {!isCollapsed && field.fields && (
+                        <div className="p-4 space-y-4">
+                          {field.fields.map((nestedField) => (
+                            <FormFieldComponent
+                              key={nestedField.name}
+                              field={nestedField}
+                              value={item?.[nestedField.name]}
+                              onChange={(val) => {
+                                const newValue = arrayValue.map((v, i) =>
+                                  i === index ? { ...v, [nestedField.name]: val } : v
+                                );
+                                onChange(newValue);
+                              }}
+                              path={`${currentPath}.${index}`}
+                              depth={depth + 1}
+                            />
+                          ))}
+                        </div>
+                      )}
+                    </motion.div>
+                  );
+                })}
               </AnimatePresence>
             </div>
 
@@ -295,7 +419,7 @@ function FormFieldComponent({ field, value, onChange, path = "", depth = 0 }: Fo
   return (
     <div className="space-y-2">
       {field.type !== "array" && (
-        <label className={`block text-sm font-semibold ${field.required ? "text-foreground" : "text-slate-600 dark:text-slate-400"}`}>
+        <label className={`block text-sm font-semibold ${field.required ? "text-slate-800 dark:text-slate-200" : "text-slate-600 dark:text-slate-400"}`}>
           {field.label}
           {field.required && <span className="text-red-500 ml-1">*</span>}
         </label>

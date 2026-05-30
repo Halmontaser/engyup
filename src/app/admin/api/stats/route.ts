@@ -1,40 +1,42 @@
 import { NextResponse } from 'next/server';
-import { getAllActivities, getGrades, getUnitsForGrade } from '@/lib/db';
+import { supabase } from '@/lib/supabase';
 
 export async function GET() {
   try {
-    const activities = getAllActivities();
+    // Get all activities from Supabase
+    const { data: activities, error: activitiesError } = await supabase
+      .from('activities')
+      .select('lesson_id, activity_type');
+
+    if (activitiesError) throw activitiesError;
 
     // Get unique lesson IDs
-    const lessonIds = new Set(activities.map((a) => a.lesson_id));
+    const lessonIds = new Set(activities?.map((a) => a.lesson_id) || []);
 
-    // Get all grades and units
-    const grades = getGrades();
-    const units: any[] = [];
-    
-    grades.forEach((grade) => {
-      try {
-        const gradeUnits = getUnitsForGrade(grade.grade_number);
-        gradeUnits.forEach((unit) => units.push(unit));
-      } catch (e) {
-        console.error(`Error fetching units for grade ${grade.grade_number}:`, e);
-      }
-    });
+    // Get lessons from Supabase to get unit IDs
+    const { data: lessons, error: lessonsError } = await supabase
+      .from('lessons')
+      .select('unit_id');
+
+    if (lessonsError) throw lessonsError;
+
+    // Get unique unit IDs
+    const unitIds = new Set(lessons?.map((l) => l.unit_id) || []);
 
     // Count activities by type
     const activitiesByType: Record<string, number> = {};
-    activities.forEach((a) => {
-      const type = a.type;
+    (activities || []).forEach((a) => {
+      const type = a.activity_type;
       activitiesByType[type] = (activitiesByType[type] || 0) + 1;
     });
 
     return NextResponse.json({
       success: true,
       stats: {
-        totalActivities: activities.length,
+        totalActivities: activities?.length || 0,
         totalLessons: lessonIds.size,
-        totalUnits: units.length,
-        totalGrades: grades.length,
+        totalUnits: unitIds.size,
+        totalGrades: 0, // Can fetch from grades table if needed
         activitiesByType,
       }
     });

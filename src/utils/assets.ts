@@ -13,19 +13,13 @@ export function getMediaUrl(path?: string | null): string {
   // Fallback to VITE_CDN_URL for Cloudflare R2
   const cdnUrl = import.meta.env.VITE_CDN_URL;
 
-  console.log('[getMediaUrl] CDN URL:', cdnUrl, 'Path:', path);
-
   if (cdnUrl) {
     const cleanPath = path.startsWith('/') ? path.slice(1) : path;
     const cleanCdn = cdnUrl.endsWith('/') ? cdnUrl.slice(0, -1) : cdnUrl;
 
-    const finalUrl = `${cleanCdn}/${cleanPath}`;
-    console.log('[getMediaUrl] Final URL:', finalUrl);
-    return finalUrl;
+    return `${cleanCdn}/${cleanPath}`;
   }
 
   // Fallback: local development from public/ folder
-  const localUrl = path.startsWith('/') ? path : `/${path}`;
-  console.log('[getMediaUrl] Using local URL:', localUrl);
-  return localUrl;
+  return path.startsWith('/') ? path : `/${path}`;
 }

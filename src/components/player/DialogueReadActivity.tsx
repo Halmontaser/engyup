@@ -1,14 +1,33 @@
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { MessageCircle, ChevronRight, Volume2 } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
+import { STOP_AUDIO_EVENT } from "@/utils/audio";
 
-export default function DialogueReadActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
+interface Props {
+  data: any;
+  media: ActivityMedia;
+  onComplete?: (correct?: boolean) => void;
+}
+
+export default function DialogueReadActivity({ data, media, onComplete }: Props) {
   const lines: { speaker: string; text: string }[] = data.lines || data.dialogue || [];
   const wordBank: string[] = data.wordBank || [];
   const [revealedCount, setRevealedCount] = useState(1);
   const [playingIdx, setPlayingIdx] = useState<number | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Stop audio on global stop-audio event
+  useEffect(() => {
+    const handler = () => {
+      audioRef.current?.pause();
+      speechSynthesis.cancel();
+      setPlayingIdx(null);
+    };
+    window.addEventListener(STOP_AUDIO_EVENT, handler);
+    return () => window.removeEventListener(STOP_AUDIO_EVENT, handler);
+  }, []);
 
   if (lines.length === 0) return <div className="text-muted">No dialogue found.</div>;
 
@@ -32,10 +51,12 @@ export default function DialogueReadActivity({ data, media, onComplete }: { data
     if (!audioEntry) return;
 
     setPlayingIdx(index);
+    audioRef.current?.pause();
     const audio = new Audio(getMediaUrl(audioEntry.url));
-    audio.onended = () => setPlayingIdx(null);
-    audio.onerror = () => setPlayingIdx(null);
-    audio.play().catch(() => setPlayingIdx(null));
+    audioRef.current = audio;
+    audio.onended = () => { setPlayingIdx(null); audioRef.current = null; };
+    audio.onerror = () => { setPlayingIdx(null); audioRef.current = null; };
+    audio.play().catch(() => { setPlayingIdx(null); audioRef.current = null; });
   };
 
   // ── Auto-play ──
@@ -73,8 +94,25 @@ export default function DialogueReadActivity({ data, media, onComplete }: { data
     }
   });
 
+  // Scene image from media
+  const sceneImage = media.images.length > 0 ? media.images[0] : null;
+  const sceneImageUrl = sceneImage?.url || (data as any).imageUrl;
+
   return (
     <div className="max-w-3xl mx-auto w-full">
+      {/* Scene Image */}
+      {sceneImageUrl && (
+        <div className="mb-6 rounded-2xl overflow-hidden border border-[var(--border)]">
+          <img
+            src={getMediaUrl(sceneImageUrl)}
+            alt="Dialogue scene"
+            className="w-full h-auto max-h-64 object-cover"
+            loading="lazy"
+            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+          />
+        </div>
+      )}
+
       <div className="flex items-center gap-2 mb-6">
         <MessageCircle size={18} className="text-[var(--accent)]" />
         <span className="text-sm font-bold text-muted uppercase tracking-widest">
@@ -150,27 +188,38 @@ export default function DialogueReadActivity({ data, media, onComplete }: { data
       </div>
 
       {/* Controls */}
-      {revealedCount < lines.length && (
-        <div className="mt-8 flex items-center justify-between">
-          <span className="text-sm text-muted">
-            {revealedCount} / {lines.length} lines shown
-          </span>
-          <div className="flex gap-3">
+      <div className="mt-8 flex items-center justify-between">
+        {revealedCount < lines.length ? (
+          <>
+            <span className="text-sm text-muted">
+              {revealedCount} / {lines.length} lines shown
+            </span>
+            <div className="flex gap-3">
+              <button
+                onClick={handleRevealAll}
+                className="btn-ghost text-sm"
+              >
+                Show All
+              </button>
+              <button
+                onClick={handleRevealNext}
+                className="btn-accent flex items-center gap-2 text-sm"
+              >
+                Next Line <ChevronRight size={16} />
+              </button>
+            </div>
+          </>
+        ) : (
+          <div className="w-full flex justify-center">
             <button
-              onClick={handleRevealAll}
-              className="btn-ghost text-sm"
+              onClick={() => onComplete?.(true)}
+              className="btn-accent px-8 py-3 text-base font-bold"
             >
-              Show All
-            </button>
-            <button
-              onClick={handleRevealNext}
-              className="btn-accent flex items-center gap-2 text-sm"
-            >
-              Next Line <ChevronRight size={16} />
+              Complete
             </button>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

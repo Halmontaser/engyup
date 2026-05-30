@@ -3,18 +3,18 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, Sparkles } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { useNavigate } from "react-router-dom";
 import ActivityTypeSelector from "@/components/admin/ActivityTypeSelector";
 
 export default function NewActivityTypePage() {
-  const router = useRouter();
+  const navigate = useNavigate();
   const [selectedType, setSelectedType] = useState<string | null>(null);
 
   const handleSelect = (type: string) => {
     setSelectedType(type);
     // Short delay for visual feedback
     setTimeout(() => {
-      router.push(`/admin/activities/new/${type}`);
+      navigate(`/admin/activities/new/${type}`);
     }, 150);
   };
 
@@ -23,7 +23,7 @@ export default function NewActivityTypePage() {
       {/* Header */}
       <div className="flex items-center gap-2">
         <button
-          onClick={() => router.push("/admin/activities")}
+          onClick={() => navigate("/admin/activities")}
           className="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-all"
         >
           <ArrowLeft size={20} className="text-slate-600 dark:text-slate-400" />

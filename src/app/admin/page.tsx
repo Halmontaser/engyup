@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   BookOpen,
@@ -14,6 +14,7 @@ import {
   Users,
 } from "lucide-react";
 import { activityTypeLabels } from "@/lib/activitySchemas";
+import { adminFetch } from '@/lib/adminFetch';
 
 export default function AdminDashboard() {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,7 +33,7 @@ export default function AdminDashboard() {
   const loadStats = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch("/admin/api/stats");
+      const response = await adminFetch("/admin/api/stats");
       const data = await response.json();
       
       if (data.success) {
@@ -72,7 +73,7 @@ export default function AdminDashboard() {
           </p>
         </div>
         <Link
-          href="/admin/activities/new"
+          to="/admin/activities/new"
           className="flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white rounded-xl font-semibold transition-all shadow-lg hover:shadow-xl"
         >
           <PlusCircle size={20} />
@@ -138,7 +139,7 @@ export default function AdminDashboard() {
         ))}
       </div>
 
-      {/* Activity Types Breakdown */}
+      {/* Activity Breakdown */}
       <div className="grid gap-6 lg:grid-cols-2">
         {/* Quick Actions */}
         <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 p-6">
@@ -147,23 +148,24 @@ export default function AdminDashboard() {
           </h2>
           <div className="space-y-3">
             <Link
-              href="/admin/activities"
+              to="/admin/lessons"
+              className="flex items-center gap-3 p-4 rounded-xl bg-purple-50 dark:bg-purple-950/30 text-purple-600 dark:text-purple-400 hover:bg-purple-100 dark:hover:bg-purple-950/50 transition-all"
+            >
+              <BookOpen size={20} />
+              <div>
+                <div className="font-semibold font-sans">Manage Lessons</div>
+                <div className="text-sm opacity-70">Create, edit, and organize lessons & syllabus units</div>
+              </div>
+            </Link>
+
+            <Link
+              to="/admin/activities"
               className="flex items-center gap-3 p-4 rounded-xl bg-indigo-50 dark:bg-indigo-950/30 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-950/50 transition-all"
             >
               <FileText size={20} />
               <div>
-                <div className="font-semibold">Manage Activities</div>
-                <div className="text-sm opacity-70">View, edit, and create activities</div>
-              </div>
-            </Link>
-            <Link
-              href="/admin/lessons"
-              className="flex items-center gap-3 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-400 hover:bg-emerald-100 dark:hover:bg-emerald-950/50 transition-all"
-            >
-              <BookOpen size={20} />
-              <div>
-                <div className="font-semibold">Manage Lessons</div>
-                <div className="text-sm opacity-70">View and organize lessons</div>
+                <div className="font-semibold font-sans">Manage Activities</div>
+                <div className="text-sm opacity-70">View, edit, and create student activities</div>
               </div>
             </Link>
           </div>

@@ -3,9 +3,22 @@ import { createClient } from '@supabase/supabase-js'
 const getSupabaseConfig = () => {
   const env = (import.meta as any).env || {};
 
-  // Try both Vite-style and process-style (for define compatibility)
-  const url = env.VITE_SUPABASE_URL || (typeof process !== 'undefined' ? process.env.VITE_SUPABASE_URL : '');
-  const key = env.VITE_SUPABASE_ANON_KEY || (typeof process !== 'undefined' ? process.env.VITE_SUPABASE_ANON_KEY : '');
+  // For server-side (Next.js API routes), use process.env
+  const isServer = typeof window === 'undefined';
+
+  let url: string;
+  let key: string;
+
+  if (isServer) {
+    // Server-side - use process.env (for Next.js API routes)
+    url = process.env.VITE_SUPABASE_URL || '';
+    // For server-side admin operations, prefer service role key, fall back to anon key
+    key = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.VITE_SUPABASE_ANON_KEY || '';
+  } else {
+    // Client-side - use import.meta.env (Vite)
+    url = env.VITE_SUPABASE_URL || '';
+    key = env.VITE_SUPABASE_ANON_KEY || '';
+  }
 
   const defaultUrl = 'https://msttsebafjgzllyabsid.supabase.co';
 

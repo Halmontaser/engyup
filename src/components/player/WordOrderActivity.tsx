@@ -1,16 +1,21 @@
 
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Check, RotateCcw, ChevronRight } from "lucide-react";
+import { Check, RotateCcw, ChevronRight, Volume2 } from "lucide-react";
 
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
+import { STOP_AUDIO_EVENT } from "@/utils/audio";
 
-export default function WordOrderActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
+interface Props {
+  data: any;
+  media: ActivityMedia;
+  onComplete?: (correct?: boolean) => void;
+}
+
+export default function WordOrderActivity({ data, media, onComplete }: Props) {
   const sentences = useMemo(() => {
     let s = data.sentences || [];
-    
-    // Handle root-level correctOrder or answer properties by creating a mock sentence object
     if (s.length === 0) {
       if (data.correctOrder) s = [{ correctOrder: data.correctOrder }];
       else if (data.answer) s = [{ answer: data.answer }];
@@ -20,36 +25,35 @@ export default function WordOrderActivity({ data, media, onComplete }: { data: a
   }, [data]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  
   const [availableWords, setAvailableWords] = useState<string[]>([]);
   const [selectedWords, setSelectedWords] = useState<string[]>([]);
   const [isChecked, setIsChecked] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
+  const [isSpeaking, setIsSpeaking] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Stop audio on global stop-audio event
+  useEffect(() => {
+    const handler = () => {
+      audioRef.current?.pause();
+      speechSynthesis.cancel();
+      setIsSpeaking(false);
+    };
+    window.addEventListener(STOP_AUDIO_EVENT, handler);
+    return () => window.removeEventListener(STOP_AUDIO_EVENT, handler);
+  }, []);
 
   useEffect(() => {
     if (sentences.length > 0 && sentences[currentIndex]) {
       const sentenceObj = sentences[currentIndex];
-      
-      // Handle various schema generations
       let correct: string[] = [];
-      if (Array.isArray(sentenceObj.correctOrder)) {
-        correct = sentenceObj.correctOrder;
-      } else if (sentenceObj.correctOrder && typeof sentenceObj.correctOrder === "string") {
-        correct = sentenceObj.correctOrder.split(" ");
-      } else if (sentenceObj.answer && typeof sentenceObj.answer === "string") {
-        correct = sentenceObj.answer.split(" ");
-      } else if (Array.isArray(sentenceObj.answer)) {
-        correct = sentenceObj.answer;
-      } else if (sentenceObj.sentence && typeof sentenceObj.sentence === "string") {
-        correct = sentenceObj.sentence.split(" ");
-      }
-      
-      if (correct.length === 0) {
-        console.warn("Could not find correctOrder array", sentenceObj);
-        correct = ["Error:", "Missing", "Data"];
-      }
+      if (Array.isArray(sentenceObj.correctOrder)) correct = sentenceObj.correctOrder;
+      else if (sentenceObj.correctOrder && typeof sentenceObj.correctOrder === "string") correct = sentenceObj.correctOrder.split(" ");
+      else if (sentenceObj.answer && typeof sentenceObj.answer === "string") correct = sentenceObj.answer.split(" ");
+      else if (Array.isArray(sentenceObj.answer)) correct = sentenceObj.answer;
+      else if (sentenceObj.sentence && typeof sentenceObj.sentence === "string") correct = sentenceObj.sentence.split(" ");
+      if (correct.length === 0) correct = ["Error:", "Missing", "Data"];
 
-      // Shuffle the words
       const shuffled = [...correct];
       for (let i = shuffled.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -64,19 +68,48 @@ export default function WordOrderActivity({ data, media, onComplete }: { data: a
 
   if (sentences.length === 0) return <div>No sentences found.</div>;
 
+  const currentSentence = sentences[currentIndex];
+  const sentenceImage = media.images.find((img: any) => img.idx === currentIndex) || media.images[currentIndex];
+  const sentenceAudio = media.audio.find((a: any) => a.idx === currentIndex) || media.audio[currentIndex];
+  const imageUrl = sentenceImage?.url || currentSentence?.imageUrl || currentSentence?.image;
+  const audioUrl = sentenceAudio?.url || currentSentence?.audio;
+
+  const handlePlayAudio = () => {
+    if (audioRef.current) { audioRef.current.pause(); audioRef.current = null; }
+    const correctText = Array.isArray(currentSentence?.correctOrder) ? currentSentence.correctOrder.join(" ") : (currentSentence?.correctOrder || currentSentence?.answer || "");
+    if (audioUrl) {
+      setIsSpeaking(true);
+      const audio = new Audio(getMediaUrl(audioUrl));
+      audioRef.current = audio;
+      audio.onended = () => setIsSpeaking(false);
+      audio.onerror = () => { setIsSpeaking(false); fallbackSpeak(correctText); };
+      audio.play().catch(() => { setIsSpeaking(false); fallbackSpeak(correctText); });
+    } else if (correctText) {
+      fallbackSpeak(correctText);
+    }
+  };
+
+  const fallbackSpeak = (text: string) => {
+    if ("speechSynthesis" in window) {
+      setIsSpeaking(true);
+      const u = new SpeechSynthesisUtterance(text);
+      u.rate = 0.85; u.lang = "en-US";
+      u.onend = () => setIsSpeaking(false);
+      u.onerror = () => setIsSpeaking(false);
+      speechSynthesis.cancel(); speechSynthesis.speak(u);
+    }
+  };
+
   const handleSelectWord = (word: string, fromAvailable: boolean) => {
     if (isChecked) return;
-    
     if (fromAvailable) {
-      // Move from available to selected
       const index = availableWords.indexOf(word);
       const newAvail = [...availableWords];
       newAvail.splice(index, 1);
       setAvailableWords(newAvail);
       setSelectedWords([...selectedWords, word]);
     } else {
-      // Move from selected to available
-      const index = selectedWords.lastIndexOf(word); // use last to pick the one clicked
+      const index = selectedWords.lastIndexOf(word);
       const newSel = [...selectedWords];
       newSel.splice(index, 1);
       setSelectedWords(newSel);
@@ -85,15 +118,14 @@ export default function WordOrderActivity({ data, media, onComplete }: { data: a
   };
 
   const handleCheck = () => {
-      const sentenceObj = sentences[currentIndex];
-      let correct: string[] = [];
-      if (Array.isArray(sentenceObj.correctOrder)) correct = sentenceObj.correctOrder;
-      else if (sentenceObj.correctOrder && typeof sentenceObj.correctOrder === "string") correct = sentenceObj.correctOrder.split(" ");
-      else if (sentenceObj.answer && typeof sentenceObj.answer === "string") correct = sentenceObj.answer.split(" ");
-      else if (Array.isArray(sentenceObj.answer)) correct = sentenceObj.answer;
-      else if (sentenceObj.sentence && typeof sentenceObj.sentence === "string") correct = sentenceObj.sentence.split(" ");
-      else correct = ["Error"];
-
+    const sentenceObj = sentences[currentIndex];
+    let correct: string[] = [];
+    if (Array.isArray(sentenceObj.correctOrder)) correct = sentenceObj.correctOrder;
+    else if (sentenceObj.correctOrder && typeof sentenceObj.correctOrder === "string") correct = sentenceObj.correctOrder.split(" ");
+    else if (sentenceObj.answer && typeof sentenceObj.answer === "string") correct = sentenceObj.answer.split(" ");
+    else if (Array.isArray(sentenceObj.answer)) correct = sentenceObj.answer;
+    else if (sentenceObj.sentence && typeof sentenceObj.sentence === "string") correct = sentenceObj.sentence.split(" ");
+    else correct = ["Error"];
     const isOk = selectedWords.join(" ") === correct.join(" ");
     setIsChecked(true);
     setIsCorrect(isOk);
@@ -110,12 +142,10 @@ export default function WordOrderActivity({ data, media, onComplete }: { data: a
     if (currentIndex < sentences.length - 1) {
       setCurrentIndex(currentIndex + 1);
     } else if (onComplete) {
-      onComplete();
+      onComplete(true);
     }
   };
 
-  const currentSentence = sentences[currentIndex];
-  // Calculate if we should enable check button
   const canCheck = availableWords.length === 0 && !isChecked;
 
   return (
@@ -132,14 +162,43 @@ export default function WordOrderActivity({ data, media, onComplete }: { data: a
         animate={{ opacity: 1, y: 0 }}
         className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-slate-100"
       >
+        {/* Image */}
+        {imageUrl && (
+          <div className="mb-6 flex justify-center">
+            <img
+              src={getMediaUrl(imageUrl)}
+              alt="Sentence reference"
+              className="max-h-48 rounded-2xl object-contain bg-slate-50 border border-slate-100"
+              loading="lazy"
+              onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+            />
+          </div>
+        )}
+
+        {/* Audio */}
+        <div className="mb-6 flex justify-center">
+          <button
+            onClick={handlePlayAudio}
+            disabled={isSpeaking}
+            className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm transition-all ${
+              isSpeaking
+                ? "bg-blue-500 text-white shadow-lg"
+                : "bg-blue-50 text-blue-600 hover:bg-blue-100"
+            }`}
+          >
+            <Volume2 size={18} className={isSpeaking ? "animate-pulse" : ""} />
+            {isSpeaking ? "Playing..." : "Listen"}
+          </button>
+        </div>
+
         <div className="mb-8">
           <p className="text-slate-500 mb-2 font-medium">Build the sentence:</p>
-          
+
           {/* Answer Box */}
           <div className={`min-h-[100px] p-6 rounded-2xl border-b-4 flex flex-wrap content-start gap-3 transition-colors ${
-            isChecked 
-              ? isCorrect 
-                ? "bg-emerald-50 border-emerald-500 ring-2 ring-emerald-100" 
+            isChecked
+              ? isCorrect
+                ? "bg-emerald-50 border-emerald-500 ring-2 ring-emerald-100"
                 : "bg-red-50 border-red-500 ring-2 ring-red-100"
               : "bg-slate-50 border-slate-300"
             }`}
@@ -172,7 +231,7 @@ export default function WordOrderActivity({ data, media, onComplete }: { data: a
                     <div className="font-bold mb-1">Not quite right.</div>
                     <div className="text-sm">The correct order is:</div>
                     <div className="font-medium text-slate-800 mt-1">
-                      {Array.isArray(currentSentence?.correctOrder) ? currentSentence.correctOrder.join(" ") : 
+                      {Array.isArray(currentSentence?.correctOrder) ? currentSentence.correctOrder.join(" ") :
                        (currentSentence?.correctOrder || currentSentence?.answer || currentSentence?.sentence || "Unknown")}
                     </div>
                   </div>
@@ -219,7 +278,6 @@ export default function WordOrderActivity({ data, media, onComplete }: { data: a
           ) : (
             <button
               onClick={handleNext}
-              disabled={currentIndex === sentences.length - 1 && isCorrect}
               className="flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold transition shadow-md shadow-blue-200"
             >
               {currentIndex === sentences.length - 1 ? "Finish" : "Next Sentence"}

@@ -33,7 +33,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [progress, setProgress] = useState<Record<string, boolean>>({});
   const [loading, setLoading] = useState(true);
   const fetchingRef = useRef(false);
-  const canEditActivitiesValue = canEditActivitiesUtil(memberships);
+  const canEditActivitiesValue = canEditActivitiesUtil(memberships, profile);
 
   const refreshData = async () => {
     if (user) {

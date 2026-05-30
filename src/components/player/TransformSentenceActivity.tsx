@@ -1,39 +1,83 @@
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Check, ChevronRight, HelpCircle } from "lucide-react";
+import { Check, ChevronRight, HelpCircle, Volume2 } from "lucide-react";
 
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
+import { STOP_AUDIO_EVENT } from "@/utils/audio";
 
-export default function TransformSentenceActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
-  // Schema assumption: { sentences: [{ original, answer, hint }] }
+interface Props {
+  data: any;
+  media: ActivityMedia;
+  onComplete?: (correct?: boolean) => void;
+}
+
+export default function TransformSentenceActivity({ data, media, onComplete }: Props) {
   const sentences = data.sentences || data.items || data.prompts || [];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [inputValue, setInputValue] = useState("");
   const [isChecked, setIsChecked] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [score, setScore] = useState(0);
+  const [isSpeaking, setIsSpeaking] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Stop audio on global stop-audio event
+  useEffect(() => {
+    const handler = () => {
+      audioRef.current?.pause();
+      speechSynthesis.cancel();
+      setIsSpeaking(false);
+    };
+    window.addEventListener(STOP_AUDIO_EVENT, handler);
+    return () => window.removeEventListener(STOP_AUDIO_EVENT, handler);
+  }, []);
 
   if (sentences.length === 0) return <div className="text-muted p-4">No transform sentences found.</div>;
 
   const currentSentence = sentences[currentIndex];
-  
-  // Fallbacks depending on specific generation property names
   let promptText = currentSentence.prompt || currentSentence.original || currentSentence.text;
   if (Array.isArray(currentSentence.initial_sentences)) {
     promptText = currentSentence.initial_sentences.join(" ");
   }
-  
   const rawAnswer = currentSentence.answer || currentSentence.correct || currentSentence.correct_form || currentSentence.correct_answer || currentSentence.combined_sentence || "";
   const answerText = Array.isArray(rawAnswer) ? rawAnswer[0] : rawAnswer;
 
+  // Media
+  const sentenceImage = media.images.find((img: any) => img.idx === currentIndex) || media.images[currentIndex];
+  const sentenceAudio = media.audio.find((a: any) => a.idx === currentIndex) || media.audio[currentIndex];
+  const imageUrl = sentenceImage?.url || currentSentence?.imageUrl || currentSentence?.image;
+  const audioUrl = sentenceAudio?.url || currentSentence?.audio;
+
+  const handlePlayAudio = (text: string) => {
+    if (audioRef.current) { audioRef.current.pause(); audioRef.current = null; }
+    if (audioUrl) {
+      setIsSpeaking(true);
+      const audio = new Audio(getMediaUrl(audioUrl));
+      audioRef.current = audio;
+      audio.onended = () => setIsSpeaking(false);
+      audio.onerror = () => { setIsSpeaking(false); fallbackSpeak(text); };
+      audio.play().catch(() => { setIsSpeaking(false); fallbackSpeak(text); });
+    } else {
+      fallbackSpeak(text);
+    }
+  };
+
+  const fallbackSpeak = (text: string) => {
+    if ("speechSynthesis" in window) {
+      setIsSpeaking(true);
+      const u = new SpeechSynthesisUtterance(text);
+      u.rate = 0.85; u.lang = "en-US";
+      u.onend = () => setIsSpeaking(false);
+      u.onerror = () => setIsSpeaking(false);
+      speechSynthesis.cancel(); speechSynthesis.speak(u);
+    }
+  };
+
   const handleCheck = () => {
     setIsChecked(true);
-    
-    // Clean strings for comparison (remove punctuation, lower case, extra spaces)
     const clean = (str: string) => str.replace(/[.,!?]/g, "").trim().toLowerCase();
-    
     const correct = clean(inputValue) === clean(answerText);
     setIsCorrect(correct);
     if (correct) setScore(score + 1);
@@ -46,7 +90,7 @@ export default function TransformSentenceActivity({ data, media, onComplete }: {
     if (currentIndex < sentences.length - 1) {
       setCurrentIndex(currentIndex + 1);
     } else if (onComplete) {
-      onComplete();
+      onComplete(true);
     }
   };
 
@@ -67,11 +111,37 @@ export default function TransformSentenceActivity({ data, media, onComplete }: {
         animate={{ opacity: 1, y: 0 }}
         className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-slate-100"
       >
-        
+        {/* Image */}
+        {imageUrl && (
+          <div className="mb-6 flex justify-center">
+            <img
+              src={getMediaUrl(imageUrl)}
+              alt="Sentence reference"
+              className="max-h-48 rounded-2xl object-contain bg-slate-50 border border-slate-100"
+              loading="lazy"
+              onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+            />
+          </div>
+        )}
+
+        {/* Audio */}
+        <div className="mb-6 flex justify-center">
+          <button
+            onClick={() => handlePlayAudio(promptText)}
+            disabled={isSpeaking}
+            className={`flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm transition-all ${
+              isSpeaking ? "bg-blue-500 text-white shadow-lg" : "bg-blue-50 text-blue-600 hover:bg-blue-100"
+            }`}
+          >
+            <Volume2 size={18} className={isSpeaking ? "animate-pulse" : ""} />
+            {isSpeaking ? "Playing..." : "Listen"}
+          </button>
+        </div>
+
         <div className="mb-4">
           <span className="bg-slate-100 text-slate-500 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Original Sentence</span>
         </div>
-        
+
         <h3 className="text-2xl font-medium text-slate-800 mb-8">
           {promptText}
         </h3>
@@ -90,9 +160,9 @@ export default function TransformSentenceActivity({ data, media, onComplete }: {
             disabled={isChecked}
             placeholder="Type your transformed sentence here..."
             className={`w-full p-6 text-xl rounded-2xl border-2 outline-none transition-colors resize-none min-h-[120px] ${
-              isChecked 
-                ? isCorrect 
-                  ? "bg-emerald-50 border-emerald-500 text-emerald-800" 
+              isChecked
+                ? isCorrect
+                  ? "bg-emerald-50 border-emerald-500 text-emerald-800"
                   : "bg-red-50 border-red-500 text-red-800"
                 : "bg-slate-50 border-slate-300 focus:border-blue-500 focus:ring-4 focus:ring-blue-50"
             }`}
@@ -140,7 +210,6 @@ export default function TransformSentenceActivity({ data, media, onComplete }: {
             </button>
           )}
         </div>
-
       </motion.div>
     </div>
   );

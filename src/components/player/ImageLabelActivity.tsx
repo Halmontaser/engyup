@@ -1,13 +1,20 @@
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion } from "motion/react";
-import { MapPin, Check, Eye } from "lucide-react";
+import { MapPin, Check, Eye, Volume2 } from "lucide-react";
 
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
+import { STOP_AUDIO_EVENT } from "@/utils/audio";
 
-export default function ImageLabelActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
-  const imageSrc = data.image?.src || "";
+interface Props {
+  data: any;
+  media: ActivityMedia;
+  onComplete?: (correct?: boolean) => void;
+}
+
+export default function ImageLabelActivity({ data, media, onComplete }: Props) {
+  const imageSrc = data.image?.src || data.imageUrl || data.image || "";
   const imageAlt = data.image?.alt || "Label this image";
   const hotspots: {
     id: string;
@@ -21,9 +28,38 @@ export default function ImageLabelActivity({ data, media, onComplete }: { data: 
   const [inputs, setInputs] = useState<Record<string, string>>({});
   const [isChecked, setIsChecked] = useState(false);
   const [showAnswers, setShowAnswers] = useState(false);
+  const [isSpeaking, setIsSpeaking] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Stop audio on global stop-audio event
+  useEffect(() => {
+    const handler = () => {
+      audioRef.current?.pause();
+      speechSynthesis.cancel();
+      setIsSpeaking(false);
+    };
+    window.addEventListener(STOP_AUDIO_EVENT, handler);
+    return () => window.removeEventListener(STOP_AUDIO_EVENT, handler);
+  }, []);
 
   if (hotspots.length === 0)
     return <div className="text-muted">No image labels found.</div>;
+
+  // Media: main image from media.images
+  const mainImage = media.images.length > 0 ? media.images[0] : null;
+  const mainImageUrl = mainImage?.url || imageSrc;
+
+  const handlePlayAudio = (text: string) => {
+    if (audioRef.current) { audioRef.current.pause(); audioRef.current = null; }
+    if ("speechSynthesis" in window) {
+      setIsSpeaking(true);
+      const u = new SpeechSynthesisUtterance(text);
+      u.rate = 0.85; u.lang = "en-US";
+      u.onend = () => setIsSpeaking(false);
+      u.onerror = () => setIsSpeaking(false);
+      speechSynthesis.cancel(); speechSynthesis.speak(u);
+    }
+  };
 
   const handleChange = (id: string, value: string) => {
     if (isChecked) return;
@@ -32,10 +68,7 @@ export default function ImageLabelActivity({ data, media, onComplete }: { data: 
 
   const handleCheck = () => {
     setIsChecked(true);
-    // Call onComplete when user checks answers
-    if (onComplete) {
-      onComplete();
-    }
+    if (onComplete) onComplete(true);
   };
 
   const correctCount = hotspots.filter(
@@ -59,23 +92,27 @@ export default function ImageLabelActivity({ data, media, onComplete }: { data: 
         )}
       </div>
 
-      {/* Image with hotspots - fallback to list mode since images may not be available */}
+      {/* Image display */}
       <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
-        {imageSrc ? (
-          <div className="relative mb-6">
-            <div className="bg-slate-100 dark:bg-slate-800 rounded-xl p-4 text-center text-muted text-sm">
-              <MapPin size={32} className="mx-auto mb-2 opacity-40" />
-              Image: {imageAlt}
-            </div>
+        {mainImageUrl && (
+          <div className="relative mb-6 rounded-xl overflow-hidden">
+            <img
+              src={getMediaUrl(mainImageUrl)}
+              alt={imageAlt}
+              className="w-full h-auto max-h-80 object-contain bg-slate-50 rounded-xl"
+              loading="lazy"
+              onError={(e) => {
+                (e.target as HTMLImageElement).style.display = "none";
+              }}
+            />
           </div>
-        ) : null}
+        )}
 
         {/* Label inputs as a grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {hotspots.map((spot, i) => {
             const userVal = inputs[spot.id] || "";
-            const isCorrect =
-              userVal.trim().toLowerCase() === spot.label.toLowerCase();
+            const isCorrect = userVal.trim().toLowerCase() === spot.label.toLowerCase();
 
             return (
               <div
@@ -88,9 +125,17 @@ export default function ImageLabelActivity({ data, media, onComplete }: { data: 
                     : "border-[var(--border)]"
                 }`}
               >
-                <label className="block text-xs font-bold text-muted uppercase tracking-widest mb-2">
-                  Label {i + 1}
-                </label>
+                <div className="flex items-center justify-between mb-2">
+                  <label className="block text-xs font-bold text-muted uppercase tracking-widest">
+                    Label {i + 1}
+                  </label>
+                  <button
+                    onClick={() => handlePlayAudio(spot.label)}
+                    className={`p-1 rounded-full transition-all ${isSpeaking ? "text-blue-500" : "text-muted/50 hover:text-blue-500"}`}
+                  >
+                    <Volume2 size={14} className={isSpeaking ? "animate-pulse" : ""} />
+                  </button>
+                </div>
                 <input
                   type="text"
                   value={userVal}
@@ -137,7 +182,7 @@ export default function ImageLabelActivity({ data, media, onComplete }: { data: 
         ) : (
           <div className="w-full text-center text-muted text-sm">
             {correctCount === hotspots.length
-              ? "ًںژ‰ Perfect score!"
+              ? "Perfect score!"
               : "Review the correct answers above."}
           </div>
         )}

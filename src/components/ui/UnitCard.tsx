@@ -38,7 +38,7 @@ export const UnitCard: React.FC<UnitCardProps> = ({
       className="group"
     >
       <Link
-        href={isLocked ? "#" : `/grade/${gradeNumber}/unit/${unitNumber}`}
+        to={isLocked ? "#" : `/grade/${gradeNumber}/unit/${unitNumber}`}
         className={cn(
           "relative block overflow-hidden rounded-3xl border border-border/40 bg-card/40 backdrop-blur-sm transition-all duration-300",
           "hover:border-accent/40 hover:shadow-2xl hover:shadow-accent/10 hover:-translate-y-1",

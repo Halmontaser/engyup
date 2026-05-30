@@ -2,22 +2,15 @@
 import { useState, useRef, useCallback, useEffect } from "react";
 import { motion } from "motion/react";
 import { RotateCcw, ChevronRight, ChevronLeft, Volume2, Info, RotateCcw as Shuffle } from "lucide-react";
-import { ActivityMedia } from "./ActivityPlayer";
+import { ActivityMedia, ActivityMediaEntry } from "./ActivityPlayer";
 import { Tooltip } from "@/components/ui/Tooltip";
 import { getMediaUrl } from "@/utils/assets";
+import { STOP_AUDIO_EVENT } from "@/utils/audio";
 
 // Constants
 const SPEECH_RATE = 0.8;
 const SPEECH_LANG = "en-US";
 const AUTO_PLAY_DELAY = 500;
-
-interface MediaIndex {
-  idx?: number;
-}
-
-interface MediaEntryExtended extends ActivityMediaEntry {
-  idx?: number;
-}
 
 interface FlashcardItem {
   word?: string;
@@ -28,20 +21,32 @@ interface FlashcardItem {
   back?: string;
   translation?: string;
   example?: string;
+  imageUrl?: string;
+  wordAudio?: string;
 }
 
 interface FlashcardProps {
   data: any;
   media: ActivityMedia;
   onComplete?: (correct?: boolean) => void;
-  triggerCheck?: number;
 }
 
-export default function FlashcardActivity({ data, media, onComplete, triggerCheck }: FlashcardProps) {
+export default function FlashcardActivity({ data, media, onComplete }: FlashcardProps) {
   const items = (data.items || data.cards || []) as FlashcardItem[];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Stop audio on global stop-audio event
+  useEffect(() => {
+    const handler = () => {
+      audioRef.current?.pause();
+      speechSynthesis.cancel();
+      setIsSpeaking(false);
+    };
+    window.addEventListener(STOP_AUDIO_EVENT, handler);
+    return () => window.removeEventListener(STOP_AUDIO_EVENT, handler);
+  }, []);
   const [isPlaying, setIsPlaying] = useState(false);
   const [autoPlayEnabled, setAutoPlayEnabled] = useState(true);
   const isMountedRef = useRef(true);
@@ -58,11 +63,15 @@ export default function FlashcardActivity({ data, media, onComplete, triggerChec
   const wordAudios = media.audio.filter((a) => a.audioType === "word");
   const sentenceAudios = media.audio.filter((a) => a.audioType === "sentence");
   const currentWordAudio = wordAudios.find(
-    (a) => a.text?.toLowerCase() === front.toLowerCase() || (a as MediaIndex).idx === currentIndex
+    (a) => a.text?.toLowerCase() === front.toLowerCase() || a.idx === currentIndex
   ) || wordAudios[currentIndex];
-  const currentSentenceAudio = (sentenceAudios as MediaIndex[]).find((a) => a.idx === currentIndex) || sentenceAudios[currentIndex];
+  // Fallback: check wordAudio directly on the item data
+  const currentWordAudioUrl = currentWordAudio?.url || current.wordAudio;
+  const currentSentenceAudio = sentenceAudios.find((a) => a.idx === currentIndex) || sentenceAudios[currentIndex];
 
-  const currentImage = (media.images as MediaIndex[]).find((img) => img.idx === currentIndex) || media.images[currentIndex];
+  const currentImage = media.images.find((img) => img.idx === currentIndex) || media.images[currentIndex];
+  // Fallback: check imageUrl directly on the item data
+  const currentImageUrl = currentImage?.url || current.imageUrl;
 
   const handleFlip = () => setIsFlipped(!isFlipped);
 
@@ -143,11 +152,12 @@ export default function FlashcardActivity({ data, media, onComplete, triggerChec
       const currentAudio = wordAudios.find(
         (a) => a.text?.toLowerCase() === front.toLowerCase() || (a as MediaIndex).idx === currentIndex
       ) || wordAudios[currentIndex];
+      const audioUrl = currentAudio?.url || items[currentIndex]?.wordAudio;
 
       // Small delay for transition
       const timer = setTimeout(() => {
-        if (isMountedRef.current && (currentAudio?.url || front)) {
-          playAudio(currentAudio?.url, front);
+        if (isMountedRef.current && (audioUrl || front)) {
+          playAudio(audioUrl, front);
         }
       }, AUTO_PLAY_DELAY);
       return () => clearTimeout(timer);
@@ -162,13 +172,6 @@ export default function FlashcardActivity({ data, media, onComplete, triggerChec
       onComplete(true);
     }
   }, [currentIndex, items.length, onComplete]);
-
-  // Handle external triggerCheck
-  useEffect(() => {
-    if (triggerCheck && triggerCheck > 0) {
-        handleNext();
-    }
-  }, [triggerCheck, handleNext]);
 
   const handlePrev = () => {
     setIsFlipped(false);
@@ -199,7 +202,7 @@ export default function FlashcardActivity({ data, media, onComplete, triggerChec
             {/* Audio play button */}
             <Tooltip content={`Play pronunciation for "${front}"`}>
               <button
-                onClick={() => playAudio(currentWordAudio?.url, front)}
+                onClick={() => playAudio(currentWordAudioUrl, front)}
                 className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-all ${isPlaying
                     ? "bg-[var(--accent)] text-white shadow-lg"
                     : "bg-[var(--accent-light)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white"
@@ -229,11 +232,11 @@ export default function FlashcardActivity({ data, media, onComplete, triggerChec
             style={{ backfaceVisibility: "hidden" }}
           >
             {/* Image on front */}
-            {currentImage && (
+            {currentImageUrl && (
               <Tooltip content={`${front} - Visual representation of the word`}>
                 <div className="mb-4 rounded-2xl overflow-hidden bg-white/10 max-w-[200px] max-h-[150px]">
                   <img
-                    src={getMediaUrl(currentImage.url)}
+                    src={getMediaUrl(currentImageUrl)}
                     alt={front}
                     className="w-full h-full object-contain"
                     onError={(e) => {
@@ -326,10 +329,13 @@ export default function FlashcardActivity({ data, media, onComplete, triggerChec
         <Tooltip content={currentIndex === items.length - 1 ? "Complete flashcard activity" : "Go to next card"}>
           <button
             onClick={handleNext}
-            disabled={currentIndex === items.length - 1}
-            className="flex items-center gap-2 text-muted hover:text-foreground font-medium disabled:opacity-30 transition-colors"
+            className={`flex items-center gap-2 font-medium transition-colors ${
+              currentIndex === items.length - 1
+                ? 'btn-accent px-4 py-2'
+                : 'text-muted hover:text-foreground'
+            }`}
           >
-            Next <ChevronRight size={18} />
+            {currentIndex === items.length - 1 ? 'Complete' : 'Next'} <ChevronRight size={18} />
           </button>
         </Tooltip>
       </div>

@@ -1,15 +1,21 @@
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import { motion } from "motion/react";
-import { Check, ArrowUpDown, RotateCcw } from "lucide-react";
+import { Check, ArrowUpDown, RotateCcw, Volume2 } from "lucide-react";
 
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
+import { STOP_AUDIO_EVENT } from "@/utils/audio";
 
-export default function ReadingSequenceActivity({ data, media, onComplete }: { data: any; media: ActivityMedia; onComplete?: () => void }) {
+interface Props {
+  data: any;
+  media: ActivityMedia;
+  onComplete?: (correct?: boolean) => void;
+}
+
+export default function ReadingSequenceActivity({ data, media, onComplete }: Props) {
   const correctOrder: string[] = data.items || data.steps || data.events || [];
 
-  // Create a shuffled version for the user to reorder
   const shuffledItems = useMemo(() => {
     const items = correctOrder.map((text, i) => ({
       text,
@@ -26,10 +32,38 @@ export default function ReadingSequenceActivity({ data, media, onComplete }: { d
 
   const [userOrder, setUserOrder] = useState(shuffledItems);
   const [isChecked, setIsChecked] = useState(false);
-  const [draggedIndex, setDraggedIndex] = useState<number | null>(null);
+  const [isSpeaking, setIsSpeaking] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Stop audio on global stop-audio event
+  useEffect(() => {
+    const handler = () => {
+      audioRef.current?.pause();
+      speechSynthesis.cancel();
+      setIsSpeaking(false);
+    };
+    window.addEventListener(STOP_AUDIO_EVENT, handler);
+    return () => window.removeEventListener(STOP_AUDIO_EVENT, handler);
+  }, []);
 
   if (correctOrder.length === 0)
     return <div className="text-muted">No sequence items found.</div>;
+
+  // Media
+  const seqImage = media.images.length > 0 ? media.images[0] : null;
+  const seqImageUrl = seqImage?.url || data.imageUrl || data.image;
+
+  const handlePlayAudio = (text: string) => {
+    if (audioRef.current) { audioRef.current.pause(); audioRef.current = null; }
+    if ("speechSynthesis" in window) {
+      setIsSpeaking(true);
+      const u = new SpeechSynthesisUtterance(text);
+      u.rate = 0.85; u.lang = "en-US";
+      u.onend = () => setIsSpeaking(false);
+      u.onerror = () => setIsSpeaking(false);
+      speechSynthesis.cancel(); speechSynthesis.speak(u);
+    }
+  };
 
   const moveItem = (fromIndex: number, toIndex: number) => {
     if (isChecked) return;
@@ -41,10 +75,7 @@ export default function ReadingSequenceActivity({ data, media, onComplete }: { d
 
   const handleCheck = () => {
     setIsChecked(true);
-    // Call onComplete when user checks their order
-    if (onComplete) {
-      onComplete();
-    }
+    if (onComplete) onComplete(true);
   };
 
   const handleReset = () => {
@@ -74,6 +105,19 @@ export default function ReadingSequenceActivity({ data, media, onComplete }: { d
         )}
       </div>
 
+      {/* Sequence image */}
+      {seqImageUrl && (
+        <div className="mb-6 flex justify-center">
+          <img
+            src={getMediaUrl(seqImageUrl)}
+            alt="Sequence reference"
+            className="max-h-48 rounded-2xl object-contain bg-slate-50 border border-slate-100"
+            loading="lazy"
+            onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+          />
+        </div>
+      )}
+
       {isChecked && allCorrect ? (
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
@@ -101,7 +145,6 @@ export default function ReadingSequenceActivity({ data, media, onComplete }: { d
                     : "border-[var(--border)] bg-[var(--card)] hover:border-[var(--accent)]"
                 }`}
               >
-                {/* Position number */}
                 <div
                   className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold shrink-0 ${
                     isCorrectPosition
@@ -114,10 +157,16 @@ export default function ReadingSequenceActivity({ data, media, onComplete }: { d
                   {i + 1}
                 </div>
 
-                {/* Text */}
                 <p className="flex-1 font-medium">{item.text}</p>
 
-                {/* Move buttons */}
+                {/* Audio button */}
+                <button
+                  onClick={() => handlePlayAudio(item.text)}
+                  className={`p-1.5 rounded-full transition-all shrink-0 ${isSpeaking ? "text-blue-500" : "text-muted/50 hover:text-blue-500"}`}
+                >
+                  <Volume2 size={14} className={isSpeaking ? "animate-pulse" : ""} />
+                </button>
+
                 {!isChecked && (
                   <div className="flex flex-col gap-1 shrink-0">
                     <button
@@ -125,28 +174,25 @@ export default function ReadingSequenceActivity({ data, media, onComplete }: { d
                       disabled={i === 0}
                       className="w-7 h-7 rounded-lg bg-[var(--background)] border border-[var(--border)] flex items-center justify-center text-muted hover:text-[var(--accent)] hover:border-[var(--accent)] disabled:opacity-20 transition-all text-xs"
                     >
-                      â–²
+                      ▲
                     </button>
                     <button
-                      onClick={() =>
-                        i < userOrder.length - 1 && moveItem(i, i + 1)
-                      }
+                      onClick={() => i < userOrder.length - 1 && moveItem(i, i + 1)}
                       disabled={i === userOrder.length - 1}
                       className="w-7 h-7 rounded-lg bg-[var(--background)] border border-[var(--border)] flex items-center justify-center text-muted hover:text-[var(--accent)] hover:border-[var(--accent)] disabled:opacity-20 transition-all text-xs"
                     >
-                      â–¼
+                      ▼
                     </button>
                   </div>
                 )}
 
-                {/* Result */}
                 {isChecked && (
                   <div className="shrink-0">
                     {isCorrectPosition ? (
                       <Check size={18} className="text-[var(--success)]" />
                     ) : (
                       <span className="text-xs text-red-500 font-bold">
-                        â†’ {item.correctIndex + 1}
+                        → {item.correctIndex + 1}
                       </span>
                     )}
                   </div>

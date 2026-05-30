@@ -21,7 +21,26 @@ export interface ActivityFormSchema {
   description: string;
   icon: string;
   fields: FormField[];
+  metadataFields?: FormField[];
+  defaultValues?: {
+    is_required?: boolean;
+    xp_reward?: number;
+    time_estimate_minutes?: number;
+    difficulty?: string;
+  };
 }
+
+// Common metadata fields from Supabase activities table (is_required, xp_reward, time_estimate_minutes)
+export const activityMetadataFields: FormField[] = [
+  { name: 'is_required', label: 'Required Activity', type: 'boolean' },
+  { name: 'xp_reward', label: 'XP Reward', type: 'number', placeholder: '10' },
+  { name: 'time_estimate_minutes', label: 'Time Estimate (minutes)', type: 'number', placeholder: '5' },
+  { name: 'difficulty', label: 'Difficulty', type: 'select', options: [
+    { label: 'Easy', value: 'easy' },
+    { label: 'Medium', value: 'medium' },
+    { label: 'Hard', value: 'hard' },
+  ]},
+];
 
 export const activityFormSchemas: Record<string, ActivityFormSchema> = {
   'mcq': {
@@ -49,6 +68,12 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
             label: 'Question Image (optional)',
             type: 'text',
             placeholder: '/images/your-image.jpg or http://...'
+          },
+          {
+            name: 'imageUrl',
+            label: 'Image URL',
+            type: 'text',
+            placeholder: '/media/g7u1/images/...'
           },
           {
             name: 'audio',
@@ -100,7 +125,9 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
           { name: 'meaning', label: 'Meaning (alternative)', type: 'textarea', placeholder: 'Alternative to definition...' },
           { name: 'back', label: 'Back Text (alternative)', type: 'textarea', placeholder: 'Alternative to definition...' },
           { name: 'translation', label: 'Translation (optional)', type: 'textarea', placeholder: 'Enter translation...' },
-          { name: 'example', label: 'Example Sentence', type: 'textarea', placeholder: 'Enter an example sentence...' }
+          { name: 'example', label: 'Example Sentence', type: 'textarea', placeholder: 'Enter an example sentence...' },
+          { name: 'imageUrl', label: 'Card Image URL', type: 'text', placeholder: '/media/g7u1/images/...' },
+          { name: 'wordAudio', label: 'Word Audio URL', type: 'text', placeholder: '/media/g7u1/audio/...' }
         ]
       }
     ]
@@ -126,6 +153,8 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
             helpText: 'Use ___ (3 or more underscores) for blanks',
             placeholder: 'The cat ___ on the mat.'
           },
+          { name: 'image', label: 'Image (optional)', type: 'text', placeholder: '/media/g7u1/images/...' },
+          { name: 'audio', label: 'Audio (optional)', type: 'text', placeholder: '/media/g7u1/audio/...' },
           {
             name: 'blanks',
             label: 'Blank Answers',
@@ -155,8 +184,12 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
         required: true,
         arrayConfig: { minItems: 2, itemLabel: 'Pair', addItemLabel: 'Add Pair' },
         fields: [
-          { name: 'left', label: 'Left Item', type: 'text', required: true },
-          { name: 'right', label: 'Right Item', type: 'text', required: true }
+          { name: 'left', label: 'Left Label', type: 'text', placeholder: 'Text label (shown below image/audio)' },
+          { name: 'right', label: 'Right Label', type: 'text', placeholder: 'Text label (shown below image/audio)' },
+          { name: 'leftImage', label: 'Left Image', type: 'text', placeholder: '/media/... or URL' },
+          { name: 'rightImage', label: 'Right Image', type: 'text', placeholder: '/media/... or URL' },
+          { name: 'leftAudio', label: 'Left Audio', type: 'text', placeholder: '/media/... or URL' },
+          { name: 'rightAudio', label: 'Right Audio', type: 'text', placeholder: '/media/... or URL' }
         ]
       }
     ]
@@ -176,7 +209,11 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
         fields: [
           { name: 'statement', label: 'Statement Text', type: 'textarea', required: true },
           { name: 'isTrue', label: 'Is This True?', type: 'boolean', required: true },
-          { name: 'explanation', label: 'Explanation', type: 'textarea', placeholder: 'Explanation for the answer...' }
+          { name: 'explanation', label: 'Explanation', type: 'textarea', placeholder: 'Explanation for the answer...' },
+          { name: 'imageUrl', label: 'Statement Image (optional)', type: 'text', placeholder: '/media/g7u1/images/...' },
+          { name: 'audio', label: 'Statement Audio (optional)', type: 'text', placeholder: '/media/g7u1/audio/...' },
+          { name: 'image', label: 'Image (optional)', type: 'text', placeholder: '/media/g7u1/images/...' },
+          { name: 'audio', label: 'Audio (optional)', type: 'text', placeholder: '/media/g7u1/audio/...' }
         ]
       }
     ]
@@ -206,7 +243,10 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
             label: 'Answer (alternative to correctOrder)',
             type: 'textarea',
             placeholder: 'The cat sat on the mat'
-          }
+          },
+          { name: 'image', label: 'Image (optional)', type: 'text', placeholder: '/media/g7u1/images/...' },
+          { name: 'imageUrl', label: 'Image URL (alternative)', type: 'text', placeholder: '/media/g7u1/images/...' },
+          { name: 'audio', label: 'Audio (optional)', type: 'text', placeholder: '/media/g7u1/audio/...' }
         ]
       }
     ]
@@ -218,6 +258,8 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
     icon: 'BookOpen',
     fields: [
       { name: 'title', label: 'Passage Title (optional)', type: 'text' },
+      { name: 'image', label: 'Image (optional)', type: 'text', placeholder: '/media/g7u1/images/...' },
+      { name: 'audio', label: 'Audio (optional)', type: 'text', placeholder: '/media/g7u1/audio/...' },
       { name: 'passage', label: 'Passage Text', type: 'textarea', required: true },
       {
         name: 'highlightWords',
@@ -251,13 +293,15 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
         arrayConfig: { minItems: 1, itemLabel: 'Category', addItemLabel: 'Add Category' },
         fields: [
           { name: 'name', label: 'Category Name', type: 'text', required: true },
+          { name: 'image', label: 'Category Image (optional)', type: 'text', placeholder: '/media/g7u1/images/...' },
           {
             name: 'items',
             label: 'Items in Category',
             type: 'array',
             arrayConfig: { minItems: 1, itemLabel: 'Item', addItemLabel: 'Add Item' },
             fields: [
-              { name: 'text', label: 'Item Text', type: 'text', required: true }
+              { name: 'text', label: 'Item Text', type: 'text', required: true },
+              { name: 'image', label: 'Item Image (optional)', type: 'text', placeholder: '/media/g7u1/images/...' }
             ]
           }
         ]
@@ -270,6 +314,7 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
     description: 'Create dialogue readings with word bank',
     icon: 'MessageCircle',
     fields: [
+      { name: 'imageUrl', label: 'Scene Image URL', type: 'text', placeholder: '/media/g7u1/images/...' },
       {
         name: 'lines',
         label: 'Dialogue Lines',
@@ -309,7 +354,9 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
           { name: 'original', label: 'Original (alternative to prompt)', type: 'textarea' },
           { name: 'answer', label: 'Correct Transformed Sentence', type: 'textarea', required: true },
           { name: 'correct', label: 'Correct Answer (alternative)', type: 'textarea' },
-          { name: 'hint', label: 'Hint (optional)', type: 'textarea' }
+          { name: 'hint', label: 'Hint (optional)', type: 'textarea' },
+          { name: 'image', label: 'Image (optional)', type: 'text', placeholder: '/media/g7u1/images/...' },
+          { name: 'audio', label: 'Audio (optional)', type: 'text', placeholder: '/media/g7u1/audio/...' }
         ]
       }
     ]
@@ -324,7 +371,13 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
         name: 'image',
         label: 'Image URL',
         type: 'text',
-        placeholder: '/images/your-image.jpg or http://...'
+        placeholder: '/media/g7u1/images/...'
+      },
+      {
+        name: 'imageUrl',
+        label: 'Image URL (alternative)',
+        type: 'text',
+        placeholder: '/media/g7u1/images/...'
       },
       {
         name: 'hotspots',
@@ -357,6 +410,8 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
         arrayConfig: { minItems: 1, itemLabel: 'Puzzle', addItemLabel: 'Add Puzzle' },
         fields: [
           { name: 'answer', label: 'Answer', type: 'text', required: true },
+          { name: 'image', label: 'Image (optional)', type: 'text', placeholder: '/media/g7u1/images/...' },
+          { name: 'audio', label: 'Audio (optional)', type: 'text', placeholder: '/media/g7u1/audio/...' },
           { name: 'hint', label: 'Hint (optional)', type: 'textarea' },
           {
             name: 'clues',
@@ -384,7 +439,9 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
         required: true,
         arrayConfig: { minItems: 1, itemLabel: 'Item', addItemLabel: 'Add Item' },
         fields: [
-          { name: 'text', label: 'Item Text', type: 'textarea', required: true }
+          { name: 'text', label: 'Item Text', type: 'textarea', required: true },
+          { name: 'image', label: 'Image (optional)', type: 'text', placeholder: '/media/g7u1/images/...' },
+          { name: 'audio', label: 'Audio (optional)', type: 'text', placeholder: '/media/g7u1/audio/...' }
         ]
       },
       {
@@ -439,6 +496,7 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
     description: 'Create audio-based comprehension exercises',
     icon: 'Headphones',
     fields: [
+      { name: 'imageUrl', label: 'Scene Image URL', type: 'text', placeholder: '/media/g7u1/images/...' },
       { name: 'transcript', label: 'Transcript', type: 'textarea', placeholder: 'Full audio transcript...' },
       {
         name: 'questions',
@@ -484,7 +542,8 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
             type: 'text',
             placeholder: 'Leave empty to auto-scramble'
           },
-          { name: 'audio', label: 'Audio URL (optional)', type: 'text', placeholder: '/audio/word.mp3' }
+          { name: 'audio', label: 'Audio URL (optional)', type: 'text', placeholder: '/media/g7u1/audio/...' },
+          { name: 'imageUrl', label: 'Image URL (optional)', type: 'text', placeholder: '/media/g7u1/images/...' }
         ]
       }
     ]
@@ -503,6 +562,7 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
         arrayConfig: { minItems: 1, itemLabel: 'Sentence', addItemLabel: 'Add Sentence' },
         fields: [
           { name: 'expectedText', label: 'Expected Text', type: 'textarea', required: true },
+          { name: 'imageUrl', label: 'Image URL (optional)', type: 'text', placeholder: '/media/g7u1/images/...' },
           { name: 'difficulty', label: 'Difficulty (optional)', type: 'select', options: [
             { label: 'Easy', value: 'Easy' },
             { label: 'Medium', value: 'Medium' },
@@ -527,6 +587,7 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
     description: 'Create interactive conversation simulations',
     icon: 'MessageSquare',
     fields: [
+      { name: 'imageUrl', label: 'Scene Image URL', type: 'text', placeholder: '/media/g7u1/images/...' },
       { name: 'scenario', label: 'Scenario Description', type: 'textarea', placeholder: 'Describe the context of the conversation...' },
       {
         name: 'turns',
@@ -560,6 +621,7 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
     icon: 'Image',
     fields: [
       { name: 'image', label: 'Image URL', type: 'text', placeholder: '/images/your-image.jpg or http://...' },
+      { name: 'imageUrl', label: 'Image URL (unit path)', type: 'text', placeholder: '/media/g7u1/images/...' },
       {
         name: 'keywords',
         label: 'Keywords (comma-separated)',
@@ -629,8 +691,12 @@ export const activityFormSchemas: Record<string, ActivityFormSchema> = {
         required: true,
         arrayConfig: { minItems: 2, itemLabel: 'Pair', addItemLabel: 'Add Pair' },
         fields: [
-          { name: 'left', label: 'First Word', type: 'text', required: true },
-          { name: 'right', label: 'Associated Word', type: 'text', required: true }
+          { name: 'left', label: 'Left Label', type: 'text', placeholder: 'Text label (shown below image/audio)' },
+          { name: 'right', label: 'Right Label', type: 'text', placeholder: 'Text label (shown below image/audio)' },
+          { name: 'leftImage', label: 'Left Image', type: 'text', placeholder: '/media/... or URL' },
+          { name: 'rightImage', label: 'Right Image', type: 'text', placeholder: '/media/... or URL' },
+          { name: 'leftAudio', label: 'Left Audio', type: 'text', placeholder: '/media/... or URL' },
+          { name: 'rightAudio', label: 'Right Audio', type: 'text', placeholder: '/media/... or URL' }
         ]
       }
     ]
@@ -654,8 +720,30 @@ export function getFormSchema(type: string): ActivityFormSchema | undefined {
 }
 
 export function getActivityIcon(type: string): string {
-  const schema = getFormSchema(type);
-  return schema?.icon || 'HelpCircle';
+  const emojiMap: Record<string, string> = {
+    "mcq": "❓",
+    "flashcard": "🃏",
+    "gap-fill": "✏️",
+    "match-pairs": "🔗",
+    "true-false": "✅",
+    "word-order": "📝",
+    "reading-passage": "📖",
+    "category-sort": "📂",
+    "dialogue-read": "💬",
+    "transform-sentence": "🔄",
+    "image-label": "📍",
+    "guessing-game": "🎮",
+    "reading-sequence": "📋",
+    "pronunciation-practice": "🗣️",
+    "listening-comprehension": "🎧",
+    "spelling-bee": "🐝",
+    "dictation": "📄",
+    "conversation-sim": "🗨️",
+    "picture-description": "🖼️",
+    "sentence-builder": "🏗️",
+    "word-association": "🔗",
+  };
+  return emojiMap[type] || "📝";
 }
 
 // Activity metadata fields (database columns) - shared by all activity types

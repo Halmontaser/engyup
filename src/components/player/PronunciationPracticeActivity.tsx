@@ -5,6 +5,7 @@ import { Volume2, ChevronRight, ChevronLeft, Mic, BookOpen, Sparkles, RotateCcw,
 import { ActivityMedia } from "./ActivityPlayer";
 import { Tooltip } from "@/components/ui/Tooltip";
 import { getMediaUrl } from "@/utils/assets";
+import { STOP_AUDIO_EVENT } from "@/utils/audio";
 
 // Constants
 const SPEECH_RATE = 0.8;
@@ -22,10 +23,9 @@ interface Props {
   data: any;
   media: ActivityMedia;
   onComplete?: (correct?: boolean) => void;
-  triggerCheck?: number;
 }
 
-export default function PronunciationPracticeActivity({ data, media, onComplete, triggerCheck }: Props) {
+export default function PronunciationPracticeActivity({ data, media, onComplete }: Props) {
   const words: Word[] = data.words || [];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isSpeaking, setIsSpeaking] = useState(false);
@@ -34,6 +34,17 @@ export default function PronunciationPracticeActivity({ data, media, onComplete,
   const [isComplete, setIsComplete] = useState(false);
   const [autoPlayEnabled, setAutoPlayEnabled] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Stop audio on global stop-audio event
+  useEffect(() => {
+    const handler = () => {
+      audioRef.current?.pause();
+      speechSynthesis.cancel();
+      setIsSpeaking(false);
+    };
+    window.addEventListener(STOP_AUDIO_EVENT, handler);
+    return () => window.removeEventListener(STOP_AUDIO_EVENT, handler);
+  }, []);
   const isMountedRef = useRef(true);
 
   const current = words[currentIndex];
@@ -110,13 +121,6 @@ export default function PronunciationPracticeActivity({ data, media, onComplete,
       }
     }
   }, [currentIndex, words.length, onComplete]);
-
-  // Handle external triggerCheck from LessonPlayer footer
-  useEffect(() => {
-    if (triggerCheck && triggerCheck > 0 && !isComplete) {
-      handleNext();
-    }
-  }, [triggerCheck, isComplete, handleNext]);
 
   useEffect(() => {
     if (autoPlayEnabled && words.length > 0 && !isComplete) {
