@@ -52,6 +52,9 @@ interface ActivityPlayerProps {
   showControls?: boolean;
 }
 
+/** Only listening-comprehension gets Stop Voice + Skip buttons. */
+const LISTENING_TYPES = new Set(['listening-comprehension']);
+
 export default function ActivityPlayer({ activity, media, onComplete, showControls }: ActivityPlayerProps) {
   const [showNote, setShowNote] = useState(false);
   const [noteText, setNoteText] = useState('');
@@ -159,48 +162,53 @@ export default function ActivityPlayer({ activity, media, onComplete, showContro
     <div className="relative">
       <ErrorBoundary key={activity.id || type}>{renderComponent()}</ErrorBoundary>
 
-      {/* Floating control bar — stop voice / skip (only on first activity) */}
-      {showControls && (
-        <div className="fixed top-4 right-4 z-50 flex items-center gap-1.5">
-          {(activity.book_type || activity.book_page) && (
-            <button
-              className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-blue-300 hover:bg-blue-50 text-slate-600 hover:text-blue-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
-              title="Book reference"
-            >
-              <BookOpen size={14} />
-              <span>{[activity.book_type?.toUpperCase(), activity.book_page ? `p.${activity.book_page}` : ''].filter(Boolean).join(' ')}</span>
-            </button>
-          )}
-          {activity.compensates && (
-            <button
-              onClick={() => setShowCompensates(!showCompensates)}
-              className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-emerald-300 hover:bg-emerald-50 text-slate-600 hover:text-emerald-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
-              title="Show compensates"
-            >
-              <Gift size={14} />
-              <span className="hidden sm:inline">Compensates</span>
-            </button>
-          )}
+      {/* Floating control bar */}
+      <div className="fixed top-4 right-4 z-50 flex items-center gap-1.5">
+        {/* Book reference — always shown */}
+        {(activity.book_type || activity.book_page) && (
           <button
-            onClick={stopAllAudio}
-            className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-amber-300 hover:bg-amber-50 text-slate-600 hover:text-amber-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
-            title="Stop voice / audio"
+            className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-blue-300 hover:bg-blue-50 text-slate-600 hover:text-blue-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
+            title="Book reference"
           >
-            <VolumeX size={14} />
-            <span className="hidden sm:inline">Stop Voice</span>
+            <BookOpen size={14} />
+            <span>{[activity.book_type?.toUpperCase(), activity.book_page ? `p.${activity.book_page}` : ''].filter(Boolean).join(' ')}</span>
           </button>
-          {onComplete && (
+        )}
+        {/* Compensates — always shown */}
+        {activity.compensates && (
+          <button
+            onClick={() => setShowCompensates(!showCompensates)}
+            className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-emerald-300 hover:bg-emerald-50 text-slate-600 hover:text-emerald-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
+            title="Show compensates"
+          >
+            <Gift size={14} />
+            <span className="hidden sm:inline">Compensates</span>
+          </button>
+        )}
+        {/* Stop Voice + Skip — only on listening activities */}
+        {showControls && LISTENING_TYPES.has(activity.type) && (
+          <>
             <button
-              onClick={() => onComplete(true)}
-              className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-indigo-300 hover:bg-indigo-50 text-slate-600 hover:text-indigo-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
-              title="Skip this activity"
+              onClick={stopAllAudio}
+              className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-amber-300 hover:bg-amber-50 text-slate-600 hover:text-amber-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
+              title="Stop voice / audio"
             >
-              <SkipForward size={14} />
-              <span className="hidden sm:inline">Skip</span>
+              <VolumeX size={14} />
+              <span className="hidden sm:inline">Stop Voice</span>
             </button>
-          )}
-        </div>
-      )}
+            {onComplete && (
+              <button
+                onClick={() => onComplete(true)}
+                className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-indigo-300 hover:bg-indigo-50 text-slate-600 hover:text-indigo-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
+                title="Skip this activity"
+              >
+                <SkipForward size={14} />
+                <span className="hidden sm:inline">Skip</span>
+              </button>
+            )}
+          </>
+        )}
+      </div>
 
       {/* Floating Note Button */}
       <button

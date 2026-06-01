@@ -40,7 +40,7 @@ export default function McqActivity({ data, media, onComplete }: Props) {
   // Media lookup
   const questionImage = media.images.find((img: any) => img.idx === currentIndex) || media.images[currentIndex];
   const questionAudio = media.audio.find((a: any) => a.idx === currentIndex) || media.audio[currentIndex];
-  const imgSrc = questionImage?.url || currentQ.imageUrl || currentQ.image;
+  const imgSrc = questionImage?.url || currentQ.imageUrl || currentQ.image || currentQ.imgUrl;
   const audioSrc = questionAudio?.url || currentQ.audio;
 
   const handlePlayAudio = (url?: string, text?: string) => {
@@ -159,7 +159,7 @@ export default function McqActivity({ data, media, onComplete }: Props) {
           <div className="space-y-2">
             {currentQ.options.map((opt: any, i: number) => {
               const text = isComplex ? (opt.text || opt.label) : opt;
-              const optImg = isComplex ? opt.image : null;
+              const optImg = isComplex ? (opt.image || opt.imgUrl) : null;
               const optAudio = isComplex ? opt.audio : null;
               const isCorrect = isComplex ? opt.isCorrect : text === currentQ.answer;
 
@@ -184,16 +184,15 @@ export default function McqActivity({ data, media, onComplete }: Props) {
                   className={`w-full text-left p-3 md:p-4 rounded-xl border-2 transition-all font-medium text-sm md:text-base flex items-center justify-between ${stateClass}`}
                 >
                   <div className="flex flex-col gap-2 w-full mr-3">
-                    {optImg && (
+                    {optImg ? (
                       <img
                         src={getMediaUrl(optImg)}
-                        alt={`Option ${i + 1}`}
+                        alt={text || `Option ${i + 1}`}
                         className="max-h-20 rounded-lg object-contain bg-white border border-slate-100"
                         loading="lazy"
                         onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
                       />
-                    )}
-                    {optAudio && (
+                    ) : optAudio ? (
                       <div className="flex items-center gap-2">
                         <button
                           onClick={(e) => { e.stopPropagation(); handlePlayAudio(optAudio); }}
@@ -203,8 +202,9 @@ export default function McqActivity({ data, media, onComplete }: Props) {
                         </button>
                         <audio controls src={getMediaUrl(optAudio.startsWith('http') ? optAudio : `/audio/${optAudio}`)} className="w-full max-w-[200px]" />
                       </div>
+                    ) : (
+                      text && <span>{text}</span>
                     )}
-                    {text && <span>{text}</span>}
                   </div>
                   {showFeedback && i === selectedOption && (
                     <div className="shrink-0">

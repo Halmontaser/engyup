@@ -131,7 +131,7 @@ export function buildActivityMediaFromContent(content: any): ActivityMedia {
   }
 
   // Activity-level image field (for picture-description)
-  if (data.image && typeof data.image === 'string' && data.image.startsWith('/media/')) {
+  if (data.image && typeof data.image === 'string' && (data.image.startsWith('/') || data.image.startsWith('http'))) {
     images.push({
       filename: data.image.split('/').pop() || '',
       url: data.image,
@@ -185,6 +185,15 @@ export function buildActivityMediaFromContent(content: any): ActivityMedia {
         } as ActivityMediaEntry);
         (images[images.length - 1] as any).idx = idx;
       }
+      // imgUrl field (used in production data)
+      if (item.imgUrl && typeof item.imgUrl === 'string') {
+        images.push({
+          filename: item.imgUrl.split('/').pop() || '',
+          url: item.imgUrl,
+          prompt: '',
+        } as ActivityMediaEntry);
+        (images[images.length - 1] as any).idx = idx;
+      }
       if (item.wordAudio) {
         audio.push({
           filename: item.wordAudio.split('/').pop() || '',
@@ -204,10 +213,11 @@ export function buildActivityMediaFromContent(content: any): ActivityMedia {
       // MCQ options with audio/images
       if (Array.isArray(item.options)) {
         item.options.forEach((opt: any) => {
-          if (opt.image && typeof opt.image === 'string' && opt.image.startsWith('/media/')) {
+          const optImage = opt.image || opt.imgUrl;
+          if (optImage && typeof optImage === 'string' && (optImage.startsWith('/') || optImage.startsWith('http'))) {
             images.push({
-              filename: opt.image.split('/').pop() || '',
-              url: opt.image,
+              filename: optImage.split('/').pop() || '',
+              url: optImage,
             });
           }
           if (opt.audio) {
