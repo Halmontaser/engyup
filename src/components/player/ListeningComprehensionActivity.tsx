@@ -415,9 +415,8 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
               </button>
             ) : (
               <ActionBar
-                correct={isCorrect}
-                message={isCorrect ? "Correct!" : "Not quite"}
-                detail={explanation}
+                correct={answers[currentQ]}
+                message={answers[currentQ] ? "Correct!" : "Not quite"}
                 onNext={handleNext}
                 label={currentQ === questions.length - 1 ? "See Results" : "Next Question"}
               />

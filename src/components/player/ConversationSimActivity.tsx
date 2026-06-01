@@ -347,8 +347,8 @@ export default function ConversationSimActivity({ data, media, onComplete }: Pro
             </button>
           ) : (
             <ActionBar
-              correct={isCorrect}
-              message={isCorrect ? "Great choice!" : "Good effort!"}
+              correct={turn?.studentOptions?.[selectedOption!]?.isCorrect ?? false}
+              message={turn?.studentOptions?.[selectedOption!]?.isCorrect ? "Great choice!" : "Good effort!"}
               detail={feedback || undefined}
               onNext={handleContinue}
               label="Continue"
