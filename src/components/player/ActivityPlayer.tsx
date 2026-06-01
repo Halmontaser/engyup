@@ -257,6 +257,35 @@ export default function ActivityPlayer({ activity, media, onComplete, showContro
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Compensates Dialog */}
+      <AnimatePresence>
+        {showCompensates && activity.compensates && (
+          <motion.div
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 20, scale: 0.95 }}
+            transition={{ duration: 0.2 }}
+            className="fixed bottom-20 right-6 z-50 w-80 bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden"
+          >
+            <div className="flex items-center justify-between px-4 py-3 bg-gradient-to-r from-emerald-50 to-teal-50 border-b border-slate-200">
+              <h4 className="font-bold text-slate-700 text-sm flex items-center gap-2">
+                <Gift size={14} className="text-emerald-500" />
+                Compensates
+              </h4>
+              <button
+                onClick={() => setShowCompensates(false)}
+                className="text-slate-400 hover:text-slate-600 transition-colors p-1"
+              >
+                <X size={16} />
+              </button>
+            </div>
+            <div className="p-4">
+              <p className="text-sm text-slate-600 leading-relaxed">{activity.compensates}</p>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
