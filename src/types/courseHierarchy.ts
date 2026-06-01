@@ -39,6 +39,10 @@ export interface LessonNode {
   description: string;
   activities: ActivityNode[];
   completed?: boolean;
+  objectives?: string | null;
+  vocabulary?: string | null;
+  language_focus?: string | null;
+  cover_image_src?: string | null;
 }
 
 export interface ModuleNode {

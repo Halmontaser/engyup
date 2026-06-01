@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { X, Check, ChevronRight, ChevronDown, Trophy, Heart, ChevronLeft, Edit, Sparkles, Star, Zap, ArrowRight } from 'lucide-react';
 import ActivityPlayer from './ActivityPlayer';
 import LessonSidebar from './LessonSidebar';
+import IntroSlide from './IntroSlide';
 import MilestoneSlide, { type MilestoneType } from './MilestoneSlide';
 import { getMediaUrl } from "@/utils/assets";
 import { stopAllAudio } from "@/utils/audio";
@@ -147,7 +148,7 @@ export default function LessonPlayer({
   const total = currentActivities.length;
   const completedCount = currentActivities.filter(a => a.completed).length;
   const progress = total > 0 ? (position.activityIndex / total) * 100 : 0;
-  const isFinished = position.activityIndex >= total;
+  const isFinished = position.activityIndex >= 0 && position.activityIndex >= total;
 
   const handleBack = () => {
     if (onBack) {
@@ -244,7 +245,8 @@ export default function LessonPlayer({
 
   const handleNavigateToLesson = (lessonId: string) => {
     if (onNavigate) {
-      onNavigate(courseHierarchy.id, lessonId);
+      // Navigate to intro slide of the new lesson
+      onNavigate(courseHierarchy.id, lessonId, -1);
     }
   };
 
@@ -367,7 +369,8 @@ export default function LessonPlayer({
     );
   }
 
-  if (!currentActivity) {
+  // Only show "no activities" if we're not on the intro slide
+  if (!currentActivity && position.activityIndex !== -1) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-cyan-50/20 p-8">
         <motion.div
@@ -574,12 +577,30 @@ export default function LessonPlayer({
             </div>
 
             <div className="w-full">
-              <ActivityPlayer
-                activity={currentActivity}
-                media={currentActivity.media}
-                onComplete={handleComplete}
-                showControls={position.activityIndex === 0}
-              />
+              {position.activityIndex === -1 && currentLesson ? (
+                <IntroSlide
+                  lesson={currentLesson}
+                  lessonNumber={lessonNumber}
+                  onStart={() => {
+                    const firstActivity = currentActivities[0];
+                    setPosition(prev => ({
+                      ...prev,
+                      activityId: firstActivity?.id || '',
+                      activityIndex: 0,
+                    }));
+                    setIsEvaluated(false);
+                    setIsCorrect(null);
+                    setCanContinue(false);
+                  }}
+                />
+              ) : (
+                <ActivityPlayer
+                  activity={currentActivity}
+                  media={currentActivity.media}
+                  onComplete={handleComplete}
+                  showControls={position.activityIndex === 0}
+                />
+              )}
             </div>
           </motion.div>
         </AnimatePresence>

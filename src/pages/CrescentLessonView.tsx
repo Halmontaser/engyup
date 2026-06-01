@@ -51,8 +51,10 @@ export function CrescentLessonView() {
           const firstIncomplete = lesson.activities.findIndex(a => !a.completed);
           const activityIndex = (state?.activityIndex !== undefined)
             ? state.activityIndex
-            : (firstIncomplete >= 0 ? firstIncomplete : 0);
-          const activity = lesson.activities[activityIndex] || lesson.activities[0];
+            : -1; // Start with intro slide
+          const activity = activityIndex >= 0
+            ? (lesson.activities[activityIndex] || lesson.activities[0])
+            : (lesson.activities[0] || null);
 
           setCurrentPosition({
             moduleId: mod.id,
@@ -80,7 +82,8 @@ export function CrescentLessonView() {
   }, [hierarchy, lessonId, location.state]);
 
   const handleNavigate = useCallback((newCourseId: string, newLessonId: string, activityIndex?: number) => {
-    navigate(`/learn/${newCourseId}/${newLessonId}`, { state: { activityIndex } });
+    // activityIndex -1 means show intro slide
+    navigate(`/learn/${newCourseId}/${newLessonId}`, { state: { activityIndex: activityIndex ?? -1 } });
   }, [navigate]);
 
   const handleLessonComplete = useCallback(async (completedLessonId: string) => {

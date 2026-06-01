@@ -213,7 +213,7 @@ export async function getCourseHierarchyWithProgress(
       modules(
         id, title, order_index,
         lessons(
-          id, title, order_index, description,
+          id, title, order_index, description, objectives, language_focus, vocabulary, cover_image_src,
           activities(activity_id, lesson_id, activity_type, title, instruction, content, compensates, order_index, difficulty, book_type, book_page, is_required, xp_reward, time_estimate_minutes)
         )
       )
@@ -275,6 +275,10 @@ export async function getCourseHierarchyWithProgress(
             title: lesson.title || '',
             order_index: lesson.order_index ?? 0,
             description: lesson.description || '',
+            objectives: lesson.objectives || null,
+            vocabulary: lesson.vocabulary || null,
+            language_focus: lesson.language_focus || null,
+            cover_image_src: lesson.cover_image_src || null,
             activities,
             completed: lessonCompleted || (activities.length > 0 && activities.every(a => a.completed)),
           };
