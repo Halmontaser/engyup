@@ -130,8 +130,8 @@ export default function GapFillActivity({ data, media, onComplete }: Props) {
               className="group bg-white rounded-2xl p-5 border border-slate-200 hover:border-slate-300 shadow-sm transition-all"
             >
               {/* Sentence number */}
-              <span className="inline-block mb-3 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-                Sentence {sIdx + 1}
+              <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-slate-100 text-[11px] font-bold text-slate-500 mb-3">
+                {sIdx + 1}
               </span>
 
               <div className="text-lg leading-relaxed font-medium text-slate-700">
