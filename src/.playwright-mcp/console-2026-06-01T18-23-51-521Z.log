@@ -1,0 +1,7 @@
+[     703ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=64e0f66e:20102
+[     882ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ http://localhost:3000/login:0
+[     883ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/favicon.ico:0
+[    1025ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/login:0
+[  181110ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://msttsebafjgzllyabsid.supabase.co/auth/v1/token?grant_type=password:0
+[  884262ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://msttsebafjgzllyabsid.supabase.co/auth/v1/token?grant_type=password:0
+[  902588ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://msttsebafjgzllyabsid.supabase.co/auth/v1/token?grant_type=password:0

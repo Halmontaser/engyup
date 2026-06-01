@@ -1,6 +1,5 @@
 /**
- * Clean match-pairs data: remove imgUrl/audioUrl from pair items.
- * Keeps only: left, right, leftImage, rightImage, leftAudio, rightAudio
+ * Clean ALL match-pairs: strip image/audio fields, keep only text (left, right).
  *
  * Usage:
  *   export SUPABASE_SERVICE_ROLE_KEY="eyJh..."
@@ -17,7 +16,8 @@ const DRY_RUN = process.argv.includes("--dry-run");
 if (!SUPABASE_KEY) { console.error("❌ Set SUPABASE_SERVICE_ROLE_KEY"); process.exit(1); }
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
-const VALID_KEYS = new Set(["left", "right", "leftImage", "rightImage", "leftAudio", "rightAudio"]);
+// Strip everything except left/right text
+const STRIP_KEYS = ["imgUrl", "audioUrl", "leftImage", "rightImage", "leftAudio", "rightAudio"];
 
 async function main() {
   const { data: activities, error } = await supabase
@@ -34,22 +34,17 @@ async function main() {
     const pairs = act.content?.pairs;
     if (!Array.isArray(pairs)) continue;
 
-    let changed = false;
     const fixed = pairs.map((p: any) => {
       const clean: any = {};
-      for (const key of VALID_KEYS) {
-        if (p[key] !== undefined && p[key] !== null && p[key] !== "") {
-          clean[key] = p[key];
-        }
-      }
-      // Only mark changed if we dropped keys
-      if (Object.keys(p).length !== Object.keys(clean).length) changed = true;
+      if (p.left) clean.left = p.left;
+      if (p.right) clean.right = p.right;
       return clean;
     });
 
-    if (!changed) continue;
-
-    const dropped = pairs[0] ? Object.keys(pairs[0]).filter(k => !VALID_KEYS.has(k)) : [];
+    // Check if anything changed
+    const before = JSON.stringify(pairs);
+    const after = JSON.stringify(fixed);
+    if (before === after) continue;
 
     if (!DRY_RUN) {
       const { error: upErr } = await supabase
@@ -57,14 +52,14 @@ async function main() {
         .update({ content: { ...act.content, pairs: fixed } })
         .eq("activity_id", act.activity_id);
       if (upErr) console.log(`  ❌ ${act.activity_id}: ${upErr.message}`);
-      else console.log(`  ✅ ${act.title || act.activity_id} — removed: ${dropped.join(", ")}`);
+      else console.log(`  ✅ ${act.title || act.activity_id}`);
     } else {
-      console.log(`  [DRY RUN] ${act.title || act.activity_id} — would remove: ${dropped.join(", ")}`);
+      console.log(`  [DRY RUN] ${act.title || act.activity_id}`);
     }
     cleaned++;
   }
 
-  console.log(`\n✅ ${cleaned} match-pairs activities cleaned${DRY_RUN ? " (dry run)" : ""}`);
+  console.log(`\n✅ ${cleaned} match-pairs cleaned${DRY_RUN ? " (dry run)" : ""}`);
 }
 
 main().catch(console.error);

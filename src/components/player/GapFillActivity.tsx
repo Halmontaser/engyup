@@ -3,6 +3,7 @@ import { useState, useMemo, useCallback } from "react";
 import { motion } from "motion/react";
 import { Check, RotateCcw } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
+import ActionBar from "./ActionBar";
 
 interface Props {
   data: any;
@@ -217,25 +218,24 @@ export default function GapFillActivity({ data, media, onComplete }: Props) {
 
       {/* Auto-check when all blanks filled */}
       {allBlanksFilled && !isChecked && (
-        <div className="mt-6 flex justify-center">
+        <div className="mt-6">
           <button
             onClick={handleCheck}
-            className="btn-accent px-8 py-3 text-base font-bold"
+            className="w-full py-3.5 rounded-xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white shadow-lg shadow-indigo-200 transition-all"
           >
-            Submit Answer
+            Submit Answers
           </button>
         </div>
       )}
 
-      {/* Reset after check */}
       {isChecked && (
-        <div className="mt-6 flex justify-center">
-          <button
-            onClick={handleReset}
-            className="btn-ghost flex items-center gap-2"
-          >
-            <RotateCcw size={18} /> Try Again
-          </button>
+        <div className="mt-6">
+          <ActionBar
+            correct={score === sentences.length}
+            message={`${score} of ${sentences.length} correct`}
+            onNext={handleReset}
+            label="Try Again"
+          />
         </div>
       )}
     </div>

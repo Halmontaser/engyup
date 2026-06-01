@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
+import ActionBar from "./ActionBar";
 
 interface Props {
   data: any;
@@ -247,12 +248,12 @@ export default function PictureDescriptionActivity({ data, media, onComplete }: 
                   : "Show All Sample Answers"}
               </button>
               {answeredCount >= promptQuestions.length && onComplete && (
-                <button
-                  onClick={() => onComplete?.(true)}
-                  className="btn-accent flex items-center gap-2 text-sm"
-                >
-                  Finish Activity <ChevronRight size={16} />
-                </button>
+                <ActionBar
+                  correct={true}
+                  message="All questions answered!"
+                  onNext={() => onComplete?.(true)}
+                  label="Finish Activity"
+                />
               )}
             </div>
           )}

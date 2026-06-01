@@ -6,6 +6,7 @@ import { Check, X, RotateCcw, Volume2 } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
+import ActionBar from "./ActionBar";
 
 interface Props {
   data: any;
@@ -213,10 +214,24 @@ export default function CategorySortActivity({ data, media, onComplete }: Props)
 
       {/* Check button */}
       {allSorted && !isChecked && (
-        <div className="mt-8 flex justify-end">
-          <button onClick={handleCheck} className="btn-accent">
+        <div className="mt-8">
+          <button
+            onClick={handleCheck}
+            className="w-full py-3.5 rounded-xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white shadow-lg shadow-indigo-200 transition-all"
+          >
             Check Answers
           </button>
+        </div>
+      )}
+      {isChecked && (
+        <div className="mt-6">
+          <ActionBar
+            correct={true}
+            message={`${correctCount} of ${allItems.length} correct`}
+            detail="Great work! Review any mismatches above."
+            onNext={() => {}}
+            label="Done"
+          />
         </div>
       )}
     </div>

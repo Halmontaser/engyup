@@ -13,6 +13,7 @@ import {
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
+import ActionBar from "./ActionBar";
 
 interface Option {
   text: string;
@@ -249,18 +250,18 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
             {questions.length > 0 ? (
               <button
                 onClick={() => setPhase("quiz")}
-                className="btn-accent flex items-center gap-2"
+                className="px-5 py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white shadow-lg shadow-indigo-200 transition-all"
               >
                 Start Questions
-                <ChevronRight size={20} />
+                <ChevronRight size={18} className="inline ml-1" />
               </button>
             ) : (
               <button
                 onClick={handleFinishOnly}
-                className="btn-accent flex items-center gap-2"
+                className="px-5 py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white shadow-lg shadow-emerald-200 transition-all"
               >
                 Complete Activity
-                <ChevronRight size={20} />
+                <ChevronRight size={18} className="inline ml-1" />
               </button>
             )}
           </div>
@@ -403,23 +404,23 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
             })}
           </div>
 
-          <div className="mt-10 flex justify-end">
+          <div className="mt-8">
             {!isChecked ? (
               <button
                 onClick={handleCheck}
                 disabled={selected === null}
-                className="btn-accent"
+                className="w-full py-3.5 rounded-xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white shadow-lg shadow-indigo-200 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
               >
                 Check Answer
               </button>
             ) : (
-              <button
-                onClick={handleNext}
-                className="btn-accent flex items-center gap-2"
-              >
-                {currentQ === questions.length - 1 ? "See Results" : "Next Question"}
-                <ChevronRight size={20} />
-              </button>
+              <ActionBar
+                correct={isCorrect}
+                message={isCorrect ? "Correct!" : "Not quite"}
+                detail={explanation}
+                onNext={handleNext}
+                label={currentQ === questions.length - 1 ? "See Results" : "Next Question"}
+              />
             )}
           </div>
         </motion.div>

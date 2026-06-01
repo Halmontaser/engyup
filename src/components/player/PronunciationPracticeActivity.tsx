@@ -6,6 +6,7 @@ import { ActivityMedia } from "./ActivityPlayer";
 import { Tooltip } from "@/components/ui/Tooltip";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
+import ActionBar from "./ActionBar";
 
 // Constants
 const SPEECH_RATE = 0.8;
@@ -167,12 +168,12 @@ export default function PronunciationPracticeActivity({ data, media, onComplete 
             You practiced <span className="font-bold text-[var(--success)]">{practiced.size}</span> out of <span className="font-bold">{words.length}</span> words.
           </p>
           <div className="flex justify-center gap-4 mt-8">
-            <button onClick={handleReset} className="btn-ghost flex items-center gap-2">
-              <RotateCcw size={18} /> Practice Again
+            <button onClick={handleReset} className="px-5 py-3 rounded-xl font-medium text-sm text-slate-500 hover:bg-slate-100 transition-all">
+              <RotateCcw size={16} className="inline mr-1.5" /> Practice Again
             </button>
             {onComplete && (
-              <button onClick={() => onComplete(true)} className="btn-accent flex items-center gap-2">
-                Finish Activity <ChevronRight size={18} />
+              <button onClick={() => onComplete(true)} className="px-5 py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white shadow-lg shadow-emerald-200 transition-all">
+                Finish Activity <ChevronRight size={16} />
               </button>
             )}
           </div>
@@ -255,16 +256,16 @@ export default function PronunciationPracticeActivity({ data, media, onComplete 
           </div>
 
           <div className="flex items-center justify-between px-8 py-5 border-t border-[var(--border)] bg-[var(--background)]/50">
-            <button onClick={handlePrev} disabled={currentIndex === 0} className="btn-ghost flex items-center gap-2 text-sm disabled:opacity-30">
-              <ChevronLeft size={18} /> Previous
+            <button onClick={handlePrev} disabled={currentIndex === 0} className="px-3 py-2 rounded-lg text-xs font-medium text-slate-500 hover:bg-slate-100 transition-all disabled:opacity-30">
+              <ChevronLeft size={16} className="inline mr-1" /> Previous
             </button>
             <div className="flex gap-1.5">
               {words.map((_, i) => (
                 <div key={i} className={`w-2.5 h-2.5 rounded-full ${i === currentIndex ? "bg-[var(--accent)] scale-125" : practiced.has(i) ? "bg-[var(--success)]" : "bg-[var(--border)]"}`} />
               ))}
             </div>
-            <button onClick={handleNext} className="btn-accent flex items-center gap-2 text-sm">
-              {currentIndex === words.length - 1 ? "Finish" : "Next"} <ChevronRight size={18} />
+            <button onClick={handleNext} className="px-4 py-2 rounded-xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white shadow-lg shadow-indigo-200 transition-all">
+              {currentIndex === words.length - 1 ? "Finish" : "Next"} <ChevronRight size={16} />
             </button>
           </div>
         </motion.div>

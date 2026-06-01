@@ -6,6 +6,7 @@ import { ActivityMedia, ActivityMediaEntry } from "./ActivityPlayer";
 import { Tooltip } from "@/components/ui/Tooltip";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
+import ActionBar from "./ActionBar";
 
 // Constants
 const SPEECH_RATE = 0.8;
@@ -327,16 +328,21 @@ export default function FlashcardActivity({ data, media, onComplete }: Flashcard
           </button>
         </Tooltip>
         <Tooltip content={currentIndex === items.length - 1 ? "Complete flashcard activity" : "Go to next card"}>
-          <button
-            onClick={handleNext}
-            className={`flex items-center gap-2 font-medium transition-colors ${
-              currentIndex === items.length - 1
-                ? 'btn-accent px-4 py-2'
-                : 'text-muted hover:text-foreground'
-            }`}
-          >
-            {currentIndex === items.length - 1 ? 'Complete' : 'Next'} <ChevronRight size={18} />
-          </button>
+          {currentIndex === items.length - 1 ? (
+            <button
+              onClick={handleNext}
+              className="px-4 py-2 rounded-xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white shadow-lg shadow-indigo-200 transition-all"
+            >
+              Complete <ChevronRight size={16} />
+            </button>
+          ) : (
+            <button
+              onClick={handleNext}
+              className="flex items-center gap-2 font-medium text-muted hover:text-foreground transition-colors"
+            >
+              Next <ChevronRight size={18} />
+            </button>
+          )}
         </Tooltip>
       </div>
     </div>

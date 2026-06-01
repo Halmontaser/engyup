@@ -6,6 +6,7 @@ import { MapPin, Check, Eye, Volume2 } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
+import ActionBar from "./ActionBar";
 
 interface Props {
   data: any;
@@ -174,17 +175,18 @@ export default function ImageLabelActivity({ data, media, onComplete }: Props) {
             <button
               onClick={handleCheck}
               disabled={Object.keys(inputs).length < hotspots.length}
-              className="btn-accent"
+              className="px-6 py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white shadow-lg shadow-indigo-200 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
             >
               Check Answers
             </button>
           </>
         ) : (
-          <div className="w-full text-center text-muted text-sm">
-            {correctCount === hotspots.length
-              ? "Perfect score!"
-              : "Review the correct answers above."}
-          </div>
+          <ActionBar
+            correct={correctCount === hotspots.length}
+            message={correctCount === hotspots.length ? "Perfect score!" : `${correctCount} of ${hotspots.length} correct`}
+            onNext={() => {}}
+            label="Done"
+          />
         )}
       </div>
 

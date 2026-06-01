@@ -6,6 +6,7 @@ import { Check, ArrowUpDown, RotateCcw, Volume2 } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
+import ActionBar from "./ActionBar";
 
 interface Props {
   data: any;
@@ -207,14 +208,25 @@ export default function ReadingSequenceActivity({ data, media, onComplete }: Pro
       <div className="mt-8 flex items-center justify-between">
         <button
           onClick={handleReset}
-          className="btn-ghost flex items-center gap-2 text-sm"
+          className="px-4 py-2.5 rounded-xl font-medium text-xs text-slate-500 hover:bg-slate-100 transition-all"
         >
-          <RotateCcw size={14} /> Reset
+          <RotateCcw size={14} className="inline mr-1.5" /> Reset
         </button>
         {!isChecked && (
-          <button onClick={handleCheck} className="btn-accent">
+          <button
+            onClick={handleCheck}
+            className="px-6 py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white shadow-lg shadow-indigo-200 transition-all"
+          >
             Check Order
           </button>
+        )}
+        {isChecked && (
+          <ActionBar
+            correct={isCorrect}
+            message={isCorrect ? "Correct order!" : "Not quite — review the sequence."}
+            onNext={handleReset}
+            label="Try Again"
+          />
         )}
       </div>
     </div>

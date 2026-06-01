@@ -1,0 +1,23 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - img "Engy Up" [ref=e39]
+    - paragraph [ref=e6]: Interactive English Learning Platform
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - button "Sign In" [ref=e10] [cursor=pointer]
+      - button "Sign Up" [ref=e11] [cursor=pointer]
+    - generic [ref=e40]: missing email or phone
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - img [ref=e14]
+        - textbox "Email address" [ref=e17]: harby@test.com
+      - generic [ref=e18]:
+        - img [ref=e19]
+        - textbox "Password" [ref=e22]: test123456
+        - button [ref=e23] [cursor=pointer]:
+          - img [ref=e24]
+      - button "Sign In" [ref=e27] [cursor=pointer]
+    - generic [ref=e30]: or
+    - button "Continue with Google" [ref=e33] [cursor=pointer]:
+      - img [ref=e34]
+      - text: Continue with Google

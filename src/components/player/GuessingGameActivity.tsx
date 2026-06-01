@@ -209,7 +209,7 @@ export default function GuessingGameActivity({ data, media, onComplete }: Props)
             <button
               onClick={handleGuess}
               disabled={!guess.trim()}
-              className="btn-accent px-8"
+              className="px-6 py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white shadow-lg shadow-purple-200 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
             >
               Guess
             </button>

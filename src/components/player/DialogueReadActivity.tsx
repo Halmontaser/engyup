@@ -4,6 +4,7 @@ import { MessageCircle, ChevronRight, Volume2 } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
+import ActionBar from "./ActionBar";
 
 interface Props {
   data: any;
@@ -203,21 +204,19 @@ export default function DialogueReadActivity({ data, media, onComplete }: Props)
               </button>
               <button
                 onClick={handleRevealNext}
-                className="btn-accent flex items-center gap-2 text-sm"
+                className="px-4 py-2.5 rounded-xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white shadow-lg shadow-indigo-200 transition-all"
               >
                 Next Line <ChevronRight size={16} />
               </button>
             </div>
           </>
         ) : (
-          <div className="w-full flex justify-center">
-            <button
-              onClick={() => onComplete?.(true)}
-              className="btn-accent px-8 py-3 text-base font-bold"
-            >
-              Complete
-            </button>
-          </div>
+          <ActionBar
+            correct={true}
+            message="Dialogue complete!"
+            onNext={() => onComplete?.(true)}
+            label="Complete"
+          />
         )}
       </div>
     </div>

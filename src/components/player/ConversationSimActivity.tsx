@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
+import ActionBar from "./ActionBar";
 
 interface StudentOption {
   text: string;
@@ -161,16 +162,16 @@ export default function ConversationSimActivity({ data, media, onComplete }: Pro
             <div className="flex justify-center gap-4 mt-8">
               <button
                 onClick={handleRestart}
-                className="btn-ghost flex items-center gap-2"
+                className="px-5 py-3 rounded-xl font-medium text-sm text-slate-500 hover:bg-slate-100 transition-all"
               >
-                <RotateCcw size={18} /> Try Again
+                <RotateCcw size={16} className="inline mr-1.5" /> Try Again
               </button>
               {onComplete && (
                 <button
                   onClick={() => onComplete?.(true)}
-                  className="btn-accent flex items-center gap-2"
+                  className="px-5 py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white shadow-lg shadow-emerald-200 transition-all"
                 >
-                  Finish Activity <ChevronRight size={18} />
+                  Finish Activity <ChevronRight size={16} />
                 </button>
               )}
             </div>
@@ -340,18 +341,18 @@ export default function ConversationSimActivity({ data, media, onComplete }: Pro
             <button
               onClick={handleSubmit}
               disabled={selectedOption === null}
-              className="btn-accent"
+              className="px-6 py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white shadow-lg shadow-indigo-200 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
             >
               Submit
             </button>
           ) : (
-            <button
-              onClick={handleContinue}
-              className="btn-accent flex items-center gap-2"
-            >
-              Continue
-              <ChevronRight size={18} />
-            </button>
+            <ActionBar
+              correct={isCorrect}
+              message={isCorrect ? "Great choice!" : "Good effort!"}
+              detail={feedback || undefined}
+              onNext={handleContinue}
+              label="Continue"
+            />
           )}
         </div>
       </div>

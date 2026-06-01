@@ -54,15 +54,31 @@ async function main() {
 
   if (error) { console.error("❌", error.message); process.exit(1); }
 
-  const { data: lessons } = await supabase.from("lessons").select("id, order_index, module_id").limit(500);
+  const { data: lessons } = await supabase.from("lessons").select("id, title, order_index, module_id").limit(500);
   const { data: modules } = await supabase.from("modules").select("id, order_index").limit(50);
 
+  // Build sorted lesson list per module to derive correct lesson number (1-based position)
   const modUnit = new Map<string, number>();
-  if (modules) for (const m of modules as any[]) modUnit.set(m.id, m.order_index || 1);
+  const modLessons = new Map<string, any[]>();
+  if (modules) for (const m of modules as any[]) {
+    modUnit.set(m.id, m.order_index || 1);
+    modLessons.set(m.id, []);
+  }
+  if (lessons) for (const l of lessons as any[]) {
+    const arr = modLessons.get(l.module_id);
+    if (arr) arr.push(l);
+  }
 
+  // Sort each module's lessons by order_index, then assign 1-based position
   const lessonKeyMap = new Map<string, string>();
-  if (lessons) for (const l of lessons as any[])
-    lessonKeyMap.set(l.id, `g10-${modUnit.get(l.module_id) || 1}.${l.order_index || 0}`);
+  for (const [modId, ls] of modLessons) {
+    ls.sort((a: any, b: any) => (a.order_index || 0) - (b.order_index || 0));
+    const unitNum = modUnit.get(modId) || 1;
+    ls.forEach((l: any, pos: number) => {
+      const lessonNum = pos + 1; // 1-based position in module
+      lessonKeyMap.set(l.id, `g10-${unitNum}.${lessonNum}`);
+    });
+  }
 
   console.log(`🔍 Checking ${activities.length} flashcard activities...\n`);
 

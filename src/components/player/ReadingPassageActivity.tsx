@@ -4,6 +4,7 @@ import { BookOpen, ChevronDown, ChevronUp } from "lucide-react";
 
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
+import ActionBar from "./ActionBar";
 
 interface Props {
   data: any;
@@ -103,12 +104,12 @@ export default function ReadingPassageActivity({ data, media, onComplete }: Prop
               ))}
               {questions.length > 0 && onComplete && (
                 <div className="mt-6 flex justify-end">
-                  <button
-                    onClick={() => onComplete?.(true)}
-                    className="btn-accent"
-                  >
-                    Finish Reading
-                  </button>
+                  <ActionBar
+                    correct={true}
+                    message="Reading complete!"
+                    onNext={() => onComplete?.(true)}
+                    label="Finish Reading"
+                  />
                 </div>
               )}
             </div>
