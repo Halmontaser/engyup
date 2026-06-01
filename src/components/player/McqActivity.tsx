@@ -5,6 +5,7 @@ import { CheckCircle2, XCircle, ChevronRight, HelpCircle, Volume2 } from "lucide
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
+import ActionBar from "./ActionBar";
 
 interface Props {
   data: any;
@@ -155,106 +156,96 @@ export default function McqActivity({ data, media, onComplete }: Props) {
             );
           })()}
 
-          {/* Options */}
-          <div className="space-y-2">
+          {/* Options — 2-column grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
             {currentQ.options.map((opt: any, i: number) => {
               const text = isComplex ? (opt.text || opt.label) : opt;
               const optImg = isComplex ? (opt.image || opt.imgUrl) : null;
               const optAudio = isComplex ? opt.audio : null;
               const isCorrect = isComplex ? opt.isCorrect : text === currentQ.answer;
+              const letter = String.fromCharCode(65 + i); // A, B, C, D
 
-              let stateClass = "bg-slate-50 border-slate-200 hover:border-blue-300 hover:bg-blue-50 text-slate-700";
+              let stateClass = "bg-white border-slate-200 hover:border-indigo-300 hover:bg-indigo-50/50 hover:shadow-md text-slate-700";
               if (showFeedback) {
                 if (i === selectedOption) {
                   stateClass = isCorrect
-                    ? "bg-emerald-50 border-emerald-500 text-emerald-900 shadow-sm"
-                    : "bg-red-50 border-red-500 text-red-900 shadow-sm";
+                    ? "bg-emerald-50 border-emerald-400 ring-2 ring-emerald-200 text-emerald-900 shadow-md"
+                    : "bg-red-50 border-red-400 ring-2 ring-red-200 text-red-900 shadow-md";
                 } else if (isCorrect) {
-                  stateClass = "bg-emerald-50/50 border-emerald-300 text-emerald-800";
+                  stateClass = "bg-emerald-50/40 border-emerald-300 text-emerald-800";
                 } else {
-                  stateClass = "bg-slate-50 border-slate-200 opacity-50";
+                  stateClass = "bg-slate-50 border-slate-200 opacity-40";
                 }
               }
 
               return (
-                <button
+                <motion.button
                   key={i}
                   disabled={showFeedback}
                   onClick={() => handleSelect(i)}
-                  className={`w-full text-left p-3 md:p-4 rounded-xl border-2 transition-all font-medium text-sm md:text-base flex items-center justify-between ${stateClass}`}
+                  whileHover={showFeedback ? {} : { scale: 1.02, y: -1 }}
+                  whileTap={showFeedback ? {} : { scale: 0.98 }}
+                  className={`group w-full text-left p-3 rounded-xl border-2 transition-all duration-200 flex items-start gap-3 ${stateClass}`}
                 >
-                  <div className="flex flex-col gap-2 w-full mr-3">
+                  {/* Letter badge */}
+                  <span className={`shrink-0 w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold transition-colors ${
+                    showFeedback && i === selectedOption
+                      ? isCorrect ? "bg-emerald-500 text-white" : "bg-red-500 text-white"
+                      : "bg-slate-100 text-slate-500 group-hover:bg-indigo-100 group-hover:text-indigo-600"
+                  }`}>
+                    {letter}
+                  </span>
+
+                  {/* Content */}
+                  <div className="flex-1 min-w-0">
                     {optImg ? (
                       <img
                         src={getMediaUrl(optImg)}
-                        alt={text || `Option ${i + 1}`}
-                        className="max-h-20 rounded-lg object-contain bg-white border border-slate-100"
+                        alt={text || `Option ${letter}`}
+                        className="w-full max-h-28 rounded-lg object-contain bg-slate-50 border border-slate-100 mb-1.5"
                         loading="lazy"
                         onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
                       />
                     ) : optAudio ? (
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-2 mb-1">
                         <button
                           onClick={(e) => { e.stopPropagation(); handlePlayAudio(optAudio); }}
-                          className={`p-1.5 rounded-full transition-all ${isSpeaking ? "bg-blue-500 text-white" : "text-muted hover:text-blue-500"}`}
+                          className={`shrink-0 p-2 rounded-full transition-all ${isSpeaking ? "bg-indigo-500 text-white" : "bg-indigo-50 text-indigo-500 hover:bg-indigo-100"}`}
                         >
                           <Volume2 size={14} />
                         </button>
-                        <audio controls src={getMediaUrl(optAudio.startsWith('http') ? optAudio : `/audio/${optAudio}`)} className="w-full max-w-[200px]" />
+                        <audio controls src={getMediaUrl(optAudio.startsWith('http') ? optAudio : `/audio/${optAudio}`)} className="w-full max-w-[160px] h-8" />
                       </div>
-                    ) : (
-                      text && <span>{text}</span>
-                    )}
+                    ) : null}
+                    {text && <span className="text-sm font-semibold leading-snug">{text}</span>}
                   </div>
+
+                  {/* Feedback icon */}
                   {showFeedback && i === selectedOption && (
-                    <div className="shrink-0">
-                      {isCorrect ? <CheckCircle2 className="text-emerald-500" size={24} /> : <XCircle className="text-red-500" size={24} />}
+                    <div className="shrink-0 self-center">
+                      {isCorrect
+                        ? <CheckCircle2 className="text-emerald-500" size={22} />
+                        : <XCircle className="text-red-500" size={22} />
+                      }
                     </div>
                   )}
-                </button>
+                </motion.button>
               );
             })}
           </div>
 
-          {/* Feedback Area */}
+          {/* Feedback + Action Bar */}
           <AnimatePresence>
             {showFeedback && (
-              <motion.div
-                initial={{ opacity: 0, height: 0, marginTop: 0 }}
-                animate={{ opacity: 1, height: "auto", marginTop: 16 }}
-                className="overflow-hidden"
-              >
-                <div className={`p-4 rounded-xl border ${
-                  (isComplex ? currentQ.options[selectedOption!].isCorrect : currentQ.options[selectedOption!] === currentQ.answer)
-                    ? "bg-emerald-50 border-emerald-100 text-emerald-800"
-                    : "bg-orange-50 border-orange-100 text-orange-800"
-                }`}>
-                  <div className="flex items-start gap-3">
-                    <HelpCircle className="shrink-0 mt-0.5" size={18} />
-                    <div>
-                      <h4 className="font-bold text-sm mb-1">
-                        {(isComplex ? currentQ.options[selectedOption!].isCorrect : currentQ.options[selectedOption!] === currentQ.answer)
-                          ? "Correct!" : "Not quite right."}
-                      </h4>
-                      <p className="opacity-90 text-sm">
-                        {isComplex && currentQ.options[selectedOption!].feedback
-                          ? currentQ.options[selectedOption!].feedback
-                          : currentQ.explanation || "Review the lesson text if you are unsure."}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-4 flex justify-end">
-                  <button
-                    onClick={handleNext}
-                    className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-bold text-sm transition shadow-md shadow-blue-200"
-                  >
-                    {currentIndex === questions.length - 1 ? "Finish" : "Next"}
-                    <ChevronRight size={18} />
-                  </button>
-                </div>
-              </motion.div>
+              <ActionBar
+                correct={(isComplex ? currentQ.options[selectedOption!].isCorrect : currentQ.options[selectedOption!] === currentQ.answer)}
+                message={isComplex && currentQ.options[selectedOption!]?.isCorrect ? "🎉 Correct!" : undefined}
+                detail={isComplex && currentQ.options[selectedOption!]?.feedback
+                  ? currentQ.options[selectedOption!].feedback
+                  : currentQ.explanation || undefined}
+                onNext={handleNext}
+                label={currentIndex === questions.length - 1 ? "Finish" : "Next Question"}
+              />
             )}
           </AnimatePresence>
         </motion.div>

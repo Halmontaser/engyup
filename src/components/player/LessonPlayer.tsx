@@ -2,9 +2,10 @@
 
 import { useState, useMemo, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Check, ChevronRight, ChevronDown, Trophy, Heart, ChevronLeft, Edit, Sparkles, Star, Zap } from 'lucide-react';
+import { X, Check, ChevronRight, ChevronDown, Trophy, Heart, ChevronLeft, Edit, Sparkles, Star, Zap, ArrowRight } from 'lucide-react';
 import ActivityPlayer from './ActivityPlayer';
 import LessonSidebar from './LessonSidebar';
+import MilestoneSlide, { type MilestoneType } from './MilestoneSlide';
 import { getMediaUrl } from "@/utils/assets";
 import { stopAllAudio } from "@/utils/audio";
 import { useAuth } from "@/context/AuthContext";
@@ -80,8 +81,31 @@ export default function LessonPlayer({
   const [sidebarExpanded, setSidebarExpanded] = useState(false);
   const [instructionExpanded, setInstructionExpanded] = useState(true);
   const [showConfetti, setShowConfetti] = useState(false);
+  const [consecutiveCorrect, setConsecutiveCorrect] = useState(0);
+  const [milestone, setMilestone] = useState<MilestoneType | null>(null);
   const { canEditActivities } = useAuth();
   const mainRef = useRef<HTMLDivElement>(null);
+
+  // 3-day streak tracking (localStorage)
+  useEffect(() => {
+    const today = new Date().toISOString().slice(0, 10);
+    const stored = localStorage.getItem("engyup-streak");
+    const data = stored ? JSON.parse(stored) : { dates: [] as string[], shown3: false };
+    if (!data.dates.includes(today)) {
+      data.dates.push(today);
+      // Keep only last 7 days
+      const recent = data.dates.filter((d: string) => {
+        const diff = (new Date(today).getTime() - new Date(d).getTime()) / 86400000;
+        return diff <= 6;
+      });
+      data.dates = recent;
+      if (recent.length >= 3 && !data.shown3) {
+        data.shown3 = true;
+        setTimeout(() => setMilestone("streak-3"), 1000);
+      }
+      localStorage.setItem("engyup-streak", JSON.stringify(data));
+    }
+  }, [isEvaluated]);
 
   // Auto-collapse instruction after 6 seconds
   useEffect(() => {
@@ -144,35 +168,54 @@ export default function LessonPlayer({
     const nextIndex = position.activityIndex + 1;
 
     if (nextIndex < total) {
-      // Move to next activity in same lesson
       setPosition(prev => ({
         ...prev,
         activityId: currentActivities[nextIndex].id,
         activityIndex: nextIndex,
       }));
     } else {
-      // All activities done in this lesson - try to move to next lesson
+      // Lesson complete!
+      onLessonComplete?.(position.lessonId);
+      setMilestone("lesson-complete");
+
+      // Check if module is complete (all lessons done)
+      if (currentModule && currentModule.lessons.every(l => l.completed || l.id === position.lessonId)) {
+        setTimeout(() => setMilestone("module-complete"), 2500);
+      }
+
       const next = findNextLesson(courseHierarchy, position.moduleId, position.lessonId);
       if (next && onNavigate) {
-        onLessonComplete?.(position.lessonId);
-        onNavigate(courseHierarchy.id, next.lesson.id);
+        setTimeout(() => onNavigate(courseHierarchy.id, next.lesson.id), 4500);
       } else {
-        // No more lessons - mark complete and show finished
-        onLessonComplete?.(position.lessonId);
         setShowConfetti(true);
         setTimeout(() => setShowConfetti(false), 4000);
-        setPosition(prev => ({ ...prev, activityIndex: nextIndex })); // trigger isFinished
+        setPosition(prev => ({ ...prev, activityIndex: nextIndex }));
       }
     }
   };
 
   const handleComplete = (correct?: boolean) => {
-    setIsCorrect(correct ?? true);
+    const isRight = correct !== false;
+    setIsCorrect(isRight);
     setIsEvaluated(true);
     setCanContinue(true);
 
-    if (correct !== false && currentActivity) {
-      onActivityComplete?.(currentActivity.id);
+    if (isRight) {
+      const newStreak = consecutiveCorrect + 1;
+      setConsecutiveCorrect(newStreak);
+
+      if (currentActivity) {
+        onActivityComplete?.(currentActivity.id);
+      }
+
+      // Check streak milestones (after a short delay so the action bar shows first)
+      if (newStreak === 5) {
+        setTimeout(() => setMilestone("streak-5"), 600);
+      } else if (newStreak === 10) {
+        setTimeout(() => setMilestone("streak-10"), 600);
+      }
+    } else {
+      setConsecutiveCorrect(0);
     }
   };
 
@@ -542,77 +585,130 @@ export default function LessonPlayer({
         </AnimatePresence>
       </main>
 
-      {/* FIXED BOTTOM ACTION BAR — Only show after check */}
-      {isEvaluated && (
-        <footer
-          className={`lesson-feedback-bar ${
-            isCorrect === false ? 'lesson-feedback-incorrect' : 'lesson-feedback-correct'
-          }`}
-        >
-          {/* Animated gradient accent line */}
-          <div className={`absolute top-0 left-0 right-0 h-[3px] ${
-            isCorrect === false
-              ? 'bg-gradient-to-r from-red-400 via-red-500 to-red-400'
-              : 'bg-gradient-to-r from-emerald-400 via-green-500 to-emerald-400'
-          }`} />
-
-          <div className="max-w-4xl w-full flex items-center justify-between gap-3 md:gap-4">
-            <motion.div
-              initial={{ x: -20, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ type: 'spring', stiffness: 300, damping: 25, delay: 0.1 }}
-              className={`flex items-center gap-2.5 md:gap-4 flex-1 min-w-0 ${isCorrect === false ? 'text-red-600' : 'text-emerald-700'}`}
-            >
-              {/* Animated icon circle */}
-              <motion.div
-                initial={{ scale: 0, rotate: -180 }}
-                animate={{ scale: 1, rotate: 0 }}
-                transition={{ type: 'spring', stiffness: 500, damping: 15, delay: 0.15 }}
-                className={`w-11 h-11 md:w-14 md:h-14 flex-shrink-0 rounded-full flex items-center justify-center shadow-lg ${
-                  isCorrect === false
-                    ? 'bg-gradient-to-br from-red-400 to-red-500 shadow-red-200'
-                    : 'bg-gradient-to-br from-emerald-400 to-green-500 shadow-green-200'
-                }`}
-              >
-                {isCorrect === false
-                  ? <X size={22} className="text-white md:hidden" strokeWidth={3} />
-                  : <Check size={22} className="text-white md:hidden" strokeWidth={3} />
-                }
-                {isCorrect === false
-                  ? <X size={28} className="text-white hidden md:block" strokeWidth={3} />
-                  : <Check size={28} className="text-white hidden md:block" strokeWidth={3} />
-                }
-              </motion.div>
-              <div className="flex-1 min-w-0">
-                <h3 className="font-black text-base md:text-xl leading-none">
-                  {isCorrect === false ? 'Incorrect' : 'Amazing Job!'}
-                </h3>
-                <p className="font-semibold opacity-70 text-[11px] md:text-sm mt-0.5 md:mt-1 truncate">
-                  {isCorrect === false ? 'Review and try again.' : 'Keep up the momentum!'}
-                </p>
+      {/* FIXED BOTTOM ACTION BAR */}
+      <AnimatePresence>
+        {isEvaluated && (
+          <motion.footer
+            initial={{ y: '100%', opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: '100%', opacity: 0 }}
+            transition={{ type: 'spring', stiffness: 350, damping: 32 }}
+            className="fixed bottom-0 left-0 right-0 z-40"
+          >
+            {/* Glass background */}
+            <div className={`backdrop-blur-xl border-t-2 ${
+              isCorrect === false
+                ? 'bg-red-50/90 border-red-200'
+                : 'bg-emerald-50/90 border-emerald-200'
+            }`}>
+              {/* Progress indicator */}
+              <div className="max-w-4xl mx-auto px-4 pt-3 pb-1">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-[10px] font-semibold text-slate-400 uppercase tracking-widest">
+                    Activity {position.activityIndex + 1} of {total}
+                  </span>
+                  <div className="flex items-center gap-1">
+                    {isCorrect === false ? (
+                      <span className="text-[10px] font-bold text-red-500">Try again</span>
+                    ) : (
+                      <span className="flex items-center gap-1 text-[10px] font-bold text-emerald-600">
+                        <Zap size={12} className="text-amber-500" />
+                        +{currentActivity.xp_reward || 10} XP
+                      </span>
+                    )}
+                  </div>
+                </div>
+                {/* Step dots */}
+                <div className="flex gap-1">
+                  {currentActivities.map((_, idx) => (
+                    <div
+                      key={idx}
+                      className={`flex-1 h-1 rounded-full transition-all duration-500 ${
+                        idx < position.activityIndex
+                          ? 'bg-emerald-400'
+                          : idx === position.activityIndex
+                          ? isCorrect === false ? 'bg-red-400' : 'bg-emerald-500'
+                          : 'bg-slate-200'
+                      }`}
+                    />
+                  ))}
+                </div>
               </div>
-            </motion.div>
 
-            <motion.button
-              initial={{ scale: 0.7, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ type: 'spring', stiffness: 400, damping: 20, delay: 0.2 }}
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
-              onClick={handleNext}
-              className={`lesson-continue-btn flex-shrink-0 min-w-[120px] md:min-w-[200px] h-12 md:h-14 text-sm md:text-base ${
-                isCorrect === false
-                  ? 'lesson-continue-btn-retry'
-                  : 'lesson-continue-btn-success'
-              }`}
-            >
-              <span className="flex items-center justify-center gap-2">
-                Continue
-                <ChevronRight size={18} className="md:w-5 md:h-5" />
-              </span>
-            </motion.button>
-          </div>
-        </footer>
+              {/* Main content */}
+              <div className="max-w-4xl mx-auto px-4 pb-4 pt-2 flex items-center gap-3 md:gap-4">
+                {/* Status icon */}
+                <motion.div
+                  initial={{ scale: 0, rotate: -180 }}
+                  animate={{ scale: 1, rotate: 0 }}
+                  transition={{ type: 'spring', stiffness: 500, damping: 15, delay: 0.1 }}
+                  className={`shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-2xl flex items-center justify-center shadow-lg ${
+                    isCorrect === false
+                      ? 'bg-gradient-to-br from-red-400 to-rose-500 shadow-red-200'
+                      : 'bg-gradient-to-br from-emerald-400 to-teal-500 shadow-emerald-200'
+                  }`}
+                >
+                  {isCorrect === false
+                    ? <X size={20} className="text-white md:w-6 md:h-6" strokeWidth={3} />
+                    : <Check size={20} className="text-white md:w-6 md:h-6" strokeWidth={3} />
+                  }
+                </motion.div>
+
+                {/* Message */}
+                <motion.div
+                  initial={{ x: -10, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 0.15 }}
+                  className="flex-1 min-w-0"
+                >
+                  <h3 className={`font-black text-sm md:text-lg leading-tight ${
+                    isCorrect === false ? 'text-red-700' : 'text-emerald-800'
+                  }`}>
+                    {isCorrect === false ? 'Not quite right' : 'Amazing Job! 🎉'}
+                  </h3>
+                  <p className="text-[11px] md:text-xs text-slate-500 font-medium mt-0.5">
+                    {isCorrect === false
+                      ? 'Don\'t worry — review and try again.'
+                      : position.activityIndex + 1 >= total
+                      ? 'Last activity — almost done!'
+                      : `${total - position.activityIndex - 1} activities remaining`}
+                  </p>
+                </motion.div>
+
+                {/* Continue button */}
+                <motion.button
+                  initial={{ scale: 0.7, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 20, delay: 0.2 }}
+                  whileHover={{ scale: 1.04 }}
+                  whileTap={{ scale: 0.96 }}
+                  onClick={handleNext}
+                  className={`shrink-0 flex items-center gap-2 px-5 md:px-7 py-2.5 md:py-3 rounded-2xl font-bold text-sm md:text-base text-white shadow-xl transition-all ${
+                    isCorrect === false
+                      ? 'bg-gradient-to-r from-red-500 to-rose-500 hover:from-red-600 hover:to-rose-600 shadow-red-200'
+                      : 'bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 shadow-emerald-200'
+                  }`}
+                >
+                  <span>{position.activityIndex + 1 >= total ? 'Finish' : 'Continue'}</span>
+                  <motion.span
+                    animate={{ x: [0, 3, 0] }}
+                    transition={{ duration: 1.5, repeat: Infinity }}
+                  >
+                    <ArrowRight size={18} />
+                  </motion.span>
+                </motion.button>
+              </div>
+            </div>
+          </motion.footer>
+        )}
+      </AnimatePresence>
+
+      {/* Milestone celebration slides */}
+      {milestone && (
+        <MilestoneSlide
+          type={milestone}
+          onDismiss={() => setMilestone(null)}
+        />
       )}
     </div>
   );

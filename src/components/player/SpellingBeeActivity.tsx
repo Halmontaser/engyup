@@ -13,6 +13,7 @@ import {
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
+import ActionBar from "./ActionBar";
 
 interface SpellingWord {
   word: string;
@@ -303,23 +304,28 @@ export default function SpellingBeeActivity({ data, media, onComplete }: Props) 
           </div>
 
           {/* Navigation */}
-          <div className="flex items-center justify-between px-8 py-5 border-t border-[var(--border)] bg-[var(--background)]/50">
-            <button onClick={handleReset} className="btn-ghost flex items-center gap-2 text-sm">
-              <RotateCcw size={16} /> Reset
-            </button>
+          <div className="px-4 pb-4">
             {!isChecked ? (
-              <button
-                onClick={handleCheck}
-                disabled={selected.length !== current.word.length}
-                className="btn-accent"
-              >
-                Check Spelling
-              </button>
+              <div className="flex items-center gap-3">
+                <button onClick={handleReset} className="px-4 py-2.5 rounded-xl font-medium text-xs text-slate-500 hover:bg-slate-100 transition-all">
+                  <RotateCcw size={14} className="inline mr-1.5" /> Reset
+                </button>
+                <button
+                  onClick={handleCheck}
+                  disabled={selected.length !== current.word.length}
+                  className="flex-1 py-3.5 rounded-xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white shadow-lg shadow-indigo-200 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+                >
+                  Check Spelling
+                </button>
+              </div>
             ) : (
-              <button onClick={handleNext} className="btn-accent flex items-center gap-2">
-                {currentIndex === words.length - 1 ? "Finish" : "Next Word"}
-                <ChevronRight size={20} />
-              </button>
+              <ActionBar
+                correct={isCorrect}
+                message={isCorrect ? "🎉 Correct!" : `The word was "${current.word}"`}
+                detail={current.definition || current.meaning}
+                onNext={handleNext}
+                label={currentIndex === words.length - 1 ? "Finish" : "Next Word"}
+              />
             )}
           </div>
         </motion.div>

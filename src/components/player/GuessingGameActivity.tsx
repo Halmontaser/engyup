@@ -6,6 +6,7 @@ import { HelpCircle, Eye, ChevronRight, Lightbulb, Volume2 } from "lucide-react"
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
+import ActionBar from "./ActionBar";
 
 interface Props {
   data: any;
@@ -238,17 +239,12 @@ export default function GuessingGameActivity({ data, media, onComplete }: Props)
                 </p>
               </div>
 
-              <div className="mt-6 flex justify-end">
-                <button
-                  onClick={handleNext}
-                  className="btn-accent flex items-center gap-2"
-                >
-                  {currentIndex === puzzles.length - 1
-                    ? "Finish"
-                    : "Next Puzzle"}
-                  <ChevronRight size={16} />
-                </button>
-              </div>
+              <ActionBar
+                correct={isCorrect}
+                message={isCorrect ? "🎉 Correct!" : `Not quite — the answer is "${current.answer}"`}
+                onNext={handleNext}
+                label={currentIndex === puzzles.length - 1 ? "Finish" : "Next Puzzle"}
+              />
             </motion.div>
           </AnimatePresence>
         )}

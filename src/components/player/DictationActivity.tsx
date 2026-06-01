@@ -12,6 +12,7 @@ import {
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
+import ActionBar from "./ActionBar";
 
 interface DictationSentence {
   expectedText: string;
@@ -360,25 +361,23 @@ export default function DictationActivity({ data, media, onComplete }: Props) {
           </div>
 
           {/* Navigation */}
-          <div className="flex items-center justify-end px-8 py-5 border-t border-[var(--border)] bg-[var(--background)]/50">
+          <div className="px-4 pb-4">
             {!isChecked ? (
               <button
                 onClick={handleCheck}
                 disabled={!userInput.trim()}
-                className="btn-accent"
+                className="w-full py-3.5 rounded-xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white shadow-lg shadow-indigo-200 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
               >
-                Check
+                Check Answer
               </button>
             ) : (
-              <button
-                onClick={handleNext}
-                className="btn-accent flex items-center gap-2"
-              >
-                {currentIndex === sentences.length - 1
-                  ? "Finish"
-                  : "Next Sentence"}
-                <ChevronRight size={20} />
-              </button>
+              <ActionBar
+                correct={isPerfect ? true : isClose ? null : false}
+                message={isPerfect ? "Perfect! 100%" : isClose ? `Close! ${accuracy}%` : `${accuracy}% — keep trying!`}
+                detail={`Correct: "${current.expectedText}"`}
+                onNext={handleNext}
+                label={currentIndex === sentences.length - 1 ? "Finish" : "Next Sentence"}
+              />
             )}
           </div>
         </motion.div>

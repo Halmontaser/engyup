@@ -6,6 +6,7 @@ import { Check, X, ChevronRight, HelpCircle, Volume2 } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
+import ActionBar from "./ActionBar";
 
 interface Props {
   data: any;
@@ -198,37 +199,15 @@ export default function TrueFalseActivity({ data, media, onComplete }: Props) {
 
           <AnimatePresence>
             {showFeedback && (
-              <motion.div
-                initial={{ opacity: 0, height: 0, marginTop: 0 }}
-                animate={{ opacity: 1, height: "auto", marginTop: 32 }}
-                className="overflow-hidden"
-              >
-                <div className={`p-6 rounded-2xl border ${
-                  selectedAnswer === currentStatement.isTrue
-                    ? "bg-emerald-50 border-emerald-100 text-emerald-800"
-                    : "bg-orange-50 border-orange-100 text-orange-800"
-                }`}>
-                  <div className="flex items-start gap-4">
-                    <HelpCircle className="shrink-0 mt-1" />
-                    <div>
-                      <h4 className="font-bold mb-1">
-                        {selectedAnswer === currentStatement.isTrue ? "Correct!" : "Incorrect."} The statement is {currentStatement.isTrue ? "True" : "False"}.
-                      </h4>
-                      <p className="opacity-90">{currentStatement.explanation}</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-8 flex justify-end">
-                  <button
-                    onClick={handleNext}
-                    className="flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold transition shadow-md shadow-blue-200"
-                  >
-                    {currentIndex === statements.length - 1 ? "Finish" : "Next Statement"}
-                    <ChevronRight size={20} />
-                  </button>
-                </div>
-              </motion.div>
+              <ActionBar
+                correct={selectedAnswer === currentStatement.isTrue}
+                message={selectedAnswer === currentStatement.isTrue
+                  ? "Correct!"
+                  : `Incorrect — the statement is ${currentStatement.isTrue ? "True" : "False"}.`}
+                detail={currentStatement.explanation}
+                onNext={handleNext}
+                label={currentIndex === statements.length - 1 ? "Finish" : "Next Statement"}
+              />
             )}
           </AnimatePresence>
         </motion.div>
