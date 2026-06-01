@@ -15,17 +15,16 @@ interface Props {
 export default function MatchPairsActivity({ data, media, onComplete }: Props) {
   const pairs = data.pairs || [];
 
-  // Create shuffled columns independently
-  // Supports both leftImage/rightImage (schema) and imgUrl (legacy data)
+  // Left = text or leftImage only. Right = text or rightImage only.
   const leftItems = useMemo(
-    () => pairs.map((p: any, i: number) => ({ text: p.left, pairIndex: i, image: p.leftImage || p.imgUrl, audio: p.leftAudio })),
+    () => pairs.map((p: any, i: number) => ({ text: p.left, pairIndex: i, image: p.leftImage, audio: p.leftAudio })),
     [pairs]
   );
 
-  const [rightItems, setRightItems] = useState(pairs.map((p: any, i: number) => ({ text: p.right, pairIndex: i, image: p.rightImage || p.imgUrl, audio: p.rightAudio })));
+  const [rightItems, setRightItems] = useState(pairs.map((p: any, i: number) => ({ text: p.right, pairIndex: i, image: p.rightImage, audio: p.rightAudio })));
 
   useEffect(() => {
-    const items = pairs.map((p: any, i: number) => ({ text: p.right, pairIndex: i, image: p.rightImage || p.imgUrl, audio: p.rightAudio }));
+    const items = pairs.map((p: any, i: number) => ({ text: p.right, pairIndex: i, image: p.rightImage, audio: p.rightAudio }));
     const shuffled = [...items];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));

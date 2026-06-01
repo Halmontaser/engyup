@@ -235,8 +235,8 @@ export function buildActivityMediaFromContent(content: any): ActivityMedia {
   const pairs = data.pairs || [];
   if (Array.isArray(pairs)) {
     pairs.forEach((p: any, idx: number) => {
-      const leftImg = p.leftImage || p.imgUrl;
-      const rightImg = p.rightImage || p.imgUrl;
+      const leftImg = p.leftImage;
+      const rightImg = p.rightImage;
       if (leftImg && typeof leftImg === 'string') {
         images.push({
           filename: leftImg.split('/').pop() || '',
