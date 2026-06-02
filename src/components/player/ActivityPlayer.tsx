@@ -219,11 +219,12 @@ export default function ActivityPlayer({ activity, media, onComplete, showContro
           onClick={() => setShowNote(!showNote)}
           className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-200 flex items-center justify-center transition-all hover:scale-105"
         >
-        {showNote ? <X size={20} /> : <MessageSquare size={20} />}
-        {noteKey && localStorage.getItem(noteKey) && !showNote && (
-          <span className="absolute -top-1 -right-1 w-3 h-3 bg-emerald-400 rounded-full border-2 border-white" />
-        )}
-      </button>
+          {showNote ? <X size={20} /> : <MessageSquare size={20} />}
+          {noteKey && localStorage.getItem(noteKey) && !showNote && (
+            <span className="absolute -top-1 -right-1 w-3 h-3 bg-emerald-400 rounded-full border-2 border-white" />
+          )}
+        </button>
+      </Tooltip>
 
       {/* Note Panel */}
       <AnimatePresence>
