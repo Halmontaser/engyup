@@ -193,32 +193,36 @@ export default function DictationActivity({ data, media, onComplete }: Props) {
             {/* Play Audio */}
             <div className="text-center my-6">
               <div className="flex items-center justify-center gap-3">
-                <button
-                  onClick={() => handlePlayAudio(0.85)}
-                  disabled={isSpeaking}
-                  className={`flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-sm transition-all ${
-                    isSpeaking
-                      ? "bg-indigo-500 text-white shadow-lg"
-                      : "bg-indigo-50 text-indigo-600 hover:bg-indigo-100"
-                  }`}
-                >
-                  <Volume2 size={18} className={isSpeaking ? "animate-pulse" : ""} />
-                  {isSpeaking ? "Playing..." : "Play"}
-                </button>
-                <button
-                  onClick={() => handlePlayAudio(0.5)}
-                  disabled={isSpeaking}
-                  className="flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-sm bg-purple-50 text-purple-600 hover:bg-purple-100 transition-all"
-                >
-                  <Volume2 size={18} /> Slow
-                </button>
+                <Tooltip content="استمع للجملة">
+                  <button
+                    onClick={() => handlePlayAudio(0.85)}
+                    disabled={isSpeaking}
+                    className={`flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-sm transition-all ${
+                      isSpeaking
+                        ? "bg-indigo-500 text-white shadow-lg"
+                        : "bg-indigo-50 text-indigo-600 hover:bg-indigo-100"
+                    }`}
+                  >
+                    <Volume2 size={18} className={isSpeaking ? "animate-pulse" : ""} />
+                    {isSpeaking ? "جاري التشغيل..." : "استمع"}
+                  </button>
+                </Tooltip>
+                <Tooltip content="استماع بطيء">
+                  <button
+                    onClick={() => handlePlayAudio(0.5)}
+                    disabled={isSpeaking}
+                    className="flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-sm bg-purple-50 text-purple-600 hover:bg-purple-100 transition-all"
+                  >
+                    <Volume2 size={18} /> بطيء
+                  </button>
+                </Tooltip>
               </div>
             </div>
 
             {/* Input */}
             <div>
               <label className="flex items-center gap-2 text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">
-                <PenLine size={14} /> Type what you hear
+                <PenLine size={14} /> اكتب ما تسمعه
               </label>
               <textarea
                 value={userInput}
@@ -300,7 +304,7 @@ export default function DictationActivity({ data, media, onComplete }: Props) {
                 disabled={!userInput.trim()}
                 className="w-full py-3.5 rounded-xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white shadow-lg shadow-indigo-200 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
               >
-                Check Answer
+                تحقق من الإجابة
               </button>
             ) : (
               <ActionBar

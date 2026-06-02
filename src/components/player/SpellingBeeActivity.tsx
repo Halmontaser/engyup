@@ -180,18 +180,20 @@ export default function SpellingBeeActivity({ data, media, onComplete }: Props) 
 
             {/* Listen Button */}
             <div className="text-center mb-8">
-              <button
-                onClick={handleSpeak}
-                disabled={isSpeaking}
-                className={`inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-lg transition-all ${
-                  isSpeaking
-                    ? "bg-indigo-500 text-white shadow-xl scale-105"
-                    : "bg-indigo-50 text-indigo-600 hover:bg-indigo-500 hover:text-white hover:shadow-lg"
-                }`}
-              >
-                <Volume2 size={24} className={isSpeaking ? "animate-pulse" : ""} />
-                {isSpeaking ? "Playing..." : "Listen to the word"}
-              </button>
+              <Tooltip content="استمع للكلمة">
+                <button
+                  onClick={handleSpeak}
+                  disabled={isSpeaking}
+                  className={`inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-lg transition-all ${
+                    isSpeaking
+                      ? "bg-indigo-500 text-white shadow-xl scale-105"
+                      : "bg-indigo-50 text-indigo-600 hover:bg-indigo-500 hover:text-white hover:shadow-lg"
+                  }`}
+                >
+                  <Volume2 size={24} className={isSpeaking ? "animate-pulse" : ""} />
+                  {isSpeaking ? "جاري..." : "استمع للكلمة"}
+                </button>
+              </Tooltip>
             </div>
 
             {/* Hint */}
