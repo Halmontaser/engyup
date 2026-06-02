@@ -5,6 +5,7 @@ import { BookOpen, ChevronDown, ChevronUp } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import ActionBar from "./ActionBar";
+import ImageViewer from "./ImageViewer";
 
 interface Props {
   data: any;

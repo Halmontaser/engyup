@@ -171,24 +171,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
             </p>
 
             {/* Image for the listening passage */}
-            {passageImageUrl && (
-              <div className="mb-8 mx-auto max-w-[320px] rounded-2xl overflow-hidden border border-slate-200 shadow-md">
-                <img
-                  src={getMediaUrl(passageImageUrl)}
-                  alt="Listening passage illustration"
-                  className="w-full h-auto object-contain"
-                  onError={(e) => {
-/* eslint-disable-next-line */
-
-/* eslint-disable-next-line */
-
-/* eslint-disable-next-line */
-
-                    (e.target as HTMLImageElement).style.display = "none";
-                  }}
-                />
-              </div>
-            )}
+            <ImageViewer src={passageImageUrl} alt="Listening passage illustration" maxHeight="max-h-48" className="mb-8 mx-auto max-w-[320px]" />
 
             {/* Audio badge */}
             {passageAudio && (
@@ -344,9 +327,9 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
           Replay
         </button>
       </div>
-      <div className="progress-track mb-8">
+      <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden mb-8">
         <div
-          className="progress-fill"
+          className="h-full bg-gradient-to-r from-indigo-400 to-blue-500 rounded-full"
           style={{ width: `${((currentQ + 1) / questions.length) * 100}%` }}
         />
       </div>

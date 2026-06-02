@@ -151,8 +151,8 @@ export default function SpellingBeeActivity({ data, media, onComplete }: Props) 
           Score: <span className="text-emerald-600">{score}</span> / {words.length}
         </div>
       </div>
-      <div className="progress-track mb-8">
-        <div className="progress-fill" style={{ width: `${progress}%` }} />
+      <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden mb-8">
+        <div className="h-full bg-gradient-to-r from-indigo-400 to-blue-500 rounded-full" style={{ width: `${progress}%` }} />
       </div>
 
       <AnimatePresence mode="wait">

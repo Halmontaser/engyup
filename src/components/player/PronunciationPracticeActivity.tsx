@@ -207,8 +207,8 @@ export default function PronunciationPracticeActivity({ data, media, onComplete 
           Practiced: <span className="text-emerald-600">{practiced.size}</span> / {words.length}
         </div>
       </div>
-      <div className="progress-track mb-8">
-        <div className="progress-fill" style={{ width: `${progress}%`, transition: 'width 0.3s ease' }} />
+      <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden mb-8">
+        <div className="h-full bg-gradient-to-r from-indigo-400 to-blue-500 rounded-full" style={{ width: `${progress}%`, transition: 'width 0.3s ease' }} />
       </div>
 
       <AnimatePresence mode="wait">

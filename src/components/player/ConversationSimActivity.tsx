@@ -14,6 +14,7 @@ import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import ActionBar from "./ActionBar";
 import ImageViewer from "./ImageViewer";
+import ImageViewer from "./ImageViewer";
 
 interface StudentOption {
   text: string;
@@ -218,9 +219,9 @@ export default function ConversationSimActivity({ data, media, onComplete }: Pro
       )}
 
       {/* Progress */}
-      <div className="progress-track mb-6">
+      <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden mb-6">
         <div
-          className="progress-fill"
+          className="h-full bg-gradient-to-r from-indigo-400 to-blue-500 rounded-full"
           style={{
             width: `${((currentTurn + 1) / turns.length) * 100}%`,
           }}

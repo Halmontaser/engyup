@@ -131,17 +131,7 @@ export default function GuessingGameActivity({ data, media, onComplete }: Props)
         </div>
 
         {/* Image */}
-        {imageUrl && (
-          <div className="mb-6 flex justify-center">
-            <img
-              src={getMediaUrl(imageUrl)}
-              alt="Puzzle hint"
-              className="max-h-48 rounded-2xl object-contain bg-slate-50 border border-slate-100"
-              loading="lazy"
-              onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
-            />
-          </div>
-        )}
+        <ImageViewer src={imageUrl} alt="Puzzle hint" maxHeight="max-h-48" />
 
         {/* Audio */}
         <div className="mb-6 flex justify-center">

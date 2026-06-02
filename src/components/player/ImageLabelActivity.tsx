@@ -8,6 +8,7 @@ import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
 import ActionBar from "./ActionBar";
 import ImageViewer from "./ImageViewer";
+import ImageViewer from "./ImageViewer";
 
 interface Props {
   data: any;
@@ -96,19 +97,7 @@ export default function ImageLabelActivity({ data, media, onComplete }: Props) {
 
       {/* Image display */}
       <div className="bg-white border border-slate-200 rounded-2xl p-6">
-        {mainImageUrl && (
-          <div className="relative mb-6 rounded-xl overflow-hidden">
-            <img
-              src={getMediaUrl(mainImageUrl)}
-              alt={imageAlt}
-              className="w-full h-auto max-h-80 object-contain bg-slate-50 rounded-xl"
-              loading="lazy"
-              onError={(e) => {
-                (e.target as HTMLImageElement).style.display = "none";
-              }}
-            />
-          </div>
-        )}
+        <ImageViewer src={mainImageUrl} alt={imageAlt} maxHeight="max-h-80" />
 
         {/* Label inputs as a grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

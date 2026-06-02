@@ -425,7 +425,7 @@ export default function LessonPlayer({
               ))}
             </div>
             {/* Progress track */}
-            <div className="progress-track bg-slate-100/80 h-3.5 rounded-full overflow-hidden backdrop-blur-sm border border-slate-200/50 mt-1.5">
+            <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden bg-slate-100/80 h-3.5 rounded-full overflow-hidden backdrop-blur-sm border border-slate-200/50 mt-1.5">
               <motion.div
                 className="lesson-progress-fill h-full rounded-full relative"
                 initial={{ width: 0 }}
