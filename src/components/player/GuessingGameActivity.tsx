@@ -144,7 +144,7 @@ export default function GuessingGameActivity({ data, media, onComplete }: Props)
             }`}
           >
             <Volume2 size={18} className={isSpeaking ? "animate-pulse" : ""} />
-            {isSpeaking ? "جاري..." : "استمع للتلميح"}
+            {isSpeaking ? "Playing..." : "Listen to clue"}
           </button>
         </div>
 

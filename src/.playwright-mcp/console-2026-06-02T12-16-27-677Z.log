@@ -1,3 +1,6 @@
 [     280ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=64e0f66e:20102
 [     362ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ http://localhost:3000/learn/b9f1e5d7-6c4a-4ab8-a9a9-79885a5c669d/b3177a30-e3fa-47aa-976f-bdd1abd3d230:0
 [     484ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:3000/learn/b9f1e5d7-6c4a-4ab8-a9a9-79885a5c669d/b3177a30-e3fa-47aa-976f-bdd1abd3d230:0
+[  975640ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/FlashcardActivity.tsx?t=1780403563164:0
+[  975646ms] [ERROR] [vite] Failed to reload /src/components/player/FlashcardActivity.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:3000/@vite/client:881
+[  976006ms] [ERROR] [vite] Failed to reload /src/components/player/ActivityPlayer.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:3000/@vite/client:881

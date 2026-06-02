@@ -146,7 +146,7 @@ export default function McqActivity({ data, media, onComplete }: Props) {
                       }`}
                     >
                       <Volume2 size={16} className={isSpeaking ? "animate-pulse" : ""} />
-                      {isSpeaking ? "جاري..." : "استمع"}
+                      {isSpeaking ? "Playing..." : "Listen"}
                     </button>
                   </div>
                 )}

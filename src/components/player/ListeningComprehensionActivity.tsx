@@ -162,12 +162,12 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
               <Headphones size={36} className="text-white" />
             </div>
             <h3 className="text-2xl font-bold mb-2">
-              استمع إلى المقطع الصوتي
+              Listen to the Audio
             </h3>
             <p className="text-slate-400 text-sm mb-8">
               {questions.length > 0 
-                ? "استمع جيداً ثم أجب عن الأسئلة. يمكنك إعادة التشغيل وعرض النص."
-                : "استمع إلى المقطع الصوتي للدرس."
+                ? "Listen carefully, then answer the questions. You can replay and toggle the transcript."
+                : "Listen to the course audio for this lesson."
               }
             </p>
 
@@ -183,7 +183,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
             )}
 
             <div>
-              <Tooltip content="تشغيل المقطع الصوتي">
+              <Tooltip content="تشغيل المقطع الصوتي  •  Play audio">
                 <button
                   onClick={handlePlayAudio}
                   disabled={isSpeaking}
@@ -194,7 +194,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
                   }`}
                 >
                   <Volume2 size={24} className={isSpeaking ? "animate-pulse" : ""} />
-                  {isSpeaking ? "جاري التشغيل..." : "تشغيل"}
+                  {isSpeaking ? "Playing..." : "Play Audio"}
                 </button>
               </Tooltip>
             </div>
@@ -210,7 +210,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
                 ) : (
                   <Eye size={16} />
                 )}
-                {showTranscript ? "إخفاء النص" : "عرض النص"}
+                {showTranscript ? "Hide Transcript" : "Show Transcript"}
               </button>
 
               <AnimatePresence>
@@ -236,7 +236,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
                 onClick={() => setPhase("quiz")}
                 className="px-5 py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white shadow-lg shadow-indigo-200 transition-all"
               >
-                ابدأ الأسئلة
+                Start Questions
                 <ChevronRight size={18} className="inline ml-1" />
               </button>
             ) : (
@@ -244,7 +244,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
                 onClick={handleFinishOnly}
                 className="px-5 py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white shadow-lg shadow-emerald-200 transition-all"
               >
-                إنهاء النشاط
+                Complete Activity
                 <ChevronRight size={18} className="inline ml-1" />
               </button>
             )}
@@ -324,7 +324,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
           className="text-sm flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-50 text-indigo-600 font-semibold hover:bg-indigo-500 hover:text-white transition-all"
         >
           <Volume2 size={16} className={isSpeaking ? "animate-pulse" : ""} />
-          إعادة
+          Replay
         </button>
       </div>
       <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden mb-8">
@@ -395,7 +395,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
                 disabled={selected === null}
                 className="w-full py-3.5 rounded-xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white shadow-lg shadow-indigo-200 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
               >
-                تحقق من الإجابة
+                Check Answer
               </button>
             ) : (
               <ActionBar
