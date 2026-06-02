@@ -144,7 +144,7 @@ export default function ImageLabelActivity({ data, media, onComplete }: Props) {
                   onChange={(e) => handleChange(spot.id, e.target.value)}
                   disabled={isChecked}
                   placeholder="Type the label..."
-                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl outline-none focus:border-indigo-500 focus:ring-2 focus:ring-[var(--accent-glow)] transition-all text-base"
+                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all text-base"
                 />
                 {isChecked && !isCorrect && (
                   <div className="mt-2 text-sm text-red-600 dark:text-red-400 font-medium">
