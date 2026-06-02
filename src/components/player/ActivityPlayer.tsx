@@ -21,6 +21,7 @@ import { useState, useEffect, useRef } from 'react';
 import { AlertCircle, MessageSquare, X, Save, VolumeX, SkipForward, BookOpen, Gift } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ErrorBoundary } from '../ErrorBoundary';
+import { Tooltip } from '@/components/ui/Tooltip';
 import { getMediaUrl } from "@/utils/assets";
 import { stopAllAudio } from "@/utils/audio";
 
@@ -166,56 +167,58 @@ export default function ActivityPlayer({ activity, media, onComplete, showContro
       <div className="fixed top-4 right-4 z-50 flex items-center gap-1.5">
         {/* Book reference — always shown */}
         {(activity.book_type || activity.book_page) && (
-          <button
-            className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-blue-300 hover:bg-blue-50 text-slate-600 hover:text-blue-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
-            title="Book reference"
-          >
-            <BookOpen size={14} />
-            <span>{[activity.book_type?.toUpperCase(), activity.book_page ? `p.${activity.book_page}` : ''].filter(Boolean).join(' ')}</span>
-          </button>
+          <Tooltip content="مرجع الكتاب">
+            <button className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-blue-300 hover:bg-blue-50 text-slate-600 hover:text-blue-700 rounded-xl text-xs font-semibold shadow-sm transition-all">
+              <BookOpen size={14} />
+              <span>{[activity.book_type?.toUpperCase(), activity.book_page ? `p.${activity.book_page}` : ''].filter(Boolean).join(' ')}</span>
+            </button>
+          </Tooltip>
         )}
         {/* Compensates — always shown */}
         {activity.compensates && (
-          <button
-            onClick={() => setShowCompensates(!showCompensates)}
-            className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-emerald-300 hover:bg-emerald-50 text-slate-600 hover:text-emerald-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
-            title="Show compensates"
-          >
-            <Gift size={14} />
-            <span className="hidden sm:inline">Compensates</span>
-          </button>
+          <Tooltip content="تعويضات">
+            <button
+              onClick={() => setShowCompensates(!showCompensates)}
+              className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-emerald-300 hover:bg-emerald-50 text-slate-600 hover:text-emerald-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
+            >
+              <Gift size={14} />
+              <span className="hidden sm:inline">تعويضات</span>
+            </button>
+          </Tooltip>
         )}
         {/* Stop Voice + Skip — only on listening activities */}
         {showControls && LISTENING_TYPES.has(activity.type) && (
           <>
-            <button
-              onClick={stopAllAudio}
-              className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-amber-300 hover:bg-amber-50 text-slate-600 hover:text-amber-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
-              title="Stop voice / audio"
-            >
-              <VolumeX size={14} />
-              <span className="hidden sm:inline">Stop Voice</span>
-            </button>
-            {onComplete && (
+            <Tooltip content="إيقاف الصوت">
               <button
-                onClick={() => onComplete(true)}
-                className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-indigo-300 hover:bg-indigo-50 text-slate-600 hover:text-indigo-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
-                title="Skip this activity"
+                onClick={stopAllAudio}
+                className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-amber-300 hover:bg-amber-50 text-slate-600 hover:text-amber-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
               >
-                <SkipForward size={14} />
-                <span className="hidden sm:inline">Skip</span>
+                <VolumeX size={14} />
+                <span className="hidden sm:inline">إيقاف الصوت</span>
               </button>
+            </Tooltip>
+            {onComplete && (
+              <Tooltip content="تخطي النشاط">
+                <button
+                  onClick={() => onComplete(true)}
+                  className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-indigo-300 hover:bg-indigo-50 text-slate-600 hover:text-indigo-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
+                >
+                  <SkipForward size={14} />
+                  <span className="hidden sm:inline">تخطي</span>
+                </button>
+              </Tooltip>
             )}
           </>
         )}
       </div>
 
       {/* Floating Note Button */}
-      <button
-        onClick={() => setShowNote(!showNote)}
-        className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-200 flex items-center justify-center transition-all hover:scale-105"
-        title="Add note"
-      >
+      <Tooltip content="ملاحظاتي">
+        <button
+          onClick={() => setShowNote(!showNote)}
+          className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-200 flex items-center justify-center transition-all hover:scale-105"
+        >
         {showNote ? <X size={20} /> : <MessageSquare size={20} />}
         {noteKey && localStorage.getItem(noteKey) && !showNote && (
           <span className="absolute -top-1 -right-1 w-3 h-3 bg-emerald-400 rounded-full border-2 border-white" />

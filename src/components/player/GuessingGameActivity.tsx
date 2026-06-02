@@ -6,6 +6,7 @@ import { HelpCircle, Eye, ChevronRight, Lightbulb, Volume2 } from "lucide-react"
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
+import { Tooltip } from "@/components/ui/Tooltip";
 import ActionBar from "./ActionBar";
 import ImageViewer from "./ImageViewer";
 

@@ -5,6 +5,7 @@ import { CheckCircle2, XCircle, ChevronRight, HelpCircle, Volume2 } from "lucide
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
+import { Tooltip } from "@/components/ui/Tooltip";
 import ActionBar from "./ActionBar";
 
 interface Props {

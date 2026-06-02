@@ -13,6 +13,7 @@ import {
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
+import { Tooltip } from "@/components/ui/Tooltip";
 import ActionBar from "./ActionBar";
 
 interface SpellingWord {

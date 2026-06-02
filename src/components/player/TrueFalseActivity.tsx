@@ -6,6 +6,7 @@ import { Check, X, ChevronRight, HelpCircle, Volume2 } from "lucide-react";
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
+import { Tooltip } from "@/components/ui/Tooltip";
 import ActionBar from "./ActionBar";
 
 interface Props {
