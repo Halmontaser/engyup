@@ -182,14 +182,14 @@ export default function FlashcardActivity({ data, media, onComplete }: Flashcard
 
   return (
     <div className="max-w-2xl mx-auto w-full">
-      <Tooltip content={`Card ${currentIndex + 1} of ${items.length} - Position in deck`}>
+      <Tooltip content={`بطاقة ${currentIndex + 1} من ${items.length}`}>
         <div className="flex items-center justify-between mb-6">
           <div className="text-sm font-semibold text-muted uppercase tracking-widest">
             Card {currentIndex + 1} of {items.length}
           </div>
           <div className="flex items-center gap-3">
             {/* Auto-play toggle */}
-            <Tooltip content={autoPlayEnabled ? "Auto-play: ON - Audio plays automatically when changing cards" : "Auto-play: OFF - Tap Listen button to play audio"}>
+            <Tooltip content={autoPlayEnabled ? "التشغيل التلقائي: مفعل" : "التشغيل التلقائي: غير مفعل"}>
               <button
                 onClick={() => setAutoPlayEnabled(!autoPlayEnabled)}
                 className={`flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-semibold transition-all ${autoPlayEnabled
@@ -202,7 +202,7 @@ export default function FlashcardActivity({ data, media, onComplete }: Flashcard
               </button>
             </Tooltip>
             {/* Audio play button */}
-            <Tooltip content={`Play pronunciation for "${front}"`}>
+            <Tooltip content={`استمع لنطق: "${front}"`}>
               <button
                 onClick={() => playAudio(currentWordAudioUrl, front)}
                 className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-all ${isPlaying
@@ -239,14 +239,14 @@ export default function FlashcardActivity({ data, media, onComplete }: Flashcard
                 <ImageViewer src={currentImageUrl} alt={front} maxHeight="max-h-36" />
               </div>
             )}
-            <Tooltip content={`${front} - Click card to see definition`}>
+            <Tooltip content={`${front} - اضغط لرؤية التعريف`}>
               <h3 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
                 {front}
               </h3>
             </Tooltip>
             <div className="flex items-center justify-center gap-2">
               <p className="text-white/60 text-sm font-medium">Tap to flip</p>
-              <Tooltip content="Flip card to reveal the definition">
+              <Tooltip content="اضغط لقلب البطاقة">
                 <Info size={14} className="text-white/60" />
               </Tooltip>
             </div>
@@ -261,13 +261,13 @@ export default function FlashcardActivity({ data, media, onComplete }: Flashcard
               transform: "rotateY(180deg)",
             }}
           >
-            <Tooltip content={`${back} - English meaning and definition`}>
+            <Tooltip content={`${back} - المعنى والتعريف`}>
               <p className="text-xl md:text-2xl font-medium text-white leading-relaxed">
                 {back}
               </p>
             </Tooltip>
             {current.example && (
-              <Tooltip content={`"${current.example}" - Usage in context`}>
+              <Tooltip content={`"${current.example}" - مثال في جملة`}>
                 <p className="text-white/60 text-sm mt-4 italic">
                   &ldquo;{current.example}&rdquo;
                 </p>
@@ -275,7 +275,7 @@ export default function FlashcardActivity({ data, media, onComplete }: Flashcard
             )}
             {/* Play sentence audio on back */}
             {currentSentenceAudio && (
-              <Tooltip content={`Hear example pronunciation: "${current.example || back}"`}>
+              <Tooltip content={`استمع لنطق المثال: "${current.example || back}"`}>
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
@@ -293,7 +293,7 @@ export default function FlashcardActivity({ data, media, onComplete }: Flashcard
 
       {/* Navigation */}
       <div className="flex items-center justify-between">
-        <Tooltip content="Go to previous card">
+        <Tooltip content="البطاقة السابقة">
           <button
             onClick={handlePrev}
             disabled={currentIndex === 0}
@@ -302,7 +302,7 @@ export default function FlashcardActivity({ data, media, onComplete }: Flashcard
             <ChevronLeft size={18} /> Prev
           </button>
         </Tooltip>
-        <Tooltip content="Restart from the beginning - Reset to first card">
+        <Tooltip content="إعادة من البداية">
           <button
             onClick={() => {
               setIsFlipped(false);
@@ -313,7 +313,7 @@ export default function FlashcardActivity({ data, media, onComplete }: Flashcard
             <RotateCcw size={16} /> Reset
           </button>
         </Tooltip>
-        <Tooltip content={currentIndex === items.length - 1 ? "Complete flashcard activity" : "Go to next card"}>
+        <Tooltip content={currentIndex === items.length - 1 ? "إنهاء البطاقات التعليمية" : "البطاقة التالية"}>
           {currentIndex === items.length - 1 ? (
             <button
               onClick={handleNext}

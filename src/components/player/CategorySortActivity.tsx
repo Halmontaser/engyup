@@ -8,7 +8,6 @@ import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
 import ActionBar from "./ActionBar";
 import ImageViewer from "./ImageViewer";
-import ImageViewer from "./ImageViewer";
 
 interface Props {
   data: any;

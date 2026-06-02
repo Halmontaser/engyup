@@ -14,7 +14,6 @@ import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import ActionBar from "./ActionBar";
 import ImageViewer from "./ImageViewer";
-import ImageViewer from "./ImageViewer";
 
 interface StudentOption {
   text: string;

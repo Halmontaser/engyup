@@ -1,0 +1,34 @@
+[     612ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/GapFillActivity.tsx?t=1780394990769:0
+[     619ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ http://localhost:3000/learn/b9f1e5d7-6c4a-4ab8-a9a9-79885a5c669d/b3177a30-e3fa-47aa-976f-bdd1abd3d230:0
+[     685ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/MatchPairsActivity.tsx?t=1780394990849:0
+[     770ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/CategorySortActivity.tsx?t=1780394990662:0
+[     850ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/TransformSentenceActivity.tsx?t=1780394990986:0
+[     925ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/ImageLabelActivity.tsx?t=1780394990809:0
+[    1055ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/SpellingBeeActivity.tsx?t=1780394990968:0
+[    1091ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/TrueFalseActivity.tsx?t=1780394991020:0
+[    1108ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/McqActivity.tsx?t=1780394990873:0
+[    1135ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/FlashcardActivity.tsx?t=1780394990738:0
+[    1144ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/WordOrderActivity.tsx?t=1780394991108:0
+[    1182ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/ReadingPassageActivity.tsx?t=1780394990932:0
+[    1291ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/DialogueReadActivity.tsx?t=1780394990703:0
+[    1320ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/GuessingGameActivity.tsx?t=1780394990791:0
+[    1320ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/ReadingSequenceActivity.tsx?t=1780394990948:0
+[    1363ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/PronunciationPracticeActivity.tsx?t=1780394990912:0
+[    1364ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/ListeningComprehensionActivity.tsx?t=1780394990831:0
+[    1400ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/DictationActivity.tsx?t=1780394990711:0
+[    1466ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/ConversationSimActivity.tsx?t=1780394990673:0
+[    1467ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/PictureDescriptionActivity.tsx?t=1780394990887:0
+[  134514ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/CategorySortActivity.tsx?t=1780395232716:0
+[  134518ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ http://localhost:3000/learn/b9f1e5d7-6c4a-4ab8-a9a9-79885a5c669d/b3177a30-e3fa-47aa-976f-bdd1abd3d230:0
+[  134519ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/ImageLabelActivity.tsx?t=1780395232781:0
+[  134520ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/ReadingSequenceActivity.tsx?t=1780395232825:0
+[  134677ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/DictationActivity.tsx?t=1780395232744:0
+[  134723ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/ConversationSimActivity.tsx?t=1780395232732:0
+[  134922ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/PictureDescriptionActivity.tsx?t=1780395232809:0
+[  271513ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/CategorySortActivity.tsx?t=1780395370677:0
+[  271516ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/ImageLabelActivity.tsx?t=1780395370696:0
+[  271517ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/ReadingSequenceActivity.tsx?t=1780395370760:0
+[  271526ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ http://localhost:3000/learn/b9f1e5d7-6c4a-4ab8-a9a9-79885a5c669d/b3177a30-e3fa-47aa-976f-bdd1abd3d230:0
+[  271697ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/DictationActivity.tsx?t=1780395370597:0
+[  271702ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/PictureDescriptionActivity.tsx?t=1780395370711:0
+[  271725ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/src/components/player/ConversationSimActivity.tsx?t=1780395370791:0
