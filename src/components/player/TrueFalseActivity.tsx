@@ -150,7 +150,7 @@ export default function TrueFalseActivity({ data, media, onComplete }: Props) {
                 }`}
               >
                 <Volume2 size={18} className={isSpeaking ? "animate-pulse" : ""} />
-                {isSpeaking ? "Playing..." : "Listen"}
+                {isSpeaking ? "جاري..." : "استمع"}
               </button>
             </div>
           )}

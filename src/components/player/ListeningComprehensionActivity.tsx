@@ -162,12 +162,12 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
               <Headphones size={36} className="text-white" />
             </div>
             <h3 className="text-2xl font-bold mb-2">
-              Listen to the Audio
+              استمع إلى المقطع الصوتي
             </h3>
             <p className="text-slate-400 text-sm mb-8">
               {questions.length > 0 
-                ? "Listen carefully, then answer the questions. You can replay and toggle the transcript."
-                : "Listen to the course audio for this lesson. Replay as needed."
+                ? "استمع جيداً ثم أجب عن الأسئلة. يمكنك إعادة التشغيل وعرض النص."
+                : "استمع إلى المقطع الصوتي للدرس."
               }
             </p>
 
@@ -183,21 +183,20 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
             )}
 
             <div>
-              <button
-                onClick={handlePlayAudio}
-                disabled={isSpeaking}
-                className={`mx-auto flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-lg transition-all ${
-                  isSpeaking
-                    ? "bg-indigo-500 text-white shadow-xl scale-105"
-                    : "bg-indigo-50 text-indigo-600 hover:bg-indigo-500 hover:text-white hover:shadow-lg"
-                }`}
-              >
-                <Volume2
-                  size={24}
-                  className={isSpeaking ? "animate-pulse" : ""}
-                />
-                {isSpeaking ? "Playing..." : "Play Audio"}
-              </button>
+              <Tooltip content="تشغيل المقطع الصوتي">
+                <button
+                  onClick={handlePlayAudio}
+                  disabled={isSpeaking}
+                  className={`mx-auto flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-lg transition-all ${
+                    isSpeaking
+                      ? "bg-indigo-500 text-white shadow-xl scale-105"
+                      : "bg-indigo-50 text-indigo-600 hover:bg-indigo-500 hover:text-white hover:shadow-lg"
+                  }`}
+                >
+                  <Volume2 size={24} className={isSpeaking ? "animate-pulse" : ""} />
+                  {isSpeaking ? "جاري التشغيل..." : "تشغيل"}
+                </button>
+              </Tooltip>
             </div>
 
             {/* Transcript Toggle */}
@@ -211,7 +210,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
                 ) : (
                   <Eye size={16} />
                 )}
-                {showTranscript ? "Hide Transcript" : "Show Transcript"}
+                {showTranscript ? "إخفاء النص" : "عرض النص"}
               </button>
 
               <AnimatePresence>
@@ -237,7 +236,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
                 onClick={() => setPhase("quiz")}
                 className="px-5 py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white shadow-lg shadow-indigo-200 transition-all"
               >
-                Start Questions
+                ابدأ الأسئلة
                 <ChevronRight size={18} className="inline ml-1" />
               </button>
             ) : (
@@ -245,7 +244,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
                 onClick={handleFinishOnly}
                 className="px-5 py-3 rounded-xl font-bold text-sm bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white shadow-lg shadow-emerald-200 transition-all"
               >
-                Complete Activity
+                إنهاء النشاط
                 <ChevronRight size={18} className="inline ml-1" />
               </button>
             )}
@@ -325,7 +324,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
           className="text-sm flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-50 text-indigo-600 font-semibold hover:bg-indigo-500 hover:text-white transition-all"
         >
           <Volume2 size={16} className={isSpeaking ? "animate-pulse" : ""} />
-          Replay
+          إعادة
         </button>
       </div>
       <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden mb-8">
@@ -396,7 +395,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
                 disabled={selected === null}
                 className="w-full py-3.5 rounded-xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white shadow-lg shadow-indigo-200 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
               >
-                Check Answer
+                تحقق من الإجابة
               </button>
             ) : (
               <ActionBar
