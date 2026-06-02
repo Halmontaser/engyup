@@ -167,7 +167,7 @@ export default function ActivityPlayer({ activity, media, onComplete, showContro
       <div className="fixed top-4 right-4 z-50 flex items-center gap-1.5">
         {/* Book reference — always shown */}
         {(activity.book_type || activity.book_page) && (
-          <Tooltip content="مرجع الكتاب">
+          <Tooltip content="مرجع الكتاب  •  Book reference">
             <button className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-blue-300 hover:bg-blue-50 text-slate-600 hover:text-blue-700 rounded-xl text-xs font-semibold shadow-sm transition-all">
               <BookOpen size={14} />
               <span>{[activity.book_type?.toUpperCase(), activity.book_page ? `p.${activity.book_page}` : ''].filter(Boolean).join(' ')}</span>
@@ -176,7 +176,7 @@ export default function ActivityPlayer({ activity, media, onComplete, showContro
         )}
         {/* Compensates — always shown */}
         {activity.compensates && (
-          <Tooltip content="تعويضات">
+          <Tooltip content="تعويضات  •  Compensates">
             <button
               onClick={() => setShowCompensates(!showCompensates)}
               className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-emerald-300 hover:bg-emerald-50 text-slate-600 hover:text-emerald-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
@@ -189,7 +189,7 @@ export default function ActivityPlayer({ activity, media, onComplete, showContro
         {/* Stop Voice + Skip — only on listening activities */}
         {showControls && LISTENING_TYPES.has(activity.type) && (
           <>
-            <Tooltip content="إيقاف الصوت">
+            <Tooltip content="إيقاف الصوت  •  Stop audio">
               <button
                 onClick={stopAllAudio}
                 className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-amber-300 hover:bg-amber-50 text-slate-600 hover:text-amber-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
@@ -199,7 +199,7 @@ export default function ActivityPlayer({ activity, media, onComplete, showContro
               </button>
             </Tooltip>
             {onComplete && (
-              <Tooltip content="تخطي النشاط">
+              <Tooltip content="تخطي النشاط  •  Skip activity">
                 <button
                   onClick={() => onComplete(true)}
                   className="flex items-center gap-1.5 px-3 py-2 bg-white/90 backdrop-blur-sm border border-slate-200 hover:border-indigo-300 hover:bg-indigo-50 text-slate-600 hover:text-indigo-700 rounded-xl text-xs font-semibold shadow-sm transition-all"
@@ -214,7 +214,7 @@ export default function ActivityPlayer({ activity, media, onComplete, showContro
       </div>
 
       {/* Floating Note Button */}
-      <Tooltip content="ملاحظاتي">
+      <Tooltip content="ملاحظاتي  •  My notes">
         <button
           onClick={() => setShowNote(!showNote)}
           className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-200 flex items-center justify-center transition-all hover:scale-105"

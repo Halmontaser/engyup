@@ -193,7 +193,7 @@ export default function DictationActivity({ data, media, onComplete }: Props) {
             {/* Play Audio */}
             <div className="text-center my-6">
               <div className="flex items-center justify-center gap-3">
-                <Tooltip content="استمع للجملة">
+                <Tooltip content="استمع للجملة  •  Listen to sentence">
                   <button
                     onClick={() => handlePlayAudio(0.85)}
                     disabled={isSpeaking}
@@ -207,7 +207,7 @@ export default function DictationActivity({ data, media, onComplete }: Props) {
                     {isSpeaking ? "جاري التشغيل..." : "استمع"}
                   </button>
                 </Tooltip>
-                <Tooltip content="استماع بطيء">
+                <Tooltip content="استماع بطيء  •  Slow playback">
                   <button
                     onClick={() => handlePlayAudio(0.5)}
                     disabled={isSpeaking}

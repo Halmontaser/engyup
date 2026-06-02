@@ -180,7 +180,7 @@ export default function SpellingBeeActivity({ data, media, onComplete }: Props) 
 
             {/* Listen Button */}
             <div className="text-center mb-8">
-              <Tooltip content="استمع للكلمة">
+              <Tooltip content="استمع للكلمة  •  Listen to word">
                 <button
                   onClick={handleSpeak}
                   disabled={isSpeaking}
