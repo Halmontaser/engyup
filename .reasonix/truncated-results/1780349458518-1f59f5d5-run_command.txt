@@ -1,0 +1,521 @@
+$ node -e "const k='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1zdHRzZWJhZmpnemxseWFic2lkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NjIyMDQyMywiZXhwIjoyMDkxNzk2NDIzfQ.H0Ec_0v4n1W4aLsLRObGKag5nTAIIt0ccsv88a8FAOU';process.env.SUPABASE_SERVICE_ROLE_KEY=k;require('./fix_universal_urls.js')" 2>&1
+[exit 0]
+Fetching ALL activities...
+Loaded 6137 activities
+
+
+📝 [Reading: Queen Victoria] (reading-passage)
+   questions[3].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/18.mp3
+     NEW: 18
+   questions[3].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u4/images/64.png
+     NEW: 64
+   questions[3].options[3].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u4/audio/19.mp3
+     NEW: 19
+   ✅ UPDATED
+
+📝 [Reading: Birkdale School] (reading-passage)
+   questions[3].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/12.mp3
+     NEW: 12
+   questions[3].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u4/audio/20.mp3
+     NEW: 20
+   ✅ UPDATED
+
+📝 [Listen for Information] (listening-comprehension)
+   questions[1].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/30.mp3
+     NEW: 30
+   questions[1].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u7/audio/40.mp3
+     NEW: 40
+   questions[4].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/5.png
+     NEW: 5
+   questions[4].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/3.png
+     NEW: 3
+   ✅ UPDATED
+
+📝 [Listening: Saif's Patient Card] (listening-comprehension)
+   questions[1].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/7.png
+     NEW: 7
+   questions[1].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/17.mp3
+     NEW: 17
+   questions[1].options[2].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u4/images/70.png
+     NEW: 70
+   ✅ UPDATED
+
+📝 [At the Casualty Unit] (listening-comprehension)
+   questions[3].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/17.mp3
+     NEW: 17
+   questions[3].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/16.mp3
+     NEW: 16
+   questions[3].options[2].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/14.mp3
+     NEW: 14
+   ✅ UPDATED
+
+📝 [Interview with a Policewoman] (listening-comprehension)
+   questions[0].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/16.mp3
+     NEW: 16
+   questions[0].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/17.mp3
+     NEW: 17
+   questions[0].options[2].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/18.mp3
+     NEW: 18
+   ✅ UPDATED
+
+📝 [In-depth News Report] (listening-comprehension)
+   questions[1].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/17.mp3
+     NEW: 17
+   questions[3].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u5/images/700.png
+     NEW: 700
+   ✅ UPDATED
+
+📝 [Fosdyke's Account of the Mary Celeste] (listening-comprehension)
+   questions[1].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/12.mp3
+     NEW: 12
+   questions[1].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/8.png
+     NEW: 8
+   ✅ UPDATED
+
+📝 [Number Order] (word-order)
+   correctOrder[1]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u7/images/1.png
+     NEW: 1
+   correctOrder[3]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/3.png
+     NEW: 3
+   correctOrder[5]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/5.png
+     NEW: 5
+   ✅ UPDATED
+
+📝 [Build the Question] (word-order)
+   sentences[1].correctOrder[2]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u7/images/1.png
+     NEW: 1
+   ✅ UPDATED
+
+📝 [Writing Numbers] (dictation)
+   sentences[0].expectedText:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u4/audio/21.mp3
+     NEW: 21
+   sentences[1].expectedText:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/28.mp3
+     NEW: 28
+   sentences[2].expectedText:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u5/audio/25.mp3
+     NEW: 25
+   sentences[3].expectedText:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/29.mp3
+     NEW: 29
+   sentences[4].expectedText:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u4/audio/20.mp3
+     NEW: 20
+   ✅ UPDATED
+
+📝 [Building Sentences about Queen Victoria] (word-order)
+   sentences[0].correctOrder[2]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/18.mp3
+     NEW: 18
+   ✅ UPDATED
+
+📝 [Make Sentences] (word-order)
+   sentences[1].correctOrder[3]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/10.mp3
+     NEW: 10
+   sentences[3].correctOrder[2]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/5.png
+     NEW: 5
+   ✅ UPDATED
+
+📝 [Numbers 50 to 59] (spelling-bee)
+   words[4].hint:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u4/images/59.png
+     NEW: 59
+   ✅ UPDATED
+
+📝 [Laws for Young People in the UK] (reading-passage)
+   questions[0].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/16.mp3
+     NEW: 16
+   questions[0].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/5.png
+     NEW: 5
+   questions[0].options[2].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/18.mp3
+     NEW: 18
+   questions[3].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/16.mp3
+     NEW: 16
+   questions[3].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/18.mp3
+     NEW: 18
+   questions[3].options[2].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u4/audio/21.mp3
+     NEW: 21
+   ✅ UPDATED
+
+📝 [Numbers 20 to 29] (flashcard)
+   items[0].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u4/audio/20.mp3
+     NEW: 20
+   items[1].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u4/audio/21.mp3
+     NEW: 21
+   items[2].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u4/audio/22.mp3
+     NEW: 22
+   items[3].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u4/audio/23.mp3
+     NEW: 23
+   items[4].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u4/audio/24.mp3
+     NEW: 24
+   items[5].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u5/audio/25.mp3
+     NEW: 25
+   items[6].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u5/audio/26.mp3
+     NEW: 26
+   items[7].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u5/audio/27.mp3
+     NEW: 27
+   items[8].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/28.mp3
+     NEW: 28
+   items[9].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/29.mp3
+     NEW: 29
+   ✅ UPDATED
+
+📝 [Listen and Choose the Number] (listening-comprehension)
+   questions[0].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/13.mp3
+     NEW: 13
+   questions[0].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/30.mp3
+     NEW: 30
+   questions[1].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u5/audio/25.mp3
+     NEW: 25
+   questions[1].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/35.mp3
+     NEW: 35
+   questions[2].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png
+     NEW: 48
+   questions[2].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/14.mp3
+     NEW: 14
+   questions[3].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/15.mp3
+     NEW: 15
+   ✅ UPDATED
+
+📝 [Check the Shopping List] (reading-passage)
+   questions[1].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/12.mp3
+     NEW: 12
+   questions[1].options[2].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u4/audio/24.mp3
+     NEW: 24
+   ✅ UPDATED
+
+📝 [Reading: What's Your Opinion?] (reading-passage)
+   questions[1].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u7/images/1.png
+     NEW: 1
+   questions[1].options[2].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/3.png
+     NEW: 3
+   ✅ UPDATED
+
+📝 [Build the Sentences] (word-order)
+   sentences[0].correctOrder[5]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/3.png
+     NEW: 3
+   sentences[3].correctOrder[5]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/10.mp3
+     NEW: 10
+   ✅ UPDATED
+
+📝 [Reading: Henshaw School] (reading-passage)
+   questions[3].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/12.mp3
+     NEW: 12
+   ✅ UPDATED
+
+📝 [What to do in a Road Accident] (picture-description)
+   images[0]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u6/images/1402.png
+     NEW: 1402
+   images[1]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u6/images/1403.png
+     NEW: 1403
+   images[2]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u6/images/1405.png
+     NEW: 1405
+   images[3]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u6/images/1404.png
+     NEW: 1404
+   ✅ UPDATED
+
+📝 [Listen and Write the Number] (dictation)
+   sentences[0].expectedText:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/3.png
+     NEW: 3
+   sentences[1].expectedText:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/5.png
+     NEW: 5
+   sentences[2].expectedText:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u7/images/1.png
+     NEW: 1
+   sentences[3].expectedText:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/8.png
+     NEW: 8
+   sentences[4].expectedText:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/10.mp3
+     NEW: 10
+   sentences[6].expectedText:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/9.png
+     NEW: 9
+   sentences[8].expectedText:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/7.png
+     NEW: 7
+   ✅ UPDATED
+
+📝 [Who's Speaking?] (listening-comprehension)
+   audioClips[0].clipId:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u7/images/1.png
+     NEW: 1
+   audioClips[2].clipId:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/3.png
+     NEW: 3
+   ✅ UPDATED
+
+📝 [Listen for the Number] (listening-comprehension)
+   questions[0].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/8.png
+     NEW: 8
+   questions[1].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/3.png
+     NEW: 3
+   questions[1].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/5.png
+     NEW: 5
+   questions[1].options[2].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/9.png
+     NEW: 9
+   questions[2].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u7/images/1.png
+     NEW: 1
+   questions[2].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/7.png
+     NEW: 7
+   questions[2].options[2].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/10.mp3
+     NEW: 10
+   ✅ UPDATED
+
+📝 [Who Sent the Message?] (match-pairs)
+   visual_pairs.Ali:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g8u4/images/245.png
+     NEW: 245
+   visual_pairs.Mr al Jaufi:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g8u4/images/246.png
+     NEW: 246
+   visual_pairs.Sports teacher:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g8u4/images/248.png
+     NEW: 248
+   ✅ UPDATED
+
+📝 [Learn Numbers 0-9] (flashcard)
+   items[1].word:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u7/images/1.png
+     NEW: 1
+   items[3].word:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/3.png
+     NEW: 3
+   items[5].word:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/5.png
+     NEW: 5
+   items[7].word:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/7.png
+     NEW: 7
+   items[8].word:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/8.png
+     NEW: 8
+   items[9].word:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/9.png
+     NEW: 9
+   ✅ UPDATED
+
+📝 [Listen and Write] (dictation)
+   sentences[0].expectedText:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/7.png
+     NEW: 7
+   sentences[1].expectedText:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/3.png
+     NEW: 3
+   sentences[2].expectedText:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/9.png
+     NEW: 9
+   ✅ UPDATED
+
+📝 [Order the Story] (category-sort)
+   items_to_sort[0]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1133.png
+     NEW: 1133
+   items_to_sort[1]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1134.png
+     NEW: 1134
+   items_to_sort[2]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1135.png
+     NEW: 1135
+   items_to_sort[3]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1136.png
+     NEW: 1136
+   items_to_sort[4]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1137.png
+     NEW: 1137
+   items_to_sort[5]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1138.png
+     NEW: 1138
+   ✅ UPDATED
+
+📝 [Story Timeline] (word-order)
+   correctOrder[0]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u3/images/1364.png
+     NEW: 1364
+   correctOrder[1]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u3/images/1365.png
+     NEW: 1365
+   correctOrder[2]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u3/images/1366.png
+     NEW: 1366
+   correctOrder[3]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u3/images/1369.png
+     NEW: 1369
+   correctOrder[4]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u3/images/1367.png
+     NEW: 1367
+   correctOrder[5]:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u3/images/1368.png
+     NEW: 1368
+   ✅ UPDATED
+
+📝 [Shopping List Questions] (listening-comprehension)
+   questions[1].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u7/images/1.png
+     NEW: 1
+   questions[1].options[2].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/3.png
+     NEW: 3
+   questions[2].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/12.mp3
+     NEW: 12
+   questions[2].options[2].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u4/audio/24.mp3
+     NEW: 24
+   questions[4].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/10.mp3
+     NEW: 10
+   questions[4].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/12.mp3
+     NEW: 12
+   questions[4].options[2].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u4/audio/24.mp3
+     NEW: 24
+   ✅ UPDATED
+
+📝 [Numbers 1-20] (flashcard)
+   items[0].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u7/images/1.png
+     NEW: 1
+   items[2].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/3.png
+     NEW: 3
+   items[4].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/5.png
+     NEW: 5
+   items[6].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/7.png
+     NEW: 7
+   items[7].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/8.png
+     NEW: 8
+   items[8].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/9.png
+     NEW: 9
+   items[9].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/10.mp3
+     NEW: 10
+   items[10].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/11.mp3
+     NEW: 11
+   items[11].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/12.mp3
+     NEW: 12
+   items[12].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/13.mp3
+     NEW: 13
+   items[13].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/14.mp3
+     NEW: 14
+   items[14].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/15.mp3
+     NEW: 15
+   items[15].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/16.mp3
+     NEW: 16
+   items[16].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/17.mp3
+     NEW: 17
+   items[17].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/18.mp3
+     NEW: 18
+   items[18].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u4/audio/19.mp3
+     NEW: 19
+   items[19].definition:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u4/audio/20.mp3
+     NEW: 20
+   ✅ UPDATED
+
+📝 [Listen to the Months Rhyme] (listening-comprehension)
+   questions[1].options[0].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/28.mp3
+     NEW: 28
+   questions[1].options[1].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/29.mp3
+     NEW: 29
+   questions[1].options[2].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/30.mp3
+     NEW: 30
+   questions[1].options[3].text:
+     OLD: https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/31.mp3
+     NEW: 31
+   ✅ UPDATED
+
+==================================================
+Activities affected: 33
+Total fixes: 137
+Total activities scanned: 6137
+✅ All fixes applied.

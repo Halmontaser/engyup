@@ -7,6 +7,7 @@ import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
 import ActionBar from "./ActionBar";
+import ImageViewer from "./ImageViewer";
 
 interface Props {
   data: any;
@@ -43,7 +44,7 @@ export default function GuessingGameActivity({ data, media, onComplete }: Props)
   }, []);
 
   if (puzzles.length === 0)
-    return <div className="text-muted">No puzzles found.</div>;
+    return <div className="text-slate-400">No puzzles found.</div>;
 
   const current = puzzles[currentIndex];
 
@@ -106,11 +107,11 @@ export default function GuessingGameActivity({ data, media, onComplete }: Props)
   return (
     <div className="max-w-3xl mx-auto w-full">
       <div className="flex items-center justify-between mb-6">
-        <div className="text-sm font-semibold text-muted uppercase tracking-widest">
+        <div className="text-sm font-semibold text-slate-400 uppercase tracking-widest">
           Puzzle {currentIndex + 1} of {puzzles.length}
         </div>
-        <div className="text-sm font-bold text-muted">
-          Score: <span className="text-[var(--success)]">{score}</span> /{" "}
+        <div className="text-sm font-bold text-slate-400">
+          Score: <span className="text-emerald-600">{score}</span> /{" "}
           {puzzles.length}
         </div>
       </div>
@@ -119,14 +120,14 @@ export default function GuessingGameActivity({ data, media, onComplete }: Props)
         key={currentIndex}
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-[var(--card)] border border-[var(--border)] rounded-3xl p-8 md:p-10"
+        className="bg-white border border-slate-200 rounded-3xl p-8 md:p-10"
       >
         {/* Mystery icon */}
         <div className="text-center mb-8">
           <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white shadow-lg mb-4">
             <HelpCircle size={32} />
           </div>
-          <h3 className="text-lg font-bold text-muted">What am I?</h3>
+          <h3 className="text-lg font-bold text-slate-400">What am I?</h3>
         </div>
 
         {/* Image */}
@@ -164,9 +165,9 @@ export default function GuessingGameActivity({ data, media, onComplete }: Props)
               initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: i * 0.1 }}
-              className="flex items-start gap-3 p-4 bg-[var(--background)] border border-[var(--border)] rounded-xl"
+              className="flex items-start gap-3 p-4 bg-slate-50 border border-slate-200 rounded-xl"
             >
-              <span className="w-7 h-7 rounded-full bg-[var(--accent-light)] text-[var(--accent)] flex items-center justify-center text-xs font-bold shrink-0">
+              <span className="w-7 h-7 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center text-xs font-bold shrink-0">
                 {i + 1}
               </span>
               <p className="text-base leading-relaxed">{clue}</p>
@@ -204,7 +205,7 @@ export default function GuessingGameActivity({ data, media, onComplete }: Props)
               onChange={(e) => setGuess(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && guess.trim() && handleGuess()}
               placeholder="Type your guess..."
-              className="flex-1 px-5 py-4 bg-[var(--background)] border-2 border-[var(--border)] rounded-xl outline-none focus:border-[var(--accent)] text-lg font-medium transition-colors"
+              className="flex-1 px-5 py-4 bg-slate-50 border-2 border-slate-200 rounded-xl outline-none focus:border-indigo-500 text-lg font-medium transition-colors"
             />
             <button
               onClick={handleGuess}
@@ -223,7 +224,7 @@ export default function GuessingGameActivity({ data, media, onComplete }: Props)
               <div
                 className={`p-6 rounded-2xl border text-center ${
                   isCorrect
-                    ? "bg-[var(--success-light)] border-[var(--success)]"
+                    ? "bg-emerald-50 border-[emerald-600]"
                     : "bg-red-50 border-red-200 dark:bg-red-950/30 dark:border-red-800"
                 }`}
               >
@@ -233,7 +234,7 @@ export default function GuessingGameActivity({ data, media, onComplete }: Props)
                 </h4>
                 <p className="text-lg">
                   The answer is:{" "}
-                  <strong className="text-[var(--accent)]">
+                  <strong className="text-indigo-600">
                     {current.answer}
                   </strong>
                 </p>

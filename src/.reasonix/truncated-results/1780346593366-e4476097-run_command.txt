@@ -1,0 +1,616 @@
+$ node \\wsl.localhost\Ubuntu-24.04\home\harby\projects\engyup\src\scripts\fix-flashcard-images.ts 2>&1
+[exit 0]
+📋 1294 flashcard image mappings from CSV
+
+🔍 Checking 500 flashcard activities...
+
+  ➕ MISSING  g10-1.5[0] "giggle"  →  g10_u1_l1.5_flsh_act0_i0.png
+  ➕ MISSING  g10-1.5[1] "trick"  →  g10_u1_l1.5_flsh_act0_i1.png
+  ➕ MISSING  g10-1.5[2] "soap"  →  g10_u1_l1.5_flsh_act0_i2.png
+  ➕ MISSING  g10-1.5[3] "dirty"  →  g10_u1_l1.5_flsh_act0_i3.png
+  ➕ MISSING  g10-1.5[4] "pant"  →  g10_u1_l1.5_flsh_act0_i4.png
+  ➕ MISSING  g10-1.5[5] "comprehensive school"  →  g10_u1_l1.5_flsh_act0_i5.png
+  ➕ MISSING  g10-1.5[6] "cornflakes"  →  g10_u1_l1.5_flsh_act0_i6.png
+  ✅ Vocabulary: Barry's Morning
+
+  ➕ MISSING  g10-1.10[0] "come round"  →  g10_u1_l1.10_flsh_act0_i0.png
+  ✅ Vocabulary: Phrasal Verb
+
+  ➕ MISSING  g10-1.11[0] "decide"  →  g10_u1_l1.11_flsh_act0_i0.png
+  ➕ MISSING  g10-1.11[1] "hungry"  →  g10_u1_l1.11_flsh_act0_i1.png
+  ➕ MISSING  g10-1.11[2] "kitchen"  →  g10_u1_l1.11_flsh_act0_i2.png
+  ➕ MISSING  g10-1.11[3] "sandwich"  →  g10_u1_l1.11_flsh_act0_i3.png
+  ➕ MISSING  g10-1.11[4] "take-away"  →  g10_u1_l1.11_flsh_act0_i4.png
+  ➕ MISSING  g10-1.11[5] "burger"  →  g10_u1_l1.11_flsh_act0_i5.png
+  ✅ Key Vocabulary: Yousif's Story
+
+  ➕ MISSING  g10-1.12[0] "come along"  →  g10_u1_l1.12_flsh_act0_i0.png
+  ➕ MISSING  g10-1.12[1] "come over"  →  g10_u1_l1.12_flsh_act0_i1.png
+  ➕ MISSING  g10-1.12[2] "suppose"  →  g10_u1_l1.12_flsh_act0_i2.png
+  ➕ MISSING  g10-1.12[3] "on my own"  →  g10_u1_l1.12_flsh_act0_i3.png
+  ➕ MISSING  g10-1.12[4] "you'd better"  →  g10_u1_l1.12_flsh_act0_i4.png
+  ✅ Key Conversational Phrases
+
+  ➕ MISSING  g10-1.13[0] "angry"  →  g10_u1_l1.13_flsh_act0_i0.png
+  ➕ MISSING  g10-1.13[1] "new"  →  g10_u1_l1.13_flsh_act0_i1.png
+  ➕ MISSING  g10-1.13[2] "crashed"  →  g10_u1_l1.13_flsh_act0_i2.png
+  ➕ MISSING  g10-1.13[3] "repair"  →  g10_u1_l1.13_flsh_act0_i3.png
+  ➕ MISSING  g10-1.13[4] "side street"  →  g10_u1_l1.13_flsh_act0_i4.png
+  ✅ Story Keywords
+
+  ➕ MISSING  g10-2.8[0] "condition"  →  g10_u2_l2.8_flsh_act0_i0.png
+  ➕ MISSING  g10-2.8[1] "result"  →  g10_u2_l2.8_flsh_act0_i1.png
+  ✅ Key Vocabulary: Conditionals
+
+  ➕ MISSING  g10-2.7[0] "security"  →  g10_u2_l2.7_flsh_act0_i0.png
+  ➕ MISSING  g10-2.7[1] "responsible"  →  g10_u2_l2.7_flsh_act0_i1.png
+  ➕ MISSING  g10-2.7[2] "responsibility"  →  g10_u2_l2.7_flsh_act0_i2.png
+  ➕ MISSING  g10-2.7[3] "tease"  →  g10_u2_l2.7_flsh_act0_i3.png
+  ➕ MISSING  g10-2.7[4] "suggest"  →  g10_u2_l2.7_flsh_act0_i4.png
+  ➕ MISSING  g10-2.7[5] "ambition"  →  g10_u2_l2.7_flsh_act0_i5.png
+  ✅ Vocabulary: A Responsible Job
+
+  ➕ MISSING  g10-1.5[0] "dentist"  →  g10_u1_l1.5_flsh_act0_i0.png
+  ➕ MISSING  g10-1.5[1] "secretary"  →  g10_u1_l1.5_flsh_act0_i1.png
+  ➕ MISSING  g10-1.5[2] "pilot"  →  g10_u1_l1.5_flsh_act0_i2.png
+  ➕ MISSING  g10-1.5[3] "carpenter"  →  g10_u1_l1.5_flsh_act0_i3.png
+  ➕ MISSING  g10-1.5[4] "fisherman"  →  g10_u1_l1.5_flsh_act0_i4.png
+  ➕ MISSING  g10-1.5[5] "farmer"  →  g10_u1_l1.5_flsh_act0_i5.png
+  ➕ MISSING  g10-1.5[6] "builder"  →  g10_u1_l1.5_flsh_act0_i6.png
+  ✅ Jobs and Occupations
+
+  ➕ MISSING  g10-2.10[0] "blazing"  →  g10_u2_l2.10_flsh_act0_i0.png
+  ➕ MISSING  g10-2.10[1] "out of control"  →  g10_u2_l2.10_flsh_act0_i1.png
+  ➕ MISSING  g10-2.10[2] "injured"  →  g10_u2_l2.10_flsh_act0_i2.png
+  ✅ Vocabulary: Fire Report
+
+  ➕ MISSING  g10-3.4[0] "zero"  →  g10_u3_l3.4_flsh_act0_i0.png
+  ⚠️  WRONG  g10-3.4[1] "chemistry"  →  g10_u3_l3.4_flsh_act0_i1.png
+  ✅ Vocabulary: Words from Around the World
+
+  ⚠️  WRONG  g10-3.1[0] "province"  →  g10_u3_l3.1_flsh_act0_i0.png
+  ➕ MISSING  g10-3.1[1] "principality"  →  g10_u3_l3.1_flsh_act0_i1.png
+  ⚠️  WRONG  g10-3.1[2] "official"  →  g10_u3_l3.1_flsh_act0_i2.png
+  ➕ MISSING  g10-3.1[3] "documents"  →  g10_u3_l3.1_flsh_act0_i3.png
+  ⚠️  WRONG  g10-3.1[4] "united"  →  g10_u3_l3.1_flsh_act0_i4.png
+  ⚠️  WRONG  g10-3.1[5] "independent"  →  g10_u3_l3.1_flsh_act0_i5.png
+  ✅ Key Vocabulary: The United Kingdom
+
+  ➕ MISSING  g10-2.10[0] "unlucky"  →  g10_u2_l2.10_flsh_act0_i0.png
+  ➕ MISSING  g10-2.10[1] "go wrong"  →  g10_u2_l2.10_flsh_act0_i1.png
+  ➕ MISSING  g10-2.10[2] "period"  →  g10_u2_l2.10_flsh_act0_i2.png
+  ✅ New Vocabulary: An Unlucky Day
+
+  ➕ MISSING  g10-2.11[0] "supermarket"  →  g10_u2_l2.11_flsh_act0_i0.png
+  ➕ MISSING  g10-2.11[1] "bicycle"  →  g10_u2_l2.11_flsh_act0_i1.png
+  ➕ MISSING  g10-2.11[2] "disappeared"  →  g10_u2_l2.11_flsh_act0_i2.png
+  ➕ MISSING  g10-2.11[3] "keys"  →  g10_u2_l2.11_flsh_act0_i3.png
+  ➕ MISSING  g10-2.11[4] "angry"  →  g10_u2_l2.11_flsh_act0_i4.png
+  ✅ Lesson Vocabulary
+
+  ➕ MISSING  g10-3.1[0] "Olives"  →  g10_u3_l3.1_flsh_act0_i0.png
+  ➕ MISSING  g10-3.1[1] "Tomatoes"  →  g10_u3_l3.1_flsh_act0_i1.png
+  ➕ MISSING  g10-3.1[2] "Flour"  →  g10_u3_l3.1_flsh_act0_i2.png
+  ➕ MISSING  g10-3.1[3] "Sugar"  →  g10_u3_l3.1_flsh_act0_i3.png
+  ➕ MISSING  g10-3.1[4] "Butter"  →  g10_u3_l3.1_flsh_act0_i4.png
+  ➕ MISSING  g10-3.1[5] "Eggs"  →  g10_u3_l3.1_flsh_act0_i5.png
+  ✅ Food Ingredients
+
+  ➕ MISSING  g10-3.7[0] "I'm all for..."  →  g10_u3_l3.7_flsh_act0_i0.png
+  ➕ MISSING  g10-3.7[1] "I'm completely against..."  →  g10_u3_l3.7_flsh_act0_i1.png
+  ➕ MISSING  g10-3.7[2] "I'm in favour of..."  →  g10_u3_l3.7_flsh_act0_i2.png
+  ➕ MISSING  g10-3.7[3] "I'm not in favour of..."  →  g10_u3_l3.7_flsh_act0_i3.png
+  ✅ Phrases for Giving Opinions
+
+  ➕ MISSING  g10-3.5[0] "convenient"  →  g10_u3_l3.5_flsh_act0_i0.png
+  ➕ MISSING  g10-3.5[1] "against the idea"  →  g10_u3_l3.5_flsh_act0_i1.png
+  ✅ Vocabulary: Changes in Town
+
+  ➕ MISSING  g10-3.8[0] "traitor"  →  g10_u3_l3.8_flsh_act0_i0.png
+  ✅ Key Vocabulary: The Tower of London
+
+  ➕ MISSING  g10-3.7[0] "find"  →  g10_u3_l3.7_flsh_act0_i0.png
+  ➕ MISSING  g10-3.7[1] "ask"  →  g10_u3_l3.7_flsh_act0_i1.png
+  ➕ MISSING  g10-3.7[2] "maybe"  →  g10_u3_l3.7_flsh_act0_i2.png
+  ➕ MISSING  g10-3.7[3] "camera"  →  g10_u3_l3.7_flsh_act0_i3.png
+  ➕ MISSING  g10-3.7[4] "Dad"  →  g10_u3_l3.7_flsh_act0_i4.png
+  ➕ MISSING  g10-3.7[5] "Mum"  →  g10_u3_l3.7_flsh_act0_i5.png
+  ✅ New Words: The Camera Story
+
+  ➕ MISSING  g10-3.1[0] "villa"  →  g10_u3_l3.1_flsh_act0_i0.png
+  ➕ MISSING  g10-3.1[1] "verandah"  →  g10_u3_l3.1_flsh_act0_i1.png
+  ➕ MISSING  g10-3.1[2] "store cupboard"  →  g10_u3_l3.1_flsh_act0_i2.png
+  ➕ MISSING  g10-3.1[3] "passage"  →  g10_u3_l3.1_flsh_act0_i3.png
+  ➕ MISSING  g10-3.1[4] "guest room"  →  g10_u3_l3.1_flsh_act0_i4.png
+  ➕ MISSING  g10-3.1[5] "study"  →  g10_u3_l3.1_flsh_act0_i5.png
+  ✅ Vocabulary: Rooms in a Villa
+
+  ⚠️  WRONG  g10-4.1[0] "literature"  →  g10_u4_l4.1_flsh_act0_i0.png
+  ⚠️  WRONG  g10-4.1[1] "author"  →  g10_u4_l4.1_flsh_act0_i1.png
+  ⚠️  WRONG  g10-4.1[2] "tourism"  →  g10_u4_l4.1_flsh_act0_i2.png
+  ✅ Key Vocabulary: English as a World Language
+
+  ➕ MISSING  g10-3.14[0] "port"  →  g10_u3_l3.14_flsh_act0_i0.png
+  ➕ MISSING  g10-3.14[1] "anchor"  →  g10_u3_l3.14_flsh_act0_i1.png
+  ➕ MISSING  g10-3.14[2] "wreck"  →  g10_u3_l3.14_flsh_act0_i2.png
+  ➕ MISSING  g10-3.14[3] "pottery"  →  g10_u3_l3.14_flsh_act0_i3.png
+  ⚠️  WRONG  g10-3.14[4] "mast"  →  g10_u3_l3.14_flsh_act0_i4.png
+  ➕ MISSING  g10-3.14[5] "mud"  →  g10_u3_l3.14_flsh_act0_i5.png
+  ➕ MISSING  g10-3.14[6] "surface"  →  g10_u3_l3.14_flsh_act0_i6.png
+  ✅ Vocabulary: At Sea
+
+  ➕ MISSING  g10-4.3[0] "population density"  →  g10_u4_l4.3_flsh_act0_i0.png
+  ➕ MISSING  g10-4.3[1] "nomad"  →  g10_u4_l4.3_flsh_act0_i1.png
+  ➕ MISSING  g10-4.3[2] "settler"  →  g10_u4_l4.3_flsh_act0_i2.png
+  ➕ MISSING  g10-4.3[3] "weapon"  →  g10_u4_l4.3_flsh_act0_i3.png
+  ➕ MISSING  g10-4.3[4] "tribe"  →  g10_u4_l4.3_flsh_act0_i4.png
+  ➕ MISSING  g10-4.3[5] "ranch"  →  g10_u4_l4.3_flsh_act0_i5.png
+  ➕ MISSING  g10-4.3[6] "urban"  →  g10_u4_l4.3_flsh_act0_i6.png
+  ✅ Australia: Key Vocabulary
+
+  ➕ MISSING  g10-4.8[0] "border"  →  g10_u4_l4.8_flsh_act0_i0.png
+  ➕ MISSING  g10-4.8[1] "nomadic"  →  g10_u4_l4.8_flsh_act0_i1.png
+  ➕ MISSING  g10-4.8[2] "protect"  →  g10_u4_l4.8_flsh_act0_i2.png
+  ➕ MISSING  g10-4.8[3] "handle"  →  g10_u4_l4.8_flsh_act0_i3.png
+  ✅ East Africa Vocabulary
+
+  ➕ MISSING  g10-4.6[0] "bounded"  →  g10_u4_l4.6_flsh_act0_i0.png
+  ➕ MISSING  g10-4.6[1] "increase"  →  g10_u4_l4.6_flsh_act0_i1.png
+  ➕ MISSING  g10-4.6[2] "producer"  →  g10_u4_l4.6_flsh_act0_i2.png
+  ➕ MISSING  g10-4.6[3] "leaf"  →  g10_u4_l4.6_flsh_act0_i3.png
+  ➕ MISSING  g10-4.6[4] "grief"  →  g10_u4_l4.6_flsh_act0_i4.png
+  ➕ MISSING  g10-4.6[5] "tomb"  →  g10_u4_l4.6_flsh_act0_i5.png
+  ➕ MISSING  g10-4.6[6] "marble"  →  g10_u4_l4.6_flsh_act0_i6.png
+  ✅ Vocabulary: Discovering India
+
+  ⚠️  WRONG  g10-3.5[0] "next door to"  →  g10_u3_l3.5_flsh_act0_i0.png
+  ⚠️  WRONG  g10-3.5[1] "against"  →  g10_u3_l3.5_flsh_act0_i1.png
+  ✅ Vocabulary: Places and Positions
+
+  ➕ MISSING  g10-3.7[0] "Go straight on"  →  g10_u3_l3.7_flsh_act0_i0.png
+  ➕ MISSING  g10-3.7[1] "Turn left"  →  g10_u3_l3.7_flsh_act0_i1.png
+  ➕ MISSING  g10-3.7[2] "Turn right"  →  g10_u3_l3.7_flsh_act0_i2.png
+  ➕ MISSING  g10-3.7[3] "Take the first on the left"  →  g10_u3_l3.7_flsh_act0_i3.png
+  ➕ MISSING  g10-3.7[4] "Take the second on the right"  →  g10_u3_l3.7_flsh_act0_i4.png
+  ➕ MISSING  g10-3.7[5] "On the left-hand side"  →  g10_u3_l3.7_flsh_act0_i5.png
+  ➕ MISSING  g10-3.7[6] "Next to"  →  g10_u3_l3.7_flsh_act0_i6.png
+  ✅ Giving Directions: Key Phrases
+
+  ➕ MISSING  g10-3.8[0] "honey"  →  g10_u3_l3.8_flsh_act0_i0.png
+  ✅ Bakery Ingredients
+
+  ⚠️  WRONG  g10-4.1[0] "headline"  →  g10_u4_l4.1_flsh_act0_i0.png
+  ⚠️  WRONG  g10-4.1[1] "tour"  →  g10_u4_l4.1_flsh_act0_i1.png
+  ⚠️  WRONG  g10-4.1[2] "spread"  →  g10_u4_l4.1_flsh_act0_i2.png
+  ✅ Vocabulary: Newspaper Headlines
+
+  ➕ MISSING  g10-5.6[0] "captain"  →  g10_u5_l5.6_flsh_act0_i0.png
+  ✅ Vocabulary: Umar's Dream
+
+  ⚠️  WRONG  g10-4.5[0] "wherever"  →  g10_u4_l4.5_flsh_act0_i0.png
+  ⚠️  WRONG  g10-4.5[1] "necessary"  →  g10_u4_l4.5_flsh_act0_i1.png
+  ✅ New Vocabulary
+
+  ➕ MISSING  g10-4.7[0] "broadcast"  →  g10_u4_l4.7_flsh_act0_i0.png
+  ➕ MISSING  g10-4.7[1] "nature series"  →  g10_u4_l4.7_flsh_act0_i1.png
+  ✅ TV and Programme Vocabulary
+
+  ➕ MISSING  g10-4.8[0] "stay in"  →  g10_u4_l4.8_flsh_act0_i0.png
+  ➕ MISSING  g10-4.8[1] "exhibition"  →  g10_u4_l4.8_flsh_act0_i1.png
+  ➕ MISSING  g10-4.8[2] "painting"  →  g10_u4_l4.8_flsh_act0_i2.png
+  ➕ MISSING  g10-4.8[3] "artist"  →  g10_u4_l4.8_flsh_act0_i3.png
+  ✅ Evening Activities Vocabulary
+
+  ⚠️  WRONG  g10-5.9[0] "buzz"  →  g10_u5_l5.9_flsh_act0_i0.png
+  ➕ MISSING  g10-5.9[1] "get it"  →  g10_u5_l5.9_flsh_act0_i1.png
+  ➕ MISSING  g10-5.9[2] "onomatopoeia"  →  g10_u5_l5.9_flsh_act0_i2.png
+  ➕ MISSING  g10-5.9[3] "pun"  →  g10_u5_l5.9_flsh_act0_i3.png
+  ✅ Key Words: Sounds and Ideas
+
+  ➕ MISSING  g10-5.15[0] "erosion"  →  g10_u5_l5.15_flsh_act0_i0.png
+  ➕ MISSING  g10-5.15[1] "handicrafts"  →  g10_u5_l5.15_flsh_act0_i1.png
+  ➕ MISSING  g10-5.15[2] "beehives"  →  g10_u5_l5.15_flsh_act0_i2.png
+  ➕ MISSING  g10-5.15[3] "wells"  →  g10_u5_l5.15_flsh_act0_i3.png
+  ➕ MISSING  g10-5.15[4] "unique"  →  g10_u5_l5.15_flsh_act0_i4.png
+  ➕ MISSING  g10-5.15[5] "solve"  →  g10_u5_l5.15_flsh_act0_i5.png
+  ✅ Unit 5 Vocabulary Review
+
+  ➕ MISSING  g10-7.2[0] "In"  →  g10_u7_l7.2_flsh_act0_i0.png
+  ➕ MISSING  g10-7.2[1] "On"  →  g10_u7_l7.2_flsh_act0_i1.png
+  ➕ MISSING  g10-7.2[2] "Under"  →  g10_u7_l7.2_flsh_act0_i2.png
+  ➕ MISSING  g10-7.2[3] "Next to"  →  g10_u7_l7.2_flsh_act0_i3.png
+  ➕ MISSING  g10-7.2[4] "Between"  →  g10_u7_l7.2_flsh_act0_i4.png
+  ➕ MISSING  g10-7.2[5] "Opposite"  →  g10_u7_l7.2_flsh_act0_i5.png
+  ✅ Prepositions
+
+  ➕ MISSING  g10-5.3[0] "Congratulations"  →  g10_u5_l5.3_flsh_act0_i0.png
+  ✅ Social Expressions
+
+  ➕ MISSING  g10-6.2[0] "citizen"  →  g10_u6_l6.2_flsh_act0_i0.png
+  ✅ Key Vocabulary: People and Events
+
+  ⚠️  WRONG  g10-4.3[0] "date"  →  g10_u4_l4.3_flsh_act0_i0.png
+  ⚠️  WRONG  g10-4.3[1] "apple"  →  g10_u4_l4.3_flsh_act0_i1.png
+  ⚠️  WRONG  g10-4.3[2] "orange"  →  g10_u4_l4.3_flsh_act0_i2.png
+  ✅ New Words: Fruits
+
+  ⚠️  WRONG  g10-6.13[0] "treat"  →  g10_u6_l6.13_flsh_act0_i0.png
+  ➕ MISSING  g10-6.13[1] "inject"  →  g10_u6_l6.13_flsh_act0_i1.png
+  ➕ MISSING  g10-6.13[2] "prescribe"  →  g10_u6_l6.13_flsh_act0_i2.png
+  ➕ MISSING  g10-6.13[3] "infect"  →  g10_u6_l6.13_flsh_act0_i3.png
+  ➕ MISSING  g10-6.13[4] "disinfect"  →  g10_u6_l6.13_flsh_act0_i4.png
+  ➕ MISSING  g10-6.13[5] "prevent"  →  g10_u6_l6.13_flsh_act0_i5.png
+  ✅ Medical Vocabulary: Verbs and Nouns
+
+  ➕ MISSING  g10-6.14[0] "prevent"  →  g10_u6_l6.14_flsh_act0_i0.png
+  ➕ MISSING  g10-6.14[1] "cure"  →  g10_u6_l6.14_flsh_act0_i1.png
+  ➕ MISSING  g10-6.14[2] "disinfect"  →  g10_u6_l6.14_flsh_act0_i2.png
+  ⚠️  WRONG  g10-6.14[3] "infection"  →  g10_u6_l6.14_flsh_act0_i3.png
+  ⚠️  WRONG  g10-6.14[4] "hygiene"  →  g10_u6_l6.14_flsh_act0_i4.png
+  ➕ MISSING  g10-6.14[5] "prescribe"  →  g10_u6_l6.14_flsh_act0_i5.png
+  ✅ Key Health Vocabulary
+
+  ➕ MISSING  g10-6.16[0] "bandage"  →  g10_u6_l6.16_flsh_act0_i0.png
+  ⚠️  WRONG  g10-6.16[1] "syringe"  →  g10_u6_l6.16_flsh_act0_i1.png
+  ⚠️  WRONG  g10-6.16[2] "thermometer"  →  g10_u6_l6.16_flsh_act0_i2.png
+  ➕ MISSING  g10-6.16[3] "X-ray"  →  g10_u6_l6.16_flsh_act0_i3.png
+  ⚠️  WRONG  g10-6.16[4] "infection"  →  g10_u6_l6.16_flsh_act0_i4.png
+  ➕ MISSING  g10-6.16[5] "prescription"  →  g10_u6_l6.16_flsh_act0_i5.png
+  ➕ MISSING  g10-6.16[6] "patient"  →  g10_u6_l6.16_flsh_act0_i6.png
+  ✅ Health & Medicine Vocabulary
+
+  ➕ MISSING  g10-1.6[0] "stream"  →  g10_u1_l1.6_flsh_act0_i0.png
+  ➕ MISSING  g10-1.6[1] "mountain"  →  g10_u1_l1.6_flsh_act0_i1.png
+  ⚠️  WRONG  g10-1.6[2] "farmland"  →  g10_u1_l1.6_flsh_act0_i2.png
+  ➕ MISSING  g10-1.6[3] "river"  →  g10_u1_l1.6_flsh_act0_i3.png
+  ➕ MISSING  g10-1.6[4] "coastline"  →  g10_u1_l1.6_flsh_act0_i4.png
+  ⚠️  WRONG  g10-1.6[5] "valley"  →  g10_u1_l1.6_flsh_act0_i5.png
+  ➕ MISSING  g10-1.6[6] "desert"  →  g10_u1_l1.6_flsh_act0_i6.png
+  ➕ MISSING  g10-1.6[7] "hill"  →  g10_u1_l1.6_flsh_act0_i7.png
+  ✅ Countryside Features
+
+  ➕ MISSING  g10-7.1[0] "public service"  →  g10_u7_l7.1_flsh_act0_i0.png
+  ✅ Key Vocabulary: Public Service
+
+  ➕ MISSING  g10-1.12[0] "familiar"  →  g10_u1_l1.12_flsh_act0_i0.png
+  ➕ MISSING  g10-1.12[1] "particular"  →  g10_u1_l1.12_flsh_act0_i1.png
+  ➕ MISSING  g10-1.12[2] "matter"  →  g10_u1_l1.12_flsh_act0_i2.png
+  ➕ MISSING  g10-1.12[3] "blinds"  →  g10_u1_l1.12_flsh_act0_i3.png
+  ➕ MISSING  g10-1.12[4] "fog"  →  g10_u1_l1.12_flsh_act0_i4.png
+  ✅ Key Vocabulary for Descriptions
+
+  ⚠️  WRONG  g10-7.10[0] "unexpected"  →  g10_u7_l7.10_flsh_act0_i0.png
+  ⚠️  WRONG  g10-7.10[1] "trapped"  →  g10_u7_l7.10_flsh_act0_i1.png
+  ⚠️  WRONG  g10-7.10[2] "fireproof"  →  g10_u7_l7.10_flsh_act0_i2.png
+  ⚠️  WRONG  g10-7.10[3] "fire drill"  →  g10_u7_l7.10_flsh_act0_i3.png
+  ⚠️  WRONG  g10-7.10[4] "fire-escape"  →  g10_u7_l7.10_flsh_act0_i4.png
+  ⚠️  WRONG  g10-7.10[5] "fire extinguisher"  →  g10_u7_l7.10_flsh_act0_i5.png
+  ➕ MISSING  g10-7.10[6] "smoke-alarm"  →  g10_u7_l7.10_flsh_act0_i6.png
+  ⚠️  WRONG  g10-7.10[7] "point out"  →  g10_u7_l7.10_flsh_act0_i7.png
+  ✅ Fire Safety Vocabulary
+
+  ➕ MISSING  g10-7.12[0] "destroy"  →  g10_u7_l7.12_flsh_act0_i0.png
+  ➕ MISSING  g10-7.12[1] "injure"  →  g10_u7_l7.12_flsh_act0_i1.png
+  ➕ MISSING  g10-7.12[2] "courage"  →  g10_u7_l7.12_flsh_act0_i2.png
+  ⚠️  WRONG  g10-7.12[3] "cause"  →  g10_u7_l7.12_flsh_act0_i3.png
+  ➕ MISSING  g10-7.12[4] "equipment"  →  g10_u7_l7.12_flsh_act0_i4.png
+  ➕ MISSING  g10-7.12[5] "article"  →  g10_u7_l7.12_flsh_act0_i5.png
+  ✅ Newspaper Report Vocabulary
+
+  ➕ MISSING  g10-7.11[0] "blame"  →  g10_u7_l7.11_flsh_act0_i0.png
+  ➕ MISSING  g10-7.11[1] "destroy"  →  g10_u7_l7.11_flsh_act0_i1.png
+  ➕ MISSING  g10-7.11[2] "blaze"  →  g10_u7_l7.11_flsh_act0_i2.png
+  ➕ MISSING  g10-7.11[3] "out of control"  →  g10_u7_l7.11_flsh_act0_i3.png
+  ➕ MISSING  g10-7.11[4] "injure"  →  g10_u7_l7.11_flsh_act0_i4.png
+  ✅ Vocabulary: School Fire Report
+
+  ➕ MISSING  g10-2.3[0] "witness"  →  g10_u2_l2.3_flsh_act0_i0.png
+  ➕ MISSING  g10-2.3[1] "collapse"  →  g10_u2_l2.3_flsh_act0_i1.png
+  ⚠️  WRONG  g10-2.3[2] "recover"  →  g10_u2_l2.3_flsh_act0_i2.png
+  ➕ MISSING  g10-2.3[3] "rare"  →  g10_u2_l2.3_flsh_act0_i3.png
+  ✅ Key Vocabulary: News Reports
+
+  ➕ MISSING  g10-7.13[0] "Police Headquarters"  →  g10_u7_l7.13_flsh_act0_i0.png
+  ➕ MISSING  g10-7.13[1] "out to sea"  →  g10_u7_l7.13_flsh_act0_i1.png
+  ➕ MISSING  g10-7.13[2] "missing"  →  g10_u7_l7.13_flsh_act0_i2.png
+  ✅ Emergency at Sea: Key Words
+
+  ➕ MISSING  g10-7.14[0] "plot"  →  g10_u7_l7.14_flsh_act0_i0.png
+  ➕ MISSING  g10-7.14[1] "character"  →  g10_u7_l7.14_flsh_act0_i1.png
+  ➕ MISSING  g10-7.14[2] "genre"  →  g10_u7_l7.14_flsh_act0_i2.png
+  ✅ Film Review Vocabulary
+
+  ⚠️  WRONG  g10-7.15[0] "compulsory"  →  g10_u7_l7.15_flsh_act0_i0.png
+  ⚠️  WRONG  g10-7.15[1] "parental consent"  →  g10_u7_l7.15_flsh_act0_i1.png
+  ⚠️  WRONG  g10-7.15[2] "licence"  →  g10_u7_l7.15_flsh_act0_i2.png
+  ⚠️  WRONG  g10-7.15[3] "forbid"  →  g10_u7_l7.15_flsh_act0_i3.png
+  ✅ Key Vocabulary: Laws and Regulations
+
+  ➕ MISSING  g10-7.16[0] "immigration officer"  →  g10_u7_l7.16_flsh_act0_i0.png
+  ➕ MISSING  g10-7.16[1] "blaze"  →  g10_u7_l7.16_flsh_act0_i1.png
+  ➕ MISSING  g10-7.16[2] "responsibility"  →  g10_u7_l7.16_flsh_act0_i2.png
+  ➕ MISSING  g10-7.16[3] "visa"  →  g10_u7_l7.16_flsh_act0_i3.png
+  ➕ MISSING  g10-7.16[4] "pedestrian"  →  g10_u7_l7.16_flsh_act0_i4.png
+  ⚠️  WRONG  g10-7.16[5] "fire extinguisher"  →  g10_u7_l7.16_flsh_act0_i5.png
+  ➕ MISSING  g10-7.16[6] "confident"  →  g10_u7_l7.16_flsh_act0_i6.png
+  ➕ MISSING  g10-7.16[7] "moustache"  →  g10_u7_l7.16_flsh_act0_i7.png
+  ✅ Unit 7 Vocabulary Review
+
+  ➕ MISSING  g10-7.4[0] "foreign language"  →  g10_u7_l7.4_flsh_act0_i0.png
+  ➕ MISSING  g10-7.4[1] "pretend"  →  g10_u7_l7.4_flsh_act0_i1.png
+  ➕ MISSING  g10-7.4[2] "out of date"  →  g10_u7_l7.4_flsh_act0_i2.png
+  ➕ MISSING  g10-7.4[3] "I'm afraid"  →  g10_u7_l7.4_flsh_act0_i3.png
+  ✅ Vocabulary: Polite Expressions
+
+  ➕ MISSING  g10-2.8[0] "hurricane"  →  g10_u2_l2.8_flsh_act0_i0.png
+  ➕ MISSING  g10-2.8[1] "earthquake"  →  g10_u2_l2.8_flsh_act0_i1.png
+  ✅ Natural Disasters Vocabulary
+
+  ➕ MISSING  g10-7.8[0] "beard"  →  g10_u7_l7.8_flsh_act0_i0.png
+  ➕ MISSING  g10-7.8[1] "moustache"  →  g10_u7_l7.8_flsh_act0_i1.png
+  ➕ MISSING  g10-7.8[2] "clean-shaven"  →  g10_u7_l7.8_flsh_act0_i2.png
+  ➕ MISSING  g10-7.8[3] "bald"  →  g10_u7_l7.8_flsh_act0_i3.png
+  ➕ MISSING  g10-7.8[4] "scar"  →  g10_u7_l7.8_flsh_act0_i4.png
+  ➕ MISSING  g10-7.8[5] "curly"  →  g10_u7_l7.8_flsh_act0_i5.png
+  ➕ MISSING  g10-7.8[6] "straight"  →  g10_u7_l7.8_flsh_act0_i6.png
+  ➕ MISSING  g10-7.8[7] "striped"  →  g10_u7_l7.8_flsh_act0_i7.png
+  ➕ MISSING  g10-7.8[8] "plain"  →  g10_u7_l7.8_flsh_act0_i8.png
+  ➕ MISSING  g10-7.8[9] "trainers"  →  g10_u7_l7.8_flsh_act0_i9.png
+  ➕ MISSING  g10-7.8[10] "holdall"  →  g10_u7_l7.8_flsh_act0_i10.png
+  ➕ MISSING  g10-7.8[11] "tie"  →  g10_u7_l7.8_flsh_act0_i11.png
+  ✅ Describing People: New Words
+
+  ⚠️  WRONG  g10-2.12[0] "newsflash"  →  g10_u2_l2.12_flsh_act0_i0.png
+  ⚠️  WRONG  g10-2.12[1] "measure"  →  g10_u2_l2.12_flsh_act0_i1.png
+  ⚠️  WRONG  g10-2.12[2] "badly-built"  →  g10_u2_l2.12_flsh_act0_i2.png
+  ⚠️  WRONG  g10-2.12[3] "eye-witness"  →  g10_u2_l2.12_flsh_act0_i3.png
+  ✅ Key Vocabulary: News Reporting
+
+  ➕ MISSING  g10-2.10[0] "hurricane"  →  g10_u2_l2.10_flsh_act0_i0.png
+  ➕ MISSING  g10-2.10[1] "eruption"  →  g10_u2_l2.10_flsh_act0_i1.png
+  ➕ MISSING  g10-2.10[2] "famine"  →  g10_u2_l2.10_flsh_act0_i2.png
+  ✅ Disaster Vocabulary
+
+  ➕ MISSING  g10-2.11[0] "blazing"  →  g10_u2_l2.11_flsh_act0_i0.png
+  ➕ MISSING  g10-2.11[1] "hose"  →  g10_u2_l2.11_flsh_act0_i1.png
+  ➕ MISSING  g10-2.11[2] "injured"  →  g10_u2_l2.11_flsh_act0_i2.png
+  ➕ MISSING  g10-2.11[3] "caretaker"  →  g10_u2_l2.11_flsh_act0_i3.png
+  ➕ MISSING  g10-2.11[4] "electrical fault"  →  g10_u2_l2.11_flsh_act0_i4.png
+  ✅ Vocabulary: Fire and Rescue
+
+  ➕ MISSING  g10-2.12[0] "Police Headquarters"  →  g10_u2_l2.12_flsh_act0_i0.png
+  ➕ MISSING  g10-2.12[1] "out to sea"  →  g10_u2_l2.12_flsh_act0_i1.png
+  ➕ MISSING  g10-2.12[2] "sail"  →  g10_u2_l2.12_flsh_act0_i2.png
+  ➕ MISSING  g10-2.12[3] "fisherman"  →  g10_u2_l2.12_flsh_act0_i3.png
+  ✅ Key Vocabulary: At Sea
+
+  ➕ MISSING  g10-7.4[0] "brother"  →  g10_u7_l7.4_flsh_act0_i0.png
+  ➕ MISSING  g10-7.4[1] "sister"  →  g10_u7_l7.4_flsh_act0_i1.png
+  ➕ MISSING  g10-7.4[2] "son"  →  g10_u7_l7.4_flsh_act0_i2.png
+  ➕ MISSING  g10-7.4[3] "daughter"  →  g10_u7_l7.4_flsh_act0_i3.png
+  ✅ Family and Jobs Vocabulary
+
+  ➕ MISSING  g10-7.8[0] "rice"  →  g10_u7_l7.8_flsh_act0_i0.png
+  ➕ MISSING  g10-7.8[1] "potatoes"  →  g10_u7_l7.8_flsh_act0_i1.png
+  ➕ MISSING  g10-7.8[2] "lettuces"  →  g10_u7_l7.8_flsh_act0_i2.png
+  ➕ MISSING  g10-7.8[3] "flour"  →  g10_u7_l7.8_flsh_act0_i3.png
+  ➕ MISSING  g10-7.8[4] "dates"  →  g10_u7_l7.8_flsh_act0_i4.png
+  ➕ MISSING  g10-7.8[5] "cheese"  →  g10_u7_l7.8_flsh_act0_i5.png
+  ➕ MISSING  g10-7.8[6] "apples"  →  g10_u7_l7.8_flsh_act0_i6.png
+  ➕ MISSING  g10-7.8[7] "cucumbers"  →  g10_u7_l7.8_flsh_act0_i7.png
+  ➕ MISSING  g10-7.8[8] "coffee"  →  g10_u7_l7.8_flsh_act0_i8.png
+  ➕ MISSING  g10-7.8[9] "meat"  →  g10_u7_l7.8_flsh_act0_i9.png
+  ➕ MISSING  g10-7.8[10] "tomatoes"  →  g10_u7_l7.8_flsh_act0_i10.png
+  ➕ MISSING  g10-7.8[11] "sugar"  →  g10_u7_l7.8_flsh_act0_i11.png
+  ✅ At the Shop: Food Vocabulary
+
+  ➕ MISSING  g10-5.9[0] "cucumber"  →  g10_u5_l5.9_flsh_act0_i0.png
+  ➕ MISSING  g10-5.9[1] "lettuce"  →  g10_u5_l5.9_flsh_act0_i1.png
+  ➕ MISSING  g10-5.9[2] "potatoes"  →  g10_u5_l5.9_flsh_act0_i2.png
+  ➕ MISSING  g10-5.9[3] "vegetables"  →  g10_u5_l5.9_flsh_act0_i3.png
+  ➕ MISSING  g10-5.9[4] "market"  →  g10_u5_l5.9_flsh_act0_i4.png
+  ✅ Vocabulary: At the Market
+
+  ➕ MISSING  g10-5.13[0] "quiet"  →  g10_u5_l5.13_flsh_act0_i0.png
+  ➕ MISSING  g10-5.13[1] "through"  →  g10_u5_l5.13_flsh_act0_i1.png
+  ➕ MISSING  g10-5.13[2] "put out"  →  g10_u5_l5.13_flsh_act0_i2.png
+  ➕ MISSING  g10-5.13[3] "desert"  →  g10_u5_l5.13_flsh_act0_i3.png
+  ➕ MISSING  g10-5.13[4] "camp"  →  g10_u5_l5.13_flsh_act0_i4.png
+  ✅ Desert Camping Vocabulary
+
+  ➕ MISSING  g10-3.12[0] "compete"  →  g10_u3_l3.12_flsh_act1_i0.png
+  ➕ MISSING  g10-3.12[1] "mountainous"  →  g10_u3_l3.12_flsh_act1_i1.png
+  ➕ MISSING  g10-3.12[2] "plain"  →  g10_u3_l3.12_flsh_act1_i2.png
+  ➕ MISSING  g10-3.12[3] "source"  →  g10_u3_l3.12_flsh_act1_i3.png
+  ➕ MISSING  g10-3.12[4] "export"  →  g10_u3_l3.12_flsh_act1_i4.png
+  ➕ MISSING  g10-3.12[5] "discovery"  →  g10_u3_l3.12_flsh_act1_i5.png
+  ✅ Key Vocabulary: Scotland
+
+  ➕ MISSING  g10-3.14[0] "continue"  →  g10_u3_l3.14_flsh_act0_i0.png
+  ➕ MISSING  g10-3.14[1] "Buckingham Palace"  →  g10_u3_l3.14_flsh_act0_i1.png
+  ➕ MISSING  g10-3.14[2] "Underground station"  →  g10_u3_l3.14_flsh_act0_i2.png
+  ➕ MISSING  g10-3.14[3] "belong to"  →  g10_u3_l3.14_flsh_act0_i3.png
+  ➕ MISSING  g10-3.14[4] "blue with cold"  →  g10_u3_l3.14_flsh_act0_i4.png
+  ✅ London Tour Vocabulary
+
+  ⚠️  WRONG  g10-2.11[0] "house"  →  g10_u2_l2.11_flsh_act0_i0.png
+  ⚠️  WRONG  g10-2.11[1] "wall"  →  g10_u2_l2.11_flsh_act0_i1.png
+  ⚠️  WRONG  g10-2.11[2] "car"  →  g10_u2_l2.11_flsh_act0_i2.png
+  ⚠️  WRONG  g10-2.11[3] "bicycle"  →  g10_u2_l2.11_flsh_act0_i3.png
+  ⚠️  WRONG  g10-2.11[4] "man"  →  g10_u2_l2.11_flsh_act0_i4.png
+  ✅ New Words: People and Places
+
+  ⚠️  WRONG  g10-3.2[0] "province"  →  g10_u3_l3.2_flsh_act0_i0.png
+  ✅ Key Vocabulary: Countries and Government
+
+  ➕ MISSING  g10-7.5[0] "doctor"  →  g10_u7_l7.5_flsh_act2_i0.png
+  ➕ MISSING  g10-7.5[1] "zoo keeper"  →  g10_u7_l7.5_flsh_act2_i1.png
+  ➕ MISSING  g10-7.5[2] "farmer"  →  g10_u7_l7.5_flsh_act2_i2.png
+  ➕ MISSING  g10-7.5[3] "builder"  →  g10_u7_l7.5_flsh_act2_i3.png
+  ➕ MISSING  g10-7.5[4] "nurse"  →  g10_u7_l7.5_flsh_act2_i4.png
+  ➕ MISSING  g10-7.5[5] "pilot"  →  g10_u7_l7.5_flsh_act2_i5.png
+  ✅ Jobs Vocabulary
+
+  ➕ MISSING  g10-7.11[0] "pot"  →  g10_u7_l7.11_flsh_act0_i0.png
+  ➕ MISSING  g10-7.11[1] "workshop"  →  g10_u7_l7.11_flsh_act0_i1.png
+  ➕ MISSING  g10-7.11[2] "baker"  →  g10_u7_l7.11_flsh_act0_i2.png
+  ➕ MISSING  g10-7.11[3] "nurse"  →  g10_u7_l7.11_flsh_act0_i3.png
+  ➕ MISSING  g10-7.11[4] "secretary"  →  g10_u7_l7.11_flsh_act0_i4.png
+  ✅ Jobs and Workplaces Vocabulary
+
+  ➕ MISSING  g10-7.15[0] "baker"  →  g10_u7_l7.15_flsh_act0_i0.png
+  ➕ MISSING  g10-7.15[1] "carpenter"  →  g10_u7_l7.15_flsh_act0_i1.png
+  ➕ MISSING  g10-7.15[2] "dentist"  →  g10_u7_l7.15_flsh_act0_i2.png
+  ➕ MISSING  g10-7.15[3] "pilot"  →  g10_u7_l7.15_flsh_act0_i3.png
+  ✅ Jobs in Our Community
+
+  ➕ MISSING  g10-1.10[0] "continuous tense"  →  g10_u1_l1.10_flsh_act0_i0.png
+  ✅ Key Vocabulary
+
+  ➕ MISSING  g10-4.4[0] "settler"  →  g10_u4_l4.4_flsh_act0_i0.png
+  ➕ MISSING  g10-4.4[1] "ranch"  →  g10_u4_l4.4_flsh_act0_i1.png
+  ➕ MISSING  g10-4.4[2] "tarmac"  →  g10_u4_l4.4_flsh_act0_i2.png
+  ➕ MISSING  g10-4.4[3] "Aborigine"  →  g10_u4_l4.4_flsh_act0_i3.png
+  ➕ MISSING  g10-4.4[4] "nomadic"  →  g10_u4_l4.4_flsh_act0_i4.png
+  ➕ MISSING  g10-4.4[5] "boomerang"  →  g10_u4_l4.4_flsh_act0_i5.png
+  ✅ Australia: Key Vocabulary
+
+  ➕ MISSING  g10-1.11[0] "ring"  →  g10_u1_l1.11_flsh_act0_i0.png
+  ➕ MISSING  g10-1.11[1] "camera"  →  g10_u1_l1.11_flsh_act0_i1.png
+  ➕ MISSING  g10-1.11[2] "cassette player"  →  g10_u1_l1.11_flsh_act0_i2.png
+  ➕ MISSING  g10-1.11[3] "sweater"  →  g10_u1_l1.11_flsh_act0_i3.png
+  ➕ MISSING  g10-1.11[4] "necklace"  →  g10_u1_l1.11_flsh_act0_i4.png
+  ➕ MISSING  g10-1.11[5] "wristwatch"  →  g10_u1_l1.11_flsh_act0_i5.png
+  ✅ Presents Vocabulary
+
+  ➕ MISSING  g10-4.7[0] "emperor"  →  g10_u4_l4.7_flsh_act0_i0.png
+  ➕ MISSING  g10-4.7[1] "support"  →  g10_u4_l4.7_flsh_act0_i1.png
+  ✅ Key Vocabulary: The Taj Mahal
+
+  ➕ MISSING  g10-1.12[0] "punctuation"  →  g10_u1_l1.12_flsh_act0_i0.png
+  ➕ MISSING  g10-1.12[1] "capital letter"  →  g10_u1_l1.12_flsh_act0_i1.png
+  ➕ MISSING  g10-1.12[2] "apostrophe"  →  g10_u1_l1.12_flsh_act0_i2.png
+  ➕ MISSING  g10-1.12[3] "comma"  →  g10_u1_l1.12_flsh_act0_i3.png
+  ➕ MISSING  g10-1.12[4] "full stop"  →  g10_u1_l1.12_flsh_act0_i4.png
+  ✅ Punctuation Vocabulary
+
+  ➕ MISSING  g10-2.3[0] "Friendly"  →  g10_u2_l2.3_flsh_act0_i0.png
+  ➕ MISSING  g10-2.3[1] "Hard-working"  →  g10_u2_l2.3_flsh_act0_i1.png
+  ➕ MISSING  g10-2.3[2] "Lazy"  →  g10_u2_l2.3_flsh_act0_i2.png
+  ➕ MISSING  g10-2.3[3] "Funny"  →  g10_u2_l2.3_flsh_act0_i3.png
+  ✅ Personality Words
+
+  ➕ MISSING  g10-5.13[0] "tourist guide"  →  g10_u5_l5.13_flsh_act0_i0.png
+  ➕ MISSING  g10-5.13[1] "skills"  →  g10_u5_l5.13_flsh_act0_i1.png
+  ➕ MISSING  g10-5.13[2] "set up a business"  →  g10_u5_l5.13_flsh_act0_i2.png
+  ➕ MISSING  g10-5.13[3] "handicrafts"  →  g10_u5_l5.13_flsh_act0_i3.png
+  ➕ MISSING  g10-5.13[4] "expenses"  →  g10_u5_l5.13_flsh_act0_i4.png
+  ➕ MISSING  g10-5.13[5] "equipment"  →  g10_u5_l5.13_flsh_act0_i5.png
+  ✅ Business & Tourism Vocabulary
+
+  ➕ MISSING  g10-5.3[0] "promote"  →  g10_u5_l5.3_flsh_act0_i0.png
+  ✅ Tourism Vocabulary
+
+  ➕ MISSING  g10-2.15[0] "replied"  →  g10_u2_l2.15_flsh_act0_i0.png
+  ➕ MISSING  g10-2.15[1] "whisper"  →  g10_u2_l2.15_flsh_act0_i1.png
+  ➕ MISSING  g10-2.15[2] "stone"  →  g10_u2_l2.15_flsh_act0_i2.png
+  ➕ MISSING  g10-2.15[3] "summary"  →  g10_u2_l2.15_flsh_act0_i3.png
+  ➕ MISSING  g10-2.15[4] "return"  →  g10_u2_l2.15_flsh_act0_i4.png
+  ➕ MISSING  g10-2.15[5] "falcon"  →  g10_u2_l2.15_flsh_act0_i5.png
+  ✅ Key Story Vocabulary
+
+  ➕ MISSING  g10-3.2[0] "January"  →  g10_u3_l3.2_flsh_act0_i0.png
+  ✅ The Twelve Months
+
+  ➕ MISSING  g10-6.1[0] "fisherman"  →  g10_u6_l6.1_flsh_act0_i0.png
+  ➕ MISSING  g10-6.1[1] "spectator"  →  g10_u6_l6.1_flsh_act0_i1.png
+  ➕ MISSING  g10-6.1[2] "caretaker"  →  g10_u6_l6.1_flsh_act0_i2.png
+  ⚠️  WRONG  g10-6.1[3] "engineer"  →  g10_u6_l6.1_flsh_act0_i3.png
+  ⚠️  WRONG  g10-6.1[4] "president"  →  g10_u6_l6.1_flsh_act0_i4.png
+  ➕ MISSING  g10-6.1[5] "republic"  →  g10_u6_l6.1_flsh_act0_i5.png
+  ✅ Jobs and Concepts Vocabulary
+
+  ➕ MISSING  g10-3.5[0] "January"  →  g10_u3_l3.5_flsh_act0_i0.png
+  ➕ MISSING  g10-3.5[1] "February"  →  g10_u3_l3.5_flsh_act0_i1.png
+  ✅ Months of the Year
+
+  ⚠️  WRONG  g10-4.1[0] "apples"  →  g10_u4_l4.1_flsh_act0_i0.png
+  ⚠️  WRONG  g10-4.1[1] "dates"  →  g10_u4_l4.1_flsh_act0_i1.png
+  ⚠️  WRONG  g10-4.1[2] "bananas"  →  g10_u4_l4.1_flsh_act0_i2.png
+  ✅ Food Vocabulary
+
+  ⚠️  WRONG  g10-1.11[0] "horizon"  →  g10_u1_l1.11_flsh_act0_i0.png
+  ⚠️  WRONG  g10-1.11[1] "mare"  →  g10_u1_l1.11_flsh_act0_i1.png
+  ⚠️  WRONG  g10-1.11[2] "foal"  →  g10_u1_l1.11_flsh_act0_i2.png
+  ⚠️  WRONG  g10-1.11[3] "suckle"  →  g10_u1_l1.11_flsh_act0_i3.png
+  ⚠️  WRONG  g10-1.11[4] "peck"  →  g10_u1_l1.11_flsh_act0_i4.png
+  ➕ MISSING  g10-1.11[5] "chew the cud"  →  g10_u1_l1.11_flsh_act0_i5.png
+  ✅ Vocabulary: A Countryside View
+
+  ➕ MISSING  g10-3.8[0] "population"  →  g10_u3_l3.8_flsh_act0_i0.png
+  ✅ Key Vocabulary: Describing Countries
+
+  ⚠️  WRONG  g10-1.3[0] "calm down"  →  g10_u1_l1.3_flsh_act0_i0.png
+  ⚠️  WRONG  g10-1.3[1] "there’s no point"  →  g10_u1_l1.3_flsh_act0_i1.png
+  ⚠️  WRONG  g10-1.3[2] "twin"  →  g10_u1_l1.3_flsh_act0_i2.png
+  ⚠️  WRONG  g10-1.3[3] "similar"  →  g10_u1_l1.3_flsh_act0_i3.png
+  ⚠️  WRONG  g10-1.3[4] "officer"  →  g10_u1_l1.3_flsh_act0_i4.png
+  ⚠️  WRONG  g10-1.3[5] "tag"  →  g10_u1_l1.3_flsh_act0_i5.png
+  ➕ MISSING  g10-1.3[6] "square-looking"  →  g10_u1_l1.3_flsh_act0_i6.png
+  ✅ Vocabulary: Describing and Reacting
+
+  ⚠️  WRONG  g10-1.5[0] "adjective"  →  g10_u1_l1.5_flsh_act0_i0.png
+  ➕ MISSING  g10-1.5[1] "comparison"  →  g10_u1_l1.5_flsh_act0_i1.png
+  ⚠️  WRONG  g10-1.5[2] "contrast"  →  g10_u1_l1.5_flsh_act0_i2.png
+  ⚠️  WRONG  g10-1.5[3] "equal"  →  g10_u1_l1.5_flsh_act0_i3.png
+  ⚠️  WRONG  g10-1.5[4] "phrase"  →  g10_u1_l1.5_flsh_act0_i4.png
+  ⚠️  WRONG  g10-1.5[5] "comma"  →  g10_u1_l1.5_flsh_act0_i5.png
+  ✅ Key Vocabulary: Comparison & Contrast
+
+  ➕ MISSING  g10-3.15[0] "man-made"  →  g10_u3_l3.15_flsh_act0_i0.png
+  ➕ MISSING  g10-3.15[1] "huge"  →  g10_u3_l3.15_flsh_act0_i1.png
+  ➕ MISSING  g10-3.15[2] "clear"  →  g10_u3_l3.15_flsh_act0_i2.png
+  ➕ MISSING  g10-3.15[3] "dressed"  →  g10_u3_l3.15_flsh_act0_i3.png
+  ➕ MISSING  g10-3.15[4] "terrified"  →  g10_u3_l3.15_flsh_act0_i4.png
+  ➕ MISSING  g10-3.15[5] "still"  →  g10_u3_l3.15_flsh_act0_i5.png
+  ✅ Vocabulary: The Dam Story
+
+  ➕ MISSING  g10-2.4[0] "nightmare"  →  g10_u2_l2.4_flsh_act0_i0.png
+  ➕ MISSING  g10-2.4[1] "awful"  →  g10_u2_l2.4_flsh_act0_i1.png
+  ➕ MISSING  g10-2.4[2] "terrified"  →  g10_u2_l2.4_flsh_act0_i2.png
+  ➕ MISSING  g10-2.4[3] "scary"  →  g10_u2_l2.4_flsh_act0_i3.png
+  ➕ MISSING  g10-2.4[4] "brilliant"  →  g10_u2_l2.4_flsh_act0_i4.png
+  ⚠️  WRONG  g10-2.4[5] "calm down"  →  g10_u2_l2.4_flsh_act0_i5.png
+  ✅ Dream Vocabulary
+
+  ➕ MISSING  g10-4.3[0] "Airport"  →  g10_u4_l4.3_flsh_act0_i0.png
+  ➕ MISSING  g10-4.3[1] "Ticket"  →  g10_u4_l4.3_flsh_act0_i1.png
+  ➕ MISSING  g10-4.3[2] "Boarding pass"  →  g10_u4_l4.3_flsh_act0_i2.png
+  ➕ MISSING  g10-4.3[3] "Passport"  →  g10_u4_l4.3_flsh_act0_i3.png
+  ➕ MISSING  g10-4.3[4] "Gate"  →  g10_u4_l4.3_flsh_act0_i4.png
+  ➕ MISSING  g10-4.3[5] "Departure"  →  g10_u4_l4.3_flsh_act0_i5.png
+  ➕ MISSING  g10-4.3[6] "Arrival"  →  g10_u4_l4.3_flsh_act0_i6.png
+  ➕ MISSING  g10-4.3[7] "Luggage"  →  g10_u4_l4.3_flsh_act0_i7.png
+  ✅ Airport Vocabulary
+
+  ⚠️  WRONG  g10-1.12[0] "pen"  →  g10_u1_l1.12_flsh_act0_i0.png
+  ⚠️  WRONG  g10-1.12[1] "pencil"  →  g10_u1_l1.12_flsh_act0_i1.png
+  ⚠️  WRONG  g10-1.12[2] "ruler"  →  g10_u1_l1.12_flsh_act0_i2.png
+  ⚠️  WRONG  g10-1.12[3] "rubber"  →  g10_u1_l1.12_flsh_act0_i3.png
+  ✅ Classroom Objects
+
+  ⚠️  WRONG  g10-1.10[0] "Hh"  →  g10_u1_l1.10_flsh_act0_i0.png
+  ✅ Alphabet Flashcards: H to N
+
+  ➕ MISSING  g10-3.1[0] "applicant"  →  g10_u3_l3.1_flsh_act0_i0.png
+  ➕ MISSING  g10-3.1[1] "career"  →  g10_u3_l3.1_flsh_act0_i1.png
+  ➕ MISSING  g10-3.1[2] "duties"  →  g10_u3_l3.1_flsh_act0_i2.png
+  ➕ MISSING  g10-3.1[3] "qualifications"  →  g10_u3_l3.1_flsh_act0_i3.png
+  ➕ MISSING  g10-3.1[4] "required"  →  g10_u3_l3.1_flsh_act0_i4.png
+  ➕ MISSING  g10-3.1[5] "salary"  →  g10_u3_l3.1_flsh_act0_i5.png
+  ✅ Job Application Vocabulary
+
+  ➕ MISSING  g10-3.1[0] "twenty"  →  g10_u3_l3.1_flsh_act0_i0.png
+  ➕ MISSING  g10-3.1[1] "twenty-one"  →  g10_u3_l3
+
+[… truncated 42741 chars …]

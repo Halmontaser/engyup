@@ -14,6 +14,7 @@ import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
 import ActionBar from "./ActionBar";
+import ImageViewer from "./ImageViewer";
 
 interface Option {
   text: string;
@@ -153,16 +154,16 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bg-[var(--card)] rounded-3xl border border-[var(--border)] overflow-hidden"
+          className="bg-white rounded-3xl border border-slate-200 overflow-hidden"
         >
           <div className="p-10 md:p-14 text-center">
-            <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[var(--accent)] to-purple-500 flex items-center justify-center shadow-lg">
+            <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[indigo-600] to-purple-500 flex items-center justify-center shadow-lg">
               <Headphones size={36} className="text-white" />
             </div>
             <h3 className="text-2xl font-bold mb-2">
               Listen to the Audio
             </h3>
-            <p className="text-muted text-sm mb-8">
+            <p className="text-slate-400 text-sm mb-8">
               {questions.length > 0 
                 ? "Listen carefully, then answer the questions. You can replay and toggle the transcript."
                 : "Listen to the course audio for this lesson. Replay as needed."
@@ -171,7 +172,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
 
             {/* Image for the listening passage */}
             {passageImageUrl && (
-              <div className="mb-8 mx-auto max-w-[320px] rounded-2xl overflow-hidden border border-[var(--border)] shadow-md">
+              <div className="mb-8 mx-auto max-w-[320px] rounded-2xl overflow-hidden border border-slate-200 shadow-md">
                 <img
                   src={getMediaUrl(passageImageUrl)}
                   alt="Listening passage illustration"
@@ -203,8 +204,8 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
                 disabled={isSpeaking}
                 className={`mx-auto flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-lg transition-all ${
                   isSpeaking
-                    ? "bg-[var(--accent)] text-white shadow-xl scale-105"
-                    : "bg-[var(--accent-light)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white hover:shadow-lg"
+                    ? "bg-indigo-500 text-white shadow-xl scale-105"
+                    : "bg-indigo-50 text-indigo-600 hover:bg-indigo-500 hover:text-white hover:shadow-lg"
                 }`}
               >
                 <Volume2
@@ -219,7 +220,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
             <div className="mt-8">
               <button
                 onClick={() => setShowTranscript(!showTranscript)}
-                className="text-sm font-semibold text-muted flex items-center gap-2 mx-auto hover:text-[var(--accent)] transition-colors"
+                className="text-sm font-semibold text-slate-400 flex items-center gap-2 mx-auto hover:text-indigo-600 transition-colors"
               >
                 {showTranscript ? (
                   <EyeOff size={16} />
@@ -235,7 +236,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
-                    className="mt-4 p-6 bg-[var(--background)] rounded-2xl border border-[var(--border)] text-left"
+                    className="mt-4 p-6 bg-slate-50 rounded-2xl border border-slate-200 text-left"
                   >
                     <p className="text-sm leading-relaxed whitespace-pre-line">
                       {transcript}
@@ -246,7 +247,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
             </div>
           </div>
 
-          <div className="px-8 py-5 border-t border-[var(--border)] bg-[var(--background)]/50 flex justify-end">
+          <div className="px-8 py-5 border-t border-slate-200 bg-slate-50/50 flex justify-end">
             {questions.length > 0 ? (
               <button
                 onClick={() => setPhase("quiz")}
@@ -278,7 +279,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="bg-[var(--card)] rounded-3xl border border-[var(--border)] p-10 md:p-14 text-center"
+          className="bg-white rounded-3xl border border-slate-200 p-10 md:p-14 text-center"
         >
           <div
             className={`w-24 h-24 mx-auto mb-6 rounded-full flex items-center justify-center text-3xl font-black text-white ${
@@ -292,8 +293,8 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
           <h3 className="text-2xl font-bold mb-2">
             {pct >= 70 ? "Great Listening!" : "Keep Practicing!"}
           </h3>
-          <p className="text-muted">
-            You got <span className="font-bold text-[var(--success)]">{score}</span> out of{" "}
+          <p className="text-slate-400">
+            You got <span className="font-bold text-emerald-600">{score}</span> out of{" "}
             <span className="font-bold">{questions.length}</span> questions correct.
           </p>
 
@@ -314,7 +315,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
                 )}
                 <div>
                   <p className="text-sm font-semibold">{q.question}</p>
-                  <p className="text-xs text-muted mt-1">
+                  <p className="text-xs text-slate-400 mt-1">
                     Answer: {q.options.find((o) => o.isCorrect)?.text}
                   </p>
                 </div>
@@ -331,13 +332,13 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
   return (
     <div className="max-w-3xl mx-auto w-full">
       <div className="flex items-center justify-between mb-6">
-        <div className="text-sm font-semibold text-muted uppercase tracking-widest">
+        <div className="text-sm font-semibold text-slate-400 uppercase tracking-widest">
           Question {currentQ + 1} of {questions.length}
         </div>
         <button
           onClick={handlePlayAudio}
           disabled={isSpeaking}
-          className="text-sm flex items-center gap-2 px-4 py-2 rounded-xl bg-[var(--accent-light)] text-[var(--accent)] font-semibold hover:bg-[var(--accent)] hover:text-white transition-all"
+          className="text-sm flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-50 text-indigo-600 font-semibold hover:bg-indigo-500 hover:text-white transition-all"
         >
           <Volume2 size={16} className={isSpeaking ? "animate-pulse" : ""} />
           Replay
@@ -356,7 +357,7 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -40 }}
-          className="bg-[var(--card)] rounded-3xl border border-[var(--border)] p-8 md:p-12"
+          className="bg-white rounded-3xl border border-slate-200 p-8 md:p-12"
         >
           <h4 className="text-xl md:text-2xl font-bold mb-8">
             {currentQuestion.question}
@@ -365,10 +366,10 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
           <div className="space-y-3">
             {currentQuestion.options.map((opt, i) => {
               let style =
-                "border-[var(--border)] hover:border-[var(--accent)] hover:bg-[var(--accent-light)]";
+                "border-slate-200 hover:border-indigo-500 hover:bg-indigo-50";
               if (selected === i && !isChecked)
                 style =
-                  "border-[var(--accent)] bg-[var(--accent-light)] ring-2 ring-[var(--accent)]/30";
+                  "border-indigo-500 bg-indigo-50 ring-2 ring-[indigo-600]/30";
               if (isChecked && opt.isCorrect)
                 style =
                   "border-emerald-400 bg-emerald-50 dark:bg-emerald-950/30";
@@ -386,8 +387,8 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold shrink-0 ${
                       selected === i
-                        ? "bg-[var(--accent)] text-white"
-                        : "bg-[var(--background)] text-muted"
+                        ? "bg-indigo-500 text-white"
+                        : "bg-slate-50 text-slate-400"
                     }`}
                   >
                     {String.fromCharCode(65 + i)}

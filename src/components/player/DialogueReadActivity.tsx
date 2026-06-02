@@ -30,7 +30,7 @@ export default function DialogueReadActivity({ data, media, onComplete }: Props)
     return () => window.removeEventListener(STOP_AUDIO_EVENT, handler);
   }, []);
 
-  if (lines.length === 0) return <div className="text-muted">No dialogue found.</div>;
+  if (lines.length === 0) return <div className="text-slate-400">No dialogue found.</div>;
 
   const handleRevealNext = () => {
     if (revealedCount < lines.length) {
@@ -103,7 +103,7 @@ export default function DialogueReadActivity({ data, media, onComplete }: Props)
     <div className="max-w-3xl mx-auto w-full">
       {/* Scene Image */}
       {sceneImageUrl && (
-        <div className="mb-6 rounded-2xl overflow-hidden border border-[var(--border)]">
+        <div className="mb-6 rounded-2xl overflow-hidden border border-slate-200">
           <img
             src={getMediaUrl(sceneImageUrl)}
             alt="Dialogue scene"
@@ -115,23 +115,23 @@ export default function DialogueReadActivity({ data, media, onComplete }: Props)
       )}
 
       <div className="flex items-center gap-2 mb-6">
-        <MessageCircle size={18} className="text-[var(--accent)]" />
-        <span className="text-sm font-bold text-muted uppercase tracking-widest">
+        <MessageCircle size={18} className="text-indigo-600" />
+        <span className="text-sm font-bold text-slate-400 uppercase tracking-widest">
           Dialogue
         </span>
       </div>
 
       {/* Word bank */}
       {wordBank.length > 0 && (
-        <div className="mb-6 p-4 bg-[var(--card)] border border-[var(--border)] rounded-xl">
-          <span className="text-xs font-bold text-muted uppercase tracking-widest block mb-2">
+        <div className="mb-6 p-4 bg-white border border-slate-200 rounded-xl">
+          <span className="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-2">
             Word Bank
           </span>
           <div className="flex flex-wrap gap-2">
             {wordBank.map((word, i) => (
               <span
                 key={i}
-                className="px-3 py-1.5 bg-[var(--accent-light)] text-[var(--accent)] rounded-lg text-sm font-medium"
+                className="px-3 py-1.5 bg-indigo-50 text-indigo-600 rounded-lg text-sm font-medium"
               >
                 {word}
               </span>
@@ -167,8 +167,8 @@ export default function DialogueReadActivity({ data, media, onComplete }: Props)
                       onClick={() => playAudio(i)}
                       className={`p-1.5 rounded-full transition-all ${
                         playingIdx === i 
-                          ? "bg-[var(--accent)] text-white scale-110 shadow-md" 
-                          : "text-muted hover:bg-[var(--accent-light)] hover:text-[var(--accent)]"
+                          ? "bg-indigo-500 text-white scale-110 shadow-md" 
+                          : "text-slate-400 hover:bg-indigo-50 hover:text-indigo-600"
                       }`}
                     >
                       <Volume2 size={14} className={playingIdx === i ? "animate-pulse" : ""} />
@@ -178,7 +178,7 @@ export default function DialogueReadActivity({ data, media, onComplete }: Props)
                 <div
                   className={`p-5 rounded-2xl border text-base leading-relaxed ${bubbleColors[cIdx]} ${
                     isEven ? "rounded-tl-sm" : "rounded-tr-sm"
-                  } transition-all ${playingIdx === i ? "ring-2 ring-[var(--accent)]/30 border-[var(--accent)]" : ""}`}
+                  } transition-all ${playingIdx === i ? "ring-2 ring-[indigo-600]/30 border-indigo-500" : ""}`}
                 >
                   {line.text}
                 </div>
@@ -192,7 +192,7 @@ export default function DialogueReadActivity({ data, media, onComplete }: Props)
       <div className="mt-8 flex items-center justify-between">
         {revealedCount < lines.length ? (
           <>
-            <span className="text-sm text-muted">
+            <span className="text-sm text-slate-400">
               {revealedCount} / {lines.length} lines shown
             </span>
             <div className="flex gap-3">

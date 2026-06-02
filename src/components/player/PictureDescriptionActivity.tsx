@@ -13,6 +13,7 @@ import {
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import ActionBar from "./ActionBar";
+import ImageViewer from "./ImageViewer";
 
 interface Props {
   data: any;
@@ -34,7 +35,7 @@ export default function PictureDescriptionActivity({ data, media, onComplete }: 
   const [currentQ, setCurrentQ] = useState(0);
 
   if (promptQuestions.length === 0)
-    return <div className="text-muted p-4">No questions provided.</div>;
+    return <div className="text-slate-400 p-4">No questions provided.</div>;
 
   const handleReveal = (idx: number) => {
     setRevealedAnswers((prev) => new Set([...prev, idx]));
@@ -53,7 +54,7 @@ export default function PictureDescriptionActivity({ data, media, onComplete }: 
       keywords.some((k) => k.toLowerCase() === (part || "").toLowerCase()) ? (
         <span
           key={i}
-          className="font-bold text-[var(--accent)] bg-[var(--accent-light)] px-1 rounded"
+          className="font-bold text-indigo-600 bg-indigo-50 px-1 rounded"
         >
           {part}
         </span>
@@ -71,16 +72,16 @@ export default function PictureDescriptionActivity({ data, media, onComplete }: 
     <div className="max-w-4xl mx-auto w-full">
       {/* Progress */}
       <div className="flex items-center justify-between mb-6">
-        <div className="text-sm font-semibold text-muted uppercase tracking-widest">
+        <div className="text-sm font-semibold text-slate-400 uppercase tracking-widest">
           {answeredCount} of {promptQuestions.length} answered
         </div>
         {keywords.length > 0 && (
           <div className="flex items-center gap-2 flex-wrap">
-            <span className="text-xs text-muted font-semibold">Keywords:</span>
+            <span className="text-xs text-slate-400 font-semibold">Keywords:</span>
             {keywords.slice(0, 5).map((kw, i) => (
               <span
                 key={i}
-                className="text-xs px-2 py-1 rounded-lg bg-[var(--accent-light)] text-[var(--accent)] font-bold"
+                className="text-xs px-2 py-1 rounded-lg bg-indigo-50 text-indigo-600 font-bold"
               >
                 {kw}
               </span>
@@ -94,9 +95,9 @@ export default function PictureDescriptionActivity({ data, media, onComplete }: 
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="bg-[var(--card)] rounded-3xl border border-[var(--border)] overflow-hidden"
+          className="bg-white rounded-3xl border border-slate-200 overflow-hidden"
         >
-          <div className="aspect-[4/3] bg-gradient-to-br from-[var(--accent-light)] to-purple-100 dark:to-purple-950/30 flex items-center justify-center relative">
+          <div className="aspect-[4/3] bg-gradient-to-br from-[indigo-50] to-purple-100 dark:to-purple-950/30 flex items-center justify-center relative">
             {media.images.length > 0 ? (
               <img
                 src={getMediaUrl(media.images[0].url)}
@@ -137,7 +138,7 @@ export default function PictureDescriptionActivity({ data, media, onComplete }: 
               />
             ) : null}
             <div
-              className={`flex flex-col items-center gap-3 text-[var(--accent)] ${
+              className={`flex flex-col items-center gap-3 text-indigo-600 ${
                 media.images.length > 0 || (image && /\.(png|jpg|jpeg|webp|svg|gif)$/i.test(image)) ? "hidden" : ""
               }`}
             >
@@ -156,7 +157,7 @@ export default function PictureDescriptionActivity({ data, media, onComplete }: 
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="bg-[var(--card)] rounded-3xl border border-[var(--border)] overflow-hidden"
+          className="bg-white rounded-3xl border border-slate-200 overflow-hidden"
         >
           <div className="p-6 space-y-4 max-h-[500px] overflow-y-auto">
             {promptQuestions.map((question, i) => (
@@ -167,14 +168,14 @@ export default function PictureDescriptionActivity({ data, media, onComplete }: 
                 transition={{ delay: i * 0.1 }}
                 className={`p-4 rounded-2xl border transition-all ${
                   currentQ === i
-                    ? "border-[var(--accent)] bg-[var(--accent-light)]/50"
-                    : "border-[var(--border)]"
+                    ? "border-indigo-500 bg-indigo-50/50"
+                    : "border-slate-200"
                 }`}
                 onClick={() => setCurrentQ(i)}
               >
                 {/* Question */}
                 <div className="flex items-start gap-3 mb-3">
-                  <div className="w-7 h-7 rounded-full bg-[var(--accent)] text-white flex items-center justify-center shrink-0 text-xs font-bold">
+                  <div className="w-7 h-7 rounded-full bg-indigo-500 text-white flex items-center justify-center shrink-0 text-xs font-bold">
                     {i + 1}
                   </div>
                   <p className="text-sm font-semibold">{question}</p>
@@ -186,7 +187,7 @@ export default function PictureDescriptionActivity({ data, media, onComplete }: 
                   onChange={(e) => handleInputChange(i, e.target.value)}
                   placeholder="Write your answer..."
                   rows={2}
-                  className="w-full p-3 rounded-xl text-sm bg-[var(--background)] border border-[var(--border)] outline-none resize-none focus:border-[var(--accent)] transition-colors"
+                  className="w-full p-3 rounded-xl text-sm bg-slate-50 border border-slate-200 outline-none resize-none focus:border-indigo-500 transition-colors"
                 />
 
                 {/* Reveal / Sample Answer */}
@@ -195,7 +196,7 @@ export default function PictureDescriptionActivity({ data, media, onComplete }: 
                     {!revealedAnswers.has(i) ? (
                       <button
                         onClick={() => handleReveal(i)}
-                        className="text-xs text-muted flex items-center gap-1 hover:text-[var(--accent)] transition-colors"
+                        className="text-xs text-slate-400 flex items-center gap-1 hover:text-indigo-600 transition-colors"
                       >
                         <Eye size={14} /> Show sample answer
                       </button>
@@ -227,7 +228,7 @@ export default function PictureDescriptionActivity({ data, media, onComplete }: 
 
           {/* Show All Button */}
           {sampleAnswers.length > 0 && (
-            <div className="px-6 py-4 border-t border-[var(--border)] bg-[var(--background)]/50 flex gap-3">
+            <div className="px-6 py-4 border-t border-slate-200 bg-slate-50/50 flex gap-3">
               <button
                 onClick={() => {
                   if (!showAllAnswers) {

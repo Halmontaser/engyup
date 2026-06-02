@@ -148,7 +148,7 @@ export default function PronunciationPracticeActivity({ data, media, onComplete 
     setShowSyllables(false);
   };
 
-  if (words.length === 0) return <div className="text-muted p-4">No words to practice.</div>;
+  if (words.length === 0) return <div className="text-slate-400 p-4">No words to practice.</div>;
 
   const currentImage = media.images[currentIndex];
 
@@ -158,14 +158,14 @@ export default function PronunciationPracticeActivity({ data, media, onComplete 
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="bg-[var(--card)] rounded-3xl border border-[var(--border)] overflow-hidden p-10 md:p-14 text-center"
+          className="bg-white rounded-3xl border border-slate-200 overflow-hidden p-10 md:p-14 text-center"
         >
           <div className="w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center bg-gradient-to-br from-emerald-400 to-emerald-600">
             <Sparkles size={36} className="text-white" />
           </div>
           <h3 className="text-2xl font-bold mb-2">Practice Complete!</h3>
-          <p className="text-muted mb-6">
-            You practiced <span className="font-bold text-[var(--success)]">{practiced.size}</span> out of <span className="font-bold">{words.length}</span> words.
+          <p className="text-slate-400 mb-6">
+            You practiced <span className="font-bold text-emerald-600">{practiced.size}</span> out of <span className="font-bold">{words.length}</span> words.
           </p>
           <div className="flex justify-center gap-4 mt-8">
             <button onClick={handleReset} className="px-5 py-3 rounded-xl font-medium text-sm text-slate-500 hover:bg-slate-100 transition-all">
@@ -188,7 +188,7 @@ export default function PronunciationPracticeActivity({ data, media, onComplete 
     <div className="max-w-2xl mx-auto w-full">
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-3">
-          <div className="text-sm font-semibold text-muted uppercase tracking-widest">
+          <div className="text-sm font-semibold text-slate-400 uppercase tracking-widest">
             Word {currentIndex + 1} of {words.length}
           </div>
           <button
@@ -203,8 +203,8 @@ export default function PronunciationPracticeActivity({ data, media, onComplete 
             Auto-play: {autoPlayEnabled ? "On" : "Off"}
           </button>
         </div>
-        <div className="text-sm font-bold text-muted">
-          Practiced: <span className="text-[var(--success)]">{practiced.size}</span> / {words.length}
+        <div className="text-sm font-bold text-slate-400">
+          Practiced: <span className="text-emerald-600">{practiced.size}</span> / {words.length}
         </div>
       </div>
       <div className="progress-track mb-8">
@@ -217,20 +217,20 @@ export default function PronunciationPracticeActivity({ data, media, onComplete 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="bg-[var(--card)] rounded-3xl border border-[var(--border)] overflow-hidden"
+          className="bg-white rounded-3xl border border-slate-200 overflow-hidden"
         >
           <div className="p-10 md:p-14 text-center">
             {currentImage && (
-              <div className="mb-6 mx-auto max-w-[180px] max-h-[140px] rounded-2xl overflow-hidden bg-[var(--background)]">
+              <div className="mb-6 mx-auto max-w-[180px] max-h-[140px] rounded-2xl overflow-hidden bg-slate-50">
                 <img src={getMediaUrl(currentImage.url)} alt={current?.word} className="w-full h-full object-contain" loading="lazy" />
               </div>
             )}
             {current?.phonetic && (
-              <div className="text-sm font-mono text-[var(--accent)] mb-3 tracking-wide flex items-center justify-center gap-2">
+              <div className="text-sm font-mono text-indigo-600 mb-3 tracking-wide flex items-center justify-center gap-2">
                 <Info size={12} /> {current.phonetic}
               </div>
             )}
-            <motion.h2 className="text-5xl md:text-6xl font-black mb-8 bg-gradient-to-r from-[var(--accent)] to-purple-500 bg-clip-text text-transparent">
+            <motion.h2 className="text-5xl md:text-6xl font-black mb-8 bg-gradient-to-r from-[indigo-600] to-purple-500 bg-clip-text text-transparent">
               {current?.word}
             </motion.h2>
 
@@ -239,7 +239,7 @@ export default function PronunciationPracticeActivity({ data, media, onComplete 
                 onClick={handleSpeak}
                 disabled={isSpeaking}
                 className={`flex items-center gap-2 px-6 py-3 rounded-2xl font-bold transition-all ${
-                  isSpeaking ? "bg-[var(--accent)] text-white" : "bg-[var(--accent-light)] text-[var(--accent)] hover:bg-[var(--accent)]"
+                  isSpeaking ? "bg-indigo-500 text-white" : "bg-indigo-50 text-indigo-600 hover:bg-indigo-500"
                 }`}
               >
                 <Volume2 size={22} className={isSpeaking ? "animate-pulse" : ""} />
@@ -255,13 +255,13 @@ export default function PronunciationPracticeActivity({ data, media, onComplete 
             </div>
           </div>
 
-          <div className="flex items-center justify-between px-8 py-5 border-t border-[var(--border)] bg-[var(--background)]/50">
+          <div className="flex items-center justify-between px-8 py-5 border-t border-slate-200 bg-slate-50/50">
             <button onClick={handlePrev} disabled={currentIndex === 0} className="px-3 py-2 rounded-lg text-xs font-medium text-slate-500 hover:bg-slate-100 transition-all disabled:opacity-30">
               <ChevronLeft size={16} className="inline mr-1" /> Previous
             </button>
             <div className="flex gap-1.5">
               {words.map((_, i) => (
-                <div key={i} className={`w-2.5 h-2.5 rounded-full ${i === currentIndex ? "bg-[var(--accent)] scale-125" : practiced.has(i) ? "bg-[var(--success)]" : "bg-[var(--border)]"}`} />
+                <div key={i} className={`w-2.5 h-2.5 rounded-full ${i === currentIndex ? "bg-indigo-500 scale-125" : practiced.has(i) ? "bg-[emerald-600]" : "bg-[slate-200]"}`} />
               ))}
             </div>
             <button onClick={handleNext} className="px-4 py-2 rounded-xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 text-white shadow-lg shadow-indigo-200 transition-all">

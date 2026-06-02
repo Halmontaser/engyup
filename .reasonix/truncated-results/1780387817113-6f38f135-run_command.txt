@@ -1,0 +1,447 @@
+$ node -e "const k='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1zdHRzZWJhZmpnemxseWFic2lkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NjIyMDQyMywiZXhwIjoyMDkxNzk2NDIzfQ.H0Ec_0v4n1W4aLsLRObGKag5nTAIIt0ccsv88a8FAOU';process.env.SUPABASE_SERVICE_ROLE_KEY=k;require('./probe_hidden_images.js')" 2>&1
+[exit 0]
+
+[HIDDEN] g10u1 What's Happening? True or False (true-false)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u1/images/g10_u1_l1_1_tf_act3_i0_1.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u1/images/g10_u1_l1_1_tf_act3_i0_2.png
+
+[HIDDEN] g8u2 City Places (match-pairs)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g8u2/images/g8_u2_l2_12_mtch_act0_i0.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g8u2/images/g8_u2_l2_12_mtch_act0_i1.png
+  images[2]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g8u2/images/g8_u2_l2_12_mtch_act0_i2.png
+  images[3]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g8u2/images/g8_u2_l2_12_mtch_act0_i3.png
+  images[4]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g8u2/images/g8_u2_l2_12_mtch_act0_i4.png
+
+[EMPTY] ? Explore the Street Scene (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Label the Pictures (mcq)
+  content keys: questions
+
+[EMPTY] ? Describe the Scene (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Listening Game: What Is It? (listening-comprehension)
+  content keys: audioSrc, questions, transcript
+
+[HIDDEN] ? What's My Job? (picture-description)
+  image: [string] undefined
+
+[EMPTY] ? Describe the Airplane (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Describe the Scene (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Who was Queen Victoria? (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Dubai: Then and Now (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Describe Hussein's Adventures (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Describe the Person (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Describe the Steps (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Describe the Scene (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Describing Yemen's Attractions (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Describe the Storm (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Describe the Beehives (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? A Greener Yemen (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Describe the Picture: Dar al-Hajar (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[HIDDEN] ? What Are They Saying? (picture-description)
+  image: [string] undefined
+
+[EMPTY] ? Describe the Scene (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? What's Happening? (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Word Tree Puzzle (gap-fill)
+  content keys: feedback, sentences
+
+[EMPTY] ? What is the Nurse Doing? (match-pairs)
+  content keys: pairs
+
+[EMPTY] ? Choosing the Right Quantifier (mcq)
+  content keys: questions
+
+[EMPTY] ? Describe the Exercise (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Describe the Scene: Prevention (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Doctor on a House Call (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Describe a Public Service Job (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Describe the Scene (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Describe the Scene (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Read the Story: Uncle Ali's Farm (reading-passage)
+  content keys: passage, questions
+
+[EMPTY] ? Describe the Scene (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Describe the Scene (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Traditional Scottish Dress (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? At the Tower of London (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[HIDDEN] g11u3 Comprehension: Who Said It? (match-pairs)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u3/images/g11_u3_l3_5_mtch_act5_i0.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u3/images/g11_u3_l3_5_mtch_act5_i1.png
+  images[2]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u3/images/g11_u3_l3_5_mtch_act5_i2.png
+  images[3]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u3/images/g11_u3_l3_5_mtch_act5_i3.png
+
+[EMPTY] ? Speaking: Describe the Statue of Liberty (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[HIDDEN] g10u1 What Is It? Listening Challenge (listening-comprehension)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u1/images/g10_u1_l1_4_lst_act1_i0_1.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u1/images/g10_u1_l1_4_lst_act1_i0_2.png
+  questions: [nested_images] 4 items with images
+
+[EMPTY] ? Your Turn: Talk About Birthdays (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Speaking: Describing the Scene (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Listen and Choose (listening-comprehension)
+  content keys: image, audioSrc, questions, transcript
+
+[EMPTY] ? Describe a Person (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Speaking: Describe the Cama (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Describe the Countryside (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Describe the Landscape (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Describe the Scene (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[HIDDEN] g8u1 Listen and Identify (listening-comprehension)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g8u1/images/g8_u1_l1_5_lst_act3_i0.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g8u1/images/g8_u1_l1_5_lst_act3_i1.png
+  images[2]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g8u1/images/g8_u1_l1_5_lst_act3_i2.png
+
+[EMPTY] ? Observing the Details (mcq)
+  content keys: questions
+
+[EMPTY] ? The Ghost Ship (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Forming a Theory (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Grammar: Making Predictions and Guesses (gap-fill)
+  content keys: feedback, sentences
+
+[EMPTY] ? What Must Have Happened? (mcq)
+  content keys: questions
+
+[EMPTY] ? Speaking: Describing the Scenery (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? At the Casualty Department (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Before You Read: What's Happening? (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Anwar's Story: The Right Order (word-order)
+  content keys: instruction, correctOrder
+
+[EMPTY] ? Discussing the Job (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Who is this Person? (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Reflecting on a Career (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Match Numbers and Words (match-pairs)
+  content keys: pairs, feedback
+
+[EMPTY] ? Listen and Type (dictation)
+  content keys: sentences
+
+[EMPTY] ? Match Word to Picture (match-pairs)
+  content keys: pairs
+
+[EMPTY] ? Grammar Practice: Can or Can't? (gap-fill)
+  content keys: feedback, sentences
+
+[EMPTY] g7u4 Make the Words (spelling-bee)
+  content keys: words
+
+[HIDDEN] g10u3 Getting Free: Step-by-Step (match-pairs)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/images/g10_u3_l3_10_mtch_act3_i0_1.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/images/g10_u3_l3_10_mtch_act3_i0_2.png
+
+[EMPTY] ? Match the Picture to the Phrase (match-pairs)
+  content keys: pairs
+
+[HIDDEN] g10u2 Describe the Job (picture-description)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u2/images/g10_u2_l2_3_pic_act6_i0_1.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u2/images/g10_u2_l2_3_pic_act6_i0_2.png
+
+[HIDDEN] g10u3 The Messy Room (picture-description)
+  image: [string] undefined
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/images/g10_u3_l3_15_pic_act6_i0_1.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/images/g10_u3_l3_15_pic_act6_i0_2.png
+
+[EMPTY] ? Match the Day and the Action (match-pairs)
+  content keys: pairs
+
+[EMPTY] ? Match the Picture to the Words (match-pairs)
+  content keys: pairs
+
+[EMPTY] ? Vocabulary Check: Match Word to Picture (match-pairs)
+  content keys: pairs, instruction
+
+[HIDDEN] g7u6 Listen and Choose the Picture (listening-comprehension)
+  questions: [nested_images] 4 items with images
+
+[EMPTY] ? Build the Sentences (word-order)
+  content keys: sentences
+
+[HIDDEN] g7u7 Listen and Choose (mcq)
+  questions: [nested_images] 3 items with images
+
+[EMPTY] ? There is / There are (gap-fill)
+  content keys: feedback, sentences
+
+[HIDDEN] g7u2 Listen and Choose (listening-comprehension)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/g7_u2_l2_12_lst_act6_i0.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/g7_u2_l2_12_lst_act6_i1.png
+  images[2]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/g7_u2_l2_12_lst_act6_i2.png
+  images[3]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/g7_u2_l2_12_lst_act6_i3.png
+  images[4]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/g7_u2_l2_12_lst_act6_i4.png
+  images[5]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/g7_u2_l2_12_lst_act6_i5.png
+  items: [nested_images] 2 items with images
+
+[HIDDEN] g7u1 Listen and Choose (mcq)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_2_mcq_act3_i0.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_2_mcq_act3_i1.png
+  images[2]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_2_mcq_act3_i2.png
+  images[3]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_2_mcq_act3_i3.png
+  questions: [nested_images] 2 items with images
+
+[EMPTY] g8u5 A Day in the Garden (dialogue-read)
+  content keys: dialogue, comprehension
+
+[HIDDEN] g8u7 Read the Story: Hassan's Day (reading-passage)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g8u7/images/352.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g8u7/images/353.png
+  images[2]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g8u7/images/g8_u7_l7_10_rdg_act2_i0.png
+  images[3]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g8u7/images/g8_u7_l7_10_rdg_act2_i1.png
+
+[EMPTY] ? New Words: Road Safety (flashcard)
+  content keys: cards, feedback
+
+[HIDDEN] g12u1 Describe the View (picture-description)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u1/images/g12_u1_l1_11_pic_act7_i0_1.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u1/images/g12_u1_l1_11_pic_act7_i0_2.png
+
+[HIDDEN] g8u3 Guess the Word! (listening-comprehension)
+  questions: [nested_images] 3 items with images
+
+[HIDDEN] g9u2 Listen and Identify (listening-comprehension)
+  questions: [nested_images] 1 items with images
+
+[EMPTY] ? Grammar: What Is Happening? (gap-fill)
+  content keys: feedback, sentences
+
+[HIDDEN] g9u5 Listen to the Rules (listening-comprehension)
+  items: [nested_images] 3 items with images
+
+[HIDDEN] ? What to do in a Road Accident (picture-description)
+  image: [string] undefined
+
+[HIDDEN] ? Tell the Story (picture-description)
+  image: [string] undefined
+
+[EMPTY] ? The Journey of a Letter (match-pairs)
+  content keys: pairs
+
+[EMPTY] ? Who Will Be Most Successful? (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Match Activity to Picture (match-pairs)
+  content keys: pairs, instruction
+
+[EMPTY] ? Vocabulary: Describing the Scene (flashcard)
+  content keys: cards, feedback
+
+[EMPTY] ? Making Deductions (gap-fill)
+  content keys: feedback, sentences
+
+[EMPTY] ? Describe the Scene at Check-in (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? What Am I Describing? (listening-comprehension)
+  content keys: script, audioSrc, questions
+
+[EMPTY] ? Memory Test: The Street Scene (true-false)
+  content keys: statements
+
+[EMPTY] ? Describe the Fisherman (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Describe the Scene in Edinburgh (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Speaking: What Do You Think? (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Speaking: Describe the People (picture-description)
+  content keys: image, keywords, sampleAnswers, promptQuestions
+
+[EMPTY] ? Reading: Which Man Is This? (mcq)
+  content keys: questions
+
+[EMPTY] ? Who Has It? (listening-comprehension)
+  content keys: audioSrc, questions, transcript
+
+[HIDDEN] g7u7 Match the Word to the Picture (match-pairs)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u7/images/g7_u7_l7_4_mtch_act1_i0.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u7/images/g7_u7_l7_4_mtch_act1_i1.png
+  images[2]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u7/images/g7_u7_l7_4_mtch_act1_i2.png
+
+[HIDDEN] g7u1 Listen to the Request (listening-comprehension)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_14_lst_act0_i0_1.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_14_lst_act0_i0_2.png
+  images[2]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_14_lst_act0_i1_1.png
+  images[3]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_14_lst_act0_i1_2.png
+  images[4]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_14_lst_act0_i2_1.png
+  images[5]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_14_lst_act0_i2_2.png
+
+[HIDDEN] g7u2 Listen and Choose (listening-comprehension)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/g7_u2_l2_11_lst_act4_i0.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/g7_u2_l2_11_lst_act4_i1.png
+  images[2]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/g7_u2_l2_11_lst_act4_i2.png
+
+[HIDDEN] g9u7 Read: Flight to Black Mountain (dialogue-read)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u7/images/g9_u7_l7_9_dlg_act2_i0.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u7/images/g9_u7_l7_9_dlg_act2_i1.png
+  images[2]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u7/images/g9_u7_l7_9_dlg_act2_i2.png
+
+[HIDDEN] g7u2 Listen and Identify (listening-comprehension)
+  questions: [nested_images] 5 items with images
+
+[HIDDEN] g7u2 Listen and Choose (listening-comprehension)
+  questions: [nested_images] 2 items with images
+
+[HIDDEN] ? Describe the Last Picture (picture-description)
+  image: [string] undefined
+
+[HIDDEN] g7u7 What Are They Doing? (gap-fill)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u7/images/g7_u7_l7_3_gap_act3_i0.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u7/images/134.png
+
+[HIDDEN] g7u4 Listen for the Sound (listening-comprehension)
+  questions: [nested_images] 4 items with images
+
+[HIDDEN] g7u4 Spell the Food (spelling-bee)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u4/images/g7_u4_l4_15_spl_act1_i0.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u4/images/g7_u4_l4_15_spl_act1_i1.png
+  images[2]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u4/images/g7_u4_l4_15_spl_act1_i2.png
+  images[3]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u4/images/g7_u4_l4_15_spl_act1_i3.png
+  images[4]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u4/images/g7_u4_l4_15_spl_act1_i4.png
+
+[HIDDEN] ? Order the Story (category-sort)
+  items_to_sort: [items_to_sort] 6 items
+
+[HIDDEN] g9u3 Story Timeline (word-order)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u3/images/g9_u3_l3_14_wrd_act2_i0.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u3/images/g9_u3_l3_14_wrd_act2_i1.png
+  images[2]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u3/images/g9_u3_l3_14_wrd_act2_i2.png
+  images[3]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u3/images/g9_u3_l3_14_wrd_act2_i4.png
+  images[4]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u3/images/g9_u3_l3_14_wrd_act2_i5.png
+
+[HIDDEN] g10u1 Describing the Scene: There is / There are (gap-fill)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u1/images/g10_u1_l1_1_gap_act2_i0_1.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u1/images/g10_u1_l1_1_gap_act2_i0_2.png
+
+[HIDDEN] g7u1 Listen and Choose (mcq)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_10_mcq_act5_i0_1.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_10_mcq_act5_i0_2.png
+  images[2]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_10_mcq_act5_i1_1.png
+  images[3]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_10_mcq_act5_i1_2.png
+  images[4]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_10_mcq_act5_i2_1.png
+  images[5]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_10_mcq_act5_i2_2.png
+  images[6]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_10_mcq_act5_i3_1.png
+  images[7]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_10_mcq_act5_i3_2.png
+  images[8]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_10_mcq_act5_i4_1.png
+  images[9]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_10_mcq_act5_i4_2.png
+  images[10]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_10_mcq_act5_i5_1.png
+  images[11]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_10_mcq_act5_i5_2.png
+  images[12]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_10_mcq_act5_i6_1.png
+  images[13]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_10_mcq_act5_i6_2.png
+  images[14]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_10_mcq_act5_i7_1.png
+  images[15]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_10_mcq_act5_i7_2.png
+  questions: [nested_images] 3 items with images
+
+[HIDDEN] g7u1 Listen and Find (listening-comprehension)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_5_lst_act1_i0.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_5_lst_act1_i1.png
+  images[2]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_5_lst_act1_i2.png
+  images[3]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_5_lst_act1_i3.png
+  images[4]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_5_lst_act1_i4.png
+  images[5]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_5_lst_act1_i5.png
+  images[6]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_5_lst_act1_i6.png
+  images[7]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_5_lst_act1_i7.png
+
+[HIDDEN] g10u3 At the Information Desk (picture-description)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/images/g10_u3_l3_3_pic_act6_i0_1.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/images/g10_u3_l3_3_pic_act6_i0_2.png
+
+[HIDDEN] g10u3 Diving Equipment and Purpose (match-pairs)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/images/g10_u3_l3_13_mtch_act1_i0_1.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/images/g10_u3_l3_13_mtch_act1_i0_2.png
+
+[HIDDEN] g7u1 What's This? (gap-fill)
+  images[0]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_4_gap_act2_i0.png
+  images[1]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_4_gap_act2_i1.png
+  images[2]: [array_item] https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/g7_u1_l1_4_gap_act2_i2.png
+
+═══ SUMMARY ═══
+Has hidden images (need better extractor): 39
+Truly empty (need images added): 82

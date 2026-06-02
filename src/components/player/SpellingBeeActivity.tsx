@@ -52,7 +52,7 @@ export default function SpellingBeeActivity({ data, media, onComplete }: Props) 
   }, []);
 
   if (words.length === 0)
-    return <div className="text-muted p-4">No words to spell.</div>;
+    return <div className="text-slate-400 p-4">No words to spell.</div>;
 
   const current = words[currentIndex];
   const scrambledLetters = current.scrambled || current.word.split("").sort(() => Math.random() - 0.5);
@@ -144,11 +144,11 @@ export default function SpellingBeeActivity({ data, media, onComplete }: Props) 
     <div className="max-w-2xl mx-auto w-full">
       {/* Progress */}
       <div className="flex items-center justify-between mb-6">
-        <div className="text-sm font-semibold text-muted uppercase tracking-widest">
+        <div className="text-sm font-semibold text-slate-400 uppercase tracking-widest">
           Word {currentIndex + 1} of {words.length}
         </div>
-        <div className="text-sm font-bold text-muted">
-          Score: <span className="text-[var(--success)]">{score}</span> / {words.length}
+        <div className="text-sm font-bold text-slate-400">
+          Score: <span className="text-emerald-600">{score}</span> / {words.length}
         </div>
       </div>
       <div className="progress-track mb-8">
@@ -161,7 +161,7 @@ export default function SpellingBeeActivity({ data, media, onComplete }: Props) 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="bg-[var(--card)] rounded-3xl border border-[var(--border)] overflow-hidden"
+          className="bg-white rounded-3xl border border-slate-200 overflow-hidden"
         >
           <div className="p-8 md:p-12">
             {/* Word Image */}
@@ -184,8 +184,8 @@ export default function SpellingBeeActivity({ data, media, onComplete }: Props) 
                 disabled={isSpeaking}
                 className={`inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-lg transition-all ${
                   isSpeaking
-                    ? "bg-[var(--accent)] text-white shadow-xl scale-105"
-                    : "bg-[var(--accent-light)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white hover:shadow-lg"
+                    ? "bg-indigo-500 text-white shadow-xl scale-105"
+                    : "bg-indigo-50 text-indigo-600 hover:bg-indigo-500 hover:text-white hover:shadow-lg"
                 }`}
               >
                 <Volume2 size={24} className={isSpeaking ? "animate-pulse" : ""} />
@@ -199,7 +199,7 @@ export default function SpellingBeeActivity({ data, media, onComplete }: Props) 
                 {!showHint ? (
                   <button
                     onClick={() => setShowHint(true)}
-                    className="text-sm text-muted flex items-center gap-2 mx-auto hover:text-[var(--accent)] transition-colors"
+                    className="text-sm text-slate-400 flex items-center gap-2 mx-auto hover:text-indigo-600 transition-colors"
                   >
                     <HelpCircle size={16} /> Show Hint
                   </button>
@@ -229,8 +229,8 @@ export default function SpellingBeeActivity({ data, media, onComplete }: Props) 
                           : builtWord[i]?.toLowerCase() === current.word[i]?.toLowerCase()
                           ? "bg-emerald-100 dark:bg-emerald-950/30 border-emerald-400 text-emerald-600"
                           : "bg-red-100 dark:bg-red-950/30 border-red-400 text-red-600"
-                        : "bg-[var(--accent-light)] border-[var(--accent)] text-[var(--accent)] cursor-pointer hover:scale-105"
-                      : "bg-[var(--background)] border-dashed border-[var(--border)]"
+                        : "bg-indigo-50 border-indigo-500 text-indigo-600 cursor-pointer hover:scale-105"
+                      : "bg-slate-50 border-dashed border-slate-200"
                   }`}
                   onClick={() => selected[i] !== undefined && handleRemoveLetter(i)}
                 >
@@ -246,8 +246,8 @@ export default function SpellingBeeActivity({ data, media, onComplete }: Props) 
                 animate={{ opacity: 1 }}
                 className="text-center mb-6"
               >
-                <span className="text-sm text-muted">Correct spelling: </span>
-                <span className="font-bold text-[var(--success)] text-lg">{current.word}</span>
+                <span className="text-sm text-slate-400">Correct spelling: </span>
+                <span className="font-bold text-emerald-600 text-lg">{current.word}</span>
               </motion.div>
             )}
 
@@ -264,8 +264,8 @@ export default function SpellingBeeActivity({ data, media, onComplete }: Props) 
                       disabled={isUsed}
                       className={`w-12 h-14 md:w-14 md:h-16 rounded-xl text-2xl font-black transition-all ${
                         isUsed
-                          ? "opacity-20 scale-90 cursor-not-allowed bg-[var(--border)]"
-                          : "bg-[var(--background)] border-2 border-[var(--border)] hover:border-[var(--accent)] hover:bg-[var(--accent-light)] hover:text-[var(--accent)] cursor-pointer shadow-sm hover:shadow-md"
+                          ? "opacity-20 scale-90 cursor-not-allowed bg-[slate-200]"
+                          : "bg-slate-50 border-2 border-slate-200 hover:border-indigo-500 hover:bg-indigo-50 hover:text-indigo-600 cursor-pointer shadow-sm hover:shadow-md"
                       }`}
                     >
                       {letter}

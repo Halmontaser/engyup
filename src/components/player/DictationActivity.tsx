@@ -13,6 +13,9 @@ import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
 import ActionBar from "./ActionBar";
+import ImageViewer from "./ImageViewer";
+import ImageViewer from "./ImageViewer";
+import ImageViewer from "./ImageViewer";
 
 interface DictationSentence {
   expectedText: string;
@@ -50,7 +53,7 @@ export default function DictationActivity({ data, media, onComplete }: Props) {
   const [showDiff, setShowDiff] = useState(false);
 
   if (sentences.length === 0)
-    return <div className="text-muted p-4">No sentences for dictation.</div>;
+    return <div className="text-slate-400 p-4">No sentences for dictation.</div>;
 
   const current = sentences[currentIndex];
 
@@ -165,22 +168,17 @@ export default function DictationActivity({ data, media, onComplete }: Props) {
   return (
     <div className="max-w-3xl mx-auto w-full">
       {/* Progress */}
-      <div className="flex items-center justify-between mb-6">
-        <div className="text-sm font-semibold text-muted uppercase tracking-widest">
+      <div className="flex items-center justify-between mb-4">
+        <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">
           Sentence {currentIndex + 1} of {sentences.length}
-        </div>
-        <div className="text-sm font-bold text-muted">
-          Score: <span className="text-[var(--success)]">{score}</span> /{" "}
-          {sentences.length}
-        </div>
+        </span>
+        <span className="text-xs font-bold text-slate-500">
+          Score: <span className="text-emerald-600">{score}</span>/{sentences.length}
+        </span>
       </div>
-      <div className="progress-track mb-8">
-        <div
-          className="progress-fill"
-          style={{
-            width: `${((currentIndex + (isChecked ? 1 : 0)) / sentences.length) * 100}%`,
-          }}
-        />
+      <div className="w-full h-2 bg-slate-100 rounded-full mb-6 overflow-hidden">
+        <div className="h-full bg-gradient-to-r from-indigo-400 to-blue-500 rounded-full transition-all duration-300"
+          style={{ width: `${((currentIndex + (isChecked ? 1 : 0)) / sentences.length) * 100}%` }} />
       </div>
 
       <AnimatePresence mode="wait">
@@ -189,135 +187,71 @@ export default function DictationActivity({ data, media, onComplete }: Props) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="bg-[var(--card)] rounded-3xl border border-[var(--border)] overflow-hidden"
+          className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden"
         >
-          <div className="p-8 md:p-12">
-            {/* Image */}
-            {imageUrl && (
-              <div className="mb-6 flex justify-center">
-                <img
-                  src={getMediaUrl(imageUrl)}
-                  alt="Dictation reference"
-                  className="max-h-40 rounded-2xl object-contain bg-slate-50 border border-slate-100"
-                  loading="lazy"
-                  onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
-                />
-              </div>
-            )}
+          <div className="p-6 md:p-8">
+            <ImageViewer src={imageUrl} alt="Dictation reference" maxHeight="max-h-40" />
 
-            {/* Play Audio Section */}
-            <div className="text-center mb-8">
-              <div className="flex items-center justify-center gap-3 flex-wrap">
+            {/* Play Audio */}
+            <div className="text-center my-6">
+              <div className="flex items-center justify-center gap-3">
                 <button
                   onClick={() => handlePlayAudio(0.85)}
                   disabled={isSpeaking}
-                  className={`flex items-center gap-2 px-6 py-3 rounded-2xl font-bold transition-all ${
+                  className={`flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-sm transition-all ${
                     isSpeaking
-                      ? "bg-[var(--accent)] text-white shadow-lg"
-                      : "bg-[var(--accent-light)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white"
+                      ? "bg-indigo-500 text-white shadow-lg"
+                      : "bg-indigo-50 text-indigo-600 hover:bg-indigo-100"
                   }`}
                 >
-                  <Volume2
-                    size={20}
-                    className={isSpeaking ? "animate-pulse" : ""}
-                  />
+                  <Volume2 size={18} className={isSpeaking ? "animate-pulse" : ""} />
                   {isSpeaking ? "Playing..." : "Play"}
                 </button>
                 <button
                   onClick={() => handlePlayAudio(0.5)}
                   disabled={isSpeaking}
-                  className="flex items-center gap-2 px-6 py-3 rounded-2xl font-bold bg-purple-100 dark:bg-purple-950/30 text-purple-600 dark:text-purple-400 hover:bg-purple-200 transition-all"
+                  className="flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-sm bg-purple-50 text-purple-600 hover:bg-purple-100 transition-all"
                 >
-                  <Volume2 size={20} />
-                  Slow
+                  <Volume2 size={18} /> Slow
                 </button>
               </div>
-
-              {current.difficulty && (
-                <div className="mt-3">
-                  <span className="activity-type-badge">
-                    {current.difficulty}
-                  </span>
-                </div>
-              )}
             </div>
 
-            {/* Input Area */}
-            <div className="relative">
-              <div className="flex items-center gap-2 mb-3">
-                <PenLine size={16} className="text-muted" />
-                <label className="text-sm font-semibold text-muted">
-                  Type what you hear:
-                </label>
-              </div>
+            {/* Input */}
+            <div>
+              <label className="flex items-center gap-2 text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">
+                <PenLine size={14} /> Type what you hear
+              </label>
               <textarea
                 value={userInput}
                 onChange={(e) => setUserInput(e.target.value)}
                 disabled={isChecked}
                 placeholder="Type the sentence here..."
                 rows={3}
-                className={`w-full p-5 rounded-2xl border-2 text-lg outline-none resize-none transition-all ${
+                className={`w-full p-4 rounded-xl border-2 text-base outline-none resize-none transition-all ${
                   isChecked
-                    ? isPerfect
-                      ? "border-emerald-400 bg-emerald-50 dark:bg-emerald-950/20"
-                      : isClose
-                      ? "border-amber-400 bg-amber-50 dark:bg-amber-950/20"
-                      : "border-red-400 bg-red-50 dark:bg-red-950/20"
-                    : "border-[var(--border)] bg-[var(--background)] focus:border-[var(--accent)] focus:bg-[var(--accent-light)]"
+                    ? isPerfect ? "border-emerald-400 bg-emerald-50" : isClose ? "border-amber-400 bg-amber-50" : "border-red-400 bg-red-50"
+                    : "border-slate-200 bg-slate-50 focus:border-indigo-400 focus:bg-white"
                 }`}
               />
             </div>
 
             {/* Result */}
             {isChecked && (
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-              >
-                <div
-                  className={`mt-6 p-5 rounded-2xl ${
-                    isPerfect
-                      ? "bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-300"
-                      : isClose
-                      ? "bg-amber-50 dark:bg-amber-950/20 border border-amber-300"
-                      : "bg-red-50 dark:bg-red-950/20 border border-red-300"
-                  }`}
-                >
+              <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mt-5">
+                <div className={`p-4 rounded-xl border ${
+                  isPerfect ? "bg-emerald-50 border-emerald-200" : isClose ? "bg-amber-50 border-amber-200" : "bg-red-50 border-red-200"
+                }`}>
                   <div className="flex items-center gap-2 mb-2">
-                    {isPerfect ? (
-                      <>
-                        <Check size={20} className="text-emerald-500" />
-                        <span className="font-bold text-emerald-600">
-                          Perfect! 100% accuracy
-                        </span>
-                      </>
-                    ) : isClose ? (
-                      <>
-                        <Check size={20} className="text-amber-500" />
-                        <span className="font-bold text-amber-600">
-                          Close! {accuracy}% accuracy
-                        </span>
-                      </>
-                    ) : (
-                      <>
-                        <X size={20} className="text-red-500" />
-                        <span className="font-bold text-red-600">
-                          {accuracy}% accuracy — keep trying!
-                        </span>
-                      </>
-                    )}
+                    {isPerfect ? <><Check size={18} className="text-emerald-500" /><span className="font-bold text-sm text-emerald-700">Perfect! 100%</span></>
+                    : isClose ? <><Check size={18} className="text-amber-500" /><span className="font-bold text-sm text-amber-700">Close! {accuracy}%</span></>
+                    : <><X size={18} className="text-red-500" /><span className="font-bold text-sm text-red-700">{accuracy}% — keep trying!</span></>}
                   </div>
-
                   {!isPerfect && (
                     <>
-                      <p className="text-sm text-muted mb-2">Correct text:</p>
-                      <p className="font-medium text-[var(--foreground)]">
-                        {current.expectedText}
-                      </p>
-                      <button
-                        onClick={() => setShowDiff(!showDiff)}
-                        className="mt-3 text-xs font-semibold text-muted hover:text-[var(--accent)] transition-colors"
-                      >
+                      <p className="text-xs text-slate-500 mb-1">Correct text:</p>
+                      <p className="font-semibold text-slate-800">{current.expectedText}</p>
+                      <button onClick={() => setShowDiff(!showDiff)} className="mt-2 text-xs font-semibold text-slate-400 hover:text-indigo-600 transition-colors">
                         {showDiff ? "Hide" : "Show"} word comparison
                       </button>
                       {showDiff && renderDiff()}
@@ -329,12 +263,12 @@ export default function DictationActivity({ data, media, onComplete }: Props) {
 
             {/* Hints */}
             {current.hints && current.hints.length > 0 && !isChecked && (
-              <div className="mt-6">
+              <div className="mt-5">
                 <button
                   onClick={() => setShowHints(!showHints)}
-                  className="text-sm text-muted flex items-center gap-2 hover:text-[var(--accent)] transition-colors"
+                  className="text-xs font-semibold text-slate-400 flex items-center gap-1.5 hover:text-indigo-600 transition-colors"
                 >
-                  <HelpCircle size={16} />
+                  <HelpCircle size={14} />
                   {showHints ? "Hide Hints" : "Need a hint?"}
                 </button>
                 <AnimatePresence>

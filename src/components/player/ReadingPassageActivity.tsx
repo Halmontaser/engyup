@@ -19,7 +19,7 @@ export default function ReadingPassageActivity({ data, media, onComplete }: Prop
   const questions = data.questions || [];
   const [showQuestions, setShowQuestions] = useState(false);
 
-  if (!passage) return <div className="text-muted">No reading passage found.</div>;
+  if (!passage) return <div className="text-slate-400">No reading passage found.</div>;
 
   // Highlight specified words in the passage
   const renderPassage = () => {
@@ -84,7 +84,7 @@ export default function ReadingPassageActivity({ data, media, onComplete }: Prop
         <div className="mt-6">
           <button
             onClick={() => setShowQuestions(!showQuestions)}
-            className="flex items-center gap-2 text-sm font-bold text-muted hover:text-foreground transition-colors"
+            className="flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-slate-800 transition-colors"
           >
             {showQuestions ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
             {questions.length} Comprehension Questions
@@ -95,7 +95,7 @@ export default function ReadingPassageActivity({ data, media, onComplete }: Prop
               {questions.map((q: any, i: number) => (
                 <div
                   key={i}
-                  className="p-5 bg-[var(--card)] border border-[var(--border)] rounded-xl"
+                  className="p-5 bg-white border border-slate-200 rounded-xl"
                 >
                   <p className="font-medium">
                     {i + 1}. {q.question || q.text || q}

@@ -1,0 +1,526 @@
+$ node -e "const k='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1zdHRzZWJhZmpnemxseWFic2lkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NjIyMDQyMywiZXhwIjoyMDkxNzk2NDIzfQ.H0Ec_0v4n1W4aLsLRObGKag5nTAIIt0ccsv88a8FAOU';process.env.SUPABASE_SERVICE_ROLE_KEY=k;require('./report_picture_remaining.js')" 2>&1
+[exit 0]
+CSVs loaded: legacy=3304, prompts=4036
+
+═══════════════════════════════════════════════════
+REMAINING ISSUES AFTER PASS 1
+═══════════════════════════════════════════════════
+
+## PLACEHOLDERS (124 total: 55 "needed", 69 "gen-*/image-of-*")
+
+### ? (38)
+  Discussion: Is It a Good Idea? (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Imagine you are this person's friend. Answer t"
+    → image = "needed"
+  Describe a Game (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the football match. Answer the questions to "
+    → image = "gen-g11-u3-3.11-img-9"
+  Describing Yemen's Geography (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of Yemen. Use the keywords and answer the quest"
+    → image = "needed"
+  Jobs Vocabulary (flashcard)
+    instruction: "Learn the words for different jobs. Listen to the word, read the definition, and Use your eyes! 🧐 L"
+    → cards[0].image = "needed"
+    → cards[1].image = "needed"
+    → cards[2].image = "needed"
+    → cards[3].image = "needed"
+    → cards[4].image = "needed"
+    → cards[5].image = "needed"
+    → cards[6].image = "needed"
+    → cards[7].image = "needed"
+    → items[0].image = "needed"
+    → items[1].image = "needed"
+    → items[2].image = "needed"
+    → items[3].image = "needed"
+    → items[4].image = "needed"
+    → items[5].image = "needed"
+    → items[6].image = "needed"
+    → items[7].image = "needed"
+  Be a Tour Guide (picture-description)
+    instruction: "Imagine you are talking to a tourist visiting your city. Use your eyes! 🧐 Look closely at the at th"
+    → image = "gen-g11-u5-5.5-img-7"
+  Giving Directions: Key Phrases (flashcard)
+    instruction: "Learn the key phrases for giving directions. Listen to the pronunciation and Use your eyes! 🧐 Look "
+    → cards[0].image = "gen-g10-u3-3.7-img-1"
+    → cards[1].image = "gen-g10-u3-3.7-img-2"
+    → cards[2].image = "gen-g10-u3-3.7-img-3"
+    → cards[3].image = "gen-g10-u3-3.7-img-4"
+    → cards[4].image = "gen-g10-u3-3.7-img-5"
+    → cards[5].image = "gen-g10-u3-3.7-img-6"
+    → cards[6].image = "gen-g10-u3-3.7-img-7"
+    → items[0].image = "gen-g10-u3-3.7-img-1"
+    → items[1].image = "gen-g10-u3-3.7-img-2"
+    → items[2].image = "gen-g10-u3-3.7-img-3"
+    → items[3].image = "gen-g10-u3-3.7-img-4"
+    → items[4].image = "gen-g10-u3-3.7-img-5"
+    → items[5].image = "gen-g10-u3-3.7-img-6"
+    → items[6].image = "gen-g10-u3-3.7-img-7"
+  Do You Like It? (mcq)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture and answer the question."
+    → questions[0].image = "needed"
+    → questions[1].image = "needed"
+  What's Happening in the Park? (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the park. Write at least five sentences desc"
+    → image = "gen-g9-u1-1.10-img-1"
+  Describing Jobs (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions to describe the person an"
+    → image = "gen-g9-u6-6.16-img-5"
+### g10u1 (2)
+  What Is It? Listening Challenge (listening-comprehension)
+    instruction: "Listen to four descriptions. After each description, Challenge yourself! 📝 Select the best option f"
+    → questions[3].options[0].image = "gen-kite-image"
+  What Happened? (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Use the keywords and the past simple tense to "
+    → image = "gen-g10-u1-1.13-img-1"
+### g10u3 (1)
+  Production: Describe the Furnished Room (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the completed living room. Answer the questi"
+    → image = "needed"
+### g10u4 (2)
+  Two Points of View (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the holiday resort. Imagine you are there. F"
+    → image = "gen-g10-u4-4.6-img-8"
+  Write Your Own Story (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Imagine you had a frightening or exciting expe"
+    → image = "needed"
+### g10u5 (2)
+  Describing Hadrian's Wall (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at this picture of Hadrian's Wall. Use the keywords and answer"
+    → image = "needed"
+  Brainstorm: Describe a Place (picture-description)
+    instruction: "Prepare to write a description of a place of interest in Yemen. Use your eyes! 🧐 Look closely at th"
+    → image = "image-of-socotra-dragon-tree"
+### g10u7 (1)
+  Spot the Hazards (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the kitchen. Identify the fire hazards and s"
+    → image = "gen-g10-u7-7.10-img-9"
+### g11u2 (2)
+  Classifying Jobs (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions to describe the job and c"
+    → image = "gen-g11-u2-2.2-img-1"
+  What Would You Do? (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Imagine you are in this situation. Answer the "
+    → image = "gen-g11-u2-2.8-img-1"
+### g11u4 (3)
+  Describing People (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions to describe what you see."
+    → image = "gen-g11-u4-4.11-img-6"
+  Describe a Yemeni House (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of a traditional Yemeni house. Use the keywords"
+    → image = "gen-g11-u4-4.13-img-9"
+  The Australian Outback (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the Australian outback. Record yourself answ"
+    → image = "gen-g11-u4-4.4-outback"
+### g11u6 (1)
+  Describe the Scenery (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the Irish coast. Answer the questions to des"
+    → image = "gen-g11-u6-6.3-img-1"
+### g12u1 (1)
+  Describe the Scene (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Imagine you are the driver. Record or write a "
+    → image = "gen-g12-u1-1.8-img-6"
+### g12u2 (2)
+  Speaking Practice: Describe the Scene (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the accident scene. Record yourself answerin"
+    → image = "needed"
+  Tell Your Own Dream Story (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at this strange, dream-like picture. Imagine you had this drea"
+    → image = "gen-g12-u2-2.4-img-7"
+### g12u3 (2)
+  What Has Been Happening? (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions using the Present Perfect"
+    → image = "gen-g12-u3-3.5-img-1"
+  Describe the Job (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions to describe the job and t"
+    → image = "image-of-zookeeper"
+### g12u4 (1)
+  Describe the Process: Making Tea (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the pictures showing how tea is made. Write a short paragra"
+    → image = "gen-g12-u4-4.6-img-1"
+### g12u5 (2)
+  Making Deductions (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture and answer the questions. Use modal verbs like "
+    → image = "gen-g12-u5-5.5-img-1"
+  What Happened Here? (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the chaotic street scene. Write a short para"
+    → image = "needed"
+### g7u1 (28)
+  Revision: What's This? (mcq)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture and answer the question: What's this?"
+    → questions[0].image = "needed"
+    → questions[1].image = "needed"
+  What's the First Letter? (gap-fill)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Type the first letter to complete the word."
+    → sentences[0].image = "needed"
+    → sentences[1].image = "needed"
+    → sentences[2].image = "needed"
+    → sentences[3].image = "needed"
+  Yes or No? (true-false)
+    instruction: "Look at the picture. Is the sentence correct? Challenge yourself! 📝 Select the best option for 'Yes"
+    → statements[0].image = "image-of-four-pens"
+    → statements[1].image = "image-of-one-bag"
+    → statements[2].image = "image-of-five-books"
+    → statements[3].image = "image-of-three-rulers"
+  My School Bag (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. What can you see? Say 'This is my...' for each"
+    → image = "gen-g7-u1-1.6-schoolbag"
+  Listen and Choose (mcq)
+    instruction: "Listen to the word and Challenge yourself! 📝 Select the best option for the correct picture."
+    → questions[0].options[0].image = "gen-g7-u1-1.2-img-6"
+    → questions[0].options[1].image = "gen-g7-u1-1.2-img-7"
+    → questions[1].options[0].image = "gen-g7-u1-1.2-img-9"
+    → questions[1].options[1].image = "gen-g7-u1-1.2-img-8"
+  Classroom and Travel Words (flashcard)
+    instruction: "Let's learn new words! 📚 Classroom and Travel Words. Use your eyes! 🧐 Look closely at the at the p"
+    → items[0].image = "needed"
+    → items[1].image = "needed"
+    → items[2].image = "needed"
+    → items[3].image = "needed"
+    → items[4].image = "needed"
+    → items[5].image = "needed"
+    → items[6].image = "needed"
+    → items[7].image = "needed"
+    → items[8].image = "needed"
+    → items[9].image = "needed"
+  What is this? (gap-fill)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture and complete the sentence with the correct word"
+    → sentences[0].image = "gen-g7-u1-1.6-pencil"
+    → sentences[1].image = "gen-g7-u1-1.6-book"
+    → sentences[2].image = "gen-g7-u1-1.6-desk"
+### g7u2 (6)
+  Listen and Choose (listening-comprehension)
+    instruction: "Listen to the sentence. Challenge yourself! 📝 Select the best option for the picture that matches t"
+    → items[0].options[0].image = "needed"
+    → items[0].options[1].image = "needed"
+    → items[0].options[2].image = "needed"
+    → items[1].options[0].image = "needed"
+    → items[1].options[1].image = "needed"
+    → items[1].options[2].image = "needed"
+### g7u4 (3)
+  New Words: Fruits (flashcard)
+    instruction: "Learn the new words for fruits. Listen, read, and Use your eyes! 🧐 Use your eyes! 🧐 Look closely a"
+    → items[0].image = "gen-g7-u4-4.3-img-date"
+    → items[1].image = "gen-g7-u4-4.3-img-apple"
+    → items[2].image = "gen-g7-u4-4.3-img-orange"
+### g7u5 (1)
+  What's Happening? (picture-description)
+    instruction: "Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture. Answer the "
+    → image = "needed"
+### g7u6 (1)
+  Describe a Famous Place (picture-description)
+    instruction: "Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture. Use the key"
+    → image = "gen-g7-u6-6.14-img-8"
+### g7u7 (1)
+  What's in the Living Room? (true-false)
+    instruction: "Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture of the livin"
+    → image = "gen-g7-u7-7.8-image-1"
+### g8u1 (6)
+  What Are They Doing? (word-order)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture and put the words in the correct order to descr"
+    → sentences[0].image = "gen-g8-u1-1.8-img-1"
+    → sentences[1].image = "gen-g8-u1-1.8-img-2"
+    → sentences[2].image = "gen-g8-u1-1.8-img-4"
+    → sentences[3].image = "gen-g8-u1-1.8-img-9"
+  A Busy Street (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the busy street. Answer the questions about "
+    → image = "gen-g8-u1-1.9-img-busy-street"
+  Describe the Living Room (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Record yourself describing what you see. Try t"
+    → image = "needed"
+### g8u3 (4)
+  How Do They Feel? (mcq)
+    instruction: "Look at the picture and Challenge yourself! 📝 Select the best option for the word that best describ"
+    → questions[0].image = "gen-g8-u3-3.8-img-6"
+    → questions[1].image = "gen-g8-u3-3.8-img-7"
+    → questions[2].image = "gen-g8-u3-3.8-img-8"
+  Describe the Party (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the party. Answer the questions to describe "
+    → image = "gen-g8-u3-3.8-img-9"
+### g8u4 (1)
+  Who is the Driver? (mcq)
+    instruction: "Based on Jim's description to the police, Challenge yourself! 📝 Select the best option for the corr"
+    → questions[0].image = "needed"
+### g8u5 (2)
+  Describe the Camping Trip (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions using full sentences."
+    → image = "gen-g8-u5-5.18-img-1"
+  Describe the Scene (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions to describe what happened"
+    → image = "gen-g8-u5-5.7-img-7"
+### g8u7 (1)
+  Describe This Job (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Write 2-3 sentences to describe the person's j"
+    → image = "gen-g8-u7-7.13-img-1"
+### g9u1 (1)
+  Write About Your Holidays (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Imagine this was your holiday. Write three sen"
+    → image = "gen-g9-u1-1.7-img-10"
+### g9u2 (1)
+  Describe the Scene (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions to describe what is happe"
+    → image = "gen-g9-u2-2.15-img-7"
+### g9u3 (2)
+  Writing Prompt: Describe Old Sana'a (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the Old City of Sana'a in Yemen. Use the key"
+    → image = "gen-g9-u3-3.10-img-9"
+  Describe the Picture (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Write two sentences to describe it. Use at lea"
+    → image = "gen-g9-u3-3.9-img-7"
+### g9u4 (4)
+  New Words: Eating in Japan (flashcard)
+    instruction: "Learn the new words for this lesson. Listen to the word and the example sentence. Use your eyes! 🧐 "
+    → cards[3].image = "needed"
+    → cards[5].image = "needed"
+    → cards[6].image = "needed"
+    → cards[7].image = "needed"
+### g9u5 (1)
+  What Do You See? (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture and answer the questions. Try to use a reflexiv"
+    → image = "needed"
+### g9u7 (1)
+  Describe the Action (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions using adverbs of manner."
+    → image = "gen-g9-u7-7.16-img-1"
+
+
+## NO IMAGE FIELDS (107 activities)
+
+### ? (86)
+  Explore the Street Scene (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the closely at the picture from page 4. Answer the questions to de"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Label the Pictures (mcq)
+    instruction: "Look at the picture and Challenge yourself! 📝 Select the best option for the correct word. This is "
+    content keys: questions
+  Describe the Scene (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the traffic accident. Record or type your an"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Listening Game: What Is It? (listening-comprehension)
+    instruction: "Listen to the description of an object, then Challenge yourself! 📝 Select the best option for the c"
+    content keys: audioSrc, questions, transcript
+  What's My Job? (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions to describe the person's "
+    content keys: image, items
+  Describe the Airplane (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the airplane. Use the keywords and answer th"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Describe the Scene (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions to describe what you see."
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Who was Queen Victoria? (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. What do you know about this person? Answer the"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Dubai: Then and Now (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of Dubai in 1937. Record yourself answering the"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Describe Hussein's Adventures (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture showing Hussein's adventures. Answer the questi"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Describe the Person (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of Paul Archer. Answer the questions to describ"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Describe the Steps (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture showing the steps to make falafel. Answer the q"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Describe the Scene (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Use the keywords to answer the questions and d"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Describing Yemen's Attractions (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of a Yemeni mountain village. Use the keywords "
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Describe the Storm (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Use words from the story to describe what is h"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Describe the Beehives (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of traditional Yemeni beehives. Record yourself"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  A Greener Yemen (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the terraced landscape in Yemen. Record or t"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Describe the Picture: Dar al-Hajar (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the Palace on the Rock. Use the keywords to "
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  What Are They Saying? (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture and write the conversation. Use the expressions"
+    content keys: image, items
+  Describe the Scene (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the Moroccan market. Record yourself answeri"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  What's Happening? (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions using the vocabulary you "
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Word Tree Puzzle (gap-fill)
+    instruction: "Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture and write th"
+    content keys: feedback, sentences
+  What is the Nurse Doing? (match-pairs)
+    instruction: "Match the pictures with the correct description of the nurse's action. This is like exercise A on pa"
+    content keys: pairs
+  Choosing the Right Quantifier (mcq)
+    instruction: "Look at the picture and Challenge yourself! 📝 Select the best option for the correct sentence to de"
+    content keys: questions
+  Describe the Exercise (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions to describe the exercise."
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Describe the Scene: Prevention (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture showing how to fight germs. Describe what you s"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Doctor on a House Call (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions to describe what is happe"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Describe a Public Service Job (picture-description)
+    instruction: "Look at the picture. Challenge yourself! 📝 Select the best option for one of the people and describ"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Describe the Scene (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Imagine you are a news reporter. Describe what"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Describe the Scene (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions using the past tenses you"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Read the Story: Uncle Ali's Farm (reading-passage)
+    instruction: "Read the story about Ahmed and Saleh. Use your eyes! 🧐 Look closely at the at the pictures and answ"
+    content keys: passage, questions
+  Describe the Scene (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions to describe what you see."
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Describe the Scene (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the cheese rolling race. Answer the question"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Traditional Scottish Dress (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions to describe what you see."
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  At the Tower of London (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture from the story. Use the prompts to describe the"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Speaking: Describe the Statue of Liberty (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Use the keywords and answer the questions to p"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Your Turn: Talk About Birthdays (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Use the keywords and questions to help you des"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Speaking: Describing the Scene (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Describe what you see. Then, answer the questi"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Listen and Choose (listening-comprehension)
+    instruction: "Listen to the descriptions of two men. Look at the image and Challenge yourself! 📝 Select the best "
+    content keys: image, audioSrc, questions, transcript
+  Describe a Person (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at Man C in the picture. Write a short description of him (2-3"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Speaking: Describe the Cama (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the cama. Use the keywords and guiding quest"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Describe the Countryside (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture carefully. Use the vocabulary you have learned "
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Describe the Landscape (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the Yemeni mountains. Record yourself descri"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Describe the Scene (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Record yourself describing what is happening. "
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Observing the Details (mcq)
+    instruction: "Look at the picture carefully and Challenge yourself! 📝 Select the best option for the correct opti"
+    content keys: questions
+  The Ghost Ship (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the Mary Celeste. Answer the questions to pr"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Forming a Theory (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the hurricane. Use the modal verbs `may have"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Grammar: Making Predictions and Guesses (gap-fill)
+    instruction: "Reading time! 📖 Read carefully and the sentences about the picture and the dialogue. Fill the gaps "
+    content keys: feedback, sentences
+  What Must Have Happened? (mcq)
+    instruction: "Look at the picture and Challenge yourself! 📝 Select the best option for the most logical conclusio"
+    content keys: questions
+  Speaking: Describing the Scenery (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture from the article. Prepare to answer the questio"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  At the Casualty Department (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the hospital. Describe what is happening usi"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Before You Read: What's Happening? (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture from page 43. Before you read the story, think "
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Anwar's Story: The Right Order (word-order)
+    instruction: "Drag and drop the events into the correct chronological order to tell Anwar's story. Use your eyes! "
+    content keys: instruction, correctOrder
+  Discussing the Job (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of the planning officer. Based on the reading, "
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Who is this Person? (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Who do you think this person is? What is his j"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Reflecting on a Career (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture of Dr. Suleiman Badawi. Based on the article yo"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Match Numbers and Words (match-pairs)
+    instruction: "Time to say hello! 👋 Match the greetings to the pictures that show people meeting each other."
+    content keys: pairs, feedback
+  Listen and Type (dictation)
+    instruction: "Listen carefully! 🎧 Clear your ears and to the sentence about the picture and type exactly what you"
+    content keys: sentences
+  Match Word to Picture (match-pairs)
+    instruction: "Match the word to the correct picture."
+    content keys: pairs
+  Grammar Practice: Can or Can't? (gap-fill)
+    instruction: "Read the sentence and Use your eyes! 🧐 Look closely at the at the picture. Take a closer look! 📝 P"
+    content keys: feedback, sentences
+  Match the Picture to the Phrase (match-pairs)
+    instruction: "Drag the correct phrase to match the picture."
+    content keys: pairs
+  Match the Day and the Action (match-pairs)
+    instruction: "Drag the picture to match the correct day of the week from the song."
+    content keys: pairs
+  Match the Picture to the Words (match-pairs)
+    instruction: "Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture and match it"
+    content keys: pairs
+  Vocabulary Check: Match Word to Picture (match-pairs)
+    instruction: "Drag the word on the left to match it with the correct picture on the right."
+    content keys: pairs, instruction
+  Build the Sentences (word-order)
+    instruction: "Put the words in the correct order to make sentences describing the picture."
+    content keys: sentences
+  There is / There are (gap-fill)
+    instruction: "Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture of Jack's ro"
+    content keys: feedback, sentences
+  New Words: Road Safety (flashcard)
+    instruction: "Learn the new words for this lesson. Listen to the word and the example sentence. Use your eyes! 🧐 "
+    content keys: cards, feedback
+  Grammar: What Is Happening? (gap-fill)
+    instruction: "Use your eyes! 🧐 Look closely at the at the pictures and complete the sentences using the present c"
+    content keys: feedback, sentences
+  What to do in a Road Accident (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the pictures in order. For each picture, write one instruct"
+    content keys: image, images, keywords, sampleAnswers, promptQuestions
+  Tell the Story (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture. Write a short story about what happened. Use a"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  The Journey of a Letter (match-pairs)
+    instruction: "The pictures and descriptions on page 56 are in the wrong order. Match the step number with the corr"
+    content keys: pairs
+  Who Will Be Most Successful? (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the portrait of Diana. Based on her picture and the text on"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  Match Activity to Picture (match-pairs)
+    instruction: "Match the activity phrase to the correct picture. This is like the activity on page 41 of your Workb"
+    content keys: pairs, instruction
+  Vocabulary: Describing the Scene (flashcard)
+    instruction: "Learn the key words to understand and describe what happened in the picture."
+    content keys: cards, feedback
+  Making Deductions (gap-fill)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture and complete the sentences with 'must have', 'm"
+    content keys: feedback, sentences
+  Describe the Scene at Check-in (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at the picture from Ahmed's journey. Answer the questions to d"
+    content keys: image, keywords, sampleAnswers, promptQuestions
+  What Am I Describing? (listening-comprehension)
+    instruction: "Listen to the description, then Challenge yourself! 📝 Select the best option for the correct pictur"
+    content keys: script, audioSrc, questions
+  Memory Test: The Street Scene (true-false)
+    instruction: "Do you remember the picture on pages 2 and 3 of your Pupil's Book? Reading time! 📖 Read carefully a"
+    content keys: statements
+  Describe the Fisherman (picture-description)
+    instruction: "Use your eyes! 🧐 Look closely at the at th
+
+[… truncated 6330 chars …]

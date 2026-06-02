@@ -7,6 +7,7 @@ import { Tooltip } from "@/components/ui/Tooltip";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
 import ActionBar from "./ActionBar";
+import ImageViewer from "./ImageViewer";
 
 // Constants
 const SPEECH_RATE = 0.8;
@@ -205,8 +206,8 @@ export default function FlashcardActivity({ data, media, onComplete }: Flashcard
               <button
                 onClick={() => playAudio(currentWordAudioUrl, front)}
                 className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-all ${isPlaying
-                    ? "bg-[var(--accent)] text-white shadow-lg"
-                    : "bg-[var(--accent-light)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white"
+                    ? "bg-indigo-500 text-white shadow-lg"
+                    : "bg-indigo-50 text-indigo-600 hover:bg-indigo-500 hover:text-white"
                   }`}
               >
                 <Volume2 size={16} className={isPlaying ? "animate-pulse" : ""} />
@@ -234,24 +235,9 @@ export default function FlashcardActivity({ data, media, onComplete }: Flashcard
           >
             {/* Image on front */}
             {currentImageUrl && (
-              <Tooltip content={`${front} - Visual representation of the word`}>
-                <div className="mb-4 rounded-2xl overflow-hidden bg-white/10 max-w-[200px] max-h-[150px]">
-                  <img
-                    src={getMediaUrl(currentImageUrl)}
-                    alt={front}
-                    className="w-full h-full object-contain"
-                    onError={(e) => {
-/* eslint-disable-next-line */
-
-/* eslint-disable-next-line */
-
-/* eslint-disable-next-line */
-
-                      (e.target as HTMLImageElement).style.display = "none";
-                    }}
-                  />
-                </div>
-              </Tooltip>
+              <div className="mb-4">
+                <ImageViewer src={currentImageUrl} alt={front} maxHeight="max-h-36" />
+              </div>
             )}
             <Tooltip content={`${front} - Click card to see definition`}>
               <h3 className="text-3xl md:text-4xl font-extrabold text-white mb-4">

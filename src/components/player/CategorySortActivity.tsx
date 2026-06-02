@@ -7,6 +7,7 @@ import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
 import ActionBar from "./ActionBar";
+import ImageViewer from "./ImageViewer";
 
 interface Props {
   data: any;
@@ -50,7 +51,7 @@ export default function CategorySortActivity({ data, media, onComplete }: Props)
   }, []);
 
   if (categories.length === 0)
-    return <div className="text-muted">No categories found.</div>;
+    return <div className="text-slate-400">No categories found.</div>;
 
   // Media: category-level images
   const categoryImage = media.images.length > 0 ? media.images[0] : null;
@@ -117,14 +118,14 @@ export default function CategorySortActivity({ data, media, onComplete }: Props)
   return (
     <div className="max-w-4xl mx-auto w-full">
       <div className="flex items-center justify-between mb-6">
-        <div className="text-sm font-semibold text-muted">
+        <div className="text-sm font-semibold text-slate-400">
           {isChecked
             ? `${correctCount} / ${allItems.length} correct`
             : `${pool.length} items remaining`}
         </div>
         <button
           onClick={handleReset}
-          className="flex items-center gap-1.5 text-sm text-muted hover:text-foreground transition-colors"
+          className="flex items-center gap-1.5 text-sm text-slate-400 hover:text-slate-800 transition-colors"
         >
           <RotateCcw size={14} /> Reset
         </button>
@@ -145,17 +146,17 @@ export default function CategorySortActivity({ data, media, onComplete }: Props)
 
       {/* Item pool */}
       {pool.length > 0 && (
-        <div className="flex flex-wrap gap-3 mb-8 p-6 bg-[var(--card)] border border-[var(--border)] rounded-2xl">
+        <div className="flex flex-wrap gap-3 mb-8 p-6 bg-white border border-slate-200 rounded-2xl">
           {pool.map((item, i) => (
             <motion.span
               key={`pool-${item.text}`}
               layout
-              className="px-4 py-2.5 bg-[var(--accent-light)] text-[var(--accent)] rounded-xl font-medium text-sm cursor-pointer hover:shadow-md transition-shadow flex items-center gap-2"
+              className="px-4 py-2.5 bg-indigo-50 text-indigo-600 rounded-xl font-medium text-sm cursor-pointer hover:shadow-md transition-shadow flex items-center gap-2"
             >
               {item.text}
               <button
                 onClick={(e) => { e.stopPropagation(); handlePlayAudio(item.text); }}
-                className={`p-0.5 rounded-full transition-all ${playingAudio === item.text ? "text-blue-500" : "text-muted/50 hover:text-blue-500"}`}
+                className={`p-0.5 rounded-full transition-all ${playingAudio === item.text ? "text-blue-500" : "text-slate-400/50 hover:text-blue-500"}`}
               >
                 <Volume2 size={12} className={playingAudio === item.text ? "animate-pulse" : ""} />
               </button>
@@ -169,9 +170,9 @@ export default function CategorySortActivity({ data, media, onComplete }: Props)
         {categories.map((cat, i) => (
           <div
             key={cat.name || `cat-${i}`}
-            className="bg-[var(--card)] border-2 border-dashed border-[var(--border)] rounded-2xl p-5 min-h-[140px]"
+            className="bg-white border-2 border-dashed border-slate-200 rounded-2xl p-5 min-h-[140px]"
           >
-            <h4 className="text-sm font-bold uppercase tracking-widest text-muted mb-4">
+            <h4 className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-4">
               {cat.name}
             </h4>
 
@@ -184,9 +185,9 @@ export default function CategorySortActivity({ data, media, onComplete }: Props)
                   className={`px-3 py-2 rounded-xl text-sm font-medium flex items-center gap-1.5 transition-colors ${
                     isChecked
                       ? results[item]
-                        ? "bg-[var(--success-light)] text-[var(--success)]"
+                        ? "bg-emerald-50 text-emerald-600"
                         : "bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-300"
-                      : "bg-[var(--accent-light)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white"
+                      : "bg-indigo-50 text-indigo-600 hover:bg-indigo-500 hover:text-white"
                   }`}
                 >
                   {item}
@@ -201,7 +202,7 @@ export default function CategorySortActivity({ data, media, onComplete }: Props)
                   <button
                     key={`target-${cat.name || i}-${item.text}-${j}`}
                     onClick={() => handleDrop(item.text, cat.name)}
-                    className="px-2 py-1 text-xs text-muted-foreground hover:text-[var(--accent)] hover:bg-[var(--accent-light)] rounded-lg border border-transparent hover:border-[var(--accent)] transition-all"
+                    className="px-2 py-1 text-xs text-slate-400-foreground hover:text-indigo-600 hover:bg-indigo-50 rounded-lg border border-transparent hover:border-indigo-500 transition-all"
                   >
                     + {item.text}
                   </button>

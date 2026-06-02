@@ -7,6 +7,7 @@ import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
 import ActionBar from "./ActionBar";
+import ImageViewer from "./ImageViewer";
 
 interface Props {
   data: any;
@@ -48,7 +49,7 @@ export default function ReadingSequenceActivity({ data, media, onComplete }: Pro
   }, []);
 
   if (correctOrder.length === 0)
-    return <div className="text-muted">No sequence items found.</div>;
+    return <div className="text-slate-400">No sequence items found.</div>;
 
   // Media
   const seqImage = media.images.length > 0 ? media.images[0] : null;
@@ -93,14 +94,14 @@ export default function ReadingSequenceActivity({ data, media, onComplete }: Pro
     <div className="max-w-3xl mx-auto w-full">
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-2">
-          <ArrowUpDown size={18} className="text-[var(--accent)]" />
-          <span className="text-sm font-bold text-muted uppercase tracking-widest">
+          <ArrowUpDown size={18} className="text-indigo-600" />
+          <span className="text-sm font-bold text-slate-400 uppercase tracking-widest">
             Put in Order
           </span>
         </div>
         {isChecked && (
           <span className="text-sm font-bold">
-            <span className="text-[var(--success)]">{correctCount}</span> /{" "}
+            <span className="text-emerald-600">{correctCount}</span> /{" "}
             {correctOrder.length} correct
           </span>
         )}
@@ -123,9 +124,9 @@ export default function ReadingSequenceActivity({ data, media, onComplete }: Pro
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="p-10 bg-[var(--success-light)] rounded-2xl text-center"
+          className="p-10 bg-emerald-50 rounded-2xl text-center"
         >
-          <Check size={40} className="mx-auto mb-4 text-[var(--success)]" />
+          <Check size={40} className="mx-auto mb-4 text-emerald-600" />
           <h3 className="text-2xl font-bold">Perfect Order!</h3>
         </motion.div>
       ) : (
@@ -140,19 +141,19 @@ export default function ReadingSequenceActivity({ data, media, onComplete }: Pro
                 layout
                 className={`flex items-center gap-4 p-5 rounded-2xl border-2 transition-all ${
                   isCorrectPosition
-                    ? "border-[var(--success)] bg-[var(--success-light)]"
+                    ? "border-[emerald-600] bg-emerald-50"
                     : isWrongPosition
                     ? "border-red-400 bg-red-50 dark:bg-red-950/30 dark:border-red-600"
-                    : "border-[var(--border)] bg-[var(--card)] hover:border-[var(--accent)]"
+                    : "border-slate-200 bg-white hover:border-indigo-500"
                 }`}
               >
                 <div
                   className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold shrink-0 ${
                     isCorrectPosition
-                      ? "bg-[var(--success)] text-white"
+                      ? "bg-[emerald-600] text-white"
                       : isWrongPosition
                       ? "bg-red-500 text-white"
-                      : "bg-[var(--accent-light)] text-[var(--accent)]"
+                      : "bg-indigo-50 text-indigo-600"
                   }`}
                 >
                   {i + 1}
@@ -163,7 +164,7 @@ export default function ReadingSequenceActivity({ data, media, onComplete }: Pro
                 {/* Audio button */}
                 <button
                   onClick={() => handlePlayAudio(item.text)}
-                  className={`p-1.5 rounded-full transition-all shrink-0 ${isSpeaking ? "text-blue-500" : "text-muted/50 hover:text-blue-500"}`}
+                  className={`p-1.5 rounded-full transition-all shrink-0 ${isSpeaking ? "text-blue-500" : "text-slate-400/50 hover:text-blue-500"}`}
                 >
                   <Volume2 size={14} className={isSpeaking ? "animate-pulse" : ""} />
                 </button>
@@ -173,14 +174,14 @@ export default function ReadingSequenceActivity({ data, media, onComplete }: Pro
                     <button
                       onClick={() => i > 0 && moveItem(i, i - 1)}
                       disabled={i === 0}
-                      className="w-7 h-7 rounded-lg bg-[var(--background)] border border-[var(--border)] flex items-center justify-center text-muted hover:text-[var(--accent)] hover:border-[var(--accent)] disabled:opacity-20 transition-all text-xs"
+                      className="w-7 h-7 rounded-lg bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-400 hover:text-indigo-600 hover:border-indigo-500 disabled:opacity-20 transition-all text-xs"
                     >
                       ▲
                     </button>
                     <button
                       onClick={() => i < userOrder.length - 1 && moveItem(i, i + 1)}
                       disabled={i === userOrder.length - 1}
-                      className="w-7 h-7 rounded-lg bg-[var(--background)] border border-[var(--border)] flex items-center justify-center text-muted hover:text-[var(--accent)] hover:border-[var(--accent)] disabled:opacity-20 transition-all text-xs"
+                      className="w-7 h-7 rounded-lg bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-400 hover:text-indigo-600 hover:border-indigo-500 disabled:opacity-20 transition-all text-xs"
                     >
                       ▼
                     </button>
@@ -190,7 +191,7 @@ export default function ReadingSequenceActivity({ data, media, onComplete }: Pro
                 {isChecked && (
                   <div className="shrink-0">
                     {isCorrectPosition ? (
-                      <Check size={18} className="text-[var(--success)]" />
+                      <Check size={18} className="text-emerald-600" />
                     ) : (
                       <span className="text-xs text-red-500 font-bold">
                         → {item.correctIndex + 1}
@@ -222,8 +223,8 @@ export default function ReadingSequenceActivity({ data, media, onComplete }: Pro
         )}
         {isChecked && (
           <ActionBar
-            correct={isCorrect}
-            message={isCorrect ? "Correct order!" : "Not quite — review the sequence."}
+            correct={allCorrect}
+            message={allCorrect ? "Correct order!" : `${correctCount} of ${correctOrder.length} in correct position`}
             onNext={handleReset}
             label="Try Again"
           />

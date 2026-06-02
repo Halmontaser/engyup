@@ -1,0 +1,493 @@
+$ node -e "const k='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1zdHRzZWJhZmpnemxseWFic2lkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NjIyMDQyMywiZXhwIjoyMDkxNzk2NDIzfQ.H0Ec_0v4n1W4aLsLRObGKag5nTAIIt0ccsv88a8FAOU';process.env.SUPABASE_SERVICE_ROLE_KEY=k;require('./audit_picture_activities.js')" 2>&1
+[exit 0]
+Parsing CSV...
+  4036 entries loaded
+
+Fetching activities with 'picture' in instruction...
+  395 activities found
+
+
+======================================================================
+UNIT: g10u1  (5 activities with 'picture' in instruction)
+======================================================================
+
+  ⚠️  [What's Happening? True or False] (true-false)
+     Instruction: "Reading time! 📖 Read carefully and the sentences about the picture. Decide if t..."
+     ❌ NO image fields found in content — needs investigation
+
+  📝 [What Is It? Listening Challenge] (listening-comprehension)
+     Instruction: "Listen to four descriptions. After each description, Challenge yourself! 📝 Sele..."
+     Images: 1 total
+  ❌ MISSING PROMPT: questions[3].options[0].image = "gen-kite-image" (filename: gen-kite-image)
+
+  📝 [What Happened?] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture. Use the keywords and the p..."
+     Images: 1 total
+  ❌ MISSING PROMPT: image = "gen-g10-u1-1.13-img-1" (filename: gen-g10-u1-1.13-img-1)
+
+  ⚠️  [Describing the Scene: There is / There are] (gap-fill)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture and complete the sentences ..."
+     ❌ NO image fields found in content — needs investigation
+
+  📝 [Memory Game] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture of the busy street for 30 s..."
+     Images: 1 total
+  ❌ MISSING PROMPT: image = "image-g10-u1-1.15-4" (filename: image-g10-u1-1.15-4)
+
+======================================================================
+UNIT: g10u2  (1 activities with 'picture' in instruction)
+======================================================================
+
+  ⚠️  [Describe the Job] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture of the pilot in the cockpit..."
+     ❌ NO image fields found in content — needs investigation
+
+======================================================================
+UNIT: g10u3  (9 activities with 'picture' in instruction)
+======================================================================
+
+  📝 [Bakery Ingredients] (flashcard)
+     Instruction: "Learn the words for common baking ingredients. Use your eyes! 🧐 Look closely at..."
+     Images: 9 total
+  ❌ MISSING PROMPT: cards[7].image = "g10-vocab-butter" (filename: g10-vocab-butter)
+  ❌ MISSING PROMPT: cards[7].imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/images/g10_vocab_butter.jpg" (filename: g10_vocab_butter.jpg)
+  ❌ MISSING PROMPT: cards[8].image = "g10-vocab-nuts" (filename: g10-vocab-nuts)
+  ❌ MISSING PROMPT: cards[8].imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/images/g10_vocab_nuts.jpg" (filename: g10_vocab_nuts.jpg)
+  ❌ MISSING PROMPT: items[7].image = "g10-vocab-butter" (filename: g10-vocab-butter)
+  ❌ MISSING PROMPT: items[7].imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/images/g10_vocab_butter.jpg" (filename: g10_vocab_butter.jpg)
+  ❌ MISSING PROMPT: items[8].image = "g10-vocab-nuts" (filename: g10-vocab-nuts)
+  ❌ MISSING PROMPT: items[8].imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/images/g10_vocab_nuts.jpg" (filename: g10_vocab_nuts.jpg)
+
+  📝 [Describe the Bakery Scene] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture from page 22. Answer the qu..."
+     Images: 1 total
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/images/560.png" (filename: 560.png)
+
+  📝 [Production: Describe the Furnished Room] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture of the completed living roo..."
+     Images: 1 total
+  ❌ MISSING PROMPT: image = "needed" (filename: needed)
+
+  📝 [Asking About Colours] (dialogue-read)
+     Instruction: "Read and listen to the conversation. Use your eyes! 🧐 Look closely at the at th..."
+     Images: 2 total
+  ❌ MISSING PROMPT: image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/audio/14.mp3" (filename: 14.mp3)
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/14.png" (filename: 14.png)
+
+  ⚠️  [Getting Free: Step-by-Step] (match-pairs)
+     Instruction: "Match each instruction with the picture that shows the action...."
+     ❌ NO image fields found in content — needs investigation
+
+  ⚠️  [The Messy Room] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture of the room after the party..."
+     ❌ NO image fields found in content — needs investigation
+
+  📝 [At the Bakery: Order the Conversation] (word-order)
+     Instruction: "The conversation between Martin and the baker is mixed up. Drag and drop the sen..."
+     Images: 1 total
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u3/images/560.png" (filename: 560.png)
+
+  ⚠️  [At the Information Desk] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions about..."
+     ❌ NO image fields found in content — needs investigation
+
+  ⚠️  [Diving Equipment and Purpose] (match-pairs)
+     Instruction: "Match the piece of diving equipment to its purpose. Use your eyes! 🧐 Look close..."
+     ❌ NO image fields found in content — needs investigation
+
+======================================================================
+UNIT: g10u4  (3 activities with 'picture' in instruction)
+======================================================================
+
+  📝 [Two Points of View] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture of the holiday resort. Imag..."
+     Images: 1 total
+  ❌ MISSING PROMPT: image = "gen-g10-u4-4.6-img-8" (filename: gen-g10-u4-4.6-img-8)
+
+  📝 [Write Your Own Story] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture. Imagine you had a frighten..."
+     Images: 1 total
+  ❌ MISSING PROMPT: image = "needed" (filename: needed)
+
+  📝 [What's Your Opinion?] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture. Then, answer the questions..."
+     Images: 1 total
+  ❌ MISSING PROMPT: image = "image_of_sad_lion_in_cage.png" (filename: image_of_sad_lion_in_cage.png)
+
+======================================================================
+UNIT: g10u5  (6 activities with 'picture' in instruction)
+======================================================================
+
+  📝 [Describing Hadrian's Wall] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at this picture of Hadrian's Wall. Use the..."
+     Images: 1 total
+  ❌ MISSING PROMPT: image = "needed" (filename: needed)
+
+  📝 [What is it?] (mcq)
+     Instruction: "Look at the classroom picture. Read the sentence and Challenge yourself! 📝 Sele..."
+     Images: 6 total
+  ❌ MISSING PROMPT: questions[0].image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u5/audio/27.mp3" (filename: 27.mp3)
+  ❌ MISSING PROMPT: questions[0].imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/27.png" (filename: 27.png)
+  ❌ MISSING PROMPT: questions[1].image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u5/audio/27.mp3" (filename: 27.mp3)
+  ❌ MISSING PROMPT: questions[1].imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/27.png" (filename: 27.png)
+  ❌ MISSING PROMPT: questions[2].image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u5/audio/27.mp3" (filename: 27.mp3)
+  ❌ MISSING PROMPT: questions[2].imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/27.png" (filename: 27.png)
+
+  📝 [Reading: In the Classroom] (reading-passage)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the classroom picture from Pupil's Book..."
+     Images: 2 total
+  ❌ MISSING PROMPT: image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u5/audio/27.mp3" (filename: 27.mp3)
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/27.png" (filename: 27.png)
+
+  📝 [Write About the Travellers] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the pictures from Workbook page 58. Wri..."
+     Images: 1 total
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u5/images/1523.png" (filename: 1523.png)
+
+  📝 [Brainstorm: Describe a Place] (picture-description)
+     Instruction: "Prepare to write a description of a place of interest in Yemen. Use your eyes! �..."
+     Images: 1 total
+  ❌ MISSING PROMPT: image = "image-of-socotra-dragon-tree" (filename: image-of-socotra-dragon-tree)
+
+  📝 [New Words: On, In, Under] (flashcard)
+     Instruction: "Let's learn new words! 📚 New Words: On, In, Under. Use your eyes! 🧐 Look close..."
+     Images: 6 total
+  ❌ MISSING PROMPT: items[0].image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u5/audio/26.mp3" (filename: 26.mp3)
+  ❌ MISSING PROMPT: items[0].imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/26.png" (filename: 26.png)
+  ❌ MISSING PROMPT: items[1].image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u5/audio/26.mp3" (filename: 26.mp3)
+  ❌ MISSING PROMPT: items[1].imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/26.png" (filename: 26.png)
+  ❌ MISSING PROMPT: items[2].image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u5/audio/26.mp3" (filename: 26.mp3)
+  ❌ MISSING PROMPT: items[2].imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/26.png" (filename: 26.png)
+
+======================================================================
+UNIT: g10u6  (2 activities with 'picture' in instruction)
+======================================================================
+
+  📝 [Talk About the Picture] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture. Listen to the questions an..."
+     Images: 2 total
+  ❌ MISSING PROMPT: image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/28.mp3" (filename: 28.mp3)
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/28.png" (filename: 28.png)
+
+  📝 [New Words: People and Places] (flashcard)
+     Instruction: "Let's learn new words! 📚 New Words: People and Places. Use your eyes! 🧐 Look c..."
+     Images: 16 total
+  ❌ MISSING PROMPT: items[0].image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/28.mp3" (filename: 28.mp3)
+  ❌ MISSING PROMPT: items[1].image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/28.mp3" (filename: 28.mp3)
+  ❌ MISSING PROMPT: items[2].image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/28.mp3" (filename: 28.mp3)
+  ❌ MISSING PROMPT: items[3].image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/28.mp3" (filename: 28.mp3)
+  ❌ MISSING PROMPT: items[4].image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/28.mp3" (filename: 28.mp3)
+  ❌ MISSING PROMPT: items[5].image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/28.mp3" (filename: 28.mp3)
+  ❌ MISSING PROMPT: items[5].imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/28.png" (filename: 28.png)
+  ❌ MISSING PROMPT: items[6].image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/28.mp3" (filename: 28.mp3)
+  ❌ MISSING PROMPT: items[6].imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/28.png" (filename: 28.png)
+  ❌ MISSING PROMPT: items[7].image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u6/audio/28.mp3" (filename: 28.mp3)
+  ❌ MISSING PROMPT: items[7].imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u2/images/28.png" (filename: 28.png)
+
+======================================================================
+UNIT: g10u7  (3 activities with 'picture' in instruction)
+======================================================================
+
+  📝 [Spot the Hazards] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture of the kitchen. Identify th..."
+     Images: 2 total
+  ❌ MISSING PROMPT: image = "gen-g10-u7-7.10-img-9" (filename: gen-g10-u7-7.10-img-9)
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u7/images/g10_u7_l7_10_pic_act6_i0.png" (filename: g10_u7_l7_10_pic_act6_i0.png)
+
+  📝 [Your Turn: Describe Someone] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture. Use the keywords and answe..."
+     Images: 2 total
+  ❌ MISSING PROMPT: image = "A young woman with long, straight dark hair, wearing a lovely new blue cotton dress." (filename: A young woman with long, straight dark hair, wearing a lovely new blue cotton dress.)
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u7/images/g10_u7_l7_8_pic_act6_i0.png" (filename: g10_u7_l7_8_pic_act6_i0.png)
+
+  📝 [Check Your Understanding] (mcq)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture and Take a closer look! 📝 ..."
+     Images: 5 total
+  ❌ MISSING PROMPT: questions[0].image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u7/audio/39.mp3" (filename: 39.mp3)
+  ❌ MISSING PROMPT: questions[0].imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/39.png" (filename: 39.png)
+  ❌ MISSING PROMPT: questions[1].image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u7/audio/40.mp3" (filename: 40.mp3)
+  ❌ MISSING PROMPT: questions[1].imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/40.png" (filename: 40.png)
+  ❌ MISSING PROMPT: questions[2].image = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/audio/41.mp3" (filename: 41.mp3)
+
+======================================================================
+UNIT: g11u1  (2 activities with 'picture' in instruction)
+======================================================================
+
+  📝 [Who is This Man?] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture. Read the description of th..."
+     Images: 1 total
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u1/images/g11_u1_l1_1_pic_act4_i0.png" (filename: g11_u1_l1_1_pic_act4_i0.png)
+
+  📝 [Describe the Scene] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture from the story. Answer the ..."
+     Images: 1 total
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u1/images/g11_u1_l1_5_pic_act7_i0.png" (filename: g11_u1_l1_5_pic_act7_i0.png)
+
+======================================================================
+UNIT: g11u2  (2 activities with 'picture' in instruction)
+======================================================================
+
+  📝 [Classifying Jobs] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions to de..."
+     Images: 2 total
+  ❌ MISSING PROMPT: image = "gen-g11-u2-2.2-img-1" (filename: gen-g11-u2-2.2-img-1)
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u2/images/g11_u2_l2_2_pic_act6_i0.png" (filename: g11_u2_l2_2_pic_act6_i0.png)
+
+  📝 [What Would You Do?] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture. Imagine you are in this si..."
+     Images: 2 total
+  ❌ MISSING PROMPT: image = "gen-g11-u2-2.8-img-1" (filename: gen-g11-u2-2.8-img-1)
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u2/images/g11_u2_l2_8_pic_act7_i0.png" (filename: g11_u2_l2_8_pic_act7_i0.png)
+
+======================================================================
+UNIT: g11u3  (3 activities with 'picture' in instruction)
+======================================================================
+
+  ⚠️  [Comprehension: Who Said It?] (match-pairs)
+     Instruction: "Match each person to the quote from their interview. You can use their picture t..."
+     ❌ NO image fields found in content — needs investigation
+
+  📝 [Describe the Tower] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture of the Tower of London. Ans..."
+     Images: 1 total
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u3/images/g11_u3_l3_8_pic_act7_i0.png" (filename: g11_u3_l3_8_pic_act7_i0.png)
+
+  📝 [Speaking: Describing the Change] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture of the factory. Answer the ..."
+     Images: 1 total
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u3/images/g11_u3_l3_5_pic_act7_i0.png" (filename: g11_u3_l3_5_pic_act7_i0.png)
+
+======================================================================
+UNIT: g11u4  (7 activities with 'picture' in instruction)
+======================================================================
+
+  📝 [Describe the Taj Mahal] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture of the Taj Mahal. Record yo..."
+     Images: 1 total
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u4/images/g11_u4_l4_6_pic_act7_i0.png" (filename: g11_u4_l4_6_pic_act7_i0.png)
+
+  📝 [Describing People] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions to de..."
+     Images: 2 total
+  ❌ MISSING PROMPT: image = "gen-g11-u4-4.11-img-6" (filename: gen-g11-u4-4.11-img-6)
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u4/images/g11_u4_l4_11_pic_act7_i0.png" (filename: g11_u4_l4_11_pic_act7_i0.png)
+
+  📝 [Describe a Djambia] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture of the djambia. Write a sho..."
+     Images: 2 total
+  ❌ MISSING PROMPT: image = "image_of_a_djambia" (filename: image_of_a_djambia)
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u4/images/g11_u4_l4_9_pic_act7_i0.png" (filename: g11_u4_l4_9_pic_act7_i0.png)
+
+  📝 [Describing the Masai] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture of the Masai men. Describe ..."
+     Images: 1 total
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u4/images/g11_u4_l4_8_pic_act6_i0.png" (filename: g11_u4_l4_8_pic_act6_i0.png)
+
+  📝 [Describe a Yemeni House] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture of a traditional Yemeni hou..."
+     Images: 2 total
+  ❌ MISSING PROMPT: image = "gen-g11-u4-4.13-img-9" (filename: gen-g11-u4-4.13-img-9)
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u4/images/g11_u4_l4_13_pic_act6_i0.png" (filename: g11_u4_l4_13_pic_act6_i0.png)
+
+  📝 [Describe the Sydney Opera House] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture of the famous building in S..."
+     Images: 1 total
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u4/images/g11_u4_l4_3_pic_act7_i0.png" (filename: g11_u4_l4_3_pic_act7_i0.png)
+
+  📝 [The Australian Outback] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture of the Australian outback. ..."
+     Images: 2 total
+  ❌ MISSING PROMPT: image = "gen-g11-u4-4.4-outback" (filename: gen-g11-u4-4.4-outback)
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u4/images/g11_u4_l4_4_pic_act6_i0.png" (filename: g11_u4_l4_4_pic_act6_i0.png)
+
+======================================================================
+UNIT: g11u5  (1 activities with 'picture' in instruction)
+======================================================================
+
+  📝 [Beach Business Ideas] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture of the beach. Think about t..."
+     Images: 2 total
+  ❌ MISSING PROMPT: image = "ID: 701, Label: Tropical beach with palm trees" (filename: ID: 701, Label: Tropical beach with palm trees)
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u5/images/701.png" (filename: 701.png)
+
+======================================================================
+UNIT: g11u6  (1 activities with 'picture' in instruction)
+======================================================================
+
+  📝 [Describe the Scenery] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture of the Irish coast. Answer ..."
+     Images: 2 total
+  ❌ MISSING PROMPT: image = "gen-g11-u6-6.3-img-1" (filename: gen-g11-u6-6.3-img-1)
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u6/images/g11_u6_l6_3_pic_act6_i0.png" (filename: g11_u6_l6_3_pic_act6_i0.png)
+
+======================================================================
+UNIT: g12u1  (5 activities with 'picture' in instruction)
+======================================================================
+
+  📝 [Describe the Scene] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture. Imagine you are the driver..."
+     Images: 1 total
+  ❌ MISSING PROMPT: image = "gen-g12-u1-1.8-img-6" (filename: gen-g12-u1-1.8-img-6)
+
+  📝 [Which Girl is Kate?] (mcq)
+     Instruction: "Read June's description of her sister Kate again. Look at the picture and Challe..."
+     Images: 2 total
+  ❌ MISSING PROMPT: questions[0].image = "ID: 1679" (filename: ID: 1679)
+  ❌ MISSING PROMPT: questions[0].imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u1/images/1679.png" (filename: 1679.png)
+
+  ⚠️  [Describe the View] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture. Imagine this is the view f..."
+     ❌ NO image fields found in content — needs investigation
+
+  📝 [Find the Passenger's Bags] (mcq)
+     Instruction: "Based on the conversation, look at the picture and Challenge yourself! 📝 Select..."
+     Images: 2 total
+  ❌ MISSING PROMPT: questions[0].image = "ID: 1678" (filename: ID: 1678)
+  ❌ MISSING PROMPT: questions[0].imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u1/images/1678.png" (filename: 1678.png)
+
+  📝 [Weather Vocabulary] (flashcard)
+     Instruction: "Learn these words to describe the weather. Use your eyes! 🧐 Look closely at the..."
+     Images: 10 total
+  ❌ MISSING PROMPT: cards[0].image = "g12-vocab-rainy" (filename: g12-vocab-rainy)
+  ❌ MISSING PROMPT: cards[0].imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u1/images/g12_vocab_rainy.png" (filename: g12_vocab_rainy.png)
+  ❌ MISSING PROMPT: cards[1].image = "g12-vocab-misty" (filename: g12-vocab-misty)
+  ❌ MISSING PROMPT: cards[1].imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u1/images/g12_vocab_misty.png" (filename: g12_vocab_misty.png)
+  ❌ MISSING PROMPT: items[0].image = "g12-vocab-rainy" (filename: g12-vocab-rainy)
+  ❌ MISSING PROMPT: items[1].image = "g12-vocab-misty" (filename: g12-vocab-misty)
+
+======================================================================
+UNIT: g12u2  (2 activities with 'picture' in instruction)
+======================================================================
+
+  📝 [Speaking Practice: Describe the Scene] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture of the accident scene. Reco..."
+     Images: 2 total
+  ❌ MISSING PROMPT: image = "needed" (filename: needed)
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u2/images/g12_u2_l2_3_pic_act7_i0.png" (filename: g12_u2_l2_3_pic_act7_i0.png)
+
+  📝 [Tell Your Own Dream Story] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at this strange, dream-like picture. Imagi..."
+     Images: 2 total
+  ❌ MISSING PROMPT: image = "gen-g12-u2-2.4-img-7" (filename: gen-g12-u2-2.4-img-7)
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u2/images/g12_u2_l2_4_pic_act7_i0.png" (filename: g12_u2_l2_4_pic_act7_i0.png)
+
+======================================================================
+UNIT: g12u3  (2 activities with 'picture' in instruction)
+======================================================================
+
+  📝 [What Has Been Happening?] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions using..."
+     Images: 2 total
+  ❌ MISSING PROMPT: image = "gen-g12-u3-3.5-img-1" (filename: gen-g12-u3-3.5-img-1)
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u3/images/g12_u3_l3_5_pic_act6_i0.png" (filename: g12_u3_l3_5_pic_act6_i0.png)
+
+  📝 [Describe the Job] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions to de..."
+     Images: 2 total
+  ❌ MISSING PROMPT: image = "image-of-zookeeper" (filename: image-of-zookeeper)
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u3/images/g12_u3_l3_7_pic_act6_i0.png" (filename: g12_u3_l3_7_pic_act6_i0.png)
+
+======================================================================
+UNIT: g12u4  (2 activities with 'picture' in instruction)
+======================================================================
+
+  📝 [Describe the Process: Making Tea] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the pictures showing how tea is made. W..."
+     Images: 1 total
+  ❌ MISSING PROMPT: image = "gen-g12-u4-4.6-img-1" (filename: gen-g12-u4-4.6-img-1)
+
+  📝 [Match the Food to its Picture] (match-pairs)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the image from your book (PB page 25). ..."
+     Images: 1 total
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u4/images/g12_u4_l4_1_mtch_act2_i0.png" (filename: g12_u4_l4_1_mtch_act2_i0.png)
+
+======================================================================
+UNIT: g12u5  (8 activities with 'picture' in instruction)
+======================================================================
+
+  📝 [Discussing Possibilities] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture. Answer the questions using..."
+     Images: 1 total
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u5/images/g12_u5_l5_2_pic_act7_i0.png" (filename: g12_u5_l5_2_pic_act7_i0.png)
+
+  📝 [Making Deductions] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture and answer the questions. U..."
+     Images: 2 total
+  ❌ MISSING PROMPT: image = "gen-g12-u5-5.5-img-1" (filename: gen-g12-u5-5.5-img-1)
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u5/images/g12_u5_l5_5_pic_act4_i0.png" (filename: g12_u5_l5_5_pic_act4_i0.png)
+
+  📝 [Label the Harbour Scene] (match-pairs)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture from PB page 33. Match the ..."
+     Images: 1 total
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u5/images/g12_u5_l5_1_mtch_act1_i0.png" (filename: g12_u5_l5_1_mtch_act1_i0.png)
+
+  📝 [What's Happening Here?] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the closely at the picture from your workbook...."
+     Images: 1 total
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u5/images/g12_u5_l5_10_pic_act0_i0.png" (filename: g12_u5_l5_10_pic_act0_i0.png)
+
+  📝 [What's the Story?] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture. Use modal verbs like 'must..."
+     Images: 1 total
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u5/images/g12_u5_l5_4_pic_act3_i0.png" (filename: g12_u5_l5_4_pic_act3_i0.png)
+
+  📝 [What Happened Here?] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture of the chaotic street scene..."
+     Images: 2 total
+  ❌ MISSING PROMPT: image = "needed" (filename: needed)
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u5/images/g12_u5_l5_9_pic_act6_i0.png" (filename: g12_u5_l5_9_pic_act6_i0.png)
+
+  📝 [What Happened Here?] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture from the comic strip showin..."
+     Images: 1 total
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u5/images/g12_u5_l5_11_pic_act6_i0.png" (filename: g12_u5_l5_11_pic_act6_i0.png)
+
+  📝 [What's Happening in the Harbour?] (true-false)
+     Instruction: "Read the sentences about the harbour scene from PB page 33. Use your eyes! 🧐 Lo..."
+     Images: 1 total
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u5/images/g12_u5_l5_1_tf_act2_i0.png" (filename: g12_u5_l5_1_tf_act2_i0.png)
+
+======================================================================
+UNIT: g12u6  (2 activities with 'picture' in instruction)
+======================================================================
+
+  📝 [Describing a Scene in Yemen] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture from page 48 of your book. ..."
+     Images: 1 total
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u6/images/g12_u6_l6_10_pic_act0_i0.png" (filename: g12_u6_l6_10_pic_act0_i0.png)
+
+  📝 [Describing the Accident Scene] (picture-description)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture from Pupil's Book page 42. ..."
+     Images: 1 total
+  ❌ MISSING PROMPT: imageUrl = "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g12u6/images/g12_u6_l6_2_pic_act0_i0.png" (filename: g12_u6_l6_2_pic_act0_i0.png)
+
+======================================================================
+UNIT: g7u1  (15 activities with 'picture' in instruction)
+======================================================================
+
+  📝 [Revision: What's This?] (mcq)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture and answer the question: Wh..."
+     Images: 2 total
+  ❌ MISSING PROMPT: questions[0].image = "needed" (filename: needed)
+  ❌ MISSING PROMPT: questions[1].image = "needed" (filename: needed)
+
+  📝 [What's the First Letter?] (gap-fill)
+     Instruction: "Use your eyes! 🧐 Look closely at the at the picture. Type the first letter to c..."
+     Images: 4 total
+  ❌ MISSING PROMPT: sentences[0].image = "needed" (filename: needed)
+  ❌ MISSING PROMPT: sentences[1].image = "needed" (filename: needed)
+  ❌ MISSING PROMPT: sentences[2].image = "needed" (filename: needed)
+  ❌ MISSING PROMPT: sentences[3].image = "needed" (filename: needed)
+
+  📝 [Yes or No?] (true-false)
+     Instruction: "Look at the picture. Is the sentence correct? Challenge yourself! 📝 Select the ..."
+     Images: 4 total
+  ❌ MISSING PROMPT: statements[0].image = "image-of-four-pens" (filename: image-of-four-pens)
+  ❌ MISSING PROMPT: statements[1].image = "image-of-one-bag" (filename: image-of-one-bag)
+  ❌ MISSING PROMPT: statements[2].image = "image-of-five-books" (filename: image-of-five-books)
+  ❌ MISSING PROMPT: statements[3].image = "image-of-three-rulers" (filename: image-of-three-rulers)
+
+  📝 [New Words: Objects] (flashcard)
+     Instruction: "Learn the new words for today. Listen to the word, Use 
+
+[… truncated 181094 chars …]

@@ -13,6 +13,7 @@ import {
 import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import ActionBar from "./ActionBar";
+import ImageViewer from "./ImageViewer";
 
 interface StudentOption {
   text: string;
@@ -49,7 +50,7 @@ export default function ConversationSimActivity({ data, media, onComplete }: Pro
   const [isComplete, setIsComplete] = useState(false);
 
   if (turns.length === 0)
-    return <div className="text-muted p-4">No conversation data.</div>;
+    return <div className="text-slate-400 p-4">No conversation data.</div>;
 
   const turn = turns[currentTurn];
   const hasOptions = turn?.studentOptions && turn.studentOptions.length > 0;
@@ -114,7 +115,7 @@ export default function ConversationSimActivity({ data, media, onComplete }: Pro
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="bg-[var(--card)] rounded-3xl border border-[var(--border)] overflow-hidden"
+          className="bg-white rounded-3xl border border-slate-200 overflow-hidden"
         >
           <div className="p-10 md:p-14 text-center">
             <div
@@ -127,9 +128,9 @@ export default function ConversationSimActivity({ data, media, onComplete }: Pro
               <Sparkles size={36} className="text-white" />
             </div>
             <h3 className="text-2xl font-bold mb-2">Conversation Complete!</h3>
-            <p className="text-muted mb-6">
+            <p className="text-slate-400 mb-6">
               You made{" "}
-              <span className="font-bold text-[var(--success)]">{score}</span>{" "}
+              <span className="font-bold text-emerald-600">{score}</span>{" "}
               correct choices out of{" "}
               <span className="font-bold">{totalChoices}</span>.
             </p>
@@ -147,7 +148,7 @@ export default function ConversationSimActivity({ data, media, onComplete }: Pro
                         ? msg.isCorrect
                           ? "bg-emerald-100 dark:bg-emerald-950/30 text-emerald-800 dark:text-emerald-300 rounded-br-md"
                           : "bg-red-100 dark:bg-red-950/30 text-red-800 dark:text-red-300 rounded-br-md"
-                        : "bg-[var(--background)] border border-[var(--border)] rounded-bl-md"
+                        : "bg-slate-50 border border-slate-200 rounded-bl-md"
                     }`}
                   >
                     <div className="text-xs font-bold mb-1 opacity-60">
@@ -190,7 +191,7 @@ export default function ConversationSimActivity({ data, media, onComplete }: Pro
     <div className="max-w-2xl mx-auto w-full">
       {/* Scene Image */}
       {sceneImageUrl && (
-        <div className="mb-6 rounded-2xl overflow-hidden border border-[var(--border)]">
+        <div className="mb-6 rounded-2xl overflow-hidden border border-slate-200">
           <img
             src={getMediaUrl(sceneImageUrl)}
             alt="Conversation scene"
@@ -203,13 +204,13 @@ export default function ConversationSimActivity({ data, media, onComplete }: Pro
 
       {/* Scenario */}
       {scenario && (
-        <div className="mb-6 p-4 bg-[var(--accent-light)] border border-[var(--accent)]/20 rounded-2xl">
+        <div className="mb-6 p-4 bg-indigo-50 border border-indigo-500/20 rounded-2xl">
           <div className="flex items-start gap-3">
             <MessageCircle
               size={18}
-              className="text-[var(--accent)] mt-0.5 shrink-0"
+              className="text-indigo-600 mt-0.5 shrink-0"
             />
-            <p className="text-sm font-medium text-[var(--accent)]">
+            <p className="text-sm font-medium text-indigo-600">
               {scenario}
             </p>
           </div>
@@ -226,10 +227,10 @@ export default function ConversationSimActivity({ data, media, onComplete }: Pro
         />
       </div>
 
-      <div className="bg-[var(--card)] rounded-3xl border border-[var(--border)] overflow-hidden">
+      <div className="bg-white rounded-3xl border border-slate-200 overflow-hidden">
         {/* Chat History */}
         {chatHistory.length > 0 && (
-          <div className="p-6 space-y-3 max-h-64 overflow-y-auto border-b border-[var(--border)]">
+          <div className="p-6 space-y-3 max-h-64 overflow-y-auto border-b border-slate-200">
             {chatHistory.map((msg, i) => (
               <motion.div
                 key={i}
@@ -243,7 +244,7 @@ export default function ConversationSimActivity({ data, media, onComplete }: Pro
                       ? msg.isCorrect
                         ? "bg-emerald-100 dark:bg-emerald-950/30 text-emerald-800 dark:text-emerald-300 rounded-br-md"
                         : "bg-red-100 dark:bg-red-950/30 text-red-800 dark:text-red-300 rounded-br-md"
-                      : "bg-[var(--background)] border border-[var(--border)] rounded-bl-md"
+                      : "bg-slate-50 border border-slate-200 rounded-bl-md"
                   }`}
                 >
                   <div className="text-xs font-bold mb-1 opacity-60">
@@ -265,14 +266,14 @@ export default function ConversationSimActivity({ data, media, onComplete }: Pro
             animate={{ opacity: 1, x: 0 }}
             className="flex items-start gap-3 mb-6"
           >
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[var(--accent)] to-purple-500 flex items-center justify-center shrink-0">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[indigo-600] to-purple-500 flex items-center justify-center shrink-0">
               <User size={20} className="text-white" />
             </div>
             <div>
-              <div className="text-xs font-bold text-muted mb-1">
+              <div className="text-xs font-bold text-slate-400 mb-1">
                 {turn.speaker}
               </div>
-              <div className="bg-[var(--background)] px-5 py-3 rounded-2xl rounded-tl-md border border-[var(--border)] font-medium">
+              <div className="bg-slate-50 px-5 py-3 rounded-2xl rounded-tl-md border border-slate-200 font-medium">
                 {turn.text}
               </div>
             </div>
@@ -281,15 +282,15 @@ export default function ConversationSimActivity({ data, media, onComplete }: Pro
           {/* Student Options */}
           {hasOptions && (
             <div className="space-y-2 ml-13">
-              <div className="text-xs font-semibold text-muted uppercase tracking-wider mb-3">
+              <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">
                 Choose your response:
               </div>
               {turn.studentOptions!.map((opt, i) => {
                 let style =
-                  "border-[var(--border)] hover:border-[var(--accent)] hover:bg-[var(--accent-light)]";
+                  "border-slate-200 hover:border-indigo-500 hover:bg-indigo-50";
                 if (selectedOption === i && !isChecked)
                   style =
-                    "border-[var(--accent)] bg-[var(--accent-light)] ring-2 ring-[var(--accent)]/30";
+                    "border-indigo-500 bg-indigo-50 ring-2 ring-[indigo-600]/30";
                 if (isChecked && opt.isCorrect)
                   style =
                     "border-emerald-400 bg-emerald-50 dark:bg-emerald-950/30";
@@ -336,7 +337,7 @@ export default function ConversationSimActivity({ data, media, onComplete }: Pro
         </div>
 
         {/* Action Bar */}
-        <div className="flex justify-end px-6 py-4 border-t border-[var(--border)] bg-[var(--background)]/50">
+        <div className="flex justify-end px-6 py-4 border-t border-slate-200 bg-slate-50/50">
           {!isChecked ? (
             <button
               onClick={handleSubmit}

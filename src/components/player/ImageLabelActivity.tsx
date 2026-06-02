@@ -7,6 +7,7 @@ import { ActivityMedia } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
 import ActionBar from "./ActionBar";
+import ImageViewer from "./ImageViewer";
 
 interface Props {
   data: any;
@@ -44,7 +45,7 @@ export default function ImageLabelActivity({ data, media, onComplete }: Props) {
   }, []);
 
   if (hotspots.length === 0)
-    return <div className="text-muted">No image labels found.</div>;
+    return <div className="text-slate-400">No image labels found.</div>;
 
   // Media: main image from media.images
   const mainImage = media.images.length > 0 ? media.images[0] : null;
@@ -80,21 +81,21 @@ export default function ImageLabelActivity({ data, media, onComplete }: Props) {
     <div className="max-w-4xl mx-auto w-full">
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-2">
-          <MapPin size={18} className="text-[var(--accent)]" />
-          <span className="text-sm font-bold text-muted uppercase tracking-widest">
+          <MapPin size={18} className="text-indigo-600" />
+          <span className="text-sm font-bold text-slate-400 uppercase tracking-widest">
             Label the Image
           </span>
         </div>
         {isChecked && (
           <span className="text-sm font-bold">
-            <span className="text-[var(--success)]">{correctCount}</span> /{" "}
+            <span className="text-emerald-600">{correctCount}</span> /{" "}
             {hotspots.length} correct
           </span>
         )}
       </div>
 
       {/* Image display */}
-      <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+      <div className="bg-white border border-slate-200 rounded-2xl p-6">
         {mainImageUrl && (
           <div className="relative mb-6 rounded-xl overflow-hidden">
             <img
@@ -121,18 +122,18 @@ export default function ImageLabelActivity({ data, media, onComplete }: Props) {
                 className={`p-4 rounded-xl border-2 transition-colors ${
                   isChecked
                     ? isCorrect
-                      ? "border-[var(--success)] bg-[var(--success-light)]"
+                      ? "border-[emerald-600] bg-emerald-50"
                       : "border-red-400 bg-red-50 dark:bg-red-950/30"
-                    : "border-[var(--border)]"
+                    : "border-slate-200"
                 }`}
               >
                 <div className="flex items-center justify-between mb-2">
-                  <label className="block text-xs font-bold text-muted uppercase tracking-widest">
+                  <label className="block text-xs font-bold text-slate-400 uppercase tracking-widest">
                     Label {i + 1}
                   </label>
                   <button
                     onClick={() => handlePlayAudio(spot.label)}
-                    className={`p-1 rounded-full transition-all ${isSpeaking ? "text-blue-500" : "text-muted/50 hover:text-blue-500"}`}
+                    className={`p-1 rounded-full transition-all ${isSpeaking ? "text-blue-500" : "text-slate-400/50 hover:text-blue-500"}`}
                   >
                     <Volume2 size={14} className={isSpeaking ? "animate-pulse" : ""} />
                   </button>
@@ -143,7 +144,7 @@ export default function ImageLabelActivity({ data, media, onComplete }: Props) {
                   onChange={(e) => handleChange(spot.id, e.target.value)}
                   disabled={isChecked}
                   placeholder="Type the label..."
-                  className="w-full px-4 py-3 bg-[var(--background)] border border-[var(--border)] rounded-xl outline-none focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent-glow)] transition-all text-base"
+                  className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl outline-none focus:border-indigo-500 focus:ring-2 focus:ring-[var(--accent-glow)] transition-all text-base"
                 />
                 {isChecked && !isCorrect && (
                   <div className="mt-2 text-sm text-red-600 dark:text-red-400 font-medium">
@@ -151,7 +152,7 @@ export default function ImageLabelActivity({ data, media, onComplete }: Props) {
                   </div>
                 )}
                 {isChecked && isCorrect && (
-                  <div className="mt-2 flex items-center gap-1.5 text-sm text-[var(--success)] font-medium">
+                  <div className="mt-2 flex items-center gap-1.5 text-sm text-emerald-600 font-medium">
                     <Check size={14} /> Correct!
                   </div>
                 )}

@@ -51,7 +51,7 @@ export default function MatchPairsActivity({ data, media, onComplete }: Props) {
     return () => window.removeEventListener(STOP_AUDIO_EVENT, handler);
   }, []);
 
-  if (pairs.length === 0) return <div className="text-muted">No pairs found.</div>;
+  if (pairs.length === 0) return <div className="text-slate-400">No pairs found.</div>;
 
   const handlePlayAudio = (url?: string, id?: string) => {
     if (!url) return;
@@ -121,12 +121,12 @@ export default function MatchPairsActivity({ data, media, onComplete }: Props) {
   return (
     <div className="max-w-4xl mx-auto w-full">
       <div className="flex items-center justify-between mb-6">
-        <div className="text-sm font-semibold text-muted">
-          Matched: <span className="text-[var(--success)]">{matched.size}</span> / {pairs.length}
+        <div className="text-sm font-semibold text-slate-400">
+          Matched: <span className="text-emerald-600">{matched.size}</span> / {pairs.length}
         </div>
         <button
           onClick={handleReset}
-          className="flex items-center gap-1.5 text-sm text-muted hover:text-foreground transition-colors"
+          className="flex items-center gap-1.5 text-sm text-slate-400 hover:text-slate-800 transition-colors"
         >
           <RotateCcw size={14} /> Reset
         </button>
@@ -136,9 +136,9 @@ export default function MatchPairsActivity({ data, media, onComplete }: Props) {
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="p-10 bg-[var(--success-light)] rounded-2xl text-center"
+          className="p-10 bg-emerald-50 rounded-2xl text-center"
         >
-          <Check size={40} className="mx-auto mb-4 text-[var(--success)]" />
+          <Check size={40} className="mx-auto mb-4 text-emerald-600" />
           <h3 className="text-2xl font-bold">All Pairs Matched!</h3>
         </motion.div>
       ) : (
@@ -161,12 +161,12 @@ export default function MatchPairsActivity({ data, media, onComplete }: Props) {
                   disabled={isMatched}
                   className={`w-full text-left p-5 rounded-2xl border-2 font-medium transition-all ${
                     isMatched
-                      ? "bg-[var(--success-light)] border-[var(--success)] text-[var(--success)] opacity-70"
+                      ? "bg-emerald-50 border-[emerald-600] text-emerald-600 opacity-70"
                       : isWrong
                       ? "bg-red-50 border-red-400 text-red-700 dark:bg-red-950 dark:border-red-500 dark:text-red-300"
                       : isSelected
-                      ? "bg-[var(--accent-light)] border-[var(--accent)] text-[var(--accent)] shadow-md"
-                      : "bg-[var(--card)] border-[var(--border)] hover:border-[var(--accent)] hover:bg-[var(--accent-light)]"
+                      ? "bg-indigo-50 border-indigo-500 text-indigo-600 shadow-md"
+                      : "bg-white border-slate-200 hover:border-indigo-500 hover:bg-indigo-50"
                   }`}
                   layout
                 >
@@ -182,11 +182,11 @@ export default function MatchPairsActivity({ data, media, onComplete }: Props) {
                     <div className="flex items-center justify-center py-3">
                       <button
                         onClick={(e) => { e.stopPropagation(); handlePlayAudio(audSrc, `l-${i}`); }}
-                        className={`p-3 rounded-full transition-all ${playingIdx === `l-${i}` ? "bg-blue-500 text-white" : "bg-[var(--accent-light)] text-[var(--accent)] hover:bg-blue-100"}`}
+                        className={`p-3 rounded-full transition-all ${playingIdx === `l-${i}` ? "bg-blue-500 text-white" : "bg-indigo-50 text-indigo-600 hover:bg-blue-100"}`}
                       >
                         <Volume2 size={24} className={playingIdx === `l-${i}` ? "animate-pulse" : ""} />
                       </button>
-                      <span className="ml-3 text-sm text-muted">{item.text || "Play audio"}</span>
+                      <span className="ml-3 text-sm text-slate-400">{item.text || "Play audio"}</span>
                     </div>
                   ) : (
                     <div className="flex items-center justify-between">
@@ -225,12 +225,12 @@ export default function MatchPairsActivity({ data, media, onComplete }: Props) {
                   disabled={isMatched}
                   className={`w-full text-left p-5 rounded-2xl border-2 font-medium transition-all ${
                     isMatched
-                      ? "bg-[var(--success-light)] border-[var(--success)] text-[var(--success)] opacity-70"
+                      ? "bg-emerald-50 border-[emerald-600] text-emerald-600 opacity-70"
                       : isWrong
                       ? "bg-red-50 border-red-400 text-red-700 dark:bg-red-950 dark:border-red-500 dark:text-red-300"
                       : isSelected
-                      ? "bg-[var(--accent-light)] border-[var(--accent)] text-[var(--accent)] shadow-md"
-                      : "bg-[var(--card)] border-[var(--border)] hover:border-[var(--accent)] hover:bg-[var(--accent-light)]"
+                      ? "bg-indigo-50 border-indigo-500 text-indigo-600 shadow-md"
+                      : "bg-white border-slate-200 hover:border-indigo-500 hover:bg-indigo-50"
                   }`}
                   layout
                 >
@@ -246,11 +246,11 @@ export default function MatchPairsActivity({ data, media, onComplete }: Props) {
                     <div className="flex items-center justify-center py-3">
                       <button
                         onClick={(e) => { e.stopPropagation(); handlePlayAudio(audSrc, `r-${i}`); }}
-                        className={`p-3 rounded-full transition-all ${playingIdx === `r-${i}` ? "bg-blue-500 text-white" : "bg-[var(--accent-light)] text-[var(--accent)] hover:bg-blue-100"}`}
+                        className={`p-3 rounded-full transition-all ${playingIdx === `r-${i}` ? "bg-blue-500 text-white" : "bg-indigo-50 text-indigo-600 hover:bg-blue-100"}`}
                       >
                         <Volume2 size={24} className={playingIdx === `r-${i}` ? "animate-pulse" : ""} />
                       </button>
-                      <span className="ml-3 text-sm text-muted">{item.text || "Play audio"}</span>
+                      <span className="ml-3 text-sm text-slate-400">{item.text || "Play audio"}</span>
                     </div>
                   ) : (
                     <div className="flex items-center justify-between">
