@@ -243,7 +243,7 @@ export default function PronunciationPracticeActivity({ data, media, onComplete 
                 }`}
               >
                 <Volume2 size={22} className={isSpeaking ? "animate-pulse" : ""} />
-                {isSpeaking ? "Playing..." : "Listen"}
+                {isSpeaking ? "جاري..." : "استمع"}
               </button>
 
               <button

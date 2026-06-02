@@ -211,7 +211,7 @@ export default function FlashcardActivity({ data, media, onComplete }: Flashcard
                   }`}
               >
                 <Volume2 size={16} className={isPlaying ? "animate-pulse" : ""} />
-                {isPlaying ? "Playing..." : "Listen"}
+                {isPlaying ? "جاري..." : "استمع"}
               </button>
             </Tooltip>
           </div>

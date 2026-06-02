@@ -134,7 +134,7 @@ export default function TransformSentenceActivity({ data, media, onComplete }: P
             }`}
           >
             <Volume2 size={18} className={isSpeaking ? "animate-pulse" : ""} />
-            {isSpeaking ? "Playing..." : "Listen"}
+            {isSpeaking ? "جاري..." : "استمع"}
           </button>
         </div>
 
