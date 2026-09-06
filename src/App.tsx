@@ -1,8 +1,9 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+﻿import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { AuthPage } from './pages/AuthPage';
 import { Dashboard } from './pages/Dashboard';
 import { CrescentLessonView } from './pages/CrescentLessonView';
+import { EmbedLessonView } from './pages/EmbedLessonView';
 import { CourseLessonsView } from './pages/CourseLessonsView';
 import { CourseStatsView } from './pages/CourseStatsView';
 import { GradeOverviewView } from './pages/GradeOverviewView';
@@ -41,14 +42,15 @@ function AppContent() {
 
   const isAdminRoute = window.location.pathname.startsWith('/admin');
   const isUnitRoute = window.location.pathname.startsWith('/unit');
+  const isEmbedRoute = window.location.pathname.startsWith('/embed');
 
-  if (!user && !isAdminRoute && !isUnitRoute) {
+  if (!user && !isAdminRoute && !isUnitRoute && !isEmbedRoute) {
     return <AuthPage />;
   }
 
   // Check if student needs onboarding
   const isStudentOrNew = !profile?.role || profile?.role === 'student';
-  const needsOnboarding = isStudentOrNew && !profile?.grade && !onboardingComplete && !isAdminRoute && !isUnitRoute;
+  const needsOnboarding = isStudentOrNew && !profile?.grade && !onboardingComplete && !isAdminRoute && !isUnitRoute && !isEmbedRoute;
 
   if (needsOnboarding) {
     return (
@@ -61,6 +63,7 @@ function AppContent() {
   return (
     <ErrorBoundary>
       <Routes>
+        <Route path="/embed" element={<EmbedLessonView />} />
         <Route path="/learn/:courseId/:lessonId" element={<CrescentLessonView />} />
         {/* UnitOfflineView disabled until future fix
         <Route path="/unit/:unitId" element={<UnitOfflineView />} />
@@ -104,3 +107,4 @@ export default function App() {
     </ErrorBoundary>
   );
 }
+
