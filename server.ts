@@ -712,6 +712,97 @@ async function startServer() {
     }
   });
 
+  // ═══════════════════════════════════════════
+  // ADMIN PARTNER API ROUTES
+  // ═══════════════════════════════════════════
+  
+  app.get('/admin/api/partners', authenticateAdmin, async (req: any, res: any) => {
+    try {
+      const { data, error } = await supabaseAdmin
+        .from('partner_apps')
+        .select('id, name, slug, webhook_url, allowed_origins, is_active, rate_limit_per_hour, created_at')
+        .order('created_at', { ascending: false });
+      if (error) throw error;
+      res.json({ success: true, partners: data });
+    } catch (err: any) {
+      res.status(500).json({ success: false, error: err.message });
+    }
+  });
+
+  app.post('/admin/api/partners', authenticateAdmin, async (req: any, res: any) => {
+    try {
+      const { name, slug, webhook_url, rate_limit_per_hour } = req.body;
+      const { data, error } = await supabaseAdmin
+        .from('partner_apps')
+        .insert([{ 
+          name, 
+          slug, 
+          webhook_url: webhook_url || null, 
+          rate_limit_per_hour: rate_limit_per_hour || 1000 
+        }])
+        .select()
+        .single();
+      if (error) throw error;
+      res.json({ success: true, partner: data });
+    } catch (err: any) {
+      res.status(500).json({ success: false, error: err.message });
+    }
+  });
+
+  app.patch('/admin/api/partners/:id', authenticateAdmin, async (req: any, res: any) => {
+    try {
+      const { name, webhook_url, is_active, rate_limit_per_hour } = req.body;
+      const updateData: any = {};
+      if (name !== undefined) updateData.name = name;
+      if (webhook_url !== undefined) updateData.webhook_url = webhook_url;
+      if (is_active !== undefined) updateData.is_active = is_active;
+      if (rate_limit_per_hour !== undefined) updateData.rate_limit_per_hour = rate_limit_per_hour;
+
+      const { data, error } = await supabaseAdmin
+        .from('partner_apps')
+        .update(updateData)
+        .eq('id', req.params.id)
+        .select('id, name, slug, webhook_url, allowed_origins, is_active, rate_limit_per_hour, created_at')
+        .single();
+      if (error) throw error;
+      res.json({ success: true, partner: data });
+    } catch (err: any) {
+      res.status(500).json({ success: false, error: err.message });
+    }
+  });
+
+  app.post('/admin/api/partners/:id/regenerate-keys', authenticateAdmin, async (req: any, res: any) => {
+    try {
+      const crypto = await import('crypto');
+      const new_api_key = crypto.randomBytes(32).toString('hex');
+      const new_api_secret = crypto.randomBytes(32).toString('hex');
+      
+      const { data, error } = await supabaseAdmin
+        .from('partner_apps')
+        .update({ api_key: new_api_key, api_secret: new_api_secret })
+        .eq('id', req.params.id)
+        .select()
+        .single();
+      if (error) throw error;
+      res.json({ success: true, partner: data });
+    } catch (err: any) {
+      res.status(500).json({ success: false, error: err.message });
+    }
+  });
+
+  app.delete('/admin/api/partners/:id', authenticateAdmin, async (req: any, res: any) => {
+    try {
+      const { error } = await supabaseAdmin
+        .from('partner_apps')
+        .delete()
+        .eq('id', req.params.id);
+      if (error) throw error;
+      res.json({ success: true });
+    } catch (err: any) {
+      res.status(500).json({ success: false, error: err.message });
+    }
+  });
+
   // Get activities by lesson ID (for lesson view)
   app.get('/api/activities', async (req, res) => {
     try {
@@ -798,6 +889,183 @@ async function startServer() {
       .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
       .join(' ');
   }
+
+  // ═══════════════════════════════════════════
+  // PARTNER API ROUTES (API Key authenticated)
+  // ═══════════════════════════════════════════
+  const { authenticatePartner } = await import('./src/middleware/partnerAuth.js');
+  const { WebhookService } = await import('./src/services/webhookService.js');
+
+  // 1. GET /api/partner/lessons — List available lessons
+  app.get('/api/partner/lessons', authenticatePartner(supabaseAdmin), async (req: any, res: any) => {
+    const partner = req.partner;
+    const { courseId, gradeId } = req.query;
+
+    let query = supabaseAdmin
+      .from('lessons')
+      .select('id, title, module_id, order_index, description, objectives');
+
+    if (partner.allowed_courses?.length) {
+      const { data: modules } = await supabaseAdmin
+        .from('modules')
+        .select('id')
+        .in('course_id', partner.allowed_courses);
+      const moduleIds = (modules || []).map((m: any) => m.id);
+      query = query.in('module_id', moduleIds);
+    }
+
+    if (courseId) {
+      const { data: modules } = await supabaseAdmin
+        .from('modules')
+        .select('id')
+        .eq('course_id', courseId);
+      query = query.in('module_id', (modules || []).map((m: any) => m.id));
+    }
+
+    const { data, error } = await query.order('order_index');
+    if (error) return res.status(500).json({ error: error.message });
+
+    await supabaseAdmin.from('partner_api_logs').insert([{
+      partner_app_id: partner.id, endpoint: '/api/partner/lessons',
+      method: 'GET', status_code: 200
+    }]);
+
+    res.json({ success: true, lessons: data });
+  });
+
+  // 2. GET /api/partner/lessons/:id/activities — Get full lesson with activities
+  app.get('/api/partner/lessons/:id/activities', authenticatePartner(supabaseAdmin), async (req: any, res: any) => {
+    const { id } = req.params;
+
+    const { data: activities, error } = await supabaseAdmin
+      .from('activities')
+      .select('*')
+      .eq('lesson_id', id)
+      .order('order_index');
+
+    if (error) return res.status(500).json({ error: error.message });
+    res.json({ success: true, activities });
+  });
+
+  // 3. POST /api/partner/embed-token — Generate a signed embed token
+  app.post('/api/partner/embed-token', authenticatePartner(supabaseAdmin), async (req: any, res: any) => {
+    const { lessonId, externalUserId, displayName } = req.body;
+    const partner = req.partner;
+
+    let { data: mapping } = await supabaseAdmin
+      .from('partner_user_mappings')
+      .select('*')
+      .eq('partner_app_id', partner.id)
+      .eq('external_user_id', externalUserId)
+      .maybeSingle();
+
+    if (!mapping) {
+      const { data: newMapping } = await supabaseAdmin
+        .from('partner_user_mappings')
+        .insert([{
+          partner_app_id: partner.id,
+          external_user_id: externalUserId,
+          display_name: displayName
+        }])
+        .select()
+        .single();
+      mapping = newMapping;
+    }
+
+    const payload = {
+      partnerId: partner.id,
+      lessonId,
+      externalUserId,
+      mappingId: mapping.id,
+      exp: Date.now() + 3600000
+    };
+
+    const token = Buffer.from(JSON.stringify(payload)).toString('base64url');
+
+    res.json({ success: true, embedToken: token, embedUrl: `/embed?token=${token}` });
+  });
+
+  // 4. POST /api/partner/progress — Submit progress from partner
+  app.post('/api/partner/progress', authenticatePartner(supabaseAdmin), async (req: any, res: any) => {
+    const { externalUserId, activityId, status, score, timeSpentSeconds } = req.body;
+    const partner = req.partner;
+
+    const { data: mapping } = await supabaseAdmin
+      .from('partner_user_mappings')
+      .select('engyup_user_id')
+      .eq('partner_app_id', partner.id)
+      .eq('external_user_id', externalUserId)
+      .maybeSingle();
+
+    const progressData = {
+      user_id: mapping?.engyup_user_id || null,
+      activity_id: activityId,
+      status: status || 'completed',
+      score: score || null,
+      time_spent_seconds: timeSpentSeconds || 0,
+      completed_at: status === 'completed' ? new Date().toISOString() : null
+    };
+
+    if (mapping?.engyup_user_id) {
+      await supabaseAdmin.from('activity_progress').upsert([{
+        ...progressData,
+        user_id: mapping.engyup_user_id
+      }], { onConflict: 'user_id,activity_id' });
+    }
+
+    await supabaseAdmin.from('xapi_statements').insert([{
+      user_id: mapping?.engyup_user_id,
+      verb: status === 'completed' ? 'end' : 'start',
+      activity_id: activityId,
+      activity_type: 'activity',
+      score: score,
+      metadata: {
+        partner_app_id: partner.id,
+        external_user_id: externalUserId,
+        source: 'partner_api'
+      }
+    }]);
+
+    res.json({ success: true });
+
+    if (partner.webhook_url) {
+      WebhookService.dispatch(
+        partner.webhook_url,
+        partner.api_secret,
+        {
+          event: status === 'completed' ? 'activity_completed' : 'activity_progress',
+          external_user_id: externalUserId,
+          data: { activityId, status, score, timeSpentSeconds },
+          timestamp: new Date().toISOString()
+        }
+      ).catch((err: any) => console.error('Webhook dispatch failed:', err));
+    }
+  });
+
+  // 5. GET /api/partner/users/:externalId/progress — Get user progress
+  app.get('/api/partner/users/:externalId/progress',
+    authenticatePartner(supabaseAdmin), async (req: any, res: any) => {
+    const { externalId } = req.params;
+    const partner = req.partner;
+
+    const { data: mapping } = await supabaseAdmin
+      .from('partner_user_mappings')
+      .select('engyup_user_id')
+      .eq('partner_app_id', partner.id)
+      .eq('external_user_id', externalId)
+      .maybeSingle();
+
+    if (!mapping?.engyup_user_id) {
+      return res.json({ success: true, progress: [] });
+    }
+
+    const { data: progress } = await supabaseAdmin
+      .from('activity_progress')
+      .select('activity_id, status, score, time_spent_seconds, completed_at')
+      .eq('user_id', mapping.engyup_user_id);
+
+    res.json({ success: true, progress: progress || [] });
+  });
 
   // Create Vite dev server in middleware mode
   const vite = await createViteServer({
