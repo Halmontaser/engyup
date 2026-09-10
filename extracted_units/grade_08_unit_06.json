@@ -1,0 +1,338 @@
+{
+  "unit_id": "0a569b6d-a1ae-4156-929d-6527c7ce1491",
+  "unit_title": "Animals",
+  "unit_number": 6,
+  "course_id": "4aac677a-1d04-4756-9913-0af4ac021415",
+  "course_title": "Grade 8",
+  "course_description": "English curriculum for Grade 8",
+  "lessons": [
+    {
+      "lesson_id": "ff493961-eaf9-4146-a297-db831ba4e58d",
+      "lesson_title": "Five Animals",
+      "lesson_number": 1,
+      "description": "Read about five interesting animals and their features",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Describe animals",
+        "Use comparative adjectives"
+      ],
+      "language_focus": [
+        "It has...",
+        "It lives in...",
+        "bigger/smaller than",
+        "the longest/tallest"
+      ],
+      "vocabulary": [
+        "owl",
+        "eagle",
+        "camel",
+        "dolphin",
+        "snake"
+      ],
+      "activities": [
+        {
+          "activity_id": "3271082f-80ad-4fdb-b3f6-bd3ea0b00152",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 49)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "59",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "c83e8819-49f0-49c3-b5ec-264eb1df0e65",
+          "activity_type": "flashcard",
+          "title": "Animal Facts",
+          "instruction": "Learn interesting facts about these animals.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "59",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "Long-eared Owl",
+                "definition": "A bird with very long ears. It hunts at night."
+              },
+              {
+                "word": "Eagle",
+                "definition": "A large bird that can fly very high. It has very good eyes."
+              },
+              {
+                "word": "Camel",
+                "definition": "A large animal that lives in the desert. It can go without water for days."
+              },
+              {
+                "word": "Dolphin",
+                "definition": "A smart sea animal. It can jump out of the water."
+              },
+              {
+                "word": "Snake",
+                "definition": "A long animal with no legs. Some snakes are dangerous."
+              }
+            ],
+            "items": [
+              {
+                "word": "Long-eared Owl",
+                "imageUrl": "/media/g10/g10_u6_l6.1_flsh_act0_i0.png",
+                "definition": "A bird with very long ears. It hunts at night."
+              },
+              {
+                "word": "Eagle",
+                "imageUrl": "/media/g10/g10_u6_l6.1_flsh_act0_i1.png",
+                "definition": "A large bird that can fly very high. It has very good eyes."
+              },
+              {
+                "word": "Camel",
+                "imageUrl": "/media/g10/g10_u6_l6.1_flsh_act0_i2.png",
+                "definition": "A large animal that lives in the desert. It can go without water for days."
+              },
+              {
+                "word": "Dolphin",
+                "imageUrl": "/media/g10/g10_u6_l6.1_flsh_act0_i3.png",
+                "definition": "A smart sea animal. It can jump out of the water."
+              },
+              {
+                "word": "Snake",
+                "imageUrl": "/media/g10/g10_u6_l6.1_flsh_act0_i4.png",
+                "definition": "A long animal with no legs. Some snakes are dangerous."
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "231479de-49b6-4a82-867b-0a3fc5af95a7",
+          "activity_type": "mcq",
+          "title": "Animal Quiz",
+          "instruction": "Challenge yourself! 📝 Select the best option for the correct fact about each animal.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "4",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Dolphin",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Camel",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Owl",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Eagle",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Which animal lives in the desert?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Camel",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Snake",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Dolphin",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Owl",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Which animal lives in the sea?"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "3aa6e16f-81de-4df2-8c9e-e9a3e8cdc586",
+          "activity_type": "true-false",
+          "title": "True or False - Animals",
+          "instruction": "Are these animal facts true or false?",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "4",
+          "compensates": null,
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "statements": [
+              {
+                "isTrue": true,
+                "statement": "A camel can go without water for many days."
+              },
+              {
+                "isTrue": false,
+                "statement": "Dolphins live in the desert.",
+                "explanation": "Dolphins live in the sea."
+              },
+              {
+                "isTrue": true,
+                "statement": "Owls hunt at night."
+              },
+              {
+                "isTrue": false,
+                "statement": "Snakes have four legs.",
+                "explanation": "Snakes have no legs."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "9048153a-29d3-42ac-86bf-c6d93eac2a8d",
+      "lesson_title": "At the Zoo",
+      "lesson_number": 2,
+      "description": "Read a story about a visit to the zoo and comparatives/superlatives",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Compare animals",
+        "Use comparative/superlative"
+      ],
+      "language_focus": [
+        "bigger than",
+        "the biggest",
+        "smaller than",
+        "the smallest"
+      ],
+      "vocabulary": [
+        "zoo",
+        "cage",
+        "frightened",
+        "taller",
+        "bigger",
+        "smaller"
+      ],
+      "activities": [
+        {
+          "activity_id": "864fc8b9-b7cd-4a46-b257-4c03d69a8e08",
+          "activity_type": "gap-fill",
+          "title": "Comparing Animals",
+          "instruction": "Complete with the comparative or superlative form.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "5",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "An elephant is ___ than a cat. (big)",
+                "blanks": [
+                  {
+                    "answer": "bigger"
+                  }
+                ]
+              },
+              {
+                "text": "A giraffe is the ___ animal. (tall)",
+                "blanks": [
+                  {
+                    "answer": "tallest"
+                  }
+                ]
+              },
+              {
+                "text": "A mouse is ___ than a rabbit. (small)",
+                "blanks": [
+                  {
+                    "answer": "smaller"
+                  }
+                ]
+              },
+              {
+                "text": "A cheetah is the ___ animal. (fast)",
+                "blanks": [
+                  {
+                    "answer": "fastest"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "280c3674-da2a-4952-bb21-479b62591884",
+          "activity_type": "match-pairs",
+          "title": "Adjective Forms",
+          "instruction": "Match each adjective to its comparative form.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "5",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "big",
+                "right": "bigger"
+              },
+              {
+                "left": "small",
+                "right": "smaller"
+              },
+              {
+                "left": "tall",
+                "right": "taller"
+              },
+              {
+                "left": "fast",
+                "right": "faster"
+              },
+              {
+                "left": "long",
+                "right": "longer"
+              },
+              {
+                "left": "heavy",
+                "right": "heavier"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

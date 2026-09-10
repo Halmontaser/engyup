@@ -1,10 +1,18 @@
 /**
- * Reorder activities so listening-comprehension is first in each lesson.
+ * Reorder activities so listening-comprehension is first in every lesson,
+ * across ALL courses. Uses the reorder_activity DB function for atomicity.
+ *
+ * Logic:
+ *   1. Find the first activity (lowest order_index) in the lesson
+ *   2. Find the listening-comprehension activity in the same lesson
+ *   3. Move listening-comprehension to the first activity's order_index
+ *
+ * The reorder_activity function handles sibling shifting automatically.
  *
  * Usage:
  *   export SUPABASE_SERVICE_ROLE_KEY="eyJh..."
- *   npx tsx src/scripts/reorder-listening-first.ts --dry-run
- *   npx tsx src/scripts/reorder-listening-first.ts
+ *   npx tsx scripts/reorder-listening-first.ts --dry-run
+ *   npx tsx scripts/reorder-listening-first.ts
  */
 
 import { createClient } from "@supabase/supabase-js";
@@ -17,48 +25,118 @@ if (!SUPABASE_KEY) { console.error("❌ Set SUPABASE_SERVICE_ROLE_KEY"); process
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
-async function main() {
-  // Get all activities grouped by lesson
-  const { data: activities, error } = await supabase
-    .from("activities")
-    .select("activity_id, lesson_id, activity_type, order_index, title")
-    .order("order_index", { ascending: true })
-    .limit(1000);
+// ---------------------------------------------------------------------------
+// Paginated fetch — no 1000-row limit
+// ---------------------------------------------------------------------------
+async function fetchAllActivities() {
+  const PAGE_SIZE = 1000;
+  const all: any[] = [];
+  let from = 0;
 
-  if (error) { console.error("❌", error.message); process.exit(1); }
+  while (true) {
+    const { data, error } = await supabase
+      .from("activities")
+      .select("activity_id, lesson_id, activity_type, order_index, title")
+      .order("order_index", { ascending: true })
+      .range(from, from + PAGE_SIZE - 1);
 
-  // Group by lesson
-  const byLesson = new Map<string, any[]>();
-  for (const a of activities as any[]) {
-    if (!byLesson.has(a.lesson_id)) byLesson.set(a.lesson_id, []);
-    byLesson.get(a.lesson_id)!.push(a);
+    if (error) throw error;
+    if (!data || data.length === 0) break;
+
+    all.push(...data);
+    if (data.length < PAGE_SIZE) break;
+    from += PAGE_SIZE;
   }
 
-  let moved = 0;
-
-  for (const [lessonId, acts] of byLesson) {
-    // Find listening-comprehension activity
-    const lcIdx = acts.findIndex((a: any) => a.activity_type === "listening-comprehension");
-    if (lcIdx <= 0) continue; // already first or not present
-
-    const lc = acts[lcIdx];
-    const others = acts.filter((_: any, i: number) => i !== lcIdx);
-
-    console.log(`\n📋 Lesson ${lessonId}: moving "${lc.title || lc.activity_id}" to position 0 (was ${lc.order_index})`);
-
-    if (!DRY_RUN) {
-      // Set listening-comprehension to order 0
-      await supabase.from("activities").update({ order_index: 0 }).eq("activity_id", lc.activity_id);
-      // Shift others up by 1
-      for (let i = 0; i < others.length; i++) {
-        await supabase.from("activities").update({ order_index: i + 1 }).eq("activity_id", others[i].activity_id);
-      }
-    }
-
-    moved++;
-  }
-
-  console.log(`\n✅ ${moved} lessons reordered${DRY_RUN ? " (dry run)" : ""}`);
+  return all;
 }
 
-main().catch(console.error);
+async function main() {
+  console.log("🔍 Fetching all activities (paginated)...");
+  const activities = await fetchAllActivities();
+  console.log(`   ${activities.length} activities loaded\n`);
+
+  // ------------------------------------------------------------------
+  // 1. Determine the first activity (lowest order_index) per lesson
+  // ------------------------------------------------------------------
+  const firstPerLesson = new Map<string, { id: string; order_index: number }>();
+  for (const a of activities) {
+    const existing = firstPerLesson.get(a.lesson_id);
+    if (!existing || a.order_index < existing.order_index) {
+      firstPerLesson.set(a.lesson_id, { id: a.activity_id, order_index: a.order_index });
+    }
+  }
+
+  // ------------------------------------------------------------------
+  // 2. Find listening-comprehension activities grouped by lesson
+  // ------------------------------------------------------------------
+  const lcByLesson = new Map<string, any[]>();
+  for (const a of activities) {
+    if (a.activity_type !== "listening-comprehension") continue;
+    if (!lcByLesson.has(a.lesson_id)) lcByLesson.set(a.lesson_id, []);
+    lcByLesson.get(a.lesson_id)!.push(a);
+  }
+
+  // ------------------------------------------------------------------
+  // 3. For each lesson with a listening-comprehension activity, move it
+  //    to the position of the first activity in that lesson.
+  // ------------------------------------------------------------------
+  let moved = 0;
+  let skippedNoLesson = 0;
+  let skippedAlreadyFirst = 0;
+
+  for (const [lessonId, lcActs] of lcByLesson) {
+    const first = firstPerLesson.get(lessonId);
+    if (!first) {
+      skippedNoLesson++;
+      continue; // no activities found for this lesson? shouldn't happen
+    }
+
+    for (const lc of lcActs) {
+      // Already at the first position? Skip.
+      if (lc.order_index === first.order_index) {
+        skippedAlreadyFirst++;
+        continue;
+      }
+
+      console.log(
+        `📋 Lesson ${lessonId}: ` +
+        `"${lc.title || lc.activity_id}" ` +
+        `(listening-comprehension, idx ${lc.order_index}) ` +
+        `→ position ${first.order_index} ` +
+        `(was "${first.id}")`
+      );
+
+      if (!DRY_RUN) {
+        const { error } = await supabase.rpc("reorder_activity", {
+          p_activity_id: lc.activity_id,
+          p_new_order_index: first.order_index,
+        });
+
+        if (error) {
+          console.error(`   ❌ Failed: ${error.message}`);
+        } else {
+          moved++;
+        }
+      } else {
+        moved++;
+      }
+    }
+  }
+
+  // ------------------------------------------------------------------
+  // Summary
+  // ------------------------------------------------------------------
+  console.log(`\n---`);
+  console.log(`Lessons with listening-comprehension: ${lcByLesson.size}`);
+  console.log(`Already at first position:              ${skippedAlreadyFirst}`);
+  console.log(`Moved ${DRY_RUN ? "(would move)" : ""}:              ${moved}`);
+  if (skippedNoLesson > 0) console.log(`Skipped (no lesson data):               ${skippedNoLesson}`);
+  console.log(`${DRY_RUN ? "\n⚠️  Dry run — no changes applied. Re-run without --dry-run to execute." : ""}`);
+  console.log(`\n✅ Done.`);
+}
+
+main().catch((e) => {
+  console.error("❌", e.message || e);
+  process.exit(1);
+});

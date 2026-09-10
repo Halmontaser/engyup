@@ -1,0 +1,4231 @@
+{
+  "unit_id": "97795ed1-877b-4e45-89ec-127f50f36504",
+  "unit_title": "My Body and Clothes",
+  "unit_number": 6,
+  "course_id": "b9f1e5d7-6c4a-4ab8-a9a9-79885a5c669d",
+  "course_title": "Grade 7",
+  "course_description": "English curriculum for Grade 7",
+  "lessons": [
+    {
+      "lesson_id": "be16d89b-923c-4647-9a2b-942485626830",
+      "lesson_title": "6.1 - 6.2",
+      "lesson_number": 1,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "7e3b7fa2-e577-4511-8fca-39f549f916df",
+          "activity_type": "listening-comprehension",
+          "title": "Listen About the Family",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the audio describing the family at home, then answer the questions.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "36",
+          "compensates": "Replaces teacher-led listening and question-answer sessions.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "audioSrc": "gen-g7-u6-6.1-listening-comprehension-1-audio1",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "She is watching TV.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "She is reading a book.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "She is eating a banana.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What is the mother doing?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "The father",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Anne",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Tom",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Who is eating a banana?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Yes, he is.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "No, he isn't.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Is the father reading a book?"
+              }
+            ],
+            "transcript": "In the living room, the mother is reading a book. The father is watching TV and drinking tea. Tom is on the floor. He is eating a banana. Anne is standing and talking to her father."
+          }
+        },
+        {
+          "activity_id": "76fd7b26-ec14-47e3-9e37-a64995d469ee",
+          "activity_type": "flashcard",
+          "title": "New Actions",
+          "instruction": "Learn the new words for actions. Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and and repeat.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "36",
+          "compensates": "Replaces teacher-led vocabulary presentation with flashcards.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "watching TV",
+                "image": "gen-g7-u6-6.1-flashcard-1-img1",
+                "example": "He is watching TV.",
+                "imageUrl": "/media/g10/g10_u6_l6.1_flsh_act0_i0.png",
+                "definition": "To look at a television screen. (يشاهد التلفاز)",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "reading a book",
+                "image": "gen-g7-u6-6.1-flashcard-1-img2",
+                "example": "She is reading a book.",
+                "imageUrl": "/media/g10/g10_u6_l6.1_flsh_act0_i1.png",
+                "definition": "To look at and understand words in a book. (يقرأ كتابًا)",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "eating a banana",
+                "image": "gen-g7-u6-6.1-flashcard-1-img3",
+                "example": "The boy is eating a banana.",
+                "imageUrl": "/media/g10/g10_u6_l6.1_flsh_act0_i2.png",
+                "definition": "To put a banana in your mouth and chew it. (يأكل موزة)",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "drinking tea",
+                "image": "gen-g7-u6-6.1-flashcard-1-img4",
+                "example": "The father is drinking tea.",
+                "imageUrl": "/media/g10/g10_u6_l6.1_flsh_act0_i3.png",
+                "definition": "To drink a hot cup of tea. (يشرب الشاي)",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "talking",
+                "image": "gen-g7-u6-6.1-flashcard-1-img5",
+                "example": "She is talking to her father.",
+                "imageUrl": "/media/g10/g10_u6_l6.1_flsh_act0_i4.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/audio/g7_u6_l6.1_flsh_act0_a4.mp3",
+                "definition": "To speak to someone. (يتحدث)",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "playing football",
+                "image": "gen-g7-u6-6.1-flashcard-1-img6",
+                "example": "They are playing football.",
+                "imageUrl": "/media/g10/g10_u6_l6.1_flsh_act0_i5.png",
+                "definition": "To play a game with a ball using your feet. (يلعب كرة القدم)",
+                "partOfSpeech": "verb"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "c1a2e056-85d6-4c66-8a8b-31c26603ca90",
+          "activity_type": "mcq",
+          "title": "At Home: What Are They Doing?",
+          "instruction": "Use your eyes! 🧐 Look closely at the at the picture from your book (page 36) and Take a closer look! 📝 Pick the best option for the correct answer.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "36",
+          "compensates": "Replaces the teacher-led 'Talk about a picture' activity (PB36).",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/g7_u6_l6_1_mcq_act1_i0.png",
+            "questions": [
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/118.png",
+                "options": [
+                  {
+                    "text": "He is reading a book.",
+                    "feedback": "Look again. The mother is reading a book.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He is eating a banana.",
+                    "feedback": "Correct! Tom is eating a banana.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "He is drinking tea.",
+                    "feedback": "Incorrect. The father is drinking tea.",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/118.png",
+                "question": "What is Tom doing?",
+                "explanation": "In the picture, Tom (the boy on the floor) is eating a banana."
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/118.png",
+                "options": [
+                  {
+                    "text": "She is watching TV.",
+                    "feedback": "Look closely. She is holding a book.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "She is talking to Anne.",
+                    "feedback": "Incorrect. Anne is talking to her father.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "She is reading a book.",
+                    "feedback": "Excellent! The mother is reading a book.",
+                    "isCorrect": true
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/118.png",
+                "question": "What is the mother doing?",
+                "explanation": "The mother is sitting in the chair and reading a book."
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/118.png",
+                "options": [
+                  {
+                    "text": "He is drinking tea.",
+                    "feedback": "That's right! He is drinking tea.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "He is playing football.",
+                    "feedback": "No one is playing football in the living room.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He is eating a banana.",
+                    "feedback": "Incorrect. Tom is eating a banana.",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/118.png",
+                "question": "What is the father doing?",
+                "explanation": "The father is sitting in the armchair, watching TV and drinking tea."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "ee759cdc-f516-4be4-889c-f3091fa6fbea",
+          "activity_type": "gap-fill",
+          "title": "Grammar: Present Actions",
+          "instruction": "Complete the sentences. Use 'is' or 'are' and the correct form of the verb in brackets.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "36",
+          "compensates": "Replaces teacher-led grammar drills and board work on Present Continuous.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "He ___ TV. (watch)",
+                "blanks": [
+                  {
+                    "hint": "Use 'is' for 'He'.",
+                    "answer": "is watching",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "For 'He', 'She', or 'It', we use 'is' + verb-ing for present actions."
+              },
+              {
+                "text": "She ___ a book. (read)",
+                "blanks": [
+                  {
+                    "hint": "Use 'is' for 'She'.",
+                    "answer": "is reading",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "For 'He', 'She', or 'It', we use 'is' + verb-ing for present actions."
+              },
+              {
+                "text": "They ___ football. (play)",
+                "blanks": [
+                  {
+                    "hint": "Use 'are' for 'They'.",
+                    "answer": "are playing",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "For 'They', 'We', or 'You', we use 'are' + verb-ing for present actions."
+              },
+              {
+                "text": "Tom ___ a banana. (eat)",
+                "blanks": [
+                  {
+                    "hint": "Tom is one boy, so use 'is'.",
+                    "answer": "is eating",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "For a single person like 'Tom', we use 'is' + verb-ing."
+              },
+              {
+                "text": "Anne ___ to her father. (talk)",
+                "blanks": [
+                  {
+                    "hint": "Anne is one girl, so use 'is'.",
+                    "answer": "is talking",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "For a single person like 'Anne', we use 'is' + verb-ing."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "93d6f265-f5de-439c-aa9c-969e00ef7232",
+          "activity_type": "word-order",
+          "title": "Build the Sentence",
+          "instruction": "Put the words in the correct order to make questions and sentences.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "36",
+          "compensates": "Digital practice for sentence structure, replacing teacher-led board exercises.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": [
+            {
+              "instruction": "Make a question.",
+              "correctOrder": [
+                "What",
+                "is",
+                "Tom",
+                "doing",
+                "?"
+              ]
+            },
+            {
+              "instruction": "Make a sentence.",
+              "correctOrder": [
+                "He",
+                "is",
+                "watching",
+                "TV",
+                "."
+              ]
+            },
+            {
+              "instruction": "Make a sentence.",
+              "correctOrder": [
+                "She",
+                "is",
+                "reading",
+                "a",
+                "book",
+                "."
+              ]
+            },
+            {
+              "instruction": "Make a sentence.",
+              "correctOrder": [
+                "They",
+                "are",
+                "playing",
+                "football",
+                "."
+              ]
+            }
+          ]
+        },
+        {
+          "activity_id": "ec115941-4b67-4f9a-9bd3-ac203e15e1e8",
+          "activity_type": "pronunciation-practice",
+          "title": "Practice the '-ing' Sound",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to each word and repeat. Pay attention to the 'ing' sound at the end.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "36",
+          "compensates": "Replaces choral and individual repetition drills led by the teacher.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "eating",
+                "phonetic": "/ˈiːtɪŋ/",
+                "syllables": [
+                  "eat",
+                  "ing"
+                ]
+              },
+              {
+                "word": "drinking",
+                "phonetic": "/ˈdrɪŋkɪŋ/",
+                "syllables": [
+                  "drink",
+                  "ing"
+                ]
+              },
+              {
+                "word": "reading",
+                "phonetic": "/ˈriːdɪŋ/",
+                "syllables": [
+                  "read",
+                  "ing"
+                ]
+              },
+              {
+                "word": "watching",
+                "phonetic": "/ˈwɒtʃɪŋ/",
+                "syllables": [
+                  "watch",
+                  "ing"
+                ]
+              },
+              {
+                "word": "talking",
+                "phonetic": "/ˈtɔːkɪŋ/",
+                "syllables": [
+                  "talk",
+                  "ing"
+                ]
+              },
+              {
+                "word": "playing",
+                "phonetic": "/ˈpleɪɪŋ/",
+                "syllables": [
+                  "play",
+                  "ing"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "592585a4-0eb9-46ee-8850-35372b70dbe2",
+          "activity_type": "picture-description",
+          "title": "Ask and Answer",
+          "instruction": "Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture. Record yourself answering the questions about the people.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "36",
+          "compensates": "Replaces the 'Ask and answer' pair work activity from the Teacher Guide (PB36).",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/118.png",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/118.png",
+            "keywords": [
+              "is",
+              "are",
+              "watching",
+              "reading",
+              "eating",
+              "drinking",
+              "talking"
+            ],
+            "sampleAnswers": [
+              "The father is drinking tea.",
+              "The mother is reading a book.",
+              "Tom is eating a banana.",
+              "Anne is talking to her father."
+            ],
+            "promptQuestions": [
+              "What is the father doing?",
+              "What is the mother doing?",
+              "What is Tom doing?",
+              "What is Anne doing?"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "f0cc20db-d093-4b84-a2b3-8c6db24ec803",
+      "lesson_title": "6.2",
+      "lesson_number": 2,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "f4530daf-cadd-4e88-802d-d069d146a414",
+          "activity_type": "listening-comprehension",
+          "title": "Listen and Choose the Picture",
+          "instruction": "Listen to the sentence and Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for the picture that matches.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "47",
+          "compensates": "Replaces a teacher-led 'listen and point' activity.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Picture 1",
+                    "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1051.png",
+                    "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1051.png",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Picture 2",
+                    "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1052.png",
+                    "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1052.png",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Picture 3",
+                    "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1053.png",
+                    "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1053.png",
+                    "isCorrect": false
+                  }
+                ],
+                "audioSrc": "/media/audio/g7_u6_l6.2_lis_1_q0.mp3",
+                "question": "Which picture shows 'He is reading a book'?",
+                "transcript": "He is reading a book."
+              },
+              {
+                "options": [
+                  {
+                    "text": "Picture 1",
+                    "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1051.png",
+                    "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1051.png",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Picture 2",
+                    "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1052.png",
+                    "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1052.png",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Picture 4",
+                    "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1054.png",
+                    "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1054.png",
+                    "isCorrect": false
+                  }
+                ],
+                "audioSrc": "/media/audio/g7_u6_l6.2_lis_1_q1.mp3",
+                "question": "Which picture shows 'She is talking to her mother'?",
+                "transcript": "She is talking to her mother."
+              },
+              {
+                "options": [
+                  {
+                    "text": "Picture 2",
+                    "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1052.png",
+                    "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1052.png",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Picture 3",
+                    "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1053.png",
+                    "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1053.png",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Picture 4",
+                    "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1054.png",
+                    "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1054.png",
+                    "isCorrect": false
+                  }
+                ],
+                "audioSrc": "/media/audio/g7_u6_l6.2_lis_1_q2.mp3",
+                "question": "Which picture shows 'They are eating apples'?",
+                "transcript": "They are eating apples."
+              },
+              {
+                "options": [
+                  {
+                    "text": "Picture 1",
+                    "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1051.png",
+                    "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1051.png",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Picture 3",
+                    "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1053.png",
+                    "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1053.png",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Picture 4",
+                    "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1054.png",
+                    "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1054.png",
+                    "isCorrect": true
+                  }
+                ],
+                "audioSrc": "/media/audio/g7_u6_l6.2_lis_1_q3.mp3",
+                "question": "Which picture shows 'They are playing football'?",
+                "transcript": "They are playing football."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "b3947dd8-0d50-4dc0-8f9d-fee793bc2f42",
+          "activity_type": "flashcard",
+          "title": "Action Words",
+          "instruction": "Learn the new actions. Tap the card to see the picture and Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the phrase.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "47",
+          "compensates": "Teacher presenting new vocabulary using flashcards.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "reading a book",
+                "audio": "reading a book",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1051.png",
+                "example": "He is reading a book.",
+                "imageUrl": "/media/g10/g10_u6_l6.2_flsh_act0_i0.png",
+                "definition": "Looking at words in a book to understand a story.",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "talking to her mother",
+                "audio": "talking to her mother",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1052.png",
+                "example": "She is talking to her mother.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1052.png",
+                "definition": "Speaking with her mom.",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "eating apples",
+                "audio": "eating apples",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1053.png",
+                "example": "They are eating apples.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1053.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/audio/g7_u6_l6.2_flsh_act0_a2.mp3",
+                "definition": "Chewing and swallowing apples.",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "playing football",
+                "audio": "playing football",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1054.png",
+                "example": "They are playing football.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1054.png",
+                "definition": "Kicking a ball in a game.",
+                "partOfSpeech": "verb phrase"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "6fdf6b3e-cc58-4a39-b5ad-d946d440a519",
+          "activity_type": "pronunciation-practice",
+          "title": "Practice the '-ing' Sound",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to each word and repeat it. Pay attention to the '-ing' sound at the end.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "47",
+          "compensates": "Replaces teacher-led choral repetition of new words and phrases.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "reading",
+                "audioSrc": "/media/audio/g7_u6_l6.2_pro_1_w0.mp3",
+                "phonetic": "/ˈriːdɪŋ/",
+                "syllables": [
+                  "read",
+                  "ing"
+                ]
+              },
+              {
+                "word": "talking",
+                "audioSrc": "/media/audio/g7_u6_l6.2_pro_1_w1.mp3",
+                "phonetic": "/ˈtɔːkɪŋ/",
+                "syllables": [
+                  "talk",
+                  "ing"
+                ]
+              },
+              {
+                "word": "eating",
+                "audioSrc": "/media/audio/g7_u6_l6.2_pro_1_w2.mp3",
+                "phonetic": "/ˈiːtɪŋ/",
+                "syllables": [
+                  "eat",
+                  "ing"
+                ]
+              },
+              {
+                "word": "playing",
+                "audioSrc": "/media/audio/g7_u6_l6.2_pro_1_w3.mp3",
+                "phonetic": "/ˈpleɪɪŋ/",
+                "syllables": [
+                  "play",
+                  "ing"
+                ]
+              },
+              {
+                "word": "doing",
+                "audioSrc": "/media/audio/g7_u6_l6.2_pro_1_w4.mp3",
+                "phonetic": "/ˈduːɪŋ/",
+                "syllables": [
+                  "do",
+                  "ing"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "5de56728-a7e2-4fbc-aef1-f330faeeead2",
+          "activity_type": "mcq",
+          "title": "Choose 'is' or 'are'",
+          "instruction": "Use your eyes! 🧐 Look closely at the at the picture and Take a closer look! 📝 Pick the best option for the correct word to complete the sentence.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "47",
+          "compensates": "Teacher writing 'is' and 'are' on the board and eliciting which pronouns go with each.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1051.png",
+                "options": [
+                  {
+                    "text": "is",
+                    "feedback": "Correct! We use 'is' with 'He' and 'She'.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "are",
+                    "feedback": "Not quite. We use 'are' with 'They'.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "am",
+                    "feedback": "Incorrect. We use 'am' with 'I'.",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1051.png",
+                "question": "He ___ reading a book.",
+                "explanation": "For singular pronouns like 'He' and 'She', we use the verb 'is'."
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1052.png",
+                "options": [
+                  {
+                    "text": "are",
+                    "feedback": "Try again. We use 'are' for plural subjects like 'They'.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "is",
+                    "feedback": "Excellent! 'She' is singular, so we use 'is'.",
+                    "isCorrect": true
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1052.png",
+                "question": "She ___ talking to her mother.",
+                "explanation": "For singular pronouns like 'He' and 'She', we use the verb 'is'."
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1053.png",
+                "options": [
+                  {
+                    "text": "is",
+                    "feedback": "Incorrect. 'They' is plural, so we need a plural verb.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "are",
+                    "feedback": "That's right! We use 'are' with the plural pronoun 'They'.",
+                    "isCorrect": true
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1053.png",
+                "question": "They ___ eating apples.",
+                "explanation": "For the plural pronoun 'They', we use the verb 'are'."
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1054.png",
+                "options": [
+                  {
+                    "text": "is",
+                    "feedback": "Not quite. 'They' refers to more than one person.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "are",
+                    "feedback": "Perfect! 'They' is plural, so we use 'are'.",
+                    "isCorrect": true
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1054.png",
+                "question": "They ___ playing football.",
+                "explanation": "For the plural pronoun 'They', we use the verb 'are'."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "1385053b-76bf-45ec-9c96-88375fb01c98",
+          "activity_type": "gap-fill",
+          "title": "What Are They Doing?",
+          "instruction": "Complete the sentences based on the pictures. Type the correct form of the verb in the blank.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "47",
+          "compensates": "This digitizes and improves the activity on Workbook page 47 by requiring students to produce the full verb phrase.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "He ___ a book.",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1051.png",
+                "blanks": [
+                  {
+                    "hint": "Use 'is' + 'read' + '-ing'",
+                    "answer": "is reading",
+                    "alternatives": []
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1051.png",
+                "explanation": "The full sentence is 'He is reading a book.' We use 'is' for 'He' and add '-ing' for present actions."
+              },
+              {
+                "text": "She ___ to her mother.",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1052.png",
+                "blanks": [
+                  {
+                    "hint": "Use 'is' + 'talk' + '-ing'",
+                    "answer": "is talking",
+                    "alternatives": []
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1052.png",
+                "explanation": "The full sentence is 'She is talking to her mother.' We use 'is' for 'She' and add '-ing' for present actions."
+              },
+              {
+                "text": "They ___ apples.",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1053.png",
+                "blanks": [
+                  {
+                    "hint": "Use 'are' + 'eat' + '-ing'",
+                    "answer": "are eating",
+                    "alternatives": []
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1053.png",
+                "explanation": "The full sentence is 'They are eating apples.' We use 'are' for 'They' and add '-ing' for present actions."
+              },
+              {
+                "text": "They ___ football.",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1054.png",
+                "blanks": [
+                  {
+                    "hint": "Use 'are' + 'play' + '-ing'",
+                    "answer": "are playing",
+                    "alternatives": []
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1054.png",
+                "explanation": "The full sentence is 'They are playing football.' We use 'are' for 'They' and add '-ing' for present actions."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "6e5eec72-7f9e-4571-ba7a-944068271c29",
+          "activity_type": "word-order",
+          "title": "Make Sentences",
+          "instruction": "Drag the words into the correct order to make a sentence.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "47",
+          "compensates": "Reinforces sentence structure practice that would normally be done on the board.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "instruction": "Unscramble this sentence.",
+                "correctOrder": [
+                  "He",
+                  "is",
+                  "reading",
+                  "a",
+                  "book",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Put these words in the right order.",
+                "correctOrder": [
+                  "She",
+                  "is",
+                  "talking",
+                  "to",
+                  "her",
+                  "mother",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Make a correct sentence.",
+                "correctOrder": [
+                  "They",
+                  "are",
+                  "eating",
+                  "apples",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Unscramble this sentence.",
+                "correctOrder": [
+                  "They",
+                  "are",
+                  "playing",
+                  "football",
+                  "."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "83ed5b99-f35a-44f4-ac64-a376097bfdfd",
+          "activity_type": "match-pairs",
+          "title": "Questions and Answers",
+          "instruction": "Match the question with the correct answer.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "47",
+          "compensates": "Replaces the teacher-led 'Ask and answer' pair work activity.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "What is he doing?",
+                "right": "He is reading a book."
+              },
+              {
+                "left": "What is she doing?",
+                "right": "She is talking to her mother."
+              },
+              {
+                "left": "What are the girls doing?",
+                "right": "They are eating apples."
+              },
+              {
+                "left": "What are the boys doing?",
+                "right": "They are playing football."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "58840c4d-70ff-4723-b23e-afc83242bf27",
+          "activity_type": "picture-description",
+          "title": "Describe the Action",
+          "instruction": "Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture and answer the question. Write a full sentence.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "47",
+          "compensates": "This replaces a teacher-led 'look and write' activity, encouraging independent sentence production.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1051.png",
+            "items": [
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1051.png",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1051.png",
+                "keywords": [
+                  "He",
+                  "is",
+                  "reading",
+                  "book"
+                ],
+                "sampleAnswers": [
+                  "He is reading a book."
+                ],
+                "promptQuestions": [
+                  "What is he doing?"
+                ]
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1052.png",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1052.png",
+                "keywords": [
+                  "She",
+                  "is",
+                  "talking",
+                  "mother"
+                ],
+                "sampleAnswers": [
+                  "She is talking to her mother."
+                ],
+                "promptQuestions": [
+                  "What is she doing?"
+                ]
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1053.png",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1053.png",
+                "keywords": [
+                  "They",
+                  "are",
+                  "eating",
+                  "apples"
+                ],
+                "sampleAnswers": [
+                  "They are eating apples."
+                ],
+                "promptQuestions": [
+                  "What are they doing?"
+                ]
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1054.png",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1054.png",
+                "keywords": [
+                  "They",
+                  "are",
+                  "playing",
+                  "football"
+                ],
+                "sampleAnswers": [
+                  "They are playing football."
+                ],
+                "promptQuestions": [
+                  "What are they doing?"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "b18f60e7-2cc8-410c-9945-078d34e60c4b",
+      "lesson_title": "6.10",
+      "lesson_number": 10,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "a1d681ce-11a3-4243-9473-d0fc8145dc22",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 29)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "40",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "8aa33b0a-fca8-461b-ac41-6249cb1dea67",
+          "activity_type": "flashcard",
+          "title": "Activity Words",
+          "instruction": "Learn the new words for different activities. Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the word and repeat.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "40",
+          "compensates": "Replaces teacher-led vocabulary introduction and picture-based elicitation.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "playing football",
+                "audio": "playing football",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1057.png",
+                "example": "I like playing football with my friends.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1057.png",
+                "definition": "The sport of playing a game with a ball using your feet. (لعب كرة القدم)",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "watching TV",
+                "audio": "watching TV",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1058.png",
+                "example": "I like watching TV in the evening.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1058.png",
+                "definition": "The activity of looking at programs on the television. (مشاهدة التلفاز)",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "washing the car",
+                "audio": "washing the car",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1059.png",
+                "example": "He doesn't like washing the car.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1059.png",
+                "definition": "The activity of cleaning a car with water and soap. (غسل السيارة)",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "shopping",
+                "audio": "shopping",
+                "image": null,
+                "example": "I don't like shopping.",
+                "definition": "The activity of buying things from shops. (التسوق)",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "going to the beach",
+                "audio": "going to the beach",
+                "image": null,
+                "example": "I like going to the beach in the car.",
+                "definition": "The activity of visiting the land next to the sea. (الذهاب إلى الشاطئ)",
+                "partOfSpeech": "verb phrase"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "c1607550-cb1f-4e27-8843-0e1943aa5c87",
+          "activity_type": "dialogue-read",
+          "title": "Reading: Conversations",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to and read the conversations. Then, answer the questions.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "40",
+          "compensates": "Replaces teacher-led reading of the Pupil's Book and listening to the cassette.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "dialogue": [
+              {
+                "text": "Do you want to play football?",
+                "speaker": "Hassan"
+              },
+              {
+                "text": "Yes, please. I like playing football.",
+                "speaker": "Ali"
+              },
+              {
+                "text": "Do you want to come to the shop?",
+                "speaker": "Fatma"
+              },
+              {
+                "text": "No, thanks. I don't like shopping. I like watching TV.",
+                "speaker": "Salwa"
+              },
+              {
+                "text": "Do you like washing the car?",
+                "speaker": "Najeeb"
+              },
+              {
+                "text": "No, I don't.",
+                "speaker": "Fuad"
+              },
+              {
+                "text": "Oh!",
+                "speaker": "Najeeb"
+              },
+              {
+                "text": "I don't like washing the car, but I like going to the beach in the car.",
+                "speaker": "Fuad"
+              }
+            ],
+            "comprehension": [
+              {
+                "answer": "Yes, he does.",
+                "question": "Does Ali like playing football?"
+              },
+              {
+                "answer": "She likes watching TV.",
+                "question": "What does Salwa like doing?"
+              },
+              {
+                "answer": "No, he doesn't.",
+                "question": "Does Fuad like washing the car?"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "d0b7f5e9-c5c5-4d0d-b680-b0fedd040b1b",
+          "activity_type": "mcq",
+          "title": "Check Your Understanding",
+          "instruction": "Read the question and Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for the correct answer based on the conversations.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "52",
+          "compensates": "Replaces teacher-led comprehension questions after reading.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1057.png",
+                "options": [
+                  {
+                    "text": "Yes, he does.",
+                    "feedback": "Correct! Ali says 'Yes, please. I like playing football.'",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "No, he doesn't.",
+                    "feedback": "Try again. Listen to what Ali says to Hassan.",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1057.png",
+                "question": "Does Ali want to play football?",
+                "explanation": "Ali says 'Yes, please' because he likes playing football."
+              },
+              {
+                "image": null,
+                "options": [
+                  {
+                    "text": "Because she likes watching TV.",
+                    "feedback": "That's something she likes, but it's not the main reason she says no.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Because she doesn't like shopping.",
+                    "feedback": "Excellent! She says 'I don't like shopping.'",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Because she is tired.",
+                    "feedback": "The conversation doesn't say she is tired.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Why does Salwa say 'No, thanks' to Fatma?",
+                "explanation": "Salwa says 'No, thanks' because she doesn't like shopping."
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1059.png",
+                "options": [
+                  {
+                    "text": "He likes washing the car.",
+                    "feedback": "Incorrect. He says 'No, I don't' when asked if he likes washing the car.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He likes going to the beach.",
+                    "feedback": "That's right! He says 'I like going to the beach in the car.'",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "He likes staying at home.",
+                    "feedback": "The conversation doesn't mention him staying at home.",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1059.png",
+                "question": "What does Fuad like?",
+                "explanation": "Fuad doesn't like washing the car, but he likes going to the beach."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "1782448f-d266-41ab-9194-9e3bd7f0d7a0",
+          "activity_type": "match-pairs",
+          "title": "Who Likes What?",
+          "instruction": "Reading time! 📖 Read carefully and the sentences on the left and match them with the correct activity on the right. This is based on the dialogues you read.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "52",
+          "compensates": "Replaces Workbook activity 6.10A (drawing lines).",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "Ali likes",
+                "right": "playing football"
+              },
+              {
+                "left": "Salwa likes",
+                "right": "watching TV"
+              },
+              {
+                "left": "Fuad doesn't like",
+                "right": "washing the car"
+              },
+              {
+                "left": "Salwa doesn't like",
+                "right": "shopping"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "a52f66d3-fb60-4f36-b68e-de810a1448dd",
+          "activity_type": "gap-fill",
+          "title": "Grammar: Using 'like' with '-ing'",
+          "instruction": "Complete the sentences using 'likes' or 'doesn't like' and the '-ing' form of the verb.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "52",
+          "compensates": "Replaces a traditional grammar worksheet on using gerunds after 'like'.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "Ali ___ playing football.",
+                "blanks": [
+                  {
+                    "hint": "He said 'Yes, please.'",
+                    "answer": "likes",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'likes' for a positive feeling about an activity."
+              },
+              {
+                "text": "Salwa ___ shopping.",
+                "blanks": [
+                  {
+                    "hint": "She said 'No, thanks.'",
+                    "answer": "doesn't like",
+                    "alternatives": [
+                      "does not like"
+                    ]
+                  }
+                ],
+                "explanation": "We use 'doesn't like' for a negative feeling about an activity."
+              },
+              {
+                "text": "Salwa ___ watching TV.",
+                "blanks": [
+                  {
+                    "hint": "What does she say after she says no to shopping?",
+                    "answer": "likes",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'likes' for a positive feeling about an activity."
+              },
+              {
+                "text": "Fuad ___ washing the car.",
+                "blanks": [
+                  {
+                    "hint": "He said 'No, I don't.'",
+                    "answer": "doesn't like",
+                    "alternatives": [
+                      "does not like"
+                    ]
+                  }
+                ],
+                "explanation": "We use 'doesn't like' for a negative feeling about an activity."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "35a7191b-4fb7-4221-b4ff-bc1e2ebc974e",
+          "activity_type": "word-order",
+          "title": "Build the Sentences",
+          "instruction": "Put the words in the correct order to make sentences from the conversations.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "52",
+          "compensates": "Replaces Workbook activity 6.10B (writing sentences from jumbled words).",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "instruction": "Unscramble the words to say what Ali likes.",
+                "correctOrder": [
+                  "I",
+                  "like",
+                  "playing",
+                  "football",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Unscramble the words to say what Salwa doesn't like.",
+                "correctOrder": [
+                  "I",
+                  "don't",
+                  "like",
+                  "shopping",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Unscramble the words to say what Salwa likes.",
+                "correctOrder": [
+                  "I",
+                  "like",
+                  "watching",
+                  "TV",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Unscramble the words to make Najeeb's question.",
+                "correctOrder": [
+                  "Do",
+                  "you",
+                  "like",
+                  "washing",
+                  "the",
+                  "car",
+                  "?"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "20d59f38-b4a5-4a9e-b012-a5301c25c156",
+          "activity_type": "listening-comprehension",
+          "title": "Listening: What Do They Want to Do?",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to two short conversations. Then, answer the questions.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "40",
+          "compensates": "Provides extra listening practice similar to the main lesson dialogues.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "audioSrc": "/media/audio/g7_u6_l6.10_lis_6.mp3",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Yes, she does.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "No, she doesn't.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "In conversation 1, does the girl want to go to the park?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Yes, he does.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "No, he doesn't.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "In conversation 2, does the man like cooking?"
+              }
+            ],
+            "transcript": "Conversation 1. Boy: Do you want to go to the park? Girl: Yes, please. I like walking in the park. Conversation 2. Woman: Do you want to help me cook dinner? Man: No, thanks. I don't like cooking."
+          }
+        },
+        {
+          "activity_id": "d6194def-6a23-41b8-b6db-065b2d5df253",
+          "activity_type": "pronunciation-practice",
+          "title": "Sound Practice: The '-ing' Sound",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to each word and repeat it. Pay attention to the sound at the end of the word.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "40",
+          "compensates": "Replaces teacher-led choral drilling and repetition of new vocabulary.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "playing",
+                "audioSrc": "/media/audio/g7_u6_l6.10_pro_7_w0.mp3",
+                "phonetic": "/ˈpleɪɪŋ/",
+                "syllables": [
+                  "play",
+                  "ing"
+                ]
+              },
+              {
+                "word": "shopping",
+                "audioSrc": "/media/audio/g7_u6_l6.10_pro_7_w1.mp3",
+                "phonetic": "/ˈʃɒpɪŋ/",
+                "syllables": [
+                  "shop",
+                  "ping"
+                ]
+              },
+              {
+                "word": "watching",
+                "audioSrc": "/media/audio/g7_u6_l6.10_pro_7_w2.mp3",
+                "phonetic": "/ˈwɒtʃɪŋ/",
+                "syllables": [
+                  "watch",
+                  "ing"
+                ]
+              },
+              {
+                "word": "washing",
+                "audioSrc": "/media/audio/g7_u6_l6.10_pro_7_w3.mp3",
+                "phonetic": "/ˈwɒʃɪŋ/",
+                "syllables": [
+                  "wash",
+                  "ing"
+                ]
+              },
+              {
+                "word": "going",
+                "audioSrc": "/media/audio/g7_u6_l6.10_pro_7_w4.mp3",
+                "phonetic": "/ˈɡəʊɪŋ/",
+                "syllables": [
+                  "go",
+                  "ing"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "8e7b862b-bb06-498e-92ff-da9faaf2d7cf",
+      "lesson_title": "6.11",
+      "lesson_number": 11,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "9ee542c6-c4dd-4ac8-b43b-cdbe96b8d20f",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 30)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "41",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "1dd60e79-d977-4525-abdf-b178a77509a4",
+          "activity_type": "flashcard",
+          "title": "Lesson Vocabulary",
+          "instruction": "Learn the new words for this lesson. Interact with the screen! 🖱️ Interact with the screen! 🖱️ Click to to to flip the card, read the meaning, and listen to the word.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "41",
+          "compensates": "Replaces teacher-led vocabulary presentation.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "favourite",
+                "audio": "favourite",
+                "example": "My favourite colour is red.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/audio/g7_u6_l6.11_flsh_act0_a0.mp3",
+                "definition": "The one you like more than any other. (المفضل)",
+                "partOfSpeech": "adjective"
+              },
+              {
+                "word": "pastime",
+                "audio": "pastime",
+                "example": "Playing football is my favourite pastime.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/audio/g7_u6_l6.11_flsh_act0_a1.mp3",
+                "definition": "An activity that you enjoy doing in your free time. (هواية)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "colour",
+                "audio": "colour",
+                "example": "What colour do you like?",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/audio/g7_u6_l6.11_flsh_act0_a2.mp3",
+                "definition": "Red, blue, green, yellow, etc. (لون)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "food",
+                "audio": "food",
+                "example": "Chicken is my favourite food.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/audio/g7_u6_l6.11_flsh_act0_a3.mp3",
+                "definition": "What people and animals eat. (طعام)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "drink",
+                "audio": "drink",
+                "example": "What's your favourite drink?",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/audio/g7_u6_l6.11_flsh_act0_a4.mp3",
+                "definition": "A liquid for drinking. (شراب)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "cheese",
+                "audio": "cheese",
+                "example": "I like cheese sandwiches.",
+                "definition": "A food made from milk. (جبن)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "juice",
+                "audio": "juice",
+                "example": "I drink orange juice for breakfast.",
+                "definition": "A drink made from fruit. (عصير)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "swimming",
+                "audio": "swimming",
+                "example": "Swimming is a great pastime.",
+                "definition": "The sport of moving through water. (سباحة)",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "0f76d1d0-bedd-44e5-9c11-e2d2c4f443ad",
+          "activity_type": "category-sort",
+          "title": "Group the Words",
+          "instruction": "Drag and drop each word into the correct category. This is from Workbook page 53.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "53",
+          "compensates": "Replaces the teacher-led classification exercise from WB6.11A.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "images": [
+              {
+                "idx": 0,
+                "url": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/g7_u6_l6_11_srt_act1_i0.png"
+              },
+              {
+                "idx": 1,
+                "url": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/g7_u6_l6_11_srt_act1_i1.png"
+              },
+              {
+                "idx": 2,
+                "url": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/g7_u6_l6_11_srt_act1_i2.png"
+              },
+              {
+                "idx": 3,
+                "url": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/g7_u6_l6_11_srt_act1_i3.png"
+              }
+            ],
+            "categories": [
+              {
+                "name": "Colours",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1060.png",
+                "items": [
+                  "green",
+                  "blue",
+                  "white",
+                  "red"
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1060.png"
+              },
+              {
+                "name": "Food",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1061.png",
+                "items": [
+                  "cheese",
+                  "apples",
+                  "oranges",
+                  "lamb"
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1061.png"
+              },
+              {
+                "name": "Drink",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1062.png",
+                "items": [
+                  "juice",
+                  "water",
+                  "tea",
+                  "milk"
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1062.png"
+              },
+              {
+                "name": "Pastimes",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1063.png",
+                "items": [
+                  "reading",
+                  "swimming",
+                  "watching TV",
+                  "visiting friends"
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1063.png"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "90074733-0cd2-4f07-8c61-f4afea7d14dc",
+          "activity_type": "spelling-bee",
+          "title": "Spelling Practice",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the word, then spell it correctly using the letters provided.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "53",
+          "compensates": "Replaces teacher-led spelling drills or dictation.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "hint": "A round fruit that can be red or green.",
+                "word": "apples",
+                "audio": "needed",
+                "scrambled": [
+                  "p",
+                  "s",
+                  "l",
+                  "e",
+                  "p",
+                  "a"
+                ]
+              },
+              {
+                "hint": "The colour of milk.",
+                "word": "white",
+                "audio": "needed",
+                "scrambled": [
+                  "t",
+                  "i",
+                  "e",
+                  "h",
+                  "w"
+                ]
+              },
+              {
+                "hint": "A clear liquid you drink.",
+                "word": "water",
+                "audio": "needed",
+                "scrambled": [
+                  "e",
+                  "r",
+                  "w",
+                  "t",
+                  "a"
+                ]
+              },
+              {
+                "hint": "A pastime with books.",
+                "word": "reading",
+                "audio": "needed",
+                "scrambled": [
+                  "g",
+                  "n",
+                  "i",
+                  "d",
+                  "a",
+                  "e",
+                  "r"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "ddae6d1d-d615-4b5e-a136-e17e96a9ed34",
+          "activity_type": "dialogue-read",
+          "title": "Reading: My Favourite Things",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to and read the conversation between Anne and Tom. Then, get ready to answer some questions.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "41",
+          "compensates": "Replaces teacher-led reading of PB41, making it an interactive listening and reading activity.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "dialogue": [
+              {
+                "text": "Tom, what colours do you like?",
+                "speaker": "Anne"
+              },
+              {
+                "text": "I like red, blue, green, yellow and . . .",
+                "speaker": "Tom"
+              },
+              {
+                "text": "What's your favourite colour?",
+                "speaker": "Anne"
+              },
+              {
+                "text": "My favourite colour? Red. Yes, red.",
+                "speaker": "Tom"
+              },
+              {
+                "text": "What's your favourite food?",
+                "speaker": "Anne"
+              },
+              {
+                "text": "I like meat, rice, chicken and . . .",
+                "speaker": "Tom"
+              },
+              {
+                "text": "Yes, but what's your favourite food?",
+                "speaker": "Anne"
+              },
+              {
+                "text": "Chicken.",
+                "speaker": "Tom"
+              },
+              {
+                "text": "What's your favourite drink?",
+                "speaker": "Anne"
+              },
+              {
+                "text": "Pepsi.",
+                "speaker": "Tom"
+              },
+              {
+                "text": "What's your favourite pastime?",
+                "speaker": "Anne"
+              },
+              {
+                "text": "Well, I don't like swimming and I don't like . . .",
+                "speaker": "Tom"
+              },
+              {
+                "text": "What do you like? What's your favourite?",
+                "speaker": "Anne"
+              },
+              {
+                "text": "Playing football.",
+                "speaker": "Tom"
+              }
+            ],
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/g7_u6_l6_11_dlg_act3_i0.png",
+            "comprehension": []
+          }
+        },
+        {
+          "activity_id": "8971d745-7f60-4e28-bb44-088fd96dbb5f",
+          "activity_type": "mcq",
+          "title": "Check Your Understanding",
+          "instruction": "After reading the conversation, Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for the best answer for each question.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "53",
+          "compensates": "Replaces teacher-led comprehension check after reading.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Blue",
+                    "feedback": "He mentions blue, but it's not his favourite.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Red",
+                    "feedback": "Correct! He says, 'My favourite colour? Red.'",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Green",
+                    "feedback": "He likes green, but it's not his favourite.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What is Tom's favourite colour?",
+                "explanation": "Tom says, 'My favourite colour? Red. Yes, red.'"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Meat",
+                    "feedback": "He likes meat, but it's not his number one choice.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Rice",
+                    "feedback": "He mentions rice, but it's not his favourite.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Chicken",
+                    "feedback": "That's right! Chicken is his favourite food.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "What is Tom's favourite food?",
+                "explanation": "When Anne asks for his favourite, Tom answers, 'Chicken.'"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Playing football",
+                    "feedback": "This is his favourite pastime.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Swimming",
+                    "feedback": "Correct! He says, 'I don't like swimming.'",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Watching TV",
+                    "feedback": "Watching TV is not mentioned in the conversation.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Which pastime does Tom NOT like?",
+                "explanation": "Tom says, 'Well, I don't like swimming and I don't like . . .'"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "52d9b3cd-aad8-48ae-87f9-b14c54f7ec8d",
+          "activity_type": "gap-fill",
+          "title": "Grammar: Asking about Favourites",
+          "instruction": "Fill in the blanks to complete the questions and answers.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "53",
+          "compensates": "Provides interactive practice for the key language structures.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "___ your favourite colour?",
+                "blanks": [
+                  {
+                    "hint": "Use the question word and 'is'.",
+                    "answer": "What's",
+                    "alternatives": [
+                      "What is"
+                    ]
+                  }
+                ],
+                "explanation": "We use 'What's' or 'What is' to ask about something."
+              },
+              {
+                "text": "My favourite colour ___ red.",
+                "blanks": [
+                  {
+                    "hint": "Use the verb 'to be'.",
+                    "answer": "is",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'is' to state what our favourite thing is."
+              },
+              {
+                "text": "What's your ___ food?",
+                "blanks": [
+                  {
+                    "hint": "The word for the thing you like most.",
+                    "answer": "favourite",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "'Favourite' means the one you like the most."
+              },
+              {
+                "text": "My favourite ___ is visiting friends.",
+                "blanks": [
+                  {
+                    "hint": "The word for a free-time activity.",
+                    "answer": "pastime",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "'Pastime' is an activity you do for fun."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "774e9cb3-2db0-4a5f-aef6-3e9b60502385",
+          "activity_type": "word-order",
+          "title": "Make Sentences",
+          "instruction": "Drag the words into the correct order to make questions and answers.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "53",
+          "compensates": "Replaces pair work practice and provides structured sentence-building.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": [
+            {
+              "instruction": "Make a question about a drink.",
+              "correctOrder": [
+                "What's",
+                "your",
+                "favourite",
+                "drink",
+                "?"
+              ]
+            },
+            {
+              "instruction": "Make a sentence about food.",
+              "correctOrder": [
+                "My",
+                "favourite",
+                "food",
+                "is",
+                "lamb",
+                "."
+              ]
+            },
+            {
+              "instruction": "Make a question about colours.",
+              "correctOrder": [
+                "What",
+                "colours",
+                "do",
+                "you",
+                "like",
+                "?"
+              ]
+            },
+            {
+              "instruction": "Make a sentence about a pastime.",
+              "correctOrder": [
+                "I",
+                "like",
+                "watching",
+                "TV",
+                "."
+              ]
+            }
+          ]
+        },
+        {
+          "activity_id": "0af86c63-90ab-4cb9-8607-66aba8694d04",
+          "activity_type": "pronunciation-practice",
+          "title": "Listen and Repeat",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the questions and answers. Then, record yourself saying them.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "41",
+          "compensates": "Replaces teacher-led choral drilling and 'Listen and repeat' activities.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "What’s your favourite colour?",
+                "audioSrc": "/media/audio/g7_u6_l6.11_pro_1_w0.mp3",
+                "phonetic": "/wɒts jɔːr ˈfeɪvərɪt ˈkʌlər/",
+                "syllables": []
+              },
+              {
+                "word": "My favourite colour is blue.",
+                "audioSrc": "/media/audio/g7_u6_l6.11_pro_1_w1.mp3",
+                "phonetic": "/maɪ ˈfeɪvərɪt ˈkʌlər ɪz bluː/",
+                "syllables": []
+              },
+              {
+                "word": "What’s your favourite pastime?",
+                "audioSrc": "/media/audio/g7_u6_l6.11_pro_1_w2.mp3",
+                "phonetic": "/wɒts jɔːr ˈfeɪvərɪt ˈpɑːstaɪm/",
+                "syllables": []
+              },
+              {
+                "word": "My favourite pastime is swimming.",
+                "audioSrc": "/media/audio/g7_u6_l6.11_pro_1_w3.mp3",
+                "phonetic": "/maɪ ˈfeɪvərɪt ˈpɑːstaɪm ɪz ˈswɪmɪŋ/",
+                "syllables": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "909d9735-b94f-4129-9a71-87f5d59b7294",
+      "lesson_title": "6.12",
+      "lesson_number": 12,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "be9fb156-d692-4477-95c3-1ca2f578e18e",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 31)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "54",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "90d5f391-778a-433e-b886-97b8c623391d",
+          "activity_type": "flashcard",
+          "title": "Vocabulary: Favourite Things",
+          "instruction": "Learn the words to talk about your favourite things. Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the word, then read the definition and example.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "54",
+          "compensates": "Teacher introducing vocabulary with flashcards.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "colour",
+                "audio": "gen-g7-u6-6.12-aud-1",
+                "image": "gen-g7-u6-6.12-img-1",
+                "example": "My favourite colour is blue.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/g7_u6_l6_12_flsh_act0_i0.png",
+                "definition": "The appearance of something as a result of the way it reflects light. For example, red, blue, or green.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "food",
+                "audio": "gen-g7-u6-6.12-aud-2",
+                "image": "gen-g7-u6-6.12-img-2",
+                "example": "What's your favourite food?",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/g7_u6_l6_12_flsh_act0_i1.png",
+                "definition": "Anything that people or animals eat to live.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "drink",
+                "audio": "gen-g7-u6-6.12-aud-3",
+                "image": "gen-g7-u6-6.12-img-3",
+                "example": "My favourite drink is tea.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/g7_u6_l6_12_flsh_act0_i2.png",
+                "definition": "A liquid that you take into your body.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "pastime",
+                "audio": "gen-g7-u6-6.12-aud-4",
+                "image": "gen-g7-u6-6.12-img-4",
+                "example": "Reading is my favourite pastime.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/g7_u6_l6_12_flsh_act0_i3.png",
+                "definition": "An activity that you enjoy doing in your free time.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "bananas",
+                "audio": "gen-g7-u6-6.12-aud-5",
+                "image": "gen-g7-u6-6.12-img-5",
+                "example": "Bill's favourite food is bananas.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/g7_u6_l6_12_flsh_act0_i4.png",
+                "definition": "A long, curved fruit with a yellow skin.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "chicken",
+                "audio": "gen-g7-u6-6.12-aud-6",
+                "image": "gen-g7-u6-6.12-img-6",
+                "example": "Kim's favourite food is chicken.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/g7_u6_l6_12_flsh_act0_i5.png",
+                "definition": "A type of bird kept on a farm for its eggs or its meat.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "watching TV",
+                "audio": "gen-g7-u6-6.12-aud-7",
+                "image": "gen-g7-u6-6.12-img-7",
+                "example": "His favourite pastime is watching TV.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/g7_u6_l6_12_flsh_act0_i6.png",
+                "definition": "The activity of looking at television programmes.",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "reading",
+                "audio": "gen-g7-u6-6.12-aud-8",
+                "image": "gen-g7-u6-6.12-img-8",
+                "example": "Her favourite pastime is reading.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/g7_u6_l6_12_flsh_act0_i7.png",
+                "definition": "The activity of looking at and understanding written words.",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "8fbb81bc-6cca-4f72-9ca7-ca8630003600",
+          "activity_type": "match-pairs",
+          "title": "Vocabulary Check: Match Word to Picture",
+          "instruction": "Drag the word on the left to match it with the correct picture on the right.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "54",
+          "compensates": "Teacher-led vocabulary review using picture cards.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "colour",
+                "right": "gen-g7-u6-6.12-img-1"
+              },
+              {
+                "left": "food",
+                "right": "gen-g7-u6-6.12-img-2"
+              },
+              {
+                "left": "drink",
+                "right": "gen-g7-u6-6.12-img-3"
+              },
+              {
+                "left": "pastime",
+                "right": "gen-g7-u6-6.12-img-4"
+              },
+              {
+                "left": "bananas",
+                "right": "gen-g7-u6-6.12-img-5"
+              },
+              {
+                "left": "chicken",
+                "right": "gen-g7-u6-6.12-img-6"
+              },
+              {
+                "left": "watching TV",
+                "right": "gen-g7-u6-6.12-img-7"
+              },
+              {
+                "left": "reading",
+                "right": "gen-g7-u6-6.12-img-8"
+              }
+            ],
+            "instruction": "Match the word to the picture that shows it."
+          }
+        },
+        {
+          "activity_id": "3395fb84-e92d-4059-92d3-84f005ad4e4a",
+          "activity_type": "category-sort",
+          "title": "Sort the Favourites",
+          "instruction": "Drag each word into the correct category: Food, Drink, or Pastime.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "54",
+          "compensates": "Teacher drawing columns on the board and asking students to categorize words.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "categories": [
+              {
+                "name": "Food",
+                "items": [
+                  "bananas",
+                  "chicken"
+                ]
+              },
+              {
+                "name": "Drink",
+                "items": [
+                  "tea",
+                  "Pepsi"
+                ]
+              },
+              {
+                "name": "Pastime",
+                "items": [
+                  "watching TV",
+                  "reading",
+                  "swimming",
+                  "playing volleyball"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "1164a35b-3578-4423-a000-1e024faabdf0",
+          "activity_type": "listening-comprehension",
+          "title": "Listen: Bill's Favourites",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the conversation about Bill. Then, answer the questions. This is like exercise A in your Workbook on page 54.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "54",
+          "compensates": "Teacher playing Cassette Section 31, Band 1 and asking comprehension questions (WB6.12A).",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "audioSrc": "gen-g7-u6-6.12-aud-9",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Red",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Blue",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Green",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What is Bill's favourite colour?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Apples",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Chicken",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Bananas",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "What is Bill's favourite food?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Tea",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Pepsi",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Water",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What is Bill's favourite drink?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Reading",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Watching TV",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Swimming",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What is Bill's favourite pastime?"
+              }
+            ],
+            "transcript": "Girl: Bill! Bill! Where are you?\nBill: Here!\nGirl: Oh, good. Bill, what’s your favourite colour?\nBill: My favourite colour! That’s easy. Blue.\nGirl: And your favourite food?\nBill: That’s not easy. My favourite food! Mm. Bananas.\nGirl: Bananas. OK. Now your favourite drink?\nBill: Tea.\nGirl: And your favourite pastime?\nBill: I’m lazy. My favourite pastime is watching TV."
+          }
+        },
+        {
+          "activity_id": "06549103-f5ae-40cd-beb7-127652cf2015",
+          "activity_type": "true-false",
+          "title": "Listen: Kim's Favourites",
+          "instruction": "Now, listen to the conversation about Kim. Read the sentences and Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for True or False. This is like exercise A in your Workbook on page 54.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "54",
+          "compensates": "Teacher playing Cassette Section 31, Band 2 and checking answers for the chart (WB6.12A).",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "audioSrc": "gen-g7-u6-6.12-aud-10",
+            "statements": [
+              {
+                "isTrue": false,
+                "statement": "Kim's favourite colour is blue.",
+                "explanation": "Kim's favourite colour is red."
+              },
+              {
+                "isTrue": true,
+                "statement": "Her favourite food is chicken.",
+                "explanation": "Correct! Kim says her favourite food is chicken."
+              },
+              {
+                "isTrue": false,
+                "statement": "Her favourite drink is tea.",
+                "explanation": "Kim's favourite drink is Pepsi."
+              },
+              {
+                "isTrue": false,
+                "statement": "Kim's favourite pastime is swimming.",
+                "explanation": "Kim says she doesn't like swimming. Her favourite pastime is reading."
+              },
+              {
+                "isTrue": true,
+                "statement": "Kim's favourite pastime is reading.",
+                "explanation": "Correct! She says her favourite pastime is definitely reading."
+              }
+            ],
+            "transcript": "Girl: Kim! Kim: Yes. What do you want? Girl: I’ve got some questions. Kim: OK. Girl: Kim, what’s your favourite colour? Kim: That’s easy. Red. Yes, definitely red. Girl: And what’s your favourite food? Kim: Chicken. Girl: And your favourite drink? Kim: Mm. Pepsi. Girl: Last question. What’s your favourite pastime? Kim: Well, I don’t like swimming. And I don’t like playing volleyball. I like watching TV. But my favourite pastime is reading. Yes. Definitely reading."
+          }
+        },
+        {
+          "activity_id": "90fa8c2d-10bb-4937-b747-41ade40d88fe",
+          "activity_type": "word-order",
+          "title": "Build the Question",
+          "instruction": "Put the words in the correct order to make questions about favourite things.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "54",
+          "compensates": "Teacher-led practice of question and answer forms in open pairs.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "instruction": "Unscramble the words to form a question.",
+                "correctOrder": [
+                  "What's",
+                  "your",
+                  "favourite",
+                  "colour?"
+                ]
+              },
+              {
+                "instruction": "Unscramble the words to form a question.",
+                "correctOrder": [
+                  "What's",
+                  "your",
+                  "favourite",
+                  "food?"
+                ]
+              },
+              {
+                "instruction": "Unscramble the words to form a question.",
+                "correctOrder": [
+                  "What's",
+                  "your",
+                  "favourite",
+                  "drink?"
+                ]
+              },
+              {
+                "instruction": "Unscramble the words to form a question.",
+                "correctOrder": [
+                  "What's",
+                  "your",
+                  "favourite",
+                  "pastime?"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "3c31d56c-97bc-4ffa-8903-fcb68902a823",
+          "activity_type": "pronunciation-practice",
+          "title": "Pronunciation Practice",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to each word carefully and try to say it just like the recording.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "54",
+          "compensates": "Teacher modeling pronunciation for the class.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "favourite",
+                "audioSrc": "gen-g7-u6-6.12-aud-11",
+                "phonetic": "/ˈfeɪ.vər.ɪt/",
+                "syllables": [
+                  "fa",
+                  "vou",
+                  "rite"
+                ]
+              },
+              {
+                "word": "pastime",
+                "audioSrc": "gen-g7-u6-6.12-aud-12",
+                "phonetic": "/ˈpɑːs.taɪm/",
+                "syllables": [
+                  "pas",
+                  "time"
+                ]
+              },
+              {
+                "word": "definitely",
+                "audioSrc": "gen-g7-u6-6.12-aud-13",
+                "phonetic": "/ˈdef.ɪ.nət.li/",
+                "syllables": [
+                  "def",
+                  "i",
+                  "nite",
+                  "ly"
+                ]
+              },
+              {
+                "word": "questions",
+                "audioSrc": "gen-g7-u6-6.12-aud-14",
+                "phonetic": "/ˈkwes.tʃənz/",
+                "syllables": [
+                  "ques",
+                  "tions"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "c6b2bc04-f70b-4f04-99fb-38931d64d169",
+          "activity_type": "gap-fill",
+          "title": "All About You!",
+          "instruction": "Complete the sentences to tell us about your favourite things. This is like exercise B in your Workbook on page 54.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "54",
+          "compensates": "Students filling in the 'Yourself' column in the chart (WB6.12B, part A).",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "My favourite colour is ___.",
+                "blanks": [
+                  {
+                    "hint": "Type your favourite colour (e.g., green, yellow, black)",
+                    "answer": ""
+                  }
+                ],
+                "explanation": "This is how you tell someone your favourite colour."
+              },
+              {
+                "text": "My favourite food is ___.",
+                "blanks": [
+                  {
+                    "hint": "Type your favourite food (e.g., pizza, rice, fish)",
+                    "answer": ""
+                  }
+                ],
+                "explanation": "This is how you tell someone your favourite food."
+              },
+              {
+                "text": "My favourite drink is ___.",
+                "blanks": [
+                  {
+                    "hint": "Type your favourite drink (e.g., milk, juice, water)",
+                    "answer": ""
+                  }
+                ],
+                "explanation": "This is how you tell someone your favourite drink."
+              },
+              {
+                "text": "My favourite pastime is ___.",
+                "blanks": [
+                  {
+                    "hint": "Type your favourite pastime (e.g., playing football, drawing)",
+                    "answer": ""
+                  }
+                ],
+                "explanation": "This is how you tell someone your favourite pastime."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "710c1539-2f11-4501-8f40-2099aea1ebe8",
+          "activity_type": "conversation-sim",
+          "title": "Chat with a Friend",
+          "instruction": "A friend is asking about your favourite things. Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for the best way to answer.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "54",
+          "compensates": "The pair work activity where students ask and answer about their preferences (WB6.12B, part B).",
+          "order_index": 8,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "turns": [
+              {
+                "text": "Hi! I have some questions for a school project. Is that okay?",
+                "audio": "gen-g7-u6-6.12-aud-15",
+                "speaker": "Friend",
+                "studentOptions": [
+                  {
+                    "text": "Yes, OK.",
+                    "nextTurn": 1,
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "I am lazy.",
+                    "nextTurn": 0,
+                    "isCorrect": false
+                  }
+                ]
+              },
+              {
+                "text": "Great! First, what's your favourite colour?",
+                "audio": "gen-g7-u6-6.12-aud-16",
+                "speaker": "Friend",
+                "studentOptions": [
+                  {
+                    "text": "My favourite colour is red.",
+                    "nextTurn": 2,
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "My favourite food is chicken.",
+                    "nextTurn": 1,
+                    "isCorrect": false
+                  }
+                ]
+              },
+              {
+                "text": "Cool! And what's your favourite pastime?",
+                "audio": "gen-g7-u6-6.12-aud-17",
+                "speaker": "Friend",
+                "studentOptions": [
+                  {
+                    "text": "My favourite pastime is reading.",
+                    "nextTurn": 3,
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "My favourite drink is Pepsi.",
+                    "nextTurn": 2,
+                    "isCorrect": false
+                  }
+                ]
+              },
+              {
+                "text": "That's interesting! Thanks for your help.",
+                "audio": "gen-g7-u6-6.12-aud-18",
+                "speaker": "Friend",
+                "studentOptions": []
+              }
+            ],
+            "scenario": "You are talking to a new friend at school."
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "fc270e7b-8940-42f2-badd-3a0d98ce56b5",
+      "lesson_title": "6.13",
+      "lesson_number": 13,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "acafe164-cf46-45aa-add9-8a07c75f13d3",
+          "activity_type": "flashcard",
+          "title": "My Favourite Things: Vocabulary",
+          "instruction": "Learn the new words about favourite things. Interact with the screen! 🖱️ Interact with the screen! 🖱️ Click to to on the card to flip it and listen to the word.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "41",
+          "compensates": "Replaces teacher-led flashcard drills and vocabulary introduction.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "favourite",
+                "audio": "favourite.mp3",
+                "example": "My favourite colour is red.",
+                "imageUrl": "/media/g10/g10_u6_l6.13_flsh_act0_i0.png",
+                "definition": "The one you like more than any other. (مُفَضَّل)",
+                "partOfSpeech": "adjective"
+              },
+              {
+                "word": "colour",
+                "audio": "colour.mp3",
+                "example": "The sky has a beautiful blue colour.",
+                "imageUrl": "/media/g10/g10_u6_l6.13_flsh_act0_i1.png",
+                "definition": "The appearance of something as a result of the way it reflects light. (لَوْن)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "food",
+                "audio": "food.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1066.png",
+                "example": "Chicken and rice is my favourite food.",
+                "imageUrl": "/media/g10/g10_u6_l6.13_flsh_act0_i2.png",
+                "definition": "Something that people and animals eat. (طَعَام)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "drink",
+                "audio": "drink.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1067.png",
+                "example": "My favourite drink is Pepsi.",
+                "imageUrl": "/media/g10/g10_u6_l6.13_flsh_act0_i3.png",
+                "definition": "A liquid for drinking. (مَشْرُوب)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "pastime",
+                "audio": "pastime.mp3",
+                "example": "Playing football is a fun pastime.",
+                "imageUrl": "/media/g10/g10_u6_l6.13_flsh_act0_i4.png",
+                "definition": "An activity that you enjoy doing in your free time. (هِوَايَة)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "red",
+                "audio": "red.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1065.png",
+                "example": "Tom's favourite colour is red.",
+                "imageUrl": "/media/g10/g10_u6_l6.13_flsh_act0_i5.png",
+                "definition": "The colour of blood. (أَحْمَر)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "chicken",
+                "audio": "chicken.mp3",
+                "image": "gen-g7-u6-6.13-chicken-img",
+                "example": "Tom's favourite food is chicken.",
+                "definition": "A type of bird kept on a farm for its eggs or its meat. (دَجَاج)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "Pepsi",
+                "audio": "pepsi.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1067.png",
+                "example": "His favourite drink is Pepsi.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1067.png",
+                "definition": "A popular carbonated soft drink. (بيبسي)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "playing football",
+                "audio": "playing_football.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1068.png",
+                "example": "His favourite pastime is playing football.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1068.png",
+                "definition": "A game played by two teams of eleven players with a round ball. (لَعِب كُرَة القَدَم)",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "b00fd3ad-5b6a-421a-b4c1-9e779b9382a1",
+          "activity_type": "dialogue-read",
+          "title": "Reading: My Favourite",
+          "instruction": "Read the conversation between Anne and Tom. Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the audio for each line. Then answer the questions.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "41",
+          "compensates": "Replaces teacher-led reading aloud and whole-class question and answer sessions from PB page 41.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "dialogue": [
+              {
+                "text": "Tom, what colours do you like?",
+                "speaker": "Anne"
+              },
+              {
+                "text": "I like red, blue, green, yellow and . . .",
+                "speaker": "Tom"
+              },
+              {
+                "text": "What's your favourite colour?",
+                "speaker": "Anne"
+              },
+              {
+                "text": "My favourite colour? Red. Yes, red.",
+                "speaker": "Tom"
+              },
+              {
+                "text": "What's your favourite food?",
+                "speaker": "Anne"
+              },
+              {
+                "text": "I like meat, rice, chicken and . . .",
+                "speaker": "Tom"
+              },
+              {
+                "text": "Yes, but what's your favourite food?",
+                "speaker": "Anne"
+              },
+              {
+                "text": "Chicken.",
+                "speaker": "Tom"
+              },
+              {
+                "text": "What's your favourite drink?",
+                "speaker": "Anne"
+              },
+              {
+                "text": "Pepsi.",
+                "speaker": "Tom"
+              },
+              {
+                "text": "What's your favourite pastime?",
+                "speaker": "Anne"
+              },
+              {
+                "text": "Well, I don't like swimming and I don't like . . .",
+                "speaker": "Tom"
+              },
+              {
+                "text": "What do you like? What's your favourite?",
+                "speaker": "Anne"
+              },
+              {
+                "text": "Playing football.",
+                "speaker": "Tom"
+              }
+            ],
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/g7_u6_l6_13_dlg_act1_i0.png",
+            "comprehension": [
+              {
+                "answer": "She is talking to Tom.",
+                "question": "Who is Anne talking to?"
+              },
+              {
+                "answer": "They are talking about their favourite things.",
+                "question": "What are they talking about?"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "7b19a71c-eb25-4805-b567-85a0275938f5",
+          "activity_type": "mcq",
+          "title": "Check Your Understanding",
+          "instruction": "Read the questions about the conversation and Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for the correct answer.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "55",
+          "compensates": "Replaces the teacher-led revision activity where the teacher asks questions about the text.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1065.png",
+                "options": [
+                  {
+                    "text": "Blue",
+                    "feedback": "Tom likes blue, but it's not his favourite.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Yellow",
+                    "feedback": "Tom likes yellow, but it's not his favourite.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Red",
+                    "feedback": "Correct! Tom's favourite colour is red.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Green",
+                    "feedback": "Tom likes green, but it's not his favourite.",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1065.png",
+                "question": "What is Tom's favourite colour?",
+                "explanation": "In the text, Tom says, 'My favourite colour? Red. Yes, red.'"
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1066.png",
+                "options": [
+                  {
+                    "text": "Meat",
+                    "feedback": "He likes meat, but it's not his favourite.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Chicken",
+                    "feedback": "That's right! His favourite food is chicken.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Rice",
+                    "feedback": "He likes rice, but it's not his favourite.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Pepsi",
+                    "feedback": "Pepsi is his favourite drink, not food.",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/1066.png",
+                "question": "What is Tom's favourite food?",
+                "explanation": "When Anne asks for his favourite food, Tom answers, 'Chicken.'"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Playing football",
+                    "feedback": "This is his favourite pastime.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Swimming",
+                    "feedback": "Correct! Tom says, 'I don't like swimming...'",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Reading",
+                    "feedback": "Reading is not mentioned in the conversation.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Watching TV",
+                    "feedback": "Watching TV is not mentioned in the conversation.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What pastime does Tom NOT like?",
+                "explanation": "Tom clearly states, 'Well, I don't like swimming...'"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "0267c966-53d9-44e6-bb2f-2228d628846c",
+          "activity_type": "category-sort",
+          "title": "Sort Your Favourites",
+          "instruction": "Drag each word into the correct category.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "55",
+          "compensates": "Replaces a teacher-led whiteboard sorting activity and reinforces vocabulary categories.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "categories": [
+              {
+                "name": "Colours",
+                "items": [
+                  "red",
+                  "blue",
+                  "green",
+                  "yellow"
+                ]
+              },
+              {
+                "name": "Food",
+                "items": [
+                  "chicken",
+                  "meat",
+                  "rice"
+                ]
+              },
+              {
+                "name": "Drinks",
+                "items": [
+                  "Pepsi"
+                ]
+              },
+              {
+                "name": "Pastimes",
+                "items": [
+                  "playing football",
+                  "swimming"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "6112b82d-1217-49b5-92c8-2ab09627e360",
+          "activity_type": "gap-fill",
+          "title": "Writing About Tom",
+          "instruction": "Complete the sentences about Tom based on the conversation. Type the missing words in the blanks.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "55",
+          "compensates": "Digitizes a written exercise and teacher-led sentence building.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "Tom likes blue, green and yellow, but his favourite colour ___ ___.",
+                "blanks": [
+                  {
+                    "answer": "is"
+                  },
+                  {
+                    "answer": "red"
+                  }
+                ],
+                "explanation": "We use 'is' to state his favourite colour. His favourite colour is red."
+              },
+              {
+                "text": "He likes meat and rice, but his favourite food ___ ___.",
+                "blanks": [
+                  {
+                    "answer": "is"
+                  },
+                  {
+                    "answer": "chicken"
+                  }
+                ],
+                "explanation": "We use 'is' to state his favourite food. His favourite food is chicken."
+              },
+              {
+                "text": "His favourite drink ___ ___.",
+                "blanks": [
+                  {
+                    "answer": "is"
+                  },
+                  {
+                    "answer": "Pepsi"
+                  }
+                ],
+                "explanation": "We use 'is' to state his favourite drink. His favourite drink is Pepsi."
+              },
+              {
+                "text": "He doesn't like swimming, but his favourite pastime ___ ___ ___.",
+                "blanks": [
+                  {
+                    "answer": "is"
+                  },
+                  {
+                    "answer": "playing"
+                  },
+                  {
+                    "answer": "football"
+                  }
+                ],
+                "explanation": "We use 'is' to state his favourite pastime. His favourite pastime is playing football."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "812c25d9-08fb-4e1b-98d7-3ee4d49fc9c1",
+          "activity_type": "word-order",
+          "title": "Build the Sentences",
+          "instruction": "Drag and drop the words to make correct sentences about Tom's favourites.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "55",
+          "compensates": "Provides interactive practice on sentence structure, reinforcing the language focus 'His favourite... is...'.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "instruction": "Make a sentence about Tom's favourite colour.",
+                "correctOrder": [
+                  "His",
+                  "favourite",
+                  "colour",
+                  "is",
+                  "red",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Make a question about favourite food.",
+                "correctOrder": [
+                  "What",
+                  "is",
+                  "your",
+                  "favourite",
+                  "food",
+                  "?"
+                ]
+              },
+              {
+                "instruction": "Make a sentence about what Tom doesn't like.",
+                "correctOrder": [
+                  "Tom",
+                  "does",
+                  "not",
+                  "like",
+                  "swimming",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Make a sentence about Tom's favourite pastime.",
+                "correctOrder": [
+                  "His",
+                  "favourite",
+                  "pastime",
+                  "is",
+                  "playing",
+                  "football",
+                  "."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "32e1e4dd-d0eb-47aa-a0a5-12f27cf3bf5b",
+          "activity_type": "pronunciation-practice",
+          "title": "Pronunciation Practice",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to each word carefully and practice saying it. Pay attention to the highlighted syllables.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "41",
+          "compensates": "Replaces teacher-led pronunciation drills and helps with spelling and sight-reading.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "favourite",
+                "phonetic": "/ˈfeɪ.vər.ɪt/",
+                "syllables": [
+                  "fa",
+                  "vou",
+                  "rite"
+                ]
+              },
+              {
+                "word": "yellow",
+                "phonetic": "/ˈjel.oʊ/",
+                "syllables": [
+                  "yel",
+                  "low"
+                ]
+              },
+              {
+                "word": "chicken",
+                "phonetic": "/ˈtʃɪk.ɪn/",
+                "syllables": [
+                  "chick",
+                  "en"
+                ]
+              },
+              {
+                "word": "swimming",
+                "phonetic": "/ˈswɪm.ɪŋ/",
+                "syllables": [
+                  "swim",
+                  "ming"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "fe990a57-4237-48f9-8f2f-f12c08512704",
+          "activity_type": "transform-sentence",
+          "title": "Connect with 'but'",
+          "instruction": "Combine the two sentences into one sentence using the word 'but'.",
+          "difficulty": "advanced",
+          "book_type": "PB",
+          "book_page": "41",
+          "compensates": "Provides advanced practice on the lesson's language focus, similar to the teacher modeling sentences on the board.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "prompts": [
+              {
+                "original": "Tom likes blue and green. His favourite colour is red.",
+                "transformed": "Tom likes blue and green, but his favourite colour is red."
+              },
+              {
+                "original": "Tom likes meat and rice. His favourite food is chicken.",
+                "transformed": "Tom likes meat and rice, but his favourite food is chicken."
+              },
+              {
+                "original": "Tom doesn't like swimming. His favourite pastime is playing football.",
+                "transformed": "Tom doesn't like swimming, but his favourite pastime is playing football."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "37ea6dea-789b-496d-a22f-ac9b6fc663f2",
+      "lesson_title": "6.14",
+      "lesson_number": 14,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "30b26ecb-feb8-4dfe-b4af-ac9232404629",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 32)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "42",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "cfa70a45-d068-4035-8e30-42e9435c5258",
+          "activity_type": "flashcard",
+          "title": "Travel Vocabulary",
+          "instruction": "Learn these words about travel and holidays. Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the pronunciation and read the example.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "42",
+          "compensates": "Teacher-led vocabulary presentation and drilling.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "passport",
+                "image": "gen-g7-u6-6.14-img-1",
+                "example": "You must show your passport at the airport.",
+                "imageUrl": "/media/g10/g10_u6_l6.14_flsh_act0_i0.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/audio/g7_u6_l6.14_flsh_act0_a0.mp3",
+                "definition": "An official document you need to enter or leave a country.",
+                "partOfSpeech": "noun",
+                "arabic_translation": "جواز سفر"
+              },
+              {
+                "word": "ticket",
+                "image": "gen-g7-u6-6.14-img-2",
+                "example": "I bought a plane ticket to London.",
+                "imageUrl": "/media/g10/g10_u6_l6.14_flsh_act0_i1.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/audio/g7_u6_l6.14_flsh_act0_a1.mp3",
+                "definition": "A piece of paper or a digital card that shows you have paid for a journey.",
+                "partOfSpeech": "noun",
+                "arabic_translation": "تذكرة"
+              },
+              {
+                "word": "suitcase",
+                "image": "gen-g7-u6-6.14-img-3",
+                "example": "I need to pack my suitcase for the trip.",
+                "imageUrl": "/media/g10/g10_u6_l6.14_flsh_act0_i2.png",
+                "definition": "A large case with a handle for carrying clothes and belongings when you travel.",
+                "partOfSpeech": "noun",
+                "arabic_translation": "حقيبة سفر"
+              },
+              {
+                "word": "souvenir",
+                "image": "gen-g7-u6-6.14-img-4",
+                "example": "He bought a small souvenir from the museum.",
+                "imageUrl": "/media/g10/g10_u6_l6.14_flsh_act0_i3.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/audio/g7_u6_l6.14_flsh_act0_a3.mp3",
+                "definition": "Something you buy or keep to remember a place you visited.",
+                "partOfSpeech": "noun",
+                "arabic_translation": "هدية تذكارية"
+              },
+              {
+                "word": "destination",
+                "image": "gen-g7-u6-6.14-img-5",
+                "example": "Our final destination is Paris.",
+                "imageUrl": "/media/g10/g10_u6_l6.14_flsh_act0_i4.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/audio/g7_u6_l6.14_flsh_act0_a4.mp3",
+                "definition": "The place where someone is going.",
+                "partOfSpeech": "noun",
+                "arabic_translation": "وجهة"
+              },
+              {
+                "word": "journey",
+                "image": "gen-g7-u6-6.14-img-6",
+                "example": "The train journey was very long but beautiful.",
+                "imageUrl": "/media/g10/g10_u6_l6.14_flsh_act0_i5.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/audio/g7_u6_l6.14_flsh_act0_a5.mp3",
+                "definition": "The act of travelling from one place to another.",
+                "partOfSpeech": "noun",
+                "arabic_translation": "رحلة"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "598eb2e2-c7b4-45f4-ab44-de0924dfeb04",
+          "activity_type": "gap-fill",
+          "title": "My Last Holiday",
+          "instruction": "Complete the sentences with the past simple form of the verb in brackets.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "56",
+          "compensates": "Workbook grammar practice exercises.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "Last summer, my family ___ to Egypt. (go)",
+                "blanks": [
+                  {
+                    "hint": "This is an irregular verb.",
+                    "answer": "went"
+                  }
+                ],
+                "explanation": "The past simple of 'go' is 'went'."
+              },
+              {
+                "text": "We ___ the Great Pyramids. (see)",
+                "blanks": [
+                  {
+                    "hint": "This is an irregular verb.",
+                    "answer": "saw"
+                  }
+                ],
+                "explanation": "The past simple of 'see' is 'saw'."
+              },
+              {
+                "text": "I ___ a lot of photos. (take)",
+                "blanks": [
+                  {
+                    "hint": "This is an irregular verb.",
+                    "answer": "took"
+                  }
+                ],
+                "explanation": "The past simple of 'take' is 'took'."
+              },
+              {
+                "text": "We ___ in a nice hotel near the river. (stay)",
+                "blanks": [
+                  {
+                    "hint": "This is a regular verb. Add -ed.",
+                    "answer": "stayed"
+                  }
+                ],
+                "explanation": "The past simple of the regular verb 'stay' is 'stayed'."
+              },
+              {
+                "text": "I ___ some souvenirs for my friends. (buy)",
+                "blanks": [
+                  {
+                    "hint": "This is an irregular verb.",
+                    "answer": "bought"
+                  }
+                ],
+                "explanation": "The past simple of 'buy' is 'bought'."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "68297232-cd7c-4767-9f2c-923a3b895d31",
+          "activity_type": "reading-passage",
+          "title": "A Trip to the Mountains",
+          "instruction": "Reading time! 📖 Read carefully and the passage about Ahmed's trip and answer the questions.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "42",
+          "compensates": "Pupil's Book reading comprehension task.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "passage": "Last weekend, Ahmed and his family went on a journey to the mountains. They packed their suitcases on Friday morning and drove for three hours. Their destination was a small, quiet village. They stayed in a cozy cabin. On Saturday, they explored the area and walked by a beautiful lake. Ahmed saw many tall trees and colorful birds. He took many pictures with his camera. It was a wonderful trip, and Ahmed felt very happy and relaxed.",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/g7_u6_l6_14_rdg_act2_i0.png",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "To the beach",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "To the mountains",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "To the city",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Where did Ahmed and his family go?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "One hour",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Two hours",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Three hours",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "How long was their journey?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "He went swimming.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He explored the area and took pictures.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "He read a book all day.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What did Ahmed do on Saturday?"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "4ec67df3-d4d5-45fa-8df1-f61294850f8a",
+          "activity_type": "pronunciation-practice",
+          "title": "Travel Word Pronunciation",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and carefully to each word and try to say it yourself. Record your voice and compare.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "42",
+          "compensates": "Teacher-led pronunciation drills and choral repetition.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "journey",
+                "phonetic": "/ˈdʒɜːrni/",
+                "syllables": [
+                  "jour",
+                  "ney"
+                ]
+              },
+              {
+                "word": "souvenir",
+                "phonetic": "/ˌsuːvəˈnɪər/",
+                "syllables": [
+                  "sou",
+                  "ve",
+                  "nir"
+                ]
+              },
+              {
+                "word": "destination",
+                "phonetic": "/ˌdɛstɪˈneɪʃən/",
+                "syllables": [
+                  "des",
+                  "ti",
+                  "na",
+                  "tion"
+                ]
+              },
+              {
+                "word": "suitcase",
+                "phonetic": "/ˈsuːtkeɪs/",
+                "syllables": [
+                  "suit",
+                  "case"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "4090e3b3-eccf-40d2-aab3-e03e2d90bd27",
+          "activity_type": "word-order",
+          "title": "Planning Your Trip",
+          "instruction": "Put the words in the correct order to make sentences or questions.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "56",
+          "compensates": "Sentence unscrambling worksheets.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "scrambled": [
+                  "going",
+                  "to",
+                  "I",
+                  "am",
+                  "travel",
+                  "next",
+                  "month",
+                  "."
+                ],
+                "explanation": "This sentence uses the 'be going to' future tense to talk about a plan.",
+                "correctOrder": [
+                  "I",
+                  "am",
+                  "going",
+                  "to",
+                  "travel",
+                  "next",
+                  "month",
+                  "."
+                ]
+              },
+              {
+                "scrambled": [
+                  "you",
+                  "pack",
+                  "your",
+                  "suitcase",
+                  "did",
+                  "?"
+                ],
+                "explanation": "To make a question in the past simple, we start with 'Did', followed by the subject and the base form of the verb.",
+                "correctOrder": [
+                  "Did",
+                  "you",
+                  "pack",
+                  "your",
+                  "suitcase",
+                  "?"
+                ]
+              },
+              {
+                "scrambled": [
+                  "is",
+                  "your",
+                  "destination",
+                  "what",
+                  "final",
+                  "?"
+                ],
+                "explanation": "Question words like 'What' usually come at the beginning of the sentence.",
+                "correctOrder": [
+                  "What",
+                  "is",
+                  "your",
+                  "final",
+                  "destination",
+                  "?"
+                ]
+              },
+              {
+                "scrambled": [
+                  "forgot",
+                  "my",
+                  "I",
+                  "ticket",
+                  "home",
+                  "at",
+                  "."
+                ],
+                "explanation": "A standard sentence structure is Subject-Verb-Object (I forgot my ticket).",
+                "correctOrder": [
+                  "I",
+                  "forgot",
+                  "my",
+                  "ticket",
+                  "at",
+                  "home",
+                  "."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "b938c11c-587b-4572-bbc7-abd00c9adee4",
+          "activity_type": "listening-comprehension",
+          "title": "At the Airport",
+          "instruction": "Listen to the announcement at the airport and Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for the correct answers.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "42",
+          "compensates": "Teacher-led listening exercises with a CD player or audio file.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "audioSrc": "gen-g7-u6-6.14-audio-1",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "XY327",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "XY372",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "BA372",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What is the flight number?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Riyadh",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Dubai",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Jeddah",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "What is the destination of the flight?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Gate B5",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Gate A5",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Gate B10",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Which gate should passengers go to?"
+              }
+            ],
+            "transcript": "Good afternoon, passengers. This is the final boarding call for flight XY372 to Jeddah. All remaining passengers please proceed immediately to Gate B5. The gate will be closing in ten minutes. Thank you."
+          }
+        },
+        {
+          "activity_id": "1b6bf929-ed2c-409e-a0e6-9b51dbcabdd0",
+          "activity_type": "picture-description",
+          "title": "Describe a Famous Place",
+          "instruction": "Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture. Use the keywords to help you answer the questions. You can write or record your answers.",
+          "difficulty": "advanced",
+          "book_type": "PB",
+          "book_page": "42",
+          "compensates": "Pair work or group discussion based on a picture prompt from the textbook.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/6/images/g7_u6_l6.14_pic_act6_i0.png",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u6/images/g7_u6_l6_14_pic_act6_i0.png",
+            "keywords": [
+              "pyramids",
+              "desert",
+              "camel",
+              "Egypt",
+              "ancient",
+              "hot",
+              "sunny"
+            ],
+            "sampleAnswers": [
+              "I can see the great pyramids and a camel in the desert.",
+              "I think this is in Egypt.",
+              "The weather looks hot and sunny.",
+              "Yes, I would like to visit because I want to learn about ancient history."
+            ],
+            "promptQuestions": [
+              "What can you see in the picture?",
+              "What country do you think this is?",
+              "Describe the weather.",
+              "Would you like to visit this place? Why or why not?"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "1983a4e3-5b80-404c-92b1-c48fcd55139f",
+      "lesson_title": "6.15",
+      "lesson_number": 15,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "63528dbf-eee1-4050-a03c-3fa64d17044d",
+          "activity_type": "flashcard",
+          "title": "Punctuation Marks",
+          "instruction": "Learn the names and uses of these punctuation marks. Tap the card to flip it.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "56",
+          "compensates": "Teacher explaining punctuation on the board.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "capital letter",
+                "example": "My name is Ali.",
+                "imageUrl": "/media/g10/g10_u6_l6.8_flsh_act0_i0.png",
+                "definition": "A large letter used at the beginning of a sentence or for names.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "apostrophe",
+                "example": "It's my book. This is Sara's pen.",
+                "imageUrl": "/media/g10/g10_u6_l6.8_flsh_act0_i1.png",
+                "definition": "A mark (') used to show that a letter has been left out or to show possession.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "comma",
+                "example": "I have a pen, a book, and a bag.",
+                "imageUrl": "/media/g10/g10_u6_l6.8_flsh_act0_i2.png",
+                "definition": "A mark (,) used to separate items in a list or parts of a sentence.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "question mark",
+                "example": "What is your name?",
+                "imageUrl": "/media/g10/g10_u6_l6.8_flsh_act0_i3.png",
+                "definition": "A mark (?) used at the end of a sentence to show it is a question.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "full stop",
+                "example": "I am a student.",
+                "imageUrl": "/media/g10/g10_u6_l6.8_flsh_act0_i4.png",
+                "definition": "A dot (.) used at the end of a sentence.",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "ac8268ec-40aa-4e4a-a3d9-8b24b0f0fb13",
+          "activity_type": "match-pairs",
+          "title": "Match the Mark to the Name",
+          "instruction": "Drag the name to match it with the correct punctuation symbol.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "56",
+          "compensates": "Workbook activity 6.15A - matching numbers to punctuation marks.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": ".",
+                "right": "full stop"
+              },
+              {
+                "left": "?",
+                "right": "question mark"
+              },
+              {
+                "left": ",",
+                "right": "comma"
+              },
+              {
+                "left": "'",
+                "right": "apostrophe"
+              },
+              {
+                "left": "A",
+                "right": "capital letter"
+              }
+            ],
+            "instruction": "Match the punctuation symbol on the left with its name on the right."
+          }
+        },
+        {
+          "activity_id": "aad40b72-d000-447f-a615-8b0eea8b9647",
+          "activity_type": "mcq",
+          "title": "Find the Punctuation",
+          "instruction": "Reading time! 📖 Read carefully and the sentence and identify the punctuation mark.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "56",
+          "compensates": "Teacher highlighting punctuation on the board and asking students to identify them.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "apostrophe",
+                    "feedback": "Correct! The apostrophe shows a missing letter ('is').",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "comma",
+                    "feedback": "A comma separates items in a list.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "full stop",
+                    "feedback": "A full stop ends a sentence.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "In the sentence 'What's your brother's name, please?', what is the mark ' in 'What's'?",
+                "explanation": "The apostrophe in 'What's' is used for the contraction of 'What is'."
+              },
+              {
+                "options": [
+                  {
+                    "text": "apostrophe",
+                    "feedback": "An apostrophe is used in contractions like 'doesn't'.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "comma",
+                    "feedback": "Correct! The comma separates items in a list.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "question mark",
+                    "feedback": "A question mark is for questions.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "In the sentence 'My friend Hassan doesn’t like tea, coffee or milk.', what is the mark , after 'tea'?",
+                "explanation": "The comma is used to separate the items 'tea' and 'coffee' in the list."
+              },
+              {
+                "options": [
+                  {
+                    "text": "comma",
+                    "feedback": "A comma separates items in a list.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "apostrophe",
+                    "feedback": "An apostrophe is used in contractions.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "full stop",
+                    "feedback": "Correct! A full stop ends a statement.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "In the sentence 'His name is Ali.', what is the mark . at the end?",
+                "explanation": "A full stop is used to end a declarative sentence."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "b1940807-2f3a-48dd-95a3-e3cef08f827e",
+          "activity_type": "mcq",
+          "title": "Punctuation Check",
+          "instruction": "Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for the sentence that uses punctuation correctly.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "56",
+          "compensates": "Workbook activity where students have to punctuate sentences on their own.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "his name is Ali.",
+                    "feedback": "Sentences should start with a capital letter.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "His name is Ali.",
+                    "feedback": "Correct! This sentence starts with a capital letter and ends with a full stop.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "His name is Ali?",
+                    "feedback": "This is a statement, not a question. It should end with a full stop.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Which sentence is correct?",
+                "explanation": "A sentence must begin with a capital letter and end with the correct punctuation, in this case, a full stop."
+              },
+              {
+                "options": [
+                  {
+                    "text": "Whats your name?",
+                    "feedback": "The word 'What's' is a contraction of 'What is' and needs an apostrophe.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "What's your name.",
+                    "feedback": "This is a question and should end with a question mark.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "What's your name?",
+                    "feedback": "Correct! This question uses an apostrophe and a question mark correctly.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Which sentence is correct?",
+                "explanation": "Questions use a question mark at the end, and contractions like 'What's' need an apostrophe."
+              },
+              {
+                "options": [
+                  {
+                    "text": "I like tea coffee and milk.",
+                    "feedback": "You need a comma to separate items in a list.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "I like tea, coffee, and milk.",
+                    "feedback": "Correct! Commas are used to separate items in a list.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "I like tea, coffee and milk?",
+                    "feedback": "This is a statement, not a question. It should end with a full stop.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Which sentence is correct?",
+                "explanation": "Use commas to separate three or more items in a series."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "1d4d9be3-6b49-457c-a52d-ba7dafd75d3b",
+          "activity_type": "pronunciation-practice",
+          "title": "Say the Punctuation Words",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to each word, then record yourself saying it.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "56",
+          "compensates": "Teacher drilling pronunciation of new vocabulary.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "capital letter",
+                "audioSrc": "/media/audio/g7_u6_l6.15_pro_1_w0.mp3",
+                "phonetic": "/ˈkæpɪtl ˈlɛtər/",
+                "syllables": [
+                  "cap",
+                  "i",
+                  "tal",
+                  "let",
+                  "ter"
+                ]
+              },
+              {
+                "word": "apostrophe",
+                "audioSrc": "/media/audio/g7_u6_l6.15_pro_1_w1.mp3",
+                "phonetic": "/əˈpɒstrəfi/",
+                "syllables": [
+                  "a",
+                  "pos",
+                  "tro",
+                  "phe"
+                ]
+              },
+              {
+                "word": "comma",
+                "audioSrc": "/media/audio/g7_u6_l6.15_pro_1_w2.mp3",
+                "phonetic": "/ˈkɒmə/",
+                "syllables": [
+                  "com",
+                  "ma"
+                ]
+              },
+              {
+                "word": "question mark",
+                "audioSrc": "/media/audio/g7_u6_l6.15_pro_1_w3.mp3",
+                "phonetic": "/ˈkwɛstʃən mɑːrk/",
+                "syllables": [
+                  "ques",
+                  "tion",
+                  "mark"
+                ]
+              },
+              {
+                "word": "full stop",
+                "audioSrc": "/media/audio/g7_u6_l6.15_pro_1_w4.mp3",
+                "phonetic": "/fʊl stɒp/",
+                "syllables": [
+                  "full",
+                  "stop"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "a27fc9c6-14e4-43e7-93a8-50eda3ea854a",
+          "activity_type": "dictation",
+          "title": "Listen and Write",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the sentence and type it. Remember to use the correct punctuation.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "56",
+          "compensates": "Teacher-led dictation exercise.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "hints": [
+                  "Starts with 'His'"
+                ],
+                "audioSrc": "/media/audio/g7_u6_l6.15_dic_1_s0.mp3",
+                "difficulty": "sentence",
+                "expectedText": "His name is Ali."
+              },
+              {
+                "hints": [
+                  "Starts with 'What's'"
+                ],
+                "audioSrc": "/media/audio/g7_u6_l6.15_dic_1_s1.mp3",
+                "difficulty": "sentence",
+                "expectedText": "What's your name?"
+              },
+              {
+                "hints": [
+                  "Starts with 'My'"
+                ],
+                "audioSrc": "/media/audio/g7_u6_l6.15_dic_1_s2.mp3",
+                "difficulty": "sentence",
+                "expectedText": "My friend doesn't like tea."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "0357e76e-64b7-4ef9-b14e-3e2ba0f8e9d1",
+          "activity_type": "word-order",
+          "title": "Build the Question",
+          "instruction": "Put the words and punctuation in the correct order to make a question.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "56",
+          "compensates": "Sentence scramble worksheet or board activity.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "instruction": "Unscramble the words to form a correct question.",
+            "correctOrder": [
+              "What's",
+              "your",
+              "brother's",
+              "name",
+              ", please",
+              "?"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

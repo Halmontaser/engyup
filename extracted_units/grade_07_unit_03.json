@@ -1,0 +1,3370 @@
+{
+  "unit_id": "c6363ee3-1d7a-447a-8aa9-ce2f8f29d6e7",
+  "unit_title": "My Family",
+  "unit_number": 3,
+  "course_id": "b9f1e5d7-6c4a-4ab8-a9a9-79885a5c669d",
+  "course_title": "Grade 7",
+  "course_description": "English curriculum for Grade 7",
+  "lessons": [
+    {
+      "lesson_id": "ce25ac8c-4f94-4da1-af5c-a3289d61543c",
+      "lesson_title": "3.1",
+      "lesson_number": 1,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "8f3bc034-d8b0-44b9-b978-c3db6946b937",
+          "activity_type": "flashcard",
+          "title": "Words with the 'a' Sound",
+          "instruction": "Listen to the word and Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture. Notice the 'a' sound, like in the word 'man'.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "13",
+          "compensates": "Teacher-led phonics drill for words with the short 'a' sound, as described in PB10.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "man",
+                "audio": "needed",
+                "image": "suggested",
+                "example": "The man is tall.",
+                "imageUrl": "/media/g10/g10_u3_l3.1_flsh_act0_i0.png",
+                "definition": "An adult male human being.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "fan",
+                "audio": "needed",
+                "image": "suggested",
+                "example": "It is hot, please turn on the fan.",
+                "imageUrl": "/media/g10/g10_u3_l3.1_flsh_act0_i1.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.1_flsh_act0_a1.mp3",
+                "definition": "A machine with rotating blades that creates a current of air.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "pan",
+                "audio": "needed",
+                "image": "suggested",
+                "example": "I cook eggs in a pan.",
+                "imageUrl": "/media/g10/g10_u3_l3.1_flsh_act0_i2.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.1_flsh_act0_a2.mp3",
+                "definition": "A metal container used for cooking food in.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "cat",
+                "audio": "needed",
+                "image": "suggested",
+                "example": "The cat is sleeping.",
+                "imageUrl": "/media/g10/g10_u3_l3.1_flsh_act0_i3.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.1_flsh_act0_a3.mp3",
+                "definition": "A small animal with fur, four legs, and a tail, often kept as a pet.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "hat",
+                "audio": "needed",
+                "image": "suggested",
+                "example": "He wears a hat in the sun.",
+                "imageUrl": "/media/g10/g10_u3_l3.1_flsh_act0_i4.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.1_flsh_act0_a4.mp3",
+                "definition": "A covering for the head.",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "0662d278-8e9a-42e6-930c-9a2a3e80a0d8",
+          "activity_type": "spelling-bee",
+          "title": "Spelling with 'a'",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the word and spell it correctly by dragging the letters.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "13",
+          "compensates": "Workbook activity 3.1, which involves spelling words from pictures.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "hint": "A male person.",
+                "word": "man",
+                "audio": "needed",
+                "scrambled": [
+                  "n",
+                  "a",
+                  "m"
+                ]
+              },
+              {
+                "hint": "This keeps you cool.",
+                "word": "fan",
+                "audio": "needed",
+                "scrambled": [
+                  "n",
+                  "f",
+                  "a"
+                ]
+              },
+              {
+                "hint": "A small pet animal.",
+                "word": "cat",
+                "audio": "needed",
+                "scrambled": [
+                  "t",
+                  "c",
+                  "a"
+                ]
+              },
+              {
+                "hint": "You use this to cook.",
+                "word": "pan",
+                "audio": "needed",
+                "scrambled": [
+                  "n",
+                  "p",
+                  "a"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "819016b5-b1ca-408c-ab56-1ce3dd4eb6d7",
+          "activity_type": "word-order",
+          "title": "Introduce Yourself",
+          "instruction": "Put the words in the correct order to make sentences for introductions.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "13",
+          "compensates": "Teacher-led practice for constructing introduction sentences.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "instruction": "Make a sentence to say your name.",
+                "correctOrder": [
+                  "Hello",
+                  ".",
+                  "I'm",
+                  "Ahmed",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Make a sentence to introduce someone else.",
+                "correctOrder": [
+                  "This",
+                  "is",
+                  "Fatima",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Make a sentence to greet someone.",
+                "correctOrder": [
+                  "Hello",
+                  ",",
+                  "Ahmed",
+                  "."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "64bb8ce1-8fab-4544-91d0-47fc8a322807",
+          "activity_type": "dialogue-read",
+          "title": "Meeting a New Friend",
+          "instruction": "Read and Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the conversation. See how people introduce themselves and others.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "13",
+          "compensates": "Teacher-led group practice of introduction exchanges (PB10).",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "dialogue": [
+              {
+                "text": "Hello. I’m Ali. This is Omar.",
+                "speaker": "Ali"
+              },
+              {
+                "text": "Hello, Ali. Hello, Omar.",
+                "speaker": "Hassan"
+              }
+            ],
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/g7_u3_l3_1_dlg_act3_i0.png",
+            "comprehension": [
+              {
+                "answer": "Omar",
+                "question": "Who does Ali introduce?"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "a2d1f78d-c172-4f52-9c1c-fb8f7ce898d2",
+          "activity_type": "flashcard",
+          "title": "Numbers 20 to 29",
+          "instruction": "Learn to say and recognize the numbers from twenty to twenty-nine.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "13",
+          "compensates": "Teacher writing numbers 20-29 on the board and leading choral repetition (WB82).",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "twenty",
+                "audio": "needed",
+                "example": "There are twenty students.",
+                "imageUrl": "/media/g10/g10_u3_l3.1_flsh_act0_i0.png",
+                "definition": "20",
+                "partOfSpeech": "number"
+              },
+              {
+                "word": "twenty-one",
+                "audio": "needed",
+                "example": "My brother is twenty-one.",
+                "imageUrl": "/media/g10/g10_u3_l3.1_flsh_act0_i1.png",
+                "definition": "21",
+                "partOfSpeech": "number"
+              },
+              {
+                "word": "twenty-two",
+                "audio": "needed",
+                "example": "The next number is twenty-two.",
+                "imageUrl": "/media/g10/g10_u3_l3.1_flsh_act0_i2.png",
+                "definition": "22",
+                "partOfSpeech": "number"
+              },
+              {
+                "word": "twenty-three",
+                "audio": "needed",
+                "example": "Page twenty-three.",
+                "imageUrl": "/media/g10/g10_u3_l3.1_flsh_act0_i3.png",
+                "definition": "23",
+                "partOfSpeech": "number"
+              },
+              {
+                "word": "twenty-four",
+                "audio": "needed",
+                "example": "There are twenty-four hours in a day.",
+                "imageUrl": "/media/g10/g10_u3_l3.1_flsh_act0_i4.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.1_flsh_act4_a4.mp3",
+                "definition": "24",
+                "partOfSpeech": "number"
+              },
+              {
+                "word": "twenty-five",
+                "audio": "needed",
+                "example": "She has twenty-five books.",
+                "imageUrl": "/media/g10/g10_u3_l3.1_flsh_act0_i5.png",
+                "definition": "25",
+                "partOfSpeech": "number"
+              },
+              {
+                "word": "twenty-six",
+                "audio": "needed",
+                "example": "There are twenty-six letters in the alphabet.",
+                "definition": "26",
+                "partOfSpeech": "number"
+              },
+              {
+                "word": "twenty-seven",
+                "audio": "needed",
+                "example": "My house is number twenty-seven.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.1_flsh_act4_a7.mp3",
+                "definition": "27",
+                "partOfSpeech": "number"
+              },
+              {
+                "word": "twenty-eight",
+                "audio": "needed",
+                "example": "February has twenty-eight days.",
+                "definition": "28",
+                "partOfSpeech": "number"
+              },
+              {
+                "word": "twenty-nine",
+                "audio": "needed",
+                "example": "The last number is twenty-nine.",
+                "definition": "29",
+                "partOfSpeech": "number"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "7f62cb1e-7dfa-4663-aaf2-18fa9b53aff3",
+          "activity_type": "dictation",
+          "title": "Writing Numbers",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the number and type it using digits (for example: 25).",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "13",
+          "compensates": "Teacher-led oral dictation for written practice of numbers.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "hints": [
+                  "Starts with 2"
+                ],
+                "audioSrc": "/media/audio/g7_u3_l3.1_dic_1_s0.mp3",
+                "difficulty": "phrase",
+                "expectedText": "21"
+              },
+              {
+                "hints": [
+                  "Starts with 2"
+                ],
+                "audioSrc": "/media/audio/g7_u3_l3.1_dic_1_s1.mp3",
+                "difficulty": "phrase",
+                "expectedText": "28"
+              },
+              {
+                "hints": [
+                  "Starts with 2"
+                ],
+                "audioSrc": "/media/audio/g7_u3_l3.1_dic_1_s2.mp3",
+                "difficulty": "phrase",
+                "expectedText": "25"
+              },
+              {
+                "hints": [
+                  "Starts with 2"
+                ],
+                "audioSrc": "/media/audio/g7_u3_l3.1_dic_1_s3.mp3",
+                "difficulty": "phrase",
+                "expectedText": "29"
+              },
+              {
+                "hints": [
+                  "Starts with 2"
+                ],
+                "audioSrc": "/media/audio/g7_u3_l3.1_dic_1_s4.mp3",
+                "difficulty": "phrase",
+                "expectedText": "20"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "118bc9ea-13f2-46c7-8fd8-24106c676fdf",
+      "lesson_title": "3.2",
+      "lesson_number": 2,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "57edf0bb-5a35-42ba-bd18-ce916cd37e14",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 9)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "12",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "1188ce07-0ff6-47c5-9f1a-864cad2cb65e",
+          "activity_type": "flashcard",
+          "title": "Key Words: My, His, Her, Your",
+          "instruction": "Learn the new words for talking about names. Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and and repeat.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "12",
+          "compensates": "Teacher using flashcards and building a language table on the board.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "My",
+                "example": "My name is Jack.",
+                "imageUrl": "/media/g10/g10_u3_l3.2_flsh_act0_i0.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.2_flsh_act0_a0.mp3",
+                "definition": "Used to show something belongs to me. (لي)",
+                "partOfSpeech": "possessive adjective"
+              },
+              {
+                "word": "His",
+                "example": "His name is Bill.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.2_flsh_act0_a1.mp3",
+                "definition": "Used to show something belongs to a boy or man. (له)",
+                "partOfSpeech": "possessive adjective"
+              },
+              {
+                "word": "Her",
+                "example": "Her name is Anne.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.2_flsh_act0_a2.mp3",
+                "definition": "Used to show something belongs to a girl or woman. (لها)",
+                "partOfSpeech": "possessive adjective"
+              },
+              {
+                "word": "Your",
+                "example": "What's your name?",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.2_flsh_act0_a3.mp3",
+                "definition": "Used to show something belongs to the person you are talking to. (لك)",
+                "partOfSpeech": "possessive adjective"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "898352fe-c90c-4a0b-83f1-f65e132e0cfd",
+          "activity_type": "dialogue-read",
+          "title": "Reading: What's His Name?",
+          "instruction": "Read and Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the conversation from Pupil's Book page 12.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "12",
+          "compensates": "Teacher reading the text aloud and asking comprehension questions.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "dialogue": [
+              {
+                "text": "I'm Tom and I'm from England.",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u7/audio/39.mp3",
+                "speaker": "Tom",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/39.png"
+              },
+              {
+                "text": "This is my friend. His name is Bill. He's 12.",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u7/audio/40.mp3",
+                "speaker": "Boy 1",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/40.png"
+              },
+              {
+                "text": "My name is Jack.",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/audio/41.mp3",
+                "speaker": "Jack"
+              },
+              {
+                "text": "Her name is Anne.",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/audio/41.mp3",
+                "speaker": "Woman"
+              },
+              {
+                "text": "What's your name?",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/audio/41.mp3",
+                "speaker": "Man 2"
+              }
+            ],
+            "comprehension": [
+              {
+                "answer": "Tom",
+                "question": "What is the first boy's name?"
+              },
+              {
+                "answer": "Bill",
+                "question": "What is the friend's name?"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "854015f4-ffe5-45f6-b726-7961b5c0007f",
+          "activity_type": "mcq",
+          "title": "Check Your Understanding",
+          "instruction": "Use your eyes! 🧐 Look closely at the at the picture and Take a closer look! 📝 Pick the best option for the correct answer.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "12",
+          "compensates": "Teacher asking questions about the pictures on PB12.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "image": "",
+                "options": [
+                  {
+                    "text": "His name is Tom.",
+                    "feedback": "Correct! The speech bubble says 'I'm Tom'.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "His name is Bill.",
+                    "feedback": "Look at the picture again. This is Tom.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Her name is Anne.",
+                    "feedback": "This is a boy. We use 'His'.",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/39.png",
+                "question": "What's his name?",
+                "explanation": "The boy says 'I'm Tom', so his name is Tom."
+              },
+              {
+                "image": "",
+                "options": [
+                  {
+                    "text": "His name is Tom.",
+                    "feedback": "Tom is the boy introducing his friend.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "His name is Bill.",
+                    "feedback": "Excellent! The text says 'His name is Bill'.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "His name is Jack.",
+                    "feedback": "Jack is a different character.",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/40.png",
+                "question": "What is his friend's name?",
+                "explanation": "The first boy says, 'This is my friend. His name is Bill.'"
+              },
+              {
+                "image": "",
+                "options": [
+                  {
+                    "text": "Her name is Jack.",
+                    "feedback": "Jack is the man's name.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "His name is Anne.",
+                    "feedback": "Anne is a girl, so we use 'Her'.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Her name is Anne.",
+                    "feedback": "That's right!",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "What's her name?",
+                "explanation": "The text says 'Her name is Anne.'"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "7d62a2b1-8923-4077-8ae7-6b749f0a96b6",
+          "activity_type": "gap-fill",
+          "title": "Grammar: His, Her, My",
+          "instruction": "Complete the sentences with the correct word: His, Her, or My.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "12",
+          "compensates": "Workbook exercises and controlled practice drills.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "This is my friend. ___ name is Bill.",
+                "blanks": [
+                  {
+                    "hint": "Use for a boy.",
+                    "answer": "His"
+                  }
+                ],
+                "explanation": "We use 'His' for a boy or a man."
+              },
+              {
+                "text": "I am Anne. ___ name is Anne.",
+                "blanks": [
+                  {
+                    "hint": "Use when talking about yourself.",
+                    "answer": "My"
+                  }
+                ],
+                "explanation": "We use 'My' when talking about ourselves."
+              },
+              {
+                "text": "Look at that girl. ___ name is Sara.",
+                "blanks": [
+                  {
+                    "hint": "Use for a girl.",
+                    "answer": "Her"
+                  }
+                ],
+                "explanation": "We use 'Her' for a girl or a woman."
+              },
+              {
+                "text": "This is Tom. ___ name is Tom.",
+                "blanks": [
+                  {
+                    "hint": "Use for a boy.",
+                    "answer": "His"
+                  }
+                ],
+                "explanation": "We use 'His' for a boy or a man."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "b2fdab95-3036-4283-9df4-57e02f8071d1",
+          "activity_type": "word-order",
+          "title": "Build the Sentences",
+          "instruction": "Put the words in the correct order to make questions and answers.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "12",
+          "compensates": "Sentence building activities on the board.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "correctOrder": [
+                  "What's",
+                  "his",
+                  "name?"
+                ]
+              },
+              {
+                "correctOrder": [
+                  "His",
+                  "name",
+                  "is",
+                  "Tom."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "What's",
+                  "her",
+                  "name?"
+                ]
+              },
+              {
+                "correctOrder": [
+                  "Her",
+                  "name",
+                  "is",
+                  "Anne."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "I",
+                  "don't",
+                  "know."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "157967a0-2f8e-4928-99ab-5baccd7eb9f9",
+          "activity_type": "listening-comprehension",
+          "title": "Listen for Names",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the audio and answer the question.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "12",
+          "compensates": "Teacher-led listening activity using the cassette (CS9).",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Tom",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Bill",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Jack",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What is the boy's name?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Anne",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Sara",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Bill",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What is the girl's name?"
+              }
+            ],
+            "transcript": "Boy 1: This is my friend. His name is Bill. Girl: Hello, Bill! My name is Anne."
+          }
+        },
+        {
+          "activity_id": "aec93fda-613b-47df-8f38-895c7feacb54",
+          "activity_type": "dictation",
+          "title": "Listen and Type",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the sentence and type what you hear. Pay attention to capital letters and punctuation.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "12",
+          "compensates": "The 'Trace, copy and write' objective from the Teacher Guide and HWB Ex30.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "hints": [
+                  "Starts with 'What's'"
+                ],
+                "difficulty": "sentence",
+                "expectedText": "What's his name?"
+              },
+              {
+                "hints": [
+                  "Starts with 'Her'"
+                ],
+                "difficulty": "sentence",
+                "expectedText": "Her name is Anne."
+              },
+              {
+                "hints": [
+                  "Starts with 'My'"
+                ],
+                "difficulty": "sentence",
+                "expectedText": "My name is Jack."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "457c4828-9758-43d5-8ac8-bb9d5f0585be",
+      "lesson_title": "3.10",
+      "lesson_number": 10,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "122dd7d3-d21c-491e-b7c4-647eea22fd94",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 12)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "15",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "868d5f10-6f8c-44bc-bb08-5b14c23268d7",
+          "activity_type": "flashcard",
+          "title": "Poem Words",
+          "instruction": "Learn the new words from the poem 'My family and me'. Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the word, read the definition and the example.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "15",
+          "compensates": "Teacher-led vocabulary presentation using the board or physical flashcards.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "big",
+                "example": "My brothers are big.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/g7_u3_l3_10_flsh_act0_i0.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.10_flsh_act0_a0.mp3",
+                "definition": "Large in size or older. (كبير)",
+                "partOfSpeech": "adjective"
+              },
+              {
+                "word": "small",
+                "example": "My sisters are small.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/g7_u3_l3_10_flsh_act0_i1.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.10_flsh_act0_a1.mp3",
+                "definition": "Little in size or younger. (صغير)",
+                "partOfSpeech": "adjective"
+              },
+              {
+                "word": "short",
+                "example": "My mother is short.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/g7_u3_l3_10_flsh_act0_i2.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.10_flsh_act0_a2.mp3",
+                "definition": "Not tall. (قصير)",
+                "partOfSpeech": "adjective"
+              },
+              {
+                "word": "tall",
+                "example": "My father is tall.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/g7_u3_l3_10_flsh_act0_i3.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.10_flsh_act0_a3.mp3",
+                "definition": "Having a greater than average height. (طويل)",
+                "partOfSpeech": "adjective"
+              },
+              {
+                "word": "sea",
+                "example": "We live in a white house next to the sea.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/g7_u3_l3_10_flsh_act0_i4.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.10_flsh_act0_a4.mp3",
+                "definition": "The large body of salt water that covers most of the Earth's surface. (بحر)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "happy",
+                "example": "We're all very happy.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.10_flsh_act0_a5.mp3",
+                "definition": "Feeling or showing pleasure or contentment. (سعيد)",
+                "partOfSpeech": "adjective"
+              },
+              {
+                "word": "live",
+                "example": "We live in a white house.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.10_flsh_act0_a6.mp3",
+                "definition": "To have your home in a particular place. (يعيش)",
+                "partOfSpeech": "verb"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "7aa69a9c-4b55-430f-8cea-4ae5a60e6392",
+          "activity_type": "reading-passage",
+          "title": "Read the Poem: My family and me",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to and read the poem. Then answer the questions.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "15",
+          "compensates": "Teacher reading the poem aloud from PB15 and asking comprehension questions to the class.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "passage": "My brothers are big\nand my sisters are small.\nMy mother is short\nand my father is tall.\nWe live in a white house\nnext to the sea.\nWe're all very happy,\nmy family and me.",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "big",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "small",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Are the brothers big or small?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "tall",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "short",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Is the mother tall or short?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "in the city",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "next to the sea",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Where does the family live?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "sad",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "happy",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "How does the family feel?"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "5b2487a5-5ca8-41ee-b029-90fb0d528087",
+          "activity_type": "match-pairs",
+          "title": "Match the Opposites",
+          "instruction": "Match each word with its opposite.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "17",
+          "compensates": "Teacher-led pair work or board activity on opposites.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "big",
+                "right": "small"
+              },
+              {
+                "left": "tall",
+                "right": "short"
+              },
+              {
+                "left": "happy",
+                "right": "sad"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "d9a2e139-2ed5-4a49-a31a-15bca02bd625",
+          "activity_type": "transform-sentence",
+          "title": "Making Contractions",
+          "instruction": "Reading time! 📖 Read carefully and the words and write the short form (contraction). This is based on Workbook page 17.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "15",
+          "compensates": "Workbook page 17, exercises 1 and 2, which involve writing out contractions.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "original": "You have got",
+                "instruction": "Write the short form of 'You have got'.",
+                "transformed": "You've got"
+              },
+              {
+                "original": "They have got",
+                "instruction": "Write the short form of 'They have got'.",
+                "transformed": "They've got"
+              },
+              {
+                "original": "She has got",
+                "instruction": "Write the short form of 'She has got'.",
+                "transformed": "She's got"
+              },
+              {
+                "original": "It has got",
+                "instruction": "Write the short form of 'It has got'.",
+                "transformed": "It's got"
+              },
+              {
+                "original": "You are",
+                "instruction": "Write the short form of 'You are'.",
+                "transformed": "You're"
+              },
+              {
+                "original": "They are",
+                "instruction": "Write the short form of 'They are'.",
+                "transformed": "They're"
+              },
+              {
+                "original": "She is",
+                "instruction": "Write the short form of 'She is'.",
+                "transformed": "She's"
+              },
+              {
+                "original": "It is",
+                "instruction": "Write the short form of 'It is'.",
+                "transformed": "It's"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "071757ee-756d-453d-8cc5-70c6e0361bdf",
+          "activity_type": "mcq",
+          "title": "What does 's mean?",
+          "instruction": "Read the sentence and Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for what the 's means: 'is', 'has', or possession. This is based on Workbook page 17.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "17",
+          "compensates": "Workbook page 17, exercise 3, which requires students to think about the different meanings of 's.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "is",
+                    "feedback": "Try again. 'He is got' is not correct English.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "has",
+                    "feedback": "Correct! 'He's got' is the short form of 'He has got'.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "possession",
+                    "feedback": "Incorrect. The possessive 's comes after a name or noun, like 'Ali's bike'.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "In the sentence 'He's got a new bike.', what does 's mean?",
+                "explanation": "When 's is followed by 'got', it is the short form of 'has'."
+              },
+              {
+                "options": [
+                  {
+                    "text": "is",
+                    "feedback": "Excellent! 'She's' is the short form of 'She is'.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "has",
+                    "feedback": "Not quite. 'She has my friend' does not make sense.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "possession",
+                    "feedback": "Incorrect. The possessive 's would be used like 'My friend's name is Sara'.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "In the sentence 'She's my friend.', what does 's mean?",
+                "explanation": "When 's is followed by a noun or adjective, it is usually the short form of 'is'."
+              },
+              {
+                "options": [
+                  {
+                    "text": "is",
+                    "feedback": "Incorrect. The word 'is' is already in the sentence.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "has",
+                    "feedback": "Try again. 'Fatma has brother' is not correct.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "possession",
+                    "feedback": "Perfect! The 's shows that the brother belongs to Fatma.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "In the sentence 'Hassan is Fatma's brother.', what does 's mean?",
+                "explanation": "When 's is added to a name or noun, it shows possession or relationship."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "a66945c8-fe7b-4f14-9b8f-5be482ee2827",
+          "activity_type": "pronunciation-practice",
+          "title": "Listen and Repeat",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the rhyming words from the poem and practice saying them. Pay attention to the sounds.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "15",
+          "compensates": "Teacher-led choral repetition of new words and lines from the poem (Listen and repeat activity from TG).",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "small",
+                "phonetic": "/smɔːl/",
+                "syllables": [
+                  "small"
+                ]
+              },
+              {
+                "word": "tall",
+                "phonetic": "/tɔːl/",
+                "syllables": [
+                  "tall"
+                ]
+              },
+              {
+                "word": "sea",
+                "phonetic": "/siː/",
+                "syllables": [
+                  "sea"
+                ]
+              },
+              {
+                "word": "me",
+                "phonetic": "/miː/",
+                "syllables": [
+                  "me"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "71eff85a-b053-4dc7-81ce-07353b800acb",
+          "activity_type": "gap-fill",
+          "title": "Complete the Poem",
+          "instruction": "Complete the lines from the poem by filling in the blanks.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "17",
+          "compensates": "Workbook fill-in-the-blank exercises or writing the poem on the board with gaps.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "My brothers are ___ and my sisters are small.",
+                "blanks": [
+                  {
+                    "hint": "The opposite of small.",
+                    "answer": "big",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The poem describes the brothers as big."
+              },
+              {
+                "text": "My mother is short and my father is ___.",
+                "blanks": [
+                  {
+                    "hint": "The opposite of short.",
+                    "answer": "tall",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The poem describes the father as tall."
+              },
+              {
+                "text": "We live in a white house next to the ___.",
+                "blanks": [
+                  {
+                    "hint": "A large body of salt water.",
+                    "answer": "sea",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The family's house is next to the sea."
+              },
+              {
+                "text": "We're all very ___, my family and me.",
+                "blanks": [
+                  {
+                    "hint": "How does the family feel?",
+                    "answer": "happy",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The poem says the family is very happy."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "b96b5e4b-bad2-446c-b239-571017f52794",
+          "activity_type": "dictation",
+          "title": "Listen and Write",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the sentence from the poem and type what you hear.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "17",
+          "compensates": "Teacher dictating sentences for pupils to write down in their notebooks.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "hints": [
+                  "The first word is 'My'."
+                ],
+                "difficulty": "sentence",
+                "expectedText": "My father is tall."
+              },
+              {
+                "hints": [
+                  "The sentence is about the sisters."
+                ],
+                "difficulty": "sentence",
+                "expectedText": "My sisters are small."
+              },
+              {
+                "hints": [
+                  "The sentence starts with 'We'."
+                ],
+                "difficulty": "sentence",
+                "expectedText": "We live next to the sea."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "2b8594b2-d666-4443-9181-940e661f7167",
+      "lesson_title": "3.11",
+      "lesson_number": 11,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "e704f987-b9ac-43e7-834b-31eece0407fd",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 12)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "16",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "88b24523-19e5-4b26-9341-be9a781ddfff",
+          "activity_type": "flashcard",
+          "title": "Action Words",
+          "instruction": "Learn the new words for actions. Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture, listen to the word, and repeat.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "16",
+          "compensates": "Teacher presenting new vocabulary using pictures from Pupil's Book page 16 and flashcards.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "walk",
+                "audio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/walk.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "example": "I can walk to school.",
+                "imageUrl": "/media/g10/g10_u3_l3.4_flsh_act0_i0.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.11_flsh_act0_a0.mp3",
+                "definition": "to move along on foot (يمشي)",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "hop",
+                "audio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/hop.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "example": "A rabbit can hop.",
+                "imageUrl": "/media/g10/g10_u3_l3.4_flsh_act0_i1.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.11_flsh_act0_a1.mp3",
+                "definition": "to jump on one foot (يقفز على قدم واحدة)",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "jump",
+                "audio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/jump.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "example": "Can you jump high?",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.11_flsh_act0_a2.mp3",
+                "definition": "to push yourself up into the air using your legs (يقفز)",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "ride a bike",
+                "audio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/ride_a_bike.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "example": "I can ride a bike in the park.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.11_flsh_act0_a3.mp3",
+                "definition": "to sit on and control a bicycle (يركب دراجة)",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "swim",
+                "audio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/swim.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "example": "Fish can swim.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.11_flsh_act0_a4.mp3",
+                "definition": "to move through water by using your arms and legs (يسبح)",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "climb",
+                "audio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/climb.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "example": "A monkey can climb a tree.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.11_flsh_act0_a5.mp3",
+                "definition": "to go up something, using your hands and feet (يتسلق)",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "touch my toes",
+                "audio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/touch_my_toes.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "example": "I can touch my toes.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "definition": "to bend down and reach your feet with your hands (يلمس أصابع قدميه)",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "run fast",
+                "audio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/run_fast.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "example": "A cheetah can run fast.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.11_flsh_act0_a7.mp3",
+                "definition": "to move with your legs at a speed faster than walking (يركض بسرعة)",
+                "partOfSpeech": "verb"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "252ad7ac-ea43-40ac-9d25-b6a202cbbedd",
+          "activity_type": "mcq",
+          "title": "What Can He Do?",
+          "instruction": "Use your eyes! 🧐 Look closely at the at the numbered action in the picture and Take a closer look! 📝 Pick the best option for the correct sentence.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "16",
+          "compensates": "Teacher checking vocabulary recognition by pointing to pictures and asking students to name the action.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "options": [
+                  {
+                    "text": "He can swim.",
+                    "feedback": "Correct! He is swimming.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "He can walk.",
+                    "feedback": "Try again. He is in the water.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He can climb.",
+                    "feedback": "Try again. He is not going up anything.",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "question": "Look at action #5 in the picture. What can he do?",
+                "explanation": "Picture #5 shows a boy moving in the water, which is swimming."
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "options": [
+                  {
+                    "text": "He can hop.",
+                    "feedback": "Look closely. He is on two wheels.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He can run fast.",
+                    "feedback": "He is not running.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He can ride a bike.",
+                    "feedback": "That's right! He is riding a bike.",
+                    "isCorrect": true
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "question": "Look at action #4 in the picture. What can he do?",
+                "explanation": "Picture #4 shows a boy on a bicycle."
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "options": [
+                  {
+                    "text": "He can jump.",
+                    "feedback": "He is bending down, not jumping up.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He can touch his toes.",
+                    "feedback": "Excellent! He is touching his toes.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "He can walk.",
+                    "feedback": "He is standing still and bending.",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/48.png",
+                "question": "Look at action #7 in the picture. What can he do?",
+                "explanation": "Picture #7 shows a boy bending over to touch his toes."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "b433c099-09a6-4992-9679-8b2a01dad8bf",
+          "activity_type": "gap-fill",
+          "title": "Can or Can't?",
+          "instruction": "Reading time! 📖 Read carefully and the sentences and fill the gaps with 'can' or 'can't'.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "16",
+          "compensates": "Teacher presenting 'can' and 'can't' in context and demonstrating the meaning.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "A fish ___ swim.",
+                "blanks": [
+                  {
+                    "hint": "Is a fish able to swim?",
+                    "answer": "can",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "Fish live in water and are able to swim."
+              },
+              {
+                "text": "A bird ___ ride a bike.",
+                "blanks": [
+                  {
+                    "hint": "Does a bird have hands and feet for a bike?",
+                    "answer": "can't",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "Birds do not have the ability to ride a bike."
+              },
+              {
+                "text": "I ___ touch my toes.",
+                "blanks": [
+                  {
+                    "hint": "This depends on you! Choose the answer that is true for you.",
+                    "answer": "can",
+                    "alternatives": [
+                      "can't"
+                    ]
+                  }
+                ],
+                "explanation": "Some people can touch their toes, and some can't. Both answers are grammatically correct."
+              },
+              {
+                "text": "A baby ___ run fast.",
+                "blanks": [
+                  {
+                    "hint": "Think about a very young baby.",
+                    "answer": "can't",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "Babies are too young to run fast."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "4dbd1472-e6d0-4a5d-aeef-f9044b4b416b",
+          "activity_type": "word-order",
+          "title": "Make Sentences",
+          "instruction": "Put the words in the correct order to make a question or a sentence.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "16",
+          "compensates": "Teacher building sentences with flashcards on the board.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "scrambled": [
+                  "you",
+                  "Can",
+                  "swim",
+                  "?"
+                ],
+                "correctOrder": [
+                  "Can",
+                  "you",
+                  "swim",
+                  "?"
+                ]
+              },
+              {
+                "scrambled": [
+                  "I",
+                  "can",
+                  "bike",
+                  "a",
+                  "ride",
+                  "."
+                ],
+                "correctOrder": [
+                  "I",
+                  "can",
+                  "ride",
+                  "a",
+                  "bike",
+                  "."
+                ]
+              },
+              {
+                "scrambled": [
+                  "can't",
+                  "I",
+                  "hop",
+                  "."
+                ],
+                "correctOrder": [
+                  "I",
+                  "can't",
+                  "hop",
+                  "."
+                ]
+              },
+              {
+                "scrambled": [
+                  "your",
+                  "touch",
+                  "Can",
+                  "toes",
+                  "you",
+                  "?"
+                ],
+                "correctOrder": [
+                  "Can",
+                  "you",
+                  "touch",
+                  "your",
+                  "toes",
+                  "?"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "872b639f-e2ba-4b62-b3d5-4534cc25b503",
+          "activity_type": "pronunciation-practice",
+          "title": "Pronouncing 'can' and 'can't'",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the different sounds of 'can' and 'can't'. The 'a' sound is different. Record yourself and compare.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "16",
+          "compensates": "Teacher-led pronunciation drill focusing on the different 'a' sounds in can/can't and weak/strong forms.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "can (weak)",
+                "audioSrc": "/media/audio/g7_u3_l3.11_pro_5_w0.mp3",
+                "phonetic": "/kən/"
+              },
+              {
+                "word": "can (strong)",
+                "audioSrc": "/media/audio/g7_u3_l3.11_pro_5_w1.mp3",
+                "phonetic": "/kæn/"
+              },
+              {
+                "word": "can't",
+                "audioSrc": "/media/audio/g7_u3_l3.11_pro_5_w2.mp3",
+                "phonetic": "/kɑːnt/"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "b650f4f1-5e35-4093-bb1b-7b170fb8c762",
+          "activity_type": "dialogue-read",
+          "title": "Ask and Answer",
+          "instruction": "Read the dialogue. Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the lines and practice saying them.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "16",
+          "compensates": "Open pairs practice of questions and answers in class.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "dialogue": [
+              {
+                "text": "Can you touch your toes?",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/49.png",
+                "speaker": "Ali",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/49.png"
+              },
+              {
+                "text": "Yes, I can.",
+                "speaker": "Fatima"
+              },
+              {
+                "text": "Can you climb?",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/49.png",
+                "speaker": "Ali",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/49.png"
+              },
+              {
+                "text": "No, I can't.",
+                "speaker": "Fatima"
+              }
+            ],
+            "comprehension": [
+              {
+                "answer": "Yes",
+                "question": "Can Fatima touch her toes?"
+              },
+              {
+                "answer": "No",
+                "question": "Can Fatima climb?"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "522da41d-5ab3-45fd-b23f-1007ac051163",
+          "activity_type": "listening-comprehension",
+          "title": "What Can Sara Do?",
+          "instruction": "Listen to Sara talk about what she can and can't do. Then, Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for the correct answer.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "16",
+          "compensates": "Teacher-led listening activity where students listen to a description and answer questions.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "audioSrc": "/media/audio/g7_u3_l3.11_lis_7.mp3",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Yes, she can.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "No, she can't.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Can Sara swim well?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "She can climb trees.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "She can ride her bike.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "She can swim.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What can Sara do in the park?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "swim and climb",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "run fast and jump high",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "ride a bike and climb",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Which two things can Sara do?"
+              }
+            ],
+            "transcript": "Hello! My name is Sara. I am very active. I can run fast and I can jump high. I can also ride my bike to the park. But I can't swim very well, and I can't climb trees."
+          }
+        },
+        {
+          "activity_id": "a5f269ba-094d-44b3-8476-2f0d55365615",
+          "activity_type": "true-false",
+          "title": "Can They Do It?",
+          "instruction": "Reading time! 📖 Read carefully and the sentences. Are they true or false?",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "16",
+          "compensates": "Teacher asking general knowledge questions to check understanding of 'can' and action verbs.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "statements": [
+              {
+                "isTrue": false,
+                "statement": "A fish can walk.",
+                "explanation": "Fish live in water and swim. They don't have legs to walk."
+              },
+              {
+                "isTrue": true,
+                "statement": "A monkey can climb trees.",
+                "explanation": "Monkeys are excellent climbers."
+              },
+              {
+                "isTrue": false,
+                "statement": "You can ride a bike in the water.",
+                "explanation": "You ride a bike on land, not in water. You swim in water."
+              },
+              {
+                "isTrue": true,
+                "statement": "A rabbit can hop.",
+                "explanation": "Hopping is how rabbits move."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "0e5404d6-3554-44c0-b4de-4e14347cf817",
+      "lesson_title": "3.12",
+      "lesson_number": 12,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "14ab5e20-4aa6-4b58-aaae-91649a82fb04",
+          "activity_type": "flashcard",
+          "title": "Action Words: What Can You Do?",
+          "instruction": "Learn the new words for things you can do. Tap the card to see the meaning and Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the word.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "16",
+          "compensates": "Teacher introducing vocabulary with flashcards or actions.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "hop",
+                "audio": "hop.mp3",
+                "image": "gen-g7-u3-3.12-img-1",
+                "example": "A rabbit can hop.",
+                "imageUrl": "/media/g10/g10_u3_l3.5_flsh_act0_i0.png",
+                "definition": "To jump on one foot.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "run fast",
+                "audio": "run_fast.mp3",
+                "image": "gen-g7-u3-3.12-img-2",
+                "example": "A cheetah can run fast.",
+                "imageUrl": "/media/g10/g10_u3_l3.5_flsh_act0_i1.png",
+                "definition": "To move with your legs at a speed faster than walking.",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "swim",
+                "audio": "swim.mp3",
+                "image": "gen-g7-u3-3.12-img-3",
+                "example": "Fish can swim.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/g7_u3_l3_12_flsh_act0_i2.png",
+                "definition": "To move through water by using your arms and legs.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "ride a bicycle",
+                "audio": "ride_a_bicycle.mp3",
+                "image": "gen-g7-u3-3.12-img-4",
+                "example": "I can ride a bicycle to the park.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/g7_u3_l3_12_flsh_act0_i3.png",
+                "definition": "To sit on and control the movement of a bicycle.",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "touch your toes",
+                "audio": "touch_your_toes.mp3",
+                "image": "gen-g7-u3-3.12-img-5",
+                "example": "It is a good stretch to touch your toes.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/g7_u3_l3_12_flsh_act0_i4.png",
+                "definition": "To bend down and reach your feet with your hands.",
+                "partOfSpeech": "verb phrase"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "82b60d3f-308d-4248-8a94-7ddf94d5322e",
+          "activity_type": "gap-fill",
+          "title": "Grammar Practice: Can or Can't?",
+          "instruction": "Read the sentence and Use your eyes! 🧐 Look closely at the at the picture. Take a closer look! 📝 Pick the best option for 'can' or 'can't' to complete the sentence.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "18",
+          "compensates": "Teacher-led grammar drills on the board.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "A fish ___ swim.",
+                "blanks": [
+                  {
+                    "answer": "can",
+                    "alternatives": [
+                      "can't"
+                    ]
+                  }
+                ],
+                "explanation": "Fish live in water and are able to swim."
+              },
+              {
+                "text": "A bird ___ ride a bicycle.",
+                "blanks": [
+                  {
+                    "answer": "can't",
+                    "alternatives": [
+                      "can"
+                    ]
+                  }
+                ],
+                "explanation": "Birds do not have the ability to ride bicycles."
+              },
+              {
+                "text": "He is very strong. He ___ lift the box.",
+                "blanks": [
+                  {
+                    "answer": "can",
+                    "alternatives": [
+                      "can't"
+                    ]
+                  }
+                ],
+                "explanation": "'Strong' means he has the ability to lift it."
+              },
+              {
+                "text": "I am very tired. I ___ run fast right now.",
+                "blanks": [
+                  {
+                    "answer": "can't",
+                    "alternatives": [
+                      "can"
+                    ]
+                  }
+                ],
+                "explanation": "'Tired' means you don't have the energy or ability to run fast."
+              },
+              {
+                "text": "She practices every day. She ___ touch her toes.",
+                "blanks": [
+                  {
+                    "answer": "can",
+                    "alternatives": [
+                      "can't"
+                    ]
+                  }
+                ],
+                "explanation": "Practicing gives her the ability to touch her toes."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "d6f1b072-8e01-442c-8436-976d100a716d",
+          "activity_type": "word-order",
+          "title": "Build a Sentence",
+          "instruction": "Drag the words into the correct order to make a sentence or a question.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "18",
+          "compensates": "Workbook writing exercises or sentence unscrambling worksheets.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": [
+            {
+              "instruction": "Make a sentence.",
+              "correctOrder": [
+                "I",
+                "can",
+                "hop",
+                "."
+              ]
+            },
+            {
+              "instruction": "Make a sentence.",
+              "correctOrder": [
+                "He",
+                "can't",
+                "swim",
+                "."
+              ]
+            },
+            {
+              "instruction": "Make a question.",
+              "correctOrder": [
+                "Can",
+                "you",
+                "run",
+                "fast",
+                "?"
+              ]
+            },
+            {
+              "instruction": "Make a sentence.",
+              "correctOrder": [
+                "She",
+                "can",
+                "ride",
+                "a",
+                "bicycle",
+                "."
+              ]
+            },
+            {
+              "instruction": "Make a question.",
+              "correctOrder": [
+                "Can",
+                "they",
+                "touch",
+                "their",
+                "toes",
+                "?"
+              ]
+            }
+          ]
+        },
+        {
+          "activity_id": "384e4968-330a-4079-af99-ed3505afe773",
+          "activity_type": "reading-passage",
+          "title": "My Friend Fatima",
+          "instruction": "Reading time! 📖 Read carefully and the short paragraph about Fatima, then answer the questions.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "16",
+          "compensates": "Teacher reading a story aloud and asking comprehension questions.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "passage": "My name is Fatima. I am 12 years old and I love sports. I can run very fast, and I can swim in the sea near my house. On weekends, I can ride my bicycle with my friends in the park. I am not very flexible, so I can't touch my toes. My little brother is funny. He can hop on one foot all day, but I can't!",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "She can hop.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "She can swim.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "She can ride a bicycle.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What can Fatima do in the sea?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "She can't run fast.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "She can't ride her bicycle.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "She can't touch her toes.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "What can't Fatima do?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Fatima",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Her little brother",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Her friends",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Who can hop on one foot?"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "2c3f4856-16b2-4dbb-990e-7ca14f292eed",
+          "activity_type": "dictation",
+          "title": "Listen and Type",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the sentence and type what you hear. Pay attention to spelling.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "18",
+          "compensates": "Teacher-led dictation exercise in class.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "hints": [
+                  "Starts with 'I'"
+                ],
+                "audioSrc": "dictation_1.mp3",
+                "difficulty": "sentence",
+                "expectedText": "I can swim."
+              },
+              {
+                "hints": [
+                  "Three words"
+                ],
+                "audioSrc": "dictation_2.mp3",
+                "difficulty": "sentence",
+                "expectedText": "He can't run fast."
+              },
+              {
+                "hints": [
+                  "It's a question"
+                ],
+                "audioSrc": "dictation_3.mp3",
+                "difficulty": "sentence",
+                "expectedText": "Can you ride a bicycle?"
+              },
+              {
+                "hints": [
+                  "Five words"
+                ],
+                "audioSrc": "dictation_4.mp3",
+                "difficulty": "sentence",
+                "expectedText": "She can touch her toes."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "ba9e3c29-7137-4e0a-aae0-0a09179daf68",
+          "activity_type": "pronunciation-practice",
+          "title": "Say It Right!",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the word, then record yourself saying it. Compare your pronunciation.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "16",
+          "compensates": "Teacher modeling pronunciation and students repeating.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "can",
+                "audioSrc": "can.mp3",
+                "phonetic": "/kæn/",
+                "syllables": [
+                  "can"
+                ]
+              },
+              {
+                "word": "can't",
+                "audioSrc": "cant.mp3",
+                "phonetic": "/kɑːnt/",
+                "syllables": [
+                  "can't"
+                ]
+              },
+              {
+                "word": "swim",
+                "audioSrc": "swim_pron.mp3",
+                "phonetic": "/swɪm/",
+                "syllables": [
+                  "swim"
+                ]
+              },
+              {
+                "word": "hop",
+                "audioSrc": "hop_pron.mp3",
+                "phonetic": "/hɒp/",
+                "syllables": [
+                  "hop"
+                ]
+              },
+              {
+                "word": "touch",
+                "audioSrc": "touch_pron.mp3",
+                "phonetic": "/tʌtʃ/",
+                "syllables": [
+                  "touch"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "9a93f086-39f9-482e-bcb5-fe91e0f51d7f",
+          "activity_type": "category-sort",
+          "title": "What About You?",
+          "instruction": "This is about you! Drag each activity into the 'I can' or 'I can't' box. This is based on Workbook page 18.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "18",
+          "compensates": "Workbook page 18, Section A and C. This digitizes the self-assessment and writing task.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              "hop",
+              "run fast",
+              "swim",
+              "ride a bicycle",
+              "touch my toes"
+            ],
+            "categories": [
+              {
+                "name": "I can",
+                "items": []
+              },
+              {
+                "name": "I can't",
+                "items": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "6a378a82-e4ec-4edf-a757-570030fe1130",
+      "lesson_title": "3.13",
+      "lesson_number": 13,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "9c3c1b59-7a00-4234-9bd1-25deacbffa28",
+          "activity_type": "flashcard",
+          "title": "Lesson Vocabulary",
+          "instruction": "Learn the new words for this lesson. Interact with the screen! 🖱️ Interact with the screen! 🖱️ Click to to to see the meaning and listen to the word.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "17",
+          "compensates": "Teacher-led vocabulary presentation using flashcards.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "fish",
+                "audio": "fish.mp3",
+                "image": null,
+                "example": "A fish can swim.",
+                "imageUrl": "/media/g10/g10_u3_l3.13_flsh_act0_i0.png",
+                "definition": "An animal that lives in water. (سَمَكَة)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "camel",
+                "audio": "camel.mp3",
+                "image": null,
+                "example": "You can ride a camel.",
+                "imageUrl": "/media/g10/g10_u3_l3.13_flsh_act0_i1.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.13_flsh_act0_a1.mp3",
+                "definition": "A large animal that lives in the desert. (جَمَل)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "bird",
+                "audio": "bird.mp3",
+                "image": null,
+                "example": "A bird can sing.",
+                "imageUrl": "/media/g10/g10_u3_l3.13_flsh_act0_i2.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.13_flsh_act0_a2.mp3",
+                "definition": "An animal with feathers and wings that can fly. (طَائِر)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "cat",
+                "audio": "cat.mp3",
+                "image": null,
+                "example": "A cat can climb.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/g7_u3_l3_13_flsh_act0_i3.png",
+                "definition": "A small animal that is often kept as a pet. (قِطَّة)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "legs",
+                "audio": "legs.mp3",
+                "image": null,
+                "example": "A camel has got 4 legs.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/g7_u3_l3_13_flsh_act0_i4.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.13_flsh_act0_a4.mp3",
+                "definition": "The parts of the body used for standing and walking. (أَرْجُل)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "hands",
+                "audio": "hands.mp3",
+                "image": null,
+                "example": "A bird hasn't got hands.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/g7_u3_l3_13_flsh_act0_i5.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/audio/g7_u3_l3.13_flsh_act0_a5.mp3",
+                "definition": "The parts of the body at the end of the arms. (أَيْدِي)",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "ec524281-5ab7-452b-add1-a1110f28a7cc",
+          "activity_type": "mcq",
+          "title": "What is it? Reading Quiz",
+          "instruction": "Read the description and Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for the correct animal.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "19",
+          "compensates": "Teacher-led 'Read silently' activity from the Teacher Guide.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "images": [
+              {
+                "idx": 0,
+                "url": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/g7_u3_l3_13_mcq_act1_i0.png"
+              },
+              {
+                "idx": 1,
+                "url": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/g7_u3_l3_13_mcq_act1_i1.png"
+              },
+              {
+                "idx": 2,
+                "url": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/g7_u3_l3_13_mcq_act1_i2.png"
+              },
+              {
+                "idx": 3,
+                "url": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u3/images/g7_u3_l3_13_mcq_act1_i3.png"
+              }
+            ],
+            "questions": [
+              {
+                "image": null,
+                "options": [
+                  {
+                    "text": "bird",
+                    "feedback": "Correct! Birds can sing and hop.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "cat",
+                    "feedback": "Try again. Cats can't sing.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "fish",
+                    "feedback": "Try again. Fish can't hop.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "It hasn't got hands. It can sing and it can hop.",
+                "explanation": "The description matches the bird."
+              },
+              {
+                "image": null,
+                "options": [
+                  {
+                    "text": "camel",
+                    "feedback": "Excellent! You can ride a camel.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "cat",
+                    "feedback": "Almost! You can't ride a cat.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "bird",
+                    "feedback": "Try again. Birds don't have 4 legs.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "It has got 4 legs. It can run fast. You can ride it.",
+                "explanation": "The description matches the camel."
+              },
+              {
+                "image": null,
+                "options": [
+                  {
+                    "text": "cat",
+                    "feedback": "Great job! Cats are good climbers.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "camel",
+                    "feedback": "Try again. Camels are not known for climbing.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "fish",
+                    "feedback": "Try again. Fish don't have legs.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "It has got 4 legs. It can run fast and it can climb.",
+                "explanation": "The description matches the cat."
+              },
+              {
+                "image": null,
+                "options": [
+                  {
+                    "text": "fish",
+                    "feedback": "Perfect! Fish live in water and swim.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "bird",
+                    "feedback": "Try again. Birds have legs.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "cat",
+                    "feedback": "Try again. Cats have legs.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "It hasn't got legs. It can't walk, but it can swim.",
+                "explanation": "The description matches the fish."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "42accf2d-c2d7-4559-843e-abdab0e8dc80",
+          "activity_type": "gap-fill",
+          "title": "Grammar Practice: Describing Animals",
+          "instruction": "Complete the sentences using the words from the lesson.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "19",
+          "compensates": "Workbook exercises and teacher-led grammar checks.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "A fish ___ got legs.",
+                "blanks": [
+                  {
+                    "hint": "Use 'has not'.",
+                    "answer": "hasn't",
+                    "alternatives": [
+                      "has not"
+                    ]
+                  }
+                ],
+                "explanation": "We use 'hasn't got' to show something is missing for a singular noun (fish)."
+              },
+              {
+                "text": "A bird ___ sing.",
+                "blanks": [
+                  {
+                    "hint": "What is it able to do?",
+                    "answer": "can",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'can' to talk about ability."
+              },
+              {
+                "text": "A camel ___ 4 legs.",
+                "blanks": [
+                  {
+                    "hint": "What does it have?",
+                    "answer": "has got",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'has got' to show possession for a singular noun (camel)."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "1258e42d-91f4-4369-9caa-751ec1337a63",
+          "activity_type": "mcq",
+          "title": "Grammar: has got / have got",
+          "instruction": "Use your eyes! 🧐 Look closely at the at the picture and Take a closer look! 📝 Pick the best option for the correct words to complete the sentence. Based on Workbook page 19.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "19",
+          "compensates": "Workbook Exercise A, page 19.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/961.png",
+                "options": [
+                  {
+                    "text": "has got",
+                    "feedback": "Correct! 'He' uses 'has got'.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "has not got",
+                    "feedback": "Look again, he is holding a camera.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "He ___ a camera.",
+                "explanation": "We use 'has got' for singular subjects like 'He'. The picture shows he has a camera."
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/962.png",
+                "options": [
+                  {
+                    "text": "has got",
+                    "feedback": "Correct! The table has legs.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "has not got",
+                    "feedback": "Look again, the table has four legs.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "It ___ legs.",
+                "explanation": "We use 'has got' for singular subjects like 'It'. The picture shows the table has legs."
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/963.png",
+                "options": [
+                  {
+                    "text": "have got",
+                    "feedback": "Correct! 'They' uses 'have got'.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "have not got",
+                    "feedback": "Look again, they are in a boat.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "They ___ a boat.",
+                "explanation": "We use 'have got' for plural subjects like 'They'. The picture shows they have a boat."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "8087eed4-abf8-4cfe-902e-0d2e0dfe031c",
+          "activity_type": "gap-fill",
+          "title": "Grammar: can / can't",
+          "instruction": "Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture and fill in the blank with 'can' or 'can't'. Based on Workbook page 19.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "19",
+          "compensates": "Workbook Exercise B, page 19.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "He ___ touch his toes.",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/964.png",
+                "blanks": [
+                  {
+                    "hint": "Is he able to do it?",
+                    "answer": "can't",
+                    "alternatives": [
+                      "can not"
+                    ]
+                  }
+                ],
+                "explanation": "The picture shows he is trying but is unable to touch his toes, so we use 'can't'."
+              },
+              {
+                "text": "She ___ ride a bicycle.",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/965.png",
+                "blanks": [
+                  {
+                    "hint": "Is she able to do it?",
+                    "answer": "can",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The picture shows she is riding a bicycle, so she has the ability. We use 'can'."
+              },
+              {
+                "text": "They ___ walk.",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/966.png",
+                "blanks": [
+                  {
+                    "hint": "Are flowers able to walk?",
+                    "answer": "can't",
+                    "alternatives": [
+                      "can not"
+                    ]
+                  }
+                ],
+                "explanation": "Flowers are plants and do not have the ability to walk, so we use 'can't'."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "01c33e58-cf43-49d6-8922-db74175db732",
+          "activity_type": "word-order",
+          "title": "Make Sentences",
+          "instruction": "Drag the words into the correct order to make a sentence.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "19",
+          "compensates": "Sentence writing practice on the board.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "correctOrder": [
+                  "A",
+                  "bird",
+                  "can",
+                  "sing",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "A",
+                  "camel",
+                  "has",
+                  "got",
+                  "4",
+                  "legs",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "A",
+                  "fish",
+                  "can't",
+                  "walk",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "A",
+                  "cat",
+                  "can",
+                  "climb",
+                  "."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "828a2c36-a747-432d-82f2-0de9eaf876a3",
+          "activity_type": "pronunciation-practice",
+          "title": "Practice Your Pronunciation",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to each word and practice saying it out loud. Record yourself and compare.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "17",
+          "compensates": "Teacher-led pronunciation drills.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "camera",
+                "audioSrc": "/media/audio/g7_u3_l3.13_pro_6_w0.mp3",
+                "phonetic": "/ˈkæmərə/",
+                "syllables": [
+                  "ca",
+                  "me",
+                  "ra"
+                ]
+              },
+              {
+                "word": "bicycle",
+                "audioSrc": "/media/audio/g7_u3_l3.13_pro_6_w1.mp3",
+                "phonetic": "/ˈbaɪsɪkl/",
+                "syllables": [
+                  "bi",
+                  "cy",
+                  "cle"
+                ]
+              },
+              {
+                "word": "can't",
+                "audioSrc": "/media/audio/g7_u3_l3.13_pro_6_w2.mp3",
+                "phonetic": "/kænt/",
+                "syllables": [
+                  "can't"
+                ]
+              },
+              {
+                "word": "hasn't",
+                "audioSrc": "/media/audio/g7_u3_l3.13_pro_6_w3.mp3",
+                "phonetic": "/ˈhæznt/",
+                "syllables": [
+                  "has",
+                  "n't"
+                ]
+              },
+              {
+                "word": "haven't",
+                "audioSrc": "/media/audio/g7_u3_l3.13_pro_6_w4.mp3",
+                "phonetic": "/ˈhævnt/",
+                "syllables": [
+                  "ha",
+                  "ven't"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "781374bd-556e-4247-a1c0-e16a635260eb",
+          "activity_type": "dictation",
+          "title": "Listen and Type",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the sentence and type what you hear.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "19",
+          "compensates": "Teacher-led dictation exercise.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "hints": [
+                  "Starts with 'He'"
+                ],
+                "audioSrc": "/media/audio/g7_u3_l3.13_dic_7_s0.mp3",
+                "difficulty": "sentence",
+                "expectedText": "He has got a camera."
+              },
+              {
+                "hints": [
+                  "Starts with 'She'"
+                ],
+                "audioSrc": "/media/audio/g7_u3_l3.13_dic_7_s1.mp3",
+                "difficulty": "sentence",
+                "expectedText": "She can ride a bicycle."
+              },
+              {
+                "hints": [
+                  "Starts with 'They'"
+                ],
+                "audioSrc": "/media/audio/g7_u3_l3.13_dic_7_s2.mp3",
+                "difficulty": "sentence",
+                "expectedText": "They have not got a car."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "b62c470f-3750-4dea-8190-7712ed1ba5c1",
+      "lesson_title": "3.14",
+      "lesson_number": 14,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "9a611cb1-ef41-42b3-a38c-9dbd75857ac5",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 13)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "18",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "8e680c8a-074a-435f-8861-5573da6210b1",
+          "activity_type": "flashcard",
+          "title": "New Words: The Camera Story",
+          "instruction": "Learn the new words from the story. Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the word and the example sentence.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "18",
+          "compensates": "Teacher explaining new vocabulary from the board.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "find",
+                "example": "I can't find my camera.",
+                "imageUrl": "/media/g10/g10_u3_l3.14_flsh_act0_i0.png",
+                "definition": "to discover something you are looking for. (يَجِد)",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "ask",
+                "example": "Ask your mother.",
+                "imageUrl": "/media/g10/g10_u3_l3.14_flsh_act0_i1.png",
+                "definition": "to say something to someone to get an answer. (يَسْأَل)",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "maybe",
+                "example": "Maybe she's got it.",
+                "imageUrl": "/media/g10/g10_u3_l3.14_flsh_act0_i2.png",
+                "definition": "used to show that something is possible. (رُبَّمَا)",
+                "partOfSpeech": "adverb"
+              },
+              {
+                "word": "camera",
+                "image": "gen-camera-icon",
+                "example": "Where's my camera?",
+                "imageUrl": "/media/g10/g10_u3_l3.14_flsh_act0_i3.png",
+                "definition": "a device for taking photographs. (كَامِيرَا)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "Dad",
+                "example": "Fatma asks her Dad.",
+                "imageUrl": "/media/g10/g10_u3_l3.14_flsh_act0_i4.png",
+                "definition": "an informal word for father. (أَبِي)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "Mum",
+                "example": "Fatma asks her Mum.",
+                "imageUrl": "/media/g10/g10_u3_l3.14_flsh_act0_i5.png",
+                "definition": "an informal word for mother. (أُمِّي)",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "013f5534-1fe2-4c23-a138-c7eae3871e17",
+          "activity_type": "dialogue-read",
+          "title": "Read the Story: Who has got Fatma's camera?",
+          "instruction": "Read and listen to the story from your Pupil's Book page 18. Interact with the screen! 🖱️ Interact with the screen! 🖱️ Click to to on the speech bubbles to hear the characters.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "18",
+          "compensates": "Teacher playing the cassette (CS13) and having students read aloud in class.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "dialogue": [
+              {
+                "text": "Dad, where's my camera? I can't find it.",
+                "speaker": "Fatma"
+              },
+              {
+                "text": "I haven't got it. Ask your mother. Maybe she's got it.",
+                "speaker": "Dad"
+              },
+              {
+                "text": "Mum, where's my camera? I can't find it.",
+                "speaker": "Fatma"
+              },
+              {
+                "text": "I haven't got it. Ask your brother. Maybe he's got it.",
+                "speaker": "Mum"
+              },
+              {
+                "text": "Hassan, where's my camera?",
+                "speaker": "Fatma"
+              },
+              {
+                "text": "Amna's got it.",
+                "speaker": "Hassan"
+              },
+              {
+                "text": "Amna! Oh, no!",
+                "speaker": "Fatma"
+              }
+            ],
+            "comprehension": []
+          }
+        },
+        {
+          "activity_id": "e5787c34-9ee9-4b9a-a105-58554747ffc2",
+          "activity_type": "mcq",
+          "title": "Check Your Understanding",
+          "instruction": "Read the story again, then Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for the correct answer for each question.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "20",
+          "compensates": "Teacher asking comprehension questions to the class after reading.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Her book",
+                    "feedback": "Not quite. She is looking for something she takes pictures with.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Her camera",
+                    "feedback": "Correct! She can't find her camera.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Her phone",
+                    "feedback": "Try again. The story is about her camera.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What is Fatma looking for?",
+                "explanation": "In the first panel, Fatma asks, 'Dad, where's my camera?'"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Her Mum",
+                    "feedback": "She asks her Mum second.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Her brother, Hassan",
+                    "feedback": "She asks Hassan after her Mum.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Her Dad",
+                    "feedback": "That's right! She asks her Dad first.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Who does Fatma ask first?",
+                "explanation": "The first panel shows Fatma talking to her Dad."
+              },
+              {
+                "options": [
+                  {
+                    "text": "Hassan",
+                    "feedback": "Hassan tells Fatma who has it.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Her Dad",
+                    "feedback": "Her Dad doesn't have it.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Her sister, Amna",
+                    "feedback": "Correct! Hassan says, 'Amna's got it.'",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Who has got the camera at the end?",
+                "explanation": "In the third panel, Hassan tells Fatma that Amna has the camera."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "6ef9402b-6f06-47e3-8bd4-9f60aa09996f",
+          "activity_type": "word-order",
+          "title": "Make Sentences from the Story",
+          "instruction": "Drag the words into the correct order to make sentences from the story. Remember to start with a capital letter and end with a full stop.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "20",
+          "compensates": "Teacher-led sentence construction practice.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "correctOrder": [
+                  "I",
+                  "can't",
+                  "find",
+                  "it",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "Maybe",
+                  "she's",
+                  "got",
+                  "it",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "Ask",
+                  "your",
+                  "brother",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "Amna's",
+                  "got",
+                  "it",
+                  "."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "2d8f37f6-2d03-4c0d-abf4-757881e820bd",
+          "activity_type": "word-order",
+          "title": "Workbook Practice: Re-order Sentences",
+          "instruction": "Drag the words into the correct order to make sentences. This is from page 20 of your Workbook.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "20",
+          "compensates": "Workbook page 20, Activity 3.14: Re-order and write.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "correctOrder": [
+                  "Fatma",
+                  "can",
+                  "not",
+                  "find",
+                  "her",
+                  "camera",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "Her",
+                  "father",
+                  "and",
+                  "mother",
+                  "have",
+                  "not",
+                  "got",
+                  "it",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "Her",
+                  "brother",
+                  "has",
+                  "not",
+                  "got",
+                  "it",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "Her",
+                  "small",
+                  "sister",
+                  "has",
+                  "got",
+                  "it",
+                  "."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "608ca0de-9d66-46c0-ad34-dd26fa634ee9",
+          "activity_type": "gap-fill",
+          "title": "Complete the Sentences",
+          "instruction": "Complete the sentences using the words: find, ask, maybe.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "20",
+          "compensates": "Teacher-led practice exercises for new vocabulary.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "Fatma can't ___ her camera.",
+                "blanks": [
+                  {
+                    "hint": "What is she trying to do?",
+                    "answer": "find",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "She is looking for her camera, so she can't 'find' it."
+              },
+              {
+                "text": "Dad says, '___ your mother.'",
+                "blanks": [
+                  {
+                    "hint": "What should she do to get information from her mother?",
+                    "answer": "Ask",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "He tells her to speak to her mother to get an answer."
+              },
+              {
+                "text": "Mum says, '___ he's got it.'",
+                "blanks": [
+                  {
+                    "hint": "She is not sure, it's a possibility.",
+                    "answer": "Maybe",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "'Maybe' means it is possible that her brother has the camera."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "b2c47b07-0aee-4797-b253-9404668c5351",
+          "activity_type": "pronunciation-practice",
+          "title": "Practice Speaking",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the phrases from the story. Then, record yourself saying them.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "18",
+          "compensates": "Teacher modeling pronunciation and class repetition drills.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "I can't find it.",
+                "phonetic": "/aɪ kænt faɪnd ɪt/",
+                "syllables": [
+                  "I",
+                  "can't",
+                  "find",
+                  "it"
+                ]
+              },
+              {
+                "word": "Maybe she's got it.",
+                "phonetic": "/ˈmeɪbi ʃiz gɒt ɪt/",
+                "syllables": [
+                  "May",
+                  "be",
+                  "she's",
+                  "got",
+                  "it"
+                ]
+              },
+              {
+                "word": "Oh, no!",
+                "phonetic": "/oʊ noʊ/",
+                "syllables": [
+                  "Oh,",
+                  "no!"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "e9f32a8e-bd0f-4ebf-9512-102afc28f930",
+          "activity_type": "picture-description",
+          "title": "Describe the Last Picture",
+          "instruction": "Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the last picture of the story. Answer the questions to describe what is happening.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "18",
+          "compensates": "Teacher asking students to interpret the pictures and describe them.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/54.png",
+            "keywords": [
+              "Fatma",
+              "Amna",
+              "camera",
+              "broken",
+              "sad",
+              "shocked"
+            ],
+            "sampleAnswers": [
+              "I can see Fatma and her little sister, Amna.",
+              "The camera is broken. Amna took the film out.",
+              "Fatma feels shocked and sad. Amna looks upset."
+            ],
+            "promptQuestions": [
+              "Who can you see in the last picture?",
+              "What happened to the camera?",
+              "How does Fatma feel? How does Amna feel?"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "0e39f5d5-0206-440f-97f5-acbf55db2127",
+      "lesson_title": "3.15",
+      "lesson_number": 15,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "78d2e6ef-02ef-42b4-b60b-d31a5d077388",
+          "activity_type": "gap-fill",
+          "title": "Workbook Practice: Complete the Words",
+          "instruction": "Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture and fill in the missing letters to complete the words. This is from page 20 of your Workbook.",
+          "difficulty": "beginner",
+          "book_type": null,
+          "book_page": null,
+          "compensates": "Workbook page 20, Activity 3.15 A: Read and write the letters.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "A f__sh can sw__m.",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/967.png",
+                "blanks": [
+                  {
+                    "answer": "i"
+                  },
+                  {
+                    "answer": "i"
+                  }
+                ],
+                "explanation": "A fish can swim in the water."
+              },
+              {
+                "text": "He can r__de a b__ke.",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/968.png",
+                "blanks": [
+                  {
+                    "answer": "i"
+                  },
+                  {
+                    "answer": "i"
+                  }
+                ],
+                "explanation": "He can ride his bike."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

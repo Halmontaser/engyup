@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate, Outlet } from "react-router-dom";
-import { LayoutDashboard, BookOpen, FileText, LogOut, Menu, ChevronLeft, Loader2 } from "lucide-react";
+import { LayoutDashboard, BookOpen, FileText, LogOut, Menu, ChevronLeft, Loader2, Users } from "lucide-react";
 import { isAdmin, clearAdminAuth } from "@/lib/auth";
 import { useAuth } from "@/context/AuthContext";
 import { canEditActivities } from "@/lib/permissions";
@@ -43,6 +43,7 @@ export default function AdminLayout({ children }: { children?: React.ReactNode }
     { name: 'Dashboard', to: '/admin', icon: LayoutDashboard },
     { name: 'Lessons', to: '/admin/lessons', icon: BookOpen },
     { name: 'Activities', to: '/admin/activities', icon: FileText },
+    { name: 'Partners', to: '/admin/partners', icon: Users },
   ];
 
   // Loading state

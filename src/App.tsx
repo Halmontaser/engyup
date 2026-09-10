@@ -1,4 +1,4 @@
-﻿import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { AuthPage } from './pages/AuthPage';
 import { Dashboard } from './pages/Dashboard';
@@ -27,6 +27,7 @@ import NewActivityPage from './app/admin/activities/new/[type]/page';
 import ActivityEditorPage from './app/admin/activities/[id]/page';
 import LessonsPage from './app/admin/lessons/page';
 import LessonEditorPage from './app/admin/lessons/[id]/page';
+import PartnersPage from './app/admin/partners/page';
 
 function AppContent() {
   const { user, profile, loading } = useAuth();
@@ -87,6 +88,7 @@ function AppContent() {
           <Route path="/admin/lessons" element={<LessonsPage />} />
           <Route path="/admin/lessons/new" element={<LessonEditorPage />} />
           <Route path="/admin/lessons/:id" element={<LessonEditorPage />} />
+          <Route path="/admin/partners" element={<PartnersPage />} />
         </Route>
 
         <Route path="/*" element={<Dashboard />} />

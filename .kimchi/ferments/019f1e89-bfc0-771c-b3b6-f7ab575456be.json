@@ -1,0 +1,70 @@
+{
+  "id": "019f1e89-bfc0-771c-b3b6-f7ab575456be",
+  "name": "Create a Supabase PostgreSQL migration that adds a reusable function (`reorder_a",
+  "description": "Create a Supabase PostgreSQL migration that adds a reusable function (`reorder_activities_pedagogical`) which reorders every activity inside every lesson according to the difficulty hierarchy and 4-phase flow defined in `.kimchi/docs/english_curriculum_expert.md`.",
+  "status": "paused",
+  "worktree": {
+    "path": "/home/harby/projects/engyup",
+    "branch": "main",
+    "commit": "2869eb5aeaa801f159228303079911a093db3347"
+  },
+  "scoping": {
+    "goal": {
+      "answer": "Create a Supabase PostgreSQL migration that adds a reusable function (`reorder_activities_pedagogical`) which reorders every activity inside every lesson according to the difficulty hierarchy and 4-phase flow defined in `.kimchi/docs/english_curriculum_expert.md`.",
+      "confirmedAt": "2026-07-01T16:36:11.852Z"
+    },
+    "constraints": {
+      "answer": "**Supabase/PostgreSQL only** — no changes to the local SQLite `components.db`., Applies to **all grades 7–12** (every lesson in the `activities` table)., Preserves every `activity_id` and its data; only `order_index` changes., Follows the existing `english_curriculum_expert.md` rules (Input → Guided Practice → Application → Production)., Must include a **dry-run/preview mode**., Must return a clear summary JSONB., Must not conflict with existing `reorder_activity(...)` / `reorder_all_listening_first()` functions.",
+      "confirmedAt": "2026-07-01T16:36:11.852Z"
+    },
+    "phases": {
+      "answer": "Create a Supabase PostgreSQL migration that adds a reusable function (`reorder_a",
+      "confirmedAt": "2026-07-01T16:36:11.852Z"
+    }
+  },
+  "phases": [
+    {
+      "id": "phase-1",
+      "index": 1,
+      "name": "Create a Supabase PostgreSQL migration that adds a reusable function (`reorder_a",
+      "goal": "Create a Supabase PostgreSQL migration that adds a reusable function (`reorder_activities_pedagogical`) which reorders every activity inside every lesson according to the difficulty hierarchy and 4-phase flow defined in `.kimchi/docs/english_curriculum_expert.md`.",
+      "description": "",
+      "parallel": false,
+      "status": "active",
+      "steps": [
+        {
+          "id": "step-1",
+          "index": 1,
+          "description": "Chunk 1 — Pedagogical reorder function migration\n**Scope:** Create `src/supabase/migrations/0003_reorder_activities_pedagogical.sql`.\n\n**Files Changed:**\n- `src/supabase/migrations/0003_reorder_activities_pedagogical.sql` (new)\n\n**Depends On:** None.\n\n**Accept When:**\n- Function `reorder_activities_pedagogical(p_dry_run BOOLEAN DEFAULT FALSE)` exists and compiles.\n- Every activity type is mapped to a phase and a rank:\n  - Phase 0 (non-Crescent intro): `video`, `html`, `link`, `quiz`, `challenge`, `flashcards`, `text`, `pdf`, `embed` — kept at the start, stable relative order.\n  - Phase 1 (Input/Exposure): `flashcard`, `pronunciation-practice`, `listening-comprehension`.\n  - Phase 2 (Guided Practice): `image-label`, `guessing-game`, `mcq`, `true-false`, `match-pairs`, `word-order`, `reading-sequence`.\n  - Phase 3 (Application): `category-sort`, `gap-fill`, `reading-passage`.\n  - Phase 4 (Production): `dialogue-read`, `transform-sentence`, `conversation-sim`, `picture-description`, `dictation`, `spelling-bee`.\n- Type aliases mapped: `sentence-builder` → `word-order`, `word-association` → `match-pairs`.\n- Sorting is stable within each rank using the original `order_index` as tie-breaker.\n- Dry-run mode returns the same summary as apply mode but performs no `UPDATE`.\n- Summary JSONB includes: `dry_run`, `lessons_processed`, `activities_reordered`, `already_correct`, `skipped_empty`, `unknown_types_seen`.\n\n**Test Coverage:** A manual dry-run query against a development Supabase instance: `SELECT reorder_activities_pedagogical(true);`\n\n**Open Questions:** None.\n\n**Complexity:** complex — multiple SQL CTEs/loops, stable sorting, dry-run vs. apply branching.",
+          "status": "pending",
+          "parallel": false,
+          "startedAt": "2026-07-01T16:37:02.697Z"
+        },
+        {
+          "id": "step-2",
+          "index": 2,
+          "description": "Chunk 2 — Invocation helper and documentation\n**Scope:** Add a small SQL snippet / README note showing how to preview and apply the reorder.\n\n**Files Changed:**\n- `src/supabase/migrations/0003_reorder_activities_pedagogical.sql` (append usage comment at top)\n- Optional: `prompts/activity_reordering.md` (new) with usage examples and rollback guidance\n\n**Depends On:** Chunk 1.\n\n**Accept When:**\n- A developer can copy a single SQL command to preview changes: `SELECT reorder_activities_pedagogical(true);`\n- A second command applies changes: `SELECT reorder_activities_pedagogical(false);`\n- Document explains that the function is idempotent and safe to re-run.\n\n**Test Coverage:** Not applicable (docs only).\n\n**Open Questions:** None.\n\n**Complexity:** simple.",
+          "status": "pending",
+          "parallel": false
+        }
+      ],
+      "startedAt": "2026-07-01T16:36:11.859Z"
+    }
+  ],
+  "decisions": [],
+  "memories": [],
+  "createdAt": "2026-07-01T16:36:11.840Z",
+  "updatedAt": "2026-07-01T21:00:01.521Z",
+  "goal": "Create a Supabase PostgreSQL migration that adds a reusable function (`reorder_activities_pedagogical`) which reorders every activity inside every lesson according to the difficulty hierarchy and 4-phase flow defined in `.kimchi/docs/english_curriculum_expert.md`.",
+  "constraints": [
+    "**Supabase/PostgreSQL only** — no changes to the local SQLite `components.db`.",
+    "Applies to **all grades 7–12** (every lesson in the `activities` table).",
+    "Preserves every `activity_id` and its data; only `order_index` changes.",
+    "Follows the existing `english_curriculum_expert.md` rules (Input → Guided Practice → Application → Production).",
+    "Must include a **dry-run/preview mode**.",
+    "Must return a clear summary JSONB.",
+    "Must not conflict with existing `reorder_activity(...)` / `reorder_all_listening_first()` functions."
+  ],
+  "lastActiveAt": "2026-07-01T16:36:11.859Z",
+  "activePhaseId": "phase-1"
+}

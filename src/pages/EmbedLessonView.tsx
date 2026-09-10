@@ -1,4 +1,4 @@
-﻿import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { StudyModeProvider } from '@/context/StudyModeContext';
 import LessonPlayer from '@/components/player/LessonPlayer';
 import type { CourseHierarchy, HierarchicalPosition, ActivityNode } from '@/types/courseHierarchy';
@@ -8,8 +8,31 @@ export function EmbedLessonView() {
   const [hierarchy, setHierarchy] = useState<CourseHierarchy | null>(null);
   const [currentPosition, setCurrentPosition] = useState<HierarchicalPosition | null>(null);
   const [loading, setLoading] = useState(true);
+  const [embedContext, setEmbedContext] = useState<{
+    partnerId: string;
+    externalUserId: string;
+    mappingId: string;
+  } | null>(null);
 
   useEffect(() => {
+    // Validate embed token from URL
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get('token');
+    if (token) {
+      try {
+        const payload = JSON.parse(atob(token));
+        if (payload.exp && payload.exp > Date.now()) {
+          setEmbedContext({
+            partnerId: payload.partnerId,
+            externalUserId: payload.externalUserId,
+            mappingId: payload.mappingId
+          });
+        }
+      } catch (e) {
+        console.warn('Invalid embed token');
+      }
+    }
+
     // Notify parent window that Engyup is ready to receive data
     window.parent.postMessage({ type: 'ENGYUP_READY' }, '*');
 
@@ -96,7 +119,16 @@ export function EmbedLessonView() {
         })),
       };
     });
-  }, []);
+
+    window.parent.postMessage({
+      type: 'ENGYUP_ACTIVITY_COMPLETE',
+      payload: {
+        activityId,
+        externalUserId: embedContext?.externalUserId,
+        timestamp: new Date().toISOString()
+      }
+    }, '*');
+  }, [embedContext]);
 
   if (loading) {
     return (

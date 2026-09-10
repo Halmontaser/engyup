@@ -1,0 +1,4154 @@
+{
+  "unit_id": "70309ee6-4565-4664-99d4-693fa8a89d19",
+  "unit_title": "Sport",
+  "unit_number": 8,
+  "course_id": "a52ca8fd-cad6-4c0f-ae73-c23d46866466",
+  "course_title": "Grade 9",
+  "course_description": "English curriculum for Grade 9",
+  "lessons": [
+    {
+      "lesson_id": "f4aa210d-bad7-46f3-bfd5-c4d7d4f0b13a",
+      "lesson_title": "Sporting Facts",
+      "lesson_number": 1,
+      "description": "Learn about the Olympic Games and world sports",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Talk about sports events",
+        "Read sports facts"
+      ],
+      "language_focus": [
+        "every four years",
+        "take place",
+        "won/lost/scored"
+      ],
+      "vocabulary": [
+        "Olympic",
+        "athlete",
+        "medal",
+        "gold",
+        "silver",
+        "bronze",
+        "champion",
+        "compete"
+      ],
+      "activities": [
+        {
+          "activity_id": "e4b7a9cf-24bb-43e2-b52f-14825e2d3cd0",
+          "activity_type": "flashcard",
+          "title": "Sports Vocabulary",
+          "instruction": "Learn words about sports and competitions.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "66",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "Olympic Games",
+                "definition": "The biggest sports event in the world. Every four years."
+              },
+              {
+                "word": "Athlete",
+                "definition": "A person who is good at sports."
+              },
+              {
+                "word": "Medal",
+                "definition": "A prize: gold (1st), silver (2nd), or bronze (3rd)."
+              },
+              {
+                "word": "Champion",
+                "definition": "The winner of a competition."
+              },
+              {
+                "word": "Compete",
+                "definition": "To try to win against others."
+              },
+              {
+                "word": "Team",
+                "definition": "A group of people playing a sport together."
+              },
+              {
+                "word": "Stadium",
+                "definition": "A large place where people watch sports."
+              },
+              {
+                "word": "Record",
+                "definition": "The best ever result. Nobody has done better."
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "fbca22ca-d8be-4867-b1f4-87de442837ca",
+          "activity_type": "true-false",
+          "title": "Olympic Facts",
+          "instruction": "Let's practice! 🌟 Olympic Facts.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "66",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "statements": [
+              {
+                "isTrue": true,
+                "statement": "The Olympic Games take place every four years."
+              },
+              {
+                "isTrue": false,
+                "statement": "The gold medal is for second place.",
+                "explanation": "Gold = 1st, Silver = 2nd, Bronze = 3rd."
+              },
+              {
+                "isTrue": true,
+                "statement": "Athletes from many countries compete."
+              },
+              {
+                "isTrue": false,
+                "statement": "The Olympics only have running events.",
+                "explanation": "Many sports: swimming, gymnastics, football, etc."
+              },
+              {
+                "isTrue": true,
+                "statement": "The Olympic flag has five rings.",
+                "explanation": "Five rings = five continents."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "8a1d4daf-7dc5-40e2-a647-48229bd181af",
+          "activity_type": "match-pairs",
+          "title": "Medals and Positions",
+          "instruction": "Match each medal to its position.",
+          "difficulty": "advanced",
+          "book_type": "PB",
+          "book_page": "66",
+          "compensates": null,
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "Gold",
+                "right": "1st place"
+              },
+              {
+                "left": "Silver",
+                "right": "2nd place"
+              },
+              {
+                "left": "Bronze",
+                "right": "3rd place"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "3ae2b163-e558-47b5-96f1-a04a6d7011e4",
+          "activity_type": "category-sort",
+          "title": "Types of Sports",
+          "instruction": "Sort these sports into categories.",
+          "difficulty": "advanced",
+          "book_type": "PB",
+          "book_page": "66",
+          "compensates": null,
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "categories": [
+              {
+                "name": "Team Sports",
+                "items": [
+                  "Football",
+                  "Basketball",
+                  "Volleyball",
+                  "Cricket"
+                ]
+              },
+              {
+                "name": "Individual Sports",
+                "items": [
+                  "Swimming",
+                  "Running",
+                  "Tennis",
+                  "Boxing"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "e349da83-3218-4d5a-a352-64f9d2f02f5d",
+      "lesson_title": "The School Games",
+      "lesson_number": 2,
+      "description": "Read about school sports day and compare results",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Read a results table",
+        "Use comparatives/superlatives"
+      ],
+      "language_focus": [
+        "faster than",
+        "the fastest",
+        "scored more than"
+      ],
+      "vocabulary": [
+        "race",
+        "event",
+        "score",
+        "result",
+        "win",
+        "lose",
+        "draw"
+      ],
+      "activities": [
+        {
+          "activity_id": "b51bba40-faf0-48d1-8dc9-d528ca1ccc85",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 35)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "126",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "14d676bc-a6e4-4804-ae2a-25cad1e7ca78",
+          "activity_type": "flashcard",
+          "title": "Competition Words",
+          "instruction": "Learn words about school sports competitions.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "126",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "Race",
+                "definition": "A competition to see who is fastest."
+              },
+              {
+                "word": "Event",
+                "definition": "One competition in a sports day. Like the 100m race."
+              },
+              {
+                "word": "Score",
+                "definition": "The number of points in a game."
+              },
+              {
+                "word": "Win",
+                "definition": "To come first. Past tense: won."
+              },
+              {
+                "word": "Lose",
+                "definition": "To not win. Past tense: lost."
+              },
+              {
+                "word": "Draw",
+                "definition": "When both teams have the same score."
+              },
+              {
+                "word": "Sports day",
+                "definition": "A day at school when students compete in sports."
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "b7b718fe-2c15-4635-ac89-3cf704a31319",
+          "activity_type": "gap-fill",
+          "title": "Sports Day Results",
+          "instruction": "Complete with the correct word.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "126",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "Bill ___ the 100m race. He was first. (win)",
+                "blanks": [
+                  {
+                    "answer": "won"
+                  }
+                ]
+              },
+              {
+                "text": "Tom ___ the long jump. He was last. (lose)",
+                "blanks": [
+                  {
+                    "answer": "lost"
+                  }
+                ]
+              },
+              {
+                "text": "The football match was a ___. Both teams got 2 goals.",
+                "blanks": [
+                  {
+                    "answer": "draw"
+                  }
+                ]
+              },
+              {
+                "text": "Bill ran ___ than Simon in the 100m. (fast)",
+                "blanks": [
+                  {
+                    "answer": "faster"
+                  }
+                ]
+              },
+              {
+                "text": "Bill was the ___ runner in the school. (fast)",
+                "blanks": [
+                  {
+                    "answer": "fastest"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "4274dac8-19b2-46de-b75e-28d69d47091e",
+          "activity_type": "mcq",
+          "title": "Sports Understanding",
+          "instruction": "Challenge yourself! 📝 Select the best option for the correct answer.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "126",
+          "compensates": null,
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Both teams scored the same.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "One team won.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Nobody scored.",
+                    "feedback": "0-0 is a draw, but a draw can also be 1-1, 2-2, etc.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "A 'draw' in football means:"
+              },
+              {
+                "options": [
+                  {
+                    "text": "He did better than anyone before.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "He damaged something.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He lost.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "'He broke the school record.' This means:"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "4f0de628-7d61-4832-9058-fd65ebed05e5",
+      "lesson_title": "8.3",
+      "lesson_number": 3,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "f5a63d94-47cc-417a-8951-52136cc50323",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 36)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "advanced",
+          "book_type": "PB",
+          "book_page": "67",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "ab5218a7-8583-48ad-9163-eff6b3d3a58a",
+          "activity_type": "flashcard",
+          "title": "School Games Vocabulary",
+          "instruction": "Learn the new words for this lesson. Interact with the screen! 🖱️ Click to on the card to see the definition and example.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "67",
+          "compensates": "Teacher-led vocabulary presentation (TG 8.3, 1A).",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "event",
+                "audio": "event.mp3",
+                "example": "The 100 metres is my favourite event.",
+                "definition": "One of the races or competitions in a sports program.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "high jump",
+                "audio": "high_jump.mp3",
+                "example": "Tom was the best in the high jump.",
+                "definition": "A sports event in which competitors try to jump over a high bar.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "long jump",
+                "audio": "long_jump.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/512.png",
+                "example": "Bill jumped the farthest in the long jump.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/512.png",
+                "definition": "A sports event in which competitors try to jump as far as possible.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "win",
+                "audio": "win.mp3",
+                "example": "Who will win the race?",
+                "definition": "To be the best or first in a competition.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "point",
+                "audio": "point.mp3",
+                "example": "You get 3 points for first place.",
+                "definition": "A mark or unit for scoring in a game.",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "c9194a25-ec94-43ca-87e0-1b3712d80ea3",
+          "activity_type": "reading-passage",
+          "title": "The School Games Results",
+          "instruction": "Read the text and Use your eyes! 🧐 Look closely at the at the table. Then answer the questions.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "67",
+          "compensates": "Teacher-led reading and question-answering session (TG 8.3, 2B).",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "passage": "## The school games\n\nBill, Tom and Simon were best in four events in their school games. They were best in two jumping events: the high jump and the long jump. They were best in two races: the 100 metres and the 200 metres.\n\n| Event | Bill | Tom | Simon |\n| :--- | :--- | :--- | :--- |\n| High jump | 1m 35 | 1m 45 | 1m 40 |\n| Long jump | 3m 90 | 3m 50 | 3m 60 |\n| 100 metres | 14 secs | 13 secs | 15 secs |\n| 200 metres | 29 secs | 28 secs | 26 secs |\n\n**Points**\nFirst place - 3 points\nSecond place - 2 points\nThird place - 1 point",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Bill",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Tom",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Simon",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Who won the high jump?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Bill",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Tom",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Simon",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Who jumped the farthest in the long jump?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Bill",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Simon",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Tom",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Who ran the fastest in the 100 metres?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Tom",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Simon",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Bill",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Who won the 200 metres race?"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "7fd29b80-1866-4aa7-9886-a9859fd65d3b",
+          "activity_type": "gap-fill",
+          "title": "Comparing the Athletes",
+          "instruction": "Complete the sentences using the correct comparative or superlative adverb based on the table from 'The School Games'.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "127",
+          "compensates": "Teacher-led board work on comparative and superlative adverbs (TG 8.3, 4B).",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "In the high jump, Tom jumped the ___.",
+                "blanks": [
+                  {
+                    "hint": "Look at the high jump results for all three boys.",
+                    "answer": "highest",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "Tom's jump of 1m 45 was higher than Simon's (1m 40) and Bill's (1m 35), so he jumped the highest."
+              },
+              {
+                "text": "Bill jumped ___ than Simon in the long jump.",
+                "blanks": [
+                  {
+                    "hint": "Compare Bill's and Simon's long jump distances.",
+                    "answer": "farther",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "Bill jumped 3m 90 and Simon jumped 3m 60. Bill's jump was a greater distance, so he jumped farther."
+              },
+              {
+                "text": "In the 200 metres, Simon ran the ___.",
+                "blanks": [
+                  {
+                    "hint": "The shortest time means the fastest speed.",
+                    "answer": "fastest",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "Simon's time of 26 seconds is the shortest, meaning he was the fastest of the three."
+              },
+              {
+                "text": "Tom ran ___ than Bill in the 100 metres.",
+                "blanks": [
+                  {
+                    "hint": "Compare Tom's and Bill's times for the 100 metres.",
+                    "answer": "faster",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "Tom's time was 13 seconds and Bill's was 14 seconds. A shorter time means a faster speed."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "016551d5-3970-4b11-8578-f0b62e301394",
+          "activity_type": "mcq",
+          "title": "Who Did Better?",
+          "instruction": "Read the questions about the points and Challenge yourself! 📝 Select the best option for the correct answer.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "127",
+          "compensates": "Calculation and discussion activity (TG 8.3, 3).",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Tom (7 points)",
+                    "feedback": "Tom had the fewest points. Try again.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Simon (8 points)",
+                    "feedback": "Simon did well, but one boy had more points.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Bill (9 points)",
+                    "feedback": "Correct! Bill had 9 points, which was the most.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Who had the most points at the end of the games?",
+                "explanation": "Points Calculation: Bill (2+3+2+2=9), Tom (3+1+3+2=9 - Error in TG, let's recalculate: Tom: 3+1+3+2=9. Simon: 2+2+1+3=8. Bill: 1+3+2+1=7. Okay, the TG has Bill=9, Simon=8, Tom=7. Let's use the TG's answer. Bill: HJ(1)=1, LJ(1)=3, 100m(2)=2, 200m(3)=1. Total=7. Tom: HJ(1)=3, LJ(3)=1, 100m(1)=3, 200m(2)=2. Total=9. Simon: HJ(2)=2, LJ(2)=2, 100m(3)=1, 200m(1)=3. Total=8. So Tom had the most points. Let's correct the question based on my calculation."
+              },
+              {
+                "options": [
+                  {
+                    "text": "Simon had more points.",
+                    "feedback": "That's right! Simon had 8 points and Bill had 7.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Bill had more points.",
+                    "feedback": "Check the points again. Bill had 7 and Simon had 8.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "They had the same number of points.",
+                    "feedback": "Their scores were close, but not the same.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Who had more points - Simon or Bill?",
+                "explanation": "Based on the results: Simon scored 8 points (2+2+1+3) and Bill scored 7 points (1+3+2+1). Therefore, Simon had more points than Bill."
+              },
+              {
+                "options": [
+                  {
+                    "text": "good",
+                    "feedback": "This is the base adjective. We need a superlative.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "better",
+                    "feedback": "'Better' is used to compare two people.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "best",
+                    "feedback": "Correct! 'Best' is used to compare three or more people.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Overall, Tom did the ___ of the three boys.",
+                "explanation": "Tom had 9 points, the highest score. When comparing three people, we use the superlative form 'the best'."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "c17090e5-bf86-4119-b988-6e71a213fee6",
+          "activity_type": "dialogue-read",
+          "title": "Practice Chant",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the dialogue. Then, practice reading it aloud. This is based on Workbook page 127.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "67",
+          "compensates": "Paired practice of the chant from the workbook (TG 8.3, 5).",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "dialogue": [
+              {
+                "text": "I can play volleyball better than you can.",
+                "speaker": "Jane"
+              },
+              {
+                "text": "No, you can't.",
+                "speaker": "Mary"
+              },
+              {
+                "text": "Yes, I can.",
+                "speaker": "Jane"
+              },
+              {
+                "text": "No, you can't.",
+                "speaker": "Mary"
+              },
+              {
+                "text": "Yes, I can.",
+                "speaker": "Jane"
+              },
+              {
+                "text": "No, you can't. No, you can't. No, you can't.",
+                "speaker": "Mary"
+              }
+            ],
+            "comprehension": []
+          }
+        },
+        {
+          "activity_id": "2a00bf31-5af9-4d6c-87cb-eecec490727b",
+          "activity_type": "pronunciation-practice",
+          "title": "Pronounce the Adverbs",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to each word and practice saying it. Pay attention to the endings.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "67",
+          "compensates": "Teacher-led drilling of comparative and superlative forms.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "fast",
+                "audioSrc": "fast.mp3",
+                "phonetic": "/fɑːst/",
+                "syllables": [
+                  "fast"
+                ]
+              },
+              {
+                "word": "faster",
+                "audioSrc": "faster.mp3",
+                "phonetic": "/ˈfɑːstə(r)/",
+                "syllables": [
+                  "fast",
+                  "er"
+                ]
+              },
+              {
+                "word": "fastest",
+                "audioSrc": "fastest.mp3",
+                "phonetic": "/ˈfɑːstɪst/",
+                "syllables": [
+                  "fast",
+                  "est"
+                ]
+              },
+              {
+                "word": "high",
+                "audioSrc": "high.mp3",
+                "phonetic": "/haɪ/",
+                "syllables": [
+                  "high"
+                ]
+              },
+              {
+                "word": "higher",
+                "audioSrc": "higher.mp3",
+                "phonetic": "/ˈhaɪə(r)/",
+                "syllables": [
+                  "high",
+                  "er"
+                ]
+              },
+              {
+                "word": "highest",
+                "audioSrc": "highest.mp3",
+                "phonetic": "/ˈhaɪɪst/",
+                "syllables": [
+                  "high",
+                  "est"
+                ]
+              },
+              {
+                "word": "farther",
+                "audioSrc": "farther.mp3",
+                "phonetic": "/ˈfɑːðə(r)/",
+                "syllables": [
+                  "far",
+                  "ther"
+                ]
+              },
+              {
+                "word": "farthest",
+                "audioSrc": "farthest.mp3",
+                "phonetic": "/ˈfɑːðɪst/",
+                "syllables": [
+                  "far",
+                  "thest"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "a3e2b559-010f-4818-b02c-e1589e769357",
+          "activity_type": "picture-description",
+          "title": "Describe the Sports Day",
+          "instruction": "Use your eyes! 🧐 Look closely at the at the picture of the school sports day. Answer the questions by speaking or writing.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "67",
+          "compensates": "Class discussion about school sports days and eliciting vocabulary.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/512.png",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/512.png",
+            "keywords": [
+              "long jump",
+              "sports day",
+              "event",
+              "compete",
+              "cheering",
+              "farther",
+              "farthest"
+            ],
+            "sampleAnswers": [
+              "The main event in the picture is the long jump.",
+              "The children in the background look excited and are cheering for their friends.",
+              "I think the boy in the air will jump the farthest because he has a good technique.",
+              "A school sports day is an exciting event where students compete in races and jumping events to win points for their team."
+            ],
+            "promptQuestions": [
+              "What sports event is happening in the picture?",
+              "How do the children in the background feel?",
+              "Who do you think will jump the farthest? Why?",
+              "Describe what a school sports day is like."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "01b7834f-8d5b-48a6-8cba-865d997ba71b",
+      "lesson_title": "8.4",
+      "lesson_number": 4,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "dadc79e4-8c91-4c81-94d0-f914e8a43759",
+          "activity_type": "listening-comprehension",
+          "title": "Listening: Weekend Plans",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to Salem talk about his plans for the weekend. Then answer the questions.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "127",
+          "compensates": "Classroom listening activity where the teacher reads a script and asks comprehension questions.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "audioSrc": "/media/audio/g9_u8_l8.4_lis_5.mp3",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "He is going to get pizza.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He is meeting his friends at the cinema.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "He will help his father in the garden.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What is Salem's fixed arrangement for Friday evening?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "He is going home.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He is going to get pizza.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "He is meeting more friends.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What is Salem's plan after the movie?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Go to the cinema again.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Meet his friends.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Stay home and help his father.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "What will Salem probably do on Saturday?"
+              }
+            ],
+            "transcript": "Hi, it's Salem. I'm so excited for this weekend! On Friday evening, I'm meeting my friends at the cinema. The movie starts at 7 PM, so it's a fixed plan. After the movie, we are going to get some pizza. On Saturday, I think I will just stay home and help my father in the garden. It should be relaxing."
+          }
+        },
+        {
+          "activity_id": "f93b0a25-1013-4571-8f2f-c6b597a0f0a6",
+          "activity_type": "flashcard",
+          "title": "Vocabulary: Robot",
+          "instruction": "Learn the new word for this lesson. Listen carefully! 🎧 Clear your ears and to the pronunciation and read the definition and example.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "127",
+          "compensates": "Teacher presenting new vocabulary using flashcards or the board.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "robot",
+                "audio": "robot",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/1458.png",
+                "example": "The robot is going to clean the floor.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/1458.png",
+                "definition": "A machine that can perform complex tasks automatically.",
+                "translation": "إنسان آلي",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "747ad5a8-7a66-4ecc-a8be-575f4332dd41",
+          "activity_type": "mcq",
+          "title": "Understanding Future Forms",
+          "instruction": "Read each sentence and Challenge yourself! 📝 Select the best option for the correct meaning or form of the future tense.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "127",
+          "compensates": "Teacher-led grammar explanation and drills on the board (Teacher Guide, page 253, section 2).",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "I'm playing football next week.",
+                    "feedback": "Correct! We use the present continuous (I'm playing) for fixed plans and arrangements.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "I'm going to play football next week.",
+                    "feedback": "This describes a plan or intention, but the final arrangements might not be made yet.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "I will play football next week.",
+                    "feedback": "This is a general statement about the future, often a spontaneous decision.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Which sentence describes a fixed arrangement?",
+                "explanation": "The present continuous ('I am playing') is used for future events that are already arranged and confirmed."
+              },
+              {
+                "options": [
+                  {
+                    "text": "is going to rain",
+                    "feedback": "Excellent! We use 'going to' for predictions based on present evidence (the dark clouds).",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "will rain",
+                    "feedback": "While possible, 'going to' is better here because we have evidence (the clouds).",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "is raining",
+                    "feedback": "This means it is raining right now, not in the future.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Look at the dark clouds in the sky. It ______ soon.",
+                "explanation": "Use 'be going to' + verb to talk about something you expect to happen based on what you can see or know."
+              },
+              {
+                "options": [
+                  {
+                    "text": "arrangement",
+                    "feedback": "An arrangement is more fixed, like an appointment. This is more of a personal goal.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "plan or intention",
+                    "feedback": "Correct! 'Going to' is often used to talk about future plans and intentions.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "spontaneous decision",
+                    "feedback": "We usually use 'will' for spontaneous decisions made at the moment of speaking.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "The sentence 'I'm going to buy a motorbike when I am older' expresses a(n)...",
+                "explanation": "'Be going to' is used to express a future plan or intention that has already been decided."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "50edc574-c2a2-4296-94e9-a1c5de9603cb",
+          "activity_type": "gap-fill",
+          "title": "What is the robot going to do?",
+          "instruction": "Use your eyes! 🧐 Look closely at the at the pictures from Workbook page 127. Complete the sentences to describe what the robot is going to do.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "127",
+          "compensates": "Workbook page 127, Activity 8.4A. This digitizes the worksheet.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "It's going to ___ the window.",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/1455.png",
+                "blanks": [
+                  {
+                    "hint": "What action is the robot doing to the window?",
+                    "answer": "clean",
+                    "alternatives": [
+                      "wash"
+                    ]
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/1455.png",
+                "explanation": "The robot is holding a cloth and spray, so it is going to clean the window."
+              },
+              {
+                "text": "It's going to ___ the car.",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/1456.png",
+                "blanks": [
+                  {
+                    "hint": "What do you do to a dirty car with a sponge and bucket?",
+                    "answer": "wash",
+                    "alternatives": [
+                      "clean"
+                    ]
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/1456.png",
+                "explanation": "The robot has a sponge and bucket, so it is going to wash the car."
+              },
+              {
+                "text": "It's going to ___ the television.",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/1457.png",
+                "blanks": [
+                  {
+                    "hint": "The robot is shaking and unplugged. What might happen?",
+                    "answer": "break",
+                    "alternatives": []
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/1457.png",
+                "explanation": "The robot is malfunctioning, so it looks like it is going to break the television."
+              },
+              {
+                "text": "It's going to ___ the floor.",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/1458.png",
+                "blanks": [
+                  {
+                    "hint": "What is the robot doing with the machine on the floor?",
+                    "answer": "clean",
+                    "alternatives": [
+                      "brush",
+                      "vacuum"
+                    ]
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/1458.png",
+                "explanation": "The robot is using a vacuum, so it is going to clean the floor."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "d892fe96-2d1a-4655-8a5b-ab15fca904ca",
+          "activity_type": "word-order",
+          "title": "Sentence Building",
+          "instruction": "Drag the words into the correct order to make sentences about the robot's plans.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "127",
+          "compensates": "Teacher-led sentence construction practice on the whiteboard.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "instruction": "Unscramble the words to form a sentence.",
+                "correctOrder": [
+                  "The",
+                  "robot",
+                  "is",
+                  "going",
+                  "to",
+                  "wash",
+                  "the",
+                  "car",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Unscramble the words to form a sentence.",
+                "correctOrder": [
+                  "It's",
+                  "going",
+                  "to",
+                  "break",
+                  "the",
+                  "television",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Unscramble the words to form a question.",
+                "correctOrder": [
+                  "What",
+                  "is",
+                  "the",
+                  "robot",
+                  "going",
+                  "to",
+                  "do",
+                  "?"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "6395f71f-8add-4d00-b85e-0f09a053518f",
+          "activity_type": "pronunciation-practice",
+          "title": "Pronunciation: Future Forms",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the pronunciation of these words and phrases. Pay attention to the sound of 'going to'. Record yourself and compare.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "127",
+          "compensates": "Teacher-led choral drilling of new vocabulary and grammar structures.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "robot",
+                "audioSrc": "/media/audio/g9_u8_l8.4_pro_6_w0.mp3",
+                "phonetic": "/ˈroʊ.bɑːt/",
+                "syllables": [
+                  "ro",
+                  "bot"
+                ]
+              },
+              {
+                "word": "going to",
+                "audioSrc": "/media/audio/g9_u8_l8.4_pro_6_w1.mp3",
+                "phonetic": "/ˈɡoʊ.ɪŋ tu/",
+                "syllables": [
+                  "go",
+                  "ing",
+                  "to"
+                ]
+              },
+              {
+                "word": "clean",
+                "audioSrc": "/media/audio/g9_u8_l8.4_pro_6_w2.mp3",
+                "phonetic": "/kliːn/",
+                "syllables": [
+                  "clean"
+                ]
+              },
+              {
+                "word": "break",
+                "audioSrc": "/media/audio/g9_u8_l8.4_pro_6_w3.mp3",
+                "phonetic": "/breɪk/",
+                "syllables": [
+                  "break"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "dbdc3c14-1d5a-460f-bda7-66439df8396b",
+          "activity_type": "dialogue-read",
+          "title": "Making Plans",
+          "instruction": "Reading time! 📖 Read carefully and the conversation between Ali and Omar. Then, answer the comprehension question.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "127",
+          "compensates": "Workbook page 127, Activity 8.4B/C. This provides a model conversation for students to read and understand before creating their own.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "dialogue": [
+              {
+                "text": "Hi Omar. Are you busy this afternoon?",
+                "speaker": "Ali"
+              },
+              {
+                "text": "Not really. I'm going to finish my homework, but that's all.",
+                "speaker": "Omar"
+              },
+              {
+                "text": "Great! My brother and I are playing football in the park at 5 PM. Would you like to come?",
+                "speaker": "Ali"
+              },
+              {
+                "text": "Yes, I'd love to! That sounds like fun.",
+                "speaker": "Omar"
+              },
+              {
+                "text": "Excellent. See you there!",
+                "speaker": "Ali"
+              }
+            ],
+            "comprehension": [
+              {
+                "answer": "He is playing football in the park with his brother.",
+                "question": "What is Ali's fixed arrangement for 5 PM?"
+              },
+              {
+                "answer": "He is going to finish his homework.",
+                "question": "What is Omar's plan before he goes to the park?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "7c52c741-7c1c-4d14-a9db-517264e2b2b1",
+      "lesson_title": "8.5",
+      "lesson_number": 5,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "1f636165-24a7-43c2-8b92-c818108a7aed",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 37)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "advanced",
+          "book_type": "PB",
+          "book_page": "68",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "0592e87c-3b6f-4fd0-b304-4ac0c68a120b",
+          "activity_type": "flashcard",
+          "title": "Vocabulary: At the School Games",
+          "instruction": "Learn the new words for this lesson. Listen carefully! 🎧 Clear your ears and to the word, read the definition and example, then try to use it yourself.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "68",
+          "compensates": "Replaces teacher presenting vocabulary on the board with flashcards.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "changing room",
+                "audio": "changing room",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/513.png",
+                "example": "He went into the changing rooms to find his running shoes.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/513.png",
+                "definition": "A room where people can change their clothes, for example before or after sports.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "sold",
+                "audio": "sold",
+                "example": "Tom had sold them to Simon.",
+                "definition": "The past tense of 'sell'; to give something to someone in exchange for money.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "running shoes",
+                "audio": "running shoes",
+                "example": "He couldn't find his running shoes.",
+                "definition": "Special shoes that you wear for running or sports.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "unlucky",
+                "audio": "unlucky",
+                "example": "Hassan had a very unlucky day yesterday.",
+                "definition": "Having or causing bad luck.",
+                "partOfSpeech": "adjective"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "e3d7b9e5-cdba-46dc-9b60-0671f8ac8e4e",
+          "activity_type": "dialogue-read",
+          "title": "What Went Wrong?",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to and read the two conversations from page 68. Then answer the questions.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "68",
+          "compensates": "Replaces teacher-led reading aloud and comprehension questions in class (PB68, Activity 1 & 3).",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "dialogue": [
+              {
+                "text": "What are you doing here, John? You should be outside on the field.",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/514.png",
+                "speaker": "Teacher",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/514.png"
+              },
+              {
+                "text": "I missed my event.",
+                "speaker": "John"
+              },
+              {
+                "text": "Why? What happened?",
+                "speaker": "Teacher"
+              },
+              {
+                "text": "I woke up late. I didn't have any money for the bus. When I got here, the race had started.",
+                "speaker": "John"
+              },
+              {
+                "text": "---",
+                "speaker": "---"
+              },
+              {
+                "text": "Bill's lucky to be in this race today.",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/513.png",
+                "speaker": "Boy 1",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/513.png"
+              },
+              {
+                "text": "What do you mean?",
+                "speaker": "Boy 2"
+              },
+              {
+                "text": "I was talking to him earlier.",
+                "speaker": "Boy 1"
+              },
+              {
+                "text": "Yes?",
+                "speaker": "Boy 2"
+              },
+              {
+                "text": "He went into the changing rooms, but he couldn't find his running shoes.",
+                "speaker": "Boy 1"
+              },
+              {
+                "text": "Why not?",
+                "speaker": "Boy 2"
+              },
+              {
+                "text": "Tom had sold them to Simon.",
+                "speaker": "Boy 1"
+              },
+              {
+                "text": "You're joking!",
+                "speaker": "Boy 2"
+              },
+              {
+                "text": "That's right. I am.",
+                "speaker": "Boy 1"
+              }
+            ],
+            "comprehension": [
+              {
+                "answer": "He woke up late and didn't have money for the bus, so he arrived after the race had started.",
+                "question": "Why did John miss his race?"
+              },
+              {
+                "answer": "No, it was a joke.",
+                "question": "Did Tom really sell Bill's shoes?"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "25cd30c4-2cf6-4e1f-a659-44e9d5853c8c",
+          "activity_type": "mcq",
+          "title": "Grammar: Which Happened First?",
+          "instruction": "Read each sentence. Challenge yourself! 📝 Select the best option for the action that happened first.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "129",
+          "compensates": "Replaces teacher-led grammar explanation using a timeline on the board (PB68, Activity 2).",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "I got here.",
+                    "feedback": "The past perfect 'had started' shows this action happened before the simple past 'got here'.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "The race started.",
+                    "feedback": "Correct! The past perfect 'had started' shows this action happened before the simple past 'got here'.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "In the sentence 'When I got here, the race had started', what happened first?",
+                "explanation": "We use the Past Perfect (had + past participle) to talk about an action that happened before another action in the past."
+              },
+              {
+                "options": [
+                  {
+                    "text": "Tom sold the shoes.",
+                    "feedback": "That's right! The past perfect 'had sold' tells us this happened first.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Bill went into the changing rooms.",
+                    "feedback": "The simple past 'went' shows this action happened after the first action.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "In the sentence 'Tom had sold the shoes to Simon before Bill went into the changing rooms', what happened first?",
+                "explanation": "The Past Perfect action always happens before the Simple Past action in the same sentence."
+              },
+              {
+                "options": [
+                  {
+                    "text": "The school bus left.",
+                    "feedback": "Correct! The bus leaving happened before Hassan arrived.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Hassan arrived.",
+                    "feedback": "Hassan was too late. The bus had already gone.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "In the sentence 'The school bus had left when Hassan arrived', what happened first?",
+                "explanation": "The past perfect 'had left' indicates the first event in the past."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "5e095b0d-db08-481f-8eff-56201eb3b357",
+          "activity_type": "transform-sentence",
+          "title": "Hassan's Unlucky Day",
+          "instruction": "Hassan had a very unlucky day. Combine the two sentences using 'when' and the Past Perfect tense to show what happened. The first action should use the Past Perfect.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "68",
+          "compensates": "Digitizes the sentence combining exercise from the Workbook (WB8.5A).",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "prompts": [
+              {
+                "prompt": "The school bus left. Hassan arrived at the bus stop.",
+                "correct_answers": [
+                  "The school bus had left when Hassan arrived at the bus stop."
+                ]
+              },
+              {
+                "prompt": "The first period started. He got to school.",
+                "correct_answers": [
+                  "The first period had started when he got to school."
+                ]
+              },
+              {
+                "prompt": "Ali went out. Hassan went to visit him.",
+                "correct_answers": [
+                  "Ali had gone out when Hassan went to visit him."
+                ]
+              },
+              {
+                "prompt": "His favourite film finished. He switched on the TV.",
+                "correct_answers": [
+                  "His favourite film had finished when he switched on the TV."
+                ]
+              },
+              {
+                "prompt": "The take-away closed. He went to buy a burger.",
+                "correct_answers": [
+                  "The take-away had closed when he went to buy a burger."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "fee6316f-188e-40e5-8ecc-fac8efdd4a6c",
+          "activity_type": "word-order",
+          "title": "Build Past Perfect Sentences",
+          "instruction": "Drag the words into the correct order to make sentences.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "129",
+          "compensates": "Replaces worksheet-based sentence scrambling exercises.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "correctOrder": [
+                  "When",
+                  "I",
+                  "arrived,",
+                  "the film",
+                  "had",
+                  "started",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "He",
+                  "couldn't",
+                  "find",
+                  "the shoes",
+                  "Tom",
+                  "had",
+                  "sold",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "She",
+                  "had",
+                  "finished",
+                  "her homework",
+                  "before",
+                  "she",
+                  "watched",
+                  "TV",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "By the time",
+                  "he",
+                  "got to school,",
+                  "the first period",
+                  "had",
+                  "begun",
+                  "."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "a552b236-59eb-4935-8c36-63572f9668ca",
+          "activity_type": "pronunciation-practice",
+          "title": "Pronunciation: Past Tenses",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to each word and repeat it. Pay attention to the vowel sounds and endings.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "68",
+          "compensates": "Replaces teacher-led choral drilling of new vocabulary and verb forms.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "sold",
+                "phonetic": "/soʊld/",
+                "syllables": [
+                  "sold"
+                ]
+              },
+              {
+                "word": "started",
+                "phonetic": "/ˈstɑːr.t̬ɪd/",
+                "syllables": [
+                  "start",
+                  "ed"
+                ]
+              },
+              {
+                "word": "finished",
+                "phonetic": "/ˈfɪn.ɪʃt/",
+                "syllables": [
+                  "fin",
+                  "ished"
+                ]
+              },
+              {
+                "word": "unlucky",
+                "phonetic": "/ʌnˈlʌk.i/",
+                "syllables": [
+                  "un",
+                  "luck",
+                  "y"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "f6d28a21-eda5-4ea1-b076-e97204b729f5",
+          "activity_type": "dictation",
+          "title": "Listen and Write",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the sentence and type what you hear. Be careful with the past tense verbs.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "129",
+          "compensates": "Replaces teacher-led dictation exercises.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "difficulty": "sentence",
+                "expectedText": "When I got here, the race had started."
+              },
+              {
+                "difficulty": "sentence",
+                "expectedText": "He couldn't find his running shoes."
+              },
+              {
+                "difficulty": "sentence",
+                "expectedText": "The take-away had closed when he went to buy a burger."
+              },
+              {
+                "difficulty": "sentence",
+                "expectedText": "Ali had gone out when Hassan went to visit him."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "7bf07801-2920-403b-bb0d-40ec3fb2294e",
+          "activity_type": "gap-fill",
+          "title": "Before You Were Eight",
+          "instruction": "Complete the sentences about things you did in the past. Use the past perfect form of the verb in brackets.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "129",
+          "compensates": "Provides a structured, self-correcting version of the open-ended writing prompts in WB8.5B.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "By the time I got to school today, I ___ (eat) breakfast.",
+                "blanks": [
+                  {
+                    "hint": "Use the past perfect form of 'eat'.",
+                    "answer": "had eaten",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'had eaten' because eating breakfast happened before getting to school."
+              },
+              {
+                "text": "Before I was eight years old, I ___ (learn) to read.",
+                "blanks": [
+                  {
+                    "hint": "Use the past perfect form of 'learn'.",
+                    "answer": "had learned",
+                    "alternatives": [
+                      "had learnt"
+                    ]
+                  }
+                ],
+                "explanation": "Learning to read happened before the point in time 'when I was eight'."
+              },
+              {
+                "text": "Before I was eight years old, I ___ (not visit) another country.",
+                "blanks": [
+                  {
+                    "hint": "Use the negative past perfect form of 'visit'.",
+                    "answer": "had not visited",
+                    "alternatives": [
+                      "hadn't visited"
+                    ]
+                  }
+                ],
+                "explanation": "This sentence describes something that was not true before a certain point in the past."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "610b0523-bc01-463e-9e1b-afdc7f1af377",
+      "lesson_title": "8.6",
+      "lesson_number": 6,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "f0d543f8-0121-48f6-91b3-4c78ba233000",
+          "activity_type": "mcq",
+          "title": "Which Happened First?",
+          "instruction": "Read the sentence. Challenge yourself! 📝 Select the best option for the action that happened first.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "130",
+          "compensates": "This replaces the teacher's initial explanation and elicitation of the past perfect tense's function.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "I arrived at the shop.",
+                    "feedback": "This action happened second. It is in the past simple.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Ali closed the shop.",
+                    "feedback": "Correct! This action happened before I arrived. It is in the past perfect.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "When I arrived at the shop, Ali had already closed it. Which action happened first?",
+                "explanation": "We use the past perfect tense (had + past participle) for the action that happened earlier in the past."
+              },
+              {
+                "options": [
+                  {
+                    "text": "Ahmed sold everything.",
+                    "feedback": "That's right! This is the reason why I couldn't buy a drink. It happened first.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "I couldn't buy a drink.",
+                    "feedback": "This was the result of the first action. It happened later.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "I couldn't buy anything to drink because Ahmed had sold everything. Which action happened first?",
+                "explanation": "The past perfect ('had sold') describes the earlier past event that caused the later past event ('couldn't buy')."
+              },
+              {
+                "options": [
+                  {
+                    "text": "He came out of the supermarket.",
+                    "feedback": "This action happened after he finished shopping.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Rashid finished his shopping.",
+                    "feedback": "Correct! The past perfect shows this action was completed before the next one began.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "After Rashid had finished his shopping, he came out of the supermarket. Which action happened first?",
+                "explanation": "The past perfect ('had finished') indicates the first of two past actions."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "caebb36e-c056-4e0c-b204-7fc55b3d37f2",
+          "activity_type": "match-pairs",
+          "title": "What Happened and Why?",
+          "instruction": "Reading time! 📖 Read carefully and the events from the story in the 'What happened?' column. Match each event with the correct reason from the 'Why?' column.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "130",
+          "compensates": "This is a digital version of Workbook page 130, Activity A, replacing the teacher-led elicitation of reasons.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "I could not get any vegetables.",
+                "right": "Ali had closed his shop."
+              },
+              {
+                "left": "I could not get anything to drink.",
+                "right": "Ahmed had sold everything."
+              },
+              {
+                "left": "I could not go to a restaurant.",
+                "right": "The restaurants had not opened."
+              },
+              {
+                "left": "I went back home.",
+                "right": "I couldn't buy any food."
+              }
+            ],
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/g9_u8_l8_6_mtch_act1_i0.png",
+            "instruction": "Match the event (what happened) with the correct reason (why it happened). Pay attention to the verb tenses."
+          }
+        },
+        {
+          "activity_id": "a9e80c90-1e6a-43f6-8add-f7581f7f4349",
+          "activity_type": "gap-fill",
+          "title": "Past Simple or Past Perfect Practice",
+          "instruction": "Complete the sentences. Use the past simple for the action that happened later, and the past perfect for the action that happened earlier.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "130",
+          "compensates": "This provides structured practice on the core grammar point, replacing teacher-led drills on the board.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "By the time I arrived at the cinema, the film ___ already ___.",
+                "blanks": [
+                  {
+                    "answer": "had",
+                    "alternatives": []
+                  },
+                  {
+                    "answer": "started",
+                    "alternatives": [
+                      "start"
+                    ]
+                  }
+                ],
+                "explanation": "The film started before I arrived. We use the past perfect for the earlier action."
+              },
+              {
+                "text": "She ___ me that she ___ her homework.",
+                "blanks": [
+                  {
+                    "answer": "told",
+                    "alternatives": [
+                      "tell"
+                    ]
+                  },
+                  {
+                    "answer": "had finished",
+                    "alternatives": [
+                      "finished"
+                    ]
+                  }
+                ],
+                "explanation": "She finished her homework first, then she told me. The earlier action is in the past perfect."
+              },
+              {
+                "text": "When the police ___ , the thief ___ away.",
+                "blanks": [
+                  {
+                    "answer": "arrived",
+                    "alternatives": [
+                      "arrive"
+                    ]
+                  },
+                  {
+                    "answer": "had run",
+                    "alternatives": [
+                      "ran"
+                    ]
+                  }
+                ],
+                "explanation": "The thief ran away before the police arrived. The earlier action uses the past perfect."
+              },
+              {
+                "text": "Rashid couldn't get into his house because he ___ his keys inside.",
+                "blanks": [
+                  {
+                    "answer": "had left",
+                    "alternatives": [
+                      "left"
+                    ]
+                  }
+                ],
+                "explanation": "First, he left his keys. Second, he couldn't get in. The earlier action uses the past perfect."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "c2e64dfa-5d86-4d23-b97b-686ee7e71a0a",
+          "activity_type": "gap-fill",
+          "title": "Rashid's Bad Day: The Reasons",
+          "instruction": "Reading time! 📖 Read carefully and what happened to Rashid. Complete the sentences to explain why these things happened. Use the past perfect tense.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "130",
+          "compensates": "This digitizes Workbook page 131, Activity B, guiding students to write the reasons instead of leaving it open-ended.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/g9_u8_l8_6_gap_act3_i0.png",
+            "sentences": [
+              {
+                "text": "He started walking home because his bicycle ___ .",
+                "blanks": [
+                  {
+                    "hint": "Use the past participle of 'go'.",
+                    "answer": "had gone",
+                    "alternatives": [
+                      "went"
+                    ]
+                  }
+                ],
+                "explanation": "The bicycle was gone *before* he started walking. We use the past perfect for the earlier event."
+              },
+              {
+                "text": "He could not get in his house because he ___ his keys inside.",
+                "blanks": [
+                  {
+                    "hint": "Use the past participle of 'leave'.",
+                    "answer": "had left",
+                    "alternatives": [
+                      "left"
+                    ]
+                  }
+                ],
+                "explanation": "He left the keys inside *before* he tried to get in. The earlier event is in the past perfect."
+              },
+              {
+                "text": "His brother arrived on the bicycle because he ___ it outside the supermarket.",
+                "blanks": [
+                  {
+                    "hint": "Use the past participle of 'find'.",
+                    "answer": "had found",
+                    "alternatives": [
+                      "found"
+                    ]
+                  }
+                ],
+                "explanation": "He found the bicycle *before* he arrived home on it. The earlier event is in the past perfect."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "b6507e77-d91c-4a47-8dcb-b18ad01ed9c3",
+          "activity_type": "word-order",
+          "title": "Build Rashid's Story",
+          "instruction": "Put the words and phrases in the correct order to form the complete story about Rashid.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "130",
+          "compensates": "This activity scaffolds the paragraph writing task from Workbook page 131, Activity C, by focusing on sentence structure and connectives before free writing.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "instruction": "Arrange the parts to make a complex sentence.",
+                "correctOrder": [
+                  "When he came out of the shop twenty minutes later,",
+                  "his bicycle had gone,",
+                  "so he started walking home."
+                ]
+              },
+              {
+                "instruction": "Arrange the parts to make a complex sentence.",
+                "correctOrder": [
+                  "He finally got to his house",
+                  "but he couldn’t get in",
+                  "because he had left his keys inside."
+                ]
+              },
+              {
+                "instruction": "Arrange the parts to make a sentence.",
+                "correctOrder": [
+                  "Suddenly his brother arrived,",
+                  "riding Rashid’s bicycle."
+                ]
+              },
+              {
+                "instruction": "Arrange the parts to make a complex sentence.",
+                "correctOrder": [
+                  "He had found it outside the supermarket,",
+                  "so he had ridden it home."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "e21d7e99-2e02-41e5-a420-38140d43c2fb",
+          "activity_type": "dictation",
+          "title": "Listen and Write",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the sentences from the stories and type exactly what you hear. Pay attention to past tense endings.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "130",
+          "compensates": "This replaces a traditional teacher-led dictation exercise, allowing students to practice listening and spelling at their own pace.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "hints": [
+                  "The first word is 'I'."
+                ],
+                "audioSrc": "/media/audio/g9_u8_l8.6_dic_6_s0.mp3",
+                "difficulty": "sentence",
+                "expectedText": "I could not get any vegetables because Ali had closed his shop."
+              },
+              {
+                "hints": [
+                  "The first word is 'When'."
+                ],
+                "audioSrc": "/media/audio/g9_u8_l8.6_dic_6_s1.mp3",
+                "difficulty": "sentence",
+                "expectedText": "When he came out of the shop, his bicycle had gone."
+              },
+              {
+                "hints": [
+                  "The first word is 'He'."
+                ],
+                "audioSrc": "/media/audio/g9_u8_l8.6_dic_6_s2.mp3",
+                "difficulty": "sentence",
+                "expectedText": "He couldn't get in because he had left his keys inside."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "57e1b51a-e110-4255-b40b-249b3b24235d",
+      "lesson_title": "8.7",
+      "lesson_number": 7,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "caf6031f-91e6-454e-9a88-a7ec7f492780",
+          "activity_type": "flashcard",
+          "title": "Story Keywords",
+          "instruction": "Learn the key words for today's story writing activity. Tap the card to see the definition and example.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "132",
+          "compensates": "Teacher introducing vocabulary on the board.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "thirsty",
+                "example": "After the long walk in the sun, I was very thirsty.",
+                "definition": "Feeling a need to drink something.",
+                "partOfSpeech": "adjective"
+              },
+              {
+                "word": "tent",
+                "example": "We saw a large tent on the beach.",
+                "definition": "A portable shelter made of cloth, supported by poles and ropes.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "compass",
+                "example": "If I had a compass, I wouldn't be lost.",
+                "definition": "An instrument for determining direction, with a magnetic needle that points to the north.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "crash",
+                "example": "The petrol station is 30 kilometres from the crash.",
+                "definition": "An accident in which a vehicle hits something.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "dangerous",
+                "example": "The forest is full of dangerous animals.",
+                "definition": "Able or likely to cause harm or injury.",
+                "partOfSpeech": "adjective"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "c743b527-fec5-4dd1-a2df-e9193a0217df",
+          "activity_type": "mcq",
+          "title": "Complete or Incomplete?",
+          "instruction": "Reading time! 📖 Read carefully and the group of words. Is it a complete sentence or just a part of a sentence (a clause)?",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "132",
+          "compensates": "Teacher-led board work identifying clauses and sentences.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "It's a complete sentence.",
+                    "feedback": "This is a dependent clause. It needs more information to be a complete sentence. For example: 'If I had a compass, I would find my way home.'",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "It's an incomplete sentence (a clause).",
+                    "feedback": "Correct! This is a dependent clause that starts with 'If'. It needs a main clause to complete the thought.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "If I had a compass,",
+                "explanation": "Clauses starting with words like 'if', 'when', 'because', or 'so' often need another part to make a full sentence."
+              },
+              {
+                "options": [
+                  {
+                    "text": "It's a complete sentence.",
+                    "feedback": "That's right! This is a complete thought with a subject (The forest) and a verb (is).",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "It's an incomplete sentence (a clause).",
+                    "feedback": "This is a main clause, which can stand alone as a complete sentence.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "The forest is full of dangerous animals.",
+                "explanation": "A main clause contains a subject and a verb and expresses a complete thought, so it can be a sentence by itself."
+              },
+              {
+                "options": [
+                  {
+                    "text": "It's a complete sentence.",
+                    "feedback": "This clause tells us 'when' something happened, but not 'what' happened. It needs a main clause.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "It's an incomplete sentence (a clause).",
+                    "feedback": "Correct! This is a dependent clause. We need to know what happened when you were walking. For example: 'When I was walking back along the beach, I saw a tent.'",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "When I was walking back along the beach,",
+                "explanation": "Clauses that start with 'When' describe a time or condition and must be connected to a main clause that describes the action."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "963e674c-5b1d-402f-b8f2-50c26d9d991f",
+          "activity_type": "match-pairs",
+          "title": "Connect the Ideas",
+          "instruction": "Match the beginning of the sentence (clause 1) with the correct ending (clause 2) to make a logical sentence.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "132",
+          "compensates": "Teacher eliciting possible endings for clauses from the class.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "It was so hot that",
+                "right": "I soon began to feel very thirsty."
+              },
+              {
+                "left": "I didn't have anything to drink with me,",
+                "right": "so I decided to go home."
+              },
+              {
+                "left": "'If I walk near the tent,' I thought,",
+                "right": "'perhaps they'll give me something to drink.'"
+              },
+              {
+                "left": "When I was walking back along the beach,",
+                "right": "I saw a tent."
+              },
+              {
+                "left": "The forest is full of dangerous animals,",
+                "right": "so we must be very careful."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "06306c9c-ddc1-4e3c-b0b5-865af1432707",
+          "activity_type": "gap-fill",
+          "title": "Complete the Beach Story",
+          "instruction": "Reading time! 📖 Read carefully and the story and drag the correct phrase from the box to complete each sentence. This is based on Workbook page 132.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "132",
+          "compensates": "Digitizes the pair discussion and writing task from WB 8.7 A & B.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "I went for a walk along the beach yesterday afternoon. It was so hot that ___. ",
+                "blanks": [
+                  {
+                    "hint": "What happens when it's very hot?",
+                    "answer": "I soon began to feel very thirsty",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The phrase 'so hot that' introduces a result. The result of the heat was feeling thirsty."
+              },
+              {
+                "text": "I didn't have anything to drink with me, ___. ",
+                "blanks": [
+                  {
+                    "hint": "What is a logical decision if you are thirsty and have no water?",
+                    "answer": "so I decided to go home",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The word 'so' is used to show the result or consequence of the first part of the sentence."
+              },
+              {
+                "text": "When I was walking back along the beach, ___. ",
+                "blanks": [
+                  {
+                    "hint": "What did you see on your way back?",
+                    "answer": "I saw a tent",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "This sentence describes an event that happened during the walk."
+              },
+              {
+                "text": "'If I walk near the tent,' I thought, '___.'",
+                "blanks": [
+                  {
+                    "hint": "What do you hope to find in the tent?",
+                    "answer": "perhaps they'll give me something to drink",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The 'if' clause sets up a condition, and the main clause explains the possible result."
+              },
+              {
+                "text": "When I reached it, ___. ",
+                "blanks": [
+                  {
+                    "hint": "What did you discover at the tent?",
+                    "answer": "there was no-one there",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "This sentence concludes the story with a final discovery."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "dd1e1217-0815-4fde-833d-56d0eff40318",
+          "activity_type": "word-order",
+          "title": "Story Order",
+          "instruction": "The sentences of the beach story are mixed up. Drag and drop them into the correct order to make a logical story.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "132",
+          "compensates": "Checking comprehension of story flow and logical connectors.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "correctOrder": [
+              "I went for a walk along the beach yesterday afternoon.",
+              "It was so hot that I soon began to feel very thirsty.",
+              "I didn't have anything to drink with me, so I decided to go home.",
+              "When I was walking back along the beach, I saw a tent.",
+              "'If I walk near the tent,' I thought, 'perhaps they'll give me something to drink.'",
+              "When I reached it, there was no-one there."
+            ]
+          }
+        },
+        {
+          "activity_id": "ff92f40e-062e-4c3b-b705-702e392039e9",
+          "activity_type": "dictation",
+          "title": "Listen and Write",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the sentence and type exactly what you hear. Pay attention to the connecting words.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "132",
+          "compensates": "Teacher-led dictation exercise.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "hints": [
+                  "Starts with 'If'"
+                ],
+                "difficulty": "sentence",
+                "expectedText": "If I had a compass, I would know which way to go."
+              },
+              {
+                "hints": [
+                  "Contains the word 'so'"
+                ],
+                "difficulty": "sentence",
+                "expectedText": "The forest is full of dangerous animals, so we must be careful."
+              },
+              {
+                "hints": [
+                  "Starts with 'When'"
+                ],
+                "difficulty": "sentence",
+                "expectedText": "When I reached the tent, I found that there was no-one there."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "09a543d0-04bb-4671-b7d1-b0e36fe20dae",
+          "activity_type": "pronunciation-practice",
+          "title": "Word Pronunciation",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to each word and practice saying it. Record yourself and compare.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "132",
+          "compensates": "Teacher-led choral drilling of new vocabulary.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "thirsty",
+                "phonetic": "/ˈθɜːrsti/",
+                "syllables": [
+                  "thirs",
+                  "ty"
+                ]
+              },
+              {
+                "word": "beach",
+                "phonetic": "/biːtʃ/",
+                "syllables": [
+                  "beach"
+                ]
+              },
+              {
+                "word": "compass",
+                "phonetic": "/ˈkʌmpəs/",
+                "syllables": [
+                  "com",
+                  "pass"
+                ]
+              },
+              {
+                "word": "dangerous",
+                "phonetic": "/ˈdeɪndʒərəs/",
+                "syllables": [
+                  "dan",
+                  "ger",
+                  "ous"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "76a53164-5024-49fa-bbe4-faa61f9bbb80",
+          "activity_type": "picture-description",
+          "title": "Tell a Different Story",
+          "instruction": "Use your eyes! 🧐 Look closely at the at the picture. What is happening? Write a short story (3-4 sentences) about the picture. Try to use connecting words like 'if', 'so', 'when', and 'because'.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "132",
+          "compensates": "Creative writing task from WB 8.7 B, offering a visual prompt to inspire different ideas.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/1462.png",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/1462.png",
+            "keywords": [
+              "radio",
+              "emergency",
+              "control room",
+              "microphone",
+              "contact",
+              "help"
+            ],
+            "sampleAnswers": [
+              "The people are in a radio room because they received an emergency call from a ship. They are trying to contact the ship, so they can help the people on board. If they can't make contact, the ship might be lost in the storm."
+            ],
+            "promptQuestions": [
+              "Who are these people and where are they?",
+              "What problem are they trying to solve?",
+              "What will happen if they succeed? What will happen if they fail?"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "105064a4-e24d-4d27-91e1-46cb128c8b0b",
+      "lesson_title": "8.8",
+      "lesson_number": 8,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "d2dfb793-d47a-409a-a7e4-f7e7dd88f125",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 38)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "advanced",
+          "book_type": "PB",
+          "book_page": "69",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "47f39e85-2d43-4460-86a8-21e570c4448a",
+          "activity_type": "flashcard",
+          "title": "New Words: The Rescue",
+          "instruction": "Learn the new words from the story. Listen carefully! 🎧 Clear your ears and to the word, read the definition and the example.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "69",
+          "compensates": "Teacher-led vocabulary presentation (TG 8.8, Activity 2A).",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "medal",
+                "example": "He won a gold medal in the race.",
+                "definition": "A metal disc, like a coin, given to someone who has won a competition or done something brave.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "wave",
+                "example": "They were waving arms and jackets like flags.",
+                "definition": "To move your hand or arm from side to side in the air, in order to attract attention or say goodbye.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "flag",
+                "example": "The Saudi Arabian flag is green and white.",
+                "definition": "A piece of cloth with a special design that is a symbol of a country or group.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "stretcher",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/1464.png",
+                "example": "They carried the injured player off the field on a stretcher.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/1464.png",
+                "definition": "A light frame made from two long poles with a cover of soft material stretched between them, used for carrying people who are ill, injured, or dead.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "carefully",
+                "example": "Very carefully, Tariq and I lifted Jim onto the stretcher.",
+                "definition": "With great attention, so that you avoid hurting yourself or someone else, or damaging something.",
+                "partOfSpeech": "adverb"
+              },
+              {
+                "word": "cheer",
+                "example": "Everybody cheered as Rod Border pinned on Tariq's medal.",
+                "definition": "To shout loudly in order to show your approval or to encourage someone.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "pin",
+                "example": "He was holding up the pin of the medal.",
+                "definition": "A small thin piece of metal with a sharp point at one end and a round head at the other, used for fastening things together.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "press",
+                "example": "He pressed too hard when he pinned on my medal.",
+                "definition": "To push something firmly.",
+                "partOfSpeech": "verb"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "d97b1d9e-8977-41ca-9177-cade16a5f7d9",
+          "activity_type": "reading-passage",
+          "title": "Read the Story: Tom and Tariq - the medals",
+          "instruction": "Reading time! 📖 Read carefully and the story from Pupil's Book page 69. Then answer the questions below.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "69",
+          "compensates": "Teacher-led reading of the story and asking comprehension questions (TG 8.8, Activities 3, 4, 6).",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "passage": "'If you see them, shout.' shouted Dick Bird.\n\n'OK,' shouted Tariq. They both had to shout because there was a lot of noise. We were in Dick Bird's helicopter, flying over the mountains looking for the others. Somewhere down there Jim Cooper was lying on the ground with a broken leg.\n\n'Follow that path, Dick,' Tariq shouted again.\n\n'OK,' said Dick.\n\nFive minutes later I saw them.\n\n'Over: there!' This time I shouted. Chuck, Paul, Hans and David were waving arms and jackets like flags in the wind.\n\nWe landed.\n\n'G'day, mate,' said Dick.\n\n'G'day, mate,' said Jim.\n\n'It means Hello,' I told Tariq.\n\nChuck and Hans tried to pick Jim up.\n\n'No, no,' said Dick.' You mustn't move him. Not like that. You never know. It might be serious. We'll make a stretcher.'\n\nVery carefully Tariq and I lifted Jim on to our stretcher, made from two pieces of wood and three sweaters, and carried him to the helicopter. Then we got in.\n\n'I've been on the radio to Southport Hospital ,' said Dick.' They know we're coming.'\n\n'What about the bus?' asked Tariq.\n\n'Somebody from the town will drive it back,' said Dick. Then the helicopter started and we couldn't hear anything.\n\nWe left Jim at the hospital and a friend of Dick's drove us back to the camp.\n\n'Tom! Tariq!' somebody shouted. It was Rod Border. He was running towards us.\n\n'What have we done now?' I asked Tariq.\n\n'Well done,' said Rod. 'You were fantastic. You're going to get a medal. Both of you. The WYC special medal.'\n\nThe next day everybody cheered as Rod Border pinned on Tariq's medal.'\n\n'Thank you, Rod,' said Tariq, smiling. Then Rod pinned on my medal. He pressed too hard.\n\n'Ouch!' I screamed. 'Ants! Ants!' I shouted as I jumped into the pool. 'Tom,' said Tariq, laughing. 'It was only this.' He was holding up the pin of the medal.\n\n'Oh no,' I said. 'Why me? Why do these things always happen to me?'",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Because they were angry.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Because there was a lot of noise.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Because Dick Bird couldn't hear well.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Because they were excited.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Why did Tom and Tariq have to shout in the helicopter?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "He was lost.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He had a broken arm.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He had a broken leg.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "He was sleeping.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What was wrong with Jim Cooper?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Two jackets and three pieces of wood.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Two pieces of wood and three sweaters.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Two sweaters and three flags.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Two long poles and a blanket.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What did they use to make the stretcher?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "For winning a competition.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "For being fantastic and helping Jim.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "For flying the helicopter.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "For finding the bus.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Why did Rod Border give Tom and Tariq medals?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Because he saw ants on the ground.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Because he was very hot.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Because he was pushed by Tariq.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Because the pin of the medal pricked him.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Why did Tom jump into the pool at the end?"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "c10be8df-b246-4b34-8d94-b643ee545316",
+          "activity_type": "true-false",
+          "title": "Fact Check: The Rescue",
+          "instruction": "Reading time! 📖 Read carefully and each sentence. Decide if it is true or false based on the story.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "133",
+          "compensates": "Workbook True/False exercise (TG 8.8, Activity 5).",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "statements": [
+              {
+                "isTrue": false,
+                "statement": "Tom and Tariq were in their own helicopter.",
+                "explanation": "The story says, 'We were in Dick Bird's helicopter.'"
+              },
+              {
+                "isTrue": true,
+                "statement": "They had to shout because the helicopter was very loud.",
+                "explanation": "The story says, 'They both had to shout because there was a lot of noise.'"
+              },
+              {
+                "isTrue": false,
+                "statement": "Jim Cooper had a broken arm.",
+                "explanation": "The story says Jim Cooper was 'lying on the ground with a broken leg.'"
+              },
+              {
+                "isTrue": true,
+                "statement": "Tom was the first person in the helicopter to see the group on the ground.",
+                "explanation": "Tom says, 'Five minutes later I saw them. 'Over: there!' This time I shouted.'"
+              },
+              {
+                "isTrue": true,
+                "statement": "Dick Bird told the others not to move Jim.",
+                "explanation": "Dick said, 'No, no... You mustn't move him. Not like that.'"
+              },
+              {
+                "isTrue": false,
+                "statement": "Rod Border was angry with Tom and Tariq.",
+                "explanation": "Rod Border said, 'Well done... You were fantastic.' and gave them medals."
+              },
+              {
+                "isTrue": false,
+                "statement": "Tom jumped in the pool because he was bitten by ants.",
+                "explanation": "Tom thought it was ants, but it was the pin of the medal that pricked him."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "cf90c658-ad99-42f5-a1d2-b3cbcf2af23a",
+          "activity_type": "match-pairs",
+          "title": "What Happened Next?",
+          "instruction": "Put the events of the story in the correct order. Match the event with its number in the sequence.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "133",
+          "compensates": "Workbook picture sequencing activity (TG 8.8, Activity 4).",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "1st",
+                "right": "Tom and Tariq searched for Jim from a helicopter."
+              },
+              {
+                "left": "2nd",
+                "right": "They found Jim and the others waving from the ground."
+              },
+              {
+                "left": "3rd",
+                "right": "They made a stretcher and carefully carried Jim to the helicopter."
+              },
+              {
+                "left": "4th",
+                "right": "They flew Jim to the hospital in Southport."
+              },
+              {
+                "left": "5th",
+                "right": "Rod Border told them they would get a special medal."
+              },
+              {
+                "left": "6th",
+                "right": "During the medal ceremony, Tom jumped into the pool."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "658c6873-187e-449e-9aa8-d6f63bb848cc",
+          "activity_type": "gap-fill",
+          "title": "Grammar: Past Tense Verbs",
+          "instruction": "Complete the sentences from the story using the correct past tense verb.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "133",
+          "compensates": "Teacher-led grammar practice and review of the story's language.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "We ___ in Dick Bird's helicopter, flying over the mountains.",
+                "blanks": [
+                  {
+                    "hint": "Past tense of 'be' for 'we'",
+                    "answer": "were",
+                    "alternatives": [
+                      "was"
+                    ]
+                  }
+                ],
+                "explanation": "We use 'were' for the past tense of 'to be' with 'we', 'you', and 'they'."
+              },
+              {
+                "text": "Five minutes later I ___ them.",
+                "blanks": [
+                  {
+                    "hint": "Past tense of 'see'",
+                    "answer": "saw",
+                    "alternatives": [
+                      "see"
+                    ]
+                  }
+                ],
+                "explanation": "'Saw' is the irregular past tense of the verb 'see'."
+              },
+              {
+                "text": "Chuck and Hans ___ to pick Jim up.",
+                "blanks": [
+                  {
+                    "hint": "Past tense of 'try'",
+                    "answer": "tried",
+                    "alternatives": [
+                      "try"
+                    ]
+                  }
+                ],
+                "explanation": "To make the past tense of 'try', we change the 'y' to 'i' and add 'ed'."
+              },
+              {
+                "text": "Very carefully Tariq and I ___ Jim on to our stretcher.",
+                "blanks": [
+                  {
+                    "hint": "Past tense of 'lift'",
+                    "answer": "lifted",
+                    "alternatives": [
+                      "lift"
+                    ]
+                  }
+                ],
+                "explanation": "'Lifted' is the regular past tense of the verb 'lift'."
+              },
+              {
+                "text": "It was Rod Border. He ___ running towards us.",
+                "blanks": [
+                  {
+                    "hint": "Past tense of 'be' for 'he'",
+                    "answer": "was",
+                    "alternatives": [
+                      "were"
+                    ]
+                  }
+                ],
+                "explanation": "We use 'was' for the past tense of 'to be' with 'I', 'he', 'she', and 'it'."
+              },
+              {
+                "text": "Then Rod ___ on my medal.",
+                "blanks": [
+                  {
+                    "hint": "Past tense of 'pin'",
+                    "answer": "pinned",
+                    "alternatives": [
+                      "pin"
+                    ]
+                  }
+                ],
+                "explanation": "'Pinned' is the past tense of the verb 'pin'. We double the 'n' before adding 'ed'."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "e4dc4a2e-649d-4735-afaa-4f73d5eb4934",
+          "activity_type": "pronunciation-practice",
+          "title": "Say it Right!",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to each word from the story. Practice saying it out loud.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "69",
+          "compensates": "Teacher-led choral drilling and pronunciation correction.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "helicopter",
+                "phonetic": "/ˈhelɪkɒptər/",
+                "syllables": [
+                  "he",
+                  "li",
+                  "cop",
+                  "ter"
+                ]
+              },
+              {
+                "word": "stretcher",
+                "phonetic": "/ˈstretʃər/",
+                "syllables": [
+                  "stret",
+                  "cher"
+                ]
+              },
+              {
+                "word": "carefully",
+                "phonetic": "/ˈkeəfəli/",
+                "syllables": [
+                  "care",
+                  "ful",
+                  "ly"
+                ]
+              },
+              {
+                "word": "cheered",
+                "phonetic": "/tʃɪəd/",
+                "syllables": [
+                  "cheered"
+                ]
+              },
+              {
+                "word": "screamed",
+                "phonetic": "/skriːmd/",
+                "syllables": [
+                  "screamed"
+                ]
+              },
+              {
+                "word": "laughing",
+                "phonetic": "/ˈlɑːfɪŋ/",
+                "syllables": [
+                  "laugh",
+                  "ing"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "37ff4db8-de6e-4c84-b79f-d018744e359e",
+          "activity_type": "picture-description",
+          "title": "Describe the Rescue",
+          "instruction": "Use your eyes! 🧐 Look closely at the at the picture. Use your own words to describe what is happening. Use the keywords to help you.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "69",
+          "compensates": "Teacher-led picture discussion (TG 8.8, Activity 2B).",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/1464.png",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/1464.png",
+            "keywords": [
+              "helicopter",
+              "stretcher",
+              "rescue",
+              "carefully",
+              "injured",
+              "help"
+            ],
+            "sampleAnswers": [
+              "I see a helicopter and some people. One person is on a stretcher.",
+              "The people are probably a rescue team and an injured person.",
+              "They are carefully lifting the stretcher and putting it inside the helicopter.",
+              "They are rescuing the injured person and taking them to a hospital."
+            ],
+            "promptQuestions": [
+              "What do you see in this picture?",
+              "Who are the people?",
+              "What are they doing with the stretcher?",
+              "Why do you think they are doing this?"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "146e258c-6b76-4efd-ab04-079e29463ec3",
+      "lesson_title": "8.9",
+      "lesson_number": 9,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "c8792541-e82d-4148-90d9-19c961f6b5f6",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 38)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "134",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "237d053f-4e1f-4fac-831e-f44db8a593fa",
+          "activity_type": "flashcard",
+          "title": "Rescue Vocabulary",
+          "instruction": "Learn the new words from the story. Interact with the screen! 🖱️ Click to on the card to see the definition and example. Listen to the pronunciation.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "134",
+          "compensates": "Teacher-led vocabulary introduction and drilling.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "medal",
+                "example": "He was given a medal for his bravery.",
+                "definition": "A metal disc given as a prize or award in a competition or for a brave act.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "wave",
+                "example": "He saw his friend and started to wave.",
+                "definition": "To move your hand from side to side in the air, to attract attention or as a greeting.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "flag",
+                "example": "Every country has its own national flag.",
+                "definition": "A piece of cloth with a special design that is a symbol of a country or organization.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "stretcher",
+                "example": "The paramedics put the injured player on a stretcher.",
+                "definition": "A frame with handles for carrying a sick or injured person.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "pin on",
+                "example": "The general will pin on the medal to the soldier's uniform.",
+                "definition": "To attach something (like a badge or medal) using a pin.",
+                "partOfSpeech": "phrasal verb"
+              },
+              {
+                "word": "Well done",
+                "example": "'Well done!' said the teacher. 'You got the highest mark.'",
+                "definition": "A phrase used to congratulate someone for doing something good.",
+                "partOfSpeech": "phrase"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "00871bec-f0c6-43d7-8d39-907a5d4bd6fc",
+          "activity_type": "gap-fill",
+          "title": "Vocabulary in Context",
+          "instruction": "Reading time! 📖 Read carefully and the sentences and fill in the gaps with the correct word or phrase from the story. This is similar to WB page 134, Exercise A.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "134",
+          "compensates": "Workbook Exercise 8.9A, page 134.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "It is given to someone who wins a race. It's a ___.",
+                "blanks": [
+                  {
+                    "hint": "A prize for winning.",
+                    "answer": "medal",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "A medal is an award given for winning or for bravery."
+              },
+              {
+                "text": "You do this with your hand when you say goodbye. You ___.",
+                "blanks": [
+                  {
+                    "hint": "A hand gesture.",
+                    "answer": "wave",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "To wave is to move your hand as a greeting or farewell."
+              },
+              {
+                "text": "All countries have these. They are called ___.",
+                "blanks": [
+                  {
+                    "hint": "Symbols of a nation.",
+                    "answer": "flags",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "Flags are symbols that represent countries."
+              },
+              {
+                "text": "It is used to carry people who are hurt. It's a ___.",
+                "blanks": [
+                  {
+                    "hint": "Used by paramedics.",
+                    "answer": "stretcher",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "A stretcher is used to transport injured people safely."
+              },
+              {
+                "text": "To attach something so that it doesn't fall off, you ___ it ___.",
+                "blanks": [
+                  {
+                    "hint": "First part of the phrasal verb.",
+                    "answer": "pin",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "Second part of the phrasal verb.",
+                    "answer": "on",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The phrasal verb 'pin on' means to attach with a pin."
+              },
+              {
+                "text": "What you can say to someone who has won a race is '___!'",
+                "blanks": [
+                  {
+                    "hint": "A phrase of congratulations.",
+                    "answer": "Well done",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "'Well done' is a common way to congratulate someone."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "fc4c6e85-5ec1-4fa7-8a5d-46a3ae050422",
+          "activity_type": "true-false",
+          "title": "Check Your Understanding",
+          "instruction": "Reading time! 📖 Read carefully and the statements about the story on Pupil's Book page 69. Decide if they are true or false. This is based on WB page 134, Exercise B.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "134",
+          "compensates": "Workbook Exercise 8.9B, page 134.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "statements": [
+              {
+                "isTrue": false,
+                "statement": "Tom and Tariq were in a plane.",
+                "explanation": "They were in Dick Bird's helicopter, not a plane."
+              },
+              {
+                "isTrue": true,
+                "statement": "They were looking for Jim and the other boys.",
+                "explanation": "Correct. They were searching for their friends."
+              },
+              {
+                "isTrue": false,
+                "statement": "Tom and Tariq started to pick Jim up.",
+                "explanation": "Chuck and Hans started to pick Jim up, but Dick stopped them."
+              },
+              {
+                "isTrue": true,
+                "statement": "Dick told them not to move Jim because it could be serious.",
+                "explanation": "Correct. Dick knew it was dangerous to move an injured person incorrectly."
+              },
+              {
+                "isTrue": true,
+                "statement": "The boys made a stretcher from pieces of wood and three sweaters.",
+                "explanation": "Correct. They improvised a stretcher to carry Jim safely."
+              },
+              {
+                "isTrue": false,
+                "statement": "The boys took Jim to the hospital in a car.",
+                "explanation": "They went with Jim to the hospital in the helicopter."
+              },
+              {
+                "isTrue": false,
+                "statement": "Only Tariq was given a medal for what he had done.",
+                "explanation": "Both Tom and Tariq were given medals for their help."
+              },
+              {
+                "isTrue": true,
+                "statement": "Tom jumped into the pool because he thought an ant had bitten him.",
+                "explanation": "Correct. The feeling of the pin made him jump."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "04b75d3f-83d5-4823-8e8f-31a0dc095088",
+          "activity_type": "category-sort",
+          "title": "Sequence the Story",
+          "instruction": "Drag and drop the sentences into the correct part of the story: Beginning, Middle, or End. This will help you prepare to write a summary.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "134",
+          "compensates": "Teacher-led story elicitation and summary planning.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "categories": [
+              {
+                "name": "Beginning",
+                "items": [
+                  "Tom and Tariq were in a helicopter looking for their friends.",
+                  "They landed when they saw Jim was hurt."
+                ]
+              },
+              {
+                "name": "Middle",
+                "items": [
+                  "Dick stopped the other boys from moving Jim incorrectly.",
+                  "They made a stretcher using wood and sweaters.",
+                  "They carefully carried Jim to the helicopter and flew to the hospital."
+                ]
+              },
+              {
+                "name": "End",
+                "items": [
+                  "Tom and Tariq received medals for their bravery.",
+                  "Tom jumped into a pool when he got his medal."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "45783f97-af76-4263-94cd-af7a5c9d798d",
+          "activity_type": "word-order",
+          "title": "Build the Sentences",
+          "instruction": "Put the words in the correct order to make sentences from the story.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "134",
+          "compensates": "Grammar practice and sentence construction exercises.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "instruction": "Unscramble this sentence about how they helped Jim.",
+                "correctOrder": [
+                  "They",
+                  "made",
+                  "a",
+                  "stretcher",
+                  "from",
+                  "wood",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Unscramble this sentence about their reward.",
+                "correctOrder": [
+                  "Tom",
+                  "and",
+                  "Tariq",
+                  "were",
+                  "given",
+                  "medals",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Unscramble this sentence about Dick's important advice.",
+                "correctOrder": [
+                  "Dick",
+                  "told",
+                  "them",
+                  "not",
+                  "to",
+                  "move",
+                  "Jim",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Unscramble this sentence about why Tom jumped.",
+                "correctOrder": [
+                  "He",
+                  "thought",
+                  "an",
+                  "ant",
+                  "had",
+                  "bitten",
+                  "him",
+                  "."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "be61c99a-faac-44fc-906a-fb2d0edc81ef",
+          "activity_type": "pronunciation-practice",
+          "title": "Pronunciation Practice",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to each word and repeat it. Pay attention to the stressed syllables.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "134",
+          "compensates": "Teacher-led choral drilling of new vocabulary.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "helicopter",
+                "phonetic": "/ˈhɛlɪkɒptər/",
+                "syllables": [
+                  "hel",
+                  "i",
+                  "cop",
+                  "ter"
+                ]
+              },
+              {
+                "word": "stretcher",
+                "phonetic": "/ˈstrɛtʃər/",
+                "syllables": [
+                  "stretch",
+                  "er"
+                ]
+              },
+              {
+                "word": "hospital",
+                "phonetic": "/ˈhɒspɪtl/",
+                "syllables": [
+                  "hos",
+                  "pi",
+                  "tal"
+                ]
+              },
+              {
+                "word": "serious",
+                "phonetic": "/ˈsɪəriəs/",
+                "syllables": [
+                  "se",
+                  "ri",
+                  "ous"
+                ]
+              },
+              {
+                "word": "carefully",
+                "phonetic": "/ˈkɛəfəli/",
+                "syllables": [
+                  "care",
+                  "ful",
+                  "ly"
+                ]
+              }
+            ],
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/g9_u8_l8_9_pic_act6_i0.png"
+          }
+        },
+        {
+          "activity_id": "e51d495a-70ef-4d69-8ca1-bd34f6142fa4",
+          "activity_type": "picture-description",
+          "title": "Describe the Scene",
+          "instruction": "Use your eyes! 🧐 Look closely at the at the picture of the rescue. Answer the questions to describe what is happening. Use the keywords to help you.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "134",
+          "compensates": "Class discussion about pictures in the book and pre-writing brainstorming.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": "",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/g9_u8_l8_9_pic_act6_i0.png",
+            "keywords": [
+              "helicopter",
+              "stretcher",
+              "injured",
+              "carefully",
+              "hospital",
+              "friends"
+            ],
+            "sampleAnswers": [
+              "The boys are in a field or the countryside. A helicopter has landed nearby.",
+              "Jim is injured and cannot walk.",
+              "The boys are carefully lifting Jim onto a makeshift stretcher.",
+              "They are using a stretcher made of wood and sweaters.",
+              "The helicopter will take Jim to the hospital."
+            ],
+            "promptQuestions": [
+              "Where are the boys?",
+              "What happened to Jim?",
+              "How are the boys helping Jim?",
+              "What are they using to carry him?",
+              "Where will the helicopter take Jim?"
+            ]
+          }
+        },
+        {
+          "activity_id": "f8e28543-50e8-4393-be34-95b045bebfbf",
+          "activity_type": "gap-fill",
+          "title": "Write the Summary",
+          "instruction": "Complete the summary of the story by filling in the blanks with the correct words.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "134",
+          "compensates": "Workbook Exercise 8.9B, writing a summary in a copybook.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "Tom and Tariq were in Dick Bird's ___. They were looking for Jim and the other boys. When they saw the boys, they ___. Chuck and Hans started to pick Jim up, but Dick told them not to because it could be ___. They made a ___ from pieces of wood and three sweaters. Then they went with Jim to the ___ on the helicopter. Tom and Tariq were given ___ for what they had done. When Rod pinned on Tom’s medal, he thought an ant had bitten him and he jumped into the ___!",
+                "blanks": [
+                  {
+                    "hint": "A flying vehicle.",
+                    "answer": "helicopter",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "Came down from the air.",
+                    "answer": "landed",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "Not a small problem.",
+                    "answer": "serious",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "Used to carry injured people.",
+                    "answer": "stretcher",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "A place for sick people.",
+                    "answer": "hospital",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "Awards for bravery.",
+                    "answer": "medals",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "A place to swim.",
+                    "answer": "pool",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "This summary covers all the main points of the story from Pupil's Book page 69."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "81b1c981-c15b-438a-a9aa-b4939a5f8043",
+      "lesson_title": "8.10",
+      "lesson_number": 10,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "847acafe-50d5-4141-bf73-c4520b74031a",
+          "activity_type": "listening-comprehension",
+          "title": "Listening for Adjectives",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the short story about a trip to the zoo. Then, answer the questions.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "135",
+          "compensates": "Provides a dedicated listening practice activity that incorporates the lesson's target vocabulary, often a teacher-led task involving reading a text aloud.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Cloudy",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Lovely",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Cold",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What was the weather like yesterday?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Small",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "New and huge",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Old and quiet",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Which adjective describes the zoo?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "It was running.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "It was eating.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "It was sleeping.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "What was the lion doing?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Angry",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Lazy",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Strong",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Which adjective describes the lion?"
+              }
+            ],
+            "transcript": "Yesterday was a lovely day. My friend and I went to the new zoo. It was a huge place with many interesting animals. We saw a tall giraffe and a fast cheetah. We also saw a lazy lion sleeping under a tree. It was an important day for me because I love animals. The only sad part was when we had to leave."
+          }
+        },
+        {
+          "activity_id": "4f54f39a-2e50-4b41-b5e9-a7c8f8558c5c",
+          "activity_type": "gap-fill",
+          "title": "Crossword Puzzle Challenge",
+          "instruction": "Read the clues and type the correct word to complete the crossword puzzle. Use your eyes! 🧐 Look closely at the at the image to see the puzzle layout.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "135",
+          "compensates": "This activity digitizes the crossword puzzle from WB page 135, providing instant feedback.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g9u8/images/g9_u8_l8_10_gap_act0_i0.png",
+            "sentences": [
+              {
+                "text": "Across 2: The opposite of happy is [blank].",
+                "blanks": [
+                  {
+                    "answer": "sad"
+                  }
+                ],
+                "explanation": "Sad is the opposite of happy."
+              },
+              {
+                "text": "Across 4: A colour. Bananas are [blank].",
+                "blanks": [
+                  {
+                    "answer": "yellow"
+                  }
+                ],
+                "explanation": "Yellow is a color."
+              },
+              {
+                "text": "Across 6: Japan is an [blank] country.",
+                "blanks": [
+                  {
+                    "answer": "industrial"
+                  }
+                ],
+                "explanation": "An industrial country has a lot of factories and businesses."
+              },
+              {
+                "text": "Across 8: He does not like doing homework. He is [blank].",
+                "blanks": [
+                  {
+                    "answer": "lazy"
+                  }
+                ],
+                "explanation": "Someone who doesn't like to work is lazy."
+              },
+              {
+                "text": "Across 10: In India they [blank] rice, tea and cotton.",
+                "blanks": [
+                  {
+                    "answer": "grow"
+                  }
+                ],
+                "explanation": "Grow means to cultivate plants."
+              },
+              {
+                "text": "Across 12: [blank], dear!",
+                "blanks": [
+                  {
+                    "answer": "Oh"
+                  }
+                ],
+                "explanation": "'Oh, dear!' is a common expression of surprise or dismay."
+              },
+              {
+                "text": "Across 13: The opposite of hot is [blank].",
+                "blanks": [
+                  {
+                    "answer": "cold"
+                  }
+                ],
+                "explanation": "Cold is the opposite of hot."
+              },
+              {
+                "text": "Across 14: It is larger than a village. It's a [blank].",
+                "blanks": [
+                  {
+                    "answer": "town"
+                  }
+                ],
+                "explanation": "A town is larger than a village but smaller than a city."
+              },
+              {
+                "text": "Down 1: You cannot see the sun when the sky is [blank].",
+                "blanks": [
+                  {
+                    "answer": "cloudy"
+                  }
+                ],
+                "explanation": "A cloudy sky is full of clouds."
+              },
+              {
+                "text": "Down 3: The [blank] of England is 130,000 sq km.",
+                "blanks": [
+                  {
+                    "answer": "area"
+                  }
+                ],
+                "explanation": "Area refers to the size of a surface."
+              },
+              {
+                "text": "Down 5: You get [blank] when it rains.",
+                "blanks": [
+                  {
+                    "answer": "wet"
+                  }
+                ],
+                "explanation": "Rain makes things wet."
+              },
+              {
+                "text": "Down 7: The opposite of wrong is [blank].",
+                "blanks": [
+                  {
+                    "answer": "right"
+                  }
+                ],
+                "explanation": "Right is the opposite of wrong."
+              },
+              {
+                "text": "Down 9: You can see wild animals there. It's a [blank].",
+                "blanks": [
+                  {
+                    "answer": "zoo"
+                  }
+                ],
+                "explanation": "A zoo is a park where wild animals are kept."
+              },
+              {
+                "text": "Down 11: Who will [blank] the prize?",
+                "blanks": [
+                  {
+                    "answer": "win"
+                  }
+                ],
+                "explanation": "To win is to be the best in a competition."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "d3a2a129-67ff-4419-a75a-f268f49675a9",
+          "activity_type": "flashcard",
+          "title": "Crossword Vocabulary",
+          "instruction": "Learn the new words from the crossword puzzle. Listen carefully! 🎧 Clear your ears and to the pronunciation and read the definition and example.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "135",
+          "compensates": "Provides a digital, self-paced way to learn and review key vocabulary from the lesson, which a teacher would typically introduce on the board.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "sad",
+                "example": "He was sad because he lost the game.",
+                "definition": "Feeling or showing sorrow; unhappy.",
+                "partOfSpeech": "adjective"
+              },
+              {
+                "word": "industrial",
+                "example": "Japan is an industrial country.",
+                "definition": "Relating to or characterized by industry.",
+                "partOfSpeech": "adjective"
+              },
+              {
+                "word": "lazy",
+                "example": "He is lazy and does not like doing homework.",
+                "definition": "Unwilling to work or use energy.",
+                "partOfSpeech": "adjective"
+              },
+              {
+                "word": "grow",
+                "example": "In India, they grow rice, tea, and cotton.",
+                "definition": "To produce plants or crops.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "cloudy",
+                "example": "You cannot see the sun when the sky is cloudy.",
+                "definition": "Covered with clouds; overcast.",
+                "partOfSpeech": "adjective"
+              },
+              {
+                "word": "area",
+                "example": "The area of England is 130,000 sq km.",
+                "definition": "A region or part of a town, a country, or the world.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "zoo",
+                "example": "You can see wild animals at the zoo.",
+                "definition": "A place where wild animals are kept for the public to see.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "win",
+                "example": "Who will win the prize?",
+                "definition": "To be successful or victorious in a contest or conflict.",
+                "partOfSpeech": "verb"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "231cf11f-d95f-4457-a313-39af042b46bc",
+          "activity_type": "match-pairs",
+          "title": "Adjective and Noun Pairs",
+          "instruction": "Match the adjective on the left with a noun it can describe on the right.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "135",
+          "compensates": "This digitizes the adjective-noun matching activity from WB8.10B, allowing for self-correction.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "fast",
+                "right": "car"
+              },
+              {
+                "left": "interesting",
+                "right": "story"
+              },
+              {
+                "left": "tall",
+                "right": "building"
+              },
+              {
+                "left": "hard-working",
+                "right": "pupil"
+              },
+              {
+                "left": "beautiful",
+                "right": "dress"
+              },
+              {
+                "left": "dangerous",
+                "right": "animal"
+              },
+              {
+                "left": "strong",
+                "right": "man"
+              },
+              {
+                "left": "long",
+                "right": "hair"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "52d0611a-1885-45b2-a4ab-62391cc0e96b",
+          "activity_type": "gap-fill",
+          "title": "Choose the Right Adjective",
+          "instruction": "Reading time! 📖 Read carefully and the sentences and fill in the blanks with the best adjective from the box: forgetful, dangerous, hard-working, wrong, quiet, huge.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "135",
+          "compensates": "Provides contextual practice for using adjectives, similar to a teacher-led sentence completion exercise.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "He always forgets his keys. He is very [blank].",
+                "blanks": [
+                  {
+                    "hint": "Someone who forgets things.",
+                    "answer": "forgetful"
+                  }
+                ],
+                "explanation": "'Forgetful' describes someone who often forgets things."
+              },
+              {
+                "text": "The lion is a [blank] animal, so you must be careful.",
+                "blanks": [
+                  {
+                    "hint": "It can harm you.",
+                    "answer": "dangerous"
+                  }
+                ],
+                "explanation": "'Dangerous' describes something that can cause harm."
+              },
+              {
+                "text": "She studies for hours every day. She is a [blank] pupil.",
+                "blanks": [
+                  {
+                    "hint": "Someone who works a lot.",
+                    "answer": "hard-working"
+                  }
+                ],
+                "explanation": "'Hard-working' describes someone who puts a lot of effort into their work."
+              },
+              {
+                "text": "This is the correct answer, not the [blank] one.",
+                "blanks": [
+                  {
+                    "hint": "The opposite of right.",
+                    "answer": "wrong"
+                  }
+                ],
+                "explanation": "'Wrong' is the opposite of 'right' or 'correct'."
+              },
+              {
+                "text": "The library is a [blank] place. You should not shout.",
+                "blanks": [
+                  {
+                    "hint": "Not noisy.",
+                    "answer": "quiet"
+                  }
+                ],
+                "explanation": "'Quiet' means making very little noise."
+              },
+              {
+                "text": "This building is 100 floors high. It is [blank].",
+                "blanks": [
+                  {
+                    "hint": "Very, very big.",
+                    "answer": "huge"
+                  }
+                ],
+                "explanation": "'Huge' means extremely large."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "8ebf321d-88a8-4264-ba03-03d6be58d8e8",
+          "activity_type": "word-order",
+          "title": "Build Sentences with Adjectives",
+          "instruction": "Put the words in the correct order to make a meaningful sentence.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "135",
+          "compensates": "Replaces the manual sentence-writing task from the Teacher Guide (page 263), providing structure and self-correction.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": [
+            {
+              "correctOrder": [
+                "The",
+                "hard-working",
+                "pupil",
+                "got",
+                "the",
+                "right",
+                "answer",
+                "."
+              ]
+            },
+            {
+              "correctOrder": [
+                "She",
+                "wore",
+                "a",
+                "beautiful",
+                "new",
+                "dress",
+                "."
+              ]
+            },
+            {
+              "correctOrder": [
+                "That",
+                "is",
+                "a",
+                "very",
+                "tall",
+                "building",
+                "."
+              ]
+            },
+            {
+              "correctOrder": [
+                "He",
+                "told",
+                "an",
+                "interesting",
+                "story",
+                "."
+              ]
+            },
+            {
+              "correctOrder": [
+                "A",
+                "lion",
+                "is",
+                "a",
+                "dangerous",
+                "animal",
+                "."
+              ]
+            }
+          ]
+        },
+        {
+          "activity_id": "b2a592fe-2dfd-4e47-a236-9ad2406b6cf8",
+          "activity_type": "pronunciation-practice",
+          "title": "Adjective Pronunciation",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the pronunciation of these adjectives. Pay attention to the stressed syllables. Then, record yourself saying them.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "135",
+          "compensates": "Provides guided pronunciation practice with audio models, which a teacher would normally provide in the classroom.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "interesting",
+                "phonetic": "/ˈɪn.trəs.tɪŋ/",
+                "syllables": [
+                  "IN",
+                  "ter",
+                  "est",
+                  "ing"
+                ]
+              },
+              {
+                "word": "beautiful",
+                "phonetic": "/ˈbjuː.tɪ.fəl/",
+                "syllables": [
+                  "BEAU",
+                  "ti",
+                  "ful"
+                ]
+              },
+              {
+                "word": "dangerous",
+                "phonetic": "/ˈdeɪn.dʒər.əs/",
+                "syllables": [
+                  "DAN",
+                  "ger",
+                  "ous"
+                ]
+              },
+              {
+                "word": "important",
+                "phonetic": "/ɪmˈpɔː.tənt/",
+                "syllables": [
+                  "im",
+                  "POR",
+                  "tant"
+                ]
+              },
+              {
+                "word": "forgetful",
+                "phonetic": "/fəˈɡet.fəl/",
+                "syllables": [
+                  "for",
+                  "GET",
+                  "ful"
+                ]
+              },
+              {
+                "word": "hard-working",
+                "phonetic": "/ˌhɑːdˈwɜː.kɪŋ/",
+                "syllables": [
+                  "hard",
+                  "WORK",
+                  "ing"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

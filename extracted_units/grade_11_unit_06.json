@@ -1,0 +1,3091 @@
+{
+  "unit_id": "7331aa50-eeb1-4fa1-9b0c-0e6c0294a818",
+  "unit_title": "Revision",
+  "unit_number": 6,
+  "course_id": "a811308f-430d-4d4f-a763-ab50e455762f",
+  "course_title": "Grade 11",
+  "course_description": "English curriculum for Grade 11",
+  "lessons": [
+    {
+      "lesson_id": "f73b6552-38b5-4f1b-8dc6-a136b857888b",
+      "lesson_title": "6.1",
+      "lesson_number": 1,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "a162c6b7-abb4-47b1-92a1-79ea0383cab4",
+          "activity_type": "flashcard",
+          "title": "Jobs and Concepts Vocabulary",
+          "instruction": "Learn the new words for this lesson. Tap to flip the card, and press the speaker icon to hear the pronunciation.",
+          "difficulty": "intermediate",
+          "book_type": null,
+          "book_page": null,
+          "compensates": "Replaces teacher-led vocabulary presentation and drilling.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "fisherman",
+                "example": "A fisherman works on the sea.",
+                "definition": "A person who catches fish for a living or for sport.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "spectator",
+                "example": "The race was watched by a lot of spectators.",
+                "definition": "A person who watches at a show, game, or other event.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "caretaker",
+                "example": "The museum is opened by the caretaker every day.",
+                "definition": "A person employed to look after a public building, such as a school or a museum.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "engineer",
+                "image": "g11-vocab-engineer",
+                "example": "Many engineers work in the electronics factory.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u6/images/g11_vocab_engineer.png",
+                "definition": "A person who designs, builds, or maintains engines, machines, or public works.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "president",
+                "image": "g11-vocab-president",
+                "example": "A president is the head of state of a republic.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u6/images/g11_vocab_president.png",
+                "definition": "The elected head of a republican state.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "republic",
+                "example": "Yemen is a republic.",
+                "definition": "A state in which supreme power is held by the people and their elected representatives.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "agriculture",
+                "image": "g11-vocab-agriculture",
+                "example": "Agriculture is an important source of income for Yemen.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u6/images/g11_vocab_agriculture.png",
+                "definition": "The science or practice of farming, including cultivation of the soil for the growing of crops and the rearing of animals.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "immigration officer",
+                "example": "An immigration officer's job is to check passports.",
+                "definition": "A government employee who examines the passports and visas of foreign nationals entering the country.",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "items": [
+              {
+                "word": "fisherman",
+                "example": "A fisherman works on the sea.",
+                "imageUrl": "/media/g10/g10_u6_l6.1_flsh_act0_i0.png",
+                "definition": "A person who catches fish for a living or for sport.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "spectator",
+                "example": "The race was watched by a lot of spectators.",
+                "imageUrl": "/media/g10/g10_u6_l6.1_flsh_act0_i1.png",
+                "definition": "A person who watches at a show, game, or other event.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "caretaker",
+                "example": "The museum is opened by the caretaker every day.",
+                "imageUrl": "/media/g10/g10_u6_l6.1_flsh_act0_i2.png",
+                "definition": "A person employed to look after a public building, such as a school or a museum.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "engineer",
+                "image": "g11-vocab-engineer",
+                "example": "Many engineers work in the electronics factory.",
+                "imageUrl": "/media/g10/g10_u6_l6.1_flsh_act0_i3.png",
+                "definition": "A person who designs, builds, or maintains engines, machines, or public works.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "president",
+                "image": "g11-vocab-president",
+                "example": "A president is the head of state of a republic.",
+                "imageUrl": "/media/g10/g10_u6_l6.1_flsh_act0_i4.png",
+                "definition": "The elected head of a republican state.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "republic",
+                "example": "Yemen is a republic.",
+                "imageUrl": "/media/g10/g10_u6_l6.1_flsh_act0_i5.png",
+                "definition": "A state in which supreme power is held by the people and their elected representatives.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "agriculture",
+                "image": "g11-vocab-agriculture",
+                "example": "Agriculture is an important source of income for Yemen.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u6/images/g11_vocab_agriculture.png",
+                "definition": "The science or practice of farming, including cultivation of the soil for the growing of crops and the rearing of animals.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "immigration officer",
+                "example": "An immigration officer's job is to check passports.",
+                "definition": "A government employee who examines the passports and visas of foreign nationals entering the country.",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "b1200ea0-6d40-478c-a5fe-45e46da08940",
+          "activity_type": "match-pairs",
+          "title": "Who Works Where?",
+          "instruction": "Match the person or concept on the left with the correct description on the right.",
+          "difficulty": "intermediate",
+          "book_type": null,
+          "book_page": null,
+          "compensates": "Interactive version of WB6.1A, providing instant feedback on sentence construction.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "A fisherman",
+                "right": "works on the sea."
+              },
+              {
+                "left": "A caretaker",
+                "right": "opens the museum."
+              },
+              {
+                "left": "An engineer",
+                "right": "works in a factory."
+              },
+              {
+                "left": "A president",
+                "right": "is the head of a republic."
+              },
+              {
+                "left": "An immigration officer",
+                "right": "checks passports."
+              },
+              {
+                "left": "Spectators",
+                "right": "watch a race."
+              },
+              {
+                "left": "Agriculture",
+                "right": "is a source of income."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "4bf872b7-975d-4b67-bce0-7ffcd849185c",
+          "activity_type": "transform-sentence",
+          "title": "Making Polite Questions",
+          "instruction": "Rewrite the direct questions as more polite, indirect questions. Start with the phrase given.",
+          "difficulty": "intermediate",
+          "book_type": null,
+          "book_page": null,
+          "compensates": "Digital, self-correcting version of WB6.1C, focusing on the structure of indirect questions.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "prompt": "Start with: Would you mind telling me...",
+                "original": "What is your address?",
+                "correct_answers": [
+                  "Would you mind telling me what your address is?"
+                ]
+              },
+              {
+                "prompt": "Start with: Can you tell me...",
+                "original": "When was television invented?",
+                "correct_answers": [
+                  "Can you tell me when television was invented?"
+                ]
+              },
+              {
+                "prompt": "Start with: Could you tell me...",
+                "original": "Who used to live in the Tower?",
+                "correct_answers": [
+                  "Could you tell me who used to live in the Tower?"
+                ]
+              },
+              {
+                "prompt": "Start with: Excuse me, do you know...",
+                "original": "Where is Traitor's Gate?",
+                "correct_answers": [
+                  "Excuse me, do you know where Traitor's Gate is?"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "2f498ff8-04f7-4b29-9158-944d1fc1fbad",
+          "activity_type": "gap-fill",
+          "title": "Second Conditional Practice",
+          "instruction": "Complete the sentences using the correct form of the verb in brackets to make a second conditional sentence.",
+          "difficulty": "intermediate",
+          "book_type": null,
+          "book_page": null,
+          "compensates": "Interactive version of WB6.1D, providing structured practice on the second conditional with immediate feedback.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "I would buy a new car if I ___ enough money. (have)",
+                "blanks": [
+                  {
+                    "hint": "Use the simple past tense.",
+                    "answer": "had",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "In the second conditional, the 'if' clause uses the simple past tense (had)."
+              },
+              {
+                "text": "My parents would be worried if they ___ I went sailing alone. (know)",
+                "blanks": [
+                  {
+                    "hint": "Use the simple past tense.",
+                    "answer": "knew",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "In the second conditional, the 'if' clause uses the simple past tense (knew)."
+              },
+              {
+                "text": "My father would be very happy if I ___ the exam. (pass)",
+                "blanks": [
+                  {
+                    "hint": "Use the simple past tense.",
+                    "answer": "passed",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "In the second conditional, the 'if' clause uses the simple past tense (passed)."
+              },
+              {
+                "text": "The city would be cleaner if people ___ up their waste paper. (pick)",
+                "blanks": [
+                  {
+                    "hint": "Use the simple past tense.",
+                    "answer": "picked",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "In the second conditional, the 'if' clause uses the simple past tense (picked)."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "81b072f9-d7c4-4263-8f34-0aa0d212da7b",
+          "activity_type": "gap-fill",
+          "title": "Revising Verb Forms",
+          "instruction": "Reading time! 📖 Read carefully and the story and fill in the blanks with the correct past tense form of the verbs provided.",
+          "difficulty": "advanced",
+          "book_type": null,
+          "book_page": null,
+          "compensates": "Digital, self-correcting version of WB6.1B, reinforcing complex past tense usage in a narrative context.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "Yesterday, I ___ (go) to the library. While I was there, I ___ (see) an old book I ___ (read) many years ago. I ___ (take) it from the shelf. The sun ___ (shine) through the window as I sat down. Two other students ___ (stand) nearby. I ___ (ask) them if they knew the author. They ___ (not say) anything because they ___ (forget) his name. I ___ (buy) a coffee after I left.",
+                "blanks": [
+                  {
+                    "answer": "went"
+                  },
+                  {
+                    "answer": "saw"
+                  },
+                  {
+                    "answer": "had read"
+                  },
+                  {
+                    "answer": "took"
+                  },
+                  {
+                    "answer": "was shining"
+                  },
+                  {
+                    "answer": "were standing"
+                  },
+                  {
+                    "answer": "asked"
+                  },
+                  {
+                    "answer": "did not say"
+                  },
+                  {
+                    "answer": "had forgotten"
+                  },
+                  {
+                    "answer": "bought"
+                  }
+                ],
+                "explanation": "This story uses a mix of past simple (for completed actions), past continuous (for background actions), and past perfect (for actions that happened before other past actions)."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "93e1f239-9295-4ebf-a7a2-2fa8568bfb53",
+          "activity_type": "pronunciation-practice",
+          "title": "Word Pronunciation",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the pronunciation of these words. Pay attention to the stressed syllables, which are in bold. Then, record yourself saying them.",
+          "difficulty": "intermediate",
+          "book_type": null,
+          "book_page": null,
+          "compensates": "Replaces teacher-led pronunciation drills, allowing students to practice difficult words at their own pace with a model.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "spectators",
+                "phonetic": "/spekˈteɪtərz/",
+                "syllables": [
+                  "spec",
+                  "**ta**",
+                  "tors"
+                ]
+              },
+              {
+                "word": "engineer",
+                "phonetic": "/ˌɛndʒɪˈnɪər/",
+                "syllables": [
+                  "en",
+                  "gi",
+                  "**neer**"
+                ]
+              },
+              {
+                "word": "republic",
+                "phonetic": "/rɪˈpʌblɪk/",
+                "syllables": [
+                  "re",
+                  "**pub**",
+                  "lic"
+                ]
+              },
+              {
+                "word": "agriculture",
+                "phonetic": "/ˈæɡrɪˌkʌltʃər/",
+                "syllables": [
+                  "**ag**",
+                  "ri",
+                  "cul",
+                  "ture"
+                ]
+              },
+              {
+                "word": "immigration",
+                "phonetic": "/ˌɪmɪˈɡreɪʃən/",
+                "syllables": [
+                  "im",
+                  "mi",
+                  "**gra**",
+                  "tion"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "e1655d5e-84e1-4342-95a6-fa0208b3b80c",
+          "activity_type": "mcq",
+          "title": "Grammar Check",
+          "instruction": "Read each question carefully and Challenge yourself! 📝 Select the best option for the best answer.",
+          "difficulty": "advanced",
+          "book_type": null,
+          "book_page": null,
+          "compensates": "Provides a summative check of the lesson's grammar points, similar to a mini-quiz, with detailed feedback.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Can you tell me where is the station?",
+                    "feedback": "Incorrect. In an indirect question, the word order after the 'wh-' word is subject + verb, not verb + subject.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Can you tell me where the station is?",
+                    "feedback": "Correct! The word order is subject ('the station') then verb ('is').",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Do you know where does the station is?",
+                    "feedback": "Incorrect. We don't use 'do/does/did' in the second part of an indirect question.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Which sentence is a grammatically correct indirect question?",
+                "explanation": "Indirect questions use statement word order (subject + verb) after the question word, not inverted question order."
+              },
+              {
+                "options": [
+                  {
+                    "text": "If I have enough money, I would buy a boat.",
+                    "feedback": "Incorrect. The 'if' clause in the second conditional uses the past simple tense.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "If I had enough money, I will buy a boat.",
+                    "feedback": "Incorrect. The main clause in the second conditional uses 'would' + infinitive, not 'will'.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "If I had enough money, I would buy a boat.",
+                    "feedback": "Correct! This follows the structure: If + past simple, ... would + infinitive.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Which sentence correctly uses the second conditional?",
+                "explanation": "The second conditional is used for hypothetical or unlikely situations in the present or future. The structure is 'If + past simple, ... would + base verb'."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "d252ea76-babd-4992-9281-204a4aa6e6f2",
+      "lesson_title": "6.2",
+      "lesson_number": 2,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "6b349529-c6f9-4d31-827f-1e9714b8d3f7",
+          "activity_type": "listening-comprehension",
+          "title": "Listen for Polite Questions",
+          "instruction": "Listen to a direct question. Then, Challenge yourself! 📝 Select the best option for the correct and most polite indirect question from the options.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Aural grammar practice, which is often difficult to do without a teacher or partner.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "audioSrc": "/media/audio/g11_u6_l6.2_lis_7.mp3",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Could you tell me what time is it?",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Could you tell me what time it is?",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Tell me what time it is.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Listen to question 1. Which is the correct polite form?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Do you know where is the nearest bank?",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Do you know where the nearest bank is?",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Do you know where the nearest bank?",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Listen to question 2. Which is the correct polite form?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "I was wondering why you moved to this city.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "I was wondering why did you move to this city.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Why you moved to this city, I was wondering.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Listen to question 3. Which is the correct polite form?"
+              }
+            ],
+            "transcript": "1. What time is it? 2. Where is the nearest bank? 3. Why did you move to this city?"
+          }
+        },
+        {
+          "activity_id": "b14b931a-8f05-4980-9709-c20de4c47fa0",
+          "activity_type": "match-pairs",
+          "title": "Who Are They? Word Building",
+          "instruction": "Match the word parts in the two columns to make eight names of people. This is based on Workbook page 86, Activity A.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Replaces WB6.2A, a static word-matching exercise, with an interactive format.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "citi",
+                "right": "zen"
+              },
+              {
+                "left": "carr",
+                "right": "ier"
+              },
+              {
+                "left": "win",
+                "right": "ner"
+              },
+              {
+                "left": "mon",
+                "right": "arch"
+              },
+              {
+                "left": "shop",
+                "right": "per"
+              },
+              {
+                "left": "motor",
+                "right": "ist"
+              },
+              {
+                "left": "presi",
+                "right": "dent"
+              },
+              {
+                "left": "pedes",
+                "right": "trian"
+              }
+            ],
+            "instruction": "Match the beginning of the word on the left with its ending on the right."
+          }
+        },
+        {
+          "activity_id": "08840a57-92c7-42e1-9fa8-41fbcb28a450",
+          "activity_type": "flashcard",
+          "title": "Key Vocabulary: People and Events",
+          "instruction": "Learn the new words, their meanings, and how to pronounce them. These words are from the exercises in your workbook.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Vocabulary pre-teaching and review, often done by the teacher on the board.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "citizen",
+                "example": "He is a citizen of the United Kingdom.",
+                "definition": "A person who is a member of a particular country and has rights because of it.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "monarch",
+                "example": "The monarch waved to the crowd from the balcony.",
+                "definition": "A king or queen.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "pedestrian",
+                "example": "The car stopped to let the pedestrian cross the street.",
+                "definition": "A person who is walking, especially in an area also used by cars.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "motorist",
+                "example": "The police officer gave the motorist a warning for speeding.",
+                "definition": "A person who drives a car.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "coronation",
+                "example": "The coronation of the new queen was a grand event.",
+                "definition": "A ceremony at which a person is made king or queen.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "spectator",
+                "example": "Thousands of spectators gathered to watch the parade.",
+                "definition": "A person who watches at a show, game, or other event.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "ceremony",
+                "example": "The graduation ceremony was held in the main hall.",
+                "definition": "A formal event held on a special occasion.",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "items": [
+              {
+                "word": "citizen",
+                "example": "He is a citizen of the United Kingdom.",
+                "imageUrl": "/media/g10/g10_u6_l6.2_flsh_act0_i0.png",
+                "definition": "A person who is a member of a particular country and has rights because of it.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "monarch",
+                "example": "The monarch waved to the crowd from the balcony.",
+                "definition": "A king or queen.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "pedestrian",
+                "example": "The car stopped to let the pedestrian cross the street.",
+                "definition": "A person who is walking, especially in an area also used by cars.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "motorist",
+                "example": "The police officer gave the motorist a warning for speeding.",
+                "definition": "A person who drives a car.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "coronation",
+                "example": "The coronation of the new queen was a grand event.",
+                "definition": "A ceremony at which a person is made king or queen.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "spectator",
+                "example": "Thousands of spectators gathered to watch the parade.",
+                "definition": "A person who watches at a show, game, or other event.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "ceremony",
+                "example": "The graduation ceremony was held in the main hall.",
+                "definition": "A formal event held on a special occasion.",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "469dbcaa-6dbc-449a-b79d-5517c4fda435",
+          "activity_type": "mcq",
+          "title": "Editing Practice: The Queen's Coronation",
+          "instruction": "Reading time! 📖 Read carefully and the paragraph about Queen Elizabeth's coronation. Find and correct the 12 mistakes by choosing the correct option for each one. This is based on Workbook page 87, Activity B.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Replaces WB6.2B, a static proofreading task, with an interactive, guided correction activity.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "june",
+                    "feedback": "Months of the year should always be capitalized.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "June",
+                    "feedback": "Correct! Months of the year are proper nouns and must be capitalized.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "I'll never forget the 2nd of (1) **june**, 1953.",
+                "explanation": "The names of months are proper nouns and must begin with a capital letter."
+              },
+              {
+                "options": [
+                  {
+                    "text": "were",
+                    "feedback": "'That' is a singular subject, so it needs a singular verb.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "was",
+                    "feedback": "Correct! The singular subject 'That' agrees with the singular verb 'was'.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "That (2) **were** the coronation of the young Queen Elizabeth.",
+                "explanation": "This sentence requires subject-verb agreement. 'That' is singular, so the verb must be 'was'."
+              },
+              {
+                "options": [
+                  {
+                    "text": "has become",
+                    "feedback": "This action happened before another past action (the coronation in 1953), so we need the past perfect tense.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "had become",
+                    "feedback": "Correct! The past perfect 'had become' is used for an action that was completed before another action in the past.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "She (3) **has become** Queen on the 6th of February, 1952 when her father died.",
+                "explanation": "The past perfect tense ('had become') is used to describe an event that happened before another event in the past (the coronation)."
+              },
+              {
+                "options": [
+                  {
+                    "text": "?",
+                    "feedback": "This is a statement, not a question. It should end with a period or an exclamation mark to show excitement.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "!",
+                    "feedback": "Correct! An exclamation mark shows the importance and excitement of the day.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "But this was her big day(4)**?**",
+                "explanation": "This is a declarative sentence expressing excitement, so an exclamation mark is the most appropriate punctuation."
+              },
+              {
+                "options": [
+                  {
+                    "text": "werld",
+                    "feedback": "This is a common spelling mistake.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "world",
+                    "feedback": "Correct spelling!",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Kings and Queens from all over the (5) **werld** came to the ceremony.",
+                "explanation": "This is a spelling error. The correct spelling is 'world'."
+              },
+              {
+                "options": [
+                  {
+                    "text": "his",
+                    "feedback": "The pronoun must agree with the noun 'Queen'.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "her",
+                    "feedback": "Correct! 'Her' is the correct possessive pronoun for 'Queen'.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Afterwards, the Queen, wearing (6) **his** crown, drove through London.",
+                "explanation": "The possessive pronoun must agree in gender with the noun it refers to. The Queen is female, so the pronoun is 'her'."
+              },
+              {
+                "options": [
+                  {
+                    "text": "spectacles",
+                    "feedback": "'Spectacles' are glasses. The word for people watching an event is different.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "spectators",
+                    "feedback": "Correct! 'Spectators' are people who watch an event.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "There were thousands of (7) **spectacles**.",
+                "explanation": "This is a vocabulary error. 'Spectacles' means eyeglasses. 'Spectators' are people who watch an event."
+              },
+              {
+                "options": [
+                  {
+                    "text": "have waited",
+                    "feedback": "This action (waiting) happened before the main past event (the Queen driving by). We need the past perfect.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "had waited",
+                    "feedback": "Correct! The past perfect 'had waited' shows the waiting happened before the main event in the past.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Some (8) **have waited** in the streets for days to get a good place to watch.",
+                "explanation": "The past perfect tense ('had waited') is used because the waiting happened before the main past event (the parade)."
+              },
+              {
+                "options": [
+                  {
+                    "text": "children",
+                    "feedback": "The word 'every' is followed by a singular noun.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "child",
+                    "feedback": "Correct! After 'every', we use a singular noun.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "There were parties in every town and every (9) **children** got a present.",
+                "explanation": "The determiner 'every' must be followed by a singular noun. The singular of 'children' is 'child'."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "d571f5fd-109f-4400-9ba2-c4ed1e6d77b9",
+          "activity_type": "transform-sentence",
+          "title": "Making Polite Questions",
+          "instruction": "Rewrite the direct questions to make them more polite. Start with the phrase given and remember to change the word order. This is based on Workbook page 87, Activity C.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Replaces WB6.2C, a written grammar drill, with an interactive sentence transformation task that provides immediate feedback.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "correct": [
+                  "Would you mind telling me what your address is?"
+                ],
+                "original": "What's your address?",
+                "startWith": "Would you mind telling me",
+                "explanation": "In an indirect question, the word order changes back to a normal statement (subject + verb). So, 'what is your address' becomes 'what your address is'."
+              },
+              {
+                "correct": [
+                  "Can you tell me when television was invented?"
+                ],
+                "original": "When was television invented?",
+                "startWith": "Can you tell me",
+                "explanation": "The word order 'television was invented' is already in statement form, so no change is needed after the question word 'when'."
+              },
+              {
+                "correct": [
+                  "Could you tell me who used to live in the Tower?"
+                ],
+                "original": "Who used to live in the Tower?",
+                "startWith": "Could you tell me",
+                "explanation": "When 'who' is the subject of the question, the word order does not change in the indirect form."
+              },
+              {
+                "correct": [
+                  "Excuse me. Do you know where Traitor's Gate is?"
+                ],
+                "original": "Where is Traitor's Gate?",
+                "startWith": "Excuse me. Do you know",
+                "explanation": "The word order changes from 'where is Traitor's Gate' to 'where Traitor's Gate is' (subject + verb)."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "43510d9e-a0c6-4ba6-8953-d4d7d5b93801",
+          "activity_type": "gap-fill",
+          "title": "Second Conditional Practice",
+          "instruction": "Complete the sentences using the correct form of the verb in brackets to form second conditional sentences. This is based on the grammar point in Workbook page 87, Activity D.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Replaces WB6.2D, an open-ended writing task, with a structured grammar practice on the second conditional that is self-correcting.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "If I ___ (have) more time, I ___ (learn) to play the guitar.",
+                "blanks": [
+                  {
+                    "answer": "had",
+                    "alternatives": []
+                  },
+                  {
+                    "answer": "would learn",
+                    "alternatives": [
+                      "'d learn"
+                    ]
+                  }
+                ],
+                "explanation": "The second conditional structure is 'If + past simple, ... would + base verb'. It's used for hypothetical situations."
+              },
+              {
+                "text": "This town ___ (be) a better place if there ___ (be) more parks.",
+                "blanks": [
+                  {
+                    "answer": "would be",
+                    "alternatives": [
+                      "'d be"
+                    ]
+                  },
+                  {
+                    "answer": "were",
+                    "alternatives": [
+                      "was"
+                    ]
+                  }
+                ],
+                "explanation": "The structure is '...would + base verb if + past simple'. For the verb 'be' in the if-clause, 'were' is traditionally used for all subjects."
+              },
+              {
+                "text": "If she ___ (know) the answer, she ___ (tell) us.",
+                "blanks": [
+                  {
+                    "answer": "knew",
+                    "alternatives": []
+                  },
+                  {
+                    "answer": "would tell",
+                    "alternatives": [
+                      "'d tell"
+                    ]
+                  }
+                ],
+                "explanation": "Remember to use the past simple form 'knew' in the if-clause and 'would tell' in the main clause."
+              },
+              {
+                "text": "What ___ you ___ (do) if you ___ (win) the lottery?",
+                "blanks": [
+                  {
+                    "answer": "would",
+                    "alternatives": []
+                  },
+                  {
+                    "answer": "do",
+                    "alternatives": []
+                  },
+                  {
+                    "answer": "won",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "For questions, the structure is 'What would + subject + base verb... if + subject + past simple?'"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "81765473-cb43-4933-b600-aaa41a2c97ce",
+          "activity_type": "pronunciation-practice",
+          "title": "Pronunciation Focus",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the correct pronunciation of these words. Pay attention to the stressed syllables (shown in bold). Then, record yourself saying them.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Teacher-led pronunciation drills and choral repetition.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "citizen",
+                "phonetic": "/ˈsɪtɪzən/",
+                "syllables": [
+                  "**ci**",
+                  "ti",
+                  "zen"
+                ]
+              },
+              {
+                "word": "monarch",
+                "phonetic": "/ˈmɒnək/",
+                "syllables": [
+                  "**mo**",
+                  "narch"
+                ]
+              },
+              {
+                "word": "pedestrian",
+                "phonetic": "/pəˈdestriən/",
+                "syllables": [
+                  "pe",
+                  "**des**",
+                  "tri",
+                  "an"
+                ]
+              },
+              {
+                "word": "president",
+                "phonetic": "/ˈprezɪdənt/",
+                "syllables": [
+                  "**pre**",
+                  "si",
+                  "dent"
+                ]
+              },
+              {
+                "word": "coronation",
+                "phonetic": "/ˌkɒrəˈneɪʃn/",
+                "syllables": [
+                  "co",
+                  "ro",
+                  "**na**",
+                  "tion"
+                ]
+              },
+              {
+                "word": "ceremony",
+                "phonetic": "/ˈserəməni/",
+                "syllables": [
+                  "**ce**",
+                  "re",
+                  "mo",
+                  "ny"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "a6bcad5a-4ff8-4104-a25d-45eb364535ee",
+      "lesson_title": "6.3",
+      "lesson_number": 3,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "8e864e01-abfe-4e4d-a58c-fd9a7a28cac1",
+          "activity_type": "match-pairs",
+          "title": "Adjective and Noun Partners",
+          "instruction": "Match the adjectives on the left with the correct nouns on the right to make common phrases. These are from your workbook exercise D.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Replaces the teacher-led matching exercise from WB D.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "hilly",
+                "right": "area"
+              },
+              {
+                "left": "electrical",
+                "right": "power"
+              },
+              {
+                "left": "valuable",
+                "right": "jewellery"
+              },
+              {
+                "left": "floor-length",
+                "right": "dress"
+              },
+              {
+                "left": "daily",
+                "right": "life"
+              },
+              {
+                "left": "independent",
+                "right": "state"
+              },
+              {
+                "left": "official",
+                "right": "language"
+              },
+              {
+                "left": "serious",
+                "right": "crime"
+              },
+              {
+                "left": "crowded",
+                "right": "market"
+              },
+              {
+                "left": "old-fashioned",
+                "right": "factory"
+              }
+            ],
+            "instruction": "Drag the noun from the right column to match the adjective on the left."
+          }
+        },
+        {
+          "activity_id": "9e2aa303-4af9-4522-92e7-b55569e566f0",
+          "activity_type": "gap-fill",
+          "title": "Discovering Ireland",
+          "instruction": "Reading time! 📖 Read carefully and the paragraph about Ireland and fill in the blanks with the correct words. This is from exercise A in your workbook.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Replaces the teacher-led completion of WB6.3A.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u6/images/g11_u6_l6_3_gap_act1_i0.png",
+            "sentences": [
+              {
+                "text": "Ireland is surrounded by water, so it is an ___. It is ___ by the Atlantic ___ on the south, west and north. The Irish Sea is on the ___. Dublin is the ___ city and it has the highest population ___. The main ___ is Christian. The two main languages are ___ and Irish. Ireland has beautiful ___, so lots of ___ visit it. One of its main ___ is tourism.",
+                "blanks": [
+                  {
+                    "answer": "island"
+                  },
+                  {
+                    "answer": "bounded"
+                  },
+                  {
+                    "answer": "Ocean"
+                  },
+                  {
+                    "answer": "east"
+                  },
+                  {
+                    "answer": "capital"
+                  },
+                  {
+                    "answer": "density"
+                  },
+                  {
+                    "answer": "religion"
+                  },
+                  {
+                    "answer": "English"
+                  },
+                  {
+                    "answer": "scenery"
+                  },
+                  {
+                    "answer": "tourists"
+                  },
+                  {
+                    "answer": "industries"
+                  }
+                ],
+                "explanation": "This paragraph describes the geography, culture, and economy of Ireland using key vocabulary."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "a18f0295-4bbb-4e69-a6c0-d9e62285b3ca",
+          "activity_type": "transform-sentence",
+          "title": "Active to Passive Voice",
+          "instruction": "Rewrite each active sentence into its passive form. Pay attention to the verb tense. This is from exercise C in your workbook.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Replaces the written exercise WB C, providing immediate feedback.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "hint": "The tense is present perfect (have called).",
+                "correct": "The central tower has been called The White Tower since 1241.",
+                "original": "People have called the central tower The White Tower since 1241."
+              },
+              {
+                "hint": "The tense is present continuous (are building).",
+                "correct": "A new supermarket is being built outside the town.",
+                "original": "People are building a new supermarket outside the town."
+              },
+              {
+                "hint": "Use the modal verb 'would'.",
+                "correct": "The ceremony would be cancelled if it rained.",
+                "original": "They would cancel the ceremony if it rained."
+              },
+              {
+                "hint": "Use the modal verb 'must'.",
+                "correct": "The spectators must be protected.",
+                "original": "Somebody must protect the spectators."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "f18cc566-a960-462c-b961-e212e00a7544",
+          "activity_type": "mcq",
+          "title": "Adding Question Tags",
+          "instruction": "Challenge yourself! 📝 Select the best option for the correct question tag to complete each sentence. Remember the rule: positive statement, negative tag; negative statement, positive tag.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Replaces the teacher-led revision of question tags (WB6.3C).",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "don't they?",
+                    "feedback": "Correct! The statement is positive, so the tag is negative.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "do they?",
+                    "feedback": "Incorrect. The statement is positive, so the tag must be negative.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "aren't they?",
+                    "feedback": "Incorrect. The verb is 'live', which requires 'do' in the tag.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Aborigines live in Australia, ___?",
+                "explanation": "The main sentence is positive ('live'), so the tag must be negative ('don't'). The subject is 'Aborigines' (they), so we use 'they'."
+              },
+              {
+                "options": [
+                  {
+                    "text": "will you?",
+                    "feedback": "Correct! The statement is negative, so the tag is positive.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "won't you?",
+                    "feedback": "Incorrect. The statement is negative ('won't'), so the tag must be positive.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "do you?",
+                    "feedback": "Incorrect. The verb is 'won't' (will not), so the tag must use 'will'.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "You won't forget to phone me, ___?",
+                "explanation": "The main sentence is negative ('won't'), so the tag must be positive ('will'). The subject is 'you'."
+              },
+              {
+                "options": [
+                  {
+                    "text": "hasn't he?",
+                    "feedback": "Correct! 'He's' here is 'He has'. The statement is positive, so the tag is negative.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "isn't he?",
+                    "feedback": "Incorrect. 'He's' in this context is 'He has', not 'He is'.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "has he?",
+                    "feedback": "Incorrect. The statement is positive, so the tag must be negative.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "He's been to Cairo, ___?",
+                "explanation": "The verb is 'has been' (present perfect), so the tag uses the auxiliary 'has'. The sentence is positive, so the tag is negative."
+              },
+              {
+                "options": [
+                  {
+                    "text": "isn't he?",
+                    "feedback": "Correct! The statement is positive, so the tag is negative.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "is he?",
+                    "feedback": "Incorrect. The statement is positive, so the tag must be negative.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "doesn't he?",
+                    "feedback": "Incorrect. The verb is 'is', so the tag must also use 'is'.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Faysal is a good swimmer, ___?",
+                "explanation": "The verb is 'is', so the tag uses 'is'. The sentence is positive, so the tag is negative."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "97f89119-b531-4b67-98d1-743edb022244",
+          "activity_type": "pronunciation-practice",
+          "title": "Word Pronunciation",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to each word and then record yourself saying it. Try to match the pronunciation.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Teacher-led pronunciation drills, allowing for self-paced practice and repetition.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "jewellery",
+                "phonetic": "/ˈdʒuːəlri/",
+                "syllables": [
+                  "jewel",
+                  "lery"
+                ]
+              },
+              {
+                "word": "scenery",
+                "phonetic": "/ˈsiːnəri/",
+                "syllables": [
+                  "sce",
+                  "ne",
+                  "ry"
+                ]
+              },
+              {
+                "word": "official",
+                "phonetic": "/əˈfɪʃəl/",
+                "syllables": [
+                  "of",
+                  "fi",
+                  "cial"
+                ]
+              },
+              {
+                "word": "independent",
+                "phonetic": "/ˌɪndɪˈpendənt/",
+                "syllables": [
+                  "in",
+                  "de",
+                  "pen",
+                  "dent"
+                ]
+              },
+              {
+                "word": "religion",
+                "phonetic": "/rɪˈlɪdʒən/",
+                "syllables": [
+                  "re",
+                  "li",
+                  "gion"
+                ]
+              },
+              {
+                "word": "tourism",
+                "phonetic": "/ˈtʊərɪzəm/",
+                "syllables": [
+                  "tour",
+                  "ism"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "404583f1-d559-4365-bf81-62d08b66a33e",
+          "activity_type": "dictation",
+          "title": "Listen and Punctuate",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the sentences and type what you hear. Make sure to use the correct punctuation (semicolons and full stops). This is from exercise B in your workbook.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Replaces the written punctuation exercise WB6.3B, adding a listening component.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "hints": [
+                  "This sentence uses a semicolon."
+                ],
+                "difficulty": "sentence",
+                "expectedText": "I can't meet you next week; I'm going on holiday tomorrow."
+              },
+              {
+                "hints": [
+                  "This sentence uses a semicolon to connect two related ideas."
+                ],
+                "difficulty": "sentence",
+                "expectedText": "Amna was very unhappy; her sister was ill."
+              },
+              {
+                "hints": [
+                  "These are two separate sentences."
+                ],
+                "difficulty": "sentence",
+                "expectedText": "Rashid closed the box. He put it under his bed."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "2b537d76-c480-4111-98f8-3c3714ef55cc",
+          "activity_type": "picture-description",
+          "title": "Describe the Scenery",
+          "instruction": "Use your eyes! 🧐 Look closely at the at the picture of the Irish coast. Answer the questions to describe what you see. Use words from the lesson.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Teacher-led discussion about a picture, allowing students to practice new vocabulary in a productive way.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/6/images/g11_u6_l6.1_flsh_act0_i1.png",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u6/images/g11_u6_l6_3_pic_act6_i0.png",
+            "keywords": [
+              "scenery",
+              "island",
+              "ocean",
+              "tourists",
+              "beautiful",
+              "green"
+            ],
+            "sampleAnswers": [
+              "This is the beautiful scenery of an island's coast, with green hills.",
+              "You can see the Atlantic Ocean.",
+              "Tourists visit because of the beautiful, natural scenery and peaceful environment."
+            ],
+            "promptQuestions": [
+              "What kind of landscape is this? (e.g., island, coast, hills)",
+              "What body of water can you see?",
+              "Why do you think tourists would like to visit a place like this?"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "ca7aff12-d91c-468e-96ab-598e88e5ea0d",
+      "lesson_title": "6.4",
+      "lesson_number": 4,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "e27b838e-8643-4129-a4e5-78487f90b457",
+          "activity_type": "flashcard",
+          "title": "Key Vocabulary: Travel and Culture",
+          "instruction": "Learn the new words for this lesson. Listen carefully! 🎧 Clear your ears and to the pronunciation and read the definition and example.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Introduces vocabulary from Workbook exercises A and D.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "nomads",
+                "audio": "gen-g11-u6-6.4-aud-1",
+                "image": "gen-g11-u6-6.4-img-1",
+                "example": "The Bedouin are famous nomads of the desert.",
+                "definition": "People who do not live in one place but move from one area to another to find food and water.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "rural",
+                "audio": "gen-g11-u6-6.4-aud-2",
+                "image": "gen-g11-u6-6.4-img-2",
+                "example": "Many people prefer the quiet of rural life.",
+                "definition": "Relating to the countryside rather than the town.",
+                "partOfSpeech": "adjective"
+              },
+              {
+                "word": "spear",
+                "audio": "gen-g11-u6-6.4-aud-3",
+                "image": "gen-g11-u6-6.4-img-3",
+                "example": "The Masai warrior held a long spear.",
+                "definition": "A weapon with a long shaft and a pointed tip, used for hunting and fighting.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "currency",
+                "audio": "gen-g11-u6-6.4-aud-4",
+                "image": "gen-g11-u6-6.4-img-4",
+                "example": "You need to exchange your money for the local currency when you travel.",
+                "definition": "The system of money in general use in a particular country.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "advertise",
+                "audio": "gen-g11-u6-6.4-aud-5",
+                "image": "gen-g11-u6-6.4-img-5",
+                "example": "Companies advertise their products on television and online.",
+                "definition": "To describe or draw attention to a product, service, or event in a public medium in order to promote sales or attendance.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "tomb",
+                "audio": "gen-g11-u6-6.4-aud-6",
+                "image": "gen-g11-u6-6.4-img-6",
+                "example": "The ancient pharaohs were buried in elaborate tombs.",
+                "definition": "A large vault, typically an underground one, for burying the dead.",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "988d24a5-3b0e-44c5-8ed0-b46b818de571",
+          "activity_type": "mcq",
+          "title": "Grammar Practice: Question Tags",
+          "instruction": "Read the statement and Challenge yourself! 📝 Select the best option for the correct question tag to complete the sentence. This is based on Workbook Exercise C.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Replaces Workbook Exercise C on question tags with an interactive format.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "don't they",
+                    "feedback": "Correct. The main verb 'live' is positive and in the present simple, so we use 'don't' + pronoun 'they'.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "do they",
+                    "feedback": "Incorrect. The statement is positive, so the tag must be negative.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "are they",
+                    "feedback": "Incorrect. The main verb is 'live', not 'are'.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Aborigines live in Australia, __________?",
+                "explanation": "For a positive statement with a simple present verb, the question tag is negative using 'do/does'."
+              },
+              {
+                "options": [
+                  {
+                    "text": "won't you",
+                    "feedback": "Incorrect. The statement is negative ('won't'), so the tag must be positive.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "will you",
+                    "feedback": "Correct. The statement is negative ('won't'), so the tag must be positive ('will').",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "do you",
+                    "feedback": "Incorrect. The auxiliary verb in the statement is 'will'.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "You won't forget to phone me, __________?",
+                "explanation": "For a negative statement with 'will', the question tag is positive: 'will you'."
+              },
+              {
+                "options": [
+                  {
+                    "text": "hasn't he",
+                    "feedback": "Correct. 'He's' is a contraction of 'He has'. The statement is positive, so the tag is negative.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "isn't he",
+                    "feedback": "Incorrect. 'He's' here means 'He has', not 'He is', because it's followed by 'been' (past participle).",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "has he",
+                    "feedback": "Incorrect. The statement is positive, so the tag must be negative.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "He's been to Cairo, __________?",
+                "explanation": "When 'He's' is followed by a past participle like 'been', it means 'He has'. The tag is 'hasn't he'."
+              },
+              {
+                "options": [
+                  {
+                    "text": "is he",
+                    "feedback": "Incorrect. The statement is positive, so the tag must be negative.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "does he",
+                    "feedback": "Incorrect. The verb is 'is', not a simple present verb like 'swims'.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "isn't he",
+                    "feedback": "Correct. The statement uses the positive verb 'is', so the tag is the negative 'isn't he'.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Faysal is a good swimmer, __________?",
+                "explanation": "For a positive statement with the verb 'to be', the question tag is negative."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "c2858d79-2ccd-4418-9c62-023e22475da8",
+          "activity_type": "gap-fill",
+          "title": "Grammar: Must vs. Have to",
+          "instruction": "Complete the sentences with the correct form: *must*, *have to*, or *don't have to*. This is based on Workbook Exercise B.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Replaces Workbook Exercise B on modals with an interactive format.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "If we want to be there on time, we ___ leave now.",
+                "blanks": [
+                  {
+                    "hint": "This is a strong personal obligation or urgency.",
+                    "answer": "must",
+                    "alternatives": [
+                      "have to"
+                    ]
+                  }
+                ],
+                "explanation": "Both 'must' and 'have to' can be used here to express strong obligation. 'Must' often implies the speaker feels the urgency themselves."
+              },
+              {
+                "text": "If you don't like the food, you ___ eat it.",
+                "blanks": [
+                  {
+                    "hint": "There is no obligation.",
+                    "answer": "don't have to",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "'Don't have to' means there is no obligation or necessity to do something."
+              },
+              {
+                "text": "I can't talk now because I ___ finish my homework.",
+                "blanks": [
+                  {
+                    "hint": "This is an obligation, perhaps from a teacher.",
+                    "answer": "have to",
+                    "alternatives": [
+                      "must"
+                    ]
+                  }
+                ],
+                "explanation": "'Have to' is often used for obligations that come from an external source (like a teacher). 'Must' is also acceptable here."
+              },
+              {
+                "text": "I'm tired. We ___ finish digging the garden tomorrow.",
+                "blanks": [
+                  {
+                    "hint": "This sentence is not in the textbook, but it's a logical completion. The original exercise might have been different. Let's assume the student needs to choose a logical modal. 'Can' expresses possibility.",
+                    "answer": "can",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The original sentence 'I'm tired. We ___ finish digging the garden tomorrow.' is not a standard 'must/have to' exercise. A logical completion would be 'can' or 'will have to'. Given the context, 'can' is a good fit to show possibility."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "fa399f0b-0d6f-43c3-9182-2a56406cf80d",
+          "activity_type": "transform-sentence",
+          "title": "Writing Skills: Using Semi-colons",
+          "instruction": "Combine the two related sentences into one using a semi-colon. This is based on Workbook Exercise B.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Replaces Workbook Exercise B on punctuation with an interactive format.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "expected": "I can't meet you next week; I'm going on holiday tomorrow.",
+                "original": "I can't meet you next week. I'm going on holiday tomorrow.",
+                "explanation": "A semi-colon can be used to connect two closely related independent clauses."
+              },
+              {
+                "expected": "Amna was very unhappy; her sister was ill.",
+                "original": "Amna was very unhappy. Her sister was ill.",
+                "explanation": "The second sentence explains the first, so a semi-colon is a good way to link them."
+              },
+              {
+                "expected": "Rashid closed the box; he put it under his bed.",
+                "original": "Rashid closed the box. He put it under his bed.",
+                "explanation": "These are two sequential actions that are closely related, so a semi-colon works well."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "198fa0dd-ee59-47d3-8a2f-569715590187",
+          "activity_type": "match-pairs",
+          "title": "Everyday Expressions",
+          "instruction": "Match each situation with the most suitable expression. This is based on Workbook Exercise C.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Replaces Workbook Exercise C on functional language with an interactive matching game.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "Your friend thinks she hasn't done well in her exam.",
+                "right": "Don't worry."
+              },
+              {
+                "left": "You think you know the answer to a question.",
+                "right": "I'm not sure."
+              },
+              {
+                "left": "Your friend hasn't got a bicycle.",
+                "right": "You can borrow mine."
+              },
+              {
+                "left": "You see a motor bike and you really like it.",
+                "right": "It looks good to me."
+              },
+              {
+                "left": "You think your friend would make a very good chef, but he's not sure.",
+                "right": "Go for it!"
+              },
+              {
+                "left": "Someone suggests going hunting. You want to go.",
+                "right": "I'm in favour of that."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "042a1bda-f3fa-4bdd-8bc4-32f2ab86b268",
+          "activity_type": "gap-fill",
+          "title": "Vocabulary: Word Puzzle",
+          "instruction": "Reading time! 📖 Read carefully and the clues from Workbook Exercise D and type the correct word. The first letter of the vertical word is 'T'.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Digitizes the word puzzle from Workbook Exercise D.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u6/images/g11_u6_l6_4_gap_act5_i0.png",
+            "sentences": [
+              {
+                "text": "1. There's a lot of it in Darjeeling. (Vertical) ___",
+                "blanks": [
+                  {
+                    "hint": "A popular hot drink.",
+                    "answer": "tea",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "Darjeeling is a region in India famous for its tea."
+              },
+              {
+                "text": "2. A sandy place by the sea. ___",
+                "blanks": [
+                  {
+                    "hint": "You go here to swim in the ocean.",
+                    "answer": "beach",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "A beach is a landform alongside a body of water which consists of loose particles."
+              },
+              {
+                "text": "3. The sixth month of the year. ___",
+                "blanks": [
+                  {
+                    "hint": "It comes after May.",
+                    "answer": "June",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "June is the sixth month of the Gregorian calendar."
+              },
+              {
+                "text": "4. People who don't live in one place. ___",
+                "blanks": [
+                  {
+                    "hint": "They travel from place to place.",
+                    "answer": "nomads",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "Nomads are members of a community without fixed habitation who regularly move to and from the same areas."
+              },
+              {
+                "text": "5. The opposite of *urban*. ___",
+                "blanks": [
+                  {
+                    "hint": "Relating to the countryside.",
+                    "answer": "rural",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "Rural areas are the opposite of urban (city) areas."
+              },
+              {
+                "text": "6. The opposite of *low*. ___",
+                "blanks": [
+                  {
+                    "hint": "Mountains are...",
+                    "answer": "high",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "High is the opposite of low."
+              },
+              {
+                "text": "7. A Masai weapon. ___",
+                "blanks": [
+                  {
+                    "hint": "A long stick with a sharp point.",
+                    "answer": "spear",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The spear is a traditional weapon of the Masai people."
+              },
+              {
+                "text": "8. It takes you up and down in a building. ___",
+                "blanks": [
+                  {
+                    "hint": "Also called an elevator.",
+                    "answer": "lift",
+                    "alternatives": [
+                      "elevator"
+                    ]
+                  }
+                ],
+                "explanation": "A lift (or elevator) is a machine that carries people up and down in tall buildings."
+              },
+              {
+                "text": "The vertical word in the middle describes a famous tomb. What is it? The ___ Mahal.",
+                "blanks": [
+                  {
+                    "hint": "The first letters of the vertical words are T, O, M, B. The puzzle says 'This is a famous tomb'.",
+                    "answer": "Taj",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The vertical word formed by the puzzle is TOMB. The Taj Mahal is a famous tomb in India."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "53ac800c-6a67-4b22-ad44-adc67af79fba",
+          "activity_type": "pronunciation-practice",
+          "title": "Pronunciation Focus",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the pronunciation of these words. Pay attention to the stressed syllables (in bold). Record yourself saying each word to compare.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Provides focused speaking and listening practice not present in the textbook.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "currency",
+                "phonetic": "/ˈkʌrənsi/",
+                "syllables": [
+                  "**curr**",
+                  "en",
+                  "cy"
+                ]
+              },
+              {
+                "word": "advertise",
+                "phonetic": "/ˈædvətaɪz/",
+                "syllables": [
+                  "**ad**",
+                  "ver",
+                  "tise"
+                ]
+              },
+              {
+                "word": "Aborigines",
+                "phonetic": "/ˌæbəˈrɪdʒəniːz/",
+                "syllables": [
+                  "Ab",
+                  "o",
+                  "**rig**",
+                  "i",
+                  "nes"
+                ]
+              },
+              {
+                "word": "Darjeeling",
+                "phonetic": "/dɑːˈdʒiːlɪŋ/",
+                "syllables": [
+                  "Dar",
+                  "**jee**",
+                  "ling"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "24ae5a95-4785-4601-9c5d-ae9001396754",
+          "activity_type": "gap-fill",
+          "title": "Reading: Planning a Business",
+          "instruction": "Reading time! 📖 Read carefully and the paragraph from Workbook Exercise D and fill in the blanks with the most suitable words to complete the text.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "null",
+          "compensates": "Replaces Workbook Exercise D, the paragraph completion task, with an interactive format.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "I like ___, so I might start a horse-riding ___. ___ it would ___ a lot of money. I'm not ___ how much you ___ pay for a horse, but I think it's a lot. Of course, I would ___ more than one horse. I could ___ the money from the ___, I suppose, but then I would begin to ___ ___. If nobody ___ to go horse-riding, how ___ I pay the money back? I know it ___ like a good idea, but I'll have to ___ about it a bit more.",
+                "blanks": [
+                  {
+                    "answer": "horses",
+                    "alternatives": [
+                      "riding"
+                    ]
+                  },
+                  {
+                    "answer": "business",
+                    "alternatives": [
+                      "club"
+                    ]
+                  },
+                  {
+                    "answer": "But",
+                    "alternatives": [
+                      "However"
+                    ]
+                  },
+                  {
+                    "answer": "cost",
+                    "alternatives": [
+                      "need"
+                    ]
+                  },
+                  {
+                    "answer": "sure",
+                    "alternatives": [
+                      "certain"
+                    ]
+                  },
+                  {
+                    "answer": "have to",
+                    "alternatives": [
+                      "must"
+                    ]
+                  },
+                  {
+                    "answer": "need",
+                    "alternatives": [
+                      "want"
+                    ]
+                  },
+                  {
+                    "answer": "borrow",
+                    "alternatives": [
+                      "get"
+                    ]
+                  },
+                  {
+                    "answer": "bank",
+                    "alternatives": []
+                  },
+                  {
+                    "answer": "worry",
+                    "alternatives": []
+                  },
+                  {
+                    "answer": "about",
+                    "alternatives": [
+                      "it"
+                    ]
+                  },
+                  {
+                    "answer": "wants",
+                    "alternatives": [
+                      "comes"
+                    ]
+                  },
+                  {
+                    "answer": "could",
+                    "alternatives": [
+                      "would",
+                      "can"
+                    ]
+                  },
+                  {
+                    "answer": "sounds",
+                    "alternatives": [
+                      "seems"
+                    ]
+                  },
+                  {
+                    "answer": "think",
+                    "alternatives": []
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "5dc422b8-c93c-4fc9-a688-2715b5482236",
+      "lesson_title": "6.5",
+      "lesson_number": 5,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "aebb2c21-5148-4b43-9419-a80c94b0cc8b",
+          "activity_type": "match-pairs",
+          "title": "Verb and Preposition Pairs",
+          "instruction": "Match each verb on the left with the correct preposition on the right to form a common phrase. This is based on WB page 90, Activity A.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "1",
+          "compensates": "Replaces the teacher-led matching activity from WB 6.5A and the pair work from WB 6.5B.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "surrounded",
+                "right": "by"
+              },
+              {
+                "left": "consists",
+                "right": "of"
+              },
+              {
+                "left": "according",
+                "right": "to"
+              },
+              {
+                "left": "in favour",
+                "right": "of"
+              },
+              {
+                "left": "depend",
+                "right": "on"
+              },
+              {
+                "left": "belong",
+                "right": "to"
+              },
+              {
+                "left": "wait",
+                "right": "for"
+              },
+              {
+                "left": "apart",
+                "right": "from"
+              },
+              {
+                "left": "pay",
+                "right": "back"
+              },
+              {
+                "left": "run",
+                "right": "after"
+              },
+              {
+                "left": "fill",
+                "right": "in"
+              },
+              {
+                "left": "put",
+                "right": "out"
+              }
+            ],
+            "instruction": "Match the verb with its correct preposition."
+          }
+        },
+        {
+          "activity_id": "a2d36efe-c50a-4bf7-96ec-7f71529ad368",
+          "activity_type": "gap-fill",
+          "title": "Comparatives and Superlatives",
+          "instruction": "Complete the sentences with the correct comparative or superlative form of the adjective in brackets. This is based on WB page 90, Activity C.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "1",
+          "compensates": "Replaces the teacher-led grammar exercise from WB 6.5C.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "Visitors to the UK often say that Scotland is ___ than England. (interesting)",
+                "blanks": [
+                  {
+                    "hint": "Use 'more' for long adjectives.",
+                    "answer": "more interesting",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "For adjectives with two or more syllables (like 'interesting'), we use 'more' to form the comparative."
+              },
+              {
+                "text": "They say that the Scots are ___ than the English. (friendly)",
+                "blanks": [
+                  {
+                    "hint": "For adjectives ending in -y, change the y to i and add -er.",
+                    "answer": "friendlier",
+                    "alternatives": [
+                      "more friendly"
+                    ]
+                  }
+                ],
+                "explanation": "For two-syllable adjectives ending in -y, we usually change 'y' to 'i' and add '-er'. 'More friendly' is also acceptable."
+              },
+              {
+                "text": "Visitors to Ireland say it has the ___ scenery in the world. (beautiful)",
+                "blanks": [
+                  {
+                    "hint": "Use 'the most' for the superlative of long adjectives.",
+                    "answer": "most beautiful",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "For long adjectives like 'beautiful', we use 'the most' to form the superlative."
+              },
+              {
+                "text": "New York used to have the ___ buildings in the world. (tall)",
+                "blanks": [
+                  {
+                    "hint": "Add '-est' for short adjectives.",
+                    "answer": "tallest",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "For short, one-syllable adjectives like 'tall', we add '-est' to form the superlative."
+              },
+              {
+                "text": "The doctor says that Mahmoud's injury is ___ than he thought at first. (serious)",
+                "blanks": [
+                  {
+                    "hint": "Is 'serious' a short or long adjective?",
+                    "answer": "more serious",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "For adjectives with two or more syllables like 'serious', we use 'more' to form the comparative."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "3618fdd8-e031-436f-9b1d-fa083a7e90c5",
+          "activity_type": "gap-fill",
+          "title": "Verb Tense Revision",
+          "instruction": "Complete the sentences by putting the verbs in brackets into the correct tense. This is based on WB page 91, Activity D.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "1",
+          "compensates": "Replaces the teacher-led grammar exercise from WB 6.5D.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "When I ___ to the radio last night, I ___ an interesting programme about the environment. (listen, hear)",
+                "blanks": [
+                  {
+                    "hint": "A long action in the past.",
+                    "answer": "was listening",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "A short action that interrupted the long one.",
+                    "answer": "heard",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use the past continuous ('was listening') for a background action that was in progress, and the simple past ('heard') for a shorter action that happened during that time."
+              },
+              {
+                "text": "If the firemen ___ quickly, they ___ save the building. (arrive, be able to)",
+                "blanks": [
+                  {
+                    "hint": "First conditional: if + present simple...",
+                    "answer": "arrive",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "...will + base verb.",
+                    "answer": "will be able to",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "This is a first conditional sentence, which describes a likely future situation. The structure is 'If + present simple, ... will + base verb'."
+              },
+              {
+                "text": "If we ___ more trees, our town ___ more attractive. (grow, look)",
+                "blanks": [
+                  {
+                    "hint": "Second conditional: if + past simple...",
+                    "answer": "grew",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "...would + base verb.",
+                    "answer": "would look",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "This is a second conditional sentence, which describes a hypothetical or unlikely situation. The structure is 'If + past simple, ... would + base verb'."
+              },
+              {
+                "text": "Taha is in Secondary School. He ___ biology because he ___ to be a doctor. (study, want)",
+                "blanks": [
+                  {
+                    "hint": "An action happening now or around now.",
+                    "answer": "is studying",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "A state verb in the present.",
+                    "answer": "wants",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use the present continuous ('is studying') for an ongoing action. We use the simple present ('wants') for state verbs that describe feelings or desires."
+              },
+              {
+                "text": "The factory ___ next month and 60 people ___ their jobs. (close, lose)",
+                "blanks": [
+                  {
+                    "hint": "A future plan.",
+                    "answer": "is going to close",
+                    "alternatives": [
+                      "will close"
+                    ]
+                  },
+                  {
+                    "hint": "A future result.",
+                    "answer": "will lose",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "'Is going to close' indicates a future plan. 'Will lose' indicates the certain future consequence of that plan."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "f3c41408-291b-486e-acc8-7441cfb62623",
+          "activity_type": "gap-fill",
+          "title": "Word Formation: Adjectives and Adverbs",
+          "instruction": "Complete each sentence with the correct form (adjective or adverb) of the word in brackets. This is based on WB page 91, Activity E.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "1",
+          "compensates": "Replaces the teacher-led word formation exercise and sentence creation task from WB 6.5E.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "The landscape in that region is very ___. (hill)",
+                "blanks": [
+                  {
+                    "hint": "We need an adjective to describe the landscape.",
+                    "answer": "hilly",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The adjective form of the noun 'hill' is 'hilly'."
+              },
+              {
+                "text": "He answered the teacher's question ___. (serious)",
+                "blanks": [
+                  {
+                    "hint": "We need an adverb to describe the verb 'answered'.",
+                    "answer": "seriously",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The adverb form of the adjective 'serious' is 'seriously'."
+              },
+              {
+                "text": "This is a discovery of great ___ importance. (history)",
+                "blanks": [
+                  {
+                    "hint": "We need an adjective to describe 'importance'.",
+                    "answer": "historical",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The adjective form of the noun 'history' is 'historical'."
+              },
+              {
+                "text": "She wants to live ___ from her parents. (independent)",
+                "blanks": [
+                  {
+                    "hint": "We need an adverb to describe the verb 'live'.",
+                    "answer": "independently",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The adverb form of the adjective 'independent' is 'independently'."
+              },
+              {
+                "text": "___, we arrived just in time to catch the train. (lucky)",
+                "blanks": [
+                  {
+                    "hint": "We need an adverb to describe the whole sentence.",
+                    "answer": "Luckily",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The adverb form of the adjective 'lucky' is 'luckily'."
+              },
+              {
+                "text": "The museum showcases the country's rich ___ heritage. (culture)",
+                "blanks": [
+                  {
+                    "hint": "We need an adjective to describe 'heritage'.",
+                    "answer": "cultural",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The adjective form of the noun 'culture' is 'cultural'."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "9a0d3284-9d0f-4455-808b-d7495590d3e4",
+          "activity_type": "dictation",
+          "title": "Listen and Write",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the sentences and type what you hear. Pay attention to the verb phrases from Activity A.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "1",
+          "compensates": "Adds a dedicated listening activity to reinforce vocabulary and practice spelling, which is not present in the textbook.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "hints": [
+                  "The first word is 'The'."
+                ],
+                "audioSrc": "/media/audio/g11_u6_l6.5_dic_1_s0.mp3",
+                "difficulty": "sentence",
+                "expectedText": "The castle is surrounded by a deep moat."
+              },
+              {
+                "hints": [
+                  "The first word is 'According'."
+                ],
+                "audioSrc": "/media/audio/g11_u6_l6.5_dic_1_s1.mp3",
+                "difficulty": "sentence",
+                "expectedText": "According to the map, we should turn left here."
+              },
+              {
+                "hints": [
+                  "The first word is 'The'."
+                ],
+                "audioSrc": "/media/audio/g11_u6_l6.5_dic_1_s2.mp3",
+                "difficulty": "sentence",
+                "expectedText": "The book consists of ten chapters."
+              },
+              {
+                "hints": [
+                  "The first word is 'You'."
+                ],
+                "audioSrc": "/media/audio/g11_u6_l6.5_dic_1_s3.mp3",
+                "difficulty": "sentence",
+                "expectedText": "You can depend on him to finish the job."
+              },
+              {
+                "hints": [
+                  "The first word is 'Please'."
+                ],
+                "audioSrc": "/media/audio/g11_u6_l6.5_dic_1_s4.mp3",
+                "difficulty": "sentence",
+                "expectedText": "Please fill in this form with your details."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "0df9ae8d-01cd-4840-8199-4b297e79dbce",
+          "activity_type": "pronunciation-practice",
+          "title": "Word Stress and Pronunciation",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to each word, then record yourself saying it. Pay attention to the stressed syllable.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "1",
+          "compensates": "Provides a structured speaking and pronunciation practice that is missing from the workbook, allowing for self-assessment.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "scientific",
+                "audioSrc": "/media/audio/g11_u6_l6.5_pro_1_w0.mp3",
+                "phonetic": "/ˌsaɪənˈtɪfɪk/",
+                "syllables": [
+                  "sci",
+                  "en",
+                  "tif",
+                  "ic"
+                ]
+              },
+              {
+                "word": "historical",
+                "audioSrc": "/media/audio/g11_u6_l6.5_pro_1_w1.mp3",
+                "phonetic": "/hɪˈstɒrɪkəl/",
+                "syllables": [
+                  "his",
+                  "tor",
+                  "i",
+                  "cal"
+                ]
+              },
+              {
+                "word": "cultural",
+                "audioSrc": "/media/audio/g11_u6_l6.5_pro_1_w2.mp3",
+                "phonetic": "/ˈkʌltʃərəl/",
+                "syllables": [
+                  "cul",
+                  "tur",
+                  "al"
+                ]
+              },
+              {
+                "word": "independently",
+                "audioSrc": "/media/audio/g11_u6_l6.5_pro_1_w3.mp3",
+                "phonetic": "/ˌɪndɪˈpendəntli/",
+                "syllables": [
+                  "in",
+                  "de",
+                  "pen",
+                  "dent",
+                  "ly"
+                ]
+              },
+              {
+                "word": "immediately",
+                "audioSrc": "/media/audio/g11_u6_l6.5_pro_1_w4.mp3",
+                "phonetic": "/ɪˈmiːdiətli/",
+                "syllables": [
+                  "im",
+                  "me",
+                  "di",
+                  "ate",
+                  "ly"
+                ]
+              },
+              {
+                "word": "archaeological",
+                "audioSrc": "/media/audio/g11_u6_l6.5_pro_1_w5.mp3",
+                "phonetic": "/ˌɑːkiəˈlɒdʒɪkəl/",
+                "syllables": [
+                  "ar",
+                  "chae",
+                  "o",
+                  "log",
+                  "i",
+                  "cal"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "c6ba9aa6-8c18-412b-8769-6c75b935fb56",
+          "activity_type": "mcq",
+          "title": "Grammar Check",
+          "instruction": "Read the questions and Challenge yourself! 📝 Select the best option for the best option to complete the sentence or answer the question.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "1",
+          "compensates": "Provides an interactive, self-correcting quiz to consolidate understanding of the lesson's grammar points.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "This is the most interesting book I've ever read.",
+                    "feedback": "Correct! 'Most interesting' is the correct superlative form for 'interesting'.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "This book is more interestinger than the last one.",
+                    "feedback": "Incorrect. We use 'more' for long adjectives, not '-er'.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "This is the interestingest book.",
+                    "feedback": "Incorrect. 'Interestingest' is not a word.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Which sentence uses the superlative form correctly?",
+                "explanation": "For long adjectives like 'interesting', we use 'the most' to form the superlative."
+              },
+              {
+                "options": [
+                  {
+                    "text": "did",
+                    "feedback": "Incorrect. This tense doesn't show an ongoing action interrupted by another.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "was doing",
+                    "feedback": "Correct! The past continuous 'was doing' shows an action in progress when another action (the phone rang) happened.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "have done",
+                    "feedback": "Incorrect. The present perfect is used for actions with a result in the present.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "While I ___ my homework, the phone rang.",
+                "explanation": "Use the past continuous for a longer, background action that was interrupted by a shorter action in the simple past."
+              },
+              {
+                "options": [
+                  {
+                    "text": "would pass",
+                    "feedback": "Incorrect. This is used in the second conditional for hypothetical situations.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "will pass",
+                    "feedback": "Correct! This is the first conditional, used for likely future events.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "passed",
+                    "feedback": "Incorrect. This is the simple past tense.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "If you study hard, you ___ the exam.",
+                "explanation": "The first conditional (If + present simple, ... will + verb) is used for real and possible future situations."
+              },
+              {
+                "options": [
+                  {
+                    "text": "careful",
+                    "feedback": "Incorrect. 'Careful' is an adjective. We need an adverb to describe the verb 'drives'.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "carefully",
+                    "feedback": "Correct! 'Carefully' is the adverb that describes how he drives.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "care",
+                    "feedback": "Incorrect. 'Care' is a noun or verb.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "He drives very ___. He never has accidents.",
+                "explanation": "Adverbs (like 'carefully') describe verbs (like 'drives'), while adjectives (like 'careful') describe nouns."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "a2e964c5-6712-455d-ae13-9d1f84752bda",
+      "lesson_title": "6.7",
+      "lesson_number": 7,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "28adcb37-ae2b-4d34-8edd-f2ea656695f8",
+          "activity_type": "listening-comprehension",
+          "title": "A Discovery in the Lab",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to a short story about a scientist. Then, answer the questions.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "85",
+          "compensates": "Adds a listening component that is missing from the textbook, reinforcing the lesson's theme and vocabulary in an auditory context.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "A disinfectant",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "A microscope",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "A special camera",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What was Dr. Aris using to look at the water sample?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Clean their homes with disinfectant.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Stop drinking pond water.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Boil their water before drinking.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "What did Dr. Aris advise the villagers to do?"
+              }
+            ],
+            "transcript": "Dr. Aris was working late in his lab. He was looking through his microscope at a water sample from a nearby pond. Suddenly, he saw them: tiny organisms moving quickly across his view. He realized these were the germs responsible for the recent sickness in the village. His first thought was about protection. He knew that if people boiled their water, it would kill these harmful organisms. The next day, he shared his discovery, and his simple advice saved many lives."
+          }
+        },
+        {
+          "activity_id": "5bab74c8-1391-467d-a8b3-b9cf096e9e08",
+          "activity_type": "flashcard",
+          "title": "Key Science Vocabulary",
+          "instruction": "Learn the key words from pages 50-51 of your Pupil's Book. Listen carefully! 🎧 Clear your ears and to the pronunciation and read the definition and example.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "85",
+          "compensates": "Replaces Workbook Activity A, where students look up word meanings. This is more interactive with audio and examples.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "microscope",
+                "example": "Scientists use a powerful microscope to study bacteria.",
+                "definition": "An instrument used for viewing very small objects, such as germs, that are not visible to the naked eye.",
+                "translation": "مجهر",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "boil",
+                "example": "You should boil the water before drinking it to kill any germs.",
+                "definition": "To heat a liquid until it reaches the temperature at which it bubbles and turns into vapor.",
+                "translation": "يغلي",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "disinfectant",
+                "example": "The nurse cleaned the wound with a disinfectant.",
+                "definition": "A chemical liquid that destroys bacteria and other germs.",
+                "translation": "مُطَهِّر",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "organism",
+                "example": "A bacterium is a tiny, single-celled organism.",
+                "definition": "An individual animal, plant, or single-celled life form.",
+                "translation": "كائن حي",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "germs",
+                "example": "Washing your hands helps to remove harmful germs.",
+                "definition": "A microorganism, especially one which causes disease.",
+                "translation": "جراثيم",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "a460491b-eb7c-4be0-9788-c1699c115272",
+          "activity_type": "reading-passage",
+          "title": "Understanding Germs",
+          "instruction": "Reading time! 📖 Read carefully and the passage about germs, which is based on the information in your Pupil's Book on pages 50-51. Then, answer the questions.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "85",
+          "compensates": "Replaces the initial reading task from the Pupil's Book and provides a self-correcting comprehension check.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "passage": "For centuries, people did not understand what caused diseases. It wasn't until the invention of the microscope that scientists could see the tiny world of microorganisms. These living things, also called organisms, are too small to be seen with the naked eye. Many of these organisms are harmless, but some, known as germs, can cause illness. Germs are found everywhere: in the air, on surfaces, and in our bodies. They can spread easily from person to person through coughing or touching contaminated surfaces. To protect ourselves, we can take simple but effective measures. For example, using a disinfectant to clean surfaces kills germs. Boiling water before drinking it is another crucial step to eliminate harmful organisms. Good personal hygiene, like washing hands frequently, is one of the best defenses against the spread of germs.",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "The telescope",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "The microscope",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "The thermometer",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "The computer",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What invention was essential for discovering germs?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Harmless organisms",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Microorganisms that can cause illness",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "All single-celled life forms",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Chemical liquids",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "According to the text, what is another name for germs?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Boiling water",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Using a disinfectant",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Washing hands",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Taking medicine",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Which of the following is NOT mentioned as a way to protect against germs?"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "dc12f95c-2e71-4141-8aa7-846f89ccc323",
+          "activity_type": "gap-fill",
+          "title": "Summarize the Information",
+          "instruction": "Complete the summary about germs using the words from the list. This will help you practice for Workbook Activity C.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "85",
+          "compensates": "This provides a structured, self-correcting version of Workbook Activity C (summarizing information), guiding students to use the target vocabulary correctly.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "Germs are tiny ___ that can make people sick. They are invisible without a powerful ___. To protect ourselves, it's important to use a ___ to clean surfaces and to ___ water in some places before drinking it. These simple actions can prevent the spread of disease.",
+                "blanks": [
+                  {
+                    "hint": "A living thing",
+                    "answer": "organisms",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "An instrument to see small things",
+                    "answer": "microscope",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "A cleaning chemical",
+                    "answer": "disinfectant",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "To heat water to 100°C",
+                    "answer": "boil",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "This summary uses all the key vocabulary to explain the main ideas about germs and how to stay safe from them."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "4dd07e15-f75f-46cc-ba80-019c26cc44ba",
+          "activity_type": "pronunciation-practice",
+          "title": "Pronounce the Words",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the correct pronunciation of these scientific words. Pay attention to the stressed syllables. Then, record yourself saying them.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "85",
+          "compensates": "Provides explicit pronunciation instruction that is often only available from a teacher, helping students with difficult multi-syllable words.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "microscope",
+                "phonetic": "/ˈmaɪ.krə.skoʊp/",
+                "syllables": [
+                  "MI",
+                  "cro",
+                  "scope"
+                ]
+              },
+              {
+                "word": "disinfectant",
+                "phonetic": "/ˌdɪs.ɪnˈfek.tənt/",
+                "syllables": [
+                  "dis",
+                  "in",
+                  "FEC",
+                  "tant"
+                ]
+              },
+              {
+                "word": "organism",
+                "phonetic": "/ˈɔːr.ɡə.nɪ.zəm/",
+                "syllables": [
+                  "OR",
+                  "ga",
+                  "ni",
+                  "sm"
+                ]
+              },
+              {
+                "word": "hygiene",
+                "phonetic": "/ˈhaɪ.dʒiːn/",
+                "syllables": [
+                  "HY",
+                  "giene"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "d66a76b5-da17-4076-8909-55027ce98c04",
+          "activity_type": "category-sort",
+          "title": "Causes vs. Solutions",
+          "instruction": "Drag and drop the items into the correct category: 'How Germs SpReading time! 📖 Read carefully and' or 'How to Stop Germs'.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "85",
+          "compensates": "Digitizes and makes interactive the note-taking from Workbook Activity B, focusing on 'How they are spread' and 'Protection against them'.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "categories": [
+              {
+                "name": "How Germs Spread",
+                "items": [
+                  "Coughing without covering mouth",
+                  "Touching dirty surfaces",
+                  "Drinking unclean water"
+                ]
+              },
+              {
+                "name": "How to Stop Germs",
+                "items": [
+                  "Washing hands with soap",
+                  "Using disinfectant",
+                  "Boiling water"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "04d8dca6-8a89-4619-90f9-dee600507da9",
+          "activity_type": "picture-description",
+          "title": "Describe the Scene",
+          "instruction": "Use your eyes! 🧐 Look closely at the at the image of a person washing their hands. Describe what is happening and why it is important, using at least three words from the lesson (germs, disinfectant, organism, hygiene).",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "85",
+          "compensates": "Provides a productive speaking/writing task that allows students to apply vocabulary in a creative context, similar to a teacher-led discussion.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": "",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u6/images/g11_u6_l6_7_pic_act6_i0.png",
+            "keywords": [
+              "germs",
+              "hygiene",
+              "organism",
+              "disinfectant",
+              "boil",
+              "microscope"
+            ],
+            "sampleAnswers": [
+              "The person is washing their hands with soap and water. This is an important part of personal hygiene because it removes harmful germs. Washing hands stops tiny organisms from spreading from person to person."
+            ],
+            "promptQuestions": [
+              "What is the person doing?",
+              "Why is this action important for good hygiene?",
+              "How does this prevent the spread of harmful organisms?"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1903 @@
+{
+  "unit_id": "382aa119-4dd6-497d-bf57-9a5a59418a13",
+  "unit_title": "Revision",
+  "unit_number": 8,
+  "course_id": "94125a10-e00f-41b5-a490-4b7475f16563",
+  "course_title": "Grade 10",
+  "course_description": "English curriculum for Grade 10",
+  "lessons": [
+    {
+      "lesson_id": "ad301cc3-d78b-4194-867a-6298d7c33dc0",
+      "lesson_title": "Units 1-2 Vocabulary Review",
+      "lesson_number": 1,
+      "description": "Review vocabulary from Units 1 and 2",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Review Words from Units 1-2",
+        "Practice using vocabulary in context",
+        "Review key phrases"
+      ],
+      "language_focus": [
+        "Present tenses",
+        "Describing people and places"
+      ],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "debb295a-8180-4ac1-b6fb-032504e9fbbb",
+          "activity_type": "flashcard",
+          "title": "Unit 1 Key Words",
+          "instruction": "Review important words from Unit 1 - What do you remember?",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "8.1",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "Street scene",
+                "definition": "The view of a street and what is happening there."
+              },
+              {
+                "word": "Second conditional",
+                "definition": "If + past simple, would + verb (for imaginary situations)."
+              },
+              {
+                "word": "Message",
+                "definition": "A piece of information sent to someone."
+              },
+              {
+                "word": "Description",
+                "definition": "A written or spoken explanation of what something is like."
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "ceca0217-75fd-47d7-863e-f9392b902d19",
+          "activity_type": "flashcard",
+          "title": "Unit 2 Key Words",
+          "instruction": "Review important words from Unit 2 - The family.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "8.1",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "Family tree",
+                "definition": "A diagram showing how family members are related."
+              },
+              {
+                "word": "Relative",
+                "definition": "A family member."
+              },
+              {
+                "word": "Generation",
+                "image": "g10-vocab-generation",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u8/images/g10_vocab_generation.png",
+                "definition": "People of similar age in a family (grandparents, parents, children)."
+              },
+              {
+                "word": "Ancestor",
+                "definition": "A person from an earlier generation of your family."
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "3abe93ce-9e9c-49b8-83fa-c1574589431d",
+          "activity_type": "category-sort",
+          "title": "Sort Units 1-2 Vocabulary",
+          "instruction": "Sort these words into the correct unit topic.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.1",
+          "compensates": null,
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "text": "street scene",
+                "category": "Unit 1 - Memories"
+              },
+              {
+                "text": "second conditional",
+                "category": "Unit 1 - Memories"
+              },
+              {
+                "text": "messages",
+                "category": "Unit 1 - Memories"
+              },
+              {
+                "text": "family tree",
+                "category": "Unit 2 - Family"
+              },
+              {
+                "text": "relative",
+                "category": "Unit 2 - Family"
+              },
+              {
+                "text": "generation",
+                "category": "Unit 2 - Family"
+              }
+            ],
+            "categories": [
+              "Unit 1 - Memories",
+              "Unit 2 - Family"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "81d668fd-a33c-44fc-9e91-c2d0a1fe75da",
+      "lesson_title": "Units 3-4 Vocabulary Review",
+      "lesson_number": 2,
+      "description": "Review vocabulary from Units 3 and 4",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Review words from Units 3-4",
+        "Practice household and newspaper vocabulary",
+        "Review language structures"
+      ],
+      "language_focus": [
+        "Giving directions",
+        "Reported speech"
+      ],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "a16a396d-24d9-48b8-8a19-f465c206765a",
+          "activity_type": "flashcard",
+          "title": "Unit 3 Key Words",
+          "instruction": "Review important words from Unit 3 - Living abroad.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "8.2",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "Household item",
+                "definition": "An object used in a home."
+              },
+              {
+                "word": "Directions",
+                "definition": "Instructions for getting somewhere."
+              },
+              {
+                "word": "Recipe",
+                "definition": "Instructions for making food."
+              },
+              {
+                "word": "Appliance",
+                "definition": "An electrical device used in the home."
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "4618317d-10e3-4ccd-86ac-c236fdafa869",
+          "activity_type": "flashcard",
+          "title": "Unit 4 Key Words",
+          "instruction": "Review important words from Unit 4 - Newspapers.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "8.2",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "Headline",
+                "image": "g10-vocab-headline",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u8/images/g10_vocab_headline.png",
+                "definition": "The title of a newspaper article."
+              },
+              {
+                "word": "Reported speech",
+                "definition": "Telling what someone said using 'he said that...'"
+              },
+              {
+                "word": "Documentary",
+                "definition": "A programme about real events."
+              },
+              {
+                "word": "Editorial",
+                "definition": "A newspaper article giving the editor's opinion."
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "8cf47dff-7827-480e-af57-9e1810c96de6",
+          "activity_type": "gap-fill",
+          "title": "Reported Speech Review",
+          "instruction": "Change these sentences to reported speech.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.2",
+          "compensates": null,
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "gaps": [
+                  {
+                    "hint": "Present to past",
+                    "answer": "was"
+                  }
+                ],
+                "text": "\"I am happy.\" → She said she _____ happy."
+              },
+              {
+                "gaps": [
+                  {
+                    "hint": "will → would",
+                    "answer": "would"
+                  }
+                ],
+                "text": "\"We will help.\" → They said they _____ help."
+              },
+              {
+                "gaps": [
+                  {
+                    "hint": "can → could",
+                    "answer": "could"
+                  }
+                ],
+                "text": "\"I can swim.\" → He said he _____ swim."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "8a41a5a8-e3bc-416b-98d7-82eab53a86ad",
+      "lesson_title": "Units 5-6 Vocabulary Review",
+      "lesson_number": 3,
+      "description": "Review vocabulary from Units 5 and 6",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Review words from Units 5-6",
+        "Practice culture and health vocabulary",
+        "Review advice language"
+      ],
+      "language_focus": [
+        "Making invitations",
+        "Giving health advice"
+      ],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "5867a644-2803-4e84-874d-aca3a492020e",
+          "activity_type": "flashcard",
+          "title": "Unit 5 Key Words",
+          "instruction": "Review important words from Unit 5 - Other countries, other customs.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "8.3",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "Explorer",
+                "definition": "A person who travels to new places to learn about them."
+              },
+              {
+                "word": "Custom",
+                "definition": "A traditional way of doing things."
+              },
+              {
+                "word": "Invitation",
+                "definition": "A request for someone to come to an event."
+              },
+              {
+                "word": "Tradition",
+                "definition": "A belief or practice passed through generations."
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "dceb99a5-65bc-4b61-803b-bf9d206c2ca9",
+          "activity_type": "flashcard",
+          "title": "Unit 6 Key Words",
+          "instruction": "Review important words from Unit 6 - Staying healthy.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "8.3",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "Nutrition",
+                "definition": "The food you eat and how it affects your health."
+              },
+              {
+                "word": "Hygiene",
+                "image": "g10-vocab-hygiene",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g10u8/images/g10_vocab_hygiene.jpg",
+                "definition": "Practices to keep yourself clean."
+              },
+              {
+                "word": "Symptoms",
+                "definition": "Signs that show you are ill."
+              },
+              {
+                "word": "First aid",
+                "definition": "Basic medical help before a doctor arrives."
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "bcfb5de3-69e1-4b03-b4ee-9ffe6e70bb74",
+          "activity_type": "category-sort",
+          "title": "Invitation Language Review",
+          "instruction": "Sort these phrases into accepting or declining invitations.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.3",
+          "compensates": null,
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "text": "I'd love to!",
+                "category": "Accepting"
+              },
+              {
+                "text": "That sounds great!",
+                "category": "Accepting"
+              },
+              {
+                "text": "I'd be delighted.",
+                "category": "Accepting"
+              },
+              {
+                "text": "I'm sorry, I can't.",
+                "category": "Declining"
+              },
+              {
+                "text": "I'm afraid I'm busy.",
+                "category": "Declining"
+              },
+              {
+                "text": "Maybe another time.",
+                "category": "Declining"
+              }
+            ],
+            "categories": [
+              "Accepting",
+              "Declining"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "56777eed-cd74-43ed-bf2b-efa58a770f46",
+      "lesson_title": "Unit 7 Vocabulary Review",
+      "lesson_number": 4,
+      "description": "Review vocabulary from Unit 7",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Review work vocabulary",
+        "Practice job application language",
+        "Review interview skills"
+      ],
+      "language_focus": [
+        "Talking about jobs",
+        "Application and interview language"
+      ],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "af4963fe-dcd6-472d-8716-bfd02d057357",
+          "activity_type": "flashcard",
+          "title": "Unit 7 Key Words",
+          "instruction": "Review important words from Unit 7 - Work.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "8.4",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "Career",
+                "definition": "The type of work you do throughout your life."
+              },
+              {
+                "word": "Qualifications",
+                "definition": "Education and training needed for a job."
+              },
+              {
+                "word": "Interview",
+                "definition": "A meeting to answer questions about a job."
+              },
+              {
+                "word": "CV",
+                "definition": "A document listing your education and experience."
+              },
+              {
+                "word": "Ambition",
+                "definition": "A strong desire to achieve something."
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "f2c79d4c-9ba8-45fd-9168-88df23a1ba18",
+          "activity_type": "match-pairs",
+          "title": "Match Jobs to Tasks",
+          "instruction": "Match each job with what they do.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.4",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "doctor",
+                "right": "treats sick people"
+              },
+              {
+                "left": "teacher",
+                "right": "teaches students"
+              },
+              {
+                "left": "engineer",
+                "right": "designs machines and buildings"
+              },
+              {
+                "left": "pilot",
+                "right": "flies planes"
+              },
+              {
+                "left": "accountant",
+                "right": "manages financial records"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "0579769d-a8b4-448e-b883-d3220c318230",
+          "activity_type": "mcq",
+          "title": "Interview Skills Review",
+          "instruction": "Challenge yourself! 📝 Select the best option for the best answers for interview questions.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.4",
+          "compensates": null,
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Arrive late",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Dress professionally and be polite",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Look at your phone",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Complain about your last job",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What should you do at a job interview?",
+                "explanation": "Always be professional, polite, and well-prepared for interviews."
+              },
+              {
+                "options": [
+                  {
+                    "text": "Your hobbies",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Your personal details",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Your photo",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Your references",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What goes first on a CV?",
+                "explanation": "Personal details (name, contact information) go at the top of a CV."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "7efa9b1d-48be-4785-bab7-c966a10595dd",
+      "lesson_title": "Grammar Review - Tenses",
+      "lesson_number": 5,
+      "description": "Review different tenses from the course",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Review present tenses",
+        "Review past tenses",
+        "Review future tenses"
+      ],
+      "language_focus": [
+        "Present simple vs present continuous",
+        "Past simple vs past continuous",
+        "Will vs going to"
+      ],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "a74ae5ec-9e70-4e45-8bc3-410daf74a569",
+          "activity_type": "flashcard",
+          "title": "Tense Review",
+          "instruction": "Review when to use different tenses.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "8.5",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "Present Simple",
+                "definition": "For habits, routines, and facts. 'I work every day.'"
+              },
+              {
+                "word": "Present Continuous",
+                "definition": "For actions happening now. 'I am working now.'"
+              },
+              {
+                "word": "Past Simple",
+                "definition": "For completed actions in the past. 'I worked yesterday.'"
+              },
+              {
+                "word": "Past Continuous",
+                "definition": "For ongoing past actions. 'I was working at 5pm.'"
+              },
+              {
+                "word": "Will",
+                "definition": "For decisions and predictions. 'I will work hard.'"
+              },
+              {
+                "word": "Going to",
+                "definition": "For planned intentions. 'I'm going to work tomorrow.'"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "63cfb9ce-fefc-4e4b-9494-64f4dd543dca",
+          "activity_type": "gap-fill",
+          "title": "Choose the Right Tense",
+          "instruction": "Fill in the blanks with the correct verb form.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.5",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "gaps": [
+                  {
+                    "hint": "Present simple for routines",
+                    "answer": "study"
+                  }
+                ],
+                "text": "I _____ English every day. (study - routine)"
+              },
+              {
+                "gaps": [
+                  {
+                    "hint": "Present continuous for now",
+                    "answer": "is raining"
+                  }
+                ],
+                "text": "Look! It _____. (rain - happening now)"
+              },
+              {
+                "gaps": [
+                  {
+                    "hint": "Past simple for completed actions",
+                    "answer": "came"
+                  }
+                ],
+                "text": "Yesterday I _____ to school late. (come - finished past action)"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "1a3771b9-acc5-4841-918e-54a6bd00bfe8",
+          "activity_type": "category-sort",
+          "title": "Match Sentence to Tense",
+          "instruction": "Sort these sentences by which tense they use.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.5",
+          "compensates": null,
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "text": "I work every day.",
+                "category": "Present Simple"
+              },
+              {
+                "text": "She lives in Sana'a.",
+                "category": "Present Simple"
+              },
+              {
+                "text": "We visited Aden last week.",
+                "category": "Past Simple"
+              },
+              {
+                "text": "He studied English yesterday.",
+                "category": "Past Simple"
+              },
+              {
+                "text": "I will call you tomorrow.",
+                "category": "Future"
+              },
+              {
+                "text": "We're going to have a party.",
+                "category": "Future"
+              }
+            ],
+            "categories": [
+              "Present Simple",
+              "Past Simple",
+              "Future"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "cbf29474-8808-4578-8de0-d70bb7988219",
+      "lesson_title": "Grammar Review - Conditionals",
+      "lesson_number": 6,
+      "description": "Review conditional sentences",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Review first conditional",
+        "Review second conditional",
+        "Choose the correct conditional"
+      ],
+      "language_focus": [
+        "If + present, will...",
+        "If + past, would..."
+      ],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "fd37f261-97c3-4829-b816-84888179a0d2",
+          "activity_type": "flashcard",
+          "title": "Conditional Review",
+          "instruction": "Review the two types of conditionals.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "8.6",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "First Conditional",
+                "definition": "For real possibilities. If + present, will + verb. 'If it rains, I will take an umbrella.'"
+              },
+              {
+                "word": "Second Conditional",
+                "definition": "For imaginary situations. If + past, would + verb. 'If I had a car, I would drive.'"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "2594b927-9c1f-458c-a522-69a51594e0c1",
+          "activity_type": "gap-fill",
+          "title": "Complete the Conditionals",
+          "instruction": "Fill in the blanks with the correct verb form.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.6",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "gaps": [
+                  {
+                    "hint": "First conditional: will + verb",
+                    "answer": "will"
+                  }
+                ],
+                "text": "If it rains tomorrow, I _____ stay home. (real possibility)"
+              },
+              {
+                "gaps": [
+                  {
+                    "hint": "Second conditional: if + past",
+                    "answer": "had"
+                  }
+                ],
+                "text": "If I _____ a million dollars, I would travel the world. (imaginary)"
+              },
+              {
+                "gaps": [
+                  {
+                    "hint": "Second conditional: would + verb",
+                    "answer": "would"
+                  }
+                ],
+                "text": "If I were you, I _____ study harder. (advice)"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "a506a110-cbdd-460b-bad7-5dd9f801e8f5",
+          "activity_type": "mcq",
+          "title": "Conditional Quiz",
+          "instruction": "Challenge yourself! 📝 Select the best option for the correct conditional form.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.6",
+          "compensates": null,
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "would",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "will",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "am",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "was",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Complete: If I see him, I _____ tell him.",
+                "explanation": "This is a real possibility (first conditional), so we use 'will'."
+              },
+              {
+                "options": [
+                  {
+                    "text": "will",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "would",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "am",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "do",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Complete: If I were rich, I _____ buy a big house.",
+                "explanation": "This is imaginary (second conditional), so we use 'would'."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "bab34250-8723-4d80-9d69-fbd55e788fcf",
+      "lesson_title": "Grammar Review - Reported Speech",
+      "lesson_number": 7,
+      "description": "Review reported speech",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Review tense changes in reported speech",
+        "Report questions and commands",
+        "Practice time word changes"
+      ],
+      "language_focus": [
+        "He said that...",
+        "She asked if...",
+        "Tense and time changes"
+      ],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "3f080ea5-436e-4f40-a7ec-d74b738cac0e",
+          "activity_type": "match-pairs",
+          "title": "Tense Changes",
+          "instruction": "Match the direct speech tense with the reported speech tense.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.7",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "am/is",
+                "right": "was"
+              },
+              {
+                "left": "are",
+                "right": "were"
+              },
+              {
+                "left": "will",
+                "right": "would"
+              },
+              {
+                "left": "can",
+                "right": "could"
+              },
+              {
+                "left": "have/has",
+                "right": "had"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "1335f87b-e3ff-437c-ba8c-4c271f1ee4d7",
+          "activity_type": "match-pairs",
+          "title": "Time Word Changes",
+          "instruction": "Match the direct speech time word with its reported form.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.7",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "today",
+                "right": "that day"
+              },
+              {
+                "left": "tomorrow",
+                "right": "the next day"
+              },
+              {
+                "left": "yesterday",
+                "right": "the day before"
+              },
+              {
+                "left": "now",
+                "right": "then"
+              },
+              {
+                "left": "here",
+                "right": "there"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "6376f672-e701-46e0-86ed-6ccf4e88c756",
+          "activity_type": "gap-fill",
+          "title": "Report These Sentences",
+          "instruction": "Change to reported speech.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.7",
+          "compensates": null,
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "gaps": [
+                  {
+                    "hint": "am → was",
+                    "answer": "was"
+                  }
+                ],
+                "text": "\"I am tired.\" → He said he _____ tired."
+              },
+              {
+                "gaps": [
+                  {
+                    "hint": "Yes/no question",
+                    "answer": "if"
+                  }
+                ],
+                "text": "\"Are you coming?\" → She asked _____ I was coming."
+              },
+              {
+                "gaps": [
+                  {
+                    "hint": "Negative command",
+                    "answer": "not"
+                  }
+                ],
+                "text": "\"Don't run!\" → He told me _____ to run."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "f15862ff-8ba1-408b-b730-c640e18a7d25",
+      "lesson_title": "Grammar Review - Should and Must",
+      "lesson_number": 8,
+      "description": "Review modal verbs for advice and obligation",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Review should for advice",
+        "Review must for obligation",
+        "Choose correct modal verbs"
+      ],
+      "language_focus": [
+        "Should/shouldn't for advice",
+        "Must/mustn't for rules"
+      ],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "dc3e3790-6fac-4b1a-acd9-cbe78dc65d6c",
+          "activity_type": "flashcard",
+          "title": "Modal Verbs Review",
+          "instruction": "Review should and must.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "8.8",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "Should",
+                "definition": "Used for advice and recommendations. 'You should study.'"
+              },
+              {
+                "word": "Shouldn't",
+                "definition": "Used to advise against something. 'You shouldn't be late.'"
+              },
+              {
+                "word": "Must",
+                "definition": "Used for strong obligation or rules. 'You must wear a seatbelt.'"
+              },
+              {
+                "word": "Mustn't",
+                "definition": "Used to say something is forbidden. 'You mustn't smoke here.'"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "3b19cbc8-a737-4c01-8642-b1c4940cfa4e",
+          "activity_type": "category-sort",
+          "title": "Should or Must?",
+          "instruction": "Sort these sentences by whether they use should (advice) or must (rule).",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.8",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "text": "You ___ eat more vegetables.",
+                "category": "Should (advice)"
+              },
+              {
+                "text": "You ___ exercise regularly.",
+                "category": "Should (advice)"
+              },
+              {
+                "text": "You ___ wear a seatbelt (it's the law).",
+                "category": "Must (rule)"
+              },
+              {
+                "text": "Students ___ not cheat in exams.",
+                "category": "Must (rule)"
+              },
+              {
+                "text": "You ___ try to learn new words daily.",
+                "category": "Should (advice)"
+              },
+              {
+                "text": "You ___ have a passport to travel abroad.",
+                "category": "Must (rule)"
+              }
+            ],
+            "categories": [
+              "Should (advice)",
+              "Must (rule)"
+            ]
+          }
+        },
+        {
+          "activity_id": "d75b31b6-9b2d-4491-a2ca-2f242612b370",
+          "activity_type": "gap-fill",
+          "title": "Complete with Should or Must",
+          "instruction": "Fill in the blanks with should or must.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.8",
+          "compensates": null,
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "gaps": [
+                  {
+                    "hint": "A strict rule",
+                    "answer": "must"
+                  }
+                ],
+                "text": "You _____ not smoke in the hospital. It's forbidden."
+              },
+              {
+                "gaps": [
+                  {
+                    "hint": "Advice",
+                    "answer": "should"
+                  }
+                ],
+                "text": "You _____ drink more water. It's good for you."
+              },
+              {
+                "gaps": [
+                  {
+                    "hint": "A strict rule",
+                    "answer": "must"
+                  }
+                ],
+                "text": "Students _____ not use phones during the exam."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "888b9b2b-03cc-41e5-8b5b-9d1f998e1be8",
+      "lesson_title": "Reading Comprehension Review",
+      "lesson_number": 9,
+      "description": "Practice reading comprehension strategies",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Review reading strategies",
+        "Practice skimming and scanning",
+        "Answer comprehension questions"
+      ],
+      "language_focus": [],
+      "vocabulary": [
+        "skim",
+        "scan",
+        "comprehension",
+        "main idea",
+        "detail"
+      ],
+      "activities": [
+        {
+          "activity_id": "888f5487-9f18-4001-9865-5d190c0a7c07",
+          "activity_type": "flashcard",
+          "title": "Reading Strategies",
+          "instruction": "Review different Reading time! 📖 Read carefully anding strategies.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "8.9",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "Skim",
+                "definition": "Reading quickly to get the main idea."
+              },
+              {
+                "word": "Scan",
+                "definition": "Looking quickly for specific information."
+              },
+              {
+                "word": "Main Idea",
+                "definition": "The most important point of a text."
+              },
+              {
+                "word": "Detail",
+                "definition": "A specific piece of information in the text."
+              },
+              {
+                "word": "Comprehension",
+                "definition": "Understanding what you read."
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "87940594-459e-4fbf-a6f8-930c80889632",
+          "activity_type": "mcq",
+          "title": "Reading Strategies Quiz",
+          "instruction": "Challenge yourself! 📝 Select the best option for the best reading strategy for each situation.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.9",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Read every word carefully",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Scan the article for numbers",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Read the article backwards",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Ignore the article",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "You want to find a specific date in an article. What do you do?",
+                "explanation": "Scanning helps you find specific information quickly."
+              },
+              {
+                "options": [
+                  {
+                    "text": "Read every word",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Skim the title and first paragraph",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Only read the last sentence",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Count the words",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "You want to know what an article is about. What do you do first?",
+                "explanation": "Skimming the title and first paragraph gives you the main idea quickly."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "9e8913a8-85ea-431a-8b76-f36cf297fe19",
+      "lesson_title": "Writing Review",
+      "lesson_number": 10,
+      "description": "Review different types of writing",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Review paragraph structure",
+        "Review different text types",
+        "Practice organizing writing"
+      ],
+      "language_focus": [
+        "Topic sentences",
+        "Supporting details",
+        "Conclusions"
+      ],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "4ceef9be-9389-4233-a787-0ecb8d5f7af4",
+          "activity_type": "flashcard",
+          "title": "Writing Structure",
+          "instruction": "Review parts of good writing.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "8.10",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "Topic Sentence",
+                "definition": "The first sentence that tells the main idea of a paragraph."
+              },
+              {
+                "word": "Supporting Details",
+                "definition": "Information that explains or proves the topic sentence."
+              },
+              {
+                "word": "Conclusion",
+                "definition": "The ending that summarizes the main points."
+              },
+              {
+                "word": "Transition Words",
+                "definition": "Words like 'first', 'then', 'finally' that connect ideas."
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "a61fd5d3-fcbc-442e-94d4-e669cb1d66ee",
+          "activity_type": "category-sort",
+          "title": "Types of Writing",
+          "instruction": "Sort these into the correct type of writing.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.10",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "text": "application letter",
+                "category": "Formal Letters"
+              },
+              {
+                "text": "cover letter",
+                "category": "Formal Letters"
+              },
+              {
+                "text": "email to a friend",
+                "category": "Informal Writing"
+              },
+              {
+                "text": "diary entry",
+                "category": "Informal Writing"
+              },
+              {
+                "text": "headline and lead paragraph",
+                "category": "News Articles"
+              },
+              {
+                "text": "reporting an event",
+                "category": "News Articles"
+              }
+            ],
+            "categories": [
+              "Formal Letters",
+              "Informal Writing",
+              "News Articles"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "7cfa8709-d1af-45f8-bd06-859be83ac332",
+      "lesson_title": "Listening and Speaking Review",
+      "lesson_number": 11,
+      "description": "Review speaking and listening skills",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Review conversation skills",
+        "Practice polite expressions",
+        "Review functional language"
+      ],
+      "language_focus": [
+        "Making requests",
+        "Giving opinions",
+        "Making suggestions"
+      ],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "2712733d-7c99-4ddb-baf6-62590ba5dda3",
+          "activity_type": "flashcard",
+          "title": "Polite Expressions",
+          "instruction": "Review polite ways to speak.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "8.11",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "Could you please...",
+                "definition": "A polite way to ask for something."
+              },
+              {
+                "word": "Would you mind...",
+                "definition": "A very polite way to make a request."
+              },
+              {
+                "word": "I think that...",
+                "definition": "A polite way to give your opinion."
+              },
+              {
+                "word": "In my opinion...",
+                "definition": "A formal way to express your views."
+              },
+              {
+                "word": "Why don't we...",
+                "definition": "A friendly way to make a suggestion."
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "92519ee5-5af4-423b-87a2-301252987435",
+          "activity_type": "match-pairs",
+          "title": "Match Function to Phrase",
+          "instruction": "Match the language function with an example phrase.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.11",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "Making a request",
+                "right": "Could you help me, please?"
+              },
+              {
+                "left": "Giving an opinion",
+                "right": "I think that's a good idea."
+              },
+              {
+                "left": "Accepting an invitation",
+                "right": "I'd love to, thank you!"
+              },
+              {
+                "left": "Declining an invitation",
+                "right": "I'm afraid I'm busy."
+              },
+              {
+                "left": "Giving advice",
+                "right": "You should try harder."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "67a5512e-73a6-4233-9d1e-74cb95f9f40a",
+      "lesson_title": "Vocabulary Building",
+      "lesson_number": 12,
+      "description": "Strategies for learning new vocabulary",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Learn vocabulary learning strategies",
+        "Review word families",
+        "Practice using context clues"
+      ],
+      "language_focus": [
+        "Word families",
+        "Context clues"
+      ],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "24236e40-e4cc-4e36-b671-dde2947b645b",
+          "activity_type": "flashcard",
+          "title": "Vocabulary Strategies",
+          "instruction": "Learn ways to remember new words.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "8.12",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "Word Families",
+                "definition": "Related words: work, worker, working, workable."
+              },
+              {
+                "word": "Context Clues",
+                "definition": "Using the sentence to guess a word's meaning."
+              },
+              {
+                "word": "Synonyms",
+                "definition": "Words with similar meanings: big = large."
+              },
+              {
+                "word": "Antonyms",
+                "definition": "Words with opposite meanings: hot ≠ cold."
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "466dd25c-997b-4996-a229-db8ebea62318",
+          "activity_type": "match-pairs",
+          "title": "Word Families",
+          "instruction": "Match the verb with its noun form.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.12",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "work (verb)",
+                "right": "worker (noun)"
+              },
+              {
+                "left": "teach (verb)",
+                "right": "teacher (noun)"
+              },
+              {
+                "left": "employ (verb)",
+                "right": "employment (noun)"
+              },
+              {
+                "left": "prevent (verb)",
+                "right": "prevention (noun)"
+              },
+              {
+                "left": "invite (verb)",
+                "right": "invitation (noun)"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "078ca4b0-10aa-48eb-86c0-21f1a3cb3baf",
+      "lesson_title": "Final Review Quiz",
+      "lesson_number": 13,
+      "description": "Comprehensive review quiz covering all units",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Test knowledge from all units",
+        "Identify areas for improvement",
+        "Prepare for final assessment"
+      ],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "9b9e756d-f195-4ddc-afa5-70c63ef21af8",
+          "activity_type": "mcq",
+          "title": "Vocabulary Quiz",
+          "instruction": "Test your vocabulary from all units.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.13",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "The last paragraph of an article",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "The title of a newspaper article",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "A type of TV programme",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "A job advertisement",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What is a 'headline'?",
+                "explanation": "A headline is the title at the top of a newspaper article."
+              },
+              {
+                "options": [
+                  {
+                    "text": "Eating healthy food",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Practices to keep clean and prevent disease",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "A type of exercise",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "A doctor's prescription",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What does 'hygiene' mean?",
+                "explanation": "Hygiene refers to practices that keep you clean and healthy."
+              },
+              {
+                "options": [
+                  {
+                    "text": "A type of job",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "A document listing your education and experience",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "An interview question",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "A workplace",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What is a CV?",
+                "explanation": "A CV (Curriculum Vitae) lists your qualifications and work experience."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "28590f8c-b790-4b70-b40c-1e66d7a83c2c",
+          "activity_type": "gap-fill",
+          "title": "Grammar Quiz",
+          "instruction": "Complete these sentences with the correct form.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.13",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "gaps": [
+                  {
+                    "hint": "Second conditional",
+                    "answer": "were"
+                  }
+                ],
+                "text": "If I _____ you, I would study harder. (be)"
+              },
+              {
+                "gaps": [
+                  {
+                    "hint": "Reported speech",
+                    "answer": "was"
+                  }
+                ],
+                "text": "He said he _____ coming to the party. (is → reported)"
+              },
+              {
+                "gaps": [
+                  {
+                    "hint": "Giving advice",
+                    "answer": "should"
+                  }
+                ],
+                "text": "You _____ eat vegetables. They're good for you. (advice)"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "7ef965bd-0f85-4108-bcb1-6d4b9a5216ea",
+      "lesson_title": "Course Summary",
+      "lesson_number": 14,
+      "description": "Summary of all learning from Grade 10 English",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Review all major topics",
+        "Celebrate achievements",
+        "Set goals for future learning"
+      ],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "8891a7cc-0447-4847-af0b-1aa447b76d6c",
+          "activity_type": "flashcard",
+          "title": "What We Learned",
+          "instruction": "Review the main topics from each unit.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "8.14",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "Unit 1",
+                "definition": "What do you remember? - Memories, descriptions, second conditional"
+              },
+              {
+                "word": "Unit 2",
+                "definition": "The family - Family relationships, family trees"
+              },
+              {
+                "word": "Unit 3",
+                "definition": "Living abroad - Household items, directions, cooking"
+              },
+              {
+                "word": "Unit 4",
+                "definition": "Newspapers - Headlines, reported speech, TV programmes"
+              },
+              {
+                "word": "Unit 5",
+                "definition": "Other countries - Explorers, invitations, customs"
+              },
+              {
+                "word": "Unit 6",
+                "definition": "Staying healthy - Health, nutrition, hygiene, fitness"
+              },
+              {
+                "word": "Unit 7",
+                "definition": "Work - Jobs, applications, interviews, CVs"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "99cd20da-a759-4ae1-aef0-71dba337fbca",
+          "activity_type": "category-sort",
+          "title": "Skills Summary",
+          "instruction": "Sort the skills you learned by category.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "8.14",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "text": "using conditionals",
+                "category": "Grammar Skills"
+              },
+              {
+                "text": "reported speech",
+                "category": "Grammar Skills"
+              },
+              {
+                "text": "learning new words",
+                "category": "Vocabulary Skills"
+              },
+              {
+                "text": "using word families",
+                "category": "Vocabulary Skills"
+              },
+              {
+                "text": "writing a CV",
+                "category": "Life Skills"
+              },
+              {
+                "text": "job interviews",
+                "category": "Life Skills"
+              },
+              {
+                "text": "staying healthy",
+                "category": "Life Skills"
+              }
+            ],
+            "categories": [
+              "Grammar Skills",
+              "Vocabulary Skills",
+              "Life Skills"
+            ]
+          }
+        },
+        {
+          "activity_id": "faf335d9-64fa-4840-884a-bf64ee5d7cfa",
+          "activity_type": "true-false",
+          "title": "Celebrate Your Learning!",
+          "instruction": "Think about what you learned this year.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "8.14",
+          "compensates": null,
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "statements": [
+              {
+                "text": "I can use reported speech to tell what someone said.",
+                "isTrue": true,
+                "explanation": "Great! You learned reported speech in Unit 4."
+              },
+              {
+                "text": "I can give advice using should and shouldn't.",
+                "isTrue": true,
+                "explanation": "Excellent! You learned this in Units 6 and 7."
+              },
+              {
+                "text": "I know vocabulary for health, work, and culture.",
+                "isTrue": true,
+                "explanation": "Wonderful! You learned vocabulary from many topics."
+              },
+              {
+                "text": "I can write a simple CV for a job application.",
+                "isTrue": true,
+                "explanation": "Well done! You learned this in Unit 7."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

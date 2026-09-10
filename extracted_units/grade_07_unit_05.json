@@ -1,0 +1,3550 @@
+{
+  "unit_id": "021234d7-7088-4a49-91b0-e6f17d347724",
+  "unit_title": "Daily Life",
+  "unit_number": 5,
+  "course_id": "b9f1e5d7-6c4a-4ab8-a9a9-79885a5c669d",
+  "course_title": "Grade 7",
+  "course_description": "English curriculum for Grade 7",
+  "lessons": [
+    {
+      "lesson_id": "ce50e5f6-e19d-4e24-982f-482a689ddd7b",
+      "lesson_title": "5.1 - 5.3",
+      "lesson_number": 1,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "91d316d7-78bf-4f5a-8665-b88acf5c5c99",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 23)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "29",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "021b033d-518d-42b5-ad74-355b77e8c14c",
+          "activity_type": "flashcard",
+          "title": "Days of the Week",
+          "instruction": "Learn the days of the week. Tap to flip the card, read the Arabic meaning, and Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the word.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "29",
+          "compensates": "Teacher presenting vocabulary flashcards and doing choral repetition.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "Saturday",
+                "example": "On Saturday, I wash my face.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/audio/g7_u5_l5.1_flsh_act0_a0.mp3",
+                "definition": "يوم السبت",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "Sunday",
+                "example": "On Sunday, I wash my hands.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/audio/g7_u5_l5.1_flsh_act0_a1.mp3",
+                "definition": "يوم الأحد",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "Monday",
+                "example": "On Monday, I brush my teeth.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/audio/g7_u5_l5.1_flsh_act0_a2.mp3",
+                "definition": "يوم الإثنين",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "Tuesday",
+                "example": "On Tuesday, I brush my hair.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/audio/g7_u5_l5.1_flsh_act0_a3.mp3",
+                "definition": "يوم الثلاثاء",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "Wednesday",
+                "example": "On Wednesday, I clean my shoes.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/audio/g7_u5_l5.1_flsh_act0_a4.mp3",
+                "definition": "يوم الأربعاء",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "Thursday",
+                "example": "On Thursday, I eat my food.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/audio/g7_u5_l5.1_flsh_act0_a5.mp3",
+                "definition": "يوم الخميس",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "Friday",
+                "example": "On Friday, I drink my tea.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/audio/g7_u5_l5.1_flsh_act0_a6.mp3",
+                "definition": "يوم الجمعة",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "237f80aa-7a89-40b9-a248-596bdc771947",
+          "activity_type": "flashcard",
+          "title": "My Daily Routine",
+          "instruction": "Learn phrases for daily actions. Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture and listen to the phrase.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "29",
+          "compensates": "Teacher presenting vocabulary using pictures and miming actions.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "wash my face",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/86.png",
+                "example": "This is the way I wash my face.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/86.png",
+                "definition": "أغسل وجهي",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "wash my hands",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/87.png",
+                "example": "This is the way I wash my hands.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/87.png",
+                "definition": "أغسل يدي",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "brush my teeth",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/88.png",
+                "example": "This is the way I brush my teeth.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/88.png",
+                "definition": "أنظف أسناني",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "brush my hair",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/89.png",
+                "example": "This is the way I brush my hair.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/89.png",
+                "definition": "أمشط شعري",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "clean my shoes",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/90.png",
+                "example": "This is the way I clean my shoes.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/90.png",
+                "definition": "أنظف حذائي",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "eat my food",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/91.png",
+                "example": "This is the way I eat my food.",
+                "definition": "آكل طعامي",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "drink my tea",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/92.png",
+                "example": "This is the way I drink my tea.",
+                "definition": "أشرب الشاي",
+                "partOfSpeech": "verb phrase"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "d78cfde4-2f40-4b48-b020-68e4b214e2b3",
+          "activity_type": "match-pairs",
+          "title": "Match the Day and the Action",
+          "instruction": "Drag the picture to match the correct day of the week from the song.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "29",
+          "compensates": "Teacher asking students to point to pictures and say the corresponding phrase.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "Saturday",
+                "right": "ID: 86"
+              },
+              {
+                "left": "Sunday",
+                "right": "ID: 87"
+              },
+              {
+                "left": "Monday",
+                "right": "ID: 88"
+              },
+              {
+                "left": "Tuesday",
+                "right": "ID: 89"
+              },
+              {
+                "left": "Wednesday",
+                "right": "ID: 90"
+              },
+              {
+                "left": "Thursday",
+                "right": "ID: 91"
+              },
+              {
+                "left": "Friday",
+                "right": "ID: 92"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "a9e7deea-6857-4d93-9b97-13cdf5ddc076",
+          "activity_type": "listening-comprehension",
+          "title": "Listen to the Song",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the song 'This is the way' and answer the questions.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "29",
+          "compensates": "Teacher playing the song from a cassette (CS23) and asking comprehension questions.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Wash my face",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Brush my teeth",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Clean my shoes",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What do you do on Saturday morning?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Monday",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Wednesday",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Tuesday",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "On which day do you brush your hair?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Drink my tea",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Eat my food",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Wash my hands",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What do you do on Thursday morning?"
+              }
+            ],
+            "transcript": "This is the way I wash my face, wash my face, wash my face. This is the way I wash my face, all on a Saturday morning. This is the way I wash my hands, wash my hands, wash my hands. This is the way I wash my hands, all on a Sunday morning. This is the way I brush my teeth, brush my teeth, brush my teeth. This is the way I brush my teeth, all on a Monday morning. This is the way I brush my hair, brush my hair, brush my hair. This is the way I brush my hair, all on a Tuesday morning. This is the way I clean my shoes, clean my shoes, clean my shoes. This is the way I clean my shoes, all on a Wednesday morning. This is the way I eat my food, eat my food, eat my food. This is the way I eat my food, all on a Thursday morning. This is the way I drink my tea, drink my tea, drink my tea. This is the way I drink my tea, all on a Friday morning."
+          }
+        },
+        {
+          "activity_id": "45496ef3-952e-439f-b91b-152465a47d48",
+          "activity_type": "mcq",
+          "title": "Which Day is Next?",
+          "instruction": "Read the question and Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for the correct day that comes next.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "29",
+          "compensates": "Teacher-led oral quiz on the days of the week.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Tuesday",
+                    "feedback": "Correct! Tuesday is after Monday.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Wednesday",
+                    "feedback": "Not quite. Wednesday comes after Tuesday.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Sunday",
+                    "feedback": "Try again. Sunday is before Monday.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "After Monday comes...",
+                "explanation": "The order of the days is Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday."
+              },
+              {
+                "options": [
+                  {
+                    "text": "Wednesday",
+                    "feedback": "Try again. Wednesday is before Thursday.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Friday",
+                    "feedback": "Excellent! Friday is after Thursday.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Saturday",
+                    "feedback": "Close! Saturday comes after Friday.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "After Thursday comes...",
+                "explanation": "Friday is the day before the weekend starts on Saturday."
+              },
+              {
+                "options": [
+                  {
+                    "text": "Sunday",
+                    "feedback": "Not quite. Sunday is after Saturday.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Thursday",
+                    "feedback": "Try again. Thursday is two days before Saturday.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Friday",
+                    "feedback": "That's right! Friday is just before Saturday.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Before Saturday comes...",
+                "explanation": "The week ends with Friday, then Saturday and Sunday."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "5f041ff5-ce81-4fa4-b2e7-2b3c13a6fec3",
+          "activity_type": "word-order",
+          "title": "Build a Sentence",
+          "instruction": "Drag the words into the correct order to make a sentence from the song.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "29",
+          "compensates": "Whiteboard sentence-building activity.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "correctOrder": [
+                  "I",
+                  "wash",
+                  "my",
+                  "face",
+                  "on",
+                  "Saturday",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "I",
+                  "brush",
+                  "my",
+                  "teeth",
+                  "on",
+                  "Monday",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "I",
+                  "clean",
+                  "my",
+                  "shoes",
+                  "on",
+                  "Wednesday",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "I",
+                  "drink",
+                  "my",
+                  "tea",
+                  "on",
+                  "Friday",
+                  "."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "4821b0da-a91e-42f6-b2eb-ad79be50df67",
+          "activity_type": "gap-fill",
+          "title": "Spell the Days",
+          "instruction": "Type the missing letters to complete the name of the day.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "29",
+          "compensates": "Workbook spelling exercises (HWB1-3).",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "Satur___",
+                "blanks": [
+                  {
+                    "answer": "day"
+                  }
+                ],
+                "explanation": "The word is Saturday."
+              },
+              {
+                "text": "Sun___",
+                "blanks": [
+                  {
+                    "answer": "day"
+                  }
+                ],
+                "explanation": "The word is Sunday."
+              },
+              {
+                "text": "Mon___",
+                "blanks": [
+                  {
+                    "answer": "day"
+                  }
+                ],
+                "explanation": "The word is Monday."
+              },
+              {
+                "text": "Tues___",
+                "blanks": [
+                  {
+                    "answer": "day"
+                  }
+                ],
+                "explanation": "The word is Tuesday."
+              },
+              {
+                "text": "Wednes___",
+                "blanks": [
+                  {
+                    "answer": "day"
+                  }
+                ],
+                "explanation": "The word is Wednesday. This is a tricky one to spell!"
+              },
+              {
+                "text": "Thurs___",
+                "blanks": [
+                  {
+                    "answer": "day"
+                  }
+                ],
+                "explanation": "The word is Thursday."
+              },
+              {
+                "text": "Fri___",
+                "blanks": [
+                  {
+                    "answer": "day"
+                  }
+                ],
+                "explanation": "The word is Friday."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "60aa423e-85a9-45e0-a607-6eeeb0a693cd",
+          "activity_type": "pronunciation-practice",
+          "title": "Practice Pronunciation",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the word, then record yourself saying it. Pay attention to the syllables.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "29",
+          "compensates": "Teacher-led choral drilling and individual pronunciation correction.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "Saturday",
+                "phonetic": "SA-tur-day",
+                "syllables": [
+                  "Sa",
+                  "tur",
+                  "day"
+                ]
+              },
+              {
+                "word": "Monday",
+                "phonetic": "MUN-day",
+                "syllables": [
+                  "Mon",
+                  "day"
+                ]
+              },
+              {
+                "word": "Tuesday",
+                "phonetic": "TOOS-day",
+                "syllables": [
+                  "Tues",
+                  "day"
+                ]
+              },
+              {
+                "word": "Wednesday",
+                "phonetic": "WENZ-day",
+                "syllables": [
+                  "Wednes",
+                  "day"
+                ]
+              },
+              {
+                "word": "Thursday",
+                "phonetic": "THURZ-day",
+                "syllables": [
+                  "Thurs",
+                  "day"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "616f0fb8-b5dd-4e10-bbec-87004432a3f0",
+      "lesson_title": "5.2",
+      "lesson_number": 2,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "72a01622-d623-4f34-9b86-030a8422b083",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 23)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "35",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "7eca2078-c81e-43d0-aef4-71740ea5682e",
+          "activity_type": "flashcard",
+          "title": "Telling the Time",
+          "instruction": "Learn how to tell the time in English. Tap the card to see the meaning.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "35",
+          "compensates": "Teacher showing flashcards or drawing clocks on the board to explain time expressions.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "O'clock",
+                "image": "gen-g7-u5-5.2-img-1",
+                "example": "It is three o'clock.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/g7_u5_l5_2_flsh_act0_i0.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/audio/g7_u5_l5.2_flsh_act0_a0.mp3",
+                "definition": "Used when the minute hand points to 12. (بالضبط)",
+                "partOfSpeech": "adverb"
+              },
+              {
+                "word": "Half past",
+                "image": "gen-g7-u5-5.2-img-2",
+                "example": "Let's meet at half past three.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/g7_u5_l5_2_flsh_act0_i1.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/audio/g7_u5_l5.2_flsh_act0_a1.mp3",
+                "definition": "Used when the minute hand points to 6 (30 minutes past the hour). (والنصف)",
+                "partOfSpeech": "phrase"
+              },
+              {
+                "word": "Quarter past",
+                "image": "gen-g7-u5-5.2-img-3",
+                "example": "The bus leaves at a quarter past two.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/g7_u5_l5_2_flsh_act0_i2.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/audio/g7_u5_l5.2_flsh_act0_a2.mp3",
+                "definition": "15 minutes after the hour. (والربع)",
+                "partOfSpeech": "phrase"
+              },
+              {
+                "word": "Quarter to",
+                "image": "gen-g7-u5-5.2-img-4",
+                "example": "My class starts at a quarter to four.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/g7_u5_l5_2_flsh_act0_i3.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/audio/g7_u5_l5.2_flsh_act0_a3.mp3",
+                "definition": "15 minutes before the next hour. (إلا الربع)",
+                "partOfSpeech": "phrase"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "b90737ff-627c-4dcd-96d1-90aee311b1c2",
+          "activity_type": "match-pairs",
+          "title": "Match the Times",
+          "instruction": "Match each digital time to how we say it in English.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "35",
+          "compensates": "Worksheet activity where students draw lines to match digital and analog times.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "3:00",
+                "right": "Three o'clock"
+              },
+              {
+                "left": "6:30",
+                "right": "Half past six"
+              },
+              {
+                "left": "9:15",
+                "right": "Quarter past nine"
+              },
+              {
+                "left": "7:45",
+                "right": "Quarter to eight"
+              },
+              {
+                "left": "12:00",
+                "right": "Twelve o'clock"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "923f477a-f3aa-4d22-9e47-7b8503758b62",
+          "activity_type": "mcq",
+          "title": "What Time Is It?",
+          "instruction": "Use your eyes! 🧐 Look closely at the at the time and Take a closer look! 📝 Pick the best option for the correct way to say it.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "35",
+          "compensates": "Teacher asking students 'What's the time?' while pointing to a clock.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "images": [
+              {
+                "idx": 0,
+                "url": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/g7_u5_l5_2_mcq_act2_i0.png"
+              },
+              {
+                "idx": 1,
+                "url": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/g7_u5_l5_2_mcq_act2_i1.png"
+              }
+            ],
+            "questions": [
+              {
+                "image": "gen-g7-u5-5.2-img-5",
+                "options": [
+                  {
+                    "text": "Five o'clock",
+                    "feedback": "Correct! 5:00 is five o'clock.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Half past five",
+                    "feedback": "Not quite. Half past five is 5:30.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Five minutes",
+                    "feedback": "This tells us a duration, not the time on the clock.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Quarter past five",
+                    "feedback": "Try again. Quarter past five is 5:15.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What time is it?",
+                "explanation": "When the long hand is on the 12, we say 'o'clock'."
+              },
+              {
+                "image": "gen-g7-u5-5.2-img-6",
+                "options": [
+                  {
+                    "text": "Eight o'clock",
+                    "feedback": "Look carefully at the minute hand.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Half past eight",
+                    "feedback": "Excellent! 8:30 is half past eight.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Quarter past eight",
+                    "feedback": "Quarter past means 15 minutes after the hour.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Quarter to eight",
+                    "feedback": "Quarter to means 15 minutes before the next hour (7:45).",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What time is it?",
+                "explanation": "When the long hand is on the 6, it means 30 minutes have passed. We say 'half past'."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "6439ff55-6598-4582-bfde-eb7b049a9b05",
+          "activity_type": "flashcard",
+          "title": "Days of the Week",
+          "instruction": "Learn the days of the week. Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the pronunciation and read the word.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "35",
+          "compensates": "Teacher using flashcards (FCs) to present and drill the days of the week.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "Saturday",
+                "example": "We don't go to school on Saturday.",
+                "definition": "السبت",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "Sunday",
+                "example": "Sunday is the first day of the school week.",
+                "definition": "الأحد",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "Monday",
+                "example": "We have English class on Monday.",
+                "definition": "الاثنين",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "Tuesday",
+                "example": "I play football on Tuesday.",
+                "definition": "الثلاثاء",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "Wednesday",
+                "example": "Wednesday is in the middle of the week.",
+                "definition": "الأربعاء",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "Thursday",
+                "example": "The weekend starts after Thursday.",
+                "definition": "الخميس",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "Friday",
+                "example": "We go to the mosque on Friday.",
+                "definition": "الجمعة",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "c8f9aec8-99a1-43cd-a421-0f69e401dcc1",
+          "activity_type": "pronunciation-practice",
+          "title": "Say the Days",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the day of the week, then record yourself saying it. Try to match the sound.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "35",
+          "compensates": "Teacher modeling pronunciation and conducting choral drilling of difficult words.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "Wednesday",
+                "phonetic": "/ˈwenzdeɪ/",
+                "syllables": [
+                  "Wednes",
+                  "day"
+                ]
+              },
+              {
+                "word": "Thursday",
+                "phonetic": "/ˈθɜːzdeɪ/",
+                "syllables": [
+                  "Thurs",
+                  "day"
+                ]
+              },
+              {
+                "word": "Saturday",
+                "phonetic": "/ˈsætədeɪ/",
+                "syllables": [
+                  "Sat",
+                  "ur",
+                  "day"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "09e9931a-485a-4365-a4c3-0d7210fc9496",
+          "activity_type": "flashcard",
+          "title": "Math Words",
+          "instruction": "Learn the words we use for math in English. Tap the card to see the symbol and meaning.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "35",
+          "compensates": "Teacher writing math symbols on the board and explaining their meaning in English.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "plus",
+                "example": "Ten plus ten is twenty.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/audio/g7_u5_l5.2_flsh_act5_a0.mp3",
+                "definition": "+ (To add numbers together / زائد)",
+                "partOfSpeech": "preposition"
+              },
+              {
+                "word": "minus",
+                "example": "Twenty-eight minus seven is twenty-one.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/audio/g7_u5_l5.2_flsh_act5_a1.mp3",
+                "definition": "- (To subtract one number from another / ناقص)",
+                "partOfSpeech": "preposition"
+              },
+              {
+                "word": "times",
+                "example": "Four times six is twenty-four.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/audio/g7_u5_l5.2_flsh_act5_a2.mp3",
+                "definition": "x (To multiply numbers / ضرب)",
+                "partOfSpeech": "preposition"
+              },
+              {
+                "word": "divided by",
+                "example": "Twelve divided by four is three.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/audio/g7_u5_l5.2_flsh_act5_a3.mp3",
+                "definition": "÷ (To divide one number by another / قسمة)",
+                "partOfSpeech": "phrase"
+              },
+              {
+                "word": "equals",
+                "example": "Ten plus ten equals twenty.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/audio/g7_u5_l5.2_flsh_act5_a4.mp3",
+                "definition": "= (Is the same as / يساوي)",
+                "partOfSpeech": "verb"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "0f8814cb-facc-45ba-bcbe-65d79a0287bd",
+          "activity_type": "gap-fill",
+          "title": "Complete the Number Sequences",
+          "instruction": "Type the missing numbers to complete the sequences from Workbook page 35, exercises b and c.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "35",
+          "compensates": "Workbook page 35, exercises b and c, which involve writing missing numbers in a sequence.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/g7_u5_l5_2_gap_act6_i0.png",
+            "sentences": [
+              {
+                "text": "41, ___, 43, ___, 45, ___, 47, ___, 49",
+                "blanks": [
+                  {
+                    "answer": "42"
+                  },
+                  {
+                    "answer": "44"
+                  },
+                  {
+                    "answer": "46"
+                  },
+                  {
+                    "answer": "48"
+                  }
+                ],
+                "explanation": "This sequence is counting by one: forty-one, forty-two, forty-three..."
+              },
+              {
+                "text": "___, 52, ___, 54, ___, 56, ___, 58",
+                "blanks": [
+                  {
+                    "answer": "51"
+                  },
+                  {
+                    "answer": "53"
+                  },
+                  {
+                    "answer": "55"
+                  },
+                  {
+                    "answer": "57"
+                  }
+                ],
+                "explanation": "This sequence is also counting by one, starting from fifty-one."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "ec9b3e70-532b-4a74-87a5-05a618603f5d",
+          "activity_type": "gap-fill",
+          "title": "Solve the Problems",
+          "instruction": "Solve the math problems and write the answer. This is from Workbook page 35.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "35",
+          "compensates": "Directly replaces the written exercises d, e, f, and g from Workbook page 35.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/g7_u5_l5_2_gap_act7_i0.png",
+            "sentences": [
+              {
+                "text": "10 + 10 = ___",
+                "blanks": [
+                  {
+                    "answer": "20"
+                  }
+                ]
+              },
+              {
+                "text": "20 + 10 = ___",
+                "blanks": [
+                  {
+                    "answer": "30"
+                  }
+                ]
+              },
+              {
+                "text": "30 + 10 = ___",
+                "blanks": [
+                  {
+                    "answer": "40"
+                  }
+                ]
+              },
+              {
+                "text": "40 + 10 = ___",
+                "blanks": [
+                  {
+                    "answer": "50"
+                  }
+                ]
+              },
+              {
+                "text": "28 - 7 = ___",
+                "blanks": [
+                  {
+                    "answer": "21"
+                  }
+                ]
+              },
+              {
+                "text": "36 - 10 = ___",
+                "blanks": [
+                  {
+                    "answer": "26"
+                  }
+                ]
+              },
+              {
+                "text": "45 - 6 = ___",
+                "blanks": [
+                  {
+                    "answer": "39"
+                  }
+                ]
+              },
+              {
+                "text": "58 - 11 = ___",
+                "blanks": [
+                  {
+                    "answer": "47"
+                  }
+                ]
+              },
+              {
+                "text": "4 x 6 = ___",
+                "blanks": [
+                  {
+                    "answer": "24"
+                  }
+                ]
+              },
+              {
+                "text": "6 x 5 = ___",
+                "blanks": [
+                  {
+                    "answer": "30"
+                  }
+                ]
+              },
+              {
+                "text": "7 x 7 = ___",
+                "blanks": [
+                  {
+                    "answer": "49"
+                  }
+                ]
+              },
+              {
+                "text": "9 x 6 = ___",
+                "blanks": [
+                  {
+                    "answer": "54"
+                  }
+                ]
+              },
+              {
+                "text": "12 ÷ 4 = ___",
+                "blanks": [
+                  {
+                    "answer": "3"
+                  }
+                ]
+              },
+              {
+                "text": "50 ÷ 5 = ___",
+                "blanks": [
+                  {
+                    "answer": "10"
+                  }
+                ]
+              },
+              {
+                "text": "44 ÷ 11 = ___",
+                "blanks": [
+                  {
+                    "answer": "4"
+                  }
+                ]
+              },
+              {
+                "text": "36 ÷ 12 = ___",
+                "blanks": [
+                  {
+                    "answer": "3"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "cb9f3e1e-15e4-4a04-87e9-104e1a8bb898",
+          "activity_type": "dictation",
+          "title": "Listen to the Math",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the math problem and type the full sentence you hear.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "35",
+          "compensates": "Teacher reading math problems aloud and having students write them down.",
+          "order_index": 8,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "difficulty": "sentence",
+                "expectedText": "Thirty plus ten equals forty."
+              },
+              {
+                "difficulty": "sentence",
+                "expectedText": "Fifty-eight minus eleven equals forty-seven."
+              },
+              {
+                "difficulty": "sentence",
+                "expectedText": "Seven times seven equals forty-nine."
+              },
+              {
+                "difficulty": "sentence",
+                "expectedText": "Thirty-six divided by twelve equals three."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "7a75c79b-b08c-4c79-a30b-234024db0bf6",
+          "activity_type": "spelling-bee",
+          "title": "Numbers 50 to 59",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the number and spell it correctly. Don't forget the hyphen (-) for numbers like fifty-one.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "35",
+          "compensates": "Teacher writing numbers on the board and asking students to copy and spell them.",
+          "order_index": 9,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "hint": "50",
+                "word": "fifty",
+                "scrambled": [
+                  "f",
+                  "i",
+                  "f",
+                  "t",
+                  "y"
+                ]
+              },
+              {
+                "hint": "51",
+                "word": "fifty-one",
+                "scrambled": [
+                  "f",
+                  "i",
+                  "f",
+                  "t",
+                  "y",
+                  "-",
+                  "o",
+                  "n",
+                  "e"
+                ]
+              },
+              {
+                "hint": "52",
+                "word": "fifty-two",
+                "scrambled": [
+                  "f",
+                  "i",
+                  "f",
+                  "t",
+                  "y",
+                  "-",
+                  "t",
+                  "w",
+                  "o"
+                ]
+              },
+              {
+                "hint": "53",
+                "word": "fifty-three",
+                "scrambled": [
+                  "f",
+                  "i",
+                  "f",
+                  "t",
+                  "y",
+                  "-",
+                  "t",
+                  "h",
+                  "r",
+                  "e",
+                  "e"
+                ]
+              },
+              {
+                "hint": "59",
+                "word": "fifty-nine",
+                "scrambled": [
+                  "f",
+                  "i",
+                  "f",
+                  "t",
+                  "y",
+                  "-",
+                  "n",
+                  "i",
+                  "n",
+                  "e"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "98ddc411-da03-4239-a6a1-a1f57921732b",
+      "lesson_title": "5.10",
+      "lesson_number": 10,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "ecbe7ac8-3a8f-4a03-b662-f118830e80d3",
+          "activity_type": "listening-comprehension",
+          "title": "Fatima's Morning",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to Fatima talk about her morning routine, then answer the questions.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "40",
+          "compensates": "Provides a listening activity that uses the target language in context, which is a common extension activity for speaking lessons.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "audioSrc": "/media/audio/g7_u5_l5.10_lis_8.mp3",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "At six o'clock.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "At seven o'clock.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "At eight o'clock.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "When does Fatima get up?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "At six o'clock.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "At seven o'clock.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "At eight o'clock.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "When does she have breakfast?"
+              }
+            ],
+            "transcript": "Hello, my name is Fatima. Every day, I get up at six o'clock. I have breakfast with my family at seven o'clock. Then, I go to school. School starts at eight o'clock."
+          }
+        },
+        {
+          "activity_id": "c1e31ace-e611-4e4f-91bd-7ece1a26adc2",
+          "activity_type": "pronunciation-practice",
+          "title": "The Two 'th' Sounds",
+          "instruction": "The letters 'th' can make two different sounds. Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the words in each group and practice saying them out loud.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "40",
+          "compensates": "Replaces the teacher-led sound/spelling exercise from WB5.10A, allowing students to practice pronunciation independently with clear categories.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "groups": [
+              {
+                "name": "Voiced 'th' sound (like in 'the')",
+                "words": [
+                  {
+                    "word": "the",
+                    "audioSrc": "/media/audio/g7_u5_l5.10_pro_1_g0_w0.mp3",
+                    "phonetic": "/ðə/",
+                    "syllables": [
+                      "the"
+                    ]
+                  },
+                  {
+                    "word": "this",
+                    "audioSrc": "/media/audio/g7_u5_l5.10_pro_1_g0_w1.mp3",
+                    "phonetic": "/ðɪs/",
+                    "syllables": [
+                      "this"
+                    ]
+                  },
+                  {
+                    "word": "that",
+                    "audioSrc": "/media/audio/g7_u5_l5.10_pro_1_g0_w2.mp3",
+                    "phonetic": "/ðæt/",
+                    "syllables": [
+                      "that"
+                    ]
+                  },
+                  {
+                    "word": "father",
+                    "audioSrc": "/media/audio/g7_u5_l5.10_pro_1_g0_w3.mp3",
+                    "phonetic": "/ˈfɑːðər/",
+                    "syllables": [
+                      "fa",
+                      "ther"
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Unvoiced 'th' sound (like in 'three')",
+                "words": [
+                  {
+                    "word": "thanks",
+                    "audioSrc": "/media/audio/g7_u5_l5.10_pro_1_g1_w0.mp3",
+                    "phonetic": "/θæŋks/",
+                    "syllables": [
+                      "thanks"
+                    ]
+                  },
+                  {
+                    "word": "thing",
+                    "audioSrc": "/media/audio/g7_u5_l5.10_pro_1_g1_w1.mp3",
+                    "phonetic": "/θɪŋ/",
+                    "syllables": [
+                      "thing"
+                    ]
+                  },
+                  {
+                    "word": "three",
+                    "audioSrc": "/media/audio/g7_u5_l5.10_pro_1_g1_w2.mp3",
+                    "phonetic": "/θriː/",
+                    "syllables": [
+                      "three"
+                    ]
+                  },
+                  {
+                    "word": "thirsty",
+                    "audioSrc": "/media/audio/g7_u5_l5.10_pro_1_g1_w3.mp3",
+                    "phonetic": "/ˈθɜːrsti/",
+                    "syllables": [
+                      "thirs",
+                      "ty"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "ac225998-db42-4b2e-bd44-140319a7779c",
+          "activity_type": "gap-fill",
+          "title": "Complete the 'th' Words",
+          "instruction": "All of these words are missing the letters 'th'. Type 'th' in each blank to complete the words. This is based on Workbook page 40.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "40",
+          "compensates": "Directly digitizes the spelling exercise from Workbook page 40, Activity A, providing immediate feedback.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "___e",
+                "blanks": [
+                  {
+                    "hint": "Starts with 't'",
+                    "answer": "th",
+                    "alternatives": []
+                  }
+                ]
+              },
+              {
+                "text": "__is",
+                "blanks": [
+                  {
+                    "hint": "Starts with 't'",
+                    "answer": "th",
+                    "alternatives": []
+                  }
+                ]
+              },
+              {
+                "text": "__at",
+                "blanks": [
+                  {
+                    "hint": "Starts with 't'",
+                    "answer": "th",
+                    "alternatives": []
+                  }
+                ]
+              },
+              {
+                "text": "fa__er",
+                "blanks": [
+                  {
+                    "hint": "Middle sound",
+                    "answer": "th",
+                    "alternatives": []
+                  }
+                ]
+              },
+              {
+                "text": "mo__er",
+                "blanks": [
+                  {
+                    "hint": "Middle sound",
+                    "answer": "th",
+                    "alternatives": []
+                  }
+                ]
+              },
+              {
+                "text": "bro__er",
+                "blanks": [
+                  {
+                    "hint": "Middle sound",
+                    "answer": "th",
+                    "alternatives": []
+                  }
+                ]
+              },
+              {
+                "text": "__anks",
+                "blanks": [
+                  {
+                    "hint": "Starts with 't'",
+                    "answer": "th",
+                    "alternatives": []
+                  }
+                ]
+              },
+              {
+                "text": "__irsty",
+                "blanks": [
+                  {
+                    "hint": "Starts with 't'",
+                    "answer": "th",
+                    "alternatives": []
+                  }
+                ]
+              },
+              {
+                "text": "__ursday",
+                "blanks": [
+                  {
+                    "hint": "Starts with 't'",
+                    "answer": "th",
+                    "alternatives": []
+                  }
+                ]
+              },
+              {
+                "text": "__ree",
+                "blanks": [
+                  {
+                    "hint": "Starts with 't'",
+                    "answer": "th",
+                    "alternatives": []
+                  }
+                ]
+              },
+              {
+                "text": "tee__",
+                "blanks": [
+                  {
+                    "hint": "Ends with 'h'",
+                    "answer": "th",
+                    "alternatives": []
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "0af8e87b-439e-4aa1-bd21-8e88b24c1007",
+          "activity_type": "mcq",
+          "title": "Vocabulary Check",
+          "instruction": "Use your eyes! 🧐 Look closely at the at the picture and Take a closer look! 📝 Pick the best option for the correct word.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "40",
+          "compensates": "Provides a visual vocabulary check, similar to the picture-based puzzles in the workbook, but in an interactive format.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1025.png",
+                "options": [
+                  {
+                    "text": "thirsty",
+                    "feedback": "Correct! The boy is thirsty and needs a drink.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "three",
+                    "feedback": "Incorrect. 'Three' is a number.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "thanks",
+                    "feedback": "Incorrect. 'Thanks' is what you say when someone helps you.",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1025.png",
+                "question": "How does the boy feel?",
+                "explanation": "The picture shows a boy drinking, which means he is thirsty."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "2dd44999-3f03-4f77-ac11-d08162e92e61",
+          "activity_type": "spelling-bee",
+          "title": "'th' Words Spelling",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the word and spell it correctly by typing the letters. All words have the 'th' sound.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "40",
+          "compensates": "Replaces a generic spelling activity with one focused on the lesson's target phoneme and vocabulary from WB page 40.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "hint": "Your male parent.",
+                "word": "father",
+                "audio": "needed",
+                "scrambled": [
+                  "f",
+                  "a",
+                  "t",
+                  "h",
+                  "e",
+                  "r"
+                ]
+              },
+              {
+                "hint": "Your female parent.",
+                "word": "mother",
+                "audio": "needed",
+                "scrambled": [
+                  "m",
+                  "o",
+                  "t",
+                  "h",
+                  "e",
+                  "r"
+                ]
+              },
+              {
+                "hint": "A boy who has the same parents as you.",
+                "word": "brother",
+                "audio": "needed",
+                "scrambled": [
+                  "b",
+                  "r",
+                  "o",
+                  "t",
+                  "h",
+                  "e",
+                  "r"
+                ]
+              },
+              {
+                "hint": "The day after Wednesday.",
+                "word": "Thursday",
+                "audio": "needed",
+                "scrambled": [
+                  "T",
+                  "h",
+                  "u",
+                  "r",
+                  "s",
+                  "d",
+                  "a",
+                  "y"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "7bf3c270-bbd6-418e-9081-bf8088c9661e",
+          "activity_type": "match-pairs",
+          "title": "Numbers 60 to 79",
+          "instruction": "Match the number to the correct word.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "40",
+          "compensates": "Replaces number recognition and writing practice with an interactive matching game.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "60",
+                "right": "sixty"
+              },
+              {
+                "left": "63",
+                "right": "sixty-three"
+              },
+              {
+                "left": "68",
+                "right": "sixty-eight"
+              },
+              {
+                "left": "70",
+                "right": "seventy"
+              },
+              {
+                "left": "71",
+                "right": "seventy-one"
+              },
+              {
+                "left": "75",
+                "right": "seventy-five"
+              },
+              {
+                "left": "79",
+                "right": "seventy-nine"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "f58ffb82-d183-493b-b582-391d42a76833",
+          "activity_type": "word-order",
+          "title": "Asking About Routines",
+          "instruction": "Put the words in the correct order to make a question or a sentence.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "40",
+          "compensates": "Provides structured practice for forming the questions and answers used in pair work activities.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "instruction": "Make a question.",
+                "correctOrder": [
+                  "When",
+                  "do",
+                  "you",
+                  "get",
+                  "up",
+                  "?"
+                ]
+              },
+              {
+                "instruction": "Make a sentence.",
+                "correctOrder": [
+                  "I",
+                  "get",
+                  "up",
+                  "at",
+                  "six",
+                  "o'clock",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Make a question.",
+                "correctOrder": [
+                  "When",
+                  "do",
+                  "you",
+                  "go",
+                  "to",
+                  "school",
+                  "?"
+                ]
+              },
+              {
+                "instruction": "Make a sentence.",
+                "correctOrder": [
+                  "I",
+                  "go",
+                  "to",
+                  "school",
+                  "at",
+                  "seven",
+                  "o'clock",
+                  "."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "813e7b1f-30c9-495d-925f-f73e516d69d5",
+          "activity_type": "gap-fill",
+          "title": "My Daily Routine",
+          "instruction": "Complete the conversation about daily routines. Drag the correct word into each blank.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "40",
+          "compensates": "This provides controlled practice of the target language structure before students use it in freer practice.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "A: When do you ___ up?",
+                "blanks": [
+                  {
+                    "hint": "What do you do in the morning?",
+                    "answer": "get",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'get up' to talk about waking up and getting out of bed."
+              },
+              {
+                "text": "B: I get up ___ seven o'clock.",
+                "blanks": [
+                  {
+                    "hint": "Which word do we use before the time?",
+                    "answer": "at",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use the preposition 'at' before a specific time."
+              },
+              {
+                "text": "A: When do you ___ to school?",
+                "blanks": [
+                  {
+                    "hint": "How do you get to school?",
+                    "answer": "go",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'go to school' to talk about traveling to school."
+              },
+              {
+                "text": "B: I go to school at eight ___ .",
+                "blanks": [
+                  {
+                    "hint": "What word do we use for an exact hour?",
+                    "answer": "o'clock",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'o'clock' for times that are exactly on the hour."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "1e4a52a9-0075-47d3-8ab3-1add8ae3fff3",
+          "activity_type": "picture-description",
+          "title": "What's Happening?",
+          "instruction": "Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture. Answer the question using a full sentence.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "40",
+          "compensates": "Replaces a teacher-led picture prompt activity. Students can look at the image and construct their own sentences.",
+          "order_index": 8,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": "needed",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/g7_u5_l5_10_pic_act8_i0.png",
+            "keywords": [
+              "get up",
+              "six",
+              "o'clock",
+              "morning"
+            ],
+            "sampleAnswers": [
+              "He gets up at six o'clock."
+            ],
+            "promptQuestions": [
+              "Look at the clock. When does he get up?"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "f530ba10-c48a-42a6-a7d3-2043cf350348",
+      "lesson_title": "5.11",
+      "lesson_number": 11,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "330783f0-6268-4ea2-ad16-c84d48e3ce6b",
+          "activity_type": "listening-comprehension",
+          "title": "Ali's Week",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to Ali talk about what he does after school. Then answer the questions.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "33",
+          "compensates": "Teacher-led listening activity where the teacher reads a short text and asks questions.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "audioSrc": "/media/audio/g7_u5_l5.11_lis_1.mp3",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "He does his homework.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He plays football.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "He helps his mother.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What does Ali do on Monday?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "On Tuesday",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "On Wednesday",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "On Thursday",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "When does Ali go swimming?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Yes, he does.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "No, he doesn't.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Does Ali visit his friends?"
+              }
+            ],
+            "transcript": "Hello, my name is Ali. After school, I do many things. On Sunday, I do my homework. On Monday, I play football with my friends. On Tuesday, I help my mother. I go swimming on Wednesday, and on Thursday, I visit my friends."
+          }
+        },
+        {
+          "activity_id": "1e6a6a3f-452d-4310-a98a-0f5ba18c386a",
+          "activity_type": "flashcard",
+          "title": "After School Activities",
+          "instruction": "Learn the new phrases for things you do after school. Tap the card to see the meaning, and tap the speaker icon to Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "33",
+          "compensates": "Teacher presenting vocabulary with physical flashcards (FCs).",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "visit friends",
+                "audio": "visit friends",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1029.png",
+                "example": "I visit friends every Friday.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1029.png",
+                "definition": "يَزُورُ الْأَصْدِقَاءَ",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "play football",
+                "audio": "play football",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1031.png",
+                "example": "He likes to play football with his friends.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1031.png",
+                "definition": "يَلْعَبُ كُرَةَ الْقَدَمِ",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "watch TV",
+                "audio": "watch TV",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1028.png",
+                "example": "I watch TV every day.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1028.png",
+                "definition": "يُشَاهِدُ التِّلْفَازَ",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "help my mother",
+                "audio": "help my mother",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1032.png",
+                "example": "I help my mother in the kitchen.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1032.png",
+                "definition": "أُسَاعِدُ أُمِّي",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "read books",
+                "audio": "read books",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1030.png",
+                "example": "I read books in the evening.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1030.png",
+                "definition": "يَقْرَأُ الْكُتُبَ",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "go swimming",
+                "audio": "go swimming",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1033.png",
+                "example": "It's hot today, let's go swimming.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1033.png",
+                "definition": "يَذْهَبُ لِلسِّبَاحَةِ",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "go to the park",
+                "audio": "go to the park",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1034.png",
+                "example": "Let's go to the park on Saturday.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1034.png",
+                "definition": "يَذْهَبُ إِلَى الْحَدِيقَةِ",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "do my homework",
+                "audio": "do my homework",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1035.png",
+                "example": "You should do your homework after school.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1035.png",
+                "definition": "أَقُومُ بِوَاجِبِي الْمَدْرَسِيِّ",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "go shopping",
+                "audio": "go shopping",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1036.png",
+                "example": "We go shopping for clothes.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1036.png",
+                "definition": "يَذْهَبُ لِلتَّسَوُّقِ",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "listen to cassettes",
+                "audio": "listen to cassettes",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1037.png",
+                "example": "My father used to listen to cassettes.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1037.png",
+                "definition": "يَسْتَمِعُ إِلَى الْكَاسِيت",
+                "partOfSpeech": "verb phrase"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "12e6f0e0-30ae-406f-8fab-a7223be15451",
+          "activity_type": "match-pairs",
+          "title": "Match Activity to Picture",
+          "instruction": "Match the activity phrase to the correct picture. This is like the activity on page 41 of your Workbook.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "41",
+          "compensates": "Workbook activity WB5.11 and WB5.12, matching pictures to phrases.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "visit friends",
+                "right": "1029"
+              },
+              {
+                "left": "play football",
+                "right": "1031"
+              },
+              {
+                "left": "watch TV",
+                "right": "1028"
+              },
+              {
+                "left": "help my mother",
+                "right": "1032"
+              },
+              {
+                "left": "read books",
+                "right": "1030"
+              },
+              {
+                "left": "go swimming",
+                "right": "1033"
+              },
+              {
+                "left": "go to the park",
+                "right": "1034"
+              },
+              {
+                "left": "do my homework",
+                "right": "1035"
+              },
+              {
+                "left": "go shopping",
+                "right": "1036"
+              },
+              {
+                "left": "listen to cassettes",
+                "right": "1037"
+              }
+            ],
+            "instruction": "Drag the phrase on the left to the matching picture on the right."
+          }
+        },
+        {
+          "activity_id": "e94ec0a9-c5d2-48c8-989d-4421d1ab2e4a",
+          "activity_type": "mcq",
+          "title": "What are they doing?",
+          "instruction": "Use your eyes! 🧐 Look closely at the at the picture and Take a closer look! 📝 Pick the best option for the correct sentence.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "41",
+          "compensates": "Teacher-led picture talk and comprehension questions.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1035.png",
+                "options": [
+                  {
+                    "text": "She is doing her homework.",
+                    "feedback": "Correct! She is writing in her notebook.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "She is reading a book.",
+                    "feedback": "Not quite. She is writing, not just reading.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "She is helping her mother.",
+                    "feedback": "Look again. She is alone.",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1035.png",
+                "question": "What is she doing?",
+                "explanation": "The picture shows a girl writing in a notebook, which is 'doing her homework'."
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1031.png",
+                "options": [
+                  {
+                    "text": "He is going to the park.",
+                    "feedback": "He might be in a park, but what is the specific action?",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He is playing football.",
+                    "feedback": "Excellent! He is kicking the football.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "He is going swimming.",
+                    "feedback": "He is on a field, not in water.",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1031.png",
+                "question": "What is he doing?",
+                "explanation": "The picture shows a boy on a field with a soccer ball, so he is 'playing football'."
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1036.png",
+                "options": [
+                  {
+                    "text": "She is visiting friends.",
+                    "feedback": "She is in a store, not a house.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "She is helping her mother.",
+                    "feedback": "She is alone and pushing a shopping cart.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "She is going shopping.",
+                    "feedback": "That's right! She is in a supermarket.",
+                    "isCorrect": true
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1036.png",
+                "question": "What is she doing?",
+                "explanation": "The picture shows a woman pushing a cart in a supermarket, which is 'going shopping'."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "72dfdf90-cd9d-483f-8dcb-2c0c42854cf6",
+          "activity_type": "spelling-bee",
+          "title": "Spell the Activity Word",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the word, then spell it correctly.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "41",
+          "compensates": "Teacher-led spelling drill or dictation.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "hint": "A sport played with a ball and your feet.",
+                "word": "football",
+                "audio": "needed",
+                "scrambled": [
+                  "f",
+                  "o",
+                  "o",
+                  "t",
+                  "b",
+                  "a",
+                  "l",
+                  "l"
+                ]
+              },
+              {
+                "hint": "To go and see a person or a place.",
+                "word": "visit",
+                "audio": "needed",
+                "scrambled": [
+                  "v",
+                  "i",
+                  "s",
+                  "i",
+                  "t"
+                ]
+              },
+              {
+                "hint": "An activity you do in a pool or the sea.",
+                "word": "swimming",
+                "audio": "needed",
+                "scrambled": [
+                  "s",
+                  "w",
+                  "i",
+                  "m",
+                  "m",
+                  "i",
+                  "n",
+                  "g"
+                ]
+              },
+              {
+                "hint": "School work that you do at home.",
+                "word": "homework",
+                "audio": "needed",
+                "scrambled": [
+                  "h",
+                  "o",
+                  "m",
+                  "e",
+                  "w",
+                  "o",
+                  "r",
+                  "k"
+                ]
+              },
+              {
+                "hint": "The activity of buying things from shops.",
+                "word": "shopping",
+                "audio": "needed",
+                "scrambled": [
+                  "s",
+                  "h",
+                  "o",
+                  "p",
+                  "p",
+                  "i",
+                  "n",
+                  "g"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "c2ab5efd-2ca8-415b-bcfa-a9baddaab378",
+          "activity_type": "gap-fill",
+          "title": "Complete the Sentences",
+          "instruction": "Complete each sentence with the correct activity phrase.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "41",
+          "compensates": "Teacher-led substitution drills and sentence building exercises.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "After school, I ___ with my friends.",
+                "blanks": [
+                  {
+                    "hint": "A sport with a ball.",
+                    "answer": "play football",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'play football' to talk about the sport."
+              },
+              {
+                "text": "On Tuesday, I ___ at the pool.",
+                "blanks": [
+                  {
+                    "hint": "An activity in water.",
+                    "answer": "go swimming",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "'Go swimming' is the phrase for swimming as a leisure activity."
+              },
+              {
+                "text": "I need to finish my maths lesson, so I must ___.",
+                "blanks": [
+                  {
+                    "hint": "School work you do at home.",
+                    "answer": "do my homework",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "'Do my homework' means to complete school assignments."
+              },
+              {
+                "text": "My mother is in the kitchen. I will ___.",
+                "blanks": [
+                  {
+                    "hint": "What do you do when someone needs assistance?",
+                    "answer": "help my mother",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "'Help my mother' is the correct phrase for assisting her."
+              },
+              {
+                "text": "My favorite show is on now. I want to ___.",
+                "blanks": [
+                  {
+                    "hint": "What do you do with a television?",
+                    "answer": "watch TV",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'watch TV' to talk about looking at television programs."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "3b1a535c-783a-4c84-858b-969acdc78132",
+          "activity_type": "word-order",
+          "title": "Make Correct Sentences",
+          "instruction": "Drag the words into the correct order to make a sentence.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "41",
+          "compensates": "Teacher writing jumbled sentences on the board for students to correct.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": [
+            {
+              "instruction": "Unscramble this sentence.",
+              "correctOrder": [
+                "I",
+                "watch",
+                "TV",
+                "every",
+                "day",
+                "."
+              ]
+            },
+            {
+              "instruction": "Unscramble this sentence.",
+              "correctOrder": [
+                "I",
+                "visit",
+                "friends",
+                "every",
+                "Friday",
+                "."
+              ]
+            },
+            {
+              "instruction": "Make a sentence about playing football.",
+              "correctOrder": [
+                "After",
+                "school",
+                "I",
+                "play",
+                "football",
+                "."
+              ]
+            },
+            {
+              "instruction": "Make a question.",
+              "correctOrder": [
+                "Do",
+                "you",
+                "help",
+                "your",
+                "mother",
+                "?"
+              ]
+            }
+          ]
+        },
+        {
+          "activity_id": "47f65b17-dc65-4b30-b20b-17acbd826793",
+          "activity_type": "pronunciation-practice",
+          "title": "Practice Speaking",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to each phrase. Then, press the microphone button and say the phrase yourself.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "33",
+          "compensates": "Teacher-led choral repetition of new vocabulary phrases.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "read books",
+                "audioSrc": "/media/audio/g7_u5_l5.11_pro_1_w0.mp3",
+                "phonetic": "",
+                "syllables": []
+              },
+              {
+                "word": "watch TV",
+                "audioSrc": "/media/audio/g7_u5_l5.11_pro_1_w1.mp3",
+                "phonetic": "",
+                "syllables": []
+              },
+              {
+                "word": "play football",
+                "audioSrc": "/media/audio/g7_u5_l5.11_pro_1_w2.mp3",
+                "phonetic": "",
+                "syllables": []
+              },
+              {
+                "word": "visit friends",
+                "audioSrc": "/media/audio/g7_u5_l5.11_pro_1_w3.mp3",
+                "phonetic": "",
+                "syllables": []
+              },
+              {
+                "word": "help my mother",
+                "audioSrc": "/media/audio/g7_u5_l5.11_pro_1_w4.mp3",
+                "phonetic": "",
+                "syllables": []
+              },
+              {
+                "word": "do my homework",
+                "audioSrc": "/media/audio/g7_u5_l5.11_pro_1_w5.mp3",
+                "phonetic": "",
+                "syllables": []
+              },
+              {
+                "word": "go swimming",
+                "audioSrc": "/media/audio/g7_u5_l5.11_pro_1_w6.mp3",
+                "phonetic": "",
+                "syllables": []
+              },
+              {
+                "word": "go to the park",
+                "audioSrc": "/media/audio/g7_u5_l5.11_pro_1_w7.mp3",
+                "phonetic": "",
+                "syllables": []
+              },
+              {
+                "word": "go shopping",
+                "audioSrc": "/media/audio/g7_u5_l5.11_pro_1_w8.mp3",
+                "phonetic": "",
+                "syllables": []
+              },
+              {
+                "word": "listen to cassettes",
+                "audioSrc": "/media/audio/g7_u5_l5.11_pro_1_w9.mp3",
+                "phonetic": "",
+                "syllables": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "ec15df3e-fa11-4bcd-bdaf-6c4c36933362",
+      "lesson_title": "5.12",
+      "lesson_number": 12,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "fde0ddd2-c9cb-4931-b981-a7e62ef18a43",
+          "activity_type": "flashcard",
+          "title": "Activity Words",
+          "instruction": "Learn the phrases for different activities. Tap the card to see the meaning in Arabic. Tap the speaker icon to hear the phrase.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "41",
+          "compensates": "Replaces Teacher Guide Activity 2A: Using physical flashcards to practice word recognition.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "visit friends",
+                "audio": "visit_friends.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1029.png",
+                "example": "On Saturday, I like to visit friends.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1029.png",
+                "definition": "يَزور الأصدِقاء",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "play football",
+                "audio": "play_football.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1031.png",
+                "example": "The boys play football in the park.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1031.png",
+                "definition": "يَلعَب كُرَة القَدَم",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "watch TV",
+                "audio": "watch_tv.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1028.png",
+                "example": "We watch TV after dinner.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1028.png",
+                "definition": "يُشاهِد التِلفاز",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "help my mother",
+                "audio": "help_my_mother.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1032.png",
+                "example": "I always help my mother with the laundry.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1032.png",
+                "definition": "أُساعِد أُمّي",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "read books",
+                "audio": "read_books.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1030.png",
+                "example": "She loves to read books in her free time.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1030.png",
+                "definition": "يَقرَأ الكُتُب",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "go swimming",
+                "audio": "go_swimming.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1033.png",
+                "example": "It's hot today, let's go swimming.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1033.png",
+                "definition": "يَذهَب لِلسِباحَة",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "go to the park",
+                "audio": "go_to_the_park.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1034.png",
+                "example": "We go to the park on the weekend.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1034.png",
+                "definition": "يَذهَب إلى الحَديقَة",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "do my homework",
+                "audio": "do_my_homework.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1035.png",
+                "example": "I need to do my homework before I can play.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1035.png",
+                "definition": "أقوم بِواجِبي المَدرَسي",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "go shopping",
+                "audio": "go_shopping.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1036.png",
+                "example": "My family will go shopping for new clothes.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1036.png",
+                "definition": "يَذهَب لِلتَسَوُّق",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "listen to cassettes",
+                "audio": "listen_to_cassettes.mp3",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1037.png",
+                "example": "My father used to listen to cassettes in his car.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1037.png",
+                "definition": "يَستَمِع إلى أَشرِطَة الكاسيت",
+                "partOfSpeech": "verb phrase"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "b27ef0f9-ca52-44d0-bd25-f844119c0c89",
+          "activity_type": "match-pairs",
+          "title": "Match the Picture to the Words",
+          "instruction": "Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture and match it with the correct activity. This is like the exercise on page 41 of your Workbook.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "41",
+          "compensates": "Directly digitizes the matching activity from Workbook page 41, sections 5.11 and 5.12.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "1029",
+                "right": "visit friends"
+              },
+              {
+                "left": "1031",
+                "right": "play football"
+              },
+              {
+                "left": "1028",
+                "right": "watch TV"
+              },
+              {
+                "left": "1032",
+                "right": "help my mother"
+              },
+              {
+                "left": "1030",
+                "right": "read books"
+              },
+              {
+                "left": "1033",
+                "right": "go swimming"
+              },
+              {
+                "left": "1034",
+                "right": "go to the park"
+              },
+              {
+                "left": "1035",
+                "right": "do my homework"
+              },
+              {
+                "left": "1036",
+                "right": "go shopping"
+              },
+              {
+                "left": "1037",
+                "right": "listen to cassettes"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "d34cb5e7-9949-4b07-ac0f-7bae381c4b3c",
+          "activity_type": "mcq",
+          "title": "Look and Choose",
+          "instruction": "Use your eyes! 🧐 Look closely at the at the picture and Take a closer look! 📝 Pick the best option for the correct phrase.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "41",
+          "compensates": "Replaces Teacher Guide Activity 1: Reading aloud and working out meaning from context and pictures.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1031.png",
+                "options": [
+                  {
+                    "text": "play football",
+                    "feedback": "Correct! He is playing football.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "go swimming",
+                    "feedback": "Incorrect. He is on a field, not in water.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "read books",
+                    "feedback": "Not quite. He is playing with a ball.",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1031.png",
+                "question": "What is he doing?",
+                "explanation": "The picture shows a boy kicking a football."
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1035.png",
+                "options": [
+                  {
+                    "text": "watch TV",
+                    "feedback": "Incorrect. She is writing in a notebook.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "do my homework",
+                    "feedback": "That's right! She is doing her homework.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "go shopping",
+                    "feedback": "Not quite. She is at home on the floor.",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1035.png",
+                "question": "What is she doing?",
+                "explanation": "The picture shows a girl writing in a notebook, which is doing homework."
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1033.png",
+                "options": [
+                  {
+                    "text": "go to the park",
+                    "feedback": "Incorrect. They are in the water.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "visit friends",
+                    "feedback": "Not quite. They are wearing swimming trunks.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "go swimming",
+                    "feedback": "Excellent! They are swimming.",
+                    "isCorrect": true
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1033.png",
+                "question": "What are they doing?",
+                "explanation": "The picture shows two boys in the water, which is swimming."
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1036.png",
+                "options": [
+                  {
+                    "text": "go shopping",
+                    "feedback": "Correct! She is in a supermarket with a cart.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "help my mother",
+                    "feedback": "Incorrect. She is buying things at a store.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "go to the park",
+                    "feedback": "Not quite. Look at the background, it's a shop.",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1036.png",
+                "question": "What is she doing?",
+                "explanation": "The picture shows a woman with a shopping cart in a store."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "9ca6e6f5-7c6e-4951-948b-ad9f536e2297",
+          "activity_type": "gap-fill",
+          "title": "Complete the Sentences",
+          "instruction": "Reading time! 📖 Read carefully and the sentences and type the correct activity from the lesson to fill the gap.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "41",
+          "compensates": "Replaces a worksheet-style gap-fill exercise, providing instant feedback.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "On Friday, we will ___ and have a picnic.",
+                "blanks": [
+                  {
+                    "hint": "Where do you have a picnic?",
+                    "answer": "go to the park",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "A park is a common place for a picnic."
+              },
+              {
+                "text": "I can't play now. I have to ___ first.",
+                "blanks": [
+                  {
+                    "hint": "What must you finish before playing?",
+                    "answer": "do my homework",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "Homework is usually done before playing."
+              },
+              {
+                "text": "Every evening, my family sits together to ___.",
+                "blanks": [
+                  {
+                    "hint": "What do people do together in the living room?",
+                    "answer": "watch TV",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "Watching TV is a common family evening activity."
+              },
+              {
+                "text": "My brother is a good son, he always offers to ___.",
+                "blanks": [
+                  {
+                    "hint": "How can you be helpful at home?",
+                    "answer": "help my mother",
+                    "alternatives": [
+                      "help his mother"
+                    ]
+                  }
+                ],
+                "explanation": "Helping parents is a good thing to do at home."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "8018364b-ce69-46ba-b7a0-23d285aa90fb",
+          "activity_type": "word-order",
+          "title": "Make a Phrase",
+          "instruction": "Drag the words into the correct order to make a phrase.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "41",
+          "compensates": "Replaces Teacher Guide Activity 3: Matching pictures to phrases, by focusing on the construction of the phrases themselves.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": [
+            {
+              "correctOrder": [
+                "play",
+                "football"
+              ]
+            },
+            {
+              "correctOrder": [
+                "watch",
+                "TV"
+              ]
+            },
+            {
+              "correctOrder": [
+                "read",
+                "books"
+              ]
+            },
+            {
+              "correctOrder": [
+                "go",
+                "shopping"
+              ]
+            },
+            {
+              "correctOrder": [
+                "help",
+                "my",
+                "mother"
+              ]
+            },
+            {
+              "correctOrder": [
+                "do",
+                "my",
+                "homework"
+              ]
+            }
+          ]
+        },
+        {
+          "activity_id": "9b44e2b0-1132-40bc-9d19-20816c1e24aa",
+          "activity_type": "picture-description",
+          "title": "Describe the Park",
+          "instruction": "Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture. Record yourself answering the questions about what is happening.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "41",
+          "compensates": "Encourages free speaking practice, similar to a teacher asking 'What do you see in this picture?'",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1034.png",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u5/images/1034.png",
+            "keywords": [
+              "go to the park",
+              "family",
+              "picnic",
+              "happy"
+            ],
+            "sampleAnswers": [
+              "The people are in a park.",
+              "They are having a picnic. A father, mother, son, and daughter are sitting on a blanket.",
+              "This picture shows the activity 'go to the park'."
+            ],
+            "promptQuestions": [
+              "Where are the people?",
+              "What are they doing?",
+              "What activity from the lesson does this picture show?"
+            ]
+          }
+        },
+        {
+          "activity_id": "99997180-e883-4a75-a1ce-f14650cdbefb",
+          "activity_type": "dictation",
+          "title": "Listen and Type",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the sentence and type what you hear.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "41",
+          "compensates": "Replaces Teacher Guide Activity 5: Practise handwriting, by providing a digital way to practice spelling and sentence construction.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "hints": [
+                  "The first word is 'I'."
+                ],
+                "audioSrc": "sentence1.mp3",
+                "difficulty": "sentence",
+                "expectedText": "I like to play football."
+              },
+              {
+                "hints": [
+                  "The second word is 'go'."
+                ],
+                "audioSrc": "sentence2.mp3",
+                "difficulty": "sentence",
+                "expectedText": "Let's go swimming."
+              },
+              {
+                "hints": [
+                  "The sentence is about a girl."
+                ],
+                "audioSrc": "sentence3.mp3",
+                "difficulty": "sentence",
+                "expectedText": "She will read books."
+              },
+              {
+                "hints": [
+                  "The last word is 'Friday'."
+                ],
+                "audioSrc": "sentence4.mp3",
+                "difficulty": "sentence",
+                "expectedText": "We visit friends on Friday."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "65917309-daf1-493f-8fcc-84b4c2110d88",
+          "activity_type": "category-sort",
+          "title": "Sound Check: 'ee' and 'ea'",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the words. Drag each word to the correct sound category.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "41",
+          "compensates": "Replaces Teacher Guide Activity 4: A sound/spelling exercise focusing on 'ee' and 'ea' sounds.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "categories": [
+              {
+                "name": "Sound /i:/ (like in 'see')",
+                "items": [
+                  "read",
+                  "see",
+                  "team",
+                  "three"
+                ]
+              },
+              {
+                "name": "Sound /e/ (like in 'bread')",
+                "items": [
+                  "bread",
+                  "head",
+                  "ready"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "67357345-b48d-4b54-8cc8-cc7bd5ac7f91",
+      "lesson_title": "5.13",
+      "lesson_number": 13,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "24f200e7-cb35-4f04-8362-157c8d035b30",
+          "activity_type": "listening-comprehension",
+          "title": "Listen to Ali's Week",
+          "instruction": "Listen to Ali talk about his week. Then, Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for the correct answer for each question.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "42",
+          "compensates": "Teacher reading a script or playing an audio for a listening task.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "He does his homework.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He plays football.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "He visits his grandparents.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What does Ali do on Mondays?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "On Tuesday.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "On Wednesday.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "On Thursday.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "When does Ali help his father?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Because he plays football.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Because he helps his father.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Because he reads books and relaxes.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Why is Friday Ali's favorite day?"
+              }
+            ],
+            "transcript": "Hello, my name is Ali. I am busy every week. On Sunday, I do my homework. On Mondays and Wednesdays, I play football with my friends after school. On Tuesday, I help my father at his shop. On Thursday, I visit my grandparents. Friday is my favorite day because I read books and relax at home."
+          }
+        },
+        {
+          "activity_id": "c8e6b0ed-5957-4c15-b25c-d357a28963f7",
+          "activity_type": "flashcard",
+          "title": "Weekly Activities Vocabulary",
+          "instruction": "Learn the new words for weekly activities. Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the word, read the definition and the example.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "42",
+          "compensates": "Teacher introducing vocabulary with flashcards.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "go swimming",
+                "image": "gen-g7-u5-5.13-img-1",
+                "example": "She likes to go swimming on Wednesday.",
+                "imageUrl": "/media/g10/g10_u5_l5.13_flsh_act0_i0.png",
+                "definition": "To move through water by moving your body.",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "listen to cassettes",
+                "image": "gen-g7-u5-5.13-img-2",
+                "example": "He likes to listen to cassettes in the evening.",
+                "imageUrl": "/media/g10/g10_u5_l5.13_flsh_act0_i1.png",
+                "definition": "To hear music or sounds from an old type of recording tape.",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "read books",
+                "image": "gen-g7-u5-5.13-img-3",
+                "example": "Fatma reads books every Friday.",
+                "imageUrl": "/media/g10/g10_u5_l5.13_flsh_act0_i2.png",
+                "definition": "To look at and understand words in a book.",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "play football",
+                "image": "gen-g7-u5-5.13-img-4",
+                "example": "Tom plays football with his friends.",
+                "imageUrl": "/media/g10/g10_u5_l5.13_flsh_act0_i3.png",
+                "definition": "To play a game with a ball using your feet.",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "watch TV",
+                "image": "gen-g7-u5-5.13-img-5",
+                "example": "They watch TV after dinner.",
+                "imageUrl": "/media/g10/g10_u5_l5.13_flsh_act0_i4.png",
+                "definition": "To look at shows on a television.",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "visit friends",
+                "image": "gen-g7-u5-5.13-img-6",
+                "example": "On Saturday, I visit friends.",
+                "imageUrl": "/media/g10/g10_u5_l5.13_flsh_act0_i5.png",
+                "definition": "To go and spend time with people you know and like.",
+                "partOfSpeech": "verb phrase"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "1995477a-42fc-497a-a628-d79ddce07b6a",
+          "activity_type": "reading-passage",
+          "title": "Tom and Anne's Weekly Timetable",
+          "instruction": "Reading time! 📖 Read carefully and the timetable carefully. Then answer the questions about what Tom and Anne do each week.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "42",
+          "compensates": "Teacher-led activity WB5.13A, asking and answering questions about a timetable.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "passage": "### Tom and Anne's Weekly Activities\n\n| Day       | Tom's Activity         | Anne's Activity      |\n|-----------|------------------------|----------------------|\n| Saturday  | visits friends         | helps at home        |\n| Sunday    | does homework          | watches TV           |\n| Monday    | plays football         | reads books          |\n| Tuesday   | listens to cassettes   | goes swimming        |\n| Wednesday | plays football         | goes swimming        |\n| Thursday  | does homework          | visits friends       |\n| Friday    | listens to cassettes   | reads books          |",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "He goes swimming.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He plays football.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "He does homework.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What does Tom do on Wednesday?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "She reads books.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "She listens to cassettes.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "She visits friends.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What does Anne do on Friday?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "On Monday and Wednesday.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "On Saturday and Sunday.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "On Tuesday and Friday.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "When does Tom listen to cassettes?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "On Tuesday and Wednesday.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "On Monday and Friday.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "On Saturday and Thursday.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "When does Anne go swimming?"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "3d7b46da-a55f-45b0-9c93-1e4fe4b78a01",
+          "activity_type": "match-pairs",
+          "title": "Complete the Phrases",
+          "instruction": "Match the words on the left with the words on the right to make correct phrases.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "42",
+          "compensates": "Workbook activity WB5.13B, matching words to complete phrases.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "go",
+                "right": "swimming"
+              },
+              {
+                "left": "listen to",
+                "right": "cassettes"
+              },
+              {
+                "left": "read",
+                "right": "books"
+              },
+              {
+                "left": "play",
+                "right": "football"
+              },
+              {
+                "left": "watch",
+                "right": "TV"
+              },
+              {
+                "left": "visit",
+                "right": "friends"
+              },
+              {
+                "left": "do",
+                "right": "homework"
+              },
+              {
+                "left": "help at",
+                "right": "home"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "8b3dd72d-66b3-4483-acfc-241b97708691",
+          "activity_type": "word-order",
+          "title": "Write Correct Sentences",
+          "instruction": "Put the words in the correct order to make a question or a sentence.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "42",
+          "compensates": "Workbook activity WB5.13C, re-ordering words to write sentences.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "correctOrder": [
+                  "What",
+                  "does",
+                  "Tom",
+                  "do",
+                  "on",
+                  "Saturday",
+                  "?"
+                ]
+              },
+              {
+                "correctOrder": [
+                  "He",
+                  "visits",
+                  "friends",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "Anne",
+                  "goes",
+                  "swimming",
+                  "on",
+                  "Tuesday",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "She",
+                  "reads",
+                  "books",
+                  "every",
+                  "Friday",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "When",
+                  "does",
+                  "Tom",
+                  "play",
+                  "football",
+                  "?"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "91103e65-f703-410e-bf4f-10837ee2d8fc",
+          "activity_type": "gap-fill",
+          "title": "Grammar Practice: Questions and Answers",
+          "instruction": "Fill in the gaps to complete the sentences. Use the timetable from the previous activity to help you.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "42",
+          "compensates": "Teacher-led grammar drills and controlled practice.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "What ___ Anne do on Sunday?",
+                "blanks": [
+                  {
+                    "hint": "Use the helping verb for questions about 'he' or 'she'.",
+                    "answer": "does",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'does' to ask questions in the present simple for he, she, and it."
+              },
+              {
+                "text": "She ___ TV on Sunday.",
+                "blanks": [
+                  {
+                    "hint": "Remember to add -es to the verb for 'she'.",
+                    "answer": "watches",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "For 'he', 'she', or 'it', we add -s or -es to the verb in the present simple. 'Watch' becomes 'watches'."
+              },
+              {
+                "text": "Tom ___ football on Monday and Wednesday.",
+                "blanks": [
+                  {
+                    "hint": "Remember to add -s to the verb for 'Tom'.",
+                    "answer": "plays",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "For 'he', 'she', or 'it', we add -s or -es to the verb in the present simple. 'Play' becomes 'plays'."
+              },
+              {
+                "text": "___ does Anne visit friends?",
+                "blanks": [
+                  {
+                    "hint": "Use the question word for time.",
+                    "answer": "When",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'When' to ask questions about the time or day something happens."
+              },
+              {
+                "text": "He ___ to cassettes on Friday.",
+                "blanks": [
+                  {
+                    "hint": "Add the correct ending for the verb.",
+                    "answer": "listens",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "For 'he', 'she', or 'it', we add -s or -es to the verb in the present simple. 'Listen' becomes 'listens'."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "0ccd0198-5227-487b-83be-73fdcc22eb9d",
+          "activity_type": "pronunciation-practice",
+          "title": "Pronounce It Right!",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to each word and repeat it. Pay attention to the 's' sound at the end of the verbs and the sounds in the days of the week.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "42",
+          "compensates": "Teacher-led choral and individual pronunciation drills.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "listens",
+                "phonetic": "/ˈlɪsənz/",
+                "syllables": [
+                  "lis",
+                  "tens"
+                ]
+              },
+              {
+                "word": "reads",
+                "phonetic": "/riːdz/",
+                "syllables": [
+                  "reads"
+                ]
+              },
+              {
+                "word": "plays",
+                "phonetic": "/pleɪz/",
+                "syllables": [
+                  "plays"
+                ]
+              },
+              {
+                "word": "goes",
+                "phonetic": "/ɡoʊz/",
+                "syllables": [
+                  "goes"
+                ]
+              },
+              {
+                "word": "watches",
+                "phonetic": "/ˈwɒtʃɪz/",
+                "syllables": [
+                  "watch",
+                  "es"
+                ]
+              },
+              {
+                "word": "Wednesday",
+                "phonetic": "/ˈwɛnzdeɪ/",
+                "syllables": [
+                  "Wednes",
+                  "day"
+                ]
+              },
+              {
+                "word": "Saturday",
+                "phonetic": "/ˈsætərdeɪ/",
+                "syllables": [
+                  "Sat",
+                  "ur",
+                  "day"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -10,7 +10,7 @@ import {
   EyeOff,
   Headphones,
 } from "lucide-react";
-import { ActivityMedia } from "./ActivityPlayer";
+import { ActivityMedia, ActivityMediaEntry } from "./ActivityPlayer";
 import { getMediaUrl } from "@/utils/assets";
 import { STOP_AUDIO_EVENT } from "@/utils/audio";
 import { Tooltip } from "@/components/ui/Tooltip";
@@ -39,7 +39,10 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
 
   const [phase, setPhase] = useState<"listen" | "quiz" | "results">("listen");
   const [showTranscript, setShowTranscript] = useState(false);
-  const [isSpeaking, setIsSpeaking] = useState(false);
+  const [activeAudio, setActiveAudio] = useState<
+    "listening" | "type" | "original" | null
+  >(null);
+  const isSpeaking = activeAudio !== null;
   const [currentQ, setCurrentQ] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [isChecked, setIsChecked] = useState(false);
@@ -54,53 +57,96 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
     const handler = () => {
       audioRef.current?.pause();
       speechSynthesis.cancel();
-      setIsSpeaking(false);
+      setActiveAudio(null);
     };
     window.addEventListener(STOP_AUDIO_EVENT, handler);
     return () => window.removeEventListener(STOP_AUDIO_EVENT, handler);
   }, []);
 
-  // ── Media: pick the first audio as the main passage audio ──
-  const passageAudio = media.audio.length > 0 ? media.audio[0] : null;
+  // ── Media: pick the listening passage audio by audioType, falling back
+  //    to the first audio entry if none is tagged. Also locate the optional
+  //    `type` and `original` audios by their audioType tag.
+  const listeningAudio: ActivityMediaEntry | null =
+    media.audio.find((a) => a.audioType === "listening") ??
+    (media.audio.length > 0 ? media.audio[0] : null);
+  const typeAudio: ActivityMediaEntry | null =
+    media.audio.find((a) => a.audioType === "type") ?? null;
+  const originalAudio: ActivityMediaEntry | null =
+    media.audio.find((a) => a.audioType === "original") ??
+    (data?.originalAudioSrc
+      ? {
+          filename: data.originalAudioSrc,
+          url: getMediaUrl(data.originalAudioSrc),
+          audioType: "original",
+        }
+      : null);
+  const passageAudio = listeningAudio;
   const passageImage = media.images.length > 0 ? media.images[0] : null;
   // Fallback: check imageUrl on activity data
   const passageImageUrl = passageImage?.url || (data as any).imageUrl;
 
-  const handlePlayAudio = useCallback(() => {
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current = null;
-    }
+  // ── Shared audio playback helper ──
+  // Stops any currently playing audio (including speech synthesis) and
+  // starts the given source. Falls back to speech synthesis of the
+  // transcript when no source is provided or the source fails to play.
+  const playAudio = useCallback(
+    (
+      source: ActivityMediaEntry | null,
+      key: "listening" | "type" | "original"
+    ) => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+      if ("speechSynthesis" in window) {
+        speechSynthesis.cancel();
+      }
 
-    if (passageAudio) {
-      setIsSpeaking(true);
-      const audio = new Audio(getMediaUrl(passageAudio.url));
-      audioRef.current = audio;
-      audio.onended = () => setIsSpeaking(false);
-      audio.onerror = () => {
-        setIsSpeaking(false);
-        // fallback to speechSynthesis
-        if (transcript && "speechSynthesis" in window) {
-          const u = new SpeechSynthesisUtterance(transcript);
-          u.rate = 0.85;
-          u.lang = "en-US";
-          u.onend = () => setIsSpeaking(false);
-          speechSynthesis.cancel();
-          speechSynthesis.speak(u);
-        }
-      };
-      audio.play().catch(() => setIsSpeaking(false));
-    } else if ("speechSynthesis" in window && transcript) {
-      setIsSpeaking(true);
-      const utterance = new SpeechSynthesisUtterance(transcript);
-      utterance.rate = 0.85;
-      utterance.lang = "en-US";
-      utterance.onend = () => setIsSpeaking(false);
-      utterance.onerror = () => setIsSpeaking(false);
-      speechSynthesis.cancel();
-      speechSynthesis.speak(utterance);
-    }
-  }, [passageAudio, transcript]);
+      if (source) {
+        setActiveAudio(key);
+        const audio = new Audio(getMediaUrl(source.url));
+        audioRef.current = audio;
+        audio.onended = () =>
+          setActiveAudio((prev) => (prev === key ? null : prev));
+        audio.onerror = () => {
+          setActiveAudio((prev) => (prev === key ? null : prev));
+          // fallback to speechSynthesis
+          if (transcript && "speechSynthesis" in window) {
+            const u = new SpeechSynthesisUtterance(transcript);
+            u.rate = 0.85;
+            u.lang = "en-US";
+            u.onend = () => setActiveAudio(null);
+            speechSynthesis.speak(u);
+          }
+        };
+        audio.play().catch(() =>
+          setActiveAudio((prev) => (prev === key ? null : prev))
+        );
+      } else if ("speechSynthesis" in window && transcript) {
+        // No specific audio source available: TTS fallback has no key to
+        // attribute to, so leave activeAudio unchanged.
+        const utterance = new SpeechSynthesisUtterance(transcript);
+        utterance.rate = 0.85;
+        utterance.lang = "en-US";
+        utterance.onend = () => setActiveAudio(null);
+        utterance.onerror = () => setActiveAudio(null);
+        speechSynthesis.speak(utterance);
+      }
+    },
+    [transcript]
+  );
+
+  const handlePlayAudio = useCallback(() => {
+    playAudio(listeningAudio, "listening");
+  }, [playAudio, listeningAudio]);
+
+  const handlePlayTypeAudio = useCallback(() => {
+    playAudio(typeAudio, "type");
+  }, [playAudio, typeAudio]);
+
+  const handlePlayOriginalAudio = useCallback(() => {
+    playAudio(originalAudio, "original");
+  }, [playAudio, originalAudio]);
 
   // ── Auto-play on mount ──
   useEffect(() => {
@@ -186,18 +232,69 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
               <Tooltip content="تشغيل المقطع الصوتي  •  Play audio">
                 <button
                   onClick={handlePlayAudio}
-                  disabled={isSpeaking}
+                  disabled={activeAudio === "listening"}
                   className={`mx-auto flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-lg transition-all ${
-                    isSpeaking
+                    activeAudio === "listening"
                       ? "bg-indigo-500 text-white shadow-xl scale-105"
                       : "bg-indigo-50 text-indigo-600 hover:bg-indigo-500 hover:text-white hover:shadow-lg"
                   }`}
                 >
-                  <Volume2 size={24} className={isSpeaking ? "animate-pulse" : ""} />
-                  {isSpeaking ? "Playing..." : "Play Audio"}
+                  <Volume2
+                    size={24}
+                    className={activeAudio === "listening" ? "animate-pulse" : ""}
+                  />
+                  {activeAudio === "listening" ? "Playing..." : "Play Audio"}
                 </button>
               </Tooltip>
             </div>
+
+            {/* Secondary audio controls: Type / Original */}
+            {(typeAudio || originalAudio) && (
+              <div className="mt-4 flex items-center justify-center gap-2 flex-wrap">
+                {typeAudio && (
+                  <Tooltip content="الاستماع للمقطع المطبوع  •  Type audio">
+                    <button
+                      onClick={handlePlayTypeAudio}
+                      disabled={activeAudio === "type"}
+                      className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-all ${
+                        activeAudio === "type"
+                          ? "bg-indigo-500 text-white"
+                          : isSpeaking
+                            ? "bg-slate-100 text-slate-400"
+                            : "bg-slate-50 text-slate-600 hover:bg-indigo-500 hover:text-white"
+                      }`}
+                    >
+                      <Volume2
+                        size={16}
+                        className={activeAudio === "type" ? "animate-pulse" : ""}
+                      />
+                      Type Audio
+                    </button>
+                  </Tooltip>
+                )}
+                {originalAudio && (
+                  <Tooltip content="الاستماع للمقطع الأصلي  •  Original audio">
+                    <button
+                      onClick={handlePlayOriginalAudio}
+                      disabled={activeAudio === "original"}
+                      className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-all ${
+                        activeAudio === "original"
+                          ? "bg-indigo-500 text-white"
+                          : isSpeaking
+                            ? "bg-slate-100 text-slate-400"
+                            : "bg-slate-50 text-slate-600 hover:bg-indigo-500 hover:text-white"
+                      }`}
+                    >
+                      <Volume2
+                        size={16}
+                        className={activeAudio === "original" ? "animate-pulse" : ""}
+                      />
+                      Original Audio
+                    </button>
+                  </Tooltip>
+                )}
+              </div>
+            )}
 
             {/* Transcript Toggle */}
             <div className="mt-8">
@@ -320,10 +417,17 @@ export default function ListeningComprehensionActivity({ data, media, onComplete
         </div>
         <button
           onClick={handlePlayAudio}
-          disabled={isSpeaking}
-          className="text-sm flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-50 text-indigo-600 font-semibold hover:bg-indigo-500 hover:text-white transition-all"
+          disabled={activeAudio === "listening"}
+          className={`text-sm flex items-center gap-2 px-4 py-2 rounded-xl font-semibold transition-all ${
+            activeAudio === "listening"
+              ? "bg-indigo-500 text-white"
+              : "bg-indigo-50 text-indigo-600 hover:bg-indigo-500 hover:text-white"
+          }`}
         >
-          <Volume2 size={16} className={isSpeaking ? "animate-pulse" : ""} />
+          <Volume2
+            size={16}
+            className={activeAudio === "listening" ? "animate-pulse" : ""}
+          />
           Replay
         </button>
       </div>

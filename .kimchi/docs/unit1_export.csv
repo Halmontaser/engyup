@@ -1,0 +1,514 @@
+grade,unit,lesson_id,lesson_title,lesson_order,activity_id,activity_type,activity_title,activity_order,difficulty,has_image,has_audio,has_transcript,questions_count,has_reading_text,has_dialogue
+Grade 10,1,3acfa973-700e-4688-801f-e9bc03c74ed7,1.1 A street scene,1,69a759c2-8a35-4d73-ad43-4a8357438091,listening-comprehension,Listen and Understand,0,intermediate,false,true,true,3,false,false
+Grade 10,1,3acfa973-700e-4688-801f-e9bc03c74ed7,1.1 A street scene,1,670a190b-f578-426c-89c1-664378a8a276,flashcard,Street Scene Vocabulary,1,beginner,false,false,false,0,false,false
+Grade 10,1,3acfa973-700e-4688-801f-e9bc03c74ed7,1.1 A street scene,1,0e0129bc-a5a9-4809-9754-2a72ed7a9e79,picture-description,Explore the Street Scene,2,beginner,false,false,false,0,false,false
+Grade 10,1,3acfa973-700e-4688-801f-e9bc03c74ed7,1.1 A street scene,1,6e1a0997-85ce-431c-a68d-19ae4bfa41c1,gap-fill,Describing the Scene: There is / There are,3,beginner,false,false,false,0,false,false
+Grade 10,1,3acfa973-700e-4688-801f-e9bc03c74ed7,1.1 A street scene,1,e55992a3-a8c6-4384-86a8-63515706f5f8,true-false,What's Happening? True or False,4,intermediate,false,false,false,0,false,false
+Grade 10,1,3acfa973-700e-4688-801f-e9bc03c74ed7,1.1 A street scene,1,e23193ba-f83d-4af1-817a-1f9b75660172,transform-sentence,Combining Sentences,5,intermediate,false,false,false,0,false,false
+Grade 10,1,3acfa973-700e-4688-801f-e9bc03c74ed7,1.1 A street scene,1,cb513244-0541-4b7d-a6b6-3a442b7fda25,gap-fill,Actions in the Scene,6,intermediate,false,false,false,0,false,false
+Grade 10,1,3acfa973-700e-4688-801f-e9bc03c74ed7,1.1 A street scene,1,501d25bc-1c91-4b18-9197-568787859412,pronunciation-practice,Vocabulary Pronunciation,7,beginner,false,false,false,0,false,false
+Grade 12,1,71009051-c713-494a-b6dd-0e2081bdba54,1.1,1,9a8aecd9-4fac-4e03-b471-4eed8b85b7a6,flashcard,Describing Things: Vocabulary,0,beginner,false,false,false,0,false,false
+Grade 12,1,71009051-c713-494a-b6dd-0e2081bdba54,1.1,1,f8f657c2-bbe4-4336-a165-b0e66a82de5a,category-sort,Classify the Words,1,beginner,false,false,false,0,false,false
+Grade 12,1,71009051-c713-494a-b6dd-0e2081bdba54,1.1,1,19637227-7f7e-4911-b4cf-3b7d05fd7865,reading-passage,A Drive in the Countryside,2,intermediate,false,false,false,4,true,false
+Grade 12,1,71009051-c713-494a-b6dd-0e2081bdba54,1.1,1,2f296687-ef01-4047-a56d-9fe24ecd4472,gap-fill,Complete the Descriptions,3,intermediate,false,false,false,0,false,false
+Grade 12,1,71009051-c713-494a-b6dd-0e2081bdba54,1.1,1,e20f3d16-486f-429b-8ce5-c6334fab0633,pronunciation-practice,Adjective Pronunciation,4,intermediate,false,false,false,0,false,false
+Grade 12,1,71009051-c713-494a-b6dd-0e2081bdba54,1.1,1,a3070c30-d397-4b85-9782-a754ca18a09e,picture-description,Describe What You See,5,intermediate,true,false,false,0,false,false
+Grade 12,1,71009051-c713-494a-b6dd-0e2081bdba54,1.1,1,13c27a96-b8c7-49a8-ae32-78411e6663e5,dictation,Listen and Write,6,intermediate,false,false,false,0,false,false
+Grade 9,1,0cb069ef-d636-47de-891f-1d3f5f4b0b1f,Presents from London,1,a259edb9-0eb3-48eb-b643-85bf963a9721,flashcard,Holiday Words,0,beginner,false,false,false,0,false,false
+Grade 9,1,0cb069ef-d636-47de-891f-1d3f5f4b0b1f,Presents from London,1,228f9380-c9bc-4542-9980-a219f763a3c0,match-pairs,Past Tense Verbs,1,beginner,false,false,false,0,false,false
+Grade 9,1,0cb069ef-d636-47de-891f-1d3f5f4b0b1f,Presents from London,1,fc560ddd-d529-48b1-a64b-496a65880a14,gap-fill,The Holiday Story,2,intermediate,false,false,false,0,false,false
+Grade 9,1,0cb069ef-d636-47de-891f-1d3f5f4b0b1f,Presents from London,1,9e902ff2-9023-40cb-a95d-c200d96925c1,mcq,Holiday Comprehension,3,beginner,false,false,false,3,false,false
+Grade 8,1,f3a483a0-a132-4503-83d5-3431742b7f11,What's Your Name?,1,e9bdd657-ceef-43fa-85ba-fb12ed70f4ec,flashcard,Introduction Phrases,0,beginner,false,false,false,0,false,false
+Grade 8,1,f3a483a0-a132-4503-83d5-3431742b7f11,What's Your Name?,1,98291443-2c53-4542-92a8-0615aa1a3cec,match-pairs,Questions and Answers,1,beginner,true,false,false,0,false,false
+Grade 8,1,f3a483a0-a132-4503-83d5-3431742b7f11,What's Your Name?,1,0d391fde-35dc-47a8-a352-1549f4299d31,word-order,Build Questions,2,beginner,true,false,false,0,false,false
+Grade 7,1,b3177a30-e3fa-47aa-976f-bdd1abd3d230,1.1,1,8997afab-3cac-4912-90a9-009efa929947,flashcard,Greetings,0,beginner,false,true,false,0,false,false
+Grade 7,1,b3177a30-e3fa-47aa-976f-bdd1abd3d230,1.1,1,fa2028f4-24d9-4bb0-bbc6-714d37a97acc,flashcard,Numbers 1-5,1,beginner,false,false,false,0,false,false
+Grade 7,1,b3177a30-e3fa-47aa-976f-bdd1abd3d230,1.1,1,28450ff0-c7fc-4652-9e2a-075461ddb9f0,dialogue-read,Introduce Yourself,2,beginner,true,false,false,0,false,true
+Grade 7,1,b3177a30-e3fa-47aa-976f-bdd1abd3d230,1.1,1,0380ce69-8a61-4558-b064-a56f93b83754,flashcard,Numbers 6-10,3,beginner,false,false,false,0,false,false
+Grade 7,1,b3177a30-e3fa-47aa-976f-bdd1abd3d230,1.1,1,1fb825dd-d37f-4f56-b5b4-9dc191f449bb,match-pairs,Match the Numbers (1-5),4,beginner,true,false,false,0,false,false
+Grade 7,1,b3177a30-e3fa-47aa-976f-bdd1abd3d230,1.1,1,b18b8744-53f0-42b8-9b41-70ee9d88a1bd,listening-comprehension,First Day at School,5,beginner,true,false,true,3,false,false
+Grade 7,1,b3177a30-e3fa-47aa-976f-bdd1abd3d230,1.1,1,99d8cc8a-1d55-45ad-bfe0-fae582f36633,true-false,Yes or No?,6,beginner,true,false,false,0,false,false
+Grade 7,1,b3177a30-e3fa-47aa-976f-bdd1abd3d230,1.1,1,b8eeb366-dc39-4671-ad8b-36fff86b611c,match-pairs,Match the Numbers (6-10),7,beginner,true,false,false,0,false,false
+Grade 7,1,b3177a30-e3fa-47aa-976f-bdd1abd3d230,1.1,1,435f7de1-c55e-43fe-bf95-650cd068f8f5,pronunciation-practice,Say the Numbers (1-5),8,beginner,true,false,false,0,false,false
+Grade 7,1,b3177a30-e3fa-47aa-976f-bdd1abd3d230,1.1,1,a54d624a-004d-4da2-a236-d0be2fe00837,word-order,Make Sentences,9,beginner,true,false,false,0,false,false
+Grade 7,1,b3177a30-e3fa-47aa-976f-bdd1abd3d230,1.1,1,9ff580ea-d897-4861-938d-ee9a0a8a832d,picture-description,Trace the Numbers (1-5),10,beginner,true,false,false,0,false,false
+Grade 7,1,b3177a30-e3fa-47aa-976f-bdd1abd3d230,1.1,1,81d7ccf4-4d3e-4eca-aed0-740dacd02fb4,picture-description,Trace the Numbers (6-10),11,beginner,true,false,false,0,false,false
+Grade 7,1,b3177a30-e3fa-47aa-976f-bdd1abd3d230,1.1,1,c915a32e-f834-44aa-aaca-1b2b8f42f35b,dictation,Listen and Write the Number,12,beginner,true,false,false,0,false,false
+Grade 7,1,b3177a30-e3fa-47aa-976f-bdd1abd3d230,1.1,1,1ffd4906-57ab-454c-8a7c-be8146874b5a,spelling-bee,Spell the Numbers (1-5),13,beginner,true,false,false,0,false,false
+Grade 11,1,d5bfd5ea-cc02-4fc3-a1d0-44bd81f815a0,1.1,1,e8968efd-2c9f-4226-9ece-f15df803b387,category-sort,Holiday Feelings,0,beginner,false,false,false,0,false,false
+Grade 11,1,d5bfd5ea-cc02-4fc3-a1d0-44bd81f815a0,1.1,1,f2575e5d-560b-49d8-9cab-20ead08e599f,match-pairs,Holiday Chores and Fun,1,beginner,false,false,false,0,false,false
+Grade 11,1,d5bfd5ea-cc02-4fc3-a1d0-44bd81f815a0,1.1,1,d7b5cb27-ecc7-40e0-9a1d-3c8a41aaa823,word-order,Asking About the Holiday,2,intermediate,false,false,false,0,false,false
+Grade 11,1,d5bfd5ea-cc02-4fc3-a1d0-44bd81f815a0,1.1,1,b4ca871f-18ad-4160-a216-93ac1fef5662,dialogue-read,Meeting a Friend,3,beginner,false,false,false,0,false,true
+Grade 11,1,d5bfd5ea-cc02-4fc3-a1d0-44bd81f815a0,1.1,1,01b27f6e-faf5-444d-900d-62bfa8acc882,picture-description,Who is This Man?,4,intermediate,true,false,false,0,false,false
+Grade 11,1,d5bfd5ea-cc02-4fc3-a1d0-44bd81f815a0,1.1,1,8af87e38-b996-496a-a832-c4e03af105ce,gap-fill,Describing Objects,5,intermediate,false,false,false,0,false,false
+Grade 11,1,d5bfd5ea-cc02-4fc3-a1d0-44bd81f815a0,1.1,1,9dc69126-b72b-4783-b896-697b7af8462b,pronunciation-practice,Adjective Pronunciation,6,intermediate,false,false,false,0,false,false
+Grade 11,1,d5bfd5ea-cc02-4fc3-a1d0-44bd81f815a0,1.1,1,a79bd088-58b4-4d0f-a381-c46ccda1b63b,conversation-sim,Holiday Conversation,7,advanced,false,false,false,0,false,false
+Grade 9,1,6354b6fb-96ee-4b14-b1a1-2790bf126c5d,A Postcard from London,2,f73979f3-8f43-49c0-b953-e8be584ec1c7,flashcard,Postcard Vocabulary,0,beginner,false,false,false,0,false,false
+Grade 9,1,6354b6fb-96ee-4b14-b1a1-2790bf126c5d,A Postcard from London,2,bfb1ed6d-4fe8-4bbd-b6c8-4fbb3347bf30,gap-fill,Complete the Postcard,1,intermediate,false,false,false,0,false,false
+Grade 9,1,6354b6fb-96ee-4b14-b1a1-2790bf126c5d,A Postcard from London,2,f64b186a-2c79-4ad3-8e62-a1a7b8b84b14,category-sort,Parts of a Postcard,2,beginner,false,false,false,0,false,false
+Grade 9,1,6354b6fb-96ee-4b14-b1a1-2790bf126c5d,A Postcard from London,2,dbe936e1-455e-435e-9fed-a5b7b144fd73,true-false,Postcard Facts,3,beginner,false,false,false,0,false,false
+Grade 8,1,038981d3-aa63-47c1-89f9-cbdeb010c254,I Like...,2,1d28b2e9-a8ff-440b-8930-e54ea364bcaa,gap-fill,I Like / I Don't Like,0,intermediate,true,false,false,0,false,false
+Grade 8,1,038981d3-aa63-47c1-89f9-cbdeb010c254,I Like...,2,52f2481f-64ba-4312-a409-9304fb3fea82,mcq,Likes Quiz,1,beginner,true,false,false,2,false,false
+Grade 7,1,63c81cee-7309-4ddd-af18-0ec9fdf155a6,1.2,2,3a0a9be0-1714-4c6a-92f9-56d7f33a0a40,flashcard,Learning Numbers 6-10,0,beginner,false,true,false,0,false,false
+Grade 7,1,63c81cee-7309-4ddd-af18-0ec9fdf155a6,1.2,2,2aee96af-1f2c-4649-9846-12deebe2e603,flashcard,Classroom Objects,1,beginner,false,false,false,0,false,false
+Grade 7,1,63c81cee-7309-4ddd-af18-0ec9fdf155a6,1.2,2,a119e4fd-2955-43ae-bd3a-3e1736b19bff,dialogue-read,Good Morning!,2,beginner,true,false,false,0,false,true
+Grade 7,1,63c81cee-7309-4ddd-af18-0ec9fdf155a6,1.2,2,1f07db9c-2c85-4c06-b8e4-98d1099e4f08,match-pairs,Match Numbers and Words,4,beginner,true,false,false,0,false,false
+Grade 7,1,63c81cee-7309-4ddd-af18-0ec9fdf155a6,1.2,2,ced06a3b-c9a0-4281-9b63-ac58e93f2696,pronunciation-practice,The Alphabet,5,beginner,true,false,false,0,false,false
+Grade 7,1,63c81cee-7309-4ddd-af18-0ec9fdf155a6,1.2,2,7a00c5a0-b543-431c-8f9f-5800855f2f39,dictation,Listen and Write the Number,6,beginner,true,false,false,0,false,false
+Grade 7,1,63c81cee-7309-4ddd-af18-0ec9fdf155a6,1.2,2,dc671df6-7062-44de-95f8-718aec44887c,mcq,Listen and Choose,7,beginner,true,false,false,2,false,false
+Grade 11,1,efb115ec-aad5-489a-9ebb-9bd09ba8059f,1.2,2,bce930cd-0c94-4e30-b45c-6eda86003778,flashcard,Vocabulary: Describing People,0,beginner,false,false,false,0,false,false
+Grade 11,1,efb115ec-aad5-489a-9ebb-9bd09ba8059f,1.2,2,b8d25086-adf1-49ef-96ab-a5a665cab77c,mcq,Reading: Which Man Is This?,1,beginner,false,false,false,1,false,false
+Grade 11,1,efb115ec-aad5-489a-9ebb-9bd09ba8059f,1.2,2,dd791ac9-1b8f-4db6-80f0-ee24deadc817,category-sort,Grammar: Adjective Categories,2,intermediate,false,false,false,0,false,false
+Grade 11,1,efb115ec-aad5-489a-9ebb-9bd09ba8059f,1.2,2,4c608ae6-1875-4b56-800e-c4de6afb5ac0,word-order,Grammar Practice: Adjective Order,3,intermediate,false,false,false,0,false,false
+Grade 11,1,efb115ec-aad5-489a-9ebb-9bd09ba8059f,1.2,2,cdaf1d7a-d2c0-4236-a589-0b92436d5a9b,gap-fill,Grammar Application: Describing Things,4,advanced,false,false,false,0,false,false
+Grade 11,1,efb115ec-aad5-489a-9ebb-9bd09ba8059f,1.2,2,4a2557d3-968c-4748-8848-68600214b2be,pronunciation-practice,Pronunciation: Adjectives,5,intermediate,false,false,false,0,false,false
+Grade 11,1,efb115ec-aad5-489a-9ebb-9bd09ba8059f,1.2,2,ef96403a-8c2e-4d77-9914-92847f62885c,picture-description,Speaking: Describe the People,6,advanced,true,false,false,0,false,false
+Grade 10,1,591453fe-a0e0-4fbd-8789-4d7abbf17244,1.2,2,e1f4e92c-4b4a-41ab-81ae-c7d37ee9c5a6,listening-comprehension,What Am I Describing?,0,intermediate,false,true,false,3,false,false
+Grade 10,1,591453fe-a0e0-4fbd-8789-4d7abbf17244,1.2,2,56a398d8-e198-4d23-8189-194cb2c22048,flashcard,Vocabulary: Everyday Objects,1,beginner,false,false,false,0,false,false
+Grade 10,1,591453fe-a0e0-4fbd-8789-4d7abbf17244,1.2,2,6cba0823-95c8-43c5-9aa9-ba93f91f1247,mcq,Label the Pictures,2,beginner,false,false,false,3,false,false
+Grade 10,1,591453fe-a0e0-4fbd-8789-4d7abbf17244,1.2,2,a8abad1b-5938-4226-9214-62b5fe392205,category-sort,Group the Items,3,intermediate,false,false,false,0,false,false
+Grade 10,1,591453fe-a0e0-4fbd-8789-4d7abbf17244,1.2,2,514d0e19-4af0-4019-99c5-391ca5d3ef2b,category-sort,Word Association Game,4,intermediate,false,false,false,0,false,false
+Grade 10,1,591453fe-a0e0-4fbd-8789-4d7abbf17244,1.2,2,17bc304e-4329-443b-af49-5453cf49e4cb,pronunciation-practice,Say It Right!,5,beginner,false,false,false,0,false,false
+Grade 10,1,591453fe-a0e0-4fbd-8789-4d7abbf17244,1.2,2,9927619b-328b-4fe0-90e8-f31a9177dcf9,word-order,Build the Sentence,6,intermediate,false,false,false,0,false,false
+Grade 12,1,c26e1bf6-9665-4899-a713-4f4f2fb3098f,1.2,2,52b09904-a14a-4daf-b95a-8b01fa98c405,flashcard,Key Vocabulary: Describing Things,0,intermediate,false,false,false,0,false,false
+Grade 12,1,c26e1bf6-9665-4899-a713-4f4f2fb3098f,1.2,2,3527a94d-b774-4f81-b293-f9597d0723af,listening-comprehension,Listen and Choose,1,intermediate,false,true,true,2,false,false
+Grade 12,1,c26e1bf6-9665-4899-a713-4f4f2fb3098f,1.2,2,2e4500e6-7276-46c7-bbdc-3e5e39bce11e,gap-fill,Remembering the Description,2,intermediate,false,false,false,0,false,false
+Grade 12,1,c26e1bf6-9665-4899-a713-4f4f2fb3098f,1.2,2,798e588e-a7f2-468a-8667-9e6d6e69872d,mcq,What Is It?,3,beginner,false,false,false,5,false,false
+Grade 12,1,c26e1bf6-9665-4899-a713-4f4f2fb3098f,1.2,2,31588b4e-2326-4fef-a91e-4d343995b915,word-order,Build the Description,4,intermediate,false,false,false,0,false,false
+Grade 12,1,c26e1bf6-9665-4899-a713-4f4f2fb3098f,1.2,2,39e17218-5d96-451f-b4e5-8d53be7e2b3d,pronunciation-practice,Pronunciation of Adjectives,5,intermediate,false,false,false,0,false,false
+Grade 12,1,c26e1bf6-9665-4899-a713-4f4f2fb3098f,1.2,2,4765afa4-4049-4e9a-bfa5-76adf9907d4f,picture-description,Describe a Person,6,advanced,true,false,false,0,false,false
+Grade 9,1,82a60b1b-a918-4b46-a3a9-4ea067d57883,Irregular Past Tense,3,72962105-5563-484c-b5d1-f7b9944910ef,category-sort,Regular or Irregular?,0,beginner,false,false,false,0,false,false
+Grade 9,1,82a60b1b-a918-4b46-a3a9-4ea067d57883,Irregular Past Tense,3,18173f7e-f579-4aec-8c19-ffdf1a87da8c,match-pairs,More Irregular Verbs,1,beginner,false,false,false,0,false,false
+Grade 9,1,82a60b1b-a918-4b46-a3a9-4ea067d57883,Irregular Past Tense,3,f14e6d27-d3f0-4c4d-9323-9501b847249a,gap-fill,Past Tense Sentences,2,intermediate,false,false,false,0,false,false
+Grade 9,1,82a60b1b-a918-4b46-a3a9-4ea067d57883,Irregular Past Tense,3,c4d6fa55-2bc1-45c9-aee1-eaec85e7ef3f,mcq,Choose the Past Tense,3,beginner,false,false,false,3,false,false
+Grade 8,1,5825e3d6-a1cc-4522-891d-f61c1b8348d7,1.3,3,380faed2-a9f0-4a36-837e-79919d69b9e2,flashcard,Food and Drink Vocabulary,0,beginner,false,false,false,0,false,false
+Grade 8,1,5825e3d6-a1cc-4522-891d-f61c1b8348d7,1.3,3,add9f309-d49d-471f-8a7a-a265e2f746a8,dialogue-read,Talking About Lunch,1,beginner,true,false,false,0,false,true
+Grade 8,1,5825e3d6-a1cc-4522-891d-f61c1b8348d7,1.3,3,9f711370-d155-49a8-8a33-b6645a998aa4,category-sort,Food or Drink?,3,beginner,true,false,false,0,false,false
+Grade 8,1,5825e3d6-a1cc-4522-891d-f61c1b8348d7,1.3,3,2b46fa1c-e219-42ee-b4d3-3806ec8ed3ab,gap-fill,Likes and Dislikes,4,beginner,true,false,false,0,false,false
+Grade 8,1,5825e3d6-a1cc-4522-891d-f61c1b8348d7,1.3,3,e6925367-c072-4e55-a973-36fe02a31f74,word-order,Build the Sentence,5,beginner,true,false,false,0,false,false
+Grade 8,1,5825e3d6-a1cc-4522-891d-f61c1b8348d7,1.3,3,353ab64a-d80a-41e8-91a4-59b44c0b4685,dictation,Listen and Write,6,intermediate,true,false,false,0,false,false
+Grade 8,1,5825e3d6-a1cc-4522-891d-f61c1b8348d7,1.3,3,892a3f30-2f42-4b1c-ba05-98a8e5c37011,pronunciation-practice,Pronounce the Vegetables,7,intermediate,true,false,false,0,false,false
+Grade 8,1,5825e3d6-a1cc-4522-891d-f61c1b8348d7,1.3,3,e41b0c1c-d567-4cc8-a773-f2b4185d7894,transform-sentence,Using Commas and 'Or',8,intermediate,true,false,false,0,false,false
+Grade 12,1,0913ed4f-a941-4977-8e0b-9119fce5fc96,1.3 Lost,3,b6915919-3def-4adc-b006-f4d71719eaad,flashcard,Vocabulary: Describing and Reacting,0,intermediate,false,false,false,0,false,false
+Grade 12,1,0913ed4f-a941-4977-8e0b-9119fce5fc96,1.3 Lost,3,7a3c4f72-6be4-4e83-9caa-2b16600b0036,listening-comprehension,At the Lost Luggage Desk,1,intermediate,false,true,true,2,false,false
+Grade 12,1,0913ed4f-a941-4977-8e0b-9119fce5fc96,1.3 Lost,3,6431dfbf-06c4-41bf-a40b-a477bbfd9dc2,mcq,Find the Passenger's Bags,2,intermediate,false,false,false,1,false,false
+Grade 12,1,0913ed4f-a941-4977-8e0b-9119fce5fc96,1.3 Lost,3,9c98f4a7-89e4-42e6-a643-8cbc791d8413,listening-comprehension,Finding a Lost Sister,3,intermediate,false,true,true,2,false,false
+Grade 12,1,0913ed4f-a941-4977-8e0b-9119fce5fc96,1.3 Lost,3,328c528c-04a7-4785-9790-b2e263cf4dc0,mcq,Which Girl is Kate?,4,intermediate,false,false,false,1,false,false
+Grade 12,1,0913ed4f-a941-4977-8e0b-9119fce5fc96,1.3 Lost,3,b88f898a-7202-4c8c-80a5-ed19cefda11d,gap-fill,Grammar: Making Comparisons,5,intermediate,false,false,false,0,false,false
+Grade 12,1,0913ed4f-a941-4977-8e0b-9119fce5fc96,1.3 Lost,3,77a0adb3-1a2e-4129-ba84-005b3c0ca92e,match-pairs,What to Say: Helpful Phrases,6,beginner,false,false,false,0,false,false
+Grade 12,1,0913ed4f-a941-4977-8e0b-9119fce5fc96,1.3 Lost,3,b554be0c-dc22-41d9-96d8-cd83318ba043,dialogue-read,Practice: Reporting a Lost Sister,7,intermediate,false,false,false,0,false,true
+Grade 11,1,b0790fcf-6cad-4a56-aa21-1df58bfdf853,1.3,3,d8fefbf7-b031-4486-8a5b-ea4ed6d221a8,flashcard,Department Store Vocabulary,0,beginner,false,false,false,0,false,false
+Grade 11,1,b0790fcf-6cad-4a56-aa21-1df58bfdf853,1.3,3,125dc53c-da04-4355-bc37-bbd0cdb8887d,category-sort,Shopping Categories,1,beginner,false,false,false,0,false,false
+Grade 11,1,b0790fcf-6cad-4a56-aa21-1df58bfdf853,1.3,3,b366a122-22fe-4bb9-a00a-ada7cc29f9f8,dialogue-read,Asking for Help,2,intermediate,false,false,false,0,false,true
+Grade 11,1,b0790fcf-6cad-4a56-aa21-1df58bfdf853,1.3,3,a2e6f486-1152-4950-8b06-2a7df12ea784,mcq,Understanding Indirect Questions,3,intermediate,false,false,false,2,false,false
+Grade 11,1,b0790fcf-6cad-4a56-aa21-1df58bfdf853,1.3,3,58932813-55e2-48f6-87ec-0ab6f1a897c3,transform-sentence,Making Questions Polite,4,intermediate,false,false,false,0,false,false
+Grade 11,1,b0790fcf-6cad-4a56-aa21-1df58bfdf853,1.3,3,c1e7f531-50ee-4f77-b1c9-e06dacbf94d7,pronunciation-practice,Polite Intonation,5,advanced,false,false,false,0,false,false
+Grade 11,1,b0790fcf-6cad-4a56-aa21-1df58bfdf853,1.3,3,0f431bca-52ea-4b70-9250-c938ab2d2449,conversation-sim,At the Department Store,6,advanced,true,false,false,0,false,false
+Grade 7,1,51322310-5101-48dd-a71b-7b0bbe1a9946,1.3,3,49017ca6-4395-451d-a3b6-055525dc31b9,category-sort,Vowels and Consonants,1,beginner,true,false,false,0,false,false
+Grade 7,1,51322310-5101-48dd-a71b-7b0bbe1a9946,1.3,3,f1a43217-218a-46f0-ac9e-bd03e9b90203,match-pairs,Numbers 1 to 10,2,beginner,true,false,false,0,false,false
+Grade 7,1,51322310-5101-48dd-a71b-7b0bbe1a9946,1.3,3,8f6a49b1-ea4c-4964-85a0-d66899565685,listening-comprehension,The Alphabet Song,3,beginner,true,true,true,1,false,false
+Grade 7,1,51322310-5101-48dd-a71b-7b0bbe1a9946,1.3,3,13455494-f5cb-418b-b4cc-1ba734a48e21,pronunciation-practice,"Letter Sounds: o, c, e, a",4,beginner,true,false,false,0,false,false
+Grade 7,1,51322310-5101-48dd-a71b-7b0bbe1a9946,1.3,3,4cace409-24ec-4e17-89d0-57b96eae1aa4,gap-fill,What's the First Letter?,5,beginner,true,false,false,0,false,false
+Grade 7,1,51322310-5101-48dd-a71b-7b0bbe1a9946,1.3,3,4d9eaf6e-e31e-4e5b-a85e-8aa94ec536f9,dictation,Listen and Write,6,beginner,true,false,false,0,false,false
+Grade 7,1,51322310-5101-48dd-a71b-7b0bbe1a9946,1.3,3,88d393e2-a925-4d94-a3b6-8d69b01788f5,mcq,Letter Recognition,7,beginner,true,false,false,2,false,false
+Grade 7,1,51322310-5101-48dd-a71b-7b0bbe1a9946,1.3,3,5d648f80-127d-4251-a968-d4fc886b777c,conversation-sim,Are You Ali?,8,beginner,true,false,false,0,false,false
+Grade 10,1,1c6e9fb4-264b-4b00-86d2-d22fb4acfa21,1.3 - 1.6,3,0862bc9d-748c-4389-acd4-192b2cdf295e,listening-comprehension,Listening Game: What Is It?,0,intermediate,false,true,true,3,false,false
+Grade 10,1,1c6e9fb4-264b-4b00-86d2-d22fb4acfa21,1.3 - 1.6,3,21ea9f44-3a29-4538-ae7b-8c9afb5a4643,flashcard,Vocabulary: Describing Objects,1,beginner,false,false,false,0,false,false
+Grade 10,1,1c6e9fb4-264b-4b00-86d2-d22fb4acfa21,1.3 - 1.6,3,a82d7ba3-6a83-4b0b-91aa-175a0436a236,category-sort,Sort the Words,2,beginner,false,false,false,0,false,false
+Grade 10,1,1c6e9fb4-264b-4b00-86d2-d22fb4acfa21,1.3 - 1.6,3,4c3862ca-4606-4477-b9ec-3c2ae0476045,mcq,What Is It? Reading Puzzles,3,intermediate,false,false,false,4,false,false
+Grade 10,1,1c6e9fb4-264b-4b00-86d2-d22fb4acfa21,1.3 - 1.6,3,73f82841-bc75-413e-8ed0-6bd1c00c12d8,word-order,Build the Sentences,4,intermediate,false,false,false,0,false,false
+Grade 10,1,1c6e9fb4-264b-4b00-86d2-d22fb4acfa21,1.3 - 1.6,3,cc3b58e6-80ad-4b08-a003-24d01b4a4c7c,gap-fill,Grammar: Describing with the Passive,5,intermediate,false,false,false,0,false,false
+Grade 10,1,1c6e9fb4-264b-4b00-86d2-d22fb4acfa21,1.3 - 1.6,3,7201e592-e801-4111-869f-1280b7b719d7,pronunciation-practice,Pronunciation Practice,6,beginner,false,false,false,0,false,false
+Grade 10,1,1c6e9fb4-264b-4b00-86d2-d22fb4acfa21,1.3 - 1.6,3,22137cc1-9d45-44e4-84c2-6f15694eeeea,picture-description,What's My Job?,7,advanced,false,false,false,0,false,false
+Grade 11,1,24d6a355-1d7c-48f9-867c-10d7719039d0,1.4,4,ad3f2a7e-3249-4a0e-b290-f878934b21e7,flashcard,Health Vocabulary,0,beginner,false,false,false,0,false,false
+Grade 11,1,24d6a355-1d7c-48f9-867c-10d7719039d0,1.4,4,527b9c73-a69d-4667-be15-07aa41adec82,gap-fill,Doctor's Advice,1,intermediate,false,false,false,0,false,false
+Grade 11,1,24d6a355-1d7c-48f9-867c-10d7719039d0,1.4,4,7b14369a-62ea-484c-bb63-dc0b4ba04225,match-pairs,Famous Health Sayings,2,beginner,false,false,false,0,false,false
+Grade 11,1,24d6a355-1d7c-48f9-867c-10d7719039d0,1.4,4,628fc10e-333f-4a72-b799-fdcdb3118c2f,category-sort,Health Word Categories,3,intermediate,false,false,false,0,false,false
+Grade 11,1,24d6a355-1d7c-48f9-867c-10d7719039d0,1.4,4,feb82cef-f59d-480f-b0f7-8fc5d175f582,spelling-bee,Health Vocabulary Spelling,4,intermediate,false,false,false,0,false,false
+Grade 11,1,24d6a355-1d7c-48f9-867c-10d7719039d0,1.4,4,7856859f-1ece-4e9d-8149-3e1b2a62a91e,pronunciation-practice,Pronounce It Right!,5,intermediate,false,false,false,0,false,false
+Grade 11,1,24d6a355-1d7c-48f9-867c-10d7719039d0,1.4,4,0d8bdf48-dbfb-4b92-92e8-4540a903f22c,reading-passage,A Guide to Staying Healthy,6,advanced,false,false,false,3,true,false
+Grade 10,1,482f4780-fd57-4cfb-80b3-d455d85df0a1,1.4,4,caae3f5c-6c1f-4e2f-b222-16b819fc2f06,flashcard,Objects and Materials Vocabulary,0,intermediate,false,false,false,0,false,false
+Grade 10,1,482f4780-fd57-4cfb-80b3-d455d85df0a1,1.4,4,28f03199-5aff-439d-aaef-7179800488ad,listening-comprehension,What Is It? Listening Challenge,1,intermediate,false,true,true,4,false,false
+Grade 10,1,482f4780-fd57-4cfb-80b3-d455d85df0a1,1.4,4,89295220-7622-4ddb-9a44-e67bed1962fc,gap-fill,How to Describe Things,2,intermediate,false,false,false,0,false,false
+Grade 10,1,482f4780-fd57-4cfb-80b3-d455d85df0a1,1.4,4,3a2b3573-fa76-4016-a489-4c13bdc5675f,mcq,Guess the Object,3,intermediate,false,false,false,3,false,false
+Grade 10,1,482f4780-fd57-4cfb-80b3-d455d85df0a1,1.4,4,796b5f05-4b5c-44a6-b63e-e4e4e75b6186,picture-description,Describe the Airplane,4,intermediate,false,false,false,0,false,false
+Grade 10,1,482f4780-fd57-4cfb-80b3-d455d85df0a1,1.4,4,eab6bfe8-1134-45bf-b28a-8cd46e57bb67,spelling-bee,Vocabulary Spelling,5,intermediate,false,false,false,0,false,false
+Grade 10,1,482f4780-fd57-4cfb-80b3-d455d85df0a1,1.4,4,62465513-946f-419a-ad5a-b93c271c2960,word-order,Asking About Objects,6,intermediate,false,false,false,0,false,false
+Grade 10,1,482f4780-fd57-4cfb-80b3-d455d85df0a1,1.4,4,822871d2-7880-45a5-a08c-af609d35a123,pronunciation-practice,Say It Right!,7,intermediate,false,false,false,0,false,false
+Grade 12,1,ae37eb6d-b382-48ee-86e8-36f3777ffa11,1.4,4,ec404e4b-cc45-47d7-ab69-69b15b4d4e66,listening-comprehension,Listening: The Science of Hybrids,0,advanced,false,true,true,3,false,false
+Grade 12,1,ae37eb6d-b382-48ee-86e8-36f3777ffa11,1.4,4,5630da3f-6e06-4bf5-af55-acca0ee241db,flashcard,Key Vocabulary: Animal Traits,1,intermediate,false,false,false,0,false,false
+Grade 12,1,ae37eb6d-b382-48ee-86e8-36f3777ffa11,1.4,4,94b447c3-800a-435f-903b-54840efb1069,reading-passage,Reading: Rama - the Cama,2,intermediate,false,false,false,4,true,false
+Grade 12,1,ae37eb6d-b382-48ee-86e8-36f3777ffa11,1.4,4,75dc6f80-7cf1-4bc9-9d07-3c480d98a63b,gap-fill,Grammar: Comparison and Contrast,3,intermediate,false,false,false,0,false,false
+Grade 12,1,ae37eb6d-b382-48ee-86e8-36f3777ffa11,1.4,4,6d37b8d2-57a3-4bad-8aa4-85d7d278e71c,word-order,Sentence Building: Describing Rama,4,intermediate,false,false,false,0,false,false
+Grade 12,1,ae37eb6d-b382-48ee-86e8-36f3777ffa11,1.4,4,106e3230-6994-4a4e-8509-cd76192bbb3d,pronunciation-practice,Pronunciation Focus,5,intermediate,false,false,false,0,false,false
+Grade 12,1,ae37eb6d-b382-48ee-86e8-36f3777ffa11,1.4,4,42f55a11-9f87-4dad-af4f-7050594481a0,picture-description,Speaking: Describe the Cama,6,advanced,true,false,false,0,false,false
+Grade 7,1,957393a9-7ea4-40d0-ba94-9c6156e16f71,1.4,4,a5bdcfd2-8031-4f8f-be38-f608a5e6266c,flashcard,Classroom Objects,0,beginner,false,false,false,0,false,false
+Grade 7,1,957393a9-7ea4-40d0-ba94-9c6156e16f71,1.4,4,7617714e-6699-43b4-97b6-f12fc52f43d2,dialogue-read,In the Classroom,1,beginner,true,false,false,0,false,true
+Grade 7,1,957393a9-7ea4-40d0-ba94-9c6156e16f71,1.4,4,dc9e22f7-c5a4-4020-a903-7656c1390371,gap-fill,What's This?,3,beginner,true,false,false,0,false,false
+Grade 7,1,957393a9-7ea4-40d0-ba94-9c6156e16f71,1.4,4,2f68ca85-9ebc-4300-b5a1-3cc12989a5ab,word-order,Make Sentences,4,beginner,true,false,false,0,false,false
+Grade 7,1,957393a9-7ea4-40d0-ba94-9c6156e16f71,1.4,4,064559b5-0761-4b5b-a6dd-c4cc23b0e967,pronunciation-practice,Say the Words,5,beginner,true,false,false,0,false,false
+Grade 7,1,957393a9-7ea4-40d0-ba94-9c6156e16f71,1.4,4,38508f52-8a62-4f2c-9ac6-48573e3eebff,mcq,Listen and Choose,6,beginner,true,false,false,2,false,false
+Grade 7,1,957393a9-7ea4-40d0-ba94-9c6156e16f71,1.4,4,4ef5119e-5485-442a-95fc-30c582636450,spelling-bee,Spell the Word,7,beginner,true,false,false,0,false,false
+Grade 8,1,108a62f0-0b82-4c2b-9f8f-7da7535707ca,This is the way,4,46cd82d2-7556-4f2e-9400-f0c1f140522b,listening-comprehension,Listen and Choose the Number,1,beginner,true,true,true,4,false,false
+Grade 8,1,108a62f0-0b82-4c2b-9f8f-7da7535707ca,This is the way,4,875f6db6-88b9-4e51-b939-270fbf5d072a,listening-comprehension,Song Time: This is the way,2,beginner,true,true,true,1,false,false
+Grade 8,1,108a62f0-0b82-4c2b-9f8f-7da7535707ca,This is the way,4,af6ee294-cccd-41c2-91e5-1f194840792c,word-order,Order the Days of the Week,3,beginner,true,false,false,0,false,false
+Grade 8,1,108a62f0-0b82-4c2b-9f8f-7da7535707ca,This is the way,4,e315b3d4-ecea-420b-9cc0-860a7c1cd235,gap-fill,"He Likes, She Doesn't",4,intermediate,true,false,false,0,false,false
+Grade 8,1,108a62f0-0b82-4c2b-9f8f-7da7535707ca,This is the way,4,86faefae-e4c3-4b1a-ac99-6df061b7efff,word-order,Make the Question,5,intermediate,true,false,false,0,false,false
+Grade 8,1,108a62f0-0b82-4c2b-9f8f-7da7535707ca,This is the way,4,3d92dd5a-b2e7-4828-b5b2-6550219cd2bd,pronunciation-practice,Say the Days,6,beginner,true,false,false,0,false,false
+Grade 8,1,108a62f0-0b82-4c2b-9f8f-7da7535707ca,This is the way,4,fb1b1480-28e8-4fcd-82e8-2cd6b07be712,mcq,Do You Like It?,7,beginner,true,false,false,2,false,false
+Grade 9,1,d7f4f1f5-1575-4c81-a628-8a08be10038d,1.4,4,28a93ea6-47a3-4eda-becc-5621bc5898b4,listening-comprehension,A Day in the Life of a Baker,0,intermediate,false,true,true,3,false,false
+Grade 9,1,d7f4f1f5-1575-4c81-a628-8a08be10038d,1.4,4,7d14789b-3838-41e3-a86d-f81a077affb7,flashcard,Jobs Vocabulary,1,beginner,false,false,false,0,false,false
+Grade 9,1,d7f4f1f5-1575-4c81-a628-8a08be10038d,1.4,4,9f327f2f-dd8f-4cd6-8625-3777a3155a71,mcq,What's My Job?,2,intermediate,false,false,false,4,false,false
+Grade 9,1,d7f4f1f5-1575-4c81-a628-8a08be10038d,1.4,4,488978aa-5a97-47e5-bcca-c752d117d6fa,gap-fill,Present Simple: Job Descriptions,3,intermediate,false,false,false,0,false,false
+Grade 9,1,d7f4f1f5-1575-4c81-a628-8a08be10038d,1.4,4,cc36b3fb-e2b1-445c-9dab-5d459609e9aa,transform-sentence,Making Negative Sentences,4,intermediate,false,false,false,0,false,false
+Grade 9,1,d7f4f1f5-1575-4c81-a628-8a08be10038d,1.4,4,79a0ab42-115c-4fe6-82c7-9fc02b76b929,spelling-bee,Job Spelling Bee,5,beginner,false,false,false,0,false,false
+Grade 9,1,d7f4f1f5-1575-4c81-a628-8a08be10038d,1.4,4,975bfdd8-a721-4b7b-914c-74484d10b44d,pronunciation-practice,Job Pronunciation Practice,6,beginner,false,false,false,0,false,false
+Grade 7,1,565ce125-0696-47fe-b840-e461e21984cd,1.5,5,514e5264-1b0c-430a-85d0-c485c8ba67a7,flashcard,Classroom and Travel Words,0,beginner,false,false,false,0,false,false
+Grade 7,1,565ce125-0696-47fe-b840-e461e21984cd,1.5,5,472a42e6-e188-4701-9df8-ac2250801c42,dialogue-read,Asking About Things,1,beginner,true,false,false,0,false,true
+Grade 7,1,565ce125-0696-47fe-b840-e461e21984cd,1.5,5,989c119a-79aa-43ba-9d90-9b77e4c0b92b,listening-comprehension,Listen and Find,3,beginner,true,true,true,3,false,false
+Grade 7,1,565ce125-0696-47fe-b840-e461e21984cd,1.5,5,5854f038-006a-4f3a-a8a8-368b23045f63,category-sort,Sort the Words,4,intermediate,true,false,false,0,false,false
+Grade 7,1,565ce125-0696-47fe-b840-e461e21984cd,1.5,5,be1b3393-e842-49b7-8cee-84d1fedd4978,pronunciation-practice,Alphabet Sounds: a to n,5,beginner,true,false,false,0,false,false
+Grade 7,1,565ce125-0696-47fe-b840-e461e21984cd,1.5,5,95c1b4ca-25ac-409e-a94f-048f80dd85dc,word-order,Make a Question,6,intermediate,true,false,false,0,false,false
+Grade 7,1,565ce125-0696-47fe-b840-e461e21984cd,1.5,5,580dda36-d2ab-4591-bed3-85905d374694,mcq,What's this?,7,beginner,true,false,false,2,false,false
+Grade 7,1,565ce125-0696-47fe-b840-e461e21984cd,1.5,5,4dd4e761-56eb-4364-8f55-bcdf08a37dce,spelling-bee,Spelling Practice,8,beginner,true,false,false,0,false,false
+Grade 12,1,f4105286-ffcc-4d49-8343-5c2fada634ff,1.5,5,7c78647b-6554-43c6-a07f-9e43a80542a1,listening-comprehension,Listening: City Life vs. Country Life,0,intermediate,false,false,true,3,false,false
+Grade 12,1,f4105286-ffcc-4d49-8343-5c2fada634ff,1.5,5,196a6389-a604-43ce-aa7e-db351b9d44b3,flashcard,Key Vocabulary: Comparison & Contrast,1,beginner,false,false,false,0,false,false
+Grade 12,1,f4105286-ffcc-4d49-8343-5c2fada634ff,1.5,5,9571edfa-684b-455e-a212-e5fccb32acf4,mcq,Check Your Understanding: Comparison Rules,2,intermediate,false,false,false,3,false,false
+Grade 12,1,f4105286-ffcc-4d49-8343-5c2fada634ff,1.5,5,38c5a659-21df-443e-bec8-37a600ce5a37,gap-fill,Practice: Three Sisters,3,intermediate,false,false,false,0,false,false
+Grade 12,1,f4105286-ffcc-4d49-8343-5c2fada634ff,1.5,5,e3e6cc27-d534-41de-a6cd-4c05b999455e,transform-sentence,Practice: Rewriting Sentences,4,intermediate,false,false,false,0,false,false
+Grade 12,1,f4105286-ffcc-4d49-8343-5c2fada634ff,1.5,5,d36b0cc6-87e8-4196-89ca-f84a563fff05,gap-fill,Practice: Linking Words,5,intermediate,false,false,false,0,false,false
+Grade 12,1,f4105286-ffcc-4d49-8343-5c2fada634ff,1.5,5,18fe8b4d-7d77-4293-9654-e36b8f7d0a0e,word-order,Build the Sentences,6,advanced,false,false,false,0,false,false
+Grade 12,1,f4105286-ffcc-4d49-8343-5c2fada634ff,1.5,5,08a07583-1a1e-4bad-934e-380b5c2d992f,pronunciation-practice,Pronunciation Focus,7,beginner,false,false,false,0,false,false
+Grade 8,1,ad2e9b5f-d2c2-4481-bf01-6816a17c3e3e,1.5,5,7f913f72-2b0c-4119-87e9-7d27882b8a9a,flashcard,Daily Routines Vocabulary,0,beginner,false,false,false,0,false,false
+Grade 8,1,ad2e9b5f-d2c2-4481-bf01-6816a17c3e3e,1.5,5,f35c2e32-fc0f-4954-b880-973a67921edb,listening-comprehension,Listen and Identify,2,intermediate,true,true,true,1,false,false
+Grade 8,1,ad2e9b5f-d2c2-4481-bf01-6816a17c3e3e,1.5,5,766fa9c5-9158-4dc6-9604-6b882f674dde,gap-fill,Grammar: Daily Routines,3,intermediate,true,false,false,0,false,false
+Grade 8,1,ad2e9b5f-d2c2-4481-bf01-6816a17c3e3e,1.5,5,4292cb93-2612-435d-af10-8bba9bb07353,pronunciation-practice,Say it Right: Daily Routines,4,beginner,true,false,false,0,false,false
+Grade 8,1,ad2e9b5f-d2c2-4481-bf01-6816a17c3e3e,1.5,5,6cc6d515-77aa-46f0-901e-5e132616e30c,word-order,Make Sentences,5,beginner,true,false,false,0,false,false
+Grade 8,1,ad2e9b5f-d2c2-4481-bf01-6816a17c3e3e,1.5,5,36bf2bb9-8125-494d-b283-9de8c6b4e689,picture-description,Describe Najeeb's Day,6,intermediate,true,false,false,0,false,false
+Grade 8,1,ad2e9b5f-d2c2-4481-bf01-6816a17c3e3e,1.5,5,d40c1b1d-4eec-4008-b2a6-9bbeca09a32e,mcq,Who is it? Reading Puzzle,7,beginner,true,false,false,2,false,false
+Grade 11,1,666e0391-5628-46cf-bc5b-cd8005da0e14,1.5,5,e36524ab-f048-4747-8664-eac3014d9e11,flashcard,Vocabulary: Barry's Morning,0,intermediate,false,false,false,0,false,false
+Grade 11,1,666e0391-5628-46cf-bc5b-cd8005da0e14,1.5,5,ebd52899-89ad-439a-8d88-f43dd02efecf,reading-passage,Read the Story: Barry Jones - London schoolboy,1,intermediate,true,false,false,4,true,false
+Grade 11,1,666e0391-5628-46cf-bc5b-cd8005da0e14,1.5,5,920e96b4-cb9f-4972-a422-44f7c0e44ac1,category-sort,Story Timeline,2,intermediate,false,false,false,0,false,false
+Grade 11,1,666e0391-5628-46cf-bc5b-cd8005da0e14,1.5,5,5b94114b-afc7-4100-a201-3853600461e1,gap-fill,Summarize the Story,3,intermediate,false,false,false,0,false,false
+Grade 11,1,666e0391-5628-46cf-bc5b-cd8005da0e14,1.5,5,1f908988-18d1-44fc-b9dd-bb0a9c872e9a,mcq,What Does It Mean?,4,intermediate,false,false,false,3,false,false
+Grade 11,1,666e0391-5628-46cf-bc5b-cd8005da0e14,1.5,5,d1ceebd0-ef33-4055-8fb3-c14ca45768f7,match-pairs,School Subjects,5,beginner,false,false,false,0,false,false
+Grade 11,1,666e0391-5628-46cf-bc5b-cd8005da0e14,1.5,5,a7e33c24-ed5e-4073-9ae9-c97435d77be5,pronunciation-practice,Pronunciation Practice,6,intermediate,true,false,false,0,false,false
+Grade 11,1,666e0391-5628-46cf-bc5b-cd8005da0e14,1.5,5,6446c822-23cf-4902-be68-0fb13d3d23ba,picture-description,Describe the Scene,7,intermediate,true,false,false,0,false,false
+Grade 9,1,9026de44-9080-4c16-ad42-dfd98f6a41c7,1.5,5,5827c65e-2341-42c6-9b0f-0d273419c7ba,match-pairs,Jobs and Tools,0,beginner,false,false,false,0,false,false
+Grade 9,1,9026de44-9080-4c16-ad42-dfd98f6a41c7,1.5,5,98da4625-8baa-4182-b80f-419d6ee9ddf4,flashcard,Lesson Vocabulary,1,beginner,false,false,false,0,false,false
+Grade 9,1,9026de44-9080-4c16-ad42-dfd98f6a41c7,1.5,5,b149b8ca-9151-495a-84a5-0bba51c320b5,word-order,Forming Yes/No Questions,2,intermediate,false,false,false,0,false,false
+Grade 9,1,9026de44-9080-4c16-ad42-dfd98f6a41c7,1.5,5,89615c4c-b186-48b8-89f2-5da656fc3d24,gap-fill,Complete the Questions,3,intermediate,false,false,false,0,false,false
+Grade 9,1,9026de44-9080-4c16-ad42-dfd98f6a41c7,1.5,5,6b95f317-88a4-485e-b512-fbebde4df515,mcq,What's My Job?,4,intermediate,false,false,false,2,false,false
+Grade 9,1,9026de44-9080-4c16-ad42-dfd98f6a41c7,1.5,5,059a7ed6-a8d1-4d77-8e63-75026dcb546d,pronunciation-practice,Question Intonation,5,intermediate,false,false,false,0,false,false
+Grade 9,1,9026de44-9080-4c16-ad42-dfd98f6a41c7,1.5,5,973f2df8-3cda-4d08-ae54-d7d0ca77c0be,transform-sentence,Statements to Questions,6,advanced,false,false,false,0,false,false
+Grade 10,1,875f846b-4a76-4513-a9c9-4bbaa2684801,1.5,5,bbd3ef5f-04df-4cc9-a16f-81aada0c6989,flashcard,Jobs and Occupations,0,beginner,false,false,false,0,false,false
+Grade 10,1,875f846b-4a76-4513-a9c9-4bbaa2684801,1.5,5,3408f764-71c6-464d-99c7-35224f6342a4,mcq,What Do They Do?,1,beginner,false,false,false,4,false,false
+Grade 10,1,875f846b-4a76-4513-a9c9-4bbaa2684801,1.5,5,2473da16-fee7-4852-bf2e-711fc4ae08f0,category-sort,Inside or Outside?,2,intermediate,false,false,false,0,false,false
+Grade 10,1,875f846b-4a76-4513-a9c9-4bbaa2684801,1.5,5,a229456c-6cb0-4177-8d2b-b427caddb2d7,match-pairs,Where Do They Work?,3,intermediate,false,false,false,0,false,false
+Grade 10,1,875f846b-4a76-4513-a9c9-4bbaa2684801,1.5,5,c4eb5c55-27c6-443d-b477-6272f507fd4d,mcq,Guess the Job!,4,intermediate,false,false,false,4,false,false
+Grade 10,1,875f846b-4a76-4513-a9c9-4bbaa2684801,1.5,5,5e7b1b80-681f-4a38-815f-418326747e88,gap-fill,Daily Work,5,intermediate,false,false,false,0,false,false
+Grade 10,1,875f846b-4a76-4513-a9c9-4bbaa2684801,1.5,5,183ae2a8-a359-4ec1-a2c1-206ad3c36f4b,pronunciation-practice,Pronouncing Job Titles,6,beginner,false,false,false,0,false,false
+Grade 10,1,875f846b-4a76-4513-a9c9-4bbaa2684801,1.5,5,d5b4a2cd-454c-4e48-bf2c-9d5702503916,dictation,Job Descriptions,7,intermediate,false,false,false,0,false,false
+Grade 12,1,0b9aaa51-b847-468d-b3da-d5c67316ce13,1.6,6,77770bf2-70a9-4459-b946-9128ba0d9643,listening-comprehension,A Description of a Landscape,0,advanced,false,true,true,3,false,false
+Grade 12,1,0b9aaa51-b847-468d-b3da-d5c67316ce13,1.6,6,b8af6430-072d-49b7-a46c-a02ec1f57e0d,flashcard,Weather Vocabulary,1,beginner,false,true,false,0,false,false
+Grade 12,1,0b9aaa51-b847-468d-b3da-d5c67316ce13,1.6,6,027110ab-b8ef-458b-a65d-604e1fcc7828,flashcard,Countryside Features,2,beginner,false,false,false,0,false,false
+Grade 12,1,0b9aaa51-b847-468d-b3da-d5c67316ce13,1.6,6,3c21b898-b5c6-439c-a89b-12db562462ae,gap-fill,Comparing Countryside Features,3,intermediate,false,false,false,0,false,false
+Grade 12,1,0b9aaa51-b847-468d-b3da-d5c67316ce13,1.6,6,dde39e1e-3aea-40df-af3b-0bec984c98f3,gap-fill,A Walk in the Countryside,4,intermediate,false,false,false,0,false,false
+Grade 12,1,0b9aaa51-b847-468d-b3da-d5c67316ce13,1.6,6,87e9538d-641c-426c-bac8-593fd1dbb632,picture-description,Describe the Countryside,5,advanced,true,false,false,0,false,false
+Grade 12,1,0b9aaa51-b847-468d-b3da-d5c67316ce13,1.6,6,72444d62-260d-4ed1-8256-8fc9a9f048e3,pronunciation-practice,Word Pronunciation,6,intermediate,false,false,false,0,false,false
+Grade 9,1,40d2687b-5d7c-4d98-b831-70ceb776f578,1.6,6,3b0b92bb-78ed-4771-a9ce-99324562c861,flashcard,Holiday Activities Vocabulary,0,beginner,false,false,false,0,false,false
+Grade 9,1,40d2687b-5d7c-4d98-b831-70ceb776f578,1.6,6,2ed769f5-d71c-4880-9d29-1de8d0232fa5,listening-comprehension,Listening: Holiday Conversations,1,intermediate,false,true,true,4,false,false
+Grade 9,1,40d2687b-5d7c-4d98-b831-70ceb776f578,1.6,6,fe4b223a-b252-4d74-ab3a-338db3a3aa8c,dialogue-read,Practice the Conversation,2,beginner,true,false,false,0,false,true
+Grade 9,1,40d2687b-5d7c-4d98-b831-70ceb776f578,1.6,6,b6f9cbf7-714d-481c-9691-1d3a300e3d60,gap-fill,Grammar: Past Simple Verbs,3,intermediate,false,false,false,0,false,false
+Grade 9,1,40d2687b-5d7c-4d98-b831-70ceb776f578,1.6,6,1ffe0f8d-0243-4af9-a439-23c5f692e2ee,word-order,Making Questions: Past Simple,4,intermediate,false,false,false,0,false,false
+Grade 9,1,40d2687b-5d7c-4d98-b831-70ceb776f578,1.6,6,411d3a05-3876-46b5-8e71-8d390ed7a577,pronunciation-practice,Pronouncing Past Tense Verbs,5,intermediate,false,false,false,0,false,false
+Grade 9,1,40d2687b-5d7c-4d98-b831-70ceb776f578,1.6,6,d2d1a9b2-7535-4c1e-bfc9-8530e7910995,category-sort,Who Did What?,6,beginner,false,false,false,0,false,false
+Grade 8,1,6faf37a7-df97-437c-a5f2-fcb5e4c47b5e,1.6,6,8c9c6ea5-490f-4f06-a935-7f977a8bb33d,flashcard,After-School Activities,0,beginner,false,false,false,0,false,false
+Grade 8,1,6faf37a7-df97-437c-a5f2-fcb5e4c47b5e,1.6,6,5ad9f4a6-bf6a-4ed8-b852-23459d0051ad,dialogue-read,Tom Interviews Bill,1,beginner,true,false,false,0,false,true
+Grade 8,1,6faf37a7-df97-437c-a5f2-fcb5e4c47b5e,1.6,6,742a5e66-eed1-4a8b-926c-fdc95fd1483d,match-pairs,Asking Personal Questions,3,beginner,true,false,false,0,false,false
+Grade 8,1,6faf37a7-df97-437c-a5f2-fcb5e4c47b5e,1.6,6,8387de19-0faf-40d6-ac8e-6f20867a2fe1,listening-comprehension,Listen and Understand,4,intermediate,true,true,true,3,false,false
+Grade 8,1,6faf37a7-df97-437c-a5f2-fcb5e4c47b5e,1.6,6,651a9e3b-db5a-43d5-9b97-a61cd1fa0a2c,word-order,Build the Questions,5,intermediate,false,false,false,0,false,false
+Grade 8,1,6faf37a7-df97-437c-a5f2-fcb5e4c47b5e,1.6,6,f633af67-eec4-460a-b207-045687c4351c,gap-fill,Short Answers,6,intermediate,true,false,false,0,false,false
+Grade 8,1,6faf37a7-df97-437c-a5f2-fcb5e4c47b5e,1.6,6,55d8858a-909c-45d1-bf05-a94a710b669c,mcq,Reading Check,7,beginner,true,false,false,3,false,false
+Grade 8,1,6faf37a7-df97-437c-a5f2-fcb5e4c47b5e,1.6,6,9d30849e-c566-4315-8b86-5003a02a9bf2,conversation-sim,Your Turn to Interview,8,advanced,true,false,false,0,false,false
+Grade 11,1,8740b524-9dde-4a45-a8ae-5a102f74b0d2,Health Vocabulary,6,acedc7d9-6871-40ba-b8af-fa153a2f5d6f,gap-fill,Health Sayings,0,intermediate,false,false,false,0,false,false
+Grade 11,1,8740b524-9dde-4a45-a8ae-5a102f74b0d2,Health Vocabulary,6,0107a557-5983-4f25-ba5d-98fb040aff40,gap-fill,Doctor's Advice,1,intermediate,false,false,false,0,false,false
+Grade 10,1,6cbe3b37-326c-4ee4-9d04-58d7f722b231,1.6,6,8bb437a5-3caa-4d41-9f2c-1fffc8851060,flashcard,Jobs Vocabulary,0,beginner,false,false,false,0,false,false
+Grade 10,1,6cbe3b37-326c-4ee4-9d04-58d7f722b231,1.6,6,ce472c74-da00-4f90-9af4-3702e45ce1bc,mcq,Guess the Job,1,intermediate,false,false,false,5,false,false
+Grade 10,1,6cbe3b37-326c-4ee4-9d04-58d7f722b231,1.6,6,6d5009e3-6bd9-46e9-b23d-bf11e82f6080,match-pairs,Jobs and Workplaces,2,beginner,false,false,false,0,false,false
+Grade 10,1,6cbe3b37-326c-4ee4-9d04-58d7f722b231,1.6,6,ddeac6fd-198d-4b32-b3ee-f9558423f0d4,word-order,Asking Yes/No Questions,3,intermediate,false,false,false,0,false,false
+Grade 10,1,6cbe3b37-326c-4ee4-9d04-58d7f722b231,1.6,6,5268ff43-4b93-42e2-bb41-e3c2a3d84b74,listening-comprehension,Listen to 'What's My Job?',4,intermediate,false,true,true,4,false,false
+Grade 10,1,6cbe3b37-326c-4ee4-9d04-58d7f722b231,1.6,6,47a1744d-eac5-45f1-b8c9-ad8cdd70ee6a,category-sort,Inside or Outside Jobs?,5,beginner,false,false,false,0,false,false
+Grade 10,1,6cbe3b37-326c-4ee4-9d04-58d7f722b231,1.6,6,e4dcf4ae-ca2f-4b48-8021-aad14cd52f1a,conversation-sim,Play 'What's My Job?',6,advanced,false,false,false,0,false,false
+Grade 7,1,5cee31a7-c8e0-4139-837f-0ab225d2c30c,1.6,6,3a9a6ad1-1063-46a2-8d6e-f6bda7a521af,flashcard,Classroom Objects Vocabulary,0,beginner,false,false,false,0,false,false
+Grade 7,1,5cee31a7-c8e0-4139-837f-0ab225d2c30c,1.6,6,6bd3d0a8-25d2-4d3b-b9e2-f7e1d4a7fd2f,listening-comprehension,Listen for the Number,2,beginner,true,true,true,3,false,false
+Grade 7,1,5cee31a7-c8e0-4139-837f-0ab225d2c30c,1.6,6,37966109-ea5c-42c4-a9c6-8bd632209856,match-pairs,Match the Letters,3,beginner,true,false,false,0,false,false
+Grade 7,1,5cee31a7-c8e0-4139-837f-0ab225d2c30c,1.6,6,0c075f23-d1b6-44ad-afd1-66649d8d89c7,word-order,Make Sentences: My Things,4,beginner,true,false,false,0,false,false
+Grade 7,1,5cee31a7-c8e0-4139-837f-0ab225d2c30c,1.6,6,6450cd58-ce2a-4af9-8f7c-56a734cdda36,pronunciation-practice,"New Letters: h, r, j, y",5,beginner,true,false,false,0,false,false
+Grade 7,1,5cee31a7-c8e0-4139-837f-0ab225d2c30c,1.6,6,5b58f9ae-f801-4e90-bc76-50a4457c9796,gap-fill,What is this?,6,beginner,true,false,false,0,false,false
+Grade 7,1,5cee31a7-c8e0-4139-837f-0ab225d2c30c,1.6,6,5ce72309-226c-4f2b-9bf0-8ff5077cd199,picture-description,My School Bag,7,intermediate,true,false,false,0,false,false
+Grade 12,1,2b67bbb1-ef2f-42b8-b3ea-157b4b573f5f,1.7,7,e51bdd1f-065e-4f04-9431-acfcf69bacd6,flashcard,Key Vocabulary: Landscapes and Locations,0,intermediate,false,false,false,0,false,false
+Grade 12,1,2b67bbb1-ef2f-42b8-b3ea-157b4b573f5f,1.7,7,2c347b98-1f87-4c5b-be09-d5f1b68e801e,listening-comprehension,Listening for Gist,1,intermediate,false,true,true,5,false,false
+Grade 12,1,2b67bbb1-ef2f-42b8-b3ea-157b4b573f5f,1.7,7,6bf271d7-cc4a-4529-85c3-a979cbf96a99,mcq,Listening for Detail: On the Map,2,advanced,false,false,false,3,false,false
+Grade 12,1,2b67bbb1-ef2f-42b8-b3ea-157b4b573f5f,1.7,7,5a159afd-f97d-4691-8354-83b12bda6e63,gap-fill,A Walk in the Countryside,3,intermediate,false,false,false,0,false,false
+Grade 12,1,2b67bbb1-ef2f-42b8-b3ea-157b4b573f5f,1.7,7,14cef824-adf0-40c9-92a6-7aeb98e35e7b,gap-fill,Describing Landscapes,4,beginner,false,false,false,0,false,false
+Grade 12,1,2b67bbb1-ef2f-42b8-b3ea-157b4b573f5f,1.7,7,d53e8618-066a-4bfa-8ced-cde54c8b8661,conversation-sim,Call for Help!,5,advanced,false,false,false,0,false,false
+Grade 12,1,2b67bbb1-ef2f-42b8-b3ea-157b4b573f5f,1.7,7,9f6969de-3d51-4e0f-b857-052b3b4e1dc1,picture-description,Describe the Location,6,advanced,true,false,false,0,false,false
+Grade 12,1,2b67bbb1-ef2f-42b8-b3ea-157b4b573f5f,1.7,7,8db66f69-467f-4285-9143-aa59b3175117,pronunciation-practice,Pronunciation Practice,7,intermediate,false,false,false,0,false,false
+Grade 8,1,b728430b-65f7-4acf-9cbb-1163ee1fe9f8,1.7,7,59f90519-ece5-496c-bae5-88f3af3f780d,flashcard,After-School Activities Vocabulary,0,beginner,false,false,false,0,false,false
+Grade 8,1,b728430b-65f7-4acf-9cbb-1163ee1fe9f8,1.7,7,4f11cfdf-3209-4dc0-8b76-90bbeec07d73,reading-passage,Aisha's After-School Activities,1,intermediate,true,false,false,3,true,false
+Grade 8,1,b728430b-65f7-4acf-9cbb-1163ee1fe9f8,1.7,7,5ea7e0e8-575a-43ca-bed8-69be228d2f72,listening-comprehension,Bill's Weekly Routine,2,intermediate,true,true,true,3,false,false
+Grade 8,1,b728430b-65f7-4acf-9cbb-1163ee1fe9f8,1.7,7,c2de4d7f-f5d6-4822-84b6-38f7ca03670c,word-order,Making Questions,3,intermediate,true,false,false,0,false,false
+Grade 8,1,b728430b-65f7-4acf-9cbb-1163ee1fe9f8,1.7,7,d1f29815-77d8-4373-98d9-5a8fbdbdd23e,gap-fill,My Friend's Week,4,intermediate,true,false,false,0,false,false
+Grade 8,1,b728430b-65f7-4acf-9cbb-1163ee1fe9f8,1.7,7,54c2b704-ce51-412e-826b-fad82450e7ff,transform-sentence,Talk About Yourself,5,intermediate,true,false,false,0,false,false
+Grade 8,1,b728430b-65f7-4acf-9cbb-1163ee1fe9f8,1.7,7,c572afae-ba1c-4ffc-b117-b191d5a83bd0,pronunciation-practice,Pronouncing Verbs with -s,6,intermediate,true,false,false,0,false,false
+Grade 9,1,ba59ac86-e312-479f-ac02-8783f789e2f5,1.7,7,c3aabf5a-45ce-44d6-809d-bccd456d67d7,flashcard,Past Tense Verbs,0,beginner,false,false,false,0,false,false
+Grade 9,1,ba59ac86-e312-479f-ac02-8783f789e2f5,1.7,7,50195a4e-26c3-418b-be2f-7b31071c1fdd,gap-fill,Asma and Fuad's Friday,1,intermediate,false,false,false,0,false,false
+Grade 9,1,ba59ac86-e312-479f-ac02-8783f789e2f5,1.7,7,52dc393f-5b91-45d8-807c-4c5c33d811c5,match-pairs,Match the Verb Forms,2,beginner,false,false,false,0,false,false
+Grade 9,1,ba59ac86-e312-479f-ac02-8783f789e2f5,1.7,7,4ab6863f-6f8c-43c6-8f89-ac65073a952d,reading-passage,A Helpful Family,3,intermediate,false,false,false,3,true,false
+Grade 9,1,ba59ac86-e312-479f-ac02-8783f789e2f5,1.7,7,4a9e7326-5856-4715-b1a7-f35a7e0a6321,pronunciation-practice,Past Tense Pronunciation,4,intermediate,false,false,false,0,false,false
+Grade 9,1,ba59ac86-e312-479f-ac02-8783f789e2f5,1.7,7,73d392c9-ecdd-4155-af9d-08fc36c279b2,dictation,Listen and Type,5,intermediate,false,false,false,0,false,false
+Grade 9,1,ba59ac86-e312-479f-ac02-8783f789e2f5,1.7,7,d74af54e-4971-4f11-ad28-08a9b8acca1a,transform-sentence,From Present to Past,6,intermediate,false,false,false,0,false,false
+Grade 9,1,ba59ac86-e312-479f-ac02-8783f789e2f5,1.7,7,b02b3199-0014-4554-a4ac-b634c079f173,picture-description,Write About Your Holidays,7,advanced,true,false,false,0,false,false
+Grade 11,1,f54e8ef8-6584-4fbf-988d-a72ea7ade0e9,Barry Jones Story,7,56d466c4-3707-4a20-a43d-66405a120c25,mcq,Story Comprehension,1,intermediate,false,false,false,4,false,false
+Grade 11,1,f54e8ef8-6584-4fbf-988d-a72ea7ade0e9,Barry Jones Story,7,d19ab1b4-e461-421a-b238-f27596781c32,gap-fill,Complete the Summary,2,intermediate,false,false,false,0,false,false
+Grade 10,1,9f861009-9d7c-4f66-91ee-36ab712ea9e4,1.7,7,31eefec0-9b23-49e0-82e7-55fe15c801d8,listening-comprehension,What's My Job?,0,beginner,false,true,true,1,false,false
+Grade 10,1,9f861009-9d7c-4f66-91ee-36ab712ea9e4,1.7,7,31d1a7b9-b22a-4ca0-a555-0d86280a7b49,true-false,Memory Test: The Street Scene,1,intermediate,false,false,false,0,false,false
+Grade 10,1,9f861009-9d7c-4f66-91ee-36ab712ea9e4,1.7,7,b65da178-ebde-484f-8078-bc9f21b11d3a,gap-fill,Revising the Past Continuous,2,intermediate,false,false,false,0,false,false
+Grade 10,1,9f861009-9d7c-4f66-91ee-36ab712ea9e4,1.7,7,09ee8b41-604e-4401-bed7-186f9d7c8f91,transform-sentence,Correct the Sentences,3,intermediate,false,false,false,0,false,false
+Grade 10,1,9f861009-9d7c-4f66-91ee-36ab712ea9e4,1.7,7,28196527-0162-44c6-b7f8-ca411ec2a163,word-order,Asking Questions,4,intermediate,false,false,false,0,false,false
+Grade 10,1,9f861009-9d7c-4f66-91ee-36ab712ea9e4,1.7,7,03d516cb-8f5a-4802-a185-c864965f74ae,pronunciation-practice,Pronunciation: Action Verbs,5,beginner,false,false,false,0,false,false
+Grade 10,1,9f861009-9d7c-4f66-91ee-36ab712ea9e4,1.7,7,3150837f-76ca-45f2-904d-575f529c5ef7,dictation,Listen and Write,6,advanced,false,false,false,0,false,false
+Grade 8,1,5348a6b0-0509-4853-abfa-0bcc2593fde0,1.8,8,006d4a04-a306-46f2-911f-cffe50d1b2e6,flashcard,Everyday Activities,0,beginner,false,false,false,0,false,false
+Grade 8,1,5348a6b0-0509-4853-abfa-0bcc2593fde0,1.8,8,2db6e170-7838-430f-a0c5-1e7c675a857c,category-sort,Spelling '-ing' Verbs,1,intermediate,true,false,false,0,false,false
+Grade 8,1,5348a6b0-0509-4853-abfa-0bcc2593fde0,1.8,8,e3e4773b-cd2e-4e41-b5bf-599241811245,listening-comprehension,A Family at Home,2,intermediate,true,true,true,3,false,false
+Grade 8,1,5348a6b0-0509-4853-abfa-0bcc2593fde0,1.8,8,35c0b48c-1d36-4ef9-be2e-9dec57d54a54,word-order,What Are They Doing?,3,intermediate,true,false,false,0,false,false
+Grade 8,1,5348a6b0-0509-4853-abfa-0bcc2593fde0,1.8,8,ef42d963-105c-47c7-83c1-dd526a13dcf9,gap-fill,"Likes and Dislikes with 'and', 'or', 'but'",4,intermediate,true,false,false,0,false,false
+Grade 8,1,5348a6b0-0509-4853-abfa-0bcc2593fde0,1.8,8,aa9389ec-05a4-4586-b00e-cb50bd634046,pronunciation-practice,The '-ing' Sound,5,beginner,true,false,false,0,false,false
+Grade 8,1,5348a6b0-0509-4853-abfa-0bcc2593fde0,1.8,8,7b721644-e7c3-4241-b79b-cd2c34b5b552,transform-sentence,Combine Your Ideas,6,advanced,true,false,false,0,false,false
+Grade 10,1,fffb9e34-89f5-4732-8382-1e24671dcb83,1.8,8,771e8bdc-8b7b-4e30-8060-20079b6f9950,flashcard,Key Words: Punctuation,0,beginner,false,false,false,0,false,false
+Grade 10,1,fffb9e34-89f5-4732-8382-1e24671dcb83,1.8,8,beda1c9c-ade2-42e2-9442-c888a8dac266,mcq,Punctuation Rules,1,beginner,false,false,false,3,false,false
+Grade 10,1,fffb9e34-89f5-4732-8382-1e24671dcb83,1.8,8,575d9e8e-f606-4d54-8eaf-86a64781b302,transform-sentence,Fix the Punctuation,2,intermediate,false,false,false,0,false,false
+Grade 10,1,fffb9e34-89f5-4732-8382-1e24671dcb83,1.8,8,1d318dfa-1913-4314-b210-f2252588d850,gap-fill,Giving Reasons,3,intermediate,false,false,false,0,false,false
+Grade 10,1,fffb9e34-89f5-4732-8382-1e24671dcb83,1.8,8,768dfe32-cc36-4b20-b553-1171fe0ccd07,word-order,What Happened? (Maybe...),4,intermediate,false,false,false,0,false,false
+Grade 10,1,fffb9e34-89f5-4732-8382-1e24671dcb83,1.8,8,7ea98938-bbad-420c-9dd5-f2208f33db91,category-sort,Statement or Question?,5,beginner,false,false,false,0,false,false
+Grade 10,1,fffb9e34-89f5-4732-8382-1e24671dcb83,1.8,8,0a16cec7-1bb6-4d9d-8ff4-a7c73eaa0648,pronunciation-practice,Pronunciation Focus,6,beginner,false,false,false,0,false,false
+Grade 10,1,fffb9e34-89f5-4732-8382-1e24671dcb83,1.8,8,8ad5d33b-9410-43eb-bee8-5a8e40f01528,dictation,Listen and Write,7,intermediate,false,false,false,0,false,false
+Grade 12,1,eb50f804-811e-4337-8c9e-71d05d057288,1.8,8,fdc9a0fc-9244-4e2a-8b5d-9ad34d03044a,flashcard,Key Vocabulary: A Mountain Drive,0,intermediate,false,false,false,0,false,false
+Grade 12,1,eb50f804-811e-4337-8c9e-71d05d057288,1.8,8,414911d1-20b6-4870-9194-2c8e36075ddd,match-pairs,Vocabulary Check,1,intermediate,false,false,false,0,false,false
+Grade 12,1,eb50f804-811e-4337-8c9e-71d05d057288,1.8,8,6e05ba7c-3d30-4a6d-ab4d-273069bc4071,reading-passage,A Drive in Wales,2,intermediate,false,false,false,6,true,false
+Grade 12,1,eb50f804-811e-4337-8c9e-71d05d057288,1.8,8,58be9e92-e24e-4179-9c3b-3c2b0b67a406,gap-fill,Language Focus: Comparatives,3,intermediate,false,false,false,0,false,false
+Grade 12,1,eb50f804-811e-4337-8c9e-71d05d057288,1.8,8,ee83531d-210e-4e66-9928-8e750e68bbf3,pronunciation-practice,Pronunciation Practice,4,intermediate,false,false,false,0,false,false
+Grade 12,1,eb50f804-811e-4337-8c9e-71d05d057288,1.8,8,0a238dca-a7d8-41e9-a0ce-bb7de1ce43a9,picture-description,Describe the Scene,5,advanced,true,false,false,0,false,false
+Grade 12,1,eb50f804-811e-4337-8c9e-71d05d057288,1.8,8,c1f676fe-f8e9-484e-a8b7-8b77402248fa,true-false,Quick Comprehension Check,6,intermediate,false,false,false,0,false,false
+Grade 11,1,eb5218fe-5bb3-41a9-a213-bd432e6dbf5b,Being Polite,8,840f3d51-9abe-4f5c-a9ee-3e1f54898d02,dialogue-read,Is Khalid Polite Enough?,0,intermediate,false,false,false,0,false,true
+Grade 11,1,eb5218fe-5bb3-41a9-a213-bd432e6dbf5b,Being Polite,8,36dbb58e-409c-49c2-8934-d85c1491dd6c,dialogue-read,Khalid Tries Again,1,intermediate,false,false,false,0,false,true
+Grade 11,1,eb5218fe-5bb3-41a9-a213-bd432e6dbf5b,Being Polite,8,c51cbcbd-63b3-41fe-90d4-3688d31327e2,transform-sentence,Make It Polite,2,intermediate,false,false,false,0,false,false
+Grade 9,1,761c86d5-3bd4-4dea-8653-0f7597c6959e,1.8,8,c2760a5e-9895-4db2-9393-29297efdb904,listening-comprehension,Listening for Locations,0,intermediate,true,true,true,1,false,false
+Grade 9,1,761c86d5-3bd4-4dea-8653-0f7597c6959e,1.8,8,b55f6ae4-c9b1-4a7d-abb7-b6945a4724ed,flashcard,Vocabulary: Places and Prepositions,1,beginner,false,false,false,0,false,false
+Grade 9,1,761c86d5-3bd4-4dea-8653-0f7597c6959e,1.8,8,cfc974a9-ca61-4fde-ad83-abafcb5b1d60,true-false,Reading the Map,2,beginner,true,false,false,0,false,false
+Grade 9,1,761c86d5-3bd4-4dea-8653-0f7597c6959e,1.8,8,c3ba9c21-8f5b-4a55-af39-156aaacc7fd2,gap-fill,Where is it? Using Prepositions,3,intermediate,true,false,false,0,false,false
+Grade 9,1,761c86d5-3bd4-4dea-8653-0f7597c6959e,1.8,8,c73e2fe4-00fb-45e4-8e15-86563d962119,reading-passage,Mrs. White's Day Out,4,intermediate,true,false,false,6,true,false
+Grade 9,1,761c86d5-3bd4-4dea-8653-0f7597c6959e,1.8,8,141bb639-c218-416b-8c3e-0463b00853ad,match-pairs,Grammar: Pronoun Reference,5,intermediate,false,false,false,0,false,false
+Grade 9,1,761c86d5-3bd4-4dea-8653-0f7597c6959e,1.8,8,0119a769-e986-47fa-b375-43652dd77ceb,picture-description,Speaking: Describe the Town,6,advanced,true,false,false,0,false,false
+Grade 9,1,761c86d5-3bd4-4dea-8653-0f7597c6959e,1.8,8,5c655ff5-5062-40ea-8b6e-7225f02dfd2b,word-order,Writing: Where Do You Live?,7,intermediate,false,false,false,0,false,false
+Grade 7,1,9268f00b-4519-4a03-ac99-65536d00f775,1.8,8,6291bf94-e49a-476d-ae25-3dab8347b684,dialogue-read,Is This Your Bag?,0,beginner,true,false,false,0,false,true
+Grade 7,1,9268f00b-4519-4a03-ac99-65536d00f775,1.8,8,601a24eb-57b7-4916-851b-cb9899f4f888,flashcard,New Words: Objects,1,beginner,false,false,false,0,false,false
+Grade 7,1,9268f00b-4519-4a03-ac99-65536d00f775,1.8,8,012c96a6-989b-4059-8dad-8e07284e0538,listening-comprehension,Listen and Answer,2,intermediate,true,true,true,3,false,false
+Grade 7,1,9268f00b-4519-4a03-ac99-65536d00f775,1.8,8,1eba7f20-6a5e-4548-9687-b80e12393f5e,gap-fill,My or Your?,3,beginner,true,false,false,0,false,false
+Grade 7,1,9268f00b-4519-4a03-ac99-65536d00f775,1.8,8,561bf933-a635-4c4a-b97f-34f938b7a616,word-order,Make Questions,4,beginner,false,false,false,0,false,false
+Grade 7,1,9268f00b-4519-4a03-ac99-65536d00f775,1.8,8,709ffc59-91d0-4710-bace-974d7d581a4f,pronunciation-practice,Say the Words,5,beginner,true,false,false,0,false,false
+Grade 7,1,9268f00b-4519-4a03-ac99-65536d00f775,1.8,8,d101ebaf-0543-42ea-a2d9-23f2488cdd78,spelling-bee,"Letter Practice: t, k, v, w",6,beginner,true,false,false,0,false,false
+Grade 11,1,dc40bae7-b3fb-48ec-9921-ae39854db213,Conditional Sentences,9,52f0c1bc-80e4-4748-9872-97e5549b8cef,reading-passage,Conditional Sentences,0,intermediate,false,false,false,0,true,false
+Grade 11,1,dc40bae7-b3fb-48ec-9921-ae39854db213,Conditional Sentences,9,0d0013aa-9949-4ae6-80cb-1c8d529420fb,gap-fill,Type 1 Conditionals,1,intermediate,false,false,false,0,false,false
+Grade 11,1,dc40bae7-b3fb-48ec-9921-ae39854db213,Conditional Sentences,9,2190201b-f75c-451f-8baa-12734ad3bef6,gap-fill,Type 2 Conditionals,2,intermediate,false,false,false,0,false,false
+Grade 9,1,0dc1288e-14fe-4ce2-aa28-21b4b484b203,1.9,9,d7d1fc6e-3520-4eda-a6f2-a881b170a817,flashcard,Key Vocabulary: On Holiday,0,beginner,false,false,false,0,false,false
+Grade 9,1,0dc1288e-14fe-4ce2-aa28-21b4b484b203,1.9,9,f67f58ff-4309-43f1-a861-4e3d220c0835,reading-passage,A Postcard from London,1,intermediate,false,false,false,3,true,false
+Grade 9,1,0dc1288e-14fe-4ce2-aa28-21b4b484b203,1.9,9,901143b3-185c-4d50-b850-b36a1c25762e,true-false,True or False?,2,intermediate,false,false,false,0,false,false
+Grade 9,1,0dc1288e-14fe-4ce2-aa28-21b4b484b203,1.9,9,385fab3f-b960-44e1-a643-714474b18b2d,word-order,What Happened Next?,3,intermediate,false,false,false,0,false,false
+Grade 9,1,0dc1288e-14fe-4ce2-aa28-21b4b484b203,1.9,9,7285a615-6a12-4685-9e22-11a7904f5f2a,gap-fill,Joining Sentences,4,intermediate,false,false,false,0,false,false
+Grade 9,1,0dc1288e-14fe-4ce2-aa28-21b4b484b203,1.9,9,96911df4-db1a-442c-a185-e9fda3ef0b54,mcq,Grammar: Using 'some' and 'any',5,intermediate,false,false,false,4,false,false
+Grade 9,1,0dc1288e-14fe-4ce2-aa28-21b4b484b203,1.9,9,e8b04489-1741-4968-8127-ffc315eabf8f,pronunciation-practice,Pronunciation Practice,6,beginner,false,false,false,0,false,false
+Grade 9,1,0dc1288e-14fe-4ce2-aa28-21b4b484b203,1.9,9,0c90037c-1219-4d2e-84b0-20189818f0a7,picture-description,A Day in the Park,7,advanced,true,false,false,0,false,false
+Grade 12,1,ac4db7f0-1217-4db5-ae2e-ea8088004f4a,1.9,9,7ce9b7e9-ea77-4a3d-ae51-eba5a6149d38,flashcard,Unit 1 Vocabulary Review,0,intermediate,false,false,false,0,false,false
+Grade 12,1,ac4db7f0-1217-4db5-ae2e-ea8088004f4a,1.9,9,5713e947-549c-47f4-8a66-ec81cce958de,mcq,Comprehension: A Drive in the Countryside,1,intermediate,false,false,false,4,false,false
+Grade 12,1,ac4db7f0-1217-4db5-ae2e-ea8088004f4a,1.9,9,cd16e4a9-bc12-440e-8d7e-e90830fe7fe3,gap-fill,Complete the Descriptions,2,beginner,false,false,false,0,false,false
+Grade 12,1,ac4db7f0-1217-4db5-ae2e-ea8088004f4a,1.9,9,9ae71e49-7a8d-43e8-81f8-ada988c1aa12,word-order,Reorder the Paragraph,3,advanced,false,false,false,0,false,false
+Grade 12,1,ac4db7f0-1217-4db5-ae2e-ea8088004f4a,1.9,9,6271e29a-746b-4eb8-b149-de0d4579a5ad,pronunciation-practice,Pronounce with Confidence,4,intermediate,false,false,false,0,false,false
+Grade 12,1,ac4db7f0-1217-4db5-ae2e-ea8088004f4a,1.9,9,93cd800b-a67d-4fe8-89d2-4d5720b8f5b6,dictation,Listen and Write,5,intermediate,false,false,false,0,false,false
+Grade 7,1,74c64e4e-17fb-46ba-8a8a-062c9876aa29,1.9,9,6d12680d-c75a-4a0d-b007-5f698ebea0f3,flashcard,New Words: Transport,0,beginner,false,false,false,0,false,false
+Grade 7,1,74c64e4e-17fb-46ba-8a8a-062c9876aa29,1.9,9,2e5eece1-6731-4ca8-b689-3932ede0888d,listening-comprehension,Listen and Find,2,intermediate,true,true,true,3,false,false
+Grade 7,1,74c64e4e-17fb-46ba-8a8a-062c9876aa29,1.9,9,8ec539ce-b81d-48f3-ac8e-93b9fd47c7ae,word-order,Make a Question,3,beginner,true,false,false,0,false,false
+Grade 7,1,74c64e4e-17fb-46ba-8a8a-062c9876aa29,1.9,9,0aa844dc-0997-4de8-a89f-c14610d623f8,pronunciation-practice,Say It Right,4,beginner,true,false,false,0,false,false
+Grade 7,1,74c64e4e-17fb-46ba-8a8a-062c9876aa29,1.9,9,5ebc2dde-369b-4782-931e-dd6d5f6b3207,word-order,Alphabet Order,5,intermediate,true,false,false,0,false,false
+Grade 7,1,74c64e4e-17fb-46ba-8a8a-062c9876aa29,1.9,9,2d4f0684-33e3-4fad-976f-8055bb54b268,mcq,What's This?,6,beginner,true,false,false,3,false,false
+Grade 7,1,74c64e4e-17fb-46ba-8a8a-062c9876aa29,1.9,9,75a5958b-3711-447f-956a-7a2d64acd07d,spelling-bee,Spelling Challenge,7,intermediate,true,false,false,0,false,false
+Grade 10,1,e6618771-bfdd-4062-b492-6d577718a3b9,1.9 - 1.10,9,a0e1931c-4ddd-4421-9e66-897b9736cbc4,match-pairs,Phone Call Phrases,0,beginner,false,false,false,0,false,false
+Grade 10,1,e6618771-bfdd-4062-b492-6d577718a3b9,1.9 - 1.10,9,2ab794ba-f005-4378-9a76-bb58afc98397,listening-comprehension,Listening: Aref's Call to Aziz,1,intermediate,false,true,true,4,false,false
+Grade 10,1,e6618771-bfdd-4062-b492-6d577718a3b9,1.9 - 1.10,9,f3511c84-990c-43c7-b3ea-5c9e05c8a64c,dialogue-read,Reading: Abla and Muna's Chat,2,intermediate,false,false,false,0,false,true
+Grade 10,1,e6618771-bfdd-4062-b492-6d577718a3b9,1.9 - 1.10,9,ac918fe0-89e3-4952-bc71-7a695ce23e8a,gap-fill,Grammar: First Conditional,3,intermediate,false,false,false,0,false,false
+Grade 10,1,e6618771-bfdd-4062-b492-6d577718a3b9,1.9 - 1.10,9,a18ef46c-1aab-483d-8e16-316f7d91d2f2,word-order,Write a Message for Shareefa,4,intermediate,false,false,false,0,false,false
+Grade 10,1,e6618771-bfdd-4062-b492-6d577718a3b9,1.9 - 1.10,9,d2205f7d-bd17-494c-bc91-7c14d7ba767c,mcq,Grammar: Present Continuous & Obligation,5,beginner,false,false,false,3,false,false
+Grade 10,1,e6618771-bfdd-4062-b492-6d577718a3b9,1.9 - 1.10,9,4a081dcd-6f19-4402-befb-7515c4d2af59,mcq,Punctuation Check,6,advanced,false,false,false,3,false,false
+Grade 10,1,e6618771-bfdd-4062-b492-6d577718a3b9,1.9 - 1.10,9,306da2bb-a648-41e2-bf96-c49919327c1e,pronunciation-practice,Sounding Clear,7,beginner,false,false,false,0,false,false
+Grade 8,1,664bb0e6-d523-48c4-a37a-809bea55b1f8,1.9,9,298d46f6-265e-4799-ae2e-9a08e63a91a6,flashcard,Places in Town,0,beginner,false,false,false,0,false,false
+Grade 8,1,664bb0e6-d523-48c4-a37a-809bea55b1f8,1.9,9,8aa445d7-4939-4d23-8db1-4275f4a44f78,listening-comprehension,Song: Where's Hassan?,2,intermediate,true,true,true,3,false,false
+Grade 8,1,664bb0e6-d523-48c4-a37a-809bea55b1f8,1.9,9,dd7a02d7-596f-4774-b5d0-ddfbcf95f4d8,word-order,What Are They Doing?,3,intermediate,true,false,false,0,false,false
+Grade 8,1,664bb0e6-d523-48c4-a37a-809bea55b1f8,1.9,9,43039904-a1b3-4d85-a5bc-7f2c0600fcfd,gap-fill,Where Are They?,4,intermediate,true,false,false,0,false,false
+Grade 8,1,664bb0e6-d523-48c4-a37a-809bea55b1f8,1.9,9,b93d594b-28af-4837-bd33-3c9279cab9ee,picture-description,A Busy Street,5,advanced,true,false,false,0,false,false
+Grade 8,1,664bb0e6-d523-48c4-a37a-809bea55b1f8,1.9,9,fd8930e5-138c-49f8-95e9-8287a22dbe4f,spelling-bee,Spell the Places,6,beginner,true,false,false,0,false,false
+Grade 8,1,664bb0e6-d523-48c4-a37a-809bea55b1f8,1.9,9,4133a595-0694-424e-a12e-8f08f9634807,conversation-sim,Making Plans,7,intermediate,true,false,false,0,false,false
+Grade 10,1,9907d1af-5d8f-430c-993a-53abf1600353,1.10,10,397d0be9-40fa-4de4-a9a0-4e49d447107b,flashcard,Vocabulary: Phrasal Verb,0,beginner,false,false,false,0,false,false
+Grade 10,1,9907d1af-5d8f-430c-993a-53abf1600353,1.10,10,5f7c8bf5-883b-4e3e-923a-e885db6f2b46,gap-fill,Grammar: Present Continuous,1,intermediate,false,false,false,0,false,false
+Grade 10,1,9907d1af-5d8f-430c-993a-53abf1600353,1.10,10,2a16d7b8-654b-4fb3-be97-5d3e60f8f8a7,match-pairs,Grammar: First Conditional,2,intermediate,false,false,false,0,false,false
+Grade 10,1,9907d1af-5d8f-430c-993a-53abf1600353,1.10,10,cbfd2113-6b74-4d8c-bb41-6ede8bcadcf7,listening-comprehension,Listen for a Message,3,intermediate,false,true,true,4,false,false
+Grade 10,1,9907d1af-5d8f-430c-993a-53abf1600353,1.10,10,4421257b-4c7c-4d0f-b7cd-993e0756d26d,gap-fill,Write a Message,4,intermediate,false,false,false,0,false,false
+Grade 10,1,9907d1af-5d8f-430c-993a-53abf1600353,1.10,10,898f1535-6619-4b1a-a221-5a494d5b090f,transform-sentence,Punctuation Practice,5,advanced,false,false,false,0,false,false
+Grade 10,1,9907d1af-5d8f-430c-993a-53abf1600353,1.10,10,8c92727b-9fd7-4215-90cc-60e0696d0347,pronunciation-practice,Speaking Practice,6,intermediate,false,false,false,0,false,false
+Grade 11,1,d93fab80-aa47-4fec-a6e0-d3d74c5b8ca7,Unit 1 Review,10,c63fa191-4b70-4270-bb04-049bfb94090d,category-sort,Vocabulary Categories,0,intermediate,false,false,false,0,false,false
+Grade 11,1,d93fab80-aa47-4fec-a6e0-d3d74c5b8ca7,Unit 1 Review,10,1304f20e-42ba-4fa6-8497-4a0b25d5b96e,mcq,Grammar Review,1,intermediate,false,false,false,3,false,false
+Grade 8,1,f66a654a-1b0b-4e60-89dc-c2d1d4f60641,1.10,10,0c24589d-2e11-4af7-b2c5-d40108833e37,flashcard,"Vocabulary: Places, Rooms, and Furniture",0,beginner,false,false,false,0,false,false
+Grade 8,1,f66a654a-1b0b-4e60-89dc-c2d1d4f60641,1.10,10,3ac3f704-9bb2-4bc6-b287-212623f8ba92,category-sort,Sort the Words,1,beginner,true,false,false,0,false,false
+Grade 8,1,f66a654a-1b0b-4e60-89dc-c2d1d4f60641,1.10,10,4454865e-731c-43f5-a206-f5f453f9d90f,listening-comprehension,Listen to the Description,2,intermediate,true,true,true,3,false,false
+Grade 8,1,f66a654a-1b0b-4e60-89dc-c2d1d4f60641,1.10,10,a019c5f8-ff1f-45ed-bd9e-7f83c1a3b621,gap-fill,Complete the Sentences,3,intermediate,true,false,false,0,false,false
+Grade 8,1,f66a654a-1b0b-4e60-89dc-c2d1d4f60641,1.10,10,d65bfaf1-ddf6-4892-83a7-1a6184c527be,word-order,Make Sentences,4,intermediate,true,false,false,0,false,false
+Grade 8,1,f66a654a-1b0b-4e60-89dc-c2d1d4f60641,1.10,10,df4845e9-853f-4654-987d-95b1cea7f2c7,picture-description,Describe the Living Room,5,advanced,true,false,false,0,false,false
+Grade 8,1,f66a654a-1b0b-4e60-89dc-c2d1d4f60641,1.10,10,2bc4871e-67f4-4ffc-b832-0b31c56e9a13,spelling-bee,Spelling Challenge,6,intermediate,true,false,false,0,false,false
+Grade 7,1,f4cdc402-5c69-4275-961c-090a68efc78b,1.10,10,fcb520df-b2fc-499a-9131-5ec9b7648064,flashcard,Classroom and Travel Words,0,beginner,false,false,false,0,false,false
+Grade 7,1,f4cdc402-5c69-4275-961c-090a68efc78b,1.10,10,33492806-4f9a-47aa-bbb8-60c9872ae8c6,dialogue-read,In the Classroom,1,beginner,true,false,false,0,false,true
+Grade 7,1,f4cdc402-5c69-4275-961c-090a68efc78b,1.10,10,a56694a1-5991-4d17-a487-a92d8fdfc525,match-pairs,Capital Letters (A-M),3,beginner,true,false,false,0,false,false
+Grade 7,1,f4cdc402-5c69-4275-961c-090a68efc78b,1.10,10,b9bff163-46d4-4625-8cbf-ecde33e849e1,match-pairs,Capital Letters (N-Z),4,beginner,true,false,false,0,false,false
+Grade 7,1,f4cdc402-5c69-4275-961c-090a68efc78b,1.10,10,d2423929-8473-48d7-8b53-25c69be7deb5,category-sort,Sort the Letter Shapes,5,intermediate,true,false,false,0,false,false
+Grade 7,1,f4cdc402-5c69-4275-961c-090a68efc78b,1.10,10,3d3e2303-391a-4543-9f21-a48c86e8dc9f,pronunciation-practice,Say the Alphabet,6,beginner,true,false,false,0,false,false
+Grade 7,1,f4cdc402-5c69-4275-961c-090a68efc78b,1.10,10,dda88a43-739b-43a9-ac47-5ab9fd7c245c,picture-description,Look and Say,7,intermediate,true,false,false,0,false,false
+Grade 7,1,f4cdc402-5c69-4275-961c-090a68efc78b,1.10,10,be59d87f-d961-4b2a-9514-e76b1a7d084d,gap-fill,Asking Questions,8,beginner,true,false,false,0,false,false
+Grade 7,1,f4cdc402-5c69-4275-961c-090a68efc78b,1.10,10,62c63102-b64f-410e-a674-bd07d05664f4,mcq,Listen and Choose,9,beginner,true,false,false,3,false,false
+Grade 7,1,f4cdc402-5c69-4275-961c-090a68efc78b,1.10,10,3d8b5bae-4948-4c13-93c0-b7d47fe2225d,spelling-bee,Spell the Words,10,beginner,true,false,false,0,false,false
+Grade 9,1,e8a97a24-c018-4f23-9b85-c48cc9aaca36,1.10,10,5ee800f4-a476-46d6-b12d-85c55f286ed4,listening-comprehension,A Phone Call with Sara,0,intermediate,false,false,true,3,false,false
+Grade 9,1,e8a97a24-c018-4f23-9b85-c48cc9aaca36,1.10,10,5f944cce-a24e-4a79-b27b-1b73fadc5c40,flashcard,Key Vocabulary,1,beginner,false,false,false,0,false,false
+Grade 9,1,e8a97a24-c018-4f23-9b85-c48cc9aaca36,1.10,10,a88a34ee-92bf-4002-a88f-e873c752f0ce,gap-fill,Grammar Rule: Present Tenses,2,beginner,false,false,false,0,false,false
+Grade 9,1,e8a97a24-c018-4f23-9b85-c48cc9aaca36,1.10,10,86ac2cab-50c8-4201-b2f6-13d5141cda2d,category-sort,Spelling Rule: Adding '-ing',3,intermediate,false,false,false,0,false,false
+Grade 9,1,e8a97a24-c018-4f23-9b85-c48cc9aaca36,1.10,10,fe8e1e10-56d3-4a87-ba1a-b0efa667edaa,spelling-bee,Spelling Rule: Double the Consonant,4,intermediate,false,false,false,0,false,false
+Grade 9,1,e8a97a24-c018-4f23-9b85-c48cc9aaca36,1.10,10,0c3e9c61-2417-488c-8b36-480de62541c6,mcq,Choose the Correct Tense,5,intermediate,false,false,false,4,false,false
+Grade 9,1,e8a97a24-c018-4f23-9b85-c48cc9aaca36,1.10,10,71e932ac-9b21-473c-80b9-e3a6ead9f306,picture-description,What's Happening in the Park?,6,advanced,true,false,false,0,false,false
+Grade 12,1,f97e0cea-b875-4e24-8f76-df71b01a9c09,1.10,10,7c02b68e-6f94-4314-9e3d-e5f1a2b1c903,category-sort,Adjective Categories,0,intermediate,false,false,false,0,false,false
+Grade 12,1,f97e0cea-b875-4e24-8f76-df71b01a9c09,1.10,10,ad1b7d8b-63a5-44a5-92f3-4388922cad16,word-order,Ordering Adjectives,1,intermediate,false,false,false,0,false,false
+Grade 12,1,f97e0cea-b875-4e24-8f76-df71b01a9c09,1.10,10,d17323a4-a2db-49d4-b9ee-c9b00a5e5e5d,gap-fill,Adding Emphasis,2,intermediate,false,false,false,0,false,false
+Grade 12,1,f97e0cea-b875-4e24-8f76-df71b01a9c09,1.10,10,1ab8f30b-08c5-4df9-8e18-00cea10a430b,transform-sentence,Shifting the Focus,3,advanced,false,false,false,0,false,false
+Grade 12,1,f97e0cea-b875-4e24-8f76-df71b01a9c09,1.10,10,ca396469-8d83-4c12-a8cb-04ce5a57e628,transform-sentence,Joining Sentences with '-ing',4,intermediate,false,false,false,0,false,false
+Grade 12,1,f97e0cea-b875-4e24-8f76-df71b01a9c09,1.10,10,c5a31ffb-01a2-4476-8af2-eb777729ddfb,word-order,Organizing a Description,5,advanced,false,false,false,0,false,false
+Grade 12,1,f97e0cea-b875-4e24-8f76-df71b01a9c09,1.10,10,65cc0184-5aba-4ab5-9351-f76f492f4181,dictation,Listen and Write,6,advanced,false,false,false,0,false,false
+Grade 7,1,bacaff24-0c73-486e-a693-2278a7bafe87,1.11,11,68af50c5-a70c-4836-a5d2-5c20c7fc6bae,flashcard,Alphabet Flashcards: A to G,0,beginner,false,false,false,0,false,false
+Grade 7,1,bacaff24-0c73-486e-a693-2278a7bafe87,1.11,11,5fe450d5-8470-4c34-a4f4-9c48854282db,flashcard,Alphabet Flashcards: H to N,1,beginner,false,true,false,0,false,false
+Grade 7,1,bacaff24-0c73-486e-a693-2278a7bafe87,1.11,11,571d9da0-19f8-488b-926c-4b9c67e12ad3,match-pairs,Match the Letters: A to G,2,beginner,true,false,false,0,false,false
+Grade 7,1,bacaff24-0c73-486e-a693-2278a7bafe87,1.11,11,4c1458e7-11c5-49a7-9b04-106d872f55e4,match-pairs,Match the Letters: H to N,3,beginner,true,false,false,0,false,false
+Grade 7,1,bacaff24-0c73-486e-a693-2278a7bafe87,1.11,11,6103bee4-b3d3-428e-866a-f348e6efa19f,word-order,Alphabetical Order,4,beginner,true,false,false,0,false,false
+Grade 7,1,bacaff24-0c73-486e-a693-2278a7bafe87,1.11,11,f79467a2-8048-4faf-93d6-c54e52520eda,pronunciation-practice,Say the Letters,5,beginner,true,false,false,0,false,false
+Grade 7,1,bacaff24-0c73-486e-a693-2278a7bafe87,1.11,11,0c419514-21a2-4036-b640-683a9cdee557,mcq,What Letter Do You Hear?,6,beginner,true,false,false,4,false,false
+Grade 10,1,c385e612-090b-4276-80fc-4f89166db2e4,1.11,11,7070f423-dc25-4814-a65f-e9809b61ecc6,flashcard,Key Vocabulary: Yousif's Story,0,beginner,false,false,false,0,false,false
+Grade 10,1,c385e612-090b-4276-80fc-4f89166db2e4,1.11,11,a3d0b2f4-334a-4b00-bcc8-ce6b277ba5f7,word-order,Unscramble the Message,1,intermediate,false,false,false,0,false,false
+Grade 10,1,c385e612-090b-4276-80fc-4f89166db2e4,1.11,11,eefffbc0-95df-4eae-8bc3-723eec11eccc,word-order,Build a Story: The Take-away,2,beginner,false,false,false,0,false,false
+Grade 10,1,c385e612-090b-4276-80fc-4f89166db2e4,1.11,11,aecf2871-9422-4623-8711-b6357e130b72,mcq,Story Comprehension,3,intermediate,false,false,false,2,false,false
+Grade 10,1,c385e612-090b-4276-80fc-4f89166db2e4,1.11,11,93fcb3c6-9342-4ea4-84b9-f260221a7549,gap-fill,Improve the Story with Connectives,4,intermediate,false,false,false,0,false,false
+Grade 10,1,c385e612-090b-4276-80fc-4f89166db2e4,1.11,11,28d053e7-048a-4f75-80d0-6d8eedb68921,transform-sentence,Combining Sentences,5,intermediate,false,false,false,0,false,false
+Grade 10,1,c385e612-090b-4276-80fc-4f89166db2e4,1.11,11,91c26c2b-0c90-4d4e-983a-4e25df0d0ff2,pronunciation-practice,Past Tense Pronunciation,6,beginner,false,false,false,0,false,false
+Grade 10,1,c385e612-090b-4276-80fc-4f89166db2e4,1.11,11,e679756c-1b1e-4d33-9a5a-304c1dc958df,dictation,Listen and Write,7,intermediate,false,false,false,0,false,false
+Grade 9,1,970dd598-6884-4b33-928a-cf5540985e65,1.11,11,68ce4053-5552-4ef1-8556-073178c3b929,listening-comprehension,Sorting the Presents,0,intermediate,false,true,true,3,false,false
+Grade 9,1,970dd598-6884-4b33-928a-cf5540985e65,1.11,11,36b048ed-9405-4b40-a921-fc2afc8c1f01,flashcard,Presents Vocabulary,1,beginner,false,false,false,0,false,false
+Grade 9,1,970dd598-6884-4b33-928a-cf5540985e65,1.11,11,c9223bb9-79a5-4193-ad8c-9750d443c218,mcq,Whose Present Is This?,2,beginner,false,false,false,3,false,false
+Grade 9,1,970dd598-6884-4b33-928a-cf5540985e65,1.11,11,373d6185-c3aa-4d0d-91b7-b0beea03eb51,word-order,Make Possessive Sentences,3,intermediate,false,false,false,0,false,false
+Grade 9,1,970dd598-6884-4b33-928a-cf5540985e65,1.11,11,ff4ec90c-a76d-4f96-a9ba-cbc5f34c154b,gap-fill,Possessive Pronouns Practice,4,intermediate,false,false,false,0,false,false
+Grade 9,1,970dd598-6884-4b33-928a-cf5540985e65,1.11,11,5188ca24-5173-40d4-abf1-523a9eb82fbd,pronunciation-practice,Pronouncing Possessives,5,beginner,false,false,false,0,false,false
+Grade 9,1,970dd598-6884-4b33-928a-cf5540985e65,1.11,11,1dd69edf-6f18-47aa-ba67-3ca44871650a,picture-description,Who Owns What?,6,advanced,true,false,false,0,false,false
+Grade 8,1,9624a6f2-8467-4c88-90b2-7cb86d34dc40,1.11,11,8386400d-8ee2-462f-b20a-d82aad37721b,flashcard,In the Living Room,0,beginner,false,false,false,0,false,false
+Grade 8,1,9624a6f2-8467-4c88-90b2-7cb86d34dc40,1.11,11,e02d80bb-76e0-4e9b-abd5-12894c876936,picture-description,Look at the Room,1,beginner,true,false,false,0,false,false
+Grade 8,1,9624a6f2-8467-4c88-90b2-7cb86d34dc40,1.11,11,70f4ef54-9151-4dd5-8b33-589cb76bc77c,gap-fill,There is or There are?,2,intermediate,true,false,false,0,false,false
+Grade 8,1,9624a6f2-8467-4c88-90b2-7cb86d34dc40,1.11,11,a6a4ed2e-b0b7-4195-a6cc-3a4ec3fdc3e3,word-order,Build the Sentences,3,intermediate,true,false,false,0,false,false
+Grade 8,1,9624a6f2-8467-4c88-90b2-7cb86d34dc40,1.11,11,428476cb-3c38-4f5c-9e8c-a78b4259c529,dictation,Listen and Write,4,intermediate,true,false,false,0,false,false
+Grade 8,1,9624a6f2-8467-4c88-90b2-7cb86d34dc40,1.11,11,23708265-a45d-44d2-8154-f6e5e99341c2,pronunciation-practice,Practice Your Pronunciation,5,beginner,true,false,false,0,false,false
+Grade 8,1,9624a6f2-8467-4c88-90b2-7cb86d34dc40,1.11,11,10b54493-234d-4154-9248-4df9cfc7d015,picture-description,Write About the Room,6,advanced,true,false,false,0,false,false
+Grade 8,1,9624a6f2-8467-4c88-90b2-7cb86d34dc40,1.11,11,c30a7081-ec79-418e-a2de-aa7eac73e17c,mcq,Where Is It? Prepositions of Place,7,intermediate,true,false,false,3,false,false
+Grade 12,1,5a879ae1-0828-4397-86dc-7bda752b7cda,1.11,11,ac68a974-eec9-4eb2-91d2-2e0bb4f2c9eb,listening-comprehension,Listen to the Story,0,intermediate,false,false,true,3,false,false
+Grade 12,1,5a879ae1-0828-4397-86dc-7bda752b7cda,1.11,11,571783f1-0b73-4883-9e11-203293082776,flashcard,Vocabulary: A Countryside View,1,intermediate,false,false,false,0,false,false
+Grade 12,1,5a879ae1-0828-4397-86dc-7bda752b7cda,1.11,11,6a78a8fb-69d2-45ab-97ee-04d99ee84d34,match-pairs,What's in Each Paragraph?,2,beginner,false,false,false,0,false,false
+Grade 12,1,5a879ae1-0828-4397-86dc-7bda752b7cda,1.11,11,278b59e7-d4e5-405e-a797-abf472b082c8,mcq,Reading Comprehension,3,intermediate,false,false,false,3,false,false
+Grade 12,1,5a879ae1-0828-4397-86dc-7bda752b7cda,1.11,11,54b3ea8c-d348-4d5e-a96a-1440164faf55,transform-sentence,Grammar: Joining Sentences,4,intermediate,false,false,false,0,false,false
+Grade 12,1,5a879ae1-0828-4397-86dc-7bda752b7cda,1.11,11,a5b09dfa-3b3f-4fc7-b93d-844e121e8256,word-order,Grammar: Changing Information Focus,5,advanced,false,false,false,0,false,false
+Grade 12,1,5a879ae1-0828-4397-86dc-7bda752b7cda,1.11,11,c967a448-fb0f-4f4e-a0d5-302c7b9c1f2b,pronunciation-practice,Pronunciation Practice,6,intermediate,false,false,false,0,false,false
+Grade 12,1,5a879ae1-0828-4397-86dc-7bda752b7cda,1.11,11,5273aa77-5bab-4595-b35e-7fdb9235c4f7,picture-description,Describe the View,7,advanced,true,false,false,0,false,false
+Grade 9,1,b7930346-6ac4-400a-bc78-5a47bdd651a7,1.12,12,cb29288f-b5f5-4da6-beca-935f564f7356,flashcard,Punctuation Vocabulary,0,beginner,false,false,false,0,false,false
+Grade 9,1,b7930346-6ac4-400a-bc78-5a47bdd651a7,1.12,12,5c44bee5-c852-4a03-bcb5-8cad387ab096,reading-passage,The Al Sabri Family's Return,1,beginner,false,false,false,2,true,false
+Grade 9,1,b7930346-6ac4-400a-bc78-5a47bdd651a7,1.12,12,d2da47e6-fcfa-44ec-be69-0c1103c75e88,gap-fill,Future Predictions,2,intermediate,false,false,false,0,false,false
+Grade 9,1,b7930346-6ac4-400a-bc78-5a47bdd651a7,1.12,12,0f5098d0-80d7-4a79-ae0b-82237bd71e4b,transform-sentence,Write the Question,3,intermediate,false,false,false,0,false,false
+Grade 9,1,b7930346-6ac4-400a-bc78-5a47bdd651a7,1.12,12,e2181911-b118-41ba-958c-3d855d6414e9,match-pairs,Match the Punctuation Marks,4,beginner,false,false,false,0,false,false
+Grade 9,1,b7930346-6ac4-400a-bc78-5a47bdd651a7,1.12,12,235d0a67-b164-4064-acdb-2bb4244c3948,transform-sentence,Punctuation Practice,5,intermediate,false,false,false,0,false,false
+Grade 9,1,b7930346-6ac4-400a-bc78-5a47bdd651a7,1.12,12,f3eca610-0e69-481a-bab6-42b15af0a5ec,pronunciation-practice,Pronounce the Punctuation,6,beginner,false,false,false,0,false,false
+Grade 12,1,7f3a117d-2987-49d2-8217-338655d36ca7,1.12,12,f3bc6be4-2d61-4230-9739-c5f064839feb,flashcard,Key Vocabulary for Descriptions,0,intermediate,false,false,false,0,false,false
+Grade 12,1,7f3a117d-2987-49d2-8217-338655d36ca7,1.12,12,0436d8be-be4b-43cf-a3f1-e254b475ce1a,mcq,Word Work Check,1,intermediate,false,false,false,5,false,false
+Grade 12,1,7f3a117d-2987-49d2-8217-338655d36ca7,1.12,12,35fa3507-d3e8-4da8-96b5-992ee13daae1,gap-fill,Complete the Descriptive Sentences,2,intermediate,false,false,false,0,false,false
+Grade 12,1,7f3a117d-2987-49d2-8217-338655d36ca7,1.12,12,36e12b85-9d09-4f2c-b0be-f6acdb579ed0,word-order,Building Descriptive Sentences,3,intermediate,false,false,false,0,false,false
+Grade 12,1,7f3a117d-2987-49d2-8217-338655d36ca7,1.12,12,e0d3888d-fbd4-4657-9d0b-525f94043b8e,pronunciation-practice,Say it Right,4,intermediate,false,false,false,0,false,false
+Grade 12,1,7f3a117d-2987-49d2-8217-338655d36ca7,1.12,12,ad4d638e-e5c4-4a92-a6a5-d6eee5ecef9d,picture-description,Plan Your Description,5,advanced,true,false,false,0,false,false
+Grade 8,1,92b6c111-c9aa-4c64-ab84-86939ea020ac,1.12,12,a501e1e4-d460-4bc0-9f29-33426f205118,flashcard,Key Words: Tim and Saleh,0,beginner,false,false,false,0,false,false
+Grade 8,1,92b6c111-c9aa-4c64-ab84-86939ea020ac,1.12,12,80c48476-33d2-4ec3-a110-1c17b4a7132c,category-sort,Who is Talking?,2,beginner,true,false,false,0,false,false
+Grade 8,1,92b6c111-c9aa-4c64-ab84-86939ea020ac,1.12,12,2382fef9-66b0-4179-b80e-bbc23fd253d5,listening-comprehension,Listen to Tim and Saleh,3,intermediate,true,true,true,2,false,false
+Grade 8,1,92b6c111-c9aa-4c64-ab84-86939ea020ac,1.12,12,b281d9b0-47ef-40eb-a306-cb7a4a1a81eb,picture-description,Describe Tim,4,intermediate,true,false,false,0,false,false
+Grade 8,1,92b6c111-c9aa-4c64-ab84-86939ea020ac,1.12,12,355e024e-6b9e-48e6-9e14-ed6012f73d73,gap-fill,Complete the Sentences,5,intermediate,true,false,false,0,false,false
+Grade 8,1,92b6c111-c9aa-4c64-ab84-86939ea020ac,1.12,12,cd1de4b5-781a-4685-a14a-c74a58f6dea7,word-order,Ask the Questions,6,intermediate,true,false,false,0,false,false
+Grade 8,1,92b6c111-c9aa-4c64-ab84-86939ea020ac,1.12,12,1bebe953-ff85-465d-a59e-bdb4b805d09c,pronunciation-practice,Say it Right!,7,beginner,true,false,false,0,false,false
+Grade 8,1,92b6c111-c9aa-4c64-ab84-86939ea020ac,1.12,12,41809009-fdc7-4933-8288-04526abf7d20,mcq,Check Your Understanding,8,intermediate,true,false,false,2,false,false
+Grade 10,1,d647f4ea-df45-413e-9cfa-754640bd71c0,1.12,12,f0c36a69-692c-44c9-8795-6a7cfc491d29,flashcard,Key Conversational Phrases,0,intermediate,false,false,false,0,false,false
+Grade 10,1,d647f4ea-df45-413e-9cfa-754640bd71c0,1.12,12,1a5d8186-c66a-4c25-9fe5-b0d5b0e355d2,listening-comprehension,Listening: Making Plans,1,intermediate,false,true,true,3,false,false
+Grade 10,1,d647f4ea-df45-413e-9cfa-754640bd71c0,1.12,12,f520e30c-5c40-42b9-83cc-2f55d67512ed,word-order,Build the Conversation,2,intermediate,false,false,false,0,false,false
+Grade 10,1,d647f4ea-df45-413e-9cfa-754640bd71c0,1.12,12,d667831d-8776-4895-a5d1-a96d70f05e6a,gap-fill,Complete the Hospital Conversation,3,intermediate,false,false,false,0,false,false
+Grade 10,1,d647f4ea-df45-413e-9cfa-754640bd71c0,1.12,12,e4c369c2-35ca-40b2-a4a5-00e68b161ef6,pronunciation-practice,Sounding Natural in Conversation,4,intermediate,false,false,false,0,false,false
+Grade 10,1,d647f4ea-df45-413e-9cfa-754640bd71c0,1.12,12,6ea19e4a-5a1a-4b77-bba3-d8e158d64886,conversation-sim,Role-Play: A Worried Friend,5,advanced,false,false,false,0,false,false
+Grade 7,1,4a0dca74-0ff9-4c38-803f-d0944a5384d9,1.12,12,6712ac22-fae4-4e36-a0bc-11269ed4ba9d,flashcard,Capital Letters Practice,0,beginner,false,false,false,0,false,false
+Grade 7,1,4a0dca74-0ff9-4c38-803f-d0944a5384d9,1.12,12,1e892f0b-bf09-45ae-844e-0f6158674ef9,flashcard,Classroom Objects,1,beginner,false,false,false,0,false,false
+Grade 7,1,4a0dca74-0ff9-4c38-803f-d0944a5384d9,1.12,12,5ac08713-44f5-498e-999c-dc128235e77e,dialogue-read,Revision: Names,2,beginner,true,false,false,0,false,true
+Grade 7,1,4a0dca74-0ff9-4c38-803f-d0944a5384d9,1.12,12,e907ff9b-cfd8-44af-91d2-cfadba193118,listening-comprehension,Asking for Things,3,beginner,true,true,true,2,false,false
+Grade 7,1,4a0dca74-0ff9-4c38-803f-d0944a5384d9,1.12,12,4a75b1d1-d219-4bc6-bf92-61fd7491685e,word-order,Build the Question,4,beginner,true,false,false,0,false,false
+Grade 7,1,4a0dca74-0ff9-4c38-803f-d0944a5384d9,1.12,12,0a7bbbf0-b615-4925-b2de-f3376c349100,spelling-bee,Listen and Type the Letter,5,beginner,true,false,false,0,false,false
+Grade 7,1,4a0dca74-0ff9-4c38-803f-d0944a5384d9,1.12,12,2b4eb5cf-13c9-40a8-8f10-a88449f31c96,conversation-sim,Practice Conversation,6,beginner,true,false,false,0,false,false
+Grade 7,1,0b912234-2b5f-42a6-9280-ec9ae88c8f2c,1.13,13,4e5e7170-c707-4b2c-bee9-8ab37f9f1f47,flashcard,Classroom Objects,0,beginner,false,false,false,0,false,false
+Grade 7,1,0b912234-2b5f-42a6-9280-ec9ae88c8f2c,1.13,13,80e7547d-71db-428f-9627-c411c4ccb1b5,dialogue-read,Practice the Conversation,1,beginner,true,false,false,0,false,true
+Grade 7,1,0b912234-2b5f-42a6-9280-ec9ae88c8f2c,1.13,13,c567302a-0413-46ce-9138-ad765f7ad768,listening-comprehension,Listening to Requests,3,beginner,true,true,true,3,false,false
+Grade 7,1,0b912234-2b5f-42a6-9280-ec9ae88c8f2c,1.13,13,72cebc21-caa9-4fc9-8a86-f0f0b1b44ac6,match-pairs,Capital Letters,4,beginner,true,false,false,0,false,false
+Grade 7,1,0b912234-2b5f-42a6-9280-ec9ae88c8f2c,1.13,13,4b25d313-71e2-44ad-a1ff-7cee654cff62,word-order,Make Polite Sentences,5,beginner,true,false,false,0,false,false
+Grade 7,1,0b912234-2b5f-42a6-9280-ec9ae88c8f2c,1.13,13,a70491a1-c0ce-4ecb-b6b3-0d66d49b2dcc,gap-fill,Complete the Conversation,6,intermediate,true,false,false,0,false,false
+Grade 7,1,0b912234-2b5f-42a6-9280-ec9ae88c8f2c,1.13,13,7d1a7aa2-2096-438b-ad4c-ce8d14ebe96c,dictation,Listen and Write,7,intermediate,true,false,false,0,false,false
+Grade 7,1,0b912234-2b5f-42a6-9280-ec9ae88c8f2c,1.13,13,67f37a00-9d21-4940-b226-56afa69ab547,conversation-sim,Ask for a Rubber,8,intermediate,true,false,false,0,false,false
+Grade 10,1,3fd0d090-a2b9-4a60-88f7-5224c39db6b3,1.13,13,8003f1f6-9826-43e4-b570-798fc20033e1,listening-comprehension,Story 2: A Walk in the Forest,0,intermediate,false,true,true,3,false,false
+Grade 10,1,3fd0d090-a2b9-4a60-88f7-5224c39db6b3,1.13,13,e71e43b6-82f1-4f62-8e9e-7cbcd0c6214e,flashcard,Story Keywords,1,intermediate,false,false,false,0,false,false
+Grade 10,1,3fd0d090-a2b9-4a60-88f7-5224c39db6b3,1.13,13,4b9987dd-cdcf-4a1e-b891-10043a5604c6,word-order,Predict the Story,2,intermediate,false,false,false,0,false,false
+Grade 10,1,3fd0d090-a2b9-4a60-88f7-5224c39db6b3,1.13,13,8d3a7c35-cc4e-496a-aded-f8b2b5a6a906,reading-passage,The Accident,3,intermediate,false,false,false,3,true,false
+Grade 10,1,3fd0d090-a2b9-4a60-88f7-5224c39db6b3,1.13,13,a162c1ba-eefc-4d81-b5ee-4776f72a0936,gap-fill,Grammar: Past Tenses,4,intermediate,false,false,false,0,false,false
+Grade 10,1,3fd0d090-a2b9-4a60-88f7-5224c39db6b3,1.13,13,308724d9-cb1d-4bdf-8968-03801ea53661,dictation,Listen and Write,5,intermediate,false,false,false,0,false,false
+Grade 10,1,3fd0d090-a2b9-4a60-88f7-5224c39db6b3,1.13,13,e75b54a5-878a-46dd-8007-3f20a7389fe3,picture-description,What Happened?,6,advanced,true,false,false,0,false,false
+Grade 7,1,86651c14-4287-45fc-8976-d5b1cf5c8d0e,1.14,14,6e1a5005-11cc-487b-bdd2-cfd327ee32c6,listening-comprehension,Listen to the Request,1,beginner,true,true,true,1,false,false
+Grade 7,1,86651c14-4287-45fc-8976-d5b1cf5c8d0e,1.14,14,3107341c-fe27-4236-bd27-5293e6dd4983,match-pairs,Match the Letters,2,beginner,true,false,false,0,false,false
+Grade 7,1,86651c14-4287-45fc-8976-d5b1cf5c8d0e,1.14,14,6ae232f4-142d-4ee0-9512-2bb5aa84b554,word-order,Make a Polite Request,3,beginner,true,false,false,0,false,false
+Grade 7,1,86651c14-4287-45fc-8976-d5b1cf5c8d0e,1.14,14,f2b46778-b48a-44d3-bd0e-50c6904bf426,pronunciation-practice,Capital Letter Sounds,4,beginner,true,false,false,0,false,false
+Grade 7,1,86651c14-4287-45fc-8976-d5b1cf5c8d0e,1.14,14,2b254be3-4296-46f7-8ae5-16ff56d3a751,mcq,Revision: What's This?,5,beginner,true,false,false,2,false,false
+Grade 7,1,86651c14-4287-45fc-8976-d5b1cf5c8d0e,1.14,14,b533b775-1bb9-4711-861c-a357a4f93c88,conversation-sim,Ask a Friend,6,intermediate,true,false,false,0,false,false
+Grade 10,1,dd3be42e-45b3-4b28-9efc-4cc30e35cf3a,1.14,14,7be702af-3799-4f14-a610-aaaddd7f36f0,flashcard,Vocabulary: Possibilities and Problems,0,beginner,false,false,false,0,false,false
+Grade 10,1,dd3be42e-45b3-4b28-9efc-4cc30e35cf3a,1.14,14,a7a78e6a-a1f0-426a-bf5c-186b8a19bfe8,mcq,Grammar: Second Conditional,1,beginner,false,false,false,2,false,false
+Grade 10,1,dd3be42e-45b3-4b28-9efc-4cc30e35cf3a,1.14,14,f36c12cf-4962-4075-ae77-a92dc7ac955c,dialogue-read,A Trip to Egypt,2,intermediate,false,false,false,0,false,true
+Grade 10,1,dd3be42e-45b3-4b28-9efc-4cc30e35cf3a,1.14,14,b776fcd9-fe89-47ef-96a8-e6a0a618ff8d,gap-fill,If I Had...,3,intermediate,false,false,false,0,false,false
+Grade 10,1,dd3be42e-45b3-4b28-9efc-4cc30e35cf3a,1.14,14,7c691184-bc67-4121-b69d-054404e9d6c9,word-order,Build the Sentences,4,intermediate,false,false,false,0,false,false
+Grade 10,1,dd3be42e-45b3-4b28-9efc-4cc30e35cf3a,1.14,14,bde2dc3d-cd5b-4eef-bf00-19303621bf23,mcq,What Would You Do?,5,intermediate,false,false,false,3,false,false
+Grade 10,1,dd3be42e-45b3-4b28-9efc-4cc30e35cf3a,1.14,14,c1ca4355-0d19-4961-89d3-9b3d3fb278bd,conversation-sim,Mountain Rescue,6,advanced,false,false,false,0,false,false
+Grade 10,1,dd3be42e-45b3-4b28-9efc-4cc30e35cf3a,1.14,14,327b6c9d-15f4-4b57-8813-8d22f2c20a7f,pronunciation-practice,Pronunciation: 'd Contractions,7,beginner,false,false,false,0,false,false
+Grade 10,1,355d2f94-8e36-40a5-b81d-6707daf25c78,1.15 Revision and Catch-up,15,16e6c082-2512-4c2c-8385-5341afce1757,flashcard,Reflexive Pronouns,0,beginner,false,false,false,0,false,false
+Grade 10,1,355d2f94-8e36-40a5-b81d-6707daf25c78,1.15 Revision and Catch-up,15,109139d3-0e20-4d37-b3ac-ef030246c3ec,gap-fill,Using Reflexive Pronouns,1,intermediate,false,false,false,0,false,false
+Grade 10,1,355d2f94-8e36-40a5-b81d-6707daf25c78,1.15 Revision and Catch-up,15,80bc7079-5ea7-42b2-aad7-3707bc107f6e,mcq,What Would You Do?,2,intermediate,false,false,false,3,false,false
+Grade 10,1,355d2f94-8e36-40a5-b81d-6707daf25c78,1.15 Revision and Catch-up,15,6d6a5484-c959-4363-a032-d23141a15a40,word-order,Tense Review: Build the Sentences,3,intermediate,false,false,false,0,false,false
+Grade 10,1,355d2f94-8e36-40a5-b81d-6707daf25c78,1.15 Revision and Catch-up,15,19777ae6-eb0f-480c-8d29-77aae645d182,pronunciation-practice,Pronouncing Reflexive Pronouns,4,beginner,false,false,false,0,false,false
+Grade 10,1,355d2f94-8e36-40a5-b81d-6707daf25c78,1.15 Revision and Catch-up,15,b40e5ef7-7404-4470-b82a-8bf553206b36,picture-description,Memory Game,5,intermediate,true,false,false,0,false,false
+Grade 10,1,355d2f94-8e36-40a5-b81d-6707daf25c78,1.15 Revision and Catch-up,15,88f05294-e965-4e15-8fa5-893f0e433ed3,dictation,Listen and Write,6,intermediate,false,false,false,0,false,false
+Grade 7,1,0c1231d6-45a4-4dc9-8bf0-9592ac54cace,1.15,15,32d6b4ae-ba33-48ab-a4c4-80cf676437fe,flashcard,Learn Numbers 0-9,0,beginner,false,false,false,0,false,false
+Grade 7,1,0c1231d6-45a4-4dc9-8bf0-9592ac54cace,1.15,15,840e4fa1-3e73-46aa-998a-c4acfbb55e2a,match-pairs,Match Digits and Words,1,beginner,true,false,false,0,false,false
+Grade 7,1,0c1231d6-45a4-4dc9-8bf0-9592ac54cace,1.15,15,4fb91307-e49c-4877-ac0b-b7f11db89069,word-order,Number Order,2,beginner,true,false,false,0,false,false
+Grade 7,1,0c1231d6-45a4-4dc9-8bf0-9592ac54cace,1.15,15,981fd5e6-3f05-4257-b37f-abe8fe83fdc2,dictation,Listen and Write,3,beginner,true,false,false,0,false,false
+Grade 7,1,0c1231d6-45a4-4dc9-8bf0-9592ac54cace,1.15,15,4792ab0e-ed36-4f76-81da-c0da79a9ad3f,spelling-bee,Spell the Numbers,4,intermediate,true,false,false,0,false,false
+Grade 7,1,0c1231d6-45a4-4dc9-8bf0-9592ac54cace,1.15,15,13367a90-c22a-4ad8-9391-517487e7c828,mcq,Recognize Capital Letters,5,beginner,true,false,false,4,false,false

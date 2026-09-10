@@ -1,0 +1,3582 @@
+{
+  "unit_id": "372bdd08-1338-4dba-a686-14f1b4645360",
+  "unit_title": "What do you remember?",
+  "unit_number": 1,
+  "course_id": "a811308f-430d-4d4f-a763-ab50e455762f",
+  "course_title": "Grade 11",
+  "course_description": "English curriculum for Grade 11",
+  "lessons": [
+    {
+      "lesson_id": "d5bfd5ea-cc02-4fc3-a1d0-44bd81f815a0",
+      "lesson_title": "1.1",
+      "lesson_number": 1,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "e8968efd-2c9f-4226-9ece-f15df803b387",
+          "activity_type": "category-sort",
+          "title": "Holiday Feelings",
+          "instruction": "How was the holiday? Drag and drop each adjective into the correct category: Positive, Neutral, or Negative.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "2",
+          "compensates": "Teacher eliciting adjectives from the box on PB page 4.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "categories": [
+              {
+                "name": "Positive",
+                "items": [
+                  "Great!",
+                  "Fantastic!",
+                  "Amazing!",
+                  "Wonderful!",
+                  "Marvellous!",
+                  "Fabulous!"
+                ]
+              },
+              {
+                "name": "Neutral",
+                "items": [
+                  "Ok.",
+                  "Not bad.",
+                  "Quite good."
+                ]
+              },
+              {
+                "name": "Negative",
+                "items": [
+                  "Not very good.",
+                  "Horrible!",
+                  "Terrible!"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "f2575e5d-560b-49d8-9cab-20ead08e599f",
+          "activity_type": "match-pairs",
+          "title": "Holiday Chores and Fun",
+          "instruction": "Match the verb on the left with the correct phrase on the right to describe a holiday activity. This is based on Workbook page 2, exercise B.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "2",
+          "compensates": "Workbook exercise 1.1B, which is typically done with pen and paper.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "did",
+                "right": "the cooking"
+              },
+              {
+                "left": "repaired",
+                "right": "my brother's bike"
+              },
+              {
+                "left": "looked after",
+                "right": "my little sister"
+              },
+              {
+                "left": "made",
+                "right": "some clothes"
+              },
+              {
+                "left": "painted",
+                "right": "my bedroom"
+              },
+              {
+                "left": "read",
+                "right": "lots of books"
+              },
+              {
+                "left": "visited",
+                "right": "my friends"
+              },
+              {
+                "left": "fed",
+                "right": "the farm animals"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "d7b5cb27-ecc7-40e0-9a1d-3c8a41aaa823",
+          "activity_type": "word-order",
+          "title": "Asking About the Holiday",
+          "instruction": "Put the words in the correct order to make questions about a holiday. This is based on Workbook page 2, exercise C.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "2",
+          "compensates": "Workbook exercise 1.1C, which involves writing out questions.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "correctOrder": [
+                  "What",
+                  "was",
+                  "your",
+                  "holiday",
+                  "like",
+                  "?"
+                ]
+              },
+              {
+                "correctOrder": [
+                  "When",
+                  "did",
+                  "you",
+                  "go",
+                  "away",
+                  "?"
+                ]
+              },
+              {
+                "correctOrder": [
+                  "Where",
+                  "did",
+                  "you",
+                  "go",
+                  "?"
+                ]
+              },
+              {
+                "correctOrder": [
+                  "What",
+                  "did",
+                  "you",
+                  "do",
+                  "?"
+                ]
+              },
+              {
+                "correctOrder": [
+                  "Who",
+                  "did",
+                  "you",
+                  "go",
+                  "with",
+                  "?"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "b4ca871f-18ad-4160-a216-93ac1fef5662",
+          "activity_type": "dialogue-read",
+          "title": "Meeting a Friend",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to and read the conversation between Khalid and Mahmoud from Pupil's Book page 4. Then, answer the comprehension question.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "4",
+          "compensates": "Teacher-led pair reading of the dialogue in class.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "dialogue": [
+              {
+                "text": "Hi, Mahmoud.",
+                "speaker": "Khalid"
+              },
+              {
+                "text": "Hello, Khalid. How are you doing?",
+                "speaker": "Mahmoud"
+              },
+              {
+                "text": "Oh, fine thanks. What was your holiday like?",
+                "speaker": "Khalid"
+              },
+              {
+                "text": "It was fantastic!",
+                "speaker": "Mahmoud"
+              }
+            ],
+            "comprehension": [
+              {
+                "answer": "Their holiday",
+                "question": "What is the main topic of their conversation?"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "01b27f6e-faf5-444d-900d-62bfa8acc882",
+          "activity_type": "picture-description",
+          "title": "Who is This Man?",
+          "instruction": "Use your eyes! 🧐 Look closely at the at the picture. Read the description of the man in the middle. Then, write a short description of the man on the left. Use the keywords to help you.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "4",
+          "compensates": "In-class pair work describing the men in the Pupil's Book.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": null,
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u1/images/g11_u1_l1_1_pic_act4_i0.png",
+            "keywords": [
+              "dark",
+              "curly hair",
+              "beard",
+              "shirt",
+              "young"
+            ],
+            "sampleAnswers": [
+              "The man on the left has dark, curly hair and a full beard. He is wearing a dark blue shirt."
+            ],
+            "promptQuestions": [
+              "Describe the man on the left.",
+              "What does his hair look like?",
+              "What is he wearing?"
+            ]
+          }
+        },
+        {
+          "activity_id": "8af87e38-b996-496a-a832-c4e03af105ce",
+          "activity_type": "gap-fill",
+          "title": "Describing Objects",
+          "instruction": "Complete the sentences using the correct adjective from the list on Pupil's Book page 4. Think about size, shape, and material.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "2",
+          "compensates": "The 'guess the object' game suggested in the Pupil's Book, making it a self-paced activity.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "A book is usually ___ in shape.",
+                "blanks": [
+                  {
+                    "hint": "Shape",
+                    "answer": "rectangular",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "A book has four sides with two longer sides and two shorter sides, which is a rectangular shape."
+              },
+              {
+                "text": "My water bottle is made of plastic and is long and round. It has a ___ shape.",
+                "blanks": [
+                  {
+                    "hint": "Shape",
+                    "answer": "cylindrical",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "An object that is long and round like a tube is cylindrical."
+              },
+              {
+                "text": "This chair is made of wood, so it is a ___ chair.",
+                "blanks": [
+                  {
+                    "hint": "Material",
+                    "answer": "wooden",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use the adjective 'wooden' to describe something made of wood."
+              },
+              {
+                "text": "My wallet is made from the skin of an animal. It is a ___ wallet.",
+                "blanks": [
+                  {
+                    "hint": "Material",
+                    "answer": "leather",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "Leather is a material made from the tanned skin of an animal."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "9dc69126-b72b-4783-b896-697b7af8462b",
+          "activity_type": "pronunciation-practice",
+          "title": "Adjective Pronunciation",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to each adjective and practice saying it aloud. Pay attention to the stressed syllables.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "4",
+          "compensates": "Teacher correcting pronunciation during oral reading and practice.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "Fantastic",
+                "phonetic": "/fænˈtæstɪk/",
+                "syllables": [
+                  "Fan",
+                  "tas",
+                  "tic"
+                ]
+              },
+              {
+                "word": "Wonderful",
+                "phonetic": "/ˈwʌndəfəl/",
+                "syllables": [
+                  "Won",
+                  "der",
+                  "ful"
+                ]
+              },
+              {
+                "word": "Marvellous",
+                "phonetic": "/ˈmɑːvələs/",
+                "syllables": [
+                  "Mar",
+                  "vel",
+                  "lous"
+                ]
+              },
+              {
+                "word": "Fabulous",
+                "phonetic": "/ˈfæbjələs/",
+                "syllables": [
+                  "Fab",
+                  "u",
+                  "lous"
+                ]
+              },
+              {
+                "word": "rectangular",
+                "phonetic": "/rekˈtæŋɡjələr/",
+                "syllables": [
+                  "rec",
+                  "tan",
+                  "gu",
+                  "lar"
+                ]
+              },
+              {
+                "word": "cylindrical",
+                "phonetic": "/sɪˈlɪndrɪkəl/",
+                "syllables": [
+                  "cy",
+                  "lin",
+                  "dri",
+                  "cal"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "a79bd088-58b4-4d0f-a381-c46ccda1b63b",
+          "activity_type": "conversation-sim",
+          "title": "Holiday Conversation",
+          "instruction": "You are meeting a friend after the holiday. Challenge yourself! 📝 Select the best option for the best responses to have a conversation about what you did.",
+          "difficulty": "advanced",
+          "book_type": "PB",
+          "book_page": "4",
+          "compensates": "Simultaneous pair practice from the Teacher's Guide (TG 5), allowing for individual, self-paced practice.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "turns": [
+              {
+                "text": "Hello! It's great to see you again. How are you doing?",
+                "speaker": "Mahmoud",
+                "studentOptions": [
+                  {
+                    "text": "Oh, fine thanks. What was your holiday like?",
+                    "nextTurn": 1,
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "I am a student.",
+                    "nextTurn": 0,
+                    "isCorrect": false
+                  }
+                ]
+              },
+              {
+                "text": "It was great! I went to Qatar. What about you? Did you go away?",
+                "speaker": "Mahmoud",
+                "studentOptions": [
+                  {
+                    "text": "Yes, I went climbing with my uncle.",
+                    "nextTurn": 2,
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "No, I stayed at home and helped my mother.",
+                    "nextTurn": 3,
+                    "isCorrect": true
+                  }
+                ]
+              },
+              {
+                "text": "That sounds like fun! I hope we can catch up more later.",
+                "speaker": "Mahmoud",
+                "studentOptions": []
+              },
+              {
+                "text": "That's nice too. It's good to relax at home. Well, I have to go now. Talk to you later!",
+                "speaker": "Mahmoud",
+                "studentOptions": []
+              }
+            ],
+            "scenario": "You meet your friend Mahmoud after the long holiday. Start a conversation with him."
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "efb115ec-aad5-489a-9ebb-9bd09ba8059f",
+      "lesson_title": "1.2",
+      "lesson_number": 2,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "bce930cd-0c94-4e30-b45c-6eda86003778",
+          "activity_type": "flashcard",
+          "title": "Vocabulary: Describing People",
+          "instruction": "Learn the new words for describing people. Listen carefully! 🎧 Clear your ears and to the word, read the definition and example.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "4",
+          "compensates": "Replaces the teacher-led 'Work out meanings' activity by providing definitions and audio for new vocabulary.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "bald",
+                "image": null,
+                "example": "The third man in the picture is bald on top.",
+                "definition": "Having no hair or very little hair on the head.",
+                "partOfSpeech": "adj"
+              },
+              {
+                "word": "beard",
+                "image": null,
+                "example": "The first man has a dark, curly beard.",
+                "definition": "Hair that grows on a man's chin and cheeks.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "clean-shaven",
+                "image": null,
+                "example": "The second man is clean-shaven.",
+                "definition": "A man who has shaved the hair off his face.",
+                "partOfSpeech": "adj"
+              },
+              {
+                "word": "curly",
+                "example": "He has short, dark, curly hair.",
+                "definition": "Having curls or a curved shape.",
+                "partOfSpeech": "adj"
+              },
+              {
+                "word": "fair",
+                "example": "The man has short, fair hair.",
+                "definition": "Light-coloured hair or skin.",
+                "partOfSpeech": "adj"
+              },
+              {
+                "word": "moustache",
+                "image": null,
+                "example": "The bald man has a grey moustache.",
+                "definition": "Hair that a man grows on his upper lip.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "scar",
+                "image": null,
+                "example": "He's got a scar on his cheek.",
+                "definition": "A mark left on the skin after a wound has healed.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "straight",
+                "example": "Her hair is long and straight.",
+                "definition": "Hair that is not curly or wavy.",
+                "partOfSpeech": "adj"
+              },
+              {
+                "word": "tie",
+                "example": "He is wearing a shirt and tie.",
+                "definition": "A long, thin piece of cloth that a man wears around his neck with a shirt.",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "b8d25086-adf1-49ef-96ab-a5a665cab77c",
+          "activity_type": "mcq",
+          "title": "Reading: Which Man Is This?",
+          "instruction": "Read the description from Pupil's Book page 4 and Challenge yourself! 📝 Select the best option for the correct man from the picture.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "3",
+          "compensates": "Replaces the teacher-led 'Read a description' activity from PB4.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "image": null,
+                "options": [
+                  {
+                    "text": "The man on the left (with a beard)",
+                    "feedback": "This man has dark hair and a beard. The description mentions fair hair and a scar.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "The man in the middle (with a scar)",
+                    "feedback": "Correct! This man has short, fair hair, a scar, and is wearing a striped shirt and tie.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "The man on the right (who is bald)",
+                    "feedback": "This man is bald and has a moustache. The description is for a young man with fair hair.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Read the text: 'He's about twenty-five and he's got short, fair hair. He's got a scar. He's wearing a brown and white striped shirt and tie.' Which man is this?",
+                "explanation": "The description matches the man in the middle perfectly: he has short, fair hair, a scar, and the correct clothing."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "dd791ac9-1b8f-4db6-80f0-ee24deadc817",
+          "activity_type": "category-sort",
+          "title": "Grammar: Adjective Categories",
+          "instruction": "Drag and drop each adjective into the correct category. This will help you learn the correct order for adjectives.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "3",
+          "compensates": "Replaces the teacher-led explanation of the adjective order table in Workbook 1.2A.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "categories": [
+              {
+                "name": "Opinion",
+                "items": [
+                  "beautiful",
+                  "good",
+                  "lovely"
+                ]
+              },
+              {
+                "name": "Size/Build",
+                "items": [
+                  "big",
+                  "long",
+                  "small",
+                  "tall"
+                ]
+              },
+              {
+                "name": "Age",
+                "items": [
+                  "old",
+                  "new",
+                  "young"
+                ]
+              },
+              {
+                "name": "Shape",
+                "items": [
+                  "round",
+                  "square",
+                  "rectangular"
+                ]
+              },
+              {
+                "name": "Colour",
+                "items": [
+                  "brown",
+                  "red",
+                  "blue",
+                  "black"
+                ]
+              },
+              {
+                "name": "Nationality",
+                "items": [
+                  "Yemeni",
+                  "Japanese",
+                  "British"
+                ]
+              },
+              {
+                "name": "Material",
+                "items": [
+                  "wooden",
+                  "paper",
+                  "plastic",
+                  "leather"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "4c608ae6-1875-4b56-800e-c4de6afb5ac0",
+          "activity_type": "word-order",
+          "title": "Grammar Practice: Adjective Order",
+          "instruction": "Put the words in the correct order to make a phrase. Remember the adjective order: Opinion, Size, Age, Shape, Colour, Nationality, Material.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "3",
+          "compensates": "This is a digital version of the Workbook exercise 1.2B.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "scrambled": [
+                  "eyes",
+                  "brown",
+                  "big",
+                  "lovely"
+                ],
+                "explanation": "The correct order is Opinion (lovely), Size (big), Colour (brown), then the Noun (eyes).",
+                "correctOrder": [
+                  "lovely",
+                  "big",
+                  "brown",
+                  "eyes"
+                ]
+              },
+              {
+                "scrambled": [
+                  "a pair of",
+                  "shoes",
+                  "new",
+                  "beautiful"
+                ],
+                "explanation": "The correct order is Opinion (beautiful), Age (new), then the Noun (shoes).",
+                "correctOrder": [
+                  "a pair of",
+                  "beautiful",
+                  "new",
+                  "shoes"
+                ]
+              },
+              {
+                "scrambled": [
+                  "a",
+                  "bag",
+                  "paper",
+                  "brown",
+                  "small"
+                ],
+                "explanation": "The correct order is Size (small), Colour (brown), Material (paper), then the Noun (bag).",
+                "correctOrder": [
+                  "a",
+                  "small",
+                  "brown",
+                  "paper",
+                  "bag"
+                ]
+              },
+              {
+                "scrambled": [
+                  "a",
+                  "beard",
+                  "black",
+                  "long"
+                ],
+                "explanation": "The correct order is Size (long), Colour (black), then the Noun (beard).",
+                "correctOrder": [
+                  "a",
+                  "long",
+                  "black",
+                  "beard"
+                ]
+              },
+              {
+                "scrambled": [
+                  "a",
+                  "car",
+                  "blue",
+                  "small",
+                  "Japanese"
+                ],
+                "explanation": "The correct order is Size (small), Colour (blue), Nationality (Japanese), then the Noun (car).",
+                "correctOrder": [
+                  "a",
+                  "small",
+                  "blue",
+                  "Japanese",
+                  "car"
+                ]
+              },
+              {
+                "scrambled": [
+                  "architecture",
+                  "Yemeni",
+                  "famous"
+                ],
+                "explanation": "The correct order is Opinion (famous), Nationality (Yemeni), then the Noun (architecture).",
+                "correctOrder": [
+                  "famous",
+                  "Yemeni",
+                  "architecture"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "cdaf1d7a-d2c0-4236-a589-0b92436d5a9b",
+          "activity_type": "gap-fill",
+          "title": "Grammar Application: Describing Things",
+          "instruction": "Complete the sentences by typing the adjectives in brackets in the correct order.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "3",
+          "compensates": "Provides further practice on adjective order, similar to a teacher-created worksheet.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "He was wearing a ___ ___ shirt. (striped, nice, cotton)",
+                "blanks": [
+                  {
+                    "answer": "nice striped cotton"
+                  }
+                ],
+                "explanation": "The correct order is Opinion (nice), Colour/Pattern (striped), Material (cotton)."
+              },
+              {
+                "text": "She bought a ___ ___ ___ table. (wooden, round, beautiful)",
+                "blanks": [
+                  {
+                    "answer": "beautiful round wooden"
+                  }
+                ],
+                "explanation": "The correct order is Opinion (beautiful), Shape (round), Material (wooden)."
+              },
+              {
+                "text": "I found an ___ ___ coin. (old, metal, small)",
+                "blanks": [
+                  {
+                    "answer": "small old metal"
+                  }
+                ],
+                "explanation": "The correct order is Size (small), Age (old), Material (metal)."
+              },
+              {
+                "text": "They live in a ___ ___ house. (big, modern, Yemeni)",
+                "blanks": [
+                  {
+                    "answer": "big modern Yemeni"
+                  }
+                ],
+                "explanation": "The correct order is Size (big), Age (modern), Nationality (Yemeni)."
+              },
+              {
+                "text": "That is a ___ ___ ___ car. (fast, red, Italian)",
+                "blanks": [
+                  {
+                    "answer": "fast red Italian"
+                  }
+                ],
+                "explanation": "The correct order is Opinion/Quality (fast), Colour (red), Nationality (Italian)."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "4a2557d3-968c-4748-8848-68600214b2be",
+          "activity_type": "pronunciation-practice",
+          "title": "Pronunciation: Adjectives",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to each word and repeat it. Pay attention to the stressed syllables.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "4",
+          "compensates": "Provides guided pronunciation practice that is often done as a class drill.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "marvellous",
+                "phonetic": "/ˈmɑːvələs/",
+                "syllables": [
+                  "mar",
+                  "vel",
+                  "lous"
+                ]
+              },
+              {
+                "word": "fantastic",
+                "phonetic": "/fænˈtæstɪk/",
+                "syllables": [
+                  "fan",
+                  "tas",
+                  "tic"
+                ]
+              },
+              {
+                "word": "horrible",
+                "phonetic": "/ˈhɒrəbl/",
+                "syllables": [
+                  "hor",
+                  "ri",
+                  "ble"
+                ]
+              },
+              {
+                "word": "rectangular",
+                "phonetic": "/rekˈtæŋɡjələ(r)/",
+                "syllables": [
+                  "rec",
+                  "tan",
+                  "gu",
+                  "lar"
+                ]
+              },
+              {
+                "word": "cylindrical",
+                "phonetic": "/sɪˈlɪndrɪkl/",
+                "syllables": [
+                  "cy",
+                  "lin",
+                  "dri",
+                  "cal"
+                ]
+              },
+              {
+                "word": "architecture",
+                "phonetic": "/ˈɑːkɪtektʃə(r)/",
+                "syllables": [
+                  "ar",
+                  "chi",
+                  "tec",
+                  "ture"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "ef96403a-8c2e-4d77-9914-92847f62885c",
+          "activity_type": "picture-description",
+          "title": "Speaking: Describe the People",
+          "instruction": "Use your eyes! 🧐 Look closely at the at the picture from Pupil's Book page 4. The man in the middle is already described. Now, write a short description for the other two men. Use the adjectives from the lesson.",
+          "difficulty": "advanced",
+          "book_type": "PB",
+          "book_page": "4",
+          "compensates": "Replaces the teacher-led 'Describe people orally' activity and the 'Think of an object' guessing game.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u1/images/9.png",
+            "keywords": [
+              "curly",
+              "dark",
+              "beard",
+              "open-necked",
+              "bald",
+              "moustache",
+              "jacket"
+            ],
+            "sampleAnswers": [
+              "The man on the left has short, dark, curly hair and a full beard. He is wearing a dark, open-necked shirt.",
+              "The man on the right is older. He is bald on top with grey hair on the sides. He has a moustache and is wearing a jacket over a collared shirt."
+            ],
+            "promptQuestions": [
+              "Describe the man on the left. What does his hair look like? What is he wearing?",
+              "Describe the man on the right. What is his build? What is he wearing?"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "b0790fcf-6cad-4a56-aa21-1df58bfdf853",
+      "lesson_title": "1.3",
+      "lesson_number": 3,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "d8fefbf7-b031-4486-8a5b-ea4ed6d221a8",
+          "activity_type": "flashcard",
+          "title": "Department Store Vocabulary",
+          "instruction": "Learn the new words for items and departments you can find in a store. Listen carefully! 🎧 Clear your ears and to the pronunciation and read the example sentence.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "5",
+          "compensates": "Teacher-led vocabulary elicitation from PB5 store guide.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "spade",
+                "audio": "spade.mp3",
+                "image": null,
+                "example": "I need a spade to work in my garden.",
+                "definition": "A tool with a sharp-edged metal blade and a long handle, used for digging.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "cutlery",
+                "audio": "cutlery.mp3",
+                "image": null,
+                "example": "We need to buy new cutlery for our kitchen.",
+                "definition": "Knives, forks, and spoons used for eating food.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "bedding",
+                "audio": "bedding.mp3",
+                "image": "bedding_image",
+                "example": "The bedding department is on the first floor.",
+                "definition": "Coverings for a bed, such as sheets and blankets.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "menswear",
+                "audio": "menswear.mp3",
+                "image": "menswear_image",
+                "example": "You can find trousers and shirts in the menswear section.",
+                "definition": "Clothes for men.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "pharmacy",
+                "audio": "pharmacy.mp3",
+                "image": "pharmacy_image",
+                "example": "I need to go to the pharmacy to get some medicine.",
+                "definition": "A shop where medicines are prepared and sold.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "electrical goods",
+                "audio": "electrical_goods.mp3",
+                "image": "electrical_goods_image",
+                "example": "The store sells a wide range of electrical goods.",
+                "definition": "Machines and equipment that use electricity, like fridges and TVs.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "crockery",
+                "audio": "crockery.mp3",
+                "image": "crockery_image",
+                "example": "We bought some new crockery for the dinner party.",
+                "definition": "Plates, cups, dishes, etc.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "thermometer",
+                "audio": "thermometer.mp3",
+                "image": "thermometer_image",
+                "example": "The nurse used a thermometer to check my temperature.",
+                "definition": "An instrument for measuring temperature.",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "items": [
+              {
+                "word": "spade",
+                "audio": "spade.mp3",
+                "image": null,
+                "example": "I need a spade to work in my garden.",
+                "imageUrl": "/media/g10/g10_u1_l1.3_flsh_act0_i0.png",
+                "definition": "A tool with a sharp-edged metal blade and a long handle, used for digging.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "cutlery",
+                "audio": "cutlery.mp3",
+                "image": null,
+                "example": "We need to buy new cutlery for our kitchen.",
+                "imageUrl": "/media/g10/g10_u1_l1.3_flsh_act0_i1.png",
+                "definition": "Knives, forks, and spoons used for eating food.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "bedding",
+                "audio": "bedding.mp3",
+                "image": "bedding_image",
+                "example": "The bedding department is on the first floor.",
+                "imageUrl": "/media/g10/g10_u1_l1.3_flsh_act0_i2.png",
+                "definition": "Coverings for a bed, such as sheets and blankets.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "menswear",
+                "audio": "menswear.mp3",
+                "image": "menswear_image",
+                "example": "You can find trousers and shirts in the menswear section.",
+                "imageUrl": "/media/g10/g10_u1_l1.3_flsh_act0_i3.png",
+                "definition": "Clothes for men.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "pharmacy",
+                "audio": "pharmacy.mp3",
+                "image": "pharmacy_image",
+                "example": "I need to go to the pharmacy to get some medicine.",
+                "imageUrl": "/media/g10/g10_u1_l1.3_flsh_act0_i4.png",
+                "definition": "A shop where medicines are prepared and sold.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "electrical goods",
+                "audio": "electrical_goods.mp3",
+                "image": "electrical_goods_image",
+                "example": "The store sells a wide range of electrical goods.",
+                "imageUrl": "/media/g10/g10_u1_l1.3_flsh_act0_i5.png",
+                "definition": "Machines and equipment that use electricity, like fridges and TVs.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "crockery",
+                "audio": "crockery.mp3",
+                "image": "crockery_image",
+                "example": "We bought some new crockery for the dinner party.",
+                "imageUrl": "/media/g10/g10_u1_l1.3_flsh_act0_i6.png",
+                "definition": "Plates, cups, dishes, etc.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "thermometer",
+                "audio": "thermometer.mp3",
+                "image": "thermometer_image",
+                "example": "The nurse used a thermometer to check my temperature.",
+                "definition": "An instrument for measuring temperature.",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "125dc53c-da04-4355-bc37-bbd0cdb8887d",
+          "activity_type": "category-sort",
+          "title": "Shopping Categories",
+          "instruction": "Drag and drop each item into the correct category. This is based on the exercise in your Workbook on page 4.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "4",
+          "compensates": "Workbook activity 1.3A, which involves writing sentences to show connections between words.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "images": [
+              {
+                "idx": 0,
+                "url": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u1/images/g11_u1_l1_3_srt_act1_i0.png"
+              },
+              {
+                "idx": 1,
+                "url": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u1/images/g11_u1_l1_3_srt_act1_i1.png"
+              },
+              {
+                "idx": 2,
+                "url": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u1/images/g11_u1_l1_3_srt_act1_i2.png"
+              },
+              {
+                "idx": 3,
+                "url": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u1/images/g11_u1_l1_3_srt_act1_i3.png"
+              }
+            ],
+            "categories": [
+              {
+                "name": "Clothing",
+                "items": [
+                  "menswear",
+                  "trousers",
+                  "ladies' wear",
+                  "skirts"
+                ]
+              },
+              {
+                "name": "Food & Groceries",
+                "items": [
+                  "meat",
+                  "bread"
+                ]
+              },
+              {
+                "name": "Household Goods",
+                "items": [
+                  "cutlery",
+                  "bedding",
+                  "spoons and forks",
+                  "blankets",
+                  "electrical goods",
+                  "cooker, fridge",
+                  "thermometer"
+                ]
+              },
+              {
+                "name": "Places & Services",
+                "items": [
+                  "pharmacy",
+                  "post office",
+                  "butcher's",
+                  "baker's"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "b366a122-22fe-4bb9-a00a-ada7cc29f9f8",
+          "activity_type": "dialogue-read",
+          "title": "Asking for Help",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to and read the two conversations from your Pupil's Book, page 5. Notice the difference in how the questions are asked.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "5",
+          "compensates": "Teacher-led pair practice of dialogues from PB5.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "dialogue": [
+              {
+                "text": "Conversation 1",
+                "speaker": "Narrator"
+              },
+              {
+                "text": "Excuse me. Where can I buy a spade?",
+                "speaker": "Customer"
+              },
+              {
+                "text": "In the Gardening department on the ground floor.",
+                "speaker": "Assistant"
+              },
+              {
+                "text": "Thank you very much.",
+                "speaker": "Customer"
+              },
+              {
+                "text": "Conversation 2",
+                "speaker": "Narrator"
+              },
+              {
+                "text": "Excuse me. Do you know where I can buy a spade?",
+                "speaker": "Customer"
+              },
+              {
+                "text": "Yes. In the Gardening department on the ground floor.",
+                "speaker": "Assistant"
+              },
+              {
+                "text": "Thank you very much.",
+                "speaker": "Customer"
+              }
+            ],
+            "comprehension": [
+              {
+                "answer": "Conversation 2",
+                "question": "Which conversation uses a more polite and indirect question?"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "a2e6f486-1152-4950-8b06-2a7df12ea784",
+          "activity_type": "mcq",
+          "title": "Understanding Indirect Questions",
+          "instruction": "Challenge yourself! 📝 Select the best option for the correct option to learn about indirect questions.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "4",
+          "compensates": "Teacher's explanation of the grammar rules for indirect questions.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Where is the bookshop?",
+                    "feedback": "This is a direct question. It's correct, but can sound less polite.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Can you tell me where the bookshop is?",
+                    "feedback": "Correct! This is an indirect question, which is a more polite way to ask.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Which sentence is a more polite way to ask for information?",
+                "explanation": "We often use phrases like 'Can you tell me...' or 'Do you know...' to make questions more polite. These are called indirect questions."
+              },
+              {
+                "options": [
+                  {
+                    "text": "...what time is it?",
+                    "feedback": "Incorrect. In an indirect question, the word order is like a statement (subject + verb), not a question (verb + subject).",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "...what time it is?",
+                    "feedback": "Excellent! The word order changes. 'What time is it?' (direct) becomes '...what time it is' (indirect).",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "What is the correct word order for this indirect question: 'Do you know...'",
+                "explanation": "In an indirect question, the part after the question word (what, where, how) uses statement word order (subject before the verb), not question word order."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "58932813-55e2-48f6-87ec-0ab6f1a897c3",
+          "activity_type": "transform-sentence",
+          "title": "Making Questions Polite",
+          "instruction": "Change the direct questions into polite, indirect questions using the phrase provided. This is the same as Workbook page 4, exercise C.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "5",
+          "compensates": "Workbook activity 1.3C, providing instant feedback.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "correct": [
+                  "Do you know where I can buy a spade?"
+                ],
+                "starter": "Do you know",
+                "original": "Where can I buy a spade?",
+                "explanation": "The word order in the main part of the question stays the same because 'can' is a modal verb."
+              },
+              {
+                "correct": [
+                  "Can you tell me how far the bus station is?"
+                ],
+                "starter": "Can you tell me",
+                "original": "How far is the bus station?",
+                "explanation": "The verb 'is' moves to the end, after the subject 'the bus station'."
+              },
+              {
+                "correct": [
+                  "Do you know what time the bookshop opens?"
+                ],
+                "starter": "Do you know",
+                "original": "What time does the bookshop open?",
+                "explanation": "We remove the auxiliary verb 'does' and add 's' to the main verb 'open'."
+              },
+              {
+                "correct": [
+                  "Do you know what Faisal’s telephone number is?"
+                ],
+                "starter": "Do you know",
+                "original": "What is Faisal’s telephone number?",
+                "explanation": "The verb 'is' moves to the end, after the subject 'Faisal's telephone number'."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "c1e7f531-50ee-4f77-b1c9-e06dacbf94d7",
+          "activity_type": "pronunciation-practice",
+          "title": "Polite Intonation",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the questions. Notice how the tone of voice rises at the end of polite, indirect questions. Practice saying them yourself.",
+          "difficulty": "advanced",
+          "book_type": "PB",
+          "book_page": "5",
+          "compensates": "Teacher correcting pronunciation during pair work.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "Where can I buy a spade? (Falling 억양)",
+                "audioSrc": "where_can_i_buy_a_spade.mp3",
+                "phonetic": "↘",
+                "syllables": []
+              },
+              {
+                "word": "Do you know where I can buy a spade? (Rising 억양)",
+                "audioSrc": "do_you_know_where_i_can_buy_a_spade.mp3",
+                "phonetic": "↗",
+                "syllables": []
+              },
+              {
+                "word": "Can you tell me how far the bus station is? (Rising 억양)",
+                "audioSrc": "can_you_tell_me_how_far_the_bus_station_is.mp3",
+                "phonetic": "↗",
+                "syllables": []
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "0f431bca-52ea-4b70-9250-c938ab2d2449",
+          "activity_type": "conversation-sim",
+          "title": "At the Department Store",
+          "instruction": "You are in a department store. Ask the shop assistant for help. Challenge yourself! 📝 Select the best option for the most polite and correct way to ask.",
+          "difficulty": "advanced",
+          "book_type": "PB",
+          "book_page": "5",
+          "compensates": "Simultaneous pair practice of making parallel dialogues from PB5.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "turns": [
+              {
+                "text": "Good morning. Can I help you?",
+                "speaker": "shopkeeper",
+                "studentOptions": [
+                  {
+                    "text": "Where is the toy department?",
+                    "nextTurn": 1,
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Excuse me, could you tell me where the toy department is?",
+                    "nextTurn": 2,
+                    "isCorrect": true
+                  }
+                ]
+              },
+              {
+                "text": "It's on the first floor.",
+                "speaker": "shopkeeper",
+                "studentOptions": [
+                  {
+                    "text": "Thank you.",
+                    "nextTurn": 3,
+                    "isCorrect": true
+                  }
+                ]
+              },
+              {
+                "text": "Of course. It's on the first floor, next to the Radio & TV department.",
+                "speaker": "shopkeeper",
+                "studentOptions": [
+                  {
+                    "text": "Thank you very much.",
+                    "nextTurn": 3,
+                    "isCorrect": true
+                  }
+                ]
+              },
+              {
+                "text": "You're welcome. Have a nice day!",
+                "speaker": "shopkeeper",
+                "studentOptions": []
+              }
+            ],
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u1/images/g11_u1_l1_3_cnv_act6_i0.png",
+            "scenario": "You are looking for the toy department in a large store."
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "24d6a355-1d7c-48f9-867c-10d7719039d0",
+      "lesson_title": "1.4",
+      "lesson_number": 4,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "ad3f2a7e-3249-4a0e-b290-f878934b21e7",
+          "activity_type": "flashcard",
+          "title": "Health Vocabulary",
+          "instruction": "Learn the new words related to health. Interact with the screen! 🖱️ Click to to flip the card and see the definition. Listen to the pronunciation.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "5",
+          "compensates": "Replaces the teacher brainstorming vocabulary on the board (Teacher Guide Stage 1).",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "bandage",
+                "audio": "gen-g11-u1-1.4-aud-1",
+                "image": "gen-g11-u1-1.4-img-1",
+                "example": "The nurse put a bandage on my cut knee.",
+                "definition": "A strip of material used to bind up a wound or injury.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "disinfectant",
+                "audio": "gen-g11-u1-1.4-aud-2",
+                "image": "gen-g11-u1-1.4-img-2",
+                "example": "She cleaned the wound with disinfectant to prevent infection.",
+                "definition": "A chemical liquid that destroys bacteria.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "prescription",
+                "audio": "gen-g11-u1-1.4-aud-3",
+                "image": "gen-g11-u1-1.4-img-3",
+                "example": "The doctor gave me a prescription for some tablets.",
+                "definition": "An instruction written by a doctor that authorizes a patient to be provided a medicine or treatment.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "immunized",
+                "audio": "gen-g11-u1-1.4-aud-4",
+                "image": "gen-g11-u1-1.4-img-4",
+                "example": "You must be immunized before traveling to some countries.",
+                "definition": "Made resistant to a particular infection or disease, typically by vaccination.",
+                "partOfSpeech": "adjective"
+              },
+              {
+                "word": "infection",
+                "audio": "gen-g11-u1-1.4-aud-5",
+                "image": "gen-g11-u1-1.4-img-5",
+                "example": "Cleaning a cut helps to prevent infection.",
+                "definition": "The process of infecting or the state of being infected by a disease-causing organism.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "X-ray",
+                "audio": "gen-g11-u1-1.4-aud-6",
+                "image": "gen-g11-u1-1.4-img-6",
+                "example": "The doctor took an X-ray to see if the bone was broken.",
+                "definition": "A photographic image of the internal composition of something, especially a part of the body.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "vitamins",
+                "audio": "gen-g11-u1-1.4-aud-7",
+                "image": "gen-g11-u1-1.4-img-7",
+                "example": "Fruits and vegetables are full of essential vitamins.",
+                "definition": "A group of organic compounds which are essential for normal growth and nutrition.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "cholera",
+                "audio": "gen-g11-u1-1.4-aud-8",
+                "image": "gen-g11-u1-1.4-img-8",
+                "example": "A cholera vaccination is required for travel to that region.",
+                "definition": "An infectious and often fatal bacterial disease of the small intestine.",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "527b9c73-a69d-4667-be15-07aa41adec82",
+          "activity_type": "gap-fill",
+          "title": "Doctor's Advice",
+          "instruction": "A doctor is talking to different patients. Reading time! 📖 Read carefully and what he tells them and fill in the blanks with the correct word. Based on Workbook page 5, exercise B.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "5",
+          "compensates": "Digital, self-correcting version of Workbook exercise 1.4B.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "You're not very fit. You should take more ___.",
+                "blanks": [
+                  {
+                    "hint": "Physical activity",
+                    "answer": "exercise",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "Exercise is physical activity that you do to make your body strong and healthy."
+              },
+              {
+                "text": "You have ___. Stay in bed for a few days and drink plenty of water.",
+                "blanks": [
+                  {
+                    "hint": "A common illness",
+                    "answer": "flu",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The flu is a common infectious illness that causes fever and headache."
+              },
+              {
+                "text": "If you're going to Africa, you must be ___. You'll need a ___ vaccination.",
+                "blanks": [
+                  {
+                    "hint": "Protected from disease",
+                    "answer": "immunized",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "A serious disease",
+                    "answer": "cholera",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "To be immunized means to be protected against a disease, often by vaccination. Cholera is a specific disease."
+              },
+              {
+                "text": "There are too many ___ in your diet. Try to make it more ___.",
+                "blanks": [
+                  {
+                    "hint": "Oily substances in food",
+                    "answer": "fats",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "Containing a healthy mix",
+                    "answer": "balanced",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "Too many fats can be unhealthy. A balanced diet includes a healthy variety of different kinds of food."
+              },
+              {
+                "text": "I'll clean the cut with ___ to prevent any ___. You have a very bad ___. You should stop ___.",
+                "blanks": [
+                  {
+                    "hint": "Something to kill germs",
+                    "answer": "disinfectant",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "When germs cause illness",
+                    "answer": "infection",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "Forcing air from your lungs",
+                    "answer": "cough",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "A bad habit for your lungs",
+                    "answer": "smoking",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "Disinfectant prevents infection. Smoking can cause a bad cough."
+              },
+              {
+                "text": "I'll give you a ___. Take these ___ three times a day.",
+                "blanks": [
+                  {
+                    "hint": "A doctor's note for medicine",
+                    "answer": "prescription",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "Pills",
+                    "answer": "tablets",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "A doctor writes a prescription for medicine, which can be in the form of tablets (pills)."
+              },
+              {
+                "text": "You'll have to go for an ___. The bone may be ___.",
+                "blanks": [
+                  {
+                    "hint": "A picture of your bones",
+                    "answer": "X-ray",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "Fractured",
+                    "answer": "broken",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "An X-ray is used to see if a bone is broken."
+              },
+              {
+                "text": "It's not a bad ___. It just needs a ___.",
+                "blanks": [
+                  {
+                    "hint": "Harm to the body",
+                    "answer": "injury",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "A covering for a wound",
+                    "answer": "bandage",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "A minor injury like a cut might just need a bandage."
+              },
+              {
+                "text": "If you want to keep ___, eat plenty of fruit. It's full of ___.",
+                "blanks": [
+                  {
+                    "hint": "Well and not ill",
+                    "answer": "healthy",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "Nutrients in food",
+                    "answer": "vitamins",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "Eating fruit full of vitamins helps you stay healthy."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "7b14369a-62ea-484c-bb63-dc0b4ba04225",
+          "activity_type": "match-pairs",
+          "title": "Famous Health Sayings",
+          "instruction": "Match the beginning of each famous health saying to its correct ending. Based on Workbook page 5, exercise A.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "5",
+          "compensates": "Digital, interactive version of Workbook exercise 1.4A.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "An apple a day",
+                "right": "keeps the doctor away."
+              },
+              {
+                "left": "Prevention is better",
+                "right": "than cure."
+              },
+              {
+                "left": "Coughs and sneezes",
+                "right": "spread diseases."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "628fc10e-333f-4a72-b799-fdcdb3118c2f",
+          "activity_type": "category-sort",
+          "title": "Health Word Categories",
+          "instruction": "Drag and drop each word into the correct category: Illnesses & Injuries, Treatments, or Healthy Habits.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "5",
+          "compensates": "Replaces a teacher-led vocabulary organization activity.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "categories": [
+              {
+                "name": "Illnesses & Injuries",
+                "items": [
+                  "broken",
+                  "cholera",
+                  "cough",
+                  "flu",
+                  "infection",
+                  "injury"
+                ]
+              },
+              {
+                "name": "Treatments",
+                "items": [
+                  "bandage",
+                  "disinfectant",
+                  "prescription",
+                  "tablets",
+                  "X-ray"
+                ]
+              },
+              {
+                "name": "Healthy Habits",
+                "items": [
+                  "balanced",
+                  "exercise",
+                  "healthy",
+                  "immunized",
+                  "vitamins"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "feb82cef-f59d-480f-b0f7-8fc5d175f582",
+          "activity_type": "spelling-bee",
+          "title": "Health Vocabulary Spelling",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the word and type it correctly. Use the hint if you need help.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "5",
+          "compensates": "Replaces a teacher-led spelling drill.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "hint": "A chemical used to kill germs.",
+                "word": "disinfectant",
+                "audio": "gen-g11-u1-1.4-aud-9",
+                "scrambled": [
+                  "d",
+                  "i",
+                  "s",
+                  "i",
+                  "n",
+                  "f",
+                  "e",
+                  "c",
+                  "t",
+                  "a",
+                  "n",
+                  "t"
+                ]
+              },
+              {
+                "hint": "A doctor's note for medicine.",
+                "word": "prescription",
+                "audio": "gen-g11-u1-1.4-aud-10",
+                "scrambled": [
+                  "p",
+                  "r",
+                  "e",
+                  "s",
+                  "c",
+                  "r",
+                  "i",
+                  "p",
+                  "t",
+                  "i",
+                  "o",
+                  "n"
+                ]
+              },
+              {
+                "hint": "Protected from a disease.",
+                "word": "immunized",
+                "audio": "gen-g11-u1-1.4-aud-11",
+                "scrambled": [
+                  "i",
+                  "m",
+                  "m",
+                  "u",
+                  "n",
+                  "i",
+                  "z",
+                  "e",
+                  "d"
+                ]
+              },
+              {
+                "hint": "Healthy substances in food like fruits.",
+                "word": "vitamins",
+                "audio": "gen-g11-u1-1.4-aud-12",
+                "scrambled": [
+                  "v",
+                  "i",
+                  "t",
+                  "a",
+                  "m",
+                  "i",
+                  "n",
+                  "s"
+                ]
+              },
+              {
+                "hint": "Physical activity to stay fit.",
+                "word": "exercise",
+                "audio": "gen-g11-u1-1.4-aud-13",
+                "scrambled": [
+                  "e",
+                  "x",
+                  "e",
+                  "r",
+                  "c",
+                  "i",
+                  "s",
+                  "e"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "7856859f-1ece-4e9d-8149-3e1b2a62a91e",
+          "activity_type": "pronunciation-practice",
+          "title": "Pronounce It Right!",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the correct pronunciation of these health words. Pay attention to the stressed syllables. Record yourself saying them and compare.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "5",
+          "compensates": "Replaces a teacher-led pronunciation drill in the classroom.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "disinfectant",
+                "audioSrc": "gen-g11-u1-1.4-aud-14",
+                "phonetic": "/ˌdɪsɪnˈfektənt/",
+                "syllables": [
+                  "dis",
+                  "in",
+                  "FECT",
+                  "ant"
+                ]
+              },
+              {
+                "word": "prescription",
+                "audioSrc": "gen-g11-u1-1.4-aud-15",
+                "phonetic": "/prɪˈskrɪpʃn/",
+                "syllables": [
+                  "pre",
+                  "SCRIP",
+                  "tion"
+                ]
+              },
+              {
+                "word": "immunized",
+                "audioSrc": "gen-g11-u1-1.4-aud-16",
+                "phonetic": "/ˈɪmjunaɪzd/",
+                "syllables": [
+                  "IM",
+                  "mu",
+                  "nized"
+                ]
+              },
+              {
+                "word": "infection",
+                "audioSrc": "gen-g11-u1-1.4-aud-17",
+                "phonetic": "/ɪnˈfekʃn/",
+                "syllables": [
+                  "in",
+                  "FEC",
+                  "tion"
+                ]
+              },
+              {
+                "word": "cholera",
+                "audioSrc": "gen-g11-u1-1.4-aud-18",
+                "phonetic": "/ˈkɒlərə/",
+                "syllables": [
+                  "CHO",
+                  "le",
+                  "ra"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "0d8bdf48-dbfb-4b92-92e8-4540a903f22c",
+          "activity_type": "reading-passage",
+          "title": "A Guide to Staying Healthy",
+          "instruction": "Reading time! 📖 Read carefully and the passage about how to maintain good health and answer the questions that follow.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "5",
+          "compensates": "Provides extended reading practice that integrates the lesson's vocabulary in a new context.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "passage": "To keep healthy, it is important to follow some basic rules. First, a balanced diet is essential. This means eating a variety of foods, including fruits which are full of vitamins, and avoiding too many fats. Second, regular exercise helps keep your body fit and strong. Third, good hygiene can prevent the spread of diseases. For example, cleaning a small injury with disinfectant can stop an infection from developing. For more serious illnesses like the flu, rest is important. Sometimes, a doctor might give you a prescription for tablets to help you recover. Finally, prevention is key. For diseases like cholera, it is crucial to be immunized, especially when traveling. Following this advice can help you avoid getting sick and needing a doctor.",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "To get a prescription",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "To stop an infection",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "To get more vitamins",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "To cure the flu",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What is the main purpose of using a disinfectant?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "To get a balanced diet",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "To get regular exercise",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "To prevent diseases like cholera",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "To get a prescription for tablets",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "According to the text, why is it important to be immunized?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Eating only fruits",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Avoiding all fats",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Taking tablets every day",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Eating a variety of foods",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "What does the passage say is essential for a healthy diet?"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "666e0391-5628-46cf-bc5b-cd8005da0e14",
+      "lesson_title": "1.5",
+      "lesson_number": 5,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "775058e7-eab7-4de4-a83c-c4ead99fc120",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 1)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "6",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "e36524ab-f048-4747-8664-eac3014d9e11",
+          "activity_type": "flashcard",
+          "title": "Vocabulary: Barry's Morning",
+          "instruction": "Learn the key words from the story. Listen carefully! 🎧 Clear your ears and to the word, read the definition and the example sentence.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "6",
+          "compensates": "Replaces teacher-led vocabulary presentation and WB C activity asking students to discuss word meanings.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "cards": [
+              {
+                "word": "giggle",
+                "audio": "giggle.mp3",
+                "example": "'Say please,' said Sue, giggling.",
+                "definition": "to laugh in a silly, quiet way",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "trick",
+                "audio": "trick.mp3",
+                "example": "She had put some trick soap in the bathroom.",
+                "definition": "something you do to fool someone as a joke",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "soap",
+                "audio": "soap.mp3",
+                "example": "Where's that soap, Sue?",
+                "definition": "a substance used with water for washing and cleaning",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "dirty",
+                "audio": "dirty.mp3",
+                "example": "My face had got dirtier instead of cleaner.",
+                "definition": "not clean",
+                "partOfSpeech": "adjective"
+              },
+              {
+                "word": "pant",
+                "audio": "pant.mp3",
+                "example": "'I'm sorry I'm late, sir,' I panted.",
+                "definition": "to breathe with short, quick breaths, typically from exertion",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "comprehensive school",
+                "audio": "comprehensive_school.mp3",
+                "example": "We had been at Central Comprehensive School for almost five years.",
+                "definition": "a state school in the UK that educates pupils of all abilities",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "cornflakes",
+                "audio": "cornflakes.mp3",
+                "example": "Come on, Sue. Give me the cornflakes.",
+                "definition": "a popular breakfast cereal made from toasted flakes of corn",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "items": [
+              {
+                "word": "giggle",
+                "audio": "giggle.mp3",
+                "example": "'Say please,' said Sue, giggling.",
+                "imageUrl": "/media/g10/g10_u1_l1.5_flsh_act0_i0.png",
+                "definition": "to laugh in a silly, quiet way",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "trick",
+                "audio": "trick.mp3",
+                "example": "She had put some trick soap in the bathroom.",
+                "imageUrl": "/media/g10/g10_u1_l1.5_flsh_act0_i1.png",
+                "definition": "something you do to fool someone as a joke",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "soap",
+                "audio": "soap.mp3",
+                "example": "Where's that soap, Sue?",
+                "imageUrl": "/media/g10/g10_u1_l1.5_flsh_act0_i2.png",
+                "definition": "a substance used with water for washing and cleaning",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "dirty",
+                "audio": "dirty.mp3",
+                "example": "My face had got dirtier instead of cleaner.",
+                "imageUrl": "/media/g10/g10_u1_l1.5_flsh_act0_i3.png",
+                "definition": "not clean",
+                "partOfSpeech": "adjective"
+              },
+              {
+                "word": "pant",
+                "audio": "pant.mp3",
+                "example": "'I'm sorry I'm late, sir,' I panted.",
+                "imageUrl": "/media/g10/g10_u1_l1.5_flsh_act0_i4.png",
+                "definition": "to breathe with short, quick breaths, typically from exertion",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "comprehensive school",
+                "audio": "comprehensive_school.mp3",
+                "example": "We had been at Central Comprehensive School for almost five years.",
+                "imageUrl": "/media/g10/g10_u1_l1.5_flsh_act0_i5.png",
+                "definition": "a state school in the UK that educates pupils of all abilities",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "cornflakes",
+                "audio": "cornflakes.mp3",
+                "example": "Come on, Sue. Give me the cornflakes.",
+                "imageUrl": "/media/g10/g10_u1_l1.5_flsh_act0_i6.png",
+                "definition": "a popular breakfast cereal made from toasted flakes of corn",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "ebd52899-89ad-439a-8d88-f43dd02efecf",
+          "activity_type": "reading-passage",
+          "title": "Read the Story: Barry Jones - London schoolboy",
+          "instruction": "Reading time! 📖 Read carefully and the story about Barry's bad morning. Then answer the questions to check your understanding.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "6",
+          "compensates": "Replaces teacher-led reading of PB page 6 and gist questions.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": null,
+            "passage": "'Come on, Sue. Give me the cornflakes. I'm late.'\n'Say please,' said Sue, giggling.\n'Please,' I said. 'And hurry up! It's half past eight!'\n'Dad can take you in his taxi,' said Sue.\n'No, he can't. He's gone,' I said.\n'Do you want an egg, dear?' shouted Mum from the kitchen.\n'No thanks, Mum. I'm late.'\nSue giggled again and I wanted to know why.\n'What are you laughing at?'\n'Nothing,' said Sue and giggled for the third time.\nSue was just thirteen, about two years younger than me, and sometimes I could not understand her.\n\nTen minutes later, I was sitting upstairs on the bus with my Geography textbook open on my knee. There was a test in the first period.\n'Hi, Barry,' somebody said behind me. It was my friend, Kevin. We had been at Central Comprehensive School for almost five years. I turned round and Kevin laughed. 'Your face!' he said. 'It's all black. Don't you wash?'\n'Sue!' I shouted. She had put some trick soap in the bathroom before I went in. My face had got dirtier instead of cleaner.\n\nThe bus stopped. We flew downstairs and I ran to the school washroom. Then I ran to the Geography lesson.\n'I'm sorry I'm late, sir,' I panted.\n'I'm sorry too,' said Mr Edwards, our Geography teacher. 'Sit down and do the test.'\n\n'Where's that soap, Sue?' I asked when I got home. She didn't answer.\n'Anne's coming,' she said.\n'Who's Anne?' I asked.\n'She's my pen-friend from France,' said Sue. 'She's coming to stay next week - for a month.'",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u1/images/g11_u1_l1_5_rdg_act1_i0.png",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "He missed his breakfast.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He was late for school.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "He wanted to catch his dad's taxi.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He was arguing with his sister.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Why was Barry in a hurry in the morning?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Barry forgot his textbook.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Barry was wearing the wrong uniform.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Barry's face was all black.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Barry was laughing.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What did Barry's friend Kevin notice on the bus?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "He fell in the mud.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He didn't have time to wash.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "His sister, Sue, had put trick soap in the bathroom.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "The bus was very dirty.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Why was Barry's face dirty?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Barry's father",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "The bus driver",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Barry's friend",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Barry's Geography teacher",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Who is Mr. Edwards?"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "920e96b4-cb9f-4972-a422-44f7c0e44ac1",
+          "activity_type": "category-sort",
+          "title": "Story Timeline",
+          "instruction": "Drag and drop the events of the story into the correct order.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "1",
+          "compensates": "Digitizes WB 1.5A, which asks students to number pictures to show the main points of the story.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "categories": [
+              {
+                "name": "First",
+                "items": [
+                  "At breakfast, Sue giggled at Barry but he didn't know why."
+                ]
+              },
+              {
+                "name": "Next",
+                "items": [
+                  "On the bus, Barry's friend Kevin told him his face was black."
+                ]
+              },
+              {
+                "name": "Then",
+                "items": [
+                  "Barry ran to the school washroom to clean his face."
+                ]
+              },
+              {
+                "name": "Finally",
+                "items": [
+                  "Barry was late for his Geography test."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "5b94114b-afc7-4100-a201-3853600461e1",
+          "activity_type": "gap-fill",
+          "title": "Summarize the Story",
+          "instruction": "Complete the summary of the story by filling in the blanks with the correct words.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "1",
+          "compensates": "Digitizes the summary completion exercise from WB 1.5B.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "text": "At breakfast, Barry's sister, Sue, ___. Barry did not know why. On the bus to school, Barry's ___ laughed at him too. Kevin told Barry that his ___ was ___. Then Barry understood what had happened. His sister had put some ___ soap in the bathroom.",
+                "blanks": [
+                  {
+                    "answer": "giggled",
+                    "alternatives": [
+                      "laughed"
+                    ]
+                  },
+                  {
+                    "answer": "friend",
+                    "alternatives": []
+                  },
+                  {
+                    "answer": "face",
+                    "alternatives": []
+                  },
+                  {
+                    "answer": "dirty",
+                    "alternatives": [
+                      "black"
+                    ]
+                  },
+                  {
+                    "answer": "trick",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "This summary covers the main events: Sue's trick, Kevin's reaction, and Barry's realization."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "1f908988-18d1-44fc-b9dd-bb0a9c872e9a",
+          "activity_type": "mcq",
+          "title": "What Does It Mean?",
+          "instruction": "Read the sentences from the story and Challenge yourself! 📝 Select the best option for the best meaning for the underlined word or phrase.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "1",
+          "compensates": "Digitizes the vocabulary inference questions from WB 1.5C.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Crying loudly",
+                    "feedback": "Giggling is a type of laugh, not cry.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Laughing in a quiet, silly way",
+                    "feedback": "Correct! Giggling is a light, silly laugh.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Shouting angrily",
+                    "feedback": "Giggling is a happy sound, not an angry one.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Eating quickly",
+                    "feedback": "This word describes a sound, not an action related to eating.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "In the sentence, \"'Say please,' said Sue, <u>giggling</u>.\", what does 'giggling' mean?",
+                "explanation": "Barry asks Sue 'What are you laughing at?', which tells us that giggling is a form of laughing."
+              },
+              {
+                "options": [
+                  {
+                    "text": "They jumped from the top of the bus.",
+                    "feedback": "This is a figure of speech; they didn't actually fly.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "They walked down very slowly.",
+                    "feedback": "Barry was in a hurry, so he would move quickly.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "They ran down very fast.",
+                    "feedback": "Correct! 'Flew' is used here to mean moving with great speed.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "They used an elevator.",
+                    "feedback": "The text describes a bus, which doesn't have an elevator.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What does this mean in Paragraph 3? \"We <u>flew downstairs</u>.\"",
+                "explanation": "When people are in a hurry, they move quickly. 'Flew' is an exaggeration to show they ran very fast."
+              },
+              {
+                "options": [
+                  {
+                    "text": "Spoke very quietly",
+                    "feedback": "Panting is usually loud.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Breathed quickly and loudly",
+                    "feedback": "Correct! People pant after running, just like Barry did.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Fell asleep",
+                    "feedback": "Barry was talking to his teacher, not sleeping.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Sang a song",
+                    "feedback": "This doesn't fit the context of being late and out of breath.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "In the sentence, \"'I'm sorry I'm late, sir,' I <u>panted</u>.\", what does 'panted' mean?",
+                "explanation": "Barry had been running to the washroom and then to his lesson, so he was out of breath. Panting is breathing heavily after exercise."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "d1ceebd0-ef33-4055-8fb3-c14ca45768f7",
+          "activity_type": "match-pairs",
+          "title": "School Subjects",
+          "instruction": "Match the beginning of the word in the left column with its ending in the right column to make nine school subjects.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "1",
+          "compensates": "Digitizes the word-joining exercise for school subjects from WB 1.5D.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "sci",
+                "right": "ence"
+              },
+              {
+                "left": "chem",
+                "right": "istry"
+              },
+              {
+                "left": "biol",
+                "right": "ogy"
+              },
+              {
+                "left": "phys",
+                "right": "ics"
+              },
+              {
+                "left": "his",
+                "right": "tory"
+              },
+              {
+                "left": "geog",
+                "right": "raphy"
+              },
+              {
+                "left": "mathemat",
+                "right": "ics"
+              },
+              {
+                "left": "Arab",
+                "right": "ic"
+              },
+              {
+                "left": "Eng",
+                "right": "lish"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "a7e33c24-ed5e-4073-9ae9-c97435d77be5",
+          "activity_type": "pronunciation-practice",
+          "title": "Pronunciation Practice",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to each word from the story. Pay attention to the stressed syllables. Then, record yourself saying the word.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "6",
+          "compensates": "Adds a new speaking and listening practice component that is often done with a teacher in a classroom setting.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "geography",
+                "audioSrc": "geography.mp3",
+                "phonetic": "/dʒiˈɒɡrəfi/",
+                "syllables": [
+                  "ge",
+                  "og",
+                  "ra",
+                  "phy"
+                ]
+              },
+              {
+                "word": "comprehensive",
+                "audioSrc": "comprehensive.mp3",
+                "phonetic": "/ˌkɒmprɪˈhensɪv/",
+                "syllables": [
+                  "com",
+                  "pre",
+                  "hen",
+                  "sive"
+                ]
+              },
+              {
+                "word": "giggling",
+                "audioSrc": "giggling.mp3",
+                "phonetic": "/ˈɡɪɡlɪŋ/",
+                "syllables": [
+                  "gig",
+                  "gling"
+                ]
+              },
+              {
+                "word": "thirteen",
+                "audioSrc": "thirteen.mp3",
+                "phonetic": "/ˌθɜːˈtiːn/",
+                "syllables": [
+                  "thir",
+                  "teen"
+                ]
+              },
+              {
+                "word": "panted",
+                "audioSrc": "panted.mp3",
+                "phonetic": "/ˈpæntɪd/",
+                "syllables": [
+                  "pant",
+                  "ed"
+                ]
+              }
+            ],
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u1/images/g11_u1_l1_5_pic_act7_i0.png"
+          }
+        },
+        {
+          "activity_id": "6446c822-23cf-4902-be68-0fb13d3d23ba",
+          "activity_type": "picture-description",
+          "title": "Describe the Scene",
+          "instruction": "Use your eyes! 🧐 Look closely at the at the picture from the story. Answer the questions to describe what is happening. You can record your answer or type it.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "6",
+          "compensates": "Provides a productive speaking/writing task based on visual cues, similar to a teacher asking 'What do you see in this picture?'",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": null,
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g11u1/images/g11_u1_l1_5_pic_act7_i0.png",
+            "keywords": [
+              "bus",
+              "schoolboy",
+              "uniform",
+              "laughing",
+              "pointing",
+              "dirty face",
+              "surprised",
+              "black"
+            ],
+            "sampleAnswers": [
+              "The picture shows two schoolboys, Barry and his friend Kevin, on a double-decker bus. Kevin is standing behind Barry, laughing and pointing at him. He is laughing because Barry's face is completely black with dirt from the trick soap. Barry looks very surprised and confused."
+            ],
+            "promptQuestions": [
+              "Who are the two boys in the picture?",
+              "Where are they?",
+              "What is the boy in the back doing?",
+              "Why do you think he is laughing?",
+              "How does the boy with the dirty face feel?"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "8740b524-9dde-4a45-a8ae-5a102f74b0d2",
+      "lesson_title": "Health Vocabulary",
+      "lesson_number": 6,
+      "description": "Learn words related to health and medical care",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Use health-related vocabulary",
+        "Complete sentences about health"
+      ],
+      "language_focus": [
+        "Health vocabulary",
+        "Gap-fill exercises"
+      ],
+      "vocabulary": [
+        "exercise",
+        "flu",
+        "immunized",
+        "cholera",
+        "fats",
+        "balanced",
+        "disinfectant",
+        "infection",
+        "cough",
+        "smoking",
+        "prescription",
+        "tablets",
+        "X-ray",
+        "broken",
+        "injury",
+        "bandage",
+        "healthy",
+        "vitamins"
+      ],
+      "activities": [
+        {
+          "activity_id": "acedc7d9-6871-40ba-b8af-fa153a2f5d6f",
+          "activity_type": "gap-fill",
+          "title": "Health Sayings",
+          "instruction": "Complete these famous English sayings about health.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "1.4",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "gaps": [
+                  {
+                    "hint": "A medical professional",
+                    "answer": "doctor"
+                  }
+                ],
+                "text": "An apple a day keeps the _____ away."
+              },
+              {
+                "gaps": [
+                  {
+                    "hint": "Making something better",
+                    "answer": "cure"
+                  }
+                ],
+                "text": "Prevention is better than _____."
+              },
+              {
+                "gaps": [
+                  {
+                    "hint": "Illnesses",
+                    "answer": "diseases"
+                  }
+                ],
+                "text": "Coughs and sneezes spread _____."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "0107a557-5983-4f25-ba5d-98fb040aff40",
+          "activity_type": "gap-fill",
+          "title": "Doctor's Advice",
+          "instruction": "A doctor is talking to different patients. Complete what he tells them.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "1.4",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "wordBank": [
+              "exercise",
+              "flu",
+              "immunized",
+              "cholera",
+              "fats",
+              "balanced",
+              "disinfectant",
+              "infection",
+              "cough",
+              "smoking",
+              "prescription",
+              "tablets",
+              "X-ray",
+              "broken",
+              "injury",
+              "bandage",
+              "healthy",
+              "vitamins"
+            ],
+            "sentences": [
+              {
+                "gaps": [
+                  {
+                    "answer": "exercise"
+                  }
+                ],
+                "text": "You're not very fit. You should take more _____."
+              },
+              {
+                "gaps": [
+                  {
+                    "answer": "flu"
+                  }
+                ],
+                "text": "You have _____. Stay in bed for a few days and drink plenty of water."
+              },
+              {
+                "gaps": [
+                  {
+                    "answer": "immunized"
+                  },
+                  {
+                    "answer": "cholera"
+                  }
+                ],
+                "text": "If you're going to Africa, you must be _____. You'll need a _____ vaccination."
+              },
+              {
+                "gaps": [
+                  {
+                    "answer": "fats"
+                  },
+                  {
+                    "answer": "balanced"
+                  }
+                ],
+                "text": "There are too many _____ in your diet. Try to make it more _____."
+              },
+              {
+                "gaps": [
+                  {
+                    "answer": "disinfectant"
+                  },
+                  {
+                    "answer": "infection"
+                  }
+                ],
+                "text": "I'll clean the cut with _____ to prevent any _____."
+              },
+              {
+                "gaps": [
+                  {
+                    "answer": "cough"
+                  },
+                  {
+                    "answer": "smoking"
+                  }
+                ],
+                "text": "You have a very bad _____. You should stop _____."
+              },
+              {
+                "gaps": [
+                  {
+                    "answer": "prescription"
+                  },
+                  {
+                    "answer": "tablets"
+                  }
+                ],
+                "text": "I'll give you a _____. Take these _____ three times a day."
+              },
+              {
+                "gaps": [
+                  {
+                    "answer": "X-ray"
+                  },
+                  {
+                    "answer": "broken"
+                  }
+                ],
+                "text": "You'll have to go for an _____. The bone may be _____."
+              },
+              {
+                "gaps": [
+                  {
+                    "answer": "injury"
+                  },
+                  {
+                    "answer": "bandage"
+                  }
+                ],
+                "text": "It's not a bad _____. It just needs a _____."
+              },
+              {
+                "gaps": [
+                  {
+                    "answer": "healthy"
+                  },
+                  {
+                    "answer": "vitamins"
+                  }
+                ],
+                "text": "If you want to keep _____, eat plenty of fruit. It's full of _____."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "f54e8ef8-6584-4fbf-988d-a72ea7ade0e9",
+      "lesson_title": "Barry Jones Story",
+      "lesson_number": 7,
+      "description": "Read and understand a story about a London schoolboy",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Read for gist and detail",
+        "Sequence story events",
+        "Complete a story summary"
+      ],
+      "language_focus": [
+        "Past tenses in narrative",
+        "Story comprehension"
+      ],
+      "vocabulary": [
+        "giggle",
+        "cornflakes",
+        "textbook",
+        "trick",
+        "soap",
+        "panted"
+      ],
+      "activities": [
+        {
+          "activity_id": "56d466c4-3707-4a20-a43d-66405a120c25",
+          "activity_type": "mcq",
+          "title": "Story Comprehension",
+          "instruction": "Answer these questions about the story.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "1.5",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Sue",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Barry",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Kevin",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Mr Edwards",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Who has a dirty face in the story?",
+                "explanation": "Barry has a dirty face because of the trick soap."
+              },
+              {
+                "options": [
+                  {
+                    "text": "He didn't wash",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Sue put trick soap in the bathroom",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "He fell in mud",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He was eating chocolate",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Why was Barry's face dirty?",
+                "explanation": "Sue put trick soap that made his face dirtier instead of cleaner."
+              },
+              {
+                "options": [
+                  {
+                    "text": "Barry's father",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Barry's friend",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Barry's Geography teacher",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "The bus driver",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Who is Mr Edwards?",
+                "explanation": "Mr Edwards is Barry's Geography teacher."
+              },
+              {
+                "options": [
+                  {
+                    "text": "To cry softly",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "To laugh in a silly way",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "To shout loudly",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "To whisper quietly",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What does 'giggle' mean?",
+                "explanation": "Giggle means to laugh in a silly, light way."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "d19ab1b4-e461-421a-b238-f27596781c32",
+          "activity_type": "gap-fill",
+          "title": "Complete the Summary",
+          "instruction": "Complete these sentences to make a summary of the story.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "1.5",
+          "compensates": null,
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "gaps": [
+                  {
+                    "answer": "giggled"
+                  }
+                ],
+                "text": "At breakfast, Barry's sister, Sue, _____."
+              },
+              {
+                "gaps": [
+                  {
+                    "answer": "Kevin"
+                  }
+                ],
+                "text": "Barry did not know why. On the bus to school, Barry's friend, _____ laughed at him too."
+              },
+              {
+                "gaps": [
+                  {
+                    "answer": "face"
+                  },
+                  {
+                    "answer": "dirty"
+                  }
+                ],
+                "text": "Kevin told Barry that his _____ was _____."
+              },
+              {
+                "gaps": [
+                  {
+                    "answer": "sister"
+                  },
+                  {
+                    "answer": "trick"
+                  }
+                ],
+                "text": "Then Barry understood what had happened. His _____ had put some _____ soap in the bathroom."
+              },
+              {
+                "gaps": [
+                  {
+                    "answer": "wash"
+                  }
+                ],
+                "text": "Barry had to _____ his face before he went to his first lesson."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "eb5218fe-5bb3-41a9-a213-bd432e6dbf5b",
+      "lesson_title": "Being Polite",
+      "lesson_number": 8,
+      "description": "Learn to make requests and ask questions politely",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Compare polite and impolite requests",
+        "Transform rude sentences into polite ones"
+      ],
+      "language_focus": [
+        "Polite request forms",
+        "Can/Could/Would you...?",
+        "I'm afraid..., I'm sorry but..."
+      ],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "840f3d51-9abe-4f5c-a9ee-3e1f54898d02",
+          "activity_type": "dialogue-read",
+          "title": "Is Khalid Polite Enough?",
+          "instruction": "Reading time! 📖 Read carefully and this dialogue. Khalid is practicing to be an immigration officer. Is he polite?",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "9",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "answer": "No, Khalid was rude.",
+            "context": "Khalid wants to be an immigration officer. His friend Nasser pretends he has just got off a plane.",
+            "dialogue": [
+              {
+                "text": "You. Come here.",
+                "speaker": "Khalid"
+              },
+              {
+                "text": "Me?",
+                "speaker": "Nasser"
+              },
+              {
+                "text": "Yes. You. Give me your passport. What's your name? I can't read this.",
+                "speaker": "Khalid"
+              },
+              {
+                "text": "Ward.",
+                "speaker": "Nasser"
+              },
+              {
+                "text": "Spell it.",
+                "speaker": "Khalid"
+              },
+              {
+                "text": "W-a-r-d. Ward",
+                "speaker": "Nasser"
+              },
+              {
+                "text": "Why have you come here?",
+                "speaker": "Khalid"
+              },
+              {
+                "text": "I work here.",
+                "speaker": "Nasser"
+              },
+              {
+                "text": "What do you do? I can't read your occupation either.",
+                "speaker": "Khalid"
+              },
+              {
+                "text": "I'm an engineer.",
+                "speaker": "Nasser"
+              },
+              {
+                "text": "This visa is no good. It's out of date. Wait here. Don't move.",
+                "speaker": "Khalid"
+              }
+            ],
+            "question": "Was Khalid polite?"
+          }
+        },
+        {
+          "activity_id": "36dbb58e-409c-49c2-8934-d85c1491dd6c",
+          "activity_type": "dialogue-read",
+          "title": "Khalid Tries Again",
+          "instruction": "The teacher tells Khalid what he did wrong. Reading time! 📖 Read carefully and how he tries again.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "9",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "answer": "Yes, Khalid is now polite.",
+            "dialogue": [
+              {
+                "text": "Excuse me, sir. Over here, please. May I have your passport? Thank you. I'm afraid I can't read your name.",
+                "speaker": "Khalid"
+              },
+              {
+                "text": "Ward.",
+                "speaker": "Nasser"
+              },
+              {
+                "text": "Can you spell that, please?",
+                "speaker": "Khalid"
+              },
+              {
+                "text": "W-a-r-d. Ward",
+                "speaker": "Nasser"
+              },
+              {
+                "text": "Thank you. What's the reason for your visit?",
+                "speaker": "Khalid"
+              },
+              {
+                "text": "I work here.",
+                "speaker": "Nasser"
+              },
+              {
+                "text": "Oh! And I'm afraid I can't read your occupation either.",
+                "speaker": "Khalid"
+              },
+              {
+                "text": "I'm an engineer.",
+                "speaker": "Nasser"
+              },
+              {
+                "text": "And I'm sorry, sir, but I think your visa is out of date.",
+                "speaker": "Khalid"
+              },
+              {
+                "text": "There's a new visa on the next page.",
+                "speaker": "Nasser"
+              },
+              {
+                "text": "Oh, yes. So there is. Where are you staying?",
+                "speaker": "Khalid"
+              },
+              {
+                "text": "At the Ramada.",
+                "speaker": "Nasser"
+              },
+              {
+                "text": "Thank you, sir. Welcome back.",
+                "speaker": "Khalid"
+              }
+            ],
+            "question": "Is Khalid more polite now?"
+          }
+        },
+        {
+          "activity_id": "c51cbcbd-63b3-41fe-90d4-3688d31327e2",
+          "activity_type": "transform-sentence",
+          "title": "Make It Polite",
+          "instruction": "Transform these rude requests into polite ones.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "9",
+          "compensates": null,
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "original": "Come with me.",
+                "transforms": [
+                  "Come with me, please.",
+                  "Can you come with me, please?",
+                  "Could you come with me, please?",
+                  "Would you come with me, please?",
+                  "Would you mind coming with me?",
+                  "I'm afraid you'll have to come with me.",
+                  "I'm sorry, but you'll have to come with me."
+                ]
+              },
+              {
+                "original": "Give me your passport.",
+                "transforms": [
+                  "May I have your passport, please?",
+                  "Could I see your passport, please?",
+                  "Would you mind showing me your passport?"
+                ]
+              },
+              {
+                "original": "Wait here.",
+                "transforms": [
+                  "Could you wait here, please?",
+                  "Would you mind waiting here?"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "dc40bae7-b3fb-48ec-9921-ae39854db213",
+      "lesson_title": "Conditional Sentences",
+      "lesson_number": 9,
+      "description": "Practice Type 1 and Type 2 conditional sentences",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Use Type 1 conditionals for likely situations",
+        "Use Type 2 conditionals for unlikely situations"
+      ],
+      "language_focus": [
+        "If + present simple, will + verb (Type 1)",
+        "If + past simple, would + verb (Type 2)"
+      ],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "52f0c1bc-80e4-4748-9872-97e5549b8cef",
+          "activity_type": "reading-passage",
+          "title": "Conditional Sentences",
+          "instruction": "Learn about the two types of conditional sentences.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "15",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "passage": "Type 1 Conditionals:\nWhen a condition is likely to be fulfilled, the result is likely to happen.\nStructure: If + present simple, ... will + verb\nExample: If I work hard, I will pass the exam.\n\nType 2 Conditionals:\nWhen a condition is not likely or impossible, the result is not likely to happen.\nStructure: If + past simple, ... would + verb\nExample: If I had a helicopter, I would fly over the mountains."
+          }
+        },
+        {
+          "activity_id": "0d0013aa-9949-4ae6-80cb-1c8d529420fb",
+          "activity_type": "gap-fill",
+          "title": "Type 1 Conditionals",
+          "instruction": "Complete these Type 1 conditional sentences.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "15",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "gaps": [
+                  {
+                    "answer": "obeys"
+                  },
+                  {
+                    "answer": "will be"
+                  }
+                ],
+                "text": "If everybody _____ (obey) the rules, our roads _____ (be) much safer."
+              },
+              {
+                "gaps": [
+                  {
+                    "answer": "finish"
+                  },
+                  {
+                    "answer": "will ring"
+                  }
+                ],
+                "text": "If I _____ (finish) before seven, I _____ (ring) him."
+              },
+              {
+                "gaps": [
+                  {
+                    "answer": "don't fill in"
+                  },
+                  {
+                    "answer": "won't know"
+                  }
+                ],
+                "text": "If they _____ (not fill in) the form, we _____ (not know) who is in the country."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "2190201b-f75c-451f-8baa-12734ad3bef6",
+          "activity_type": "gap-fill",
+          "title": "Type 2 Conditionals",
+          "instruction": "Complete these Type 2 conditional sentences.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "15",
+          "compensates": null,
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Great effort! You've successfully completed the sentences. Keep it up! 🚀",
+            "sentences": [
+              {
+                "gaps": [
+                  {
+                    "answer": "had"
+                  },
+                  {
+                    "answer": "would fly"
+                  }
+                ],
+                "text": "If I _____ (have) a helicopter, I _____ (fly) over the mountains."
+              },
+              {
+                "gaps": [
+                  {
+                    "answer": "were"
+                  },
+                  {
+                    "answer": "would be"
+                  }
+                ],
+                "text": "If people _____ (be) more careful, there _____ (be) fewer fires."
+              },
+              {
+                "gaps": [
+                  {
+                    "answer": "left"
+                  },
+                  {
+                    "answer": "wouldn't be"
+                  }
+                ],
+                "text": "If I _____ (leave) the police, I _____ (not be) happy."
+              },
+              {
+                "gaps": [
+                  {
+                    "answer": "didn't happen"
+                  },
+                  {
+                    "answer": "would be"
+                  }
+                ],
+                "text": "If things like these _____ (not happen), I _____ (be) out of a job."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "d93fab80-aa47-4fec-a6e0-d3d74c5b8ca7",
+      "lesson_title": "Unit 1 Review",
+      "lesson_number": 10,
+      "description": "Review all the language points from Unit 1",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Review vocabulary and grammar from Unit 1",
+        "Consolidate learning"
+      ],
+      "language_focus": [
+        "All Unit 1 topics"
+      ],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "c63fa191-4b70-4270-bb04-049bfb94090d",
+          "activity_type": "category-sort",
+          "title": "Vocabulary Categories",
+          "instruction": "Sort these words into the correct categories.",
+          "difficulty": "intermediate",
+          "book_type": null,
+          "book_page": null,
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "text": "swimming",
+                "category": "Holiday Activities"
+              },
+              {
+                "text": "camping",
+                "category": "Holiday Activities"
+              },
+              {
+                "text": "fishing",
+                "category": "Holiday Activities"
+              },
+              {
+                "text": "curly hair",
+                "category": "Describing People"
+              },
+              {
+                "text": "slim",
+                "category": "Describing People"
+              },
+              {
+                "text": "beard",
+                "category": "Describing People"
+              },
+              {
+                "text": "prescription",
+                "category": "Health"
+              },
+              {
+                "text": "vitamins",
+                "category": "Health"
+              },
+              {
+                "text": "bandage",
+                "category": "Health"
+              }
+            ],
+            "categories": [
+              "Holiday Activities",
+              "Describing People",
+              "Health"
+            ]
+          }
+        },
+        {
+          "activity_id": "1304f20e-42ba-4fa6-8497-4a0b25d5b96e",
+          "activity_type": "mcq",
+          "title": "Grammar Review",
+          "instruction": "Challenge yourself! 📝 Select the best option for the correct answer.",
+          "difficulty": "intermediate",
+          "book_type": null,
+          "book_page": null,
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "a Japanese small blue car",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "a small blue Japanese car",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "a blue small Japanese car",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "a small Japanese blue car",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Which is the correct adjective order?",
+                "explanation": "Order: size (small), colour (blue), nationality (Japanese)"
+              },
+              {
+                "options": [
+                  {
+                    "text": "will buy",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "would buy",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "buy",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "bought",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Complete: 'If I had a million dollars, I _____ a big house.'",
+                "explanation": "Type 2 conditional uses 'would + verb' for unlikely situations."
+              },
+              {
+                "options": [
+                  {
+                    "text": "Give me your passport.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Your passport.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "May I have your passport, please?",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Passport now.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Which is the polite way to ask?",
+                "explanation": "'May I have..., please?' is a polite way to ask for something."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

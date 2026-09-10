@@ -1,0 +1,4455 @@
+{
+  "unit_id": "eff7a62c-6b5d-46ef-9f69-4215d3b220cf",
+  "unit_title": "Buildings and Activities",
+  "unit_number": 8,
+  "course_id": "b9f1e5d7-6c4a-4ab8-a9a9-79885a5c669d",
+  "course_title": "Grade 7",
+  "course_description": "English curriculum for Grade 7",
+  "lessons": [
+    {
+      "lesson_id": "a1e9d4f4-776b-4b08-b11f-189518c80c87",
+      "lesson_title": "Buildings",
+      "lesson_number": 1,
+      "description": "Learn the names of different buildings",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Name types of buildings",
+        "Describe buildings"
+      ],
+      "language_focus": [
+        "There is a...",
+        "There are some...",
+        "How many...?"
+      ],
+      "vocabulary": [
+        "house",
+        "flat",
+        "building",
+        "tower",
+        "wall",
+        "door",
+        "window",
+        "floor",
+        "stairs"
+      ],
+      "activities": [
+        {
+          "activity_id": "62a4742f-03bb-4e12-ae75-600ca483637e",
+          "activity_type": "flashcard",
+          "title": "Buildings",
+          "instruction": "Learn words about buildings and their parts.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "54",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "House",
+                "definition": "A building where a family lives."
+              },
+              {
+                "word": "Flat",
+                "definition": "A home inside a large building. Also called an apartment."
+              },
+              {
+                "word": "Building",
+                "definition": "A structure with walls and a roof."
+              },
+              {
+                "word": "Tower",
+                "definition": "A very tall building or part of a building."
+              },
+              {
+                "word": "Wall",
+                "definition": "The sides of a room or building."
+              },
+              {
+                "word": "Door",
+                "definition": "You open this to go in or out."
+              },
+              {
+                "word": "Window",
+                "definition": "You look through this. It has glass."
+              },
+              {
+                "word": "Stairs",
+                "definition": "Steps you use to go up or down in a building."
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "185f2bb5-54db-4002-94e5-f610beb2c0e3",
+          "activity_type": "gap-fill",
+          "title": "There Is / There Are",
+          "instruction": "Complete with 'There is' or 'There are'.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "54",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "___ a door.",
+                "blanks": [
+                  {
+                    "hint": "one door = singular",
+                    "answer": "There is"
+                  }
+                ]
+              },
+              {
+                "text": "___ three windows.",
+                "blanks": [
+                  {
+                    "hint": "three = plural",
+                    "answer": "There are"
+                  }
+                ]
+              },
+              {
+                "text": "___ a big building.",
+                "blanks": [
+                  {
+                    "answer": "There is"
+                  }
+                ]
+              },
+              {
+                "text": "___ many houses.",
+                "blanks": [
+                  {
+                    "answer": "There are"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "a14267d0-0e12-4144-9394-b4eff9915916",
+          "activity_type": "true-false",
+          "title": "True or False - Buildings",
+          "instruction": "Decide if each statement is true or false.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "54",
+          "compensates": null,
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "statements": [
+              {
+                "isTrue": true,
+                "statement": "A flat is inside a large building.",
+                "explanation": "Yes, a flat (apartment) is a home inside a bigger building."
+              },
+              {
+                "isTrue": false,
+                "statement": "A window is something you walk through.",
+                "explanation": "No, you LOOK through a window. You walk through a DOOR."
+              },
+              {
+                "isTrue": true,
+                "statement": "Stairs help you go up and down.",
+                "explanation": "Correct! You use stairs to move between floors."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "b77cb2e3-3634-4624-8399-38f29fc1a105",
+      "lesson_title": "Present Continuous",
+      "lesson_number": 2,
+      "description": "Learn to describe what people are doing right now",
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [
+        "Use present continuous",
+        "Describe actions happening now"
+      ],
+      "language_focus": [
+        "I am + verb-ing",
+        "He/She is + verb-ing",
+        "They are + verb-ing"
+      ],
+      "vocabulary": [
+        "reading",
+        "writing",
+        "playing",
+        "eating",
+        "drinking",
+        "sleeping",
+        "walking",
+        "running"
+      ],
+      "activities": [
+        {
+          "activity_id": "fdc2ca98-3335-4efd-b9c4-267f7a1f985a",
+          "activity_type": "flashcard",
+          "title": "Action Words (-ing)",
+          "instruction": "Learn action words and their -ing forms.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "74",
+          "compensates": null,
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "Reading",
+                "definition": "Looking at words in a book. 'She is reading a story.'"
+              },
+              {
+                "word": "Writing",
+                "definition": "Making words with a pen. 'He is writing his name.'"
+              },
+              {
+                "word": "Playing",
+                "definition": "Having fun. 'They are playing football.'"
+              },
+              {
+                "word": "Eating",
+                "definition": "Putting food in your mouth. 'I am eating rice.'"
+              },
+              {
+                "word": "Sleeping",
+                "definition": "Resting with your eyes closed. 'The baby is sleeping.'"
+              },
+              {
+                "word": "Walking",
+                "definition": "Moving on your feet. 'She is walking to school.'"
+              },
+              {
+                "word": "Running",
+                "definition": "Moving very fast on your feet. 'He is running in the park.'"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "09617971-6466-4947-92ab-a7c792f5a216",
+          "activity_type": "gap-fill",
+          "title": "What Are They Doing?",
+          "instruction": "Complete with the correct -ing form.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "74",
+          "compensates": null,
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "She is ___ a book. (read)",
+                "blanks": [
+                  {
+                    "answer": "reading"
+                  }
+                ]
+              },
+              {
+                "text": "They are ___ football. (play)",
+                "blanks": [
+                  {
+                    "answer": "playing"
+                  }
+                ]
+              },
+              {
+                "text": "He is ___ to school. (walk)",
+                "blanks": [
+                  {
+                    "answer": "walking"
+                  }
+                ]
+              },
+              {
+                "text": "I am ___ rice. (eat)",
+                "blanks": [
+                  {
+                    "answer": "eating"
+                  }
+                ]
+              },
+              {
+                "text": "The baby is ___. (sleep)",
+                "blanks": [
+                  {
+                    "answer": "sleeping"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "03b101a2-2b39-40a5-a558-16699fd8fe3f",
+          "activity_type": "mcq",
+          "title": "Choose the Correct Form",
+          "instruction": "Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for the correct present continuous sentence.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "74",
+          "compensates": null,
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "She is reading.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "She is read.",
+                    "feedback": "Add -ing after 'is'.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "She reading.",
+                    "feedback": "Missing 'is' before the verb.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "She reads.",
+                    "feedback": "This is present simple, not continuous.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Which is correct?",
+                "explanation": "Present continuous = am/is/are + verb-ing."
+              },
+              {
+                "options": [
+                  {
+                    "text": "is",
+                    "feedback": "'They' needs 'are', not 'is'.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "are",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "am",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "be",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "They ___ playing.",
+                "explanation": "I am, he/she is, they/we are."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "f0a91b4f-6881-4ba7-a3d3-f01e10d4a063",
+      "lesson_title": "8.3",
+      "lesson_number": 3,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "9c8718bf-fd97-4f12-a064-04b7d8aa54d6",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 39)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "56",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "b216e0fe-bf53-48e0-aa67-d3f1a2fe12f7",
+          "activity_type": "flashcard",
+          "title": "Yesterday's Places and Activities",
+          "instruction": "Learn the words for places you can go and things you can do. Listen to the word, read the definition, and Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the example.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "56",
+          "compensates": "Teacher presenting vocabulary using physical flashcards.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "in the park",
+                "audio": "gen-g7-u8-8.3-flashcard-1-aud1",
+                "image": "gen-g7-u8-8.3-flashcard-1-img1",
+                "example": "I was in the park yesterday.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_3_flsh_act0_i0.png",
+                "definition": "An area of public land in a town or city where people go to walk, play, and relax.",
+                "partOfSpeech": "phrase"
+              },
+              {
+                "word": "at the beach",
+                "audio": "gen-g7-u8-8.3-flashcard-1-aud2",
+                "image": "gen-g7-u8-8.3-flashcard-1-img2",
+                "example": "I was at the beach yesterday.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_3_flsh_act0_i1.png",
+                "definition": "An area of sand or small stones next to the sea or a lake.",
+                "partOfSpeech": "phrase"
+              },
+              {
+                "word": "at the supermarket",
+                "audio": "gen-g7-u8-8.3-flashcard-1-aud3",
+                "image": "gen-g7-u8-8.3-flashcard-1-img3",
+                "example": "I was at the supermarket yesterday.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_3_flsh_act0_i2.png",
+                "definition": "A large shop that sells food, drinks, and things for the home.",
+                "partOfSpeech": "phrase"
+              },
+              {
+                "word": "at a friend's house",
+                "audio": "gen-g7-u8-8.3-flashcard-1-aud4",
+                "image": "gen-g7-u8-8.3-flashcard-1-img4",
+                "example": "I was at a friend's house yesterday.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_3_flsh_act0_i3.png",
+                "definition": "The home of someone you know and like.",
+                "partOfSpeech": "phrase"
+              },
+              {
+                "word": "played football",
+                "audio": "gen-g7-u8-8.3-flashcard-1-aud5",
+                "image": "gen-g7-u8-8.3-flashcard-1-img5",
+                "example": "I played football yesterday.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_3_flsh_act0_i4.png",
+                "definition": "To take part in a game of football.",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "listened to cassettes",
+                "audio": "gen-g7-u8-8.3-flashcard-1-aud6",
+                "image": "gen-g7-u8-8.3-flashcard-1-img6",
+                "example": "I listened to cassettes yesterday.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_3_flsh_act0_i5.png",
+                "definition": "To hear sounds from a small plastic case containing magnetic tape.",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "helped my mother",
+                "audio": "gen-g7-u8-8.3-flashcard-1-aud7",
+                "image": "gen-g7-u8-8.3-flashcard-1-img7",
+                "example": "I helped my mother yesterday.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_3_flsh_act0_i6.png",
+                "definition": "To assist your female parent with a task.",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "did my homework",
+                "audio": "gen-g7-u8-8.3-flashcard-1-aud8",
+                "image": "gen-g7-u8-8.3-flashcard-1-img8",
+                "example": "I did my homework yesterday.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_3_flsh_act0_i7.png",
+                "definition": "To complete school work that you do at home.",
+                "partOfSpeech": "verb phrase"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "01a1d2a5-e831-4b50-9335-71208045a4f6",
+          "activity_type": "gap-fill",
+          "title": "Grammar: Was or Were?",
+          "instruction": "Complete the sentences with 'was' or 'were'.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "56",
+          "compensates": "Teacher-led grammar explanation and drills on the whiteboard.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "Where ___ you yesterday?",
+                "blanks": [
+                  {
+                    "hint": "Use 'were' with 'you'.",
+                    "answer": "were",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'were' for the pronoun 'you' in the past tense."
+              },
+              {
+                "text": "I ___ at home.",
+                "blanks": [
+                  {
+                    "hint": "Use 'was' with 'I'.",
+                    "answer": "was",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'was' for the pronoun 'I' in the past tense."
+              },
+              {
+                "text": "He ___ at the supermarket.",
+                "blanks": [
+                  {
+                    "hint": "Use 'was' with 'he'.",
+                    "answer": "was",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'was' for the pronoun 'he' in the past tense."
+              },
+              {
+                "text": "She ___ in the park.",
+                "blanks": [
+                  {
+                    "hint": "Use 'was' with 'she'.",
+                    "answer": "was",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'was' for the pronoun 'she' in the past tense."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "3d07ed53-56e1-4090-8a1c-a0bcf664793f",
+          "activity_type": "listening-comprehension",
+          "title": "Listen to the Conversations",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to two short conversations and answer the questions.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "56",
+          "compensates": "Teacher playing the class cassette and asking comprehension questions.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "audioSrc": "gen-g7-u8-8.3-listening-1-aud1",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "At home",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "At the beach",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "In the park",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Where was the boy yesterday?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "He listened to cassettes.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He did his homework.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He played football.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "What did the boy do?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "At a friend's house",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "At the supermarket",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "At home",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Where was the girl yesterday?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "She listened to cassettes.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "She watched TV.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "She read a book.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What did the girl do?"
+              }
+            ],
+            "transcript": "Boy 1: Where were you yesterday? Boy 2: I was at the beach. Boy 1: What did you do? Boy 2: I played football. Girl 1: Where were you yesterday? Girl 2: I was at home. Girl 1: What did you do? Girl 2: I listened to cassettes."
+          }
+        },
+        {
+          "activity_id": "547149f6-7224-425a-a597-b2d92bb92624",
+          "activity_type": "dialogue-read",
+          "title": "Practice the Conversation",
+          "instruction": "Read the conversation from page 56. Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to each line and then practice speaking.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "56",
+          "compensates": "In-class pair work and role-playing activities.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "dialogue": [
+              {
+                "text": "Where were you yesterday?",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/169.png",
+                "speaker": "Boy 1",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/169.png"
+              },
+              {
+                "text": "I was in the park.",
+                "speaker": "Boy 2"
+              },
+              {
+                "text": "What did you do?",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/170.png",
+                "speaker": "Boy 1",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/170.png"
+              },
+              {
+                "text": "I played football.",
+                "speaker": "Boy 2"
+              }
+            ],
+            "comprehension": []
+          }
+        },
+        {
+          "activity_id": "afd8ce46-7cab-4b91-a3d4-68fb17834a69",
+          "activity_type": "match-pairs",
+          "title": "What Did You Do?",
+          "instruction": "Match the beginning of the sentence with the correct ending.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "56",
+          "compensates": "Worksheet matching activity or teacher-led board game.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "I bought...",
+                "right": "...some fruit."
+              },
+              {
+                "left": "I listened...",
+                "right": "...to the radio."
+              },
+              {
+                "left": "I helped...",
+                "right": "...my father."
+              },
+              {
+                "left": "I read...",
+                "right": "...a book."
+              },
+              {
+                "left": "I did...",
+                "right": "...my homework."
+              },
+              {
+                "left": "I talked...",
+                "right": "...to my friend."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "fc3e7113-11f3-4402-9ef5-4d68ebe18553",
+          "activity_type": "word-order",
+          "title": "Build the Sentences",
+          "instruction": "Drag the words into the correct order to make questions and answers.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "56",
+          "compensates": "Scrambled sentence worksheets or writing practice.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "correctOrder": [
+                  "Where",
+                  "were",
+                  "you",
+                  "yesterday",
+                  "?"
+                ]
+              },
+              {
+                "correctOrder": [
+                  "I",
+                  "was",
+                  "at",
+                  "the",
+                  "beach",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "What",
+                  "did",
+                  "you",
+                  "do",
+                  "?"
+                ]
+              },
+              {
+                "correctOrder": [
+                  "I",
+                  "watched",
+                  "TV",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "I",
+                  "did",
+                  "my",
+                  "homework",
+                  "."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "07b5f5c0-e8ab-405e-997e-514be03e3263",
+          "activity_type": "pronunciation-practice",
+          "title": "Pronouncing Past Tense Verbs",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to how we say these past tense words. Pay attention to the '-ed' sound. Record yourself and compare.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "56",
+          "compensates": "Teacher-led choral drilling of pronunciation.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "played",
+                "audioSrc": "gen-g7-u8-8.3-pronunciation-1-aud1",
+                "phonetic": "/pleɪd/",
+                "syllables": [
+                  "played"
+                ]
+              },
+              {
+                "word": "talked",
+                "audioSrc": "gen-g7-u8-8.3-pronunciation-1-aud2",
+                "phonetic": "/tɔːkt/",
+                "syllables": [
+                  "talked"
+                ]
+              },
+              {
+                "word": "listened",
+                "audioSrc": "gen-g7-u8-8.3-pronunciation-1-aud3",
+                "phonetic": "/ˈlɪs.ənd/",
+                "syllables": [
+                  "lis",
+                  "tened"
+                ]
+              },
+              {
+                "word": "watched",
+                "audioSrc": "gen-g7-u8-8.3-pronunciation-1-aud4",
+                "phonetic": "/wɒtʃt/",
+                "syllables": [
+                  "watched"
+                ]
+              },
+              {
+                "word": "helped",
+                "audioSrc": "gen-g7-u8-8.3-pronunciation-1-aud5",
+                "phonetic": "/helpt/",
+                "syllables": [
+                  "helped"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "f0610cfc-555d-4072-a5d4-84b289ca6467",
+      "lesson_title": "8.4",
+      "lesson_number": 4,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "2d38b059-afc6-4577-b2a7-228bde09daff",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 40)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "57",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "9d1ee8a9-3d8f-4bc5-95ee-eb6ebca0be02",
+          "activity_type": "flashcard",
+          "title": "Vocabulary: Food and Feelings",
+          "instruction": "Learn the new words for this lesson. Listen to the word, read the definition, and Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the example.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "57",
+          "compensates": "Replaces teacher-led vocabulary presentation using flashcards and drilling.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "restaurant",
+                "example": "We went to a restaurant for dinner.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_4_flsh_act0_i0.png",
+                "definition": "A place where you can buy and eat a meal.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "hungry",
+                "example": "The boys were hungry, so they went to a restaurant.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_4_flsh_act0_i1.png",
+                "definition": "Feeling that you want to eat something.",
+                "partOfSpeech": "adjective"
+              },
+              {
+                "word": "sandwich",
+                "example": "Saleh had a cheese sandwich.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_4_flsh_act0_i2.png",
+                "definition": "Two pieces of bread with meat, cheese, or other food between them.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "burger",
+                "example": "Tim had a cheese sandwich, a burger and an apple juice.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_4_flsh_act0_i3.png",
+                "definition": "A flat, round piece of meat served in a bread roll.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "juice",
+                "example": "Aisha had an orange juice.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_4_flsh_act0_i4.png",
+                "definition": "The liquid that comes from fruit or vegetables.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "apple",
+                "example": "Ahmed had a chicken sandwich and an apple.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_4_flsh_act0_i5.png",
+                "definition": "A hard, round fruit with green or red skin.",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "2b8a6aeb-6245-499c-b518-610e29beb836",
+          "activity_type": "gap-fill",
+          "title": "Grammar: Have or Had?",
+          "instruction": "Read the sentences. Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for the correct word, 'have' or 'had', to fill the gap. Remember to use 'had' for yesterday (the past).",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "75",
+          "compensates": "Replaces teacher writing sentences on the board and asking pupils to contrast 'have' and 'had'.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "Every day, I ___ bread and cheese for breakfast.",
+                "blanks": [
+                  {
+                    "hint": "Use 'have' for things that happen every day.",
+                    "answer": "have",
+                    "alternatives": [
+                      "had"
+                    ]
+                  }
+                ],
+                "explanation": "We use 'have' for the present tense, for actions that happen regularly."
+              },
+              {
+                "text": "Yesterday, I ___ eggs for breakfast.",
+                "blanks": [
+                  {
+                    "hint": "Use 'had' for things that happened yesterday.",
+                    "answer": "had",
+                    "alternatives": [
+                      "have"
+                    ]
+                  }
+                ],
+                "explanation": "We use 'had' for the simple past tense, for actions that are finished."
+              },
+              {
+                "text": "The boys went to a restaurant yesterday. They ___ sandwiches.",
+                "blanks": [
+                  {
+                    "hint": "The action happened yesterday.",
+                    "answer": "had",
+                    "alternatives": [
+                      "have"
+                    ]
+                  }
+                ],
+                "explanation": "The sentence is about yesterday, so we use the past tense 'had'."
+              },
+              {
+                "text": "What did you ___ for lunch yesterday?",
+                "blanks": [
+                  {
+                    "hint": "After 'did', use the base form of the verb.",
+                    "answer": "have",
+                    "alternatives": [
+                      "had"
+                    ]
+                  }
+                ],
+                "explanation": "In questions with 'did', we use the base form of the verb, which is 'have'."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "69f91d7d-a16e-42fb-9651-379cbf67cda7",
+          "activity_type": "reading-passage",
+          "title": "Reading Puzzle: At the Restaurant",
+          "instruction": "Read the text about the boys at the restaurant. Then Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture and answer the questions.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "57",
+          "compensates": "Replaces the teacher-led reading puzzle activity from Pupil's Book page 57.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/171.png",
+            "images": [
+              {
+                "idx": 0,
+                "url": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_4_rdg_act2_i0.png"
+              },
+              {
+                "idx": 1,
+                "url": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/171.png"
+              }
+            ],
+            "passage": "Yesterday Saleh, Ahmed and Fuad were hungry. They went to a restaurant. Saleh had a cheese sandwich and a Pepsi. Ahmed had a chicken sandwich, an apple and 7-up.",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/171.png",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Because they were thirsty.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Because they were hungry.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Because they were tired.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Why did the boys go to a restaurant?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "A chicken sandwich and an apple.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "A burger and a cake.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "A cheese sandwich and a Pepsi.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "What did Saleh have?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "A cheese sandwich and a Pepsi.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "A burger and a cake.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "A chicken sandwich and an apple.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Look at the picture. The boy in the red shirt is Saleh, and the boy in the green shirt is Ahmed. What did Fuad have?"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "82b0cd0b-e71f-4653-aaa4-561ed767f567",
+          "activity_type": "listening-comprehension",
+          "title": "Listen and Answer",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to four different conversations. After each one, answer the question.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "57",
+          "compensates": "Replaces the teacher playing a cassette and students doing a True/False exercise from Workbook page 75.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "audioSrc": "/media/audio/g7_u8_l8.4_lis_4.mp3",
+            "questions": [
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1112.png",
+                "options": [
+                  {
+                    "text": "A sandwich",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "A burger",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "An apple",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1112.png",
+                "question": "Listen to Conversation 1. What did Ali have for lunch?"
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1113.png",
+                "options": [
+                  {
+                    "text": "A burger",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "An orange juice",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Nothing",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1113.png",
+                "question": "Listen to Conversation 2. What did Aisha have?"
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1114.png",
+                "options": [
+                  {
+                    "text": "He was thirsty.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He was hungry.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "He was with a friend.",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1114.png",
+                "question": "Listen to Conversation 3. Why did Tim order a lot of food?"
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1115.png",
+                "options": [
+                  {
+                    "text": "The Beach Restaurant",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "The Park Restaurant",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "The Sheba Restaurant",
+                    "isCorrect": false
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1115.png",
+                "question": "Listen to Conversation 4. Which restaurant did they decide to go to?"
+              }
+            ],
+            "transcript": "Presenter: Where did they go? And what did they have? Band 1. Father: Ali, where did you go for lunch? Ali: We went to the Sheba Restaurant. Father: And what did you have? Ali: Oh - I had a burger. Presenter: Band 2. Mother: Aisha? Aisha: Yes, Mum? Mother: Aisha, what would you like to drink? Aisha: Can I have an orange juice, please? Mother: Of course. And what would you like to eat? Aisha: Nothing, thanks, Mum. I’m not hungry. Mother: Right. Waiter! Presenter: Band 3. Waiter: Tim? Tim: Oh, hello. Can I have a cheese sandwich, a burger and an apple juice, please? Waiter: A cheese sandwich and a burger and an apple juice? Tim: Yes, please. I’m hungry. Waiter: A cheese sandwich, a burger and an apple juice! Presenter: Band 4. Fatma: Mona, where do you want to go? Salwa: I don’t know. What about you? Where do you want to go? Fatma: Well, I want to go to the Beach Restaurant. Salwa: I don’t. Fatma: Why not? Salwa: I don’t like the Beach Restaurant. I want to go to the Park Restaurant. Fatma: OK. The Park Restaurant. Let me get my bag."
+          }
+        },
+        {
+          "activity_id": "c52aa953-a731-4ac3-9ebb-136e5a3ed472",
+          "activity_type": "word-order",
+          "title": "Make Sentences",
+          "instruction": "Drag the words to make correct sentences or questions.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "75",
+          "compensates": "Replaces teacher-led sentence construction on the board or a written worksheet exercise.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "correctOrder": [
+                  "They",
+                  "went",
+                  "to",
+                  "a",
+                  "restaurant",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "What",
+                  "did",
+                  "you",
+                  "have",
+                  "?"
+                ]
+              },
+              {
+                "correctOrder": [
+                  "I",
+                  "had",
+                  "a",
+                  "cheese",
+                  "sandwich",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "The",
+                  "boys",
+                  "were",
+                  "hungry",
+                  "."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "20551c40-5b80-46c8-9b7b-5befde658a2d",
+          "activity_type": "pronunciation-practice",
+          "title": "Say it Right!",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to each word carefully. Then, try to say it yourself.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "57",
+          "compensates": "Replaces teacher-led choral drilling of new vocabulary.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "restaurant",
+                "phonetic": "/ˈres.tə.rɒnt/",
+                "syllables": [
+                  "res",
+                  "tau",
+                  "rant"
+                ]
+              },
+              {
+                "word": "sandwich",
+                "phonetic": "/ˈsæn.wɪdʒ/",
+                "syllables": [
+                  "sand",
+                  "wich"
+                ]
+              },
+              {
+                "word": "hungry",
+                "phonetic": "/ˈhʌŋ.ɡri/",
+                "syllables": [
+                  "hun",
+                  "gry"
+                ]
+              },
+              {
+                "word": "yesterday",
+                "phonetic": "/ˈjes.tə.deɪ/",
+                "syllables": [
+                  "yes",
+                  "ter",
+                  "day"
+                ]
+              },
+              {
+                "word": "chicken",
+                "phonetic": "/ˈtʃɪk.ɪn/",
+                "syllables": [
+                  "chick",
+                  "en"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "7122120f-1687-4a18-bfda-554ff592acd0",
+          "activity_type": "spelling-bee",
+          "title": "Word Spell",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the word, then spell it correctly using the letters.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "75",
+          "compensates": "Replaces a traditional spelling test or worksheet.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "hint": "How you feel when you want to eat.",
+                "word": "hungry",
+                "scrambled": [
+                  "h",
+                  "u",
+                  "n",
+                  "g",
+                  "r",
+                  "y"
+                ]
+              },
+              {
+                "hint": "A red or green fruit.",
+                "word": "apple",
+                "scrambled": [
+                  "a",
+                  "p",
+                  "p",
+                  "l",
+                  "e"
+                ]
+              },
+              {
+                "hint": "Yellow food made from milk. Often in a sandwich.",
+                "word": "cheese",
+                "scrambled": [
+                  "c",
+                  "h",
+                  "e",
+                  "e",
+                  "s",
+                  "e"
+                ]
+              },
+              {
+                "hint": "Meat in a round bread roll.",
+                "word": "burger",
+                "scrambled": [
+                  "b",
+                  "u",
+                  "r",
+                  "g",
+                  "e",
+                  "r"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "2fb83d1e-643f-435c-8e2c-db2d0e0fe453",
+      "lesson_title": "8.5",
+      "lesson_number": 5,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "fe43b865-486b-436e-ba52-8b65f65ca721",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 41)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "76",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "e8641768-c3d9-4ab6-b859-d03fad3bca1a",
+          "activity_type": "flashcard",
+          "title": "Key Words: Describing Food",
+          "instruction": "Learn the new words for this lesson. Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the word and the example sentence.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "76",
+          "compensates": "Teacher presenting new vocabulary using flashcards.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "great",
+                "audio": "great",
+                "image": null,
+                "example": "The pizza was great!",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_5_flsh_act0_i0.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/audio/g7_u8_l8.5_flsh_act0_a0.mp3",
+                "definition": "Very good.",
+                "partOfSpeech": "adj"
+              },
+              {
+                "word": "terrible",
+                "audio": "terrible",
+                "image": null,
+                "example": "The fish was terrible.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_5_flsh_act0_i1.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/audio/g7_u8_l8.5_flsh_act0_a1.mp3",
+                "definition": "Very bad.",
+                "partOfSpeech": "adj"
+              },
+              {
+                "word": "restaurant",
+                "audio": "restaurant",
+                "image": null,
+                "example": "I went to a restaurant yesterday.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_5_flsh_act0_i2.png",
+                "definition": "A place where you can buy and eat a meal.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "sandwich",
+                "audio": "sandwich",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1116.png",
+                "example": "I had an egg sandwich for lunch.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1116.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/audio/g7_u8_l8.5_flsh_act0_a3.mp3",
+                "definition": "Two pieces of bread with meat, cheese, or other filling between them.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "chicken",
+                "audio": "chicken",
+                "image": null,
+                "example": "She had some chicken for dinner.",
+                "definition": "A type of bird kept on a farm for its eggs or its meat.",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "fdefe8f9-4a73-4b41-951a-cdfa515b0b2e",
+          "activity_type": "spelling-bee",
+          "title": "Find the Verbs",
+          "instruction": "Unscramble the letters to find the hidden verbs. This is like activity B on page 76 of your Workbook.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "76",
+          "compensates": "Workbook exercise 8.5B, finding hidden words.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "hint": "To speak to God.",
+                "word": "pray",
+                "audio": "pray",
+                "scrambled": [
+                  "x",
+                  "j",
+                  "p",
+                  "r",
+                  "a",
+                  "y",
+                  "g"
+                ]
+              },
+              {
+                "hint": "To do a job.",
+                "word": "work",
+                "audio": "work",
+                "scrambled": [
+                  "t",
+                  "w",
+                  "o",
+                  "r",
+                  "k",
+                  "r",
+                  "u"
+                ]
+              },
+              {
+                "hint": "To go to see a person or place.",
+                "word": "visit",
+                "audio": "visit",
+                "scrambled": [
+                  "b",
+                  "s",
+                  "v",
+                  "i",
+                  "s",
+                  "i",
+                  "t",
+                  "b"
+                ]
+              },
+              {
+                "hint": "To call someone.",
+                "word": "phone",
+                "audio": "phone",
+                "scrambled": [
+                  "d",
+                  "p",
+                  "h",
+                  "o",
+                  "n",
+                  "e",
+                  "h",
+                  "l"
+                ]
+              },
+              {
+                "hint": "To control a car.",
+                "word": "drive",
+                "audio": "drive",
+                "scrambled": [
+                  "i",
+                  "q",
+                  "d",
+                  "r",
+                  "i",
+                  "v",
+                  "e",
+                  "t"
+                ]
+              },
+              {
+                "hint": "To get something by paying money for it.",
+                "word": "buy",
+                "audio": "buy",
+                "scrambled": [
+                  "p",
+                  "d",
+                  "b",
+                  "u",
+                  "y",
+                  "z"
+                ]
+              },
+              {
+                "hint": "To own, hold, or eat something.",
+                "word": "have",
+                "audio": "have",
+                "scrambled": [
+                  "g",
+                  "h",
+                  "a",
+                  "v",
+                  "e",
+                  "d",
+                  "l"
+                ]
+              },
+              {
+                "hint": "To look at and understand words in a book.",
+                "word": "read",
+                "audio": "read",
+                "scrambled": [
+                  "s",
+                  "f",
+                  "r",
+                  "e",
+                  "a",
+                  "d",
+                  "p"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "405185cc-2078-465e-b317-3a042ed21196",
+          "activity_type": "match-pairs",
+          "title": "Past Simple Verbs",
+          "instruction": "Match the verbs to their past simple form.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "76",
+          "compensates": "Teacher eliciting past forms of verbs from the class.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "pray",
+                "right": "prayed"
+              },
+              {
+                "left": "work",
+                "right": "worked"
+              },
+              {
+                "left": "visit",
+                "right": "visited"
+              },
+              {
+                "left": "phone",
+                "right": "phoned"
+              },
+              {
+                "left": "drive",
+                "right": "drove"
+              },
+              {
+                "left": "buy",
+                "right": "bought"
+              },
+              {
+                "left": "have",
+                "right": "had"
+              },
+              {
+                "left": "read",
+                "right": "read"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "18a5bf0d-3bd8-4f64-9012-82be1588876b",
+          "activity_type": "listening-comprehension",
+          "title": "At the Restaurant",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to two conversations and answer the questions.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "76",
+          "compensates": "Teacher playing Cassette Section 41 and asking comprehension questions.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "audioSrc": "CS41",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Some chicken",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "An egg sandwich",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "A burger",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "In the first conversation, what did the man have to eat?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Yes, it was great.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "No, it was terrible.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "It was okay.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "In the first conversation, was the food good?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Some chicken",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "An egg sandwich",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Some rice",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "In the second conversation, what did the woman have to eat?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "Yes, it was great.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "No, it was terrible.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "She didn't say.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "In the second conversation, was the food good?"
+              }
+            ],
+            "transcript": "Dialogue 1:\nMan 1: What did you do yesterday?\nMan 2: I went to a restaurant.\nMan 1: What did you have?\nMan 2: I had an egg sandwich.\nMan 1: Was it good?\nMan 2: Yes, it was great.\n\nDialogue 2:\nWoman 1: What did you do yesterday?\nWoman 2: I went to a restaurant.\nWoman 1: What did you have?\nWoman 2: I had some chicken.\nWoman 1: Was it good?\nWoman 2: No, it was terrible."
+          }
+        },
+        {
+          "activity_id": "8543c31c-14f1-4f29-b72a-c48e8f1d46ab",
+          "activity_type": "word-order",
+          "title": "Build the Conversation",
+          "instruction": "Drag the words to make correct sentences from the conversation.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "76",
+          "compensates": "Practising the tree conversation from WB8.5A with a partner.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "correctOrder": [
+                  "What",
+                  "did",
+                  "you",
+                  "do",
+                  "yesterday",
+                  "?"
+                ]
+              },
+              {
+                "correctOrder": [
+                  "I",
+                  "went",
+                  "to",
+                  "a",
+                  "restaurant",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "What",
+                  "did",
+                  "you",
+                  "have",
+                  "?"
+                ]
+              },
+              {
+                "correctOrder": [
+                  "I",
+                  "had",
+                  "an",
+                  "egg",
+                  "sandwich",
+                  "."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "Was",
+                  "it",
+                  "good",
+                  "?"
+                ]
+              },
+              {
+                "correctOrder": [
+                  "Yes",
+                  ",",
+                  "it",
+                  "was",
+                  "great",
+                  "."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "bcedcb1c-cf69-4271-9922-65dfec207584",
+          "activity_type": "gap-fill",
+          "title": "A, An, or Some?",
+          "instruction": "Complete the sentences with 'a', 'an', or 'some'.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "76",
+          "compensates": "Teacher-led practice on using a, an, and some.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "Yesterday, I had ___ apple.",
+                "blanks": [
+                  {
+                    "hint": "The next word starts with a vowel sound.",
+                    "answer": "an",
+                    "alternatives": [
+                      "a",
+                      "some"
+                    ]
+                  }
+                ],
+                "explanation": "We use 'an' before words that start with a vowel sound (a, e, i, o, u)."
+              },
+              {
+                "text": "For lunch, she had ___ sandwich.",
+                "blanks": [
+                  {
+                    "hint": "The next word starts with a consonant sound.",
+                    "answer": "a",
+                    "alternatives": [
+                      "an",
+                      "some"
+                    ]
+                  }
+                ],
+                "explanation": "We use 'a' before words that start with a consonant sound."
+              },
+              {
+                "text": "We bought ___ milk from the store.",
+                "blanks": [
+                  {
+                    "hint": "'Milk' is an uncountable noun.",
+                    "answer": "some",
+                    "alternatives": [
+                      "a",
+                      "an"
+                    ]
+                  }
+                ],
+                "explanation": "We use 'some' for uncountable nouns (like milk, rice, water) and plural countable nouns."
+              },
+              {
+                "text": "He ate ___ egg for breakfast.",
+                "blanks": [
+                  {
+                    "hint": "The next word starts with a vowel sound.",
+                    "answer": "an",
+                    "alternatives": [
+                      "a",
+                      "some"
+                    ]
+                  }
+                ],
+                "explanation": "We use 'an' before words that start with a vowel sound (a, e, i, o, u)."
+              },
+              {
+                "text": "They shared ___ rice and ___ chicken.",
+                "blanks": [
+                  {
+                    "hint": "'Rice' is uncountable.",
+                    "answer": "some",
+                    "alternatives": [
+                      "a",
+                      "an"
+                    ]
+                  },
+                  {
+                    "hint": "'Chicken' (meat) is uncountable.",
+                    "answer": "some",
+                    "alternatives": [
+                      "a",
+                      "an"
+                    ]
+                  }
+                ],
+                "explanation": "We use 'some' for uncountable nouns like 'rice' and 'chicken'."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "92f03d31-7dc0-4947-960e-b1e6adf3f3f3",
+          "activity_type": "conversation-sim",
+          "title": "Talk About Your Day",
+          "instruction": "A friend is asking you about yesterday. Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for the best response to continue the conversation.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "76",
+          "compensates": "The 'tree conversation' pair work from WB8.5A.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "turns": [
+              {
+                "text": "What did you do yesterday?",
+                "speaker": "Friend",
+                "studentOptions": [
+                  {
+                    "text": "I went to a restaurant.",
+                    "feedback": "Great! That's the correct past tense.",
+                    "nextTurn": 1,
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "I go to a restaurant.",
+                    "feedback": "Remember to use the past tense for yesterday.",
+                    "nextTurn": 1,
+                    "isCorrect": false
+                  }
+                ]
+              },
+              {
+                "text": "Oh, nice! What did you have?",
+                "speaker": "Friend",
+                "studentOptions": [
+                  {
+                    "text": "I have some chicken.",
+                    "feedback": "Use the past tense 'had'.",
+                    "nextTurn": 2,
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "I had some chicken.",
+                    "feedback": "Sounds delicious!",
+                    "nextTurn": 2,
+                    "isCorrect": true
+                  }
+                ]
+              },
+              {
+                "text": "Was it good?",
+                "speaker": "Friend",
+                "studentOptions": [
+                  {
+                    "text": "Yes, it was great.",
+                    "feedback": "I'm glad you enjoyed it!",
+                    "nextTurn": null,
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "No, it was terrible.",
+                    "feedback": "Oh no! That's too bad.",
+                    "nextTurn": null,
+                    "isCorrect": true
+                  }
+                ]
+              }
+            ],
+            "scenario": "You are talking to a friend about what you did yesterday."
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "ffec2df8-9399-4b56-af06-c56320f3c95e",
+      "lesson_title": "8.6",
+      "lesson_number": 6,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "5aed8643-941c-4c42-80c1-353d287027b0",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 42)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "58",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "e4378541-9fd5-471d-b5e3-3503dff2f918",
+          "activity_type": "flashcard",
+          "title": "Action Words: Today and Yesterday",
+          "instruction": "Learn these verbs. See how they change for past actions. Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the pronunciation.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "58",
+          "compensates": "Replaces teacher writing vocabulary on the board and class repetition.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "go",
+                "example": "Let's go to the park.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/audio/g7_u8_l8.6_flsh_act0_a0.mp3",
+                "definition": "Present tense. To move from one place to another.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "went",
+                "example": "We went to the park yesterday.",
+                "definition": "Past tense of 'go'.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "watch",
+                "example": "Let's watch TV.",
+                "definition": "Present tense. To look at something for a period of time.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "watched",
+                "example": "We watched TV last night.",
+                "definition": "Past tense of 'watch'.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "listen",
+                "example": "Let's listen to my cassettes.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/audio/g7_u8_l8.6_flsh_act0_a4.mp3",
+                "definition": "Present tense. To give attention to a sound.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "listened",
+                "example": "We listened to your cassettes yesterday.",
+                "definition": "Past tense of 'listen'.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "play",
+                "example": "Let's play a game.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/audio/g7_u8_l8.6_flsh_act0_a6.mp3",
+                "definition": "Present tense. To take part in a game or activity for enjoyment.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "played",
+                "example": "I played football last week.",
+                "definition": "Past tense of 'play'.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "do",
+                "example": "Let's do our homework.",
+                "definition": "Present tense. To perform an action.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "did",
+                "example": "We did our homework yesterday.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/audio/g7_u8_l8.6_flsh_act0_a9.mp3",
+                "definition": "Past tense of 'do'.",
+                "partOfSpeech": "verb"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "20f8d9dc-b321-4202-915b-40e05764eecd",
+          "activity_type": "dialogue-read",
+          "title": "Let's Go to the Park",
+          "instruction": "Listen to and read the conversation between Tom and Anne from page 58. You can Interact with the screen! 🖱️ Interact with the screen! 🖱️ Click to to on each line to hear it again.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "58",
+          "compensates": "Replaces teacher-led reading and playing Cassette Section 42.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "dialogue": [
+              {
+                "text": "Let's go to the park.",
+                "speaker": "Tom"
+              },
+              {
+                "text": "No. We went to the park yesterday. Let's watch TV.",
+                "speaker": "Anne"
+              },
+              {
+                "text": "No. We watched TV last night. I know. Let's listen to my cassettes.",
+                "speaker": "Tom"
+              },
+              {
+                "text": "No. We listened to your cassettes yesterday.",
+                "speaker": "Anne"
+              },
+              {
+                "text": "Let's play a game.",
+                "speaker": "Tom"
+              },
+              {
+                "text": "No. Let's do our homework.",
+                "speaker": "Anne"
+              },
+              {
+                "text": "We did our homework yesterday and the day before and the day before . . .",
+                "speaker": "Tom"
+              },
+              {
+                "text": "Let's do our homework.",
+                "speaker": "Anne"
+              },
+              {
+                "text": "OK. Let's do our homework.",
+                "speaker": "Tom"
+              }
+            ],
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_6_dlg_act1_i0.png",
+            "comprehension": []
+          }
+        },
+        {
+          "activity_id": "3a0f67da-0b59-4255-baa9-885d2e93c814",
+          "activity_type": "mcq",
+          "title": "Conversation Check",
+          "instruction": "Read the questions about the conversation and Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for the correct answer.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "58",
+          "compensates": "Replaces teacher asking comprehension questions after reading.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "She doesn't like the park.",
+                    "feedback": "The text doesn't say if she likes it or not.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "They went to the park yesterday.",
+                    "feedback": "Correct! She says, 'We went to the park yesterday.'",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "She wants to watch TV.",
+                    "feedback": "She suggests watching TV, but that's not the reason she gives for not going to the park.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Why doesn't Anne want to go to the park?",
+                "explanation": "Anne says they went to the park yesterday, so she doesn't want to go again today."
+              },
+              {
+                "options": [
+                  {
+                    "text": "Yesterday",
+                    "feedback": "They did something else yesterday.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Last night",
+                    "feedback": "That's right! Tom says, 'We watched TV last night.'",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Last week",
+                    "feedback": "The conversation doesn't mention last week.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "When did Tom and Anne watch TV?",
+                "explanation": "Tom reminds Anne that they watched TV last night."
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/173.png",
+                "options": [
+                  {
+                    "text": "Play a game",
+                    "feedback": "Tom suggests playing a game.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Listen to cassettes",
+                    "feedback": "Tom suggests listening to cassettes.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Do their homework",
+                    "feedback": "Correct! Anne wants to do their homework.",
+                    "isCorrect": true
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/173.png",
+                "question": "What does Anne suggest they do?",
+                "explanation": "Anne suggests doing homework twice in the conversation."
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/174.png",
+                "options": [
+                  {
+                    "text": "He is happy.",
+                    "feedback": "Look at the picture. He doesn't look happy.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He is excited.",
+                    "feedback": "He doesn't seem excited about homework.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He is fed up.",
+                    "feedback": "Correct! He is tired of doing homework and reluctantly agrees.",
+                    "isCorrect": true
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/174.png",
+                "question": "How does Tom feel at the end of the conversation?",
+                "explanation": "Tom is fed up because he doesn't want to do more homework, but he agrees anyway."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "7040367b-b73b-4b2f-8d08-a6f681300437",
+          "activity_type": "category-sort",
+          "title": "Verb Tenses: Now vs. Before",
+          "instruction": "Drag and drop the verbs into the correct columns: 'Every day' (Present) or 'Yesterday' (Past).",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "58",
+          "compensates": "Digitizes the teacher's activity of writing two columns of verbs on the board for pupils to categorize.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "categories": [
+              {
+                "name": "Every day (Present)",
+                "items": [
+                  "go",
+                  "watch",
+                  "listen",
+                  "play",
+                  "do",
+                  "have"
+                ]
+              },
+              {
+                "name": "Yesterday (Past)",
+                "items": [
+                  "went",
+                  "watched",
+                  "listened",
+                  "played",
+                  "did",
+                  "had"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "afc4d3e7-f624-485e-9557-3e58d5d6569f",
+          "activity_type": "gap-fill",
+          "title": "Making Suggestions with 'Let's'",
+          "instruction": "Complete the sentences to make suggestions. Use 'Let's' and a verb from the dialogue.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "58",
+          "compensates": "Replaces teacher-led drills for making suggestions.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "___ go to the park.",
+                "blanks": [
+                  {
+                    "hint": "How do we start a suggestion?",
+                    "answer": "Let's",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'Let's' followed by a verb to make a suggestion."
+              },
+              {
+                "text": "Let's ___ TV.",
+                "blanks": [
+                  {
+                    "hint": "What do you do with a TV?",
+                    "answer": "watch",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The verb 'watch' is used with TV."
+              },
+              {
+                "text": "Let's ___ to my cassettes.",
+                "blanks": [
+                  {
+                    "hint": "What do you do with music or sounds?",
+                    "answer": "listen",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The verb 'listen' is used for sounds and music."
+              },
+              {
+                "text": "Let's ___ a game.",
+                "blanks": [
+                  {
+                    "hint": "What action do you do with a game?",
+                    "answer": "play",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The verb 'play' is used with games."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "594df515-beec-4579-ac41-8b2c1de2b3c9",
+          "activity_type": "word-order",
+          "title": "Build a Sentence",
+          "instruction": "Drag the words into the correct order to make sentences from the conversation.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "58",
+          "compensates": "Provides sentence structure practice that is often done on a whiteboard.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "instruction": "Make a sentence about the park.",
+                "correctOrder": [
+                  "We",
+                  "went",
+                  "to",
+                  "the",
+                  "park",
+                  "yesterday",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Make a sentence about TV.",
+                "correctOrder": [
+                  "We",
+                  "watched",
+                  "TV",
+                  "last",
+                  "night",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Make a suggestion about homework.",
+                "correctOrder": [
+                  "Let's",
+                  "do",
+                  "our",
+                  "homework",
+                  "."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "d4ffbd09-0fdb-4b48-8677-ea948ed87fb3",
+          "activity_type": "pronunciation-practice",
+          "title": "Say it Right: Past Tense '-ed'",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the past tense verbs. Notice how the '-ed' ending sounds different. Practice saying them aloud.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "58",
+          "compensates": "Replaces teacher-led choral repetition for pronunciation.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "watched",
+                "phonetic": "/wɒtʃt/",
+                "syllables": [
+                  "watched"
+                ]
+              },
+              {
+                "word": "listened",
+                "phonetic": "/ˈlɪsənd/",
+                "syllables": [
+                  "lis",
+                  "tened"
+                ]
+              },
+              {
+                "word": "played",
+                "phonetic": "/pleɪd/",
+                "syllables": [
+                  "played"
+                ]
+              },
+              {
+                "word": "visited",
+                "phonetic": "/ˈvɪzɪtɪd/",
+                "syllables": [
+                  "vis",
+                  "it",
+                  "ed"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "189e92a1-4e1e-4f57-ac9a-0df850702d20",
+          "activity_type": "dictation",
+          "title": "Listen and Type",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the sentence from the conversation and type exactly what you hear.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "58",
+          "compensates": "Provides individual listening and spelling practice, similar to a traditional dictation exercise.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "hints": [
+                  "It's a suggestion."
+                ],
+                "difficulty": "sentence",
+                "expectedText": "Let's go to the park."
+              },
+              {
+                "hints": [
+                  "This is a reason not to do something."
+                ],
+                "difficulty": "sentence",
+                "expectedText": "We went to the park yesterday."
+              },
+              {
+                "hints": [
+                  "This happened in the evening."
+                ],
+                "difficulty": "sentence",
+                "expectedText": "We watched TV last night."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "1307d09e-b0dc-480a-a4a5-a11b2ee972b6",
+      "lesson_title": "8.7",
+      "lesson_number": 7,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "a3fc37f5-7a1e-4b7b-8cfa-96f68bf96293",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 43)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "59",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "3f250805-5fea-4e70-9c80-8866c2161a4e",
+          "activity_type": "flashcard",
+          "title": "Actions and Activities",
+          "instruction": "Learn the new words for this lesson. Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the word and the example sentence.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "59",
+          "compensates": "Teacher-led vocabulary presentation and drilling.",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "walk",
+                "audio": "walk",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/175.png",
+                "example": "I walked to school this morning.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/175.png",
+                "definition": "To move at a regular pace by lifting and setting down each foot in turn, never having both feet off the ground at once.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "talk",
+                "audio": "talk",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/176.png",
+                "example": "I talked to my friend on the way to school.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/176.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/audio/g7_u8_l8.7_flsh_act0_a1.mp3",
+                "definition": "To speak in order to give information or express ideas or feelings.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "run",
+                "audio": "run",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/177.png",
+                "example": "I ran for the bus because I was late.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/177.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/audio/g7_u8_l8.7_flsh_act0_a2.mp3",
+                "definition": "To move at a speed faster than a walk, never having both or all the feet on the ground at the same time.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "go to the beach",
+                "audio": "go to the beach",
+                "image": null,
+                "example": "We went to the beach last Friday.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/audio/g7_u8_l8.7_flsh_act0_a3.mp3",
+                "definition": "To travel to the area of sand or pebbles by the sea.",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "phone our friend",
+                "audio": "phone our friend",
+                "image": null,
+                "example": "We phoned our friend yesterday.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/audio/g7_u8_l8.7_flsh_act0_a4.mp3",
+                "definition": "To call a friend using a telephone.",
+                "partOfSpeech": "verb phrase"
+              },
+              {
+                "word": "watch TV",
+                "audio": "watch TV",
+                "image": null,
+                "example": "We watched TV last night.",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/audio/g7_u8_l8.7_flsh_act0_a5.mp3",
+                "definition": "To look at television.",
+                "partOfSpeech": "verb phrase"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "3a948c46-5d99-483a-97a2-5168fa577282",
+          "activity_type": "listening-comprehension",
+          "title": "Song: All on my way to school",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the song from Pupil's Book page 59, then answer the questions.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "59",
+          "compensates": "Teacher-led singing activity and comprehension questions (PB59, Teacher Guide Activity 4).",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "audioSrc": "/media/audio/g7_u8_l8.7_lis_2.mp3",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "They ran.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "They walked.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "They took the bus.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "How did the person go to school in the first verse?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "They walked.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "They ran.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "They talked.",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "What did the person do when they saw their friend?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "They ran.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "They talked.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "They walked.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What did the person do when they heard the school bus?"
+              }
+            ],
+            "transcript": "I went to school one morning and I walked like this, walked like this, walked like this. I went to school one morning and I walked like this, all on my way to school. I saw my friend one morning and I talked like this... I heard the school bus coming and I ran like this..."
+          }
+        },
+        {
+          "activity_id": "17d7f5e4-b069-4b46-8fcf-f81621803550",
+          "activity_type": "gap-fill",
+          "title": "Making and Refusing Suggestions",
+          "instruction": "Complete the conversation. Use the past tense form of the verb from the first sentence.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "77",
+          "compensates": "Teacher-led pair practice for making and refusing suggestions (Teacher Guide Activity 1B).",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "A: Let's go to the beach.\nB: No. We ___ to the beach last Friday.",
+                "blanks": [
+                  {
+                    "hint": "What is the past tense of 'go'?",
+                    "answer": "went",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The past tense of 'go' is 'went'."
+              },
+              {
+                "text": "A: Let's phone our friend.\nB: No. We ___ our friend yesterday.",
+                "blanks": [
+                  {
+                    "hint": "Add '-d' to make this verb past tense.",
+                    "answer": "phoned",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The past tense of 'phone' is 'phoned'."
+              },
+              {
+                "text": "A: Let's watch TV.\nB: No. We ___ TV last night.",
+                "blanks": [
+                  {
+                    "hint": "Add '-ed' to make this verb past tense.",
+                    "answer": "watched",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The past tense of 'watch' is 'watched'."
+              },
+              {
+                "text": "A: Let's play football.\nB: No. We ___ football yesterday.",
+                "blanks": [
+                  {
+                    "hint": "Add '-ed' to make this verb past tense.",
+                    "answer": "played",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The past tense of 'play' is 'played'."
+              },
+              {
+                "text": "A: Let's do our homework.\nB: No. We ___ our homework this morning.",
+                "blanks": [
+                  {
+                    "hint": "What is the past tense of 'do'?",
+                    "answer": "did",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "The past tense of 'do' is 'did'."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "020d600b-c075-480a-b509-747d550857e5",
+          "activity_type": "word-order",
+          "title": "Build the Sentences",
+          "instruction": "Put the words in the correct order to make sentences.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "77",
+          "compensates": "Sentence construction practice, scaffolding for WB 8.7B.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "instruction": "Make a suggestion.",
+                "correctOrder": [
+                  "Let's",
+                  "walk",
+                  "to",
+                  "the",
+                  "park",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Refuse the suggestion.",
+                "correctOrder": [
+                  "No",
+                  ",",
+                  "we",
+                  "went",
+                  "to",
+                  "the",
+                  "beach",
+                  "last",
+                  "Friday",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Make a sentence from the song.",
+                "correctOrder": [
+                  "I",
+                  "saw",
+                  "my",
+                  "friend",
+                  "one",
+                  "morning",
+                  "."
+                ]
+              },
+              {
+                "instruction": "Make a sentence from the song.",
+                "correctOrder": [
+                  "I",
+                  "heard",
+                  "the",
+                  "school",
+                  "bus",
+                  "coming",
+                  "."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "5c91a80a-495c-4739-816f-a2f30f62c97a",
+          "activity_type": "pronunciation-practice",
+          "title": "Past Tense Pronunciation",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the past tense verbs. Pay attention to the endings. Record yourself saying each word.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "59",
+          "compensates": "Teacher-led choral repetition and pronunciation drills.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "walked",
+                "audioSrc": "/media/audio/g7_u8_l8.7_pro_5_w0.mp3",
+                "phonetic": "/wɔːkt/",
+                "syllables": [
+                  "walked"
+                ]
+              },
+              {
+                "word": "talked",
+                "audioSrc": "/media/audio/g7_u8_l8.7_pro_5_w1.mp3",
+                "phonetic": "/tɔːkt/",
+                "syllables": [
+                  "talked"
+                ]
+              },
+              {
+                "word": "ran",
+                "audioSrc": "/media/audio/g7_u8_l8.7_pro_5_w2.mp3",
+                "phonetic": "/ræn/",
+                "syllables": [
+                  "ran"
+                ]
+              },
+              {
+                "word": "went",
+                "audioSrc": "/media/audio/g7_u8_l8.7_pro_5_w3.mp3",
+                "phonetic": "/wɛnt/",
+                "syllables": [
+                  "went"
+                ]
+              },
+              {
+                "word": "heard",
+                "audioSrc": "/media/audio/g7_u8_l8.7_pro_5_w4.mp3",
+                "phonetic": "/hɜːd/",
+                "syllables": [
+                  "heard"
+                ]
+              },
+              {
+                "word": "did",
+                "audioSrc": "/media/audio/g7_u8_l8.7_pro_5_w5.mp3",
+                "phonetic": "/dɪd/",
+                "syllables": [
+                  "did"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "ac3ebcf0-f87a-413c-9e07-78e3ab1db8ec",
+          "activity_type": "conversation-sim",
+          "title": "Let's Make a Plan!",
+          "instruction": "You are talking with your friend Ali. Read his suggestions and Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for the best response.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "59",
+          "compensates": "Teacher-led pair work and role-playing (Teacher Guide Activity 2).",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "turns": [
+              {
+                "text": "Let's go to the beach.",
+                "speaker": "Ali",
+                "studentOptions": [
+                  {
+                    "text": "OK.",
+                    "feedback": "Try refusing the suggestion. Remember what you did last Friday.",
+                    "nextTurn": 0,
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "No. We went to the beach last Friday.",
+                    "feedback": "Great! That's a perfect way to refuse a suggestion.",
+                    "nextTurn": 1,
+                    "isCorrect": true
+                  }
+                ]
+              },
+              {
+                "text": "You're right. OK, let's walk to the park.",
+                "speaker": "Ali",
+                "studentOptions": [
+                  {
+                    "text": "OK.",
+                    "feedback": "Good idea! Let's go!",
+                    "nextTurn": 2,
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "No. We walked to the park yesterday.",
+                    "feedback": "You can agree to this suggestion.",
+                    "nextTurn": 1,
+                    "isCorrect": false
+                  }
+                ]
+              },
+              {
+                "text": "Great! Let's go!",
+                "speaker": "Ali",
+                "studentOptions": []
+              }
+            ],
+            "scenario": "You and your friend Ali are deciding what to do."
+          }
+        },
+        {
+          "activity_id": "2b270b16-781b-469b-b995-185d75181329",
+          "activity_type": "picture-description",
+          "title": "What Did He Do?",
+          "instruction": "Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the pictures from the song. Describe what the boy did in each picture. Use the past tense.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "59",
+          "compensates": "Teacher asking questions about pictures on PB59 (Teacher Guide Activity 4A).",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/175.png",
+            "items": [
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/175.png",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/175.png",
+                "keywords": [
+                  "walked"
+                ],
+                "sampleAnswers": [
+                  "He walked to school.",
+                  "The boy walked."
+                ],
+                "promptQuestions": [
+                  "What did the boy do on his way to school?"
+                ]
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/176.png",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/176.png",
+                "keywords": [
+                  "talked"
+                ],
+                "sampleAnswers": [
+                  "He talked to his friend.",
+                  "The boy talked."
+                ],
+                "promptQuestions": [
+                  "What did the boy do when he saw his friend?"
+                ]
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/177.png",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/177.png",
+                "keywords": [
+                  "ran"
+                ],
+                "sampleAnswers": [
+                  "He ran for the bus.",
+                  "The boy ran."
+                ],
+                "promptQuestions": [
+                  "What did the boy do when he heard the bus?"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "1bd747a1-7789-40b9-8d43-ebf2f1e0b9eb",
+      "lesson_title": "8.8",
+      "lesson_number": 8,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "580e0c3b-a119-450c-8911-64dc4dedcd06",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 43)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "78",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "c8cd2b68-3ce9-47ab-a63b-5af6fcc65f0a",
+          "activity_type": "match-pairs",
+          "title": "Match Irregular Verbs",
+          "instruction": "Match the verb in the present tense to its correct past tense form. These verbs don't follow the normal '-ed' rule!",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "78",
+          "compensates": "Replaces the teacher-led board activity of matching present and past verb forms (Teacher Guide, Activity 1).",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "pairs": [
+              {
+                "left": "hear",
+                "right": "heard"
+              },
+              {
+                "left": "come",
+                "right": "came"
+              },
+              {
+                "left": "do / does",
+                "right": "did"
+              },
+              {
+                "left": "have / has",
+                "right": "had"
+              },
+              {
+                "left": "drive",
+                "right": "drove"
+              },
+              {
+                "left": "buy",
+                "right": "bought"
+              },
+              {
+                "left": "see",
+                "right": "saw"
+              },
+              {
+                "left": "run",
+                "right": "ran"
+              },
+              {
+                "left": "am / is",
+                "right": "was"
+              },
+              {
+                "left": "read",
+                "right": "read"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "e87f6825-4640-4087-9f44-e5467421ec3b",
+          "activity_type": "gap-fill",
+          "title": "Regular Verbs in the Past",
+          "instruction": "Complete the sentences with the correct past tense form of the regular verb in brackets. Remember the spelling rules!",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "78",
+          "compensates": "Digitizes Workbook page 78, Activity A, providing immediate feedback on spelling rules for regular past tense verbs.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "Yesterday, we ___ football in the park. (play)",
+                "blanks": [
+                  {
+                    "answer": "played"
+                  }
+                ],
+                "explanation": "For most regular verbs, we add '-ed' to form the past tense."
+              },
+              {
+                "text": "My friend ___ me last night. (phone)",
+                "blanks": [
+                  {
+                    "answer": "phoned"
+                  }
+                ],
+                "explanation": "If the verb ends in '-e', we just add '-d'."
+              },
+              {
+                "text": "The frog ___ into the pond. (hop)",
+                "blanks": [
+                  {
+                    "answer": "hopped"
+                  }
+                ],
+                "explanation": "For short verbs ending in consonant-vowel-consonant, we double the last consonant and add '-ed'."
+              },
+              {
+                "text": "I ___ to school this morning. (walk)",
+                "blanks": [
+                  {
+                    "answer": "walked"
+                  }
+                ],
+                "explanation": "We add '-ed' to 'walk' to make it past tense."
+              },
+              {
+                "text": "She ___ her grandparents on Friday. (visit)",
+                "blanks": [
+                  {
+                    "answer": "visited"
+                  }
+                ],
+                "explanation": "We add '-ed' to 'visit' to make it past tense."
+              },
+              {
+                "text": "They ___ in a small house. (live)",
+                "blanks": [
+                  {
+                    "answer": "lived"
+                  }
+                ],
+                "explanation": "Since 'live' ends in '-e', we just add '-d'."
+              },
+              {
+                "text": "He ___ TV after dinner. (watch)",
+                "blanks": [
+                  {
+                    "answer": "watched"
+                  }
+                ],
+                "explanation": "We add '-ed' to 'watch' to make it past tense."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "f33c11d1-9253-4277-9054-4bc9d601c7cf",
+          "activity_type": "listening-comprehension",
+          "title": "What Did They Do?",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the short story about Hassan's week. Then, answer the questions.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "78",
+          "compensates": "Provides structured listening practice that complements the 'Ask and answer' activity in the Teacher Guide.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "audioSrc": "/media/audio/g7_u8_l8.8_lis_1.mp3",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "He washed a rug.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He played football.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "He went to the mosque.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What did Hassan do on Monday?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "On Monday",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "On Wednesday",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "On Friday",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "When did Hassan wash a rug?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "He phoned his cousin.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "He played tag.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "He read a book.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What did Hassan do on Thursday?"
+              }
+            ],
+            "transcript": "Last week was fun for Hassan. On Monday, he played football with his friends. On Wednesday, he washed a rug with his father. On Thursday, he phoned his cousin. On Friday, he went to the mosque."
+          }
+        },
+        {
+          "activity_id": "16567ece-914c-4188-8272-7dba5033f949",
+          "activity_type": "picture-description",
+          "title": "Describe the Action",
+          "instruction": "Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the pictures from Workbook page 79. Write a sentence in the past tense describing what each person did.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "78",
+          "compensates": "Digitizes and provides a self-correction model for Workbook page 79, Activity C.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1118.png",
+            "images": [
+              {
+                "idx": 0,
+                "url": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_8_pic_act3_i0.png"
+              },
+              {
+                "idx": 1,
+                "url": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_8_pic_act3_i1.png"
+              },
+              {
+                "idx": 2,
+                "url": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_8_pic_act3_i2.png"
+              }
+            ],
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1118.png",
+            "keywords": [
+              "Hassan",
+              "played",
+              "football"
+            ],
+            "sampleAnswers": [
+              "Hassan played football last Monday."
+            ],
+            "promptQuestions": [
+              "What did Hassan do last Monday?"
+            ]
+          }
+        },
+        {
+          "activity_id": "5895b0e8-394d-425a-b941-a425dc4631ba",
+          "activity_type": "word-order",
+          "title": "Make Past Tense Questions",
+          "instruction": "Drag the words into the correct order to make questions about the past.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "78",
+          "compensates": "Replaces the teacher-led 'Ask and answer' pair work (Teacher Guide, Activity 3) by focusing on the grammatical structure of the questions.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "instruction": "Make a question about Aisha.",
+                "correctOrder": [
+                  "What",
+                  "did",
+                  "Aisha",
+                  "do",
+                  "last",
+                  "Wednesday?"
+                ]
+              },
+              {
+                "instruction": "Make a yes/no question about Hassan.",
+                "correctOrder": [
+                  "Did",
+                  "Hassan",
+                  "play",
+                  "football",
+                  "on",
+                  "Monday?"
+                ]
+              },
+              {
+                "instruction": "Make a 'where' question about Najeeb's father.",
+                "correctOrder": [
+                  "Where",
+                  "did",
+                  "Najeeb's",
+                  "father",
+                  "drive",
+                  "on",
+                  "Thursday?"
+                ]
+              },
+              {
+                "instruction": "Make a general question.",
+                "correctOrder": [
+                  "Did",
+                  "they",
+                  "watch",
+                  "TV",
+                  "last",
+                  "week?"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "3b7765c9-7074-4436-8230-63ef9bf60e63",
+          "activity_type": "pronunciation-practice",
+          "title": "Pronouncing '-ed' Endings",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the different sounds of the '-ed' ending in these regular past tense verbs. Record yourself saying each word.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "78",
+          "compensates": "Provides focused, individual pronunciation practice that is difficult to achieve in a full classroom setting.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "walked",
+                "audioSrc": "/media/audio/g7_u8_l8.8_pro_1_w0.mp3",
+                "phonetic": "/wɔːkt/",
+                "syllables": [
+                  "walked"
+                ],
+                "explanation": "The '-ed' sounds like /t/ after a 'k' sound."
+              },
+              {
+                "word": "hopped",
+                "audioSrc": "/media/audio/g7_u8_l8.8_pro_1_w1.mp3",
+                "phonetic": "/hɒpt/",
+                "syllables": [
+                  "hopped"
+                ],
+                "explanation": "The '-ed' sounds like /t/ after a 'p' sound."
+              },
+              {
+                "word": "played",
+                "audioSrc": "/media/audio/g7_u8_l8.8_pro_1_w2.mp3",
+                "phonetic": "/pleɪd/",
+                "syllables": [
+                  "played"
+                ],
+                "explanation": "The '-ed' sounds like /d/ after a vowel sound."
+              },
+              {
+                "word": "phoned",
+                "audioSrc": "/media/audio/g7_u8_l8.8_pro_1_w3.mp3",
+                "phonetic": "/fəʊnd/",
+                "syllables": [
+                  "phoned"
+                ],
+                "explanation": "The '-ed' sounds like /d/ after an 'n' sound."
+              },
+              {
+                "word": "visited",
+                "audioSrc": "/media/audio/g7_u8_l8.8_pro_1_w4.mp3",
+                "phonetic": "/ˈvɪz.ɪ.tɪd/",
+                "syllables": [
+                  "vis",
+                  "it",
+                  "ed"
+                ],
+                "explanation": "The '-ed' sounds like /ɪd/ after a 't' sound and adds an extra syllable."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "8ba94488-6ef9-43b8-a2af-118075112930",
+          "activity_type": "mcq",
+          "title": "Choose the Correct Past Tense",
+          "instruction": "Read the sentence and Take a closer Use your eyes! 🧐 Look closely at the! 📝 Pick the best option for the correct past tense verb to complete it.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "78",
+          "compensates": "Provides a quick check for understanding of both regular and irregular past tense forms in context.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/g7_u8_l8_8_mcq_act6_i0.png",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "move",
+                    "feedback": "This is the present tense. We need the past tense for 'last year'.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "moved",
+                    "feedback": "Correct! 'Moved' is the past tense of 'move'.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "moving",
+                    "feedback": "This is the present participle form. We need the simple past.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Last year, my family ___ to a new house.",
+                "explanation": "We use the past simple tense to talk about completed actions in the past."
+              },
+              {
+                "options": [
+                  {
+                    "text": "heard",
+                    "feedback": "Excellent! 'Heard' is the irregular past tense of 'hear'.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "heared",
+                    "feedback": "'Hear' is an irregular verb. It does not take '-ed'.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "hear",
+                    "feedback": "This is the present tense. The sentence is about 'last night'.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "I ___ a strange noise outside my window last night.",
+                "explanation": "'Hear' is an irregular verb. Its past tense form is 'heard'."
+              },
+              {
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1129.png",
+                "options": [
+                  {
+                    "text": "drive",
+                    "feedback": "This is the present tense. The action happened 'yesterday'.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "drived",
+                    "feedback": "'Drive' is an irregular verb. It does not take '-ed'.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "drove",
+                    "feedback": "Correct! 'Drove' is the irregular past tense of 'drive'.",
+                    "isCorrect": true
+                  }
+                ],
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1129.png",
+                "question": "Najeeb's father ___ his car to work yesterday.",
+                "explanation": "'Drive' is an irregular verb. Its past tense form is 'drove'."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "e079826e-0ed5-4c3b-b1d7-d86623940d45",
+      "lesson_title": "8.9",
+      "lesson_number": 9,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "ee29ee2d-b520-4982-867b-b0df7fa5a871",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 44)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "80",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "cde2bfbd-bc4c-45f6-bf11-ceef44008891",
+          "activity_type": "flashcard",
+          "title": "Yesterday's Actions Vocabulary",
+          "instruction": "Learn the words for things Ali did yesterday. Interact with the screen! 🖱️ Interact with the screen! 🖱️ Click to to on the cards to see the meaning and hear the word.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "80",
+          "compensates": "Replaces teacher-led flashcard drills (TG 8.9, Activity 1B).",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "went out",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1133.png",
+                "example": "Ali went out at five o’clock.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1133.png",
+                "definition": "To leave your house.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "walked",
+                "example": "He walked to the supermarket.",
+                "definition": "The past tense of 'walk'. To move on your feet.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "supermarket",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1136.png",
+                "example": "He walked to the supermarket.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1136.png",
+                "definition": "A large store that sells food and household goods.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "bought",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1138.png",
+                "example": "He bought some apples and some bananas.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1138.png",
+                "definition": "The past tense of 'buy'. To get something by paying money for it.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "hospital",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1134.png",
+                "example": "After that he went to the hospital.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1134.png",
+                "definition": "A place where sick or injured people are given medical care.",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "gave",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1135.png",
+                "example": "He gave the fruit to his friend.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1135.png",
+                "wordAudio": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/audio/g7_u8_l8.9_flsh_act0_a5.mp3",
+                "definition": "The past tense of 'give'.",
+                "partOfSpeech": "verb"
+              },
+              {
+                "word": "went home",
+                "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1137.png",
+                "example": "Then he went home.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1137.png",
+                "definition": "To return to the place where you live.",
+                "partOfSpeech": "verb"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "47b9d3fa-1bf2-46c0-9300-156995b0d4e4",
+          "activity_type": "listening-comprehension",
+          "title": "Listen to Ali's Story",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the story about what Ali did yesterday. Then, answer the questions.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "80",
+          "compensates": "Replaces teacher-led listening for gist (TG 8.9, Activity 2). Provides immediate feedback.",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "audioSrc": "/media/audio/g7_u8_l8.9_lis_2.mp3",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Five o'clock",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Nine o'clock",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Ten o'clock",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "What time did Ali go out?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "The hospital",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "The supermarket",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "His friend's house",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Where did Ali go first?"
+              },
+              {
+                "options": [
+                  {
+                    "text": "His mother",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "The cashier",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "His friend",
+                    "isCorrect": true
+                  }
+                ],
+                "question": "Who did he give the fruit to?"
+              }
+            ],
+            "transcript": "Ali went out at five o’clock. First he walked to the supermarket. He bought some apples and some bananas. After that he went to the hospital. He gave the fruit to his friend. Then he went home."
+          }
+        },
+        {
+          "activity_id": "38679930-265c-4d1b-9bc2-20f69d193b47",
+          "activity_type": "category-sort",
+          "title": "Order the Story",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the story again. Drag the pictures into the correct order to show what Ali did yesterday.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "80",
+          "compensates": "Digitizes the workbook activity WB8.9A, allowing students to self-correct their sequencing.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "categories": [
+              {
+                "name": "First",
+                "items": [
+                  "1133"
+                ]
+              },
+              {
+                "name": "Second",
+                "items": [
+                  "1136"
+                ]
+              },
+              {
+                "name": "Third",
+                "items": [
+                  "1138"
+                ]
+              },
+              {
+                "name": "Fourth",
+                "items": [
+                  "1134"
+                ]
+              },
+              {
+                "name": "Fifth",
+                "items": [
+                  "1135"
+                ]
+              },
+              {
+                "name": "Sixth",
+                "items": [
+                  "1137"
+                ]
+              }
+            ],
+            "items_to_sort": [
+              "1133",
+              "1134",
+              "1135",
+              "1136",
+              "1137",
+              "1138"
+            ]
+          }
+        },
+        {
+          "activity_id": "8d9be187-bf92-4a78-9c0d-a788c27d5b84",
+          "activity_type": "gap-fill",
+          "title": "Complete Ali's Story",
+          "instruction": "Fill in the blanks to complete the story about what Ali did yesterday. Use the words from the word bank.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "80",
+          "compensates": "Digitizes workbook activity WB8.9B and the teacher-led check (TG 8.9, Activity 4).",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "Ali went out at ___ o'clock. First he ___ to the ___. He bought some apples and some ___. After that he ___ to the ___. He ___ the fruit to his ___. Then he ___ home.",
+                "blanks": [
+                  {
+                    "hint": "What time did he leave?",
+                    "answer": "five",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "How did he get there?",
+                    "answer": "walked",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "Where did he buy food?",
+                    "answer": "supermarket",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "What other fruit did he buy?",
+                    "answer": "bananas",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "Where did he go next?",
+                    "answer": "went",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "Where was his friend?",
+                    "answer": "hospital",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "What did he do with the fruit?",
+                    "answer": "gave",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "Who did he visit?",
+                    "answer": "friend",
+                    "alternatives": []
+                  },
+                  {
+                    "hint": "What did he do at the end?",
+                    "answer": "went",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "This is the story of Ali's day, using past tense verbs like 'went', 'walked', 'bought', and 'gave'."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "cfb5a4ae-cee1-4f37-9dcb-ea7d1e6cbdf0",
+          "activity_type": "word-order",
+          "title": "Make Sentences",
+          "instruction": "Drag the words to make correct sentences about Ali's day.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "80",
+          "compensates": "Provides practice for sentence construction using the past simple tense, reinforcing the story's language.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "sentences": [
+              {
+                "correctOrder": [
+                  "Ali",
+                  "went",
+                  "out",
+                  "at",
+                  "five",
+                  "o'clock."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "He",
+                  "walked",
+                  "to",
+                  "the",
+                  "supermarket."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "He",
+                  "bought",
+                  "some",
+                  "apples."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "He",
+                  "gave",
+                  "the",
+                  "fruit",
+                  "to",
+                  "his",
+                  "friend."
+                ]
+              },
+              {
+                "correctOrder": [
+                  "Then",
+                  "he",
+                  "went",
+                  "home."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "0fa9f592-7a93-4a80-94a5-f6858eab1b46",
+          "activity_type": "pronunciation-practice",
+          "title": "Practice Past Tense Verbs",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the past tense verbs. Record yourself saying each word and compare it to the original.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "80",
+          "compensates": "Provides individual pronunciation practice that is difficult to achieve in a large classroom setting.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "went",
+                "audioSrc": "/media/audio/g7_u8_l8.9_pro_6_w0.mp3",
+                "phonetic": "/wɛnt/",
+                "syllables": [
+                  "went"
+                ]
+              },
+              {
+                "word": "walked",
+                "audioSrc": "/media/audio/g7_u8_l8.9_pro_6_w1.mp3",
+                "phonetic": "/wɔːkt/",
+                "syllables": [
+                  "walked"
+                ]
+              },
+              {
+                "word": "bought",
+                "audioSrc": "/media/audio/g7_u8_l8.9_pro_6_w2.mp3",
+                "phonetic": "/bɔːt/",
+                "syllables": [
+                  "bought"
+                ]
+              },
+              {
+                "word": "gave",
+                "audioSrc": "/media/audio/g7_u8_l8.9_pro_6_w3.mp3",
+                "phonetic": "/ɡeɪv/",
+                "syllables": [
+                  "gave"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "98f20229-828d-4415-8696-a853c3dc1f03",
+          "activity_type": "picture-description",
+          "title": "Describe the Picture",
+          "instruction": "Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture. Answer the questions about what is happening. Try to use the past tense.",
+          "difficulty": "advanced",
+          "book_type": "WB",
+          "book_page": "80",
+          "compensates": "Digitizes the 'Retell the story from picture prompts' activity (TG 8.9, Activity 3A), allowing for individual, self-paced practice.",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1138.png",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/1138.png",
+            "keywords": [
+              "supermarket",
+              "bought",
+              "apples",
+              "bananas",
+              "cashier"
+            ],
+            "sampleAnswers": [
+              "Ali was at the supermarket.",
+              "He bought some fruit.",
+              "He bought apples and bananas."
+            ],
+            "promptQuestions": [
+              "Where was Ali?",
+              "What did he do there?",
+              "What did he buy?"
+            ]
+          }
+        },
+        {
+          "activity_id": "a4c2f1c6-04b1-4234-aa15-6af401b32d95",
+          "activity_type": "spelling-bee",
+          "title": "Vocabulary Spelling",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the word, then spell it correctly.",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "80",
+          "compensates": "Provides spelling practice for key vocabulary, which is often done as a whole-class activity.",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "hint": "Someone you like and enjoy being with.",
+                "word": "friend"
+              },
+              {
+                "hint": "A round fruit with red or green skin.",
+                "word": "apples"
+              },
+              {
+                "hint": "A place for sick people.",
+                "word": "hospital"
+              },
+              {
+                "hint": "A long, yellow fruit.",
+                "word": "bananas"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": "81c71cc6-e3f8-4169-8fcb-0f0f45a115a3",
+      "lesson_title": "8.10",
+      "lesson_number": 10,
+      "description": null,
+      "cover_image_src": null,
+      "passing_score": 70,
+      "objectives": [],
+      "language_focus": [],
+      "vocabulary": [],
+      "activities": [
+        {
+          "activity_id": "370af8cd-76fd-43a7-b70c-a93dda81b680",
+          "activity_type": "listening-comprehension",
+          "title": "Course Audio (Track 45)",
+          "instruction": "Listen carefully! 🎧 Clear your ears and to the course audio for this lesson.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "60",
+          "compensates": null,
+          "order_index": -1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "questions": [],
+            "transcript": "Listen to the course audio track(s)."
+          }
+        },
+        {
+          "activity_id": "953503ba-d50c-4959-93d5-d50053964bd5",
+          "activity_type": "flashcard",
+          "title": "Key Words from the Story",
+          "instruction": "Learn the new words. Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to the word, read the definition and example.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "60",
+          "compensates": "Replaces teacher-led vocabulary presentation with flashcards (Teacher Guide, step 1).",
+          "order_index": 0,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "items": [
+              {
+                "word": "thirsty",
+                "audio": "thirsty",
+                "image": "ID: 179",
+                "example": "He was thirsty, so he went to the shop for a drink.",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/179.png",
+                "definition": "Feeling a need to drink something. (عطشان)",
+                "partOfSpeech": "adjective"
+              },
+              {
+                "word": "angry",
+                "audio": "angry",
+                "image": "ID: 178",
+                "example": "Tom was angry because he couldn't find his bicycle.",
+                "definition": "Having a strong feeling of annoyance or displeasure. (غاضب)",
+                "partOfSpeech": "adjective"
+              },
+              {
+                "word": "bicycle",
+                "audio": "bicycle",
+                "image": "ID: 178",
+                "example": "Tom wants his bicycle.",
+                "definition": "A vehicle with two wheels that you ride by pushing pedals. (دراجة هوائية)",
+                "partOfSpeech": "noun"
+              },
+              {
+                "word": "shop",
+                "audio": "shop",
+                "image": null,
+                "example": "Bill went to the shop.",
+                "definition": "A place where you can buy things. (متجر)",
+                "partOfSpeech": "noun"
+              }
+            ],
+            "feedback": "Well done! You have mastered these new words. 🏮"
+          }
+        },
+        {
+          "activity_id": "e9d3cf16-0538-4514-b9e3-206c11edbe48",
+          "activity_type": "dialogue-read",
+          "title": "Read the Story: Tom, Anne and Bill",
+          "instruction": "Read the story from Pupil's Book pages 60-61. Interact with the screen! 🖱️ Interact with the screen! 🖱️ Click to to the play button to listen to each part.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "60",
+          "compensates": "Digital, interactive version of reading the comic strip from the Pupil's Book (PB pages 60-61) and listening to the cassette (Teacher Guide, step 3 & 5).",
+          "order_index": 1,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "dialogue": [
+              {
+                "text": "Anne, where's my bicycle?",
+                "image": "ID: 178",
+                "speaker": "Tom"
+              },
+              {
+                "text": "It was there.",
+                "image": "ID: 178",
+                "speaker": "Anne"
+              },
+              {
+                "text": "Where?",
+                "image": "ID: 178",
+                "speaker": "Tom"
+              },
+              {
+                "text": "It was next to the window. It's not there now.",
+                "image": "ID: 178",
+                "speaker": "Tom"
+              },
+              {
+                "text": "But I saw it.",
+                "image": "ID: 178",
+                "speaker": "Tom"
+              },
+              {
+                "text": "Oh, I know. Bill's got it.",
+                "image": "ID: 178",
+                "speaker": "Anne"
+              },
+              {
+                "text": "Why?",
+                "image": "ID: 178",
+                "speaker": "Tom"
+              },
+              {
+                "text": "He went to the shop. He was thirsty.",
+                "image": "ID: 179",
+                "speaker": "Anne",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/179.png"
+              },
+              {
+                "text": "Bill, why have you got my bicycle?",
+                "image": "ID: 179",
+                "speaker": "Tom",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/179.png"
+              },
+              {
+                "text": "I can't walk. look.",
+                "image": "ID: 179",
+                "speaker": "Bill",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/179.png"
+              },
+              {
+                "text": "Oh, I'm sorry.",
+                "image": "ID: 179",
+                "speaker": "Tom",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/179.png"
+              },
+              {
+                "text": "Have a 7-up.",
+                "image": "ID: 179",
+                "speaker": "Bill",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/179.png"
+              },
+              {
+                "text": "Thanks.",
+                "image": "ID: 179",
+                "speaker": "Tom",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/179.png"
+              },
+              {
+                "text": "Thanks.",
+                "image": "ID: 179",
+                "speaker": "Anne",
+                "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/179.png"
+              }
+            ],
+            "comprehension": [
+              {
+                "answer": "Bill",
+                "question": "Who had Tom's bicycle?"
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "9ad07f7a-e26e-40b7-a6ae-443625bdf9b6",
+          "activity_type": "true-false",
+          "title": "Story Check",
+          "instruction": "Reading time! 📖 Read carefully and the sentences from Workbook page 81. Are they true or false?",
+          "difficulty": "beginner",
+          "book_type": "WB",
+          "book_page": "81",
+          "compensates": "Digital version of Workbook activity 8.10A.",
+          "order_index": 2,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "statements": [
+              {
+                "isTrue": true,
+                "statement": "Tom's bicycle was next to the window.",
+                "explanation": "Correct. Tom said, 'It was next to the window.'"
+              },
+              {
+                "isTrue": false,
+                "statement": "Anne has got Tom's bicycle.",
+                "explanation": "Incorrect. Bill has got Tom's bicycle."
+              },
+              {
+                "isTrue": true,
+                "statement": "Bill went to the shop.",
+                "explanation": "Correct. Anne said, 'He went to the shop.'"
+              },
+              {
+                "isTrue": true,
+                "statement": "Bill was thirsty.",
+                "explanation": "Correct. Anne said, 'He was thirsty.'"
+              },
+              {
+                "isTrue": false,
+                "statement": "Anne had an orange juice.",
+                "explanation": "Incorrect. Bill offered Tom and Anne a 7-up."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "1f561940-172e-48ea-a71d-cff4ce705a42",
+          "activity_type": "word-order",
+          "title": "Make Sentences",
+          "instruction": "Put the words in the correct order to make sentences from the story. This is from Workbook page 81.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "81",
+          "compensates": "Digital version of Workbook activity 8.10B.",
+          "order_index": 3,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": [
+            {
+              "instruction": "Unscramble this sentence.",
+              "correctOrder": [
+                "Bill",
+                "has",
+                "got",
+                "Tom's",
+                "bicycle."
+              ]
+            },
+            {
+              "instruction": "Unscramble this sentence.",
+              "correctOrder": [
+                "Anne",
+                "had",
+                "a",
+                "7-up."
+              ]
+            }
+          ]
+        },
+        {
+          "activity_id": "02db90fd-36e4-42b4-b2a7-3cf1c49e27c4",
+          "activity_type": "gap-fill",
+          "title": "Past Tense Practice",
+          "instruction": "Complete the sentences with the correct verb from the story. Use the past tense.",
+          "difficulty": "intermediate",
+          "book_type": "WB",
+          "book_page": "81",
+          "compensates": "Provides structured practice on the past simple tense, a key language point in the story.",
+          "order_index": 4,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "feedback": "Excellent effort! You've filled in the blanks perfectly.",
+            "sentences": [
+              {
+                "text": "The bicycle ___ next to the window.",
+                "blanks": [
+                  {
+                    "hint": "Verb 'to be' in the past.",
+                    "answer": "was",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'was' for the past tense of 'is'."
+              },
+              {
+                "text": "Bill ___ to the shop.",
+                "blanks": [
+                  {
+                    "hint": "Past tense of 'go'.",
+                    "answer": "went",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "'Went' is the past tense of the verb 'go'."
+              },
+              {
+                "text": "He ___ thirsty.",
+                "blanks": [
+                  {
+                    "hint": "Verb 'to be' in the past.",
+                    "answer": "was",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "We use 'was' to describe how Bill felt in the past."
+              },
+              {
+                "text": "Tom ___ his bicycle earlier.",
+                "blanks": [
+                  {
+                    "hint": "Past tense of 'see'.",
+                    "answer": "saw",
+                    "alternatives": []
+                  }
+                ],
+                "explanation": "'Saw' is the past tense of the verb 'see'."
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "5608c53a-d0f0-4ec1-a932-e4a054619950",
+          "activity_type": "listening-comprehension",
+          "title": "Listen for Details",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to a part of the story and answer the question.",
+          "difficulty": "intermediate",
+          "book_type": "PB",
+          "book_page": "60",
+          "compensates": "Replaces teacher-led listening activity (Teacher Guide, step 5) with a self-correcting digital exercise.",
+          "order_index": 5,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "audioSrc": "/media/audio/g7_u8_l8.10_lis_1.mp3",
+            "questions": [
+              {
+                "options": [
+                  {
+                    "text": "Because he was hungry.",
+                    "isCorrect": false
+                  },
+                  {
+                    "text": "Because he was thirsty and couldn't walk.",
+                    "isCorrect": true
+                  },
+                  {
+                    "text": "Because Anne told him to.",
+                    "isCorrect": false
+                  }
+                ],
+                "question": "Why did Bill take the bicycle?"
+              }
+            ],
+            "transcript": "Anne: He went to the shop. He was thirsty. Tom: Bill, why have you got my bicycle? Bill: I can't walk. look."
+          }
+        },
+        {
+          "activity_id": "838a9836-76db-4a10-a070-810f2bc69d68",
+          "activity_type": "pronunciation-practice",
+          "title": "Say the Words",
+          "instruction": "Listen carefully! 🎧 Clear your ears and closely! 🎧 Switch on your ears and to each word from the story and practice saying it out loud.",
+          "difficulty": "beginner",
+          "book_type": "PB",
+          "book_page": "60",
+          "compensates": "Provides individual speaking practice, supporting the group reading activity in the Teacher Guide (step 6).",
+          "order_index": 6,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "words": [
+              {
+                "word": "bicycle",
+                "audioSrc": "/media/audio/g7_u8_l8.10_pro_1_w0.mp3",
+                "phonetic": "/ˈbaɪ.sɪ.kəl/",
+                "syllables": [
+                  "bi",
+                  "cy",
+                  "cle"
+                ]
+              },
+              {
+                "word": "thirsty",
+                "audioSrc": "/media/audio/g7_u8_l8.10_pro_1_w1.mp3",
+                "phonetic": "/ˈθɜː.sti/",
+                "syllables": [
+                  "thirs",
+                  "ty"
+                ]
+              },
+              {
+                "word": "window",
+                "audioSrc": "/media/audio/g7_u8_l8.10_pro_1_w2.mp3",
+                "phonetic": "/ˈwɪn.dəʊ/",
+                "syllables": [
+                  "win",
+                  "dow"
+                ]
+              },
+              {
+                "word": "sorry",
+                "audioSrc": "/media/audio/g7_u8_l8.10_pro_1_w3.mp3",
+                "phonetic": "/ˈsɒr.i/",
+                "syllables": [
+                  "sor",
+                  "ry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "activity_id": "350829a0-f9d0-4861-88a1-af74efda9163",
+          "activity_type": "picture-description",
+          "title": "Describe the Picture",
+          "instruction": "Use your eyes! 🧐 Use your eyes! 🧐 Look closely at the carefully at the at the picture from the end of the story. Answer the questions about it.",
+          "difficulty": "advanced",
+          "book_type": "PB",
+          "book_page": "60",
+          "compensates": "Digital version of the teacher-led discussion about the pictures (Teacher Guide, step 2 and 6).",
+          "order_index": 7,
+          "is_required": true,
+          "xp_reward": 10,
+          "time_estimate_minutes": null,
+          "content": {
+            "image": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/179.png",
+            "imageUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev/g7u8/images/179.png",
+            "keywords": [
+              "Bill",
+              "Tom",
+              "Anne",
+              "bicycle",
+              "7-up",
+              "sorry",
+              "thanks",
+              "happy"
+            ],
+            "sampleAnswers": [
+              "The children are Tom, Anne, and Bill.",
+              "Bill is giving them a 7-up.",
+              "They feel happy now. They are not angry anymore."
+            ],
+            "promptQuestions": [
+              "Who are the three children?",
+              "What is Bill giving to Tom and Anne?",
+              "How do they feel now? Are they still angry?"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

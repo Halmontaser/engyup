@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState, useRef } from 'react';
+﻿import React, { createContext, useContext, useEffect, useState, useRef } from 'react';
 import { User, Session } from '@supabase/supabase-js';
 import { supabase, Profile, Membership, Tenant } from '../lib/supabase';
 import { canEditActivities as canEditActivitiesUtil } from '../lib/permissions';
@@ -35,6 +35,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const fetchingRef = useRef(false);
   const canEditActivitiesValue = canEditActivitiesUtil(memberships, profile);
 
+  const isEmbed = window.location.pathname.startsWith('/embed');
   const refreshData = async () => {
     if (user) {
       await fetchUserData(user.id);
@@ -64,7 +65,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   useEffect(() => {
-    if (user && activeTenant) {
+    if (user && activeTenant && !isEmbed) {
       fetchEnrollments(user.id, activeTenant.id);
 
       const enrollmentSubscription = supabase
@@ -120,7 +121,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, []);
 
   useEffect(() => {
-    if (user) {
+    if (user && !isEmbed) {
       fetchUserData(user.id);
     }
   }, [user?.id]);
@@ -214,3 +215,4 @@ export const useAuth = () => {
   }
   return context;
 };
+

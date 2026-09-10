@@ -71,3 +71,6 @@ debug*.log
 bun.lock
 yarn.lock
 pnpm-lock.yaml
+extracted_units/
+*.db
+*.log
