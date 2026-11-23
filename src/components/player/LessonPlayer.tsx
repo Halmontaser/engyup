@@ -562,7 +562,7 @@ export default function LessonPlayer({
                 </button>
               </div>
               <AnimatePresence>
-                {instructionExpanded && (
+                {instructionExpanded && currentActivity && (
                   <motion.h2
                     initial={{ height: 0, opacity: 0, y: -5 }}
                     animate={{ height: 'auto', opacity: 1, y: 0 }}

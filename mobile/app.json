@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "English Crescent",
+    "slug": "crescent-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#0F172A",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0F172A"
+      }
+    },
+    "extra": {
+      "cdnUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev",
+      "supabaseUrl": "https://msttsebafjgzllyabsid.supabase.co",
+      "supabaseAnonKey": "sb_publishable_eS3m4pnX9V7rK9RS92jghA_waa7unBI"
+    }
+  }
+}
