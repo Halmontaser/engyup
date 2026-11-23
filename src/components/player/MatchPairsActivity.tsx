@@ -45,7 +45,7 @@ export default function MatchPairsActivity({ data, media, onComplete }: Props) {
     const handler = () => {
       audioRef.current?.pause();
       speechSynthesis.cancel();
-      setIsSpeaking(false);
+      setPlayingIdx(null);
     };
     window.addEventListener(STOP_AUDIO_EVENT, handler);
     return () => window.removeEventListener(STOP_AUDIO_EVENT, handler);

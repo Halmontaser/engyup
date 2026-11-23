@@ -44,7 +44,7 @@ export default function CategorySortActivity({ data, media, onComplete }: Props)
     const handler = () => {
       audioRef.current?.pause();
       speechSynthesis.cancel();
-      setIsSpeaking(false);
+      setPlayingAudio(null);
     };
     window.addEventListener(STOP_AUDIO_EVENT, handler);
     return () => window.removeEventListener(STOP_AUDIO_EVENT, handler);

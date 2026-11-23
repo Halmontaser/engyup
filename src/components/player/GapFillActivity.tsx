@@ -265,7 +265,7 @@ export default function GapFillActivity({ data, media, onComplete }: Props) {
                   key={i}
                   layout
                   draggable
-                  onDragStart={(e) => e.dataTransfer.setData("text/plain", word)}
+                  onDragStart={(e: any) => e.dataTransfer?.setData("text/plain", word)}
                   onClick={() => {
                     for (let s = 0; s < sentences.length; s++) {
                       const blanks = sentences[s].blanks || sentences[s].gaps || sentences[s].answers || [];

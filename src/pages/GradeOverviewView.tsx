@@ -48,7 +48,7 @@ export function GradeOverviewView() {
     try {
       const { data } = await supabase
         .from('courses')
-        .select('*, modules(*, lessons(*, activities(*))')
+        .select('*, modules(*, lessons(*, activities(*)))')
         .eq('tenant_id', activeTenant!.id)
         .order('course_code');
 

@@ -135,7 +135,7 @@ export function CourseStatsView() {
         const activityTypes = Object.entries(typeGroups)
           .map(([type, count]) => ({
             type: activityNames[type] || type,
-            count,
+            count: Number(count) || 0,
             icon: activityIcons[type] || '📝',
           }))
           .sort((a, b) => b.count - a.count)

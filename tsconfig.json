@@ -20,5 +20,14 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": [
+    "src/app/admin/api",
+    "src/app/grade",
+    "src/app/layout.tsx",
+    "src/app/page.tsx",
+    "src/middleware.ts",
+    "mobile",
+    "dist"
+  ]
 }

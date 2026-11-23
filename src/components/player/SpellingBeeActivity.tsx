@@ -325,7 +325,7 @@ export default function SpellingBeeActivity({ data, media, onComplete }: Props) 
               <ActionBar
                 correct={isCorrect}
                 message={isCorrect ? "🎉 Correct!" : `The word was "${current.word}"`}
-                detail={current.definition || current.meaning}
+                detail={(current as any).definition || (current as any).meaning || current.hint}
                 onNext={handleNext}
                 label={currentIndex === words.length - 1 ? "Finish" : "Next Word"}
               />

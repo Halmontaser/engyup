@@ -44,7 +44,7 @@ export default function FlashcardActivity({ data, media, onComplete }: Flashcard
     const handler = () => {
       audioRef.current?.pause();
       speechSynthesis.cancel();
-      setIsSpeaking(false);
+      setIsPlaying(false);
     };
     window.addEventListener(STOP_AUDIO_EVENT, handler);
     return () => window.removeEventListener(STOP_AUDIO_EVENT, handler);
@@ -152,7 +152,7 @@ export default function FlashcardActivity({ data, media, onComplete }: Flashcard
       const front = items[currentIndex].word || items[currentIndex].term || items[currentIndex].front || "";
       const wordAudios = media.audio.filter((a) => a.audioType === "word");
       const currentAudio = wordAudios.find(
-        (a) => a.text?.toLowerCase() === front.toLowerCase() || (a as MediaIndex).idx === currentIndex
+        (a: any) => a.text?.toLowerCase() === front.toLowerCase() || a.idx === currentIndex
       ) || wordAudios[currentIndex];
       const audioUrl = currentAudio?.url || items[currentIndex]?.wordAudio;
 
