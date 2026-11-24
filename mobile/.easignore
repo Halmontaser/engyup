@@ -11,3 +11,8 @@ web-build
 *.orig.*
 .env.local
 .env.*.local
+
+*.aab
+*.apk
+assets/icon-512.png
+assets/feature-graphic.png
