@@ -7,6 +7,7 @@ import {
   StyleSheet,
   ScrollView,
 } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import * as Speech from 'expo-speech';
 import { colors } from '@/theme/colors';
@@ -30,6 +31,7 @@ export function ArabicExplanationModal({
   audioText,
   onClose,
 }: ArabicExplanationModalProps) {
+  const insets = useSafeAreaInsets();
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
 
   const handleClose = () => {
@@ -42,10 +44,11 @@ export function ArabicExplanationModal({
     const textToSpeak = audioText || title;
     if (!textToSpeak) return;
 
+    const isArabic = /[\u0600-\u06FF]/.test(textToSpeak);
     setIsPlayingAudio(true);
     Speech.speak(textToSpeak, {
-      language: 'en-US',
-      rate: 0.9,
+      language: isArabic ? 'ar-SA' : 'en-US',
+      rate: isArabic ? 0.95 : 0.9,
       onDone: () => setIsPlayingAudio(false),
       onStopped: () => setIsPlayingAudio(false),
       onError: () => setIsPlayingAudio(false),
@@ -65,7 +68,7 @@ export function ArabicExplanationModal({
           activeOpacity={1}
           onPress={handleClose}
         />
-        <View style={styles.sheetContainer}>
+        <View style={[styles.sheetContainer, { paddingBottom: Math.max(insets.bottom + 16, 28) }]}>
           {/* Grab handle indicator */}
           <View style={styles.handle} />
 
@@ -205,9 +208,9 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   audioButton: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
+    width: 48,
+    height: 48,
+    borderRadius: 24,
     backgroundColor: colors.touchHighlight,
     alignItems: 'center',
     justifyContent: 'center',
@@ -216,9 +219,9 @@ const styles = StyleSheet.create({
     backgroundColor: colors.correctBg,
   },
   closeButton: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
+    width: 48,
+    height: 48,
+    borderRadius: 24,
     backgroundColor: colors.background,
     alignItems: 'center',
     justifyContent: 'center',

@@ -69,8 +69,12 @@ export function DashboardScreen({ onSelectCourse, onOpenProfile }: DashboardScre
           <Text style={styles.greetingName}>{profile?.full_name || 'طالب متميز'}</Text>
         </View>
 
-        <TouchableOpacity style={styles.avatarButton} onPress={onOpenProfile}>
-          <Ionicons name="person-circle" size={40} color={colors.accentEmerald} />
+        <TouchableOpacity
+          style={styles.avatarButton}
+          onPress={onOpenProfile}
+          hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+        >
+          <Ionicons name="person-circle" size={42} color={colors.accentEmerald} />
         </TouchableOpacity>
       </View>
 
@@ -179,16 +183,25 @@ const styles = StyleSheet.create({
   },
   greetingSub: {
     fontSize: 13,
+    lineHeight: 18,
     color: colors.textSecondary,
     fontWeight: '600',
+    textAlign: 'right',
+    writingDirection: 'rtl',
   },
   greetingName: {
     fontSize: 22,
     fontWeight: '800',
     color: colors.primary,
+    textAlign: 'right',
+    writingDirection: 'rtl',
   },
   avatarButton: {
-    padding: 2,
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   statsContainer: {
     flexDirection: 'row',
@@ -222,11 +235,13 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '700',
     color: colors.primary,
+    writingDirection: 'rtl',
   },
   statLabel: {
     fontSize: 12,
     color: colors.textSecondary,
     fontWeight: '500',
+    writingDirection: 'rtl',
   },
   sectionHeader: {
     marginBottom: 16,

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { playCurriculumAudio, stopAllAudio } from '@/utils/audio';
@@ -18,16 +18,23 @@ export function McqActivity({ data, media, onComplete }: McqActivityProps) {
     : [data || {}];
 
   const [questionIdx, setQuestionIdx] = useState(0);
+  const [correctCount, setCorrectCount] = useState(0);
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
   const [checked, setChecked] = useState(false);
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
+
+  useEffect(() => {
+    return () => {
+      stopAllAudio();
+    };
+  }, []);
 
   const currentQ = questions[questionIdx] || {};
   const questionText = currentQ.question || currentQ.prompt || data?.question || data?.prompt || 'اختر الإجابة الصحيحة:';
   const explanationAr = currentQ.explanation_ar || currentQ.explanation || data?.explanation_ar || data?.explanation || 'إجابة صحيحة وفق سياق الجملة.';
 
   // Normalize options array
-  const rawOptions = currentQ.options || data?.options || [];
+  const rawOptions = currentQ.options || data?.options || ['نعم  •  Yes', 'لا  •  No'];
   const optionsList: string[] = rawOptions.map((opt: any) =>
     typeof opt === 'string' ? opt : opt.text || opt.label || ''
   );
@@ -37,7 +44,7 @@ export function McqActivity({ data, media, onComplete }: McqActivityProps) {
   if (typeof currentQ.correct_answer === 'number') {
     correctIndex = currentQ.correct_answer;
   } else if (typeof currentQ.correct_answer === 'string') {
-    correctIndex = optionsList.findIndex((opt) => opt === currentQ.correct_answer);
+    correctIndex = optionsList.findIndex((opt) => opt.toLowerCase() === currentQ.correct_answer.toLowerCase());
   } else if (typeof data?.correct_answer === 'number') {
     correctIndex = data.correct_answer;
   } else {
@@ -45,7 +52,7 @@ export function McqActivity({ data, media, onComplete }: McqActivityProps) {
     correctIndex = rawOptions.findIndex((opt: any) => opt?.is_correct || opt?.isCorrect);
   }
 
-  const audioPath = media?.audio?.[questionIdx]?.url || media?.audio?.[0]?.url || currentQ.audio_url || data?.audio_url;
+  const audioPath = media?.audio?.[questionIdx]?.url || currentQ.audio || currentQ.audio_url || data?.audio;
 
   const handleSpeak = async () => {
     setIsPlayingAudio(true);
@@ -55,6 +62,10 @@ export function McqActivity({ data, media, onComplete }: McqActivityProps) {
   const handleCheckOrContinue = () => {
     if (!checked) {
       if (selectedIdx === null) return;
+      const isCorrect = selectedIdx === correctIndex || correctIndex === -1;
+      if (isCorrect) {
+        setCorrectCount((c) => c + 1);
+      }
       setChecked(true);
     } else {
       stopAllAudio();
@@ -65,7 +76,8 @@ export function McqActivity({ data, media, onComplete }: McqActivityProps) {
         setSelectedIdx(null);
         setChecked(false);
       } else {
-        onComplete(isCorrect);
+        const totalCorrect = correctCount + (isCorrect ? 1 : 0);
+        onComplete(totalCorrect >= Math.ceil(questions.length * 0.6));
       }
     }
   };

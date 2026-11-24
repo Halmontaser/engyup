@@ -4,6 +4,7 @@ declare module '@react-native-async-storage/async-storage' {
     setItem: (key: string, value: string) => Promise<void>;
     removeItem: (key: string) => Promise<void>;
     clear: () => Promise<void>;
+    getAllKeys: () => Promise<string[]>;
   };
   export default AsyncStorage;
 }
@@ -68,6 +69,7 @@ declare module 'expo-av' {
       didJustFinish?: boolean;
       positionMillis?: number;
       durationMillis?: number;
+      error?: string;
     }
     export class Sound {
       static createAsync(
@@ -142,5 +144,9 @@ declare module 'react-native' {
   };
   export const Alert: {
     alert: (title: string, message?: string, buttons?: any[]) => void;
+  };
+  export const AppState: {
+    currentState: string;
+    addEventListener: (type: 'change', listener: (state: string) => void) => { remove: () => void };
   };
 }

@@ -15,38 +15,45 @@ interface ActivityRendererProps {
 }
 
 export function ActivityRenderer({ activity, onComplete }: ActivityRendererProps) {
-  const type = (activity.type || '').toLowerCase();
+  // Normalize type: supports camelCase 'type' and snake_case 'activity_type' from Supabase
+  const rawType = activity.type || (activity as any).activity_type || '';
+  const type = String(rawType).toLowerCase().trim();
+
+  // Normalize data and media from both 'data' and 'content' structures
+  const rawData = activity.data || (activity as any).content || {};
+  const data = typeof rawData === 'object' && rawData !== null ? rawData : {};
+  const media = activity.media || data.media || (activity as any).content?.media;
 
   switch (type) {
     case 'multiple-choice':
     case 'mcq':
-      return <McqActivity data={activity.data || {}} media={activity.media} onComplete={onComplete} />;
+      return <McqActivity data={data} media={media} onComplete={onComplete} />;
 
     case 'flashcard':
     case 'flashcards':
-      return <FlashcardActivity data={activity.data || {}} media={activity.media} onComplete={onComplete} />;
+      return <FlashcardActivity data={data} media={media} onComplete={onComplete} />;
 
     case 'true-false':
     case 'truefalse':
-      return <TrueFalseActivity data={activity.data || {}} media={activity.media} onComplete={onComplete} />;
+      return <TrueFalseActivity data={data} media={media} onComplete={onComplete} />;
 
     case 'word-order':
     case 'sentence-builder':
-      return <WordOrderActivity data={activity.data || {}} media={activity.media} onComplete={onComplete} />;
+      return <WordOrderActivity data={data} media={media} onComplete={onComplete} />;
 
     case 'match-pairs':
     case 'word-association':
-      return <MatchPairsActivity data={activity.data || {}} media={activity.media} onComplete={onComplete} />;
+      return <MatchPairsActivity data={data} media={media} onComplete={onComplete} />;
 
     case 'category-sort':
     case 'categorize':
-      return <CategorySortActivity data={activity.data || {}} media={activity.media} onComplete={onComplete} />;
+      return <CategorySortActivity data={data} media={media} onComplete={onComplete} />;
 
     case 'spelling-bee':
     case 'spelling':
-      return <SpellingBeeActivity data={activity.data || {}} media={activity.media} onComplete={onComplete} />;
+      return <SpellingBeeActivity data={data} media={media} onComplete={onComplete} />;
 
     default:
-      return <GenericActivity activity={activity} onComplete={onComplete} />;
+      return <GenericActivity activity={{ ...activity, type, data, media }} onComplete={onComplete} />;
   }
 }

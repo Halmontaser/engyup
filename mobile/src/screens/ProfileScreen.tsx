@@ -27,11 +27,19 @@ export function ProfileScreen({ onBack }: ProfileScreenProps) {
     <SafeAreaView style={styles.container} edges={['top', 'left', 'right']}>
       {/* Top Header */}
       <View style={styles.header}>
-        <TouchableOpacity style={styles.backButton} onPress={onBack}>
-          <Ionicons name="arrow-back" size={24} color={colors.primary} />
-        </TouchableOpacity>
+        {onBack ? (
+          <TouchableOpacity
+            style={styles.backButton}
+            onPress={onBack}
+            hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+          >
+            <Ionicons name="arrow-back" size={24} color={colors.primary} />
+          </TouchableOpacity>
+        ) : (
+          <View style={{ width: 48 }} />
+        )}
         <Text style={styles.headerTitle}>الملف الشخصي</Text>
-        <View style={{ width: 40 }} />
+        <View style={{ width: 48 }} />
       </View>
 
       <ScrollView contentContainerStyle={styles.content}>
@@ -95,9 +103,9 @@ const styles = StyleSheet.create({
     borderBottomColor: colors.cardBorder,
   },
   backButton: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
+    width: 48,
+    height: 48,
+    borderRadius: 24,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: colors.background,

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { playCurriculumAudio, stopAllAudio } from '@/utils/audio';
@@ -11,28 +11,49 @@ interface SpellingBeeActivityProps {
   onComplete: (correct?: boolean) => void;
 }
 
+const parseScrambled = (raw: any, target: string) => {
+  let chars: string[] = [];
+  if (Array.isArray(raw) && raw.length > 0) {
+    chars = raw.map(String);
+  } else if (typeof raw === 'string' && raw.length > 0) {
+    chars = raw.split('');
+  } else {
+    chars = target.split('').sort(() => Math.random() - 0.5);
+  }
+  return chars.map((ch, i) => ({
+    id: `letter-${i}-${ch}-${Math.random().toString(36).substring(7)}`,
+    letter: ch.toUpperCase(),
+  }));
+};
+
 export function SpellingBeeActivity({ data, media, onComplete }: SpellingBeeActivityProps) {
   const words = Array.isArray(data?.words) && data.words.length > 0
     ? data.words
+    : Array.isArray(data?.items) && data.items.length > 0
+    ? data.items
     : [data || { word: 'STUDENT', hint: 'طالب في المدرسة' }];
 
   const [wordIdx, setWordIdx] = useState(0);
+  const [correctCount, setCorrectCount] = useState(0);
   const currentItem = words[wordIdx] || {};
 
-  const targetWord = (currentItem.word || currentItem.text || 'WORD').toUpperCase();
+  const targetWord = (currentItem.word || currentItem.text || currentItem.term || 'WORD').toUpperCase();
   const arabicHint = currentItem.hint || currentItem.translation || currentItem.definition || 'حاول تهجئة الكلمة الإنجليزية';
 
-  const scrambled = (
-    currentItem.scrambled ||
-    targetWord.split('').sort(() => Math.random() - 0.5)
-  ).map((letter: string, i: number) => ({ id: `${letter}-${i}`, letter: letter.toUpperCase() }));
-
-  const [availableLetters, setAvailableLetters] = useState<Array<{ id: string; letter: string }>>(scrambled);
+  const [availableLetters, setAvailableLetters] = useState<Array<{ id: string; letter: string }>>(() => {
+    return parseScrambled(currentItem.scrambled, targetWord);
+  });
   const [spelledLetters, setSpelledLetters] = useState<Array<{ id: string; letter: string }>>([]);
   const [checked, setChecked] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
 
-  const audioPath = media?.audio?.[wordIdx]?.url || currentItem.audio_url;
+  useEffect(() => {
+    return () => {
+      stopAllAudio();
+    };
+  }, []);
+
+  const audioPath = media?.audio?.[wordIdx]?.url || currentItem.audio_url || currentItem.audio;
 
   const handleSpeak = () => {
     playCurriculumAudio(audioPath, targetWord);
@@ -59,6 +80,9 @@ export function SpellingBeeActivity({ data, media, onComplete }: SpellingBeeActi
       const spelled = spelledLetters.map((l) => l.letter).join('');
       const match = spelled === targetWord;
       setIsCorrect(match);
+      if (match) {
+        setCorrectCount((c) => c + 1);
+      }
       setChecked(true);
       if (match) {
         playCurriculumAudio(audioPath, targetWord);
@@ -66,15 +90,17 @@ export function SpellingBeeActivity({ data, media, onComplete }: SpellingBeeActi
     } else {
       stopAllAudio();
       if (wordIdx + 1 < words.length) {
+        const nextWordItem = words[wordIdx + 1] || {};
+        const nextTarget = (nextWordItem.word || nextWordItem.text || nextWordItem.term || '').toUpperCase();
+        const nextScrambled = parseScrambled(nextWordItem.scrambled, nextTarget);
+
         setWordIdx((w) => w + 1);
-        const nextTarget = (words[wordIdx + 1]?.word || '').toUpperCase();
-        const nextScrambled = (words[wordIdx + 1]?.scrambled || nextTarget.split('').sort(() => Math.random() - 0.5))
-          .map((letter: string, i: number) => ({ id: `${letter}-${i}`, letter: letter.toUpperCase() }));
         setAvailableLetters(nextScrambled);
         setSpelledLetters([]);
         setChecked(false);
       } else {
-        onComplete(isCorrect);
+        const totalCorrect = correctCount + (isCorrect ? 1 : 0);
+        onComplete(totalCorrect >= Math.ceil(words.length * 0.6));
       }
     }
   };
@@ -240,7 +266,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   letterSlot: {
-    width: 44,
+    minWidth: 48,
     height: 52,
     borderRadius: 12,
     backgroundColor: colors.background,

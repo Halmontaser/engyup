@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { playCurriculumAudio } from '@/utils/audio';
+import { playCurriculumAudio, stopAllAudio } from '@/utils/audio';
 import { colors } from '@/theme/colors';
 
 interface CategorySortActivityProps {
@@ -11,13 +11,22 @@ interface CategorySortActivityProps {
 }
 
 export function CategorySortActivity({ data, media, onComplete }: CategorySortActivityProps) {
-  const categories: Array<{ name: string; items: string[] }> = data?.categories || [
-    { name: 'Nouns', items: ['School', 'Teacher', 'Book'] },
-    { name: 'Verbs', items: ['Read', 'Write', 'Listen'] },
-  ];
+  const rawCats = Array.isArray(data?.categories) && data.categories.length > 0
+    ? data.categories
+    : [
+        { name: 'Nouns', items: ['School', 'Teacher', 'Book'] },
+        { name: 'Verbs', items: ['Read', 'Write', 'Listen'] },
+      ];
+
+  const categories: Array<{ name: string; items: string[] }> = rawCats.map((cat: any) => ({
+    name: cat.name || cat.title || 'Category',
+    items: (cat.items || []).map((it: any) =>
+      typeof it === 'string' ? it : it?.text || it?.name || ''
+    ).filter(Boolean),
+  }));
 
   const allItems = categories.flatMap((cat) =>
-    (cat.items || []).map((it) => ({ text: it, category: cat.name }))
+    cat.items.map((it) => ({ text: it, category: cat.name }))
   );
 
   const [pool, setPool] = useState<Array<{ text: string; category: string }>>(() => {
@@ -29,6 +38,12 @@ export function CategorySortActivity({ data, media, onComplete }: CategorySortAc
   );
   const [checked, setChecked] = useState(false);
   const [allCorrect, setAllCorrect] = useState(false);
+
+  useEffect(() => {
+    return () => {
+      stopAllAudio();
+    };
+  }, []);
 
   const handleSelectWord = (item: { text: string; category: string }) => {
     if (checked) return;

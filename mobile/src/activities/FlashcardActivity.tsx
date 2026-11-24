@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { playCurriculumAudio, stopAllAudio } from '@/utils/audio';
@@ -17,16 +17,31 @@ export function FlashcardActivity({ data, media, onComplete }: FlashcardActivity
     : [data || {}];
 
   const [currentIdx, setCurrentIdx] = useState(0);
+  const [masteredCount, setMasteredCount] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
 
+  useEffect(() => {
+    return () => {
+      stopAllAudio();
+    };
+  }, []);
+
   const currentItem = items[currentIdx] || {};
   const englishWord = currentItem.word || currentItem.front || currentItem.en || data?.word || 'Vocabulary';
-  const arabicWord = currentItem.translation || currentItem.arabic || currentItem.ar || currentItem.back || data?.translation || 'الترجمة';
+  const arabicWord =
+    currentItem.translation ||
+    currentItem.arabic ||
+    currentItem.ar ||
+    currentItem.definition ||
+    currentItem.meaning ||
+    currentItem.back ||
+    data?.translation ||
+    'الترجمة';
   const phonetic = currentItem.phonetic || data?.phonetic || '';
   const example = currentItem.example || currentItem.sentence || data?.example || '';
 
-  const audioPath = media?.audio?.[currentIdx]?.url || media?.audio?.[0]?.url || currentItem.audio_url;
+  const audioPath = media?.audio?.[currentIdx]?.url || currentItem.wordAudio || currentItem.audio_url || currentItem.audio;
 
   const handleSpeak = async () => {
     setIsPlayingAudio(true);
@@ -36,10 +51,14 @@ export function FlashcardActivity({ data, media, onComplete }: FlashcardActivity
   const handleNext = (mastered = true) => {
     stopAllAudio();
     setIsFlipped(false);
+    if (mastered) {
+      setMasteredCount((c) => c + 1);
+    }
     if (currentIdx + 1 < items.length) {
       setCurrentIdx((i) => i + 1);
     } else {
-      onComplete(mastered);
+      const total = masteredCount + (mastered ? 1 : 0);
+      onComplete(total >= Math.ceil(items.length * 0.5));
     }
   };
 

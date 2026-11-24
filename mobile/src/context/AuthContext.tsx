@@ -1,4 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, useCallback, ReactNode } from 'react';
+import { AppState } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { supabase } from '@/api/supabase';
 import { User } from '@supabase/supabase-js';
 
@@ -49,6 +51,18 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [memberships, setMemberships] = useState<Membership[]>([]);
 
   const fetchUserData = useCallback(async (userId: string) => {
+    // 1. Try reading cached profile & tenant first for instant offline startup
+    try {
+      const [cachedProfile, cachedTenant] = await Promise.all([
+        AsyncStorage.getItem(`@crescent_${userId}_profile`),
+        AsyncStorage.getItem(`@crescent_${userId}_tenant`),
+      ]);
+      if (cachedProfile) setProfile(JSON.parse(cachedProfile));
+      if (cachedTenant) setActiveTenant(JSON.parse(cachedTenant));
+    } catch (e) {
+      // Ignore local read errors
+    }
+
     try {
       const [profileRes, membershipRes] = await Promise.all([
         supabase.from('profiles').select('*').eq('id', userId).maybeSingle(),
@@ -57,6 +71,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
       if (profileRes.data) {
         setProfile(profileRes.data as Profile);
+        AsyncStorage.setItem(`@crescent_${userId}_profile`, JSON.stringify(profileRes.data)).catch(() => {});
       }
 
       let userMemberships = (membershipRes.data || []) as Membership[];
@@ -84,8 +99,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       }
 
       setMemberships(userMemberships);
-      if (generalMembership?.tenants) {
-        setActiveTenant(generalMembership.tenants);
+      const active = generalMembership?.tenants || userMemberships[0]?.tenants || null;
+      if (active) {
+        setActiveTenant(active);
+        AsyncStorage.setItem(`@crescent_${userId}_tenant`, JSON.stringify(active)).catch(() => {});
       }
     } catch (err) {
       console.error('Error fetching user data in mobile AuthContext:', err);
@@ -93,6 +110,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   useEffect(() => {
+    // AppState auto-refresh handler to prevent expired JWT after phone locks
+    const appStateSub = AppState.addEventListener('change', (state: string) => {
+      if (state === 'active') {
+        supabase.auth.startAutoRefresh();
+      } else {
+        supabase.auth.stopAutoRefresh();
+      }
+    });
+
     supabase.auth.getSession().then(({ data: { session } }) => {
       setUser(session?.user ?? null);
       if (session?.user) {
@@ -114,7 +140,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setLoading(false);
     });
 
-    return () => subscription.unsubscribe();
+    return () => {
+      appStateSub.remove();
+      subscription.unsubscribe();
+    };
   }, [fetchUserData]);
 
   const signIn = async (email: string, password: string) => {

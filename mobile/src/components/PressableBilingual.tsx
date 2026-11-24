@@ -33,11 +33,12 @@ export function PressableBilingual({
         style={[styles.container, style]}
         onPress={() => setModalVisible(true)}
         activeOpacity={0.7}
+        hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
       >
         <Text style={[styles.text, textStyle]}>{text}</Text>
         {showHelperPill ? (
           <View style={styles.pill}>
-            <Ionicons name="help-circle-outline" size={12} color={colors.accentEmerald} style={{ marginRight: 2 }} />
+            <Ionicons name="help-circle-outline" size={12} color={colors.emeraldText} style={{ marginEnd: 3 }} />
             <Text style={styles.pillText}>شرح</Text>
           </View>
         ) : null}
@@ -66,8 +67,9 @@ const styles = StyleSheet.create({
     borderBottomWidth: 2,
     borderBottomColor: '#CBD5E1',
     borderRadius: 10,
-    paddingHorizontal: 8,
-    paddingVertical: 4,
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    minHeight: 44,
     marginVertical: 2,
     gap: 6,
   },
@@ -88,7 +90,9 @@ const styles = StyleSheet.create({
   },
   pillText: {
     fontSize: 11,
+    lineHeight: 18,
     fontWeight: '700',
-    color: colors.accentEmerald,
+    color: colors.emeraldText,
+    writingDirection: 'rtl',
   },
 });

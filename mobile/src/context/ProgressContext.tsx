@@ -27,51 +27,86 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
   const [streak, setStreak] = useState(3);
   const [currentGrade, setCurrentGradeState] = useState('Grade 7');
 
+  const userId = user?.id || 'guest';
+  const STORAGE_XP_KEY = `@crescent_${userId}_xp`;
+  const STORAGE_STREAK_KEY = `@crescent_${userId}_streak`;
+  const STORAGE_GRADE_KEY = `@crescent_${userId}_active_grade`;
+  const STORAGE_COMPLETED_KEY = `@crescent_${userId}_completed_lessons`;
+  const STORAGE_PENDING_KEY = `@crescent_${userId}_pending_progress`;
+
   // Load cached stats from AsyncStorage
   useEffect(() => {
     async function loadCachedProgress() {
       try {
-        const [cachedXp, cachedStreak, cachedGrade] = await Promise.all([
+        const [cachedXp, cachedStreak, cachedGrade, cachedCompleted] = await Promise.all([
           AsyncStorage.getItem(STORAGE_XP_KEY),
           AsyncStorage.getItem(STORAGE_STREAK_KEY),
           AsyncStorage.getItem(STORAGE_GRADE_KEY),
+          AsyncStorage.getItem(STORAGE_COMPLETED_KEY),
         ]);
         if (cachedXp) setXp(parseInt(cachedXp, 10));
         if (cachedStreak) setStreak(parseInt(cachedStreak, 10));
         if (cachedGrade) setCurrentGradeState(cachedGrade);
+        if (cachedCompleted) {
+          try {
+            setCompletedLessons(JSON.parse(cachedCompleted));
+          } catch (e) {}
+        }
       } catch (e) {
         console.warn('Failed to load local progress:', e);
       }
     }
     loadCachedProgress();
-  }, []);
+  }, [userId]);
 
-  // Fetch remote lesson completions from Supabase
+  // Fetch remote lesson completions from Supabase & flush offline pending queue
   const fetchProgress = useCallback(async () => {
     if (!user) return;
     try {
+      // 1. Flush any pending offline lesson completions
+      const pendingRaw = await AsyncStorage.getItem(STORAGE_PENDING_KEY);
+      if (pendingRaw) {
+        const pendingIds: string[] = JSON.parse(pendingRaw);
+        if (Array.isArray(pendingIds) && pendingIds.length > 0) {
+          const rows = pendingIds.map((lid) => ({
+            user_id: user.id,
+            lesson_id: lid,
+            status: 'completed',
+            completion_date: new Date().toISOString(),
+          }));
+          await supabase.from('user_progress').upsert(rows, { onConflict: 'user_id,lesson_id' });
+          await AsyncStorage.removeItem(STORAGE_PENDING_KEY);
+        }
+      }
+
+      // 2. Fetch full progress
       const { data, error } = await supabase
         .from('user_progress')
         .select('lesson_id, status')
         .eq('user_id', user.id);
 
       if (!error && data) {
-        const map: Record<string, boolean> = {};
-        data.forEach((row: { lesson_id: string; status: string }) => {
-          if (row.status === 'completed') map[row.lesson_id] = true;
+        setCompletedLessons((prev) => {
+          const map: Record<string, boolean> = { ...prev };
+          data.forEach((row: { lesson_id: string; status: string }) => {
+            if (row.status === 'completed') map[row.lesson_id] = true;
+          });
+          AsyncStorage.setItem(STORAGE_COMPLETED_KEY, JSON.stringify(map)).catch(() => {});
+          return map;
         });
-        setCompletedLessons(map);
       }
     } catch (err) {
       console.error('Error fetching progress from Supabase:', err);
     }
-  }, [user]);
+  }, [user, STORAGE_PENDING_KEY, STORAGE_COMPLETED_KEY]);
 
   useEffect(() => {
     if (user) {
       fetchProgress();
     } else {
       setCompletedLessons({});
+      setXp(0);
+      setStreak(0);
     }
   }, [user, fetchProgress]);
 
@@ -89,13 +124,17 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
   };
 
   const completeLesson = async (lessonId: string, earnedXp = 50) => {
-    // Optimistic local state update
-    setCompletedLessons((prev) => ({ ...prev, [lessonId]: true }));
+    // 1. Optimistic local state update & instant AsyncStorage write
+    setCompletedLessons((prev) => {
+      const next = { ...prev, [lessonId]: true };
+      AsyncStorage.setItem(STORAGE_COMPLETED_KEY, JSON.stringify(next)).catch(() => {});
+      return next;
+    });
     addXp(earnedXp);
 
     if (user) {
       try {
-        await supabase.from('user_progress').upsert(
+        const { error } = await supabase.from('user_progress').upsert(
           {
             user_id: user.id,
             lesson_id: lessonId,
@@ -104,8 +143,20 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
           },
           { onConflict: 'user_id,lesson_id' }
         );
+
+        if (error) throw error;
       } catch (err) {
-        console.error('Error recording lesson completion in user_progress:', err);
+        // Enqueue to offline pending progress
+        try {
+          const existing = await AsyncStorage.getItem(STORAGE_PENDING_KEY);
+          const queue: string[] = existing ? JSON.parse(existing) : [];
+          if (!queue.includes(lessonId)) {
+            queue.push(lessonId);
+            await AsyncStorage.setItem(STORAGE_PENDING_KEY, JSON.stringify(queue));
+          }
+        } catch (queueErr) {
+          console.warn('Failed to queue offline lesson completion:', queueErr);
+        }
       }
     }
   };

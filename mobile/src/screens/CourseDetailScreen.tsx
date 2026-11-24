@@ -37,17 +37,21 @@ export function CourseDetailScreen({ course, onBack, onSelectLesson }: CourseDet
   }, [course.id]);
 
   return (
-    <SafeAreaView style={styles.container} edges={['top', 'left', 'right']}>
+    <SafeAreaView style={styles.container} edges={['top', 'left', 'right', 'bottom']}>
       {/* Header */}
       <View style={styles.header}>
-        <TouchableOpacity style={styles.backButton} onPress={onBack}>
+        <TouchableOpacity
+          style={styles.backButton}
+          onPress={onBack}
+          hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+        >
           <Ionicons name="arrow-back" size={24} color={colors.primary} />
         </TouchableOpacity>
         <View style={styles.headerTitleBox}>
           <Text style={styles.headerTitle}>{course.title}</Text>
           <Text style={styles.headerSubtitle}>الوحدات والدروس الدراسية</Text>
         </View>
-        <View style={{ width: 40 }} />
+        <View style={{ width: 48 }} />
       </View>
 
       {loading ? (
@@ -144,9 +148,9 @@ const styles = StyleSheet.create({
     borderBottomColor: colors.cardBorder,
   },
   backButton: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
+    width: 48,
+    height: 48,
+    borderRadius: 24,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: colors.background,
@@ -161,6 +165,8 @@ const styles = StyleSheet.create({
   },
   headerSubtitle: {
     fontSize: 12,
+    lineHeight: 18,
+    writingDirection: 'rtl',
     color: colors.textSecondary,
     marginTop: 2,
   },

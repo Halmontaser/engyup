@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { playCurriculumAudio, stopAllAudio } from '@/utils/audio';
@@ -18,22 +18,34 @@ export function TrueFalseActivity({ data, media, onComplete }: TrueFalseActivity
     : [data || {}];
 
   const [statementIdx, setStatementIdx] = useState(0);
+  const [correctCount, setCorrectCount] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<boolean | null>(null);
   const [checked, setChecked] = useState(false);
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
+
+  useEffect(() => {
+    return () => {
+      stopAllAudio();
+    };
+  }, []);
 
   const currentItem = statements[statementIdx] || {};
   const statementText = currentItem.statement || currentItem.prompt || currentItem.text || data?.statement || data?.prompt || 'Is this statement true or false?';
   const explanationAr = currentItem.explanation_ar || currentItem.explanation || data?.explanation_ar || data?.explanation || 'تحقق من صحة العبارة حسب الدرس.';
 
-  const isActuallyTrue =
-    typeof currentItem.is_true === 'boolean'
-      ? currentItem.is_true
-      : typeof currentItem.isTrue === 'boolean'
+  const rawTrue =
+    currentItem.isTrue !== undefined
       ? currentItem.isTrue
-      : currentItem.correct_answer === true || currentItem.correct_answer === 'true' || data?.is_true === true;
+      : currentItem.is_true !== undefined
+      ? currentItem.is_true
+      : currentItem.correct_answer !== undefined
+      ? currentItem.correct_answer
+      : data?.isTrue !== undefined
+      ? data?.isTrue
+      : data?.is_true;
+  const isActuallyTrue = rawTrue === true || rawTrue === 'true' || rawTrue === 1 || rawTrue === '1';
 
-  const audioPath = media?.audio?.[statementIdx]?.url || media?.audio?.[0]?.url || currentItem.audio_url;
+  const audioPath = media?.audio?.[statementIdx]?.url || currentItem.audio || currentItem.audio_url;
 
   const handleSpeak = async () => {
     setIsPlayingAudio(true);
@@ -43,6 +55,10 @@ export function TrueFalseActivity({ data, media, onComplete }: TrueFalseActivity
   const handleCheckOrContinue = () => {
     if (!checked) {
       if (selectedAnswer === null) return;
+      const isCorrect = selectedAnswer === isActuallyTrue;
+      if (isCorrect) {
+        setCorrectCount((c) => c + 1);
+      }
       setChecked(true);
     } else {
       stopAllAudio();
@@ -52,7 +68,8 @@ export function TrueFalseActivity({ data, media, onComplete }: TrueFalseActivity
         setSelectedAnswer(null);
         setChecked(false);
       } else {
-        onComplete(isCorrect);
+        const totalCorrect = correctCount + (isCorrect ? 1 : 0);
+        onComplete(totalCorrect >= Math.ceil(statements.length * 0.6));
       }
     }
   };

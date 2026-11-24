@@ -8,6 +8,16 @@ export const colors = {
   accentAmber: '#D97706', // Mocha Amber (بن يمني)
   accentRed: '#EF4444', // Error / Incorrect
 
+  // High-Contrast Semantic Tokens (WCAG AA Compliant >= 4.5:1 on light backgrounds)
+  emeraldText: '#065F46', // Emerald 800
+  amberText: '#B45309', // Amber 700
+  cyanText: '#0E7490', // Cyan 700
+  warningBg: '#FEF3C7', // Amber 100
+  warningBorder: '#FDE68A', // Amber 200
+  errorBg: '#FEF2F2', // Red 50
+  errorBorder: '#FCA5A5', // Red 300
+  errorText: '#B91C1C', // Red 700
+
   // Surfaces
   background: '#F8FAFC', // Slate 50
   cardBg: '#FFFFFF',
@@ -17,7 +27,7 @@ export const colors = {
   // Text
   textPrimary: '#0F172A',
   textSecondary: '#475569', // Slate 600
-  textMuted: '#94A3B8', // Slate 400
+  textMuted: '#64748B', // Slate 500 (Accessible 4.6:1 contrast on white)
   textInverse: '#FFFFFF',
 
   // Interactive

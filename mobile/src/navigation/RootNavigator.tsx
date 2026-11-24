@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ActivityIndicator } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useAuth } from '@/context/AuthContext';
 import { Course, Lesson } from '@/api/curriculum';
@@ -21,6 +22,7 @@ type NavigationRoute =
   | { name: 'lesson'; lesson: Lesson; previousCourse?: Course };
 
 export function RootNavigator() {
+  const insets = useSafeAreaInsets();
   const { user, loading } = useAuth();
   const [currentRoute, setCurrentRoute] = useState<NavigationRoute>({ name: 'dashboard' });
   const [activeTab, setActiveTab] = useState<TabRoute>('dashboard');
@@ -94,7 +96,15 @@ export function RootNavigator() {
 
       {/* Persistent Bottom Tab Bar (shown on top-level tabs) */}
       {!isFullView && (
-        <View style={styles.tabBar}>
+        <View
+          style={[
+            styles.tabBar,
+            {
+              height: 58 + Math.max(insets.bottom, 8),
+              paddingBottom: Math.max(insets.bottom, 6),
+            },
+          ]}
+        >
           {/* Dashboard Tab */}
           <TouchableOpacity
             style={styles.tabButton}

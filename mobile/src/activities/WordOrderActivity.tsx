@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { playCurriculumAudio, stopAllAudio } from '@/utils/audio';
@@ -17,18 +17,29 @@ export function WordOrderActivity({ data, media, onComplete }: WordOrderActivity
     : [data || {}];
 
   const [sentenceIdx, setSentenceIdx] = useState(0);
+  const [correctCount, setCorrectCount] = useState(0);
   const currentItem = sentences[sentenceIdx] || {};
 
-  const target = (
+  const rawTarget =
+    currentItem.correctOrder ||
+    currentItem.answer ||
     currentItem.target_sentence ||
     currentItem.sentence ||
     currentItem.text ||
+    data?.correctOrder ||
+    data?.answer ||
     data?.target_sentence ||
     data?.sentence ||
-    ''
-  ).trim();
+    '';
 
-  const rawWords = currentItem.words || currentItem.jumbled || data?.words || data?.jumbled || (target ? target.split(/\s+/) : []);
+  const target = (Array.isArray(rawTarget) ? rawTarget.join(' ') : String(rawTarget)).trim();
+
+  const rawWords =
+    currentItem.words ||
+    currentItem.jumbled ||
+    data?.words ||
+    data?.jumbled ||
+    (Array.isArray(rawTarget) ? rawTarget : target ? target.split(/\s+/) : []);
 
   // Shuffled bank
   const [bankWords, setBankWords] = useState<string[]>(() => {
@@ -38,7 +49,13 @@ export function WordOrderActivity({ data, media, onComplete }: WordOrderActivity
   const [checked, setChecked] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
 
-  const audioPath = media?.audio?.[sentenceIdx]?.url || media?.audio?.[0]?.url || currentItem.audio_url;
+  useEffect(() => {
+    return () => {
+      stopAllAudio();
+    };
+  }, []);
+
+  const audioPath = media?.audio?.[sentenceIdx]?.url || currentItem.audio_url || currentItem.audio;
 
   const handlePlaceWord = (word: string, index: number) => {
     if (checked) return;
@@ -63,6 +80,9 @@ export function WordOrderActivity({ data, media, onComplete }: WordOrderActivity
       const cleanConstructed = constructed.replace(/[.,?!]/g, '').toLowerCase();
       const match = cleanConstructed === cleanTarget;
       setIsCorrect(match);
+      if (match) {
+        setCorrectCount((c) => c + 1);
+      }
       setChecked(true);
       if (match) {
         playCurriculumAudio(audioPath, target);
@@ -70,14 +90,27 @@ export function WordOrderActivity({ data, media, onComplete }: WordOrderActivity
     } else {
       stopAllAudio();
       if (sentenceIdx + 1 < sentences.length) {
+        const nextItem = sentences[sentenceIdx + 1] || {};
+        const nextRaw =
+          nextItem.correctOrder ||
+          nextItem.answer ||
+          nextItem.target_sentence ||
+          nextItem.sentence ||
+          nextItem.text ||
+          '';
+        const nextTarget = (Array.isArray(nextRaw) ? nextRaw.join(' ') : String(nextRaw)).trim();
+        const nextWords =
+          nextItem.words ||
+          nextItem.jumbled ||
+          (Array.isArray(nextRaw) ? nextRaw : nextTarget ? nextTarget.split(/\s+/) : []);
+
         setSentenceIdx((i) => i + 1);
-        const nextTarget = (sentences[sentenceIdx + 1]?.target_sentence || sentences[sentenceIdx + 1]?.sentence || '').trim();
-        const nextWords = sentences[sentenceIdx + 1]?.words || (nextTarget ? nextTarget.split(/\s+/) : []);
         setBankWords([...nextWords].sort(() => Math.random() - 0.5));
         setPlacedWords([]);
         setChecked(false);
       } else {
-        onComplete(isCorrect);
+        const totalCorrect = correctCount + (isCorrect ? 1 : 0);
+        onComplete(totalCorrect >= Math.ceil(sentences.length * 0.6));
       }
     }
   };

@@ -11,6 +11,7 @@ interface GenericActivityProps {
     title: string;
     instruction: string;
     data: any;
+    media?: any;
     book_type?: string | null;
     book_page?: string | null;
   };

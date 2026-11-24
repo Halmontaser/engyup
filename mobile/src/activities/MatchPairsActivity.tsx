@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { playCurriculumAudio, stopAllAudio } from '@/utils/audio';
@@ -11,10 +11,22 @@ interface MatchPairsActivityProps {
 }
 
 export function MatchPairsActivity({ data, media, onComplete }: MatchPairsActivityProps) {
-  // Normalize pairs: handle data.pairs, data.items, data.associations
-  const rawList = data?.pairs || data?.items || data?.associations || [];
+  // Normalize pairs: handle data.pairs, data.items, data.associations safely
+  const rawList = Array.isArray(data?.pairs)
+    ? data.pairs
+    : Array.isArray(data?.items)
+    ? data.items
+    : Array.isArray(data?.associations)
+    ? data.associations
+    : [];
 
-  const rawPairs = rawList.map((item: any, idx: number) => {
+  const safeList = rawList.length > 0 ? rawList : [
+    { left: 'Hello', right: 'مرحباً' },
+    { left: 'School', right: 'مدرسة' },
+    { left: 'Teacher', right: 'معلم' },
+  ];
+
+  const rawPairs = safeList.map((item: any, idx: number) => {
     const leftText = item.left || item.en || item.word || item.term || `Word ${idx + 1}`;
     const rightText = item.right || item.ar || item.arabic || item.meaning || item.definition || `الترجمة ${idx + 1}`;
     return { left: leftText, right: rightText };
@@ -30,6 +42,12 @@ export function MatchPairsActivity({ data, media, onComplete }: MatchPairsActivi
   const [selectedLeft, setSelectedLeft] = useState<number | null>(null);
   const [selectedRight, setSelectedRight] = useState<number | null>(null);
   const [matchedPairs, setMatchedPairs] = useState<Set<number>>(new Set());
+
+  useEffect(() => {
+    return () => {
+      stopAllAudio();
+    };
+  }, []);
 
   const handleSelectLeft = (pairId: number, text: string) => {
     if (matchedPairs.has(pairId)) return;

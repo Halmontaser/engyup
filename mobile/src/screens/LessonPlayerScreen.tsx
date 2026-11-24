@@ -6,6 +6,7 @@ import {
   StyleSheet,
   ActivityIndicator,
   Alert,
+  ScrollView,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
@@ -13,6 +14,7 @@ import { Lesson, Activity, fetchLessonActivities } from '@/api/curriculum';
 import { useProgress } from '@/context/ProgressContext';
 import { ProgressBar } from '@/components/ProgressBar';
 import { ActivityRenderer } from '@/components/ActivityRenderer';
+import { stopAllAudio } from '@/utils/audio';
 import { colors } from '@/theme/colors';
 
 interface LessonPlayerScreenProps {
@@ -72,6 +74,9 @@ export function LessonPlayerScreen({ lesson, onBack }: LessonPlayerScreenProps) 
       }
     }
     loadActivities();
+    return () => {
+      stopAllAudio();
+    };
   }, [lesson.id]);
 
   const handleExit = () => {
@@ -107,27 +112,29 @@ export function LessonPlayerScreen({ lesson, onBack }: LessonPlayerScreenProps) 
   // Celebration Completion View
   if (isCompleted) {
     return (
-      <View style={styles.completionContainer}>
-        <View style={styles.trophyCircle}>
-          <Ionicons name="trophy" size={54} color={colors.accentGold} />
-        </View>
-
-        <Text style={styles.congratsTitle}>مبارك يا بطل! 🎉</Text>
-        <Text style={styles.congratsSubtitle}>أتممت درس: {lesson.title} بنجاح</Text>
-
-        <View style={styles.rewardCard}>
-          <View style={styles.rewardRow}>
-            <Ionicons name="star" size={24} color={colors.accentGold} />
-            <Text style={styles.rewardValue}>+50 XP</Text>
+      <SafeAreaView style={styles.container} edges={['top', 'left', 'right', 'bottom']}>
+        <ScrollView contentContainerStyle={styles.completionContainer} showsVerticalScrollIndicator={false}>
+          <View style={styles.trophyCircle}>
+            <Ionicons name="trophy" size={54} color={colors.accentGold} />
           </View>
-          <Text style={styles.rewardLabel}>تمت إضافة نقاط الخبرة إلى رصيدك</Text>
-        </View>
 
-        <TouchableOpacity style={styles.finishButton} onPress={onBack} activeOpacity={0.85}>
-          <Ionicons name="arrow-back" size={20} color={colors.textInverse} style={{ marginRight: 6 }} />
-          <Text style={styles.finishButtonText}>العودة لقائمة الدروس</Text>
-        </TouchableOpacity>
-      </View>
+          <Text style={styles.congratsTitle}>مبارك يا بطل! 🎉</Text>
+          <Text style={styles.congratsSubtitle}>أتممت درس: {lesson.title} بنجاح</Text>
+
+          <View style={styles.rewardCard}>
+            <View style={styles.rewardRow}>
+              <Ionicons name="star" size={24} color={colors.accentGold} />
+              <Text style={styles.rewardValue}>+50 XP</Text>
+            </View>
+            <Text style={styles.rewardLabel}>تمت إضافة نقاط الخبرة إلى رصيدك</Text>
+          </View>
+
+          <TouchableOpacity style={styles.finishButton} onPress={onBack} activeOpacity={0.85}>
+            <Ionicons name="arrow-back" size={20} color={colors.textInverse} style={{ marginRight: 6 }} />
+            <Text style={styles.finishButtonText}>العودة لقائمة الدروس</Text>
+          </TouchableOpacity>
+        </ScrollView>
+      </SafeAreaView>
     );
   }
 
@@ -140,10 +147,14 @@ export function LessonPlayerScreen({ lesson, onBack }: LessonPlayerScreenProps) 
     .join(' ');
 
   return (
-    <SafeAreaView style={styles.container} edges={['top', 'left', 'right']}>
+    <SafeAreaView style={styles.container} edges={['top', 'left', 'right', 'bottom']}>
       {/* Top Runner Bar */}
       <View style={styles.topBar}>
-        <TouchableOpacity style={styles.closeBtn} onPress={handleExit}>
+        <TouchableOpacity
+          style={styles.closeBtn}
+          onPress={handleExit}
+          hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+        >
           <Ionicons name="close" size={22} color={colors.primary} />
         </TouchableOpacity>
 
@@ -203,9 +214,9 @@ const styles = StyleSheet.create({
     borderBottomColor: colors.cardBorder,
   },
   closeBtn: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
+    width: 48,
+    height: 48,
+    borderRadius: 24,
     backgroundColor: colors.background,
     alignItems: 'center',
     justifyContent: 'center',

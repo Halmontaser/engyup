@@ -68,13 +68,17 @@ export function PracticeScreen() {
     const act = PRACTICE_ACTIVITIES[activeIdx];
 
     return (
-      <SafeAreaView style={styles.container} edges={['top', 'left', 'right']}>
+      <SafeAreaView style={styles.container} edges={['top', 'left', 'right', 'bottom']}>
         <View style={styles.header}>
-          <TouchableOpacity style={styles.backButton} onPress={() => setActiveIdx(null)}>
+          <TouchableOpacity
+            style={styles.backButton}
+            onPress={() => setActiveIdx(null)}
+            hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+          >
             <Ionicons name="close" size={24} color={colors.primary} />
           </TouchableOpacity>
           <Text style={styles.headerTitle}>{act.title}</Text>
-          <View style={{ width: 40 }} />
+          <View style={{ width: 48 }} />
         </View>
 
         <View style={{ flex: 1 }}>
@@ -158,9 +162,9 @@ const styles = StyleSheet.create({
     borderBottomColor: colors.cardBorder,
   },
   backButton: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
+    width: 48,
+    height: 48,
+    borderRadius: 24,
     backgroundColor: colors.background,
     alignItems: 'center',
     justifyContent: 'center',
@@ -185,8 +189,10 @@ const styles = StyleSheet.create({
   },
   subTitle: {
     fontSize: 13,
+    lineHeight: 18,
     color: colors.textSecondary,
     textAlign: 'right',
+    writingDirection: 'rtl',
     marginTop: 4,
   },
   list: {

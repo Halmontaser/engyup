@@ -59,6 +59,19 @@ export async function fetchCourses(tenantId?: string): Promise<Course[]> {
       refreshCoursesCache(tenantId, cacheKey);
       return parsed;
     }
+
+    // Fallback: If cold start with no tenant, search for any cached courses
+    const allKeys = await AsyncStorage.getAllKeys();
+    const courseKeys = (allKeys || []).filter((k: string) => k.startsWith(`${CACHE_PREFIX}courses_`));
+    for (const key of courseKeys) {
+      const alt = await AsyncStorage.getItem(key);
+      if (alt) {
+        const parsed = JSON.parse(alt);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          return parsed;
+        }
+      }
+    }
   } catch (e) {
     // Ignore cache read error and proceed to network
   }
