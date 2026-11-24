@@ -27,7 +27,11 @@
     "extra": {
       "cdnUrl": "https://pub-97a5f93c54924fc18c9d3cbedfd29066.r2.dev",
       "supabaseUrl": "https://msttsebafjgzllyabsid.supabase.co",
-      "supabaseAnonKey": "sb_publishable_eS3m4pnX9V7rK9RS92jghA_waa7unBI"
-    }
+      "supabaseAnonKey": "sb_publishable_eS3m4pnX9V7rK9RS92jghA_waa7unBI",
+      "eas": {
+        "projectId": "2a869e34-9e9a-4727-8cdd-71539600481a"
+      }
+    },
+    "owner": "harby.almontaser"
   }
 }
