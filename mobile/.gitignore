@@ -11,3 +11,6 @@ npm-debug.*
 web-build/
 .env.local
 .env.*.local
+google-service-account.json
+*key*.json
+secrets/

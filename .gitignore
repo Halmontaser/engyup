@@ -45,6 +45,13 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# Service account & credentials
+google-service-account.json
+*key*.json
+secrets/
+*.jks
+*.keystore
+
 # InsForge & AI agent skills
 .insforge
 .agent
