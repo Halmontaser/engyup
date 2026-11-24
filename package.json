@@ -16,11 +16,6 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1057.0",
-    "@capacitor/android": "^8.3.1",
-    "@capacitor/cli": "^7.6.2",
-    "@capacitor/core": "^8.3.1",
-    "@capacitor/splash-screen": "^8.0.1",
-    "@capacitor/status-bar": "^8.0.2",
     "@insforge/sdk": "^1.2.5",
     "@supabase/supabase-js": "^2.101.1",
     "@vitejs/plugin-react": "^5.0.4",
