@@ -16,6 +16,9 @@
     "production": {
       "android": {
         "buildType": "app-bundle"
+      },
+      "env": {
+        "KOTLIN_VERSION": "1.9.25"
       }
     }
   },

@@ -32,6 +32,16 @@
         "projectId": "2a869e34-9e9a-4727-8cdd-71539600481a"
       }
     },
-    "owner": "harby.almontaser"
+    "owner": "harby.almontaser",
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "kotlinVersion": "1.9.25"
+          }
+        }
+      ]
+    ]
   }
 }

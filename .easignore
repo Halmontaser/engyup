@@ -1,0 +1,13 @@
+# Root ignores for EAS build
+/extracted_units
+/public/media
+/scratch
+/.kimchi
+/dist
+/build
+*.mp3
+*.wav
+*.m4a
+*.jsonl
+*.zip
+*.tar.gz
