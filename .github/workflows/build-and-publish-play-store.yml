@@ -34,19 +34,23 @@ jobs:
       - name: 4. Set up Gradle
         uses: gradle/actions/setup-gradle@v3
 
-      - name: 5. Install Mobile Dependencies
+      - name: 5. Install Mobile Dependencies & Setup Symlinks
         run: |
           cd mobile
           npm ci
+          cd android
+          ln -sf ../node_modules node_modules
 
       - name: 6. Make Gradlew Executable
         run: |
           chmod +x mobile/android/gradlew
 
       - name: 7. Build Android App Bundle (AAB)
+        env:
+          NODE_PATH: ${{ github.workspace }}/mobile/node_modules
         run: |
           cd mobile/android
-          ./gradlew bundleRelease --stacktrace
+          ./gradlew bundleRelease --stacktrace --no-daemon
 
       - name: 8. Locate & Copy Release AAB
         run: |
