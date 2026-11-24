@@ -1,40 +1,37 @@
 import { createClient } from '@supabase/supabase-js'
 
+const DEFAULT_SUPABASE_URL = 'https://msttsebafjgzllyabsid.supabase.co';
+const DEFAULT_SUPABASE_ANON_KEY = 'sb_publishable_eS3m4pnX9V7rK9RS92jghA_waa7unBI';
+
 const getSupabaseConfig = () => {
-  const env = (import.meta as any).env || {};
+  const metaEnv = (typeof import.meta !== 'undefined' && (import.meta as any).env) || {};
+  const procEnv = (typeof process !== 'undefined' && process.env) || {};
 
-  // For server-side (Next.js API routes), use process.env
-  const isServer = typeof window === 'undefined';
+  const url =
+    metaEnv.VITE_SUPABASE_URL ||
+    procEnv.VITE_SUPABASE_URL ||
+    procEnv.NEXT_PUBLIC_SUPABASE_URL ||
+    procEnv.SUPABASE_URL ||
+    '';
 
-  let url: string;
-  let key: string;
+  const key =
+    metaEnv.VITE_SUPABASE_ANON_KEY ||
+    procEnv.VITE_SUPABASE_ANON_KEY ||
+    procEnv.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
+    procEnv.SUPABASE_ANON_KEY ||
+    procEnv.SUPABASE_SERVICE_ROLE_KEY ||
+    procEnv.SUPABASE_KEY ||
+    '';
 
-  if (isServer) {
-    // Server-side - use process.env (for Next.js API routes)
-    url = process.env.VITE_SUPABASE_URL || '';
-    // For server-side admin operations, prefer service role key, fall back to anon key
-    key = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.VITE_SUPABASE_ANON_KEY || '';
-  } else {
-    // Client-side - use import.meta.env (Vite)
-    url = env.VITE_SUPABASE_URL || '';
-    key = env.VITE_SUPABASE_ANON_KEY || '';
-  }
-
-  const defaultUrl = 'https://msttsebafjgzllyabsid.supabase.co';
-
-  const finalUrl = (url && url !== 'undefined' && url.startsWith('http')) ? url : defaultUrl;
-  const finalKey = (key && key !== 'undefined') ? key : null;
+  const finalUrl = (url && url !== 'undefined' && url.startsWith('http')) ? url : DEFAULT_SUPABASE_URL;
+  const finalKey = (key && key !== 'undefined' && key.trim() !== '') ? key : DEFAULT_SUPABASE_ANON_KEY;
 
   return { finalUrl, finalKey };
 };
 
 const { finalUrl, finalKey } = getSupabaseConfig();
 
-if (!finalKey) {
-  console.error('Supabase Key is missing! Please set VITE_SUPABASE_ANON_KEY in your environment.');
-}
-
-export const supabase = createClient(finalUrl, finalKey || 'MISSING_KEY');
+export const supabase = createClient(finalUrl, finalKey);
 
 export type Profile = {
   id: string;

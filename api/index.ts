@@ -8,14 +8,17 @@ const app = express();
 app.use(express.json());
 
 // Supabase Admin Client
-let supabaseUrl = process.env.VITE_SUPABASE_URL;
+const DEFAULT_SUPABASE_URL = 'https://msttsebafjgzllyabsid.supabase.co';
+const DEFAULT_SUPABASE_KEY = 'sb_publishable_eS3m4pnX9V7rK9RS92jghA_waa7unBI';
+
+let supabaseUrl = process.env.VITE_SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL || DEFAULT_SUPABASE_URL;
 if (!supabaseUrl || !supabaseUrl.startsWith('http')) {
-  supabaseUrl = 'https://msttsebafjgzllyabsid.supabase.co';
+  supabaseUrl = DEFAULT_SUPABASE_URL;
 }
 
-let supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.VITE_SUPABASE_ANON_KEY;
-if (!supabaseServiceKey || supabaseServiceKey === 'undefined') {
-  supabaseServiceKey = process.env.SUPABASE_KEY || '';
+let supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.VITE_SUPABASE_ANON_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || process.env.SUPABASE_KEY;
+if (!supabaseServiceKey || supabaseServiceKey === 'undefined' || supabaseServiceKey.trim() === '') {
+  supabaseServiceKey = DEFAULT_SUPABASE_KEY;
 }
 
 const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey);
