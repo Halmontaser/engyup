@@ -31,7 +31,7 @@ export function RootNavigator() {
     return (
       <View style={styles.splashContainer}>
         <ActivityIndicator size="large" color={colors.accentEmerald} />
-        <Text style={styles.splashTitle}>English Crescent</Text>
+        <Text style={styles.splashTitle}>Engy Up</Text>
         <Text style={styles.splashSubtitle}>جاري تحميل التطبيق...</Text>
       </View>
     );

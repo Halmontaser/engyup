@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "English Crescent",
-    "slug": "crescent-mobile",
+    "name": "Engy Up",
+    "slug": "engyup-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
@@ -11,10 +11,10 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.crescent.app"
+      "bundleIdentifier": "com.engyup.app"
     },
     "android": {
-      "package": "com.crescent.app",
+      "package": "com.engyup.app",
       "versionCode": 3,
       "permissions": [
         "INTERNET",

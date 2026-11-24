@@ -87,13 +87,13 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
   const [currentGrade, setCurrentGradeState] = useState('Grade 7');
 
   const userId = user?.id || 'guest';
-  const STORAGE_XP_KEY = `@crescent_${userId}_xp`;
-  const STORAGE_STREAK_KEY = `@crescent_${userId}_streak`;
-  const STORAGE_DATE_KEY = `@crescent_${userId}_last_active_date`;
-  const STORAGE_GRADE_KEY = `@crescent_${userId}_active_grade`;
-  const STORAGE_COMPLETED_KEY = `@crescent_${userId}_completed_lessons`;
-  const STORAGE_PENDING_KEY = `@crescent_${userId}_pending_progress`;
-  const STORAGE_ACCURACY_KEY = `@crescent_${userId}_accuracy_rate`;
+  const STORAGE_XP_KEY = `@engyup_${userId}_xp`;
+  const STORAGE_STREAK_KEY = `@engyup_${userId}_streak`;
+  const STORAGE_DATE_KEY = `@engyup_${userId}_last_active_date`;
+  const STORAGE_GRADE_KEY = `@engyup_${userId}_active_grade`;
+  const STORAGE_COMPLETED_KEY = `@engyup_${userId}_completed_lessons`;
+  const STORAGE_PENDING_KEY = `@engyup_${userId}_pending_progress`;
+  const STORAGE_ACCURACY_KEY = `@engyup_${userId}_accuracy_rate`;
 
   // Load cached stats from user-scoped AsyncStorage
   useEffect(() => {

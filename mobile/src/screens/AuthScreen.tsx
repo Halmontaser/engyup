@@ -59,8 +59,8 @@ export function AuthScreen() {
         <View style={styles.logoCircle}>
           <Ionicons name="school" size={36} color={colors.accentEmerald} />
         </View>
-        <Text style={styles.brandTitle}>English Crescent</Text>
-        <Text style={styles.brandSubtitle}>منهج اللغة الإنجليزية التفاعلي لطلاب اليمن</Text>
+        <Text style={styles.brandTitle}>Engy Up</Text>
+        <Text style={styles.brandSubtitle}>منصة تعلم اللغة الإنجليزية التفاعلية</Text>
       </View>
 
       {/* Auth Card */}

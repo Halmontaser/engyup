@@ -213,7 +213,7 @@ export function ProfileScreen({ onBack }: ProfileScreenProps) {
               <Text style={styles.modalH1}>5. التواصل ومسؤول الحماية</Text>
               <Text style={styles.modalP}>
                 مسؤول حماية البيانات: privacy@engyup.com{'\n'}
-                الدعم الفني: support@crescent.app
+                الدعم الفني: support@engyup.com
               </Text>
             </ScrollView>
 

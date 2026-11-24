@@ -1,4 +1,4 @@
-# English Crescent — Google Play Store Listing & Store Card
+# Engy Up — Google Play Store Listing & Store Card
 
 Complete metadata and assets for the Google Play Store Listing.
 
@@ -7,25 +7,26 @@ Complete metadata and assets for the Google Play Store Listing.
 ## 1. Core Listing Details
 
 ### App Title
-- **English**: `English Crescent`
-- **Arabic**: `English Crescent | كريسنت التعليمي`
+- **English**: `Engy Up`
+- **Arabic**: `Engy Up | إنجي آب التعليمي`
 *(Max 30 characters)*
 
 ### Short Description
 - **Arabic (Default)**:
-  `تطبيق تعليمي تفاعلي للمنهج اليمني للغة الإنجليزية مع أنشطة ذكية وتتبع تقدم مستمر.`
+  `تطبيق تعليمي تفاعلي لتعلم وإتقان اللغة الإنجليزية مع أنشطة ذكية وتتبع مستمر.`
 - **English**:
-  `Interactive English learning app for the Yemeni curriculum with smart activities & progress tracking.`
+  `Interactive English learning app with 21 smart activities & progress tracking.`
 *(Max 80 characters)*
+
+### Package Name
+- `com.engyup.app`
 
 ### Full Description (Arabic)
 ```text
-تطبيق English Crescent هو المنصة التعليمية الرقمية الرائدة والمصممة خصيصاً لطلاب المنهج اليمني للغة الإنجليزية (من الصف السابع الأساسي وحتى الصف الثالث الثانوي).
-
-يهدف التطبيق إلى تمكين الطلاب من إتقان مفردات وقواعد ومهارات اللغة الإنجليزية بأسلوب تفاعلي، مشوق، وفعال.
+تطبيق Engy Up هو المنصة التعليمية الرقمية الرائدة لتعلم وإتقان اللغة الإنجليزية بأسلوب تفاعلي، مشوق وفعال.
 
 ✨ أبرز مميزات التطبيق:
-• محتوى دراسي مطابق 100% للمنهج الدراسي اليمني المعتمد (Crescent English Course).
+• محتوى دراسي متكامل وشامل لمهارات اللغة الإنجليزية الأساسية.
 • 21 نمطاً متنوعاً من الأنشطة التفاعلية:
   - الاختيار من متعدد (MCQ) واختبارات الفهم والاستيعاب.
   - مطابقة الأزواج وتوصيل الكلمات بالصور والتعاريف.
@@ -49,12 +50,9 @@ Complete metadata and assets for the Google Play Store Listing.
 
 ### Full Description (English)
 ```text
-English Crescent is the premier interactive learning platform tailored specifically for the Yemeni English Curriculum (Grades 7 through 12).
-
-Master English vocabulary, grammar, reading comprehension, and pronunciation through gamified, pedagogically structured learning modules.
+Engy Up is the premier interactive learning platform to master English vocabulary, grammar, reading comprehension, and pronunciation through gamified, structured modules.
 
 Key Features:
-• 100% aligned with the official Yemeni Crescent English Course.
 • 21 interactive activity engines: Multiple Choice, Flashcards, Match Pairs, Word Ordering, Spelling Bee, Category Sort, and more.
 • Gamified progress tracking: Earn XP, level up, unlock achievements, and maintain study streaks.
 • Dynamic 5-Tier Student Ranking: Beginner, Intermediate, Advanced, Scholar, Master.
@@ -70,11 +68,12 @@ Key Features:
 | Field | Configuration Value |
 | :--- | :--- |
 | **Application Type** | App |
+| **Package Name** | `com.engyup.app` |
 | **Category** | Education (التعليم) |
 | **Tags** | Education, Language Learning, English, Study Tools, Curriculum |
 | **Content Rating** | Everyone (للجميع) — PEGI 3 / ESRB Everyone |
 | **Target Audience** | 13–17 years, 18+ |
-| **Contact Email** | `support@crescent.app` |
+| **Contact Email** | `support@engyup.com` |
 | **Privacy Policy URL** | `https://engy-up.vercel.app/privacy.html` |
 | **Terms of Service URL**| `https://engy-up.vercel.app/terms.html` |
 | **Account Deletion URL**| `https://engy-up.vercel.app/privacy.html#deletion` |

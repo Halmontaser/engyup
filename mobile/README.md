@@ -1,6 +1,6 @@
-# English Crescent - Mobile App & Setup Guide
+# Engy Up - Mobile App & Setup Guide
 
-Cross-platform native mobile application for the Yemeni curriculum English Crescent, built with Expo SDK 52, React Native 0.76, and Supabase.
+Cross-platform native mobile application for interactive English learning, built with Expo SDK 52, React Native 0.76, and Supabase.
 
 ---
 
@@ -69,7 +69,8 @@ npx eas build --platform android --profile production
 ## 3. Google Play Store Submission Checklist
 
 1. **Create Application in Google Play Console**:
-   - App Name: `English Crescent` (or `Crescent`)
+   - App Name: `Engy Up`
+   - Package Name: `com.engyup.app`
    - Default Language: `Arabic` or `English (US)`
    - App Category: `Education`
    - Pricing: `Free`
@@ -111,7 +112,7 @@ The application complies with the **Personal Data Protection Law (PDPL) Framewor
   5. Right to Withdraw Consent (حق سحب الموافقة)
   6. Right to Data Portability (حق نقل البيانات)
 - **Encryption**: TLS 1.3 transit encryption, AES-256 database encryption, Row-Level Security (RLS) data isolation.
-- **Privacy Office Contact**: `privacy@engyup.com` / `support@crescent.app`
+- **Privacy Office Contact**: `privacy@engyup.com` / `support@engyup.com`
 
 ---
 
@@ -120,7 +121,7 @@ The application complies with the **Personal Data Protection Law (PDPL) Framewor
 ```
 mobile/
 ├── App.tsx                     # App entry point (SafeAreaProvider, Providers, RootNavigator)
-├── app.json                    # Expo config (package com.crescent.app, versionCode, plugins)
+├── app.json                    # Expo config (package com.engyup.app, versionCode, plugins)
 ├── eas.json                    # EAS Build profiles (production app-bundle, Kotlin 1.9.25)
 ├── package.json                # Dependencies (@react-native-async-storage, @supabase/supabase-js, expo-*)
 ├── tsconfig.json               # TypeScript path alias configuration (@/*)

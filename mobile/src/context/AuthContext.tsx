@@ -54,8 +54,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     // 1. Try reading cached profile & tenant first for instant offline startup
     try {
       const [cachedProfile, cachedTenant] = await Promise.all([
-        AsyncStorage.getItem(`@crescent_${userId}_profile`),
-        AsyncStorage.getItem(`@crescent_${userId}_tenant`),
+        AsyncStorage.getItem(`@engyup_${userId}_profile`).then((v) => v || AsyncStorage.getItem(`@crescent_${userId}_profile`)),
+        AsyncStorage.getItem(`@engyup_${userId}_tenant`).then((v) => v || AsyncStorage.getItem(`@crescent_${userId}_tenant`)),
       ]);
       if (cachedProfile) setProfile(JSON.parse(cachedProfile));
       if (cachedTenant) setActiveTenant(JSON.parse(cachedTenant));
@@ -71,7 +71,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
       if (profileRes.data) {
         setProfile(profileRes.data as Profile);
-        AsyncStorage.setItem(`@crescent_${userId}_profile`, JSON.stringify(profileRes.data)).catch(() => {});
+        AsyncStorage.setItem(`@engyup_${userId}_profile`, JSON.stringify(profileRes.data)).catch(() => {});
       }
 
       let userMemberships = (membershipRes.data || []) as Membership[];
@@ -102,7 +102,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       const active = generalMembership?.tenants || userMemberships[0]?.tenants || null;
       if (active) {
         setActiveTenant(active);
-        AsyncStorage.setItem(`@crescent_${userId}_tenant`, JSON.stringify(active)).catch(() => {});
+        AsyncStorage.setItem(`@engyup_${userId}_tenant`, JSON.stringify(active)).catch(() => {});
       }
     } catch (err) {
       console.error('Error fetching user data in mobile AuthContext:', err);

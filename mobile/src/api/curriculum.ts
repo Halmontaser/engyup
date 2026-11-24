@@ -45,7 +45,7 @@ export interface Course {
   modules?: Module[];
 }
 
-const CACHE_PREFIX = '@crescent_cache_';
+const CACHE_PREFIX = '@engyup_cache_';
 
 export async function fetchCourses(tenantId?: string): Promise<Course[]> {
   const cacheKey = `${CACHE_PREFIX}courses_${tenantId || 'all'}`;
