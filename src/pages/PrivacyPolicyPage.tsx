@@ -61,8 +61,8 @@ export function PrivacyPolicyPage() {
           </h2>
           <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
             {lang === 'ar'
-              ? 'تلتزم منصة English Crescent ومنظومة Engyup بأعلى معايير حماية البيانات الشخصية وفقاً لنظام حماية البيانات الشخصية الصادر بالمرسوم الملكي رقم (م/19) والمعدل بالمرسوم الملكي رقم (م/148) في المملكة العربية السعودية، ولوائح الهيئة السعودية للبيانات والذكاء الاصطناعي (سدايا - SDAIA)، وضوابط متجر Google Play لحماية بيانات الأطفال والطلاب.'
-              : 'English Crescent & Engyup strictly uphold the highest standards of personal data protection under the Saudi Personal Data Protection Law (KSA PDPL, Royal Decree No. M/19 & M/148), SDAIA regulatory guidelines, and Google Play Families & Data Safety standards.'}
+              ? 'تلتزم منصة English Crescent ومنظومة Engyup بأعلى معايير حماية البيانات الشخصية وفقاً لنظام حماية البيانات الشخصية المعتمد في المملكة العربية السعودية، ولوائح الهيئة السعودية للبيانات والذكاء الاصطناعي (سدايا - SDAIA)، وضوابط متجر Google Play لحماية بيانات الأطفال والطلاب.'
+              : 'English Crescent & Engyup strictly uphold the highest standards of personal data protection under the Saudi Personal Data Protection Law (KSA PDPL), SDAIA regulatory guidelines, and Google Play Families & Data Safety standards.'}
           </p>
 
           {/* Navigation Tabs */}
@@ -294,8 +294,8 @@ export function PrivacyPolicyPage() {
               </h3>
               <p className="text-xs text-slate-500 mt-1">
                 {lang === 'ar' 
-                  ? 'وفقاً لأحكام النظام الصادر بالمرسوم الملكي رقم (م/19) والمعدل بالمرسوم الملكي رقم (م/148)' 
-                  : 'Enacted by Royal Decree No. M/19 and amended by Royal Decree No. M/148'}
+                  ? 'وفقاً للأطر واللوائح التنظيمية لنظام حماية البيانات الشخصية المعتمد' 
+                  : 'In accordance with the official Saudi Personal Data Protection Law (PDPL) framework'}
               </p>
             </div>
 

@@ -12,7 +12,7 @@ interface ProfileScreenProps {
 
 export function ProfileScreen({ onBack }: ProfileScreenProps) {
   const { user, profile, signOut } = useAuth();
-  const { xp, streak, completedLessons } = useProgress();
+  const { xp, streak, rank, accuracyRate, studyMinutes, completedLessons } = useProgress();
   const [showPrivacyModal, setShowPrivacyModal] = useState(false);
 
   const completedCount = Object.keys(completedLessons).length;
@@ -77,24 +77,44 @@ export function ProfileScreen({ onBack }: ProfileScreenProps) {
           </View>
         </View>
 
-        {/* Stats Grid */}
+        {/* Student Level & Rank Card */}
+        <View style={styles.rankCard}>
+          <View style={styles.rankHeader}>
+            <View style={styles.rankBadge}>
+              <Ionicons name="ribbon" size={18} color="#9333EA" />
+              <Text style={styles.rankBadgeText}>المستوى {rank.level}: {rank.titleAr}</Text>
+            </View>
+            <Text style={styles.rankProgressText}>{rank.progressPercent}% للترقية</Text>
+          </View>
+          <View style={styles.rankProgressBarBg}>
+            <View style={[styles.rankProgressBarFill, { width: `${rank.progressPercent}%` }]} />
+          </View>
+        </View>
+
+        {/* Enhanced Stats Grid */}
         <View style={styles.statsGrid}>
           <View style={styles.statBox}>
-            <Ionicons name="star" size={24} color={colors.accentGold} />
+            <Ionicons name="star" size={22} color={colors.accentGold} />
             <Text style={styles.statValue}>{xp}</Text>
-            <Text style={styles.statLabel}>إجمالي النقاط (XP)</Text>
+            <Text style={styles.statLabel}>إجمالي XP</Text>
           </View>
 
           <View style={styles.statBox}>
-            <Ionicons name="flame" size={24} color="#EA580C" />
+            <Ionicons name="flame" size={22} color="#EA580C" />
             <Text style={styles.statValue}>{streak}</Text>
             <Text style={styles.statLabel}>أيام متواصلة</Text>
           </View>
 
           <View style={styles.statBox}>
-            <Ionicons name="checkmark-done-circle" size={24} color={colors.accentEmerald} />
+            <Ionicons name="checkmark-done-circle" size={22} color={colors.accentEmerald} />
             <Text style={styles.statValue}>{completedCount}</Text>
             <Text style={styles.statLabel}>دروس مكتملة</Text>
+          </View>
+
+          <View style={styles.statBox}>
+            <Ionicons name="trending-up" size={22} color="#2563EB" />
+            <Text style={styles.statValue}>{accuracyRate}%</Text>
+            <Text style={styles.statLabel}>معدل الدقة</Text>
           </View>
         </View>
 
@@ -268,6 +288,46 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '700',
     color: colors.selectedBorder,
+  },
+  rankCard: {
+    backgroundColor: '#FAF5FF',
+    borderRadius: 16,
+    padding: 16,
+    marginBottom: 16,
+    borderWidth: 1,
+    borderColor: '#E9D5FF',
+  },
+  rankHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 10,
+  },
+  rankBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+  },
+  rankBadgeText: {
+    fontSize: 14,
+    fontWeight: '800',
+    color: '#7E22CE',
+  },
+  rankProgressText: {
+    fontSize: 12,
+    fontWeight: '600',
+    color: '#9333EA',
+  },
+  rankProgressBarBg: {
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: '#E9D5FF',
+    overflow: 'hidden',
+  },
+  rankProgressBarFill: {
+    height: '100%',
+    backgroundColor: '#9333EA',
+    borderRadius: 4,
   },
   statsGrid: {
     flexDirection: 'row',

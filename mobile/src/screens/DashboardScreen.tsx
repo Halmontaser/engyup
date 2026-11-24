@@ -31,7 +31,7 @@ interface DashboardScreenProps {
 
 export function DashboardScreen({ onSelectCourse, onOpenProfile }: DashboardScreenProps) {
   const { profile, activeTenant } = useAuth();
-  const { xp, streak } = useProgress();
+  const { xp, streak, rank } = useProgress();
   const [courses, setCourses] = useState<Course[]>([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
@@ -99,6 +99,17 @@ export function DashboardScreen({ onSelectCourse, onOpenProfile }: DashboardScre
           <View>
             <Text style={styles.statValue}>{xp} XP</Text>
             <Text style={styles.statLabel}>نقاط الخبرة</Text>
+          </View>
+        </View>
+
+        {/* Level / Rank */}
+        <View style={styles.statCard}>
+          <View style={[styles.statIconBox, { backgroundColor: '#F3E8FF' }]}>
+            <Ionicons name="ribbon" size={22} color="#9333EA" />
+          </View>
+          <View>
+            <Text style={styles.statValue}>مستوى {rank.level}</Text>
+            <Text style={styles.statLabel}>{rank.titleAr}</Text>
           </View>
         </View>
       </View>

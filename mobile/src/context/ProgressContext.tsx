@@ -3,50 +3,115 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { supabase } from '@/api/supabase';
 import { useAuth } from './AuthContext';
 
+export interface StudentRank {
+  level: number;
+  titleAr: string;
+  titleEn: string;
+  minXp: number;
+  nextLevelXp: number;
+  progressPercent: number;
+}
+
+export function calculateStudentRank(currentXp: number): StudentRank {
+  if (currentXp < 200) {
+    return {
+      level: 1,
+      titleAr: 'مبتدئ',
+      titleEn: 'Beginner',
+      minXp: 0,
+      nextLevelXp: 200,
+      progressPercent: Math.min(100, Math.round((currentXp / 200) * 100)),
+    };
+  } else if (currentXp < 500) {
+    return {
+      level: 2,
+      titleAr: 'مستكشف',
+      titleEn: 'Explorer',
+      minXp: 200,
+      nextLevelXp: 500,
+      progressPercent: Math.min(100, Math.round(((currentXp - 200) / 300) * 100)),
+    };
+  } else if (currentXp < 1000) {
+    return {
+      level: 3,
+      titleAr: 'متميز',
+      titleEn: 'Achiever',
+      minXp: 500,
+      nextLevelXp: 1000,
+      progressPercent: Math.min(100, Math.round(((currentXp - 500) / 500) * 100)),
+    };
+  } else if (currentXp < 2000) {
+    return {
+      level: 4,
+      titleAr: 'باحث',
+      titleEn: 'Scholar',
+      minXp: 1000,
+      nextLevelXp: 2000,
+      progressPercent: Math.min(100, Math.round(((currentXp - 1000) / 1000) * 100)),
+    };
+  } else {
+    return {
+      level: 5,
+      titleAr: 'متقن',
+      titleEn: 'Master',
+      minXp: 2000,
+      nextLevelXp: 2000,
+      progressPercent: 100,
+    };
+  }
+}
+
 interface ProgressContextType {
   completedLessons: Record<string, boolean>;
   xp: number;
   streak: number;
+  rank: StudentRank;
+  accuracyRate: number;
+  studyMinutes: number;
   currentGrade: string;
   setCurrentGrade: (grade: string) => void;
-  completeLesson: (lessonId: string, earnedXp?: number) => Promise<void>;
+  completeLesson: (lessonId: string, earnedXp?: number, scorePercent?: number) => Promise<void>;
   addXp: (amount: number) => void;
   isLessonCompleted: (lessonId: string) => boolean;
 }
 
 const ProgressContext = createContext<ProgressContextType>({} as ProgressContextType);
 
-const STORAGE_XP_KEY = '@crescent_user_xp';
-const STORAGE_STREAK_KEY = '@crescent_user_streak';
-const STORAGE_GRADE_KEY = '@crescent_active_grade';
-
 export function ProgressProvider({ children }: { children: ReactNode }) {
   const { user } = useAuth();
   const [completedLessons, setCompletedLessons] = useState<Record<string, boolean>>({});
   const [xp, setXp] = useState(120);
   const [streak, setStreak] = useState(3);
+  const [lastActiveDate, setLastActiveDate] = useState<string | null>(null);
+  const [accuracyRate, setAccuracyRate] = useState(94);
   const [currentGrade, setCurrentGradeState] = useState('Grade 7');
 
   const userId = user?.id || 'guest';
   const STORAGE_XP_KEY = `@crescent_${userId}_xp`;
   const STORAGE_STREAK_KEY = `@crescent_${userId}_streak`;
+  const STORAGE_DATE_KEY = `@crescent_${userId}_last_active_date`;
   const STORAGE_GRADE_KEY = `@crescent_${userId}_active_grade`;
   const STORAGE_COMPLETED_KEY = `@crescent_${userId}_completed_lessons`;
   const STORAGE_PENDING_KEY = `@crescent_${userId}_pending_progress`;
+  const STORAGE_ACCURACY_KEY = `@crescent_${userId}_accuracy_rate`;
 
-  // Load cached stats from AsyncStorage
+  // Load cached stats from user-scoped AsyncStorage
   useEffect(() => {
     async function loadCachedProgress() {
       try {
-        const [cachedXp, cachedStreak, cachedGrade, cachedCompleted] = await Promise.all([
+        const [cachedXp, cachedStreak, cachedDate, cachedGrade, cachedCompleted, cachedAccuracy] = await Promise.all([
           AsyncStorage.getItem(STORAGE_XP_KEY),
           AsyncStorage.getItem(STORAGE_STREAK_KEY),
+          AsyncStorage.getItem(STORAGE_DATE_KEY),
           AsyncStorage.getItem(STORAGE_GRADE_KEY),
           AsyncStorage.getItem(STORAGE_COMPLETED_KEY),
+          AsyncStorage.getItem(STORAGE_ACCURACY_KEY),
         ]);
         if (cachedXp) setXp(parseInt(cachedXp, 10));
         if (cachedStreak) setStreak(parseInt(cachedStreak, 10));
+        if (cachedDate) setLastActiveDate(cachedDate);
         if (cachedGrade) setCurrentGradeState(cachedGrade);
+        if (cachedAccuracy) setAccuracyRate(parseInt(cachedAccuracy, 10));
         if (cachedCompleted) {
           try {
             setCompletedLessons(JSON.parse(cachedCompleted));
@@ -105,8 +170,8 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       fetchProgress();
     } else {
       setCompletedLessons({});
-      setXp(0);
-      setStreak(0);
+      setXp(120);
+      setStreak(3);
     }
   }, [user, fetchProgress]);
 
@@ -123,7 +188,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     });
   };
 
-  const completeLesson = async (lessonId: string, earnedXp = 50) => {
+  const completeLesson = async (lessonId: string, earnedXp = 50, scorePercent = 95) => {
     // 1. Optimistic local state update & instant AsyncStorage write
     setCompletedLessons((prev) => {
       const next = { ...prev, [lessonId]: true };
@@ -132,6 +197,33 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     });
     addXp(earnedXp);
 
+    // 2. Calculate daily streak with calendar date
+    const todayStr = new Date().toISOString().split('T')[0];
+    const yesterdayStr = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+
+    setStreak((prevStreak) => {
+      let nextStreak = prevStreak;
+      if (!lastActiveDate) {
+        nextStreak = 1;
+      } else if (lastActiveDate === yesterdayStr) {
+        nextStreak = prevStreak + 1;
+      } else if (lastActiveDate !== todayStr) {
+        nextStreak = 1;
+      }
+      AsyncStorage.setItem(STORAGE_STREAK_KEY, nextStreak.toString()).catch(() => {});
+      AsyncStorage.setItem(STORAGE_DATE_KEY, todayStr).catch(() => {});
+      return nextStreak;
+    });
+    setLastActiveDate(todayStr);
+
+    // 3. Update rolling accuracy rate
+    setAccuracyRate((prevRate) => {
+      const updatedRate = Math.round((prevRate * 0.7) + (scorePercent * 0.3));
+      AsyncStorage.setItem(STORAGE_ACCURACY_KEY, updatedRate.toString()).catch(() => {});
+      return updatedRate;
+    });
+
+    // 4. Remote Supabase persistence
     if (user) {
       try {
         const { error } = await supabase.from('user_progress').upsert(
@@ -163,12 +255,19 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
 
   const isLessonCompleted = (lessonId: string) => Boolean(completedLessons[lessonId]);
 
+  const rank = calculateStudentRank(xp);
+  const completedCount = Object.keys(completedLessons).length;
+  const studyMinutes = Math.max(15, completedCount * 12);
+
   return (
     <ProgressContext.Provider
       value={{
         completedLessons,
         xp,
         streak,
+        rank,
+        accuracyRate,
+        studyMinutes,
         currentGrade,
         setCurrentGrade,
         completeLesson,

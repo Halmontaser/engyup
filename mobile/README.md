@@ -1,89 +1,159 @@
-# English Crescent - Expo React Native Mobile App
+# English Crescent - Mobile App & Setup Guide
 
-Native cross-platform mobile app for the English Crescent Yemeni curriculum, built with Expo and React Native.
-
----
-
-## Features
-- **Yemeni Curriculum Navigation**: Direct access to Grades 7 through 12, units/modules, and ordered lessons.
-- **On-Press Arabic Explanations**: Tap any English word, sentence, or the `[شرح]` badge to instantly open an Arabic translation sheet with contextual definitions and native audio pronunciation.
-- **Native Activity Engines**:
-  - **Multiple Choice (MCQ)**: Instant touch feedback, explanations, and speech playback.
-  - **Flashcards**: Tap-to-flip cards with Arabic translations, phonetics, and mastery tracking.
-  - **True / False**: Large touchable cards with instant validation.
-  - **Word Order (Sentence Builder)**: Tap-to-place word chips into sentence slots (no clunky drag-and-drop).
-  - **Match Pairs**: Dual-column tap-to-match cards with green lock animations.
-  - **Generic Activity Fallback**: Clean card displaying textbook references (e.g. `SB p.14`) and instructions for all other activity types.
-- **Gamification & Progress**: Real-time XP rewards, daily streaks, and automatic progress syncing to Supabase (`user_progress`).
-- **Offline Resilient**: Session tokens and curriculum data cached in `AsyncStorage`.
+Cross-platform native mobile application for the Yemeni curriculum English Crescent, built with Expo SDK 52, React Native 0.76, and Supabase.
 
 ---
 
-## How to Test and Run with Expo
+## 1. Quick Start & Local Development
 
 ### Prerequisites
-- Node.js (v18+)
-- [Expo Go](https://expo.dev/go) app installed on your physical iOS or Android phone.
+- Node.js (v18 or v20 recommended)
+- [Expo Go](https://expo.dev/go) on iOS or Android (for development testing)
 
-### Quick Start
-
-1. Navigate to the `mobile` directory:
+### Installation
 ```bash
 cd mobile
-```
-
-2. Install dependencies:
-```bash
 npm install
 ```
 
-3. Start the Expo development server:
+### Running Locally
 ```bash
+# Start Metro bundler (displays QR code for Expo Go)
 npx expo start
-```
 
-4. Scan the QR code:
-- **Android**: Open the **Expo Go** app and tap "Scan QR code".
-- **iOS**: Open the native **Camera** app, point it at the terminal QR code, and tap the prompt to open in Expo Go.
-- **Web Simulator**: Press `w` in the terminal to test in your web browser.
+# Run directly targeting Android simulator / device
+npm run android
+
+# Run web preview
+npm run web
+```
 
 ---
 
-## Architecture & Code Structure
+## 2. Production Build Setup (Google Play Console)
+
+Google Play requires a signed **Android App Bundle (`.aab`)**. Expo Application Services (EAS Build) manages building and signing in the cloud.
+
+### Step 1: Install EAS CLI and Authenticate
+```bash
+cd mobile
+npx eas login
+```
+
+### Step 2: Configure Build Profiles (`eas.json`)
+The production profile in `mobile/eas.json` is set to generate an `app-bundle`:
+```json
+{
+  "build": {
+    "production": {
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "env": {
+        "KOTLIN_VERSION": "1.9.25"
+      }
+    }
+  }
+}
+```
+
+### Step 3: Trigger Android Production Build
+```bash
+npx eas build --platform android --profile production
+```
+- EAS automatically provisions and secures a release keystore on Expo's encrypted servers.
+- The build produces an `.aab` file ready for Google Play upload.
+
+---
+
+## 3. Google Play Store Submission Checklist
+
+1. **Create Application in Google Play Console**:
+   - App Name: `English Crescent` (or `Crescent`)
+   - Default Language: `Arabic` or `English (US)`
+   - App Category: `Education`
+   - Pricing: `Free`
+
+2. **Upload Artifact**:
+   - Navigate to **Production** (or **Closed Testing**).
+   - Click **Create new release**.
+   - Upload the generated `.aab` file (downloadable from EAS build dashboard).
+
+3. **Data Safety & Privacy Policy**:
+   - Provide the Privacy Policy URL:
+     `https://engyup.vercel.app/privacy` (or `https://engyup.vercel.app/privacy.html`)
+   - **Data Types Declared**:
+     - *Personal Info*: Name, Email, Grade Level (Account management & curriculum matching).
+     - *App Activity*: Exercise completions, XP points, streaks (App functionality & self-evaluation).
+     - *Diagnostics*: Crash logs and OS version (Diagnostics & stability, anonymized).
+   - **No Sensitive Data**: No financial, biometric, health, or precise location data collected.
+   - **No Commercial Ads**: 100% ad-free educational environment.
+
+4. **Account Deletion (Mandatory Play Store Requirement)**:
+   - In-app account deletion is accessible from the user's **Profile Screen** (`حذف الحساب وجميع البيانات نهائياً`).
+   - Web deletion request is accessible at `https://engyup.vercel.app/privacy` under the "Data Deletion" tab.
+
+---
+
+## 4. Legal Compliance & Data Protection Framework
+
+The application complies with the **Personal Data Protection Law (PDPL) Framework** and SDAIA regulatory standards:
+
+- **Legal Basis**: Explicit user/guardian consent, performance of educational service contract, and legitimate security interests.
+- **Minors & Students**: Legal guardian consent is enforced for users under 18; guardians retain the right to inspect, correct, or erase student data at any time.
+- **Data Subject Rights**:
+  1. Right to Know / Information (حق العلم)
+  2. Right to Access (حق الوصول)
+  3. Right to Correction (حق التصحيح والتحديث)
+  4. Right to Destruction / Erasure (حق طلب الإتلاف)
+  5. Right to Withdraw Consent (حق سحب الموافقة)
+  6. Right to Data Portability (حق نقل البيانات)
+- **Encryption**: TLS 1.3 transit encryption, AES-256 database encryption, Row-Level Security (RLS) data isolation.
+- **Privacy Office Contact**: `privacy@engyup.com` / `support@crescent.app`
+
+---
+
+## 5. Mobile Project Structure
 
 ```
 mobile/
-├── App.tsx                     # App entry point (SafeArea, Auth, Progress)
-├── app.json                    # Expo project configuration
-├── package.json                # Dependencies and scripts
-├── tsconfig.json               # TypeScript configuration with @/* alias
+├── App.tsx                     # App entry point (SafeAreaProvider, Providers, RootNavigator)
+├── app.json                    # Expo config (package com.crescent.app, versionCode, plugins)
+├── eas.json                    # EAS Build profiles (production app-bundle, Kotlin 1.9.25)
+├── package.json                # Dependencies (@react-native-async-storage, @supabase/supabase-js, expo-*)
+├── tsconfig.json               # TypeScript path alias configuration (@/*)
 └── src/
-    ├── activities/             # Native activity renderers
+    ├── activities/             # Native activity engines for Yemeni curriculum
+    │   ├── CategorySortActivity.tsx
     │   ├── FlashcardActivity.tsx
     │   ├── GenericActivity.tsx
     │   ├── MatchPairsActivity.tsx
     │   ├── McqActivity.tsx
+    │   ├── SpellingBeeActivity.tsx
     │   ├── TrueFalseActivity.tsx
     │   └── WordOrderActivity.tsx
-    ├── api/                    # Supabase client and curriculum fetching
+    ├── api/                    # Supabase REST client & curriculum loaders
     │   ├── curriculum.ts
     │   └── supabase.ts
-    ├── components/             # Reusable UI & activity wrapper
+    ├── components/             # Shared UI components
     │   ├── ActivityRenderer.tsx
     │   ├── ArabicExplanationModal.tsx
     │   ├── PressableBilingual.tsx
     │   └── ProgressBar.tsx
-    ├── context/                # Global state providers
-    │   ├── AuthContext.tsx
-    │   └── ProgressContext.tsx
-    ├── navigation/             # Navigation controller
+    ├── context/                # Context state management
+    │   ├── AuthContext.tsx     # Supabase auth, session tokens, tenant binding
+    │   └── ProgressContext.tsx # XP, rank, calendar streaks, offline sync queue
+    ├── navigation/             # Navigation stacks & tab bar
     │   └── RootNavigator.tsx
-    ├── screens/                # Mobile application screens
-    │   ├── AuthScreen.tsx
+    ├── screens/                # User screens
+    │   ├── AuthScreen.tsx      # Login & register with privacy policy notice
     │   ├── CourseDetailScreen.tsx
-    │   ├── DashboardScreen.tsx
+    │   ├── DashboardScreen.tsx # Grade selector, streak, XP, and rank level
     │   ├── LessonPlayerScreen.tsx
-    │   └── ProfileScreen.tsx
-    └── theme/                  # Yemeni Scholar design system
-        └── colors.ts
+    │   ├── PracticeScreen.tsx
+    │   └── ProfileScreen.tsx   # Stats, rank badge, in-app privacy modal, account deletion
+    ├── theme/                  # Theme tokens (colors, accessible touch targets >= 48px)
+    │   └── colors.ts
+    └── utils/
+        └── audio.ts            # Text-to-speech & audio playback utility
 ```
