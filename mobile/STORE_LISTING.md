@@ -152,3 +152,15 @@ Script uses `mobile/google-service-account.json` to authenticate with Google Pla
 - 512x512 app icon
 - 1024x500 feature graphic
 - AAB release bundle when present
+
+---
+
+## 7. 1-Click Browser Auto-Filler Script for Console Forms
+
+To fill Google Play Console policy forms with 1 click:
+
+1. Open [Google Play Console](https://play.google.com/console) in Chrome / Edge / Firefox.
+2. Select **Engy Up** (`com.engyup.app`) > **App content** (or any pending task).
+3. Open Developer Tools (`F12` or `Ctrl+Shift+I`) and go to the **Console** tab.
+4. Copy and paste the script from `mobile/scripts/play-console-autofill.js` (or run bookmarklet).
+5. The script automatically detects the section, selects the required radio buttons/checkboxes, fills all URLs and emails, and clicks **Save** / **Next**.

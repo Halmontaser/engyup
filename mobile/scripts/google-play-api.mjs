@@ -169,4 +169,14 @@ export class GooglePlayAPI {
       body: JSON.stringify(payload)
     });
   }
+
+  // 9. Update Data Safety Labels via CSV
+  async updateDataSafety(safetyLabelsCsv) {
+    const url = `${this.baseUrl}/${this.packageName}/dataSafety`;
+    return this.fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ safetyLabels: safetyLabelsCsv })
+    });
+  }
 }
