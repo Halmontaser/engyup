@@ -160,18 +160,23 @@ export function AuthScreen() {
           )}
         </TouchableOpacity>
 
-        {/* Privacy & Legal Notice */}
-        <TouchableOpacity
-          onPress={() => Linking.openURL('https://engyup.vercel.app/privacy')}
-          style={{ marginTop: 16, alignItems: 'center' }}
-          activeOpacity={0.7}
-        >
-          <Text style={{ fontSize: 11, color: colors.textMuted, textAlign: 'center', lineHeight: 16 }}>
+        {/* Privacy & Legal Notice - Arabic Norms */}
+        <View style={styles.legalNoticeBox}>
+          <Text style={styles.legalNoticeText}>
             {isRegister
-              ? 'بتسجيل حسابك، فإنك توافق على سياسة الخصوصية وحماية البيانات (KSA PDPL)'
-              : 'محمي بموجب نظام حماية البيانات الشخصية (KSA PDPL)'}
+              ? 'بإنشاء حسابك فإنك تقر بالموافقة على الشروط والخصوصية:'
+              : 'تسجيل الدخول يخضع للأحكام والضوابط المعتمدة:'}
           </Text>
-        </TouchableOpacity>
+          <View style={styles.legalNoticeLinks}>
+            <TouchableOpacity onPress={() => Linking.openURL('https://engyup.vercel.app/terms')} activeOpacity={0.7}>
+              <Text style={styles.legalLink}>شروط الاستخدام</Text>
+            </TouchableOpacity>
+            <Text style={styles.legalDot}>•</Text>
+            <TouchableOpacity onPress={() => Linking.openURL('https://engyup.vercel.app/privacy')} activeOpacity={0.7}>
+              <Text style={styles.legalLink}>سياسة الخصوصية وحماية البيانات</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
       </View>
     </ScrollView>
   );
@@ -335,5 +340,33 @@ const styles = StyleSheet.create({
     color: colors.textInverse,
     fontSize: 16,
     fontWeight: '700',
+  },
+  legalNoticeBox: {
+    marginTop: 20,
+    alignItems: 'center',
+    borderTopWidth: 1,
+    borderTopColor: colors.cardBorder,
+    paddingTop: 16,
+  },
+  legalNoticeText: {
+    fontSize: 11,
+    color: colors.textMuted,
+    textAlign: 'center',
+    marginBottom: 6,
+  },
+  legalNoticeLinks: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  legalLink: {
+    fontSize: 12,
+    color: colors.accentEmerald,
+    fontWeight: '700',
+    textDecorationLine: 'underline',
+  },
+  legalDot: {
+    fontSize: 12,
+    color: colors.textMuted,
   },
 });

@@ -162,6 +162,33 @@ export function AuthPage() {
               Continue with Google
             </button>
           </div>
+
+          {/* Legal Notice - Arabic Standard Norms */}
+          <div className="mt-5 text-center text-xs text-slate-500 leading-relaxed border-t border-slate-100 pt-4" dir="rtl">
+            {isSignUp ? (
+              <p>
+                بإنشائك للحساب فإنك تؤكد موافقتك على{' '}
+                <a href="/terms" target="_blank" rel="noreferrer" className="text-blue-700 font-semibold hover:underline">
+                  شروط الاستخدام
+                </a>{' '}
+                و{' '}
+                <a href="/privacy" target="_blank" rel="noreferrer" className="text-blue-700 font-semibold hover:underline">
+                  سياسة الخصوصية وحماية البيانات
+                </a>
+              </p>
+            ) : (
+              <p>
+                تسجيل الدخول يخضع لأحكام{' '}
+                <a href="/terms" target="_blank" rel="noreferrer" className="text-blue-700 font-semibold hover:underline">
+                  شروط الاستخدام
+                </a>{' '}
+                و{' '}
+                <a href="/privacy" target="_blank" rel="noreferrer" className="text-blue-700 font-semibold hover:underline">
+                  سياسة الخصوصية
+                </a>
+              </p>
+            )}
+          </div>
         </div>
       </motion.div>
     </div>

@@ -136,6 +136,18 @@ export function ProfileScreen({ onBack }: ProfileScreenProps) {
 
           <TouchableOpacity
             style={styles.legalRow}
+            onPress={() => Linking.openURL('https://engyup.vercel.app/terms')}
+            activeOpacity={0.7}
+          >
+            <View style={styles.legalRowLeft}>
+              <Ionicons name="document-text-outline" size={20} color="#0D9488" />
+              <Text style={styles.legalRowText}>شروط الاستخدام والخدمة التعليمية</Text>
+            </View>
+            <Ionicons name="open-outline" size={16} color={colors.textMuted} />
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={styles.legalRow}
             onPress={() => Linking.openURL('https://engyup.vercel.app/privacy')}
             activeOpacity={0.7}
           >
