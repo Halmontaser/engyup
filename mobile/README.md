@@ -81,7 +81,9 @@ npx eas build --platform android --profile production
 
 3. **Data Safety & Privacy Policy**:
    - Provide the Privacy Policy URL:
-     `https://engyup.vercel.app/privacy` (or `https://engyup.vercel.app/privacy.html`)
+     `https://engy-up.vercel.app/privacy` (or `https://engy-up.vercel.app/privacy.html`)
+   - Terms of Service URL:
+     `https://engy-up.vercel.app/terms` (or `https://engy-up.vercel.app/terms.html`)
    - **Data Types Declared**:
      - *Personal Info*: Name, Email, Grade Level (Account management & curriculum matching).
      - *App Activity*: Exercise completions, XP points, streaks (App functionality & self-evaluation).
@@ -91,7 +93,7 @@ npx eas build --platform android --profile production
 
 4. **Account Deletion (Mandatory Play Store Requirement)**:
    - In-app account deletion is accessible from the user's **Profile Screen** (`حذف الحساب وجميع البيانات نهائياً`).
-   - Web deletion request is accessible at `https://engyup.vercel.app/privacy` under the "Data Deletion" tab.
+   - Web deletion request is accessible at `https://engy-up.vercel.app/privacy` under the "Data Deletion" tab.
 
 ---
 
