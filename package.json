@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsx server.ts",
     "dev:vite": "vite",
-    "build": "vite build && cp public/logo.png public/file.svg public/globe.svg dist/ 2>/dev/null || true",
+    "build": "vite build && cp public/privacy.html public/logo.png public/file.svg public/globe.svg dist/ 2>/dev/null || true",
     "preview": "vite preview",
     "preview:server": "NODE_ENV=production tsx server.ts",
     "clean": "rm -rf dist",

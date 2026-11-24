@@ -11,6 +11,8 @@ import { TutorialView } from './pages/TutorialView';
 import { ArabicTutorialView } from './pages/ArabicTutorial';
 // import { UnitOfflineView } from './pages/UnitOfflineView'; // disabled until future fix
 import { FacebookPage } from './pages/FacebookPage';
+import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
+import { TermsOfServicePage } from './pages/TermsOfServicePage';
 import { StudentOnboarding } from './components/StudentOnboarding';
 import { GamificationOverlay } from './components/GamificationOverlay';
 import { ErrorBoundary } from './components/ErrorBoundary';
@@ -44,14 +46,15 @@ function AppContent() {
   const isAdminRoute = window.location.pathname.startsWith('/admin');
   const isUnitRoute = window.location.pathname.startsWith('/unit');
   const isEmbedRoute = window.location.pathname.startsWith('/embed');
+  const isPublicLegalRoute = window.location.pathname.startsWith('/privacy') || window.location.pathname.startsWith('/terms');
 
-  if (!user && !isAdminRoute && !isUnitRoute && !isEmbedRoute) {
+  if (!user && !isAdminRoute && !isUnitRoute && !isEmbedRoute && !isPublicLegalRoute) {
     return <AuthPage />;
   }
 
   // Check if student needs onboarding
   const isStudentOrNew = !profile?.role || profile?.role === 'student';
-  const needsOnboarding = isStudentOrNew && !profile?.grade && !onboardingComplete && !isAdminRoute && !isUnitRoute && !isEmbedRoute;
+  const needsOnboarding = isStudentOrNew && !profile?.grade && !onboardingComplete && !isAdminRoute && !isUnitRoute && !isEmbedRoute && !isPublicLegalRoute;
 
   if (needsOnboarding) {
     return (
@@ -76,6 +79,8 @@ function AppContent() {
         <Route path="/tutorial-ar" element={<ArabicTutorialView />} />
         <Route path="/toturial" element={<ArabicTutorialView />} />
         <Route path="/facebook" element={<FacebookPage />} />
+        <Route path="/privacy" element={<PrivacyPolicyPage />} />
+        <Route path="/terms" element={<TermsOfServicePage />} />
         
         {/* Admin Routes */}
         <Route path="/admin/login" element={<AdminLoginPage />} />

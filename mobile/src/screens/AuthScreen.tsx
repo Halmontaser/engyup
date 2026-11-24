@@ -7,6 +7,7 @@ import {
   StyleSheet,
   ActivityIndicator,
   ScrollView,
+  Linking,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useAuth } from '@/context/AuthContext';
@@ -157,6 +158,19 @@ export function AuthScreen() {
               {isRegister ? 'إنشاء حساب والانطلاق' : 'دخول'}
             </Text>
           )}
+        </TouchableOpacity>
+
+        {/* Privacy & Legal Notice */}
+        <TouchableOpacity
+          onPress={() => Linking.openURL('https://engyup.vercel.app/privacy')}
+          style={{ marginTop: 16, alignItems: 'center' }}
+          activeOpacity={0.7}
+        >
+          <Text style={{ fontSize: 11, color: colors.textMuted, textAlign: 'center', lineHeight: 16 }}>
+            {isRegister
+              ? 'بتسجيل حسابك، فإنك توافق على سياسة الخصوصية وحماية البيانات (KSA PDPL)'
+              : 'محمي بموجب نظام حماية البيانات الشخصية (KSA PDPL)'}
+          </Text>
         </TouchableOpacity>
       </View>
     </ScrollView>

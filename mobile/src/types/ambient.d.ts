@@ -149,4 +149,8 @@ declare module 'react-native' {
     currentState: string;
     addEventListener: (type: 'change', listener: (state: string) => void) => { remove: () => void };
   };
+  export const Linking: {
+    openURL: (url: string) => Promise<any>;
+    canOpenURL: (url: string) => Promise<boolean>;
+  };
 }
